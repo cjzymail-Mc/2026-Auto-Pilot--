@@ -1,0 +1,5 @@
+﻿LANGS=zh-Hans-CN
+MAXDIM=10000
+IMG=3360x240
+305,101 86x81  大 写 豇 佰 伍 拾 亘 元
+TOTAL_LINES=1

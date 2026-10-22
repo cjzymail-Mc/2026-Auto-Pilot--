@@ -1,0 +1,5 @@
+﻿LANGS=zh-Hans-CN
+MAXDIM=10000
+IMG=3200x432
+235,216 86x91  中 国 裉 行 份 有 唄 公 司 0 全 迈 行
+TOTAL_LINES=1

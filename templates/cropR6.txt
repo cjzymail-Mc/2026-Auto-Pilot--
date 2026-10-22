@@ -1,0 +1,5 @@
+﻿LANGS=zh-Hans-CN
+MAXDIM=10000
+IMG=3520x240
+387,140 66x41  以 丿 〗 晶 ， 舌 一 冫 丿 、
+TOTAL_LINES=1
