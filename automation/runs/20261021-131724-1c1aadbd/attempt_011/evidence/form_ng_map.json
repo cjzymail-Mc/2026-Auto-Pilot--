@@ -1,0 +1,660 @@
+{
+ "fields": [
+  {
+   "name": "",
+   "label": "",
+   "type": "text",
+   "value": "",
+   "readonly": false,
+   "visible": true,
+   "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-sidebar:nth-of-type(2)>qd-page-menu>div.menu-scroll>div.search-box:nth-of-type(1)>p-autocomplete.ng-tns-c14-2.ng-untouched:nth-of-type(1)>span.ng-tns-c14-2.ui-autocomplete>input.ng-tns-c14-2.ui-inputtext",
+   "comp": ""
+  },
+  {
+   "name": "bizStatus0",
+   "label": "单据状态",
+   "type": "text",
+   "value": "编制中",
+   "readonly": true,
+   "visible": true,
+   "sel": "#bizStatus0",
+   "comp": ""
+  },
+  {
+   "name": "bizNumber1",
+   "label": "单据编号",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#bizNumber1",
+   "comp": ""
+  },
+  {
+   "name": "appliedName2",
+   "label": "申请人",
+   "type": "text",
+   "value": "陈晶",
+   "readonly": true,
+   "visible": true,
+   "sel": "#appliedName2",
+   "comp": ""
+  },
+  {
+   "name": "appliedAt3",
+   "label": "申请日期",
+   "type": "text",
+   "value": "2026-10-22",
+   "readonly": true,
+   "visible": true,
+   "sel": "#appliedAt3",
+   "comp": ""
+  },
+  {
+   "name": "appliedDuty4",
+   "label": "职位",
+   "type": "text",
+   "value": "高级经理",
+   "readonly": true,
+   "visible": true,
+   "sel": "#appliedDuty4",
+   "comp": ""
+  },
+  {
+   "name": "appliedBy5",
+   "label": "工号",
+   "type": "text",
+   "value": "116070053",
+   "readonly": true,
+   "visible": true,
+   "sel": "#appliedBy5",
+   "comp": ""
+  },
+  {
+   "name": "appliedDeptName6",
+   "label": "申请部门",
+   "type": "text",
+   "value": "运动表现研究部",
+   "readonly": true,
+   "visible": true,
+   "sel": "#appliedDeptName6",
+   "comp": ""
+  },
+  {
+   "name": "appliedPhone7",
+   "label": "联系电话",
+   "type": "text",
+   "value": "15980451184",
+   "readonly": false,
+   "visible": true,
+   "sel": "#appliedPhone7",
+   "comp": ""
+  },
+  {
+   "name": "totalCost14",
+   "label": "报销金额",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#totalCost14",
+   "comp": ""
+  },
+  {
+   "name": "upperCost15",
+   "label": "大写金额",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#upperCost15",
+   "comp": ""
+  },
+  {
+   "name": "loanCost16",
+   "label": "借款金额",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#loanCost16",
+   "comp": ""
+  },
+  {
+   "name": "quitCost17",
+   "label": "应退金额",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#quitCost17",
+   "comp": ""
+  },
+  {
+   "name": "payCost18",
+   "label": "应付金额",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#payCost18",
+   "comp": ""
+  },
+  {
+   "name": "description19",
+   "label": "备注",
+   "type": "text",
+   "value": "",
+   "readonly": false,
+   "visible": true,
+   "sel": "#description19",
+   "comp": ""
+  },
+  {
+   "name": "createdName20",
+   "label": "制单人",
+   "type": "text",
+   "value": "陈晶",
+   "readonly": true,
+   "visible": true,
+   "sel": "#createdName20",
+   "comp": ""
+  },
+  {
+   "name": "createdDeptName21",
+   "label": "制单部门",
+   "type": "text",
+   "value": "运动表现研究部",
+   "readonly": true,
+   "visible": true,
+   "sel": "#createdDeptName21",
+   "comp": ""
+  },
+  {
+   "name": "createdAt22",
+   "label": "制单日期",
+   "type": "text",
+   "value": "2026-10-22",
+   "readonly": true,
+   "visible": true,
+   "sel": "#createdAt22",
+   "comp": ""
+  },
+  {
+   "name": "bizCompletedName23",
+   "label": "终审人",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#bizCompletedName23",
+   "comp": ""
+  },
+  {
+   "name": "bizCompletedAt24",
+   "label": "终审日期",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#bizCompletedAt24",
+   "comp": ""
+  },
+  {
+   "name": "bizLastAuditName25",
+   "label": "业务终审人",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#bizLastAuditName25",
+   "comp": ""
+  },
+  {
+   "name": "bizLastAuditAt26",
+   "label": "业务终审日期",
+   "type": "text",
+   "value": "",
+   "readonly": true,
+   "visible": true,
+   "sel": "#bizLastAuditAt26",
+   "comp": ""
+  },
+  {
+   "name": "",
+   "label": "",
+   "type": "dropdown",
+   "value": "厦门乔丹科技有限公司",
+   "readonly": false,
+   "visible": true,
+   "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.print-hidden.col-xl-3:nth-of-type(9)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-135.ui-dropdown",
+   "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.print-hidden.col-xl-3:nth-of-type(9)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-135.ui-dropdown"
+  },
+  {
+   "name": "",
+   "label": "",
+   "type": "dropdown",
+   "value": "乔丹科技",
+   "readonly": false,
+   "visible": true,
+   "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.print-hidden.col-xl-3:nth-of-type(10)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-137.ui-dropdown",
+   "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.print-hidden.col-xl-3:nth-of-type(10)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-137.ui-dropdown"
+  },
+  {
+   "name": "",
+   "label": "",
+   "type": "multiselect",
+   "value": "",
+   "readonly": false,
+   "visible": true,
+   "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.hidden-lz.col-xl-3:nth-of-type(11)>div.row.dfc-container:nth-of-type(1)>p-multiselect.col.col-md:nth-of-type(1)>div.ng-tns-c36-139.ui-multiselect",
+   "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.hidden-lz.col-xl-3:nth-of-type(11)>div.row.dfc-container:nth-of-type(1)>p-multiselect.col.col-md:nth-of-type(1)>div.ng-tns-c36-139.ui-multiselect"
+  },
+  {
+   "name": "",
+   "label": "",
+   "type": "dropdown",
+   "value": "",
+   "readonly": false,
+   "visible": true,
+   "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.col-xl-3.col-lg-4:nth-of-type(12)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-141.ui-dropdown",
+   "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.col-xl-3.col-lg-4:nth-of-type(12)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-141.ui-dropdown"
+  },
+  {
+   "name": "",
+   "label": "",
+   "type": "dropdown",
+   "value": "人民币",
+   "readonly": false,
+   "visible": true,
+   "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.bg-warning.text-danger:nth-of-type(13)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-143.ui-dropdown",
+   "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.bg-warning.text-danger:nth-of-type(13)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-143.ui-dropdown"
+  },
+  {
+   "name": "",
+   "label": "",
+   "type": "dropdown",
+   "value": "",
+   "readonly": false,
+   "visible": true,
+   "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.hidden-lz.col-xl-3:nth-of-type(14)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-145.ui-dropdown",
+   "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.hidden-lz.col-xl-3:nth-of-type(14)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-145.ui-dropdown"
+  },
+  {
+   "name": "",
+   "label": "",
+   "type": "dropdown",
+   "value": "20",
+   "readonly": false,
+   "visible": true,
+   "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.print-hidden:nth-of-type(2)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>p-paginator.ng-star-inserted:nth-of-type(1)>div.ui-paginator-bottom.ui-paginator>div.ui-paginator-right-content.ng-star-inserted:nth-of-type(2)>p-dropdown.ng-tns-c41-119.ui-inputwrapper-filled:nth-of-type(1)>div.ng-tns-c41-119.ui-dropdown",
+   "comp": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.print-hidden:nth-of-type(2)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>p-paginator.ng-star-inserted:nth-of-type(1)>div.ui-paginator-bottom.ui-paginator>div.ui-paginator-right-content.ng-star-inserted:nth-of-type(2)>p-dropdown.ng-tns-c41-119.ui-inputwrapper-filled:nth-of-type(1)>div.ng-tns-c41-119.ui-dropdown"
+  }
+ ],
+ "tables": [
+  {
+   "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintRele:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+   "title": "",
+   "add_sel": "",
+   "headers": [
+    {
+     "text": "序号",
+     "prop": ""
+    },
+    {
+     "text": "单据类型",
+     "prop": "bizTypeName"
+    },
+    {
+     "text": "单据号",
+     "prop": "bizNumber"
+    },
+    {
+     "text": "单据金额",
+     "prop": "bizCost"
+    },
+    {
+     "text": "已报销(含审批中)",
+     "prop": "totalReimedCost"
+    },
+    {
+     "text": "本次报销",
+     "prop": "nowCost"
+    },
+    {
+     "text": "是否为最后一次",
+     "prop": "isLast"
+    },
+    {
+     "text": "备注",
+     "prop": "description"
+    }
+   ],
+   "row_count": 0
+  },
+  {
+   "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.print-hidden:nth-of-type(2)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+   "title": "",
+   "add_sel": "",
+   "headers": [
+    {
+     "text": "",
+     "prop": ""
+    },
+    {
+     "text": "序号",
+     "prop": ""
+    },
+    {
+     "text": "单据类型",
+     "prop": "bizTypeName"
+    },
+    {
+     "text": "单据号",
+     "prop": "bizNo"
+    },
+    {
+     "text": "摘要",
+     "prop": "digest"
+    },
+    {
+     "text": "金额",
+     "prop": "bizDetailCost"
+    },
+    {
+     "text": "数量",
+     "prop": "bizDetailNum"
+    },
+    {
+     "text": "已报销(含审批中)",
+     "prop": "usedCost"
+    },
+    {
+     "text": "本次报销",
+     "prop": "cost"
+    },
+    {
+     "text": "备注",
+     "prop": "description"
+    }
+   ],
+   "row_count": 0
+  },
+  {
+   "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost:nth-of-type(3)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+   "title": "",
+   "add_sel": "",
+   "headers": [
+    {
+     "text": "序号",
+     "prop": ""
+    },
+    {
+     "text": "报销项目",
+     "prop": "reimItem"
+    },
+    {
+     "text": "摘要",
+     "prop": "digest"
+    },
+    {
+     "text": "预算部门",
+     "prop": "budgetDeptName"
+    },
+    {
+     "text": "预算单",
+     "prop": "budgetNo"
+    },
+    {
+     "text": "预算归属",
+     "prop": "budgetOwner"
+    },
+    {
+     "text": "预算科目",
+     "prop": "subjectName"
+    },
+    {
+     "text": "预算项目",
+     "prop": "budgetItemName"
+    },
+    {
+     "text": "科目总额",
+     "prop": "subjectTotalCost"
+    },
+    {
+     "text": "科目余额",
+     "prop": "subjectSurplus"
+    },
+    {
+     "text": "报销金额",
+     "prop": "cost"
+    },
+    {
+     "text": "年季会议",
+     "prop": "quarterlyMeet"
+    },
+    {
+     "text": "占用单号",
+     "prop": "occupyRelationNo"
+    },
+    {
+     "text": "备注",
+     "prop": "description"
+    }
+   ],
+   "row_count": 0
+  },
+  {
+   "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrint:nth-of-type(4)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+   "title": "",
+   "add_sel": "",
+   "headers": [
+    {
+     "text": "序号",
+     "prop": ""
+    },
+    {
+     "text": "费用类型",
+     "prop": "project"
+    },
+    {
+     "text": "开始日期",
+     "prop": "startDate"
+    },
+    {
+     "text": "结束日期",
+     "prop": "endDate"
+    },
+    {
+     "text": "地点",
+     "prop": "projectPlace"
+    },
+    {
+     "text": "次数/天",
+     "prop": "count"
+    },
+    {
+     "text": "金额",
+     "prop": "cost"
+    },
+    {
+     "text": "项目说明",
+     "prop": "reason"
+    }
+   ],
+   "row_count": 0
+  },
+  {
+   "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost.bankPrint:nth-of-type(5)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+   "title": "",
+   "add_sel": "",
+   "headers": [
+    {
+     "text": "序号",
+     "prop": ""
+    },
+    {
+     "text": "收款人",
+     "prop": "payee"
+    },
+    {
+     "text": "账号",
+     "prop": "account"
+    },
+    {
+     "text": "开户行",
+     "prop": "bank"
+    },
+    {
+     "text": "联行号",
+     "prop": "bankCode"
+    },
+    {
+     "text": "转账金额",
+     "prop": "cost"
+    },
+    {
+     "text": "备注",
+     "prop": "description"
+    }
+   ],
+   "row_count": 0
+  },
+  {
+   "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-countersign:nth-of-type(1)>qd-dynamic-table:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+   "title": "",
+   "add_sel": "",
+   "headers": [
+    {
+     "text": "序号",
+     "prop": ""
+    },
+    {
+     "text": "姓名",
+     "prop": "name"
+    },
+    {
+     "text": "部门",
+     "prop": "orgName"
+    },
+    {
+     "text": "职位",
+     "prop": "jobTitle"
+    },
+    {
+     "text": "确认",
+     "prop": "isSigned"
+    },
+    {
+     "text": "确认时间",
+     "prop": "signedAt"
+    },
+    {
+     "text": "确认意见",
+     "prop": "signComment"
+    },
+    {
+     "text": "发送时间",
+     "prop": "sentAt"
+    },
+    {
+     "text": "发送人",
+     "prop": "fromUserName"
+    },
+    {
+     "text": "备注",
+     "prop": "description"
+    }
+   ],
+   "row_count": 0
+  },
+  {
+   "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-flow-records:nth-of-type(1)>qd-dynamic-table.ng-star-inserted:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+   "title": "",
+   "add_sel": "",
+   "headers": [
+    {
+     "text": "序号",
+     "prop": ""
+    },
+    {
+     "text": "审批人",
+     "prop": "toUserName"
+    },
+    {
+     "text": "部门",
+     "prop": "toUserOrgName"
+    },
+    {
+     "text": "职位",
+     "prop": "toUserDutyName"
+    },
+    {
+     "text": "接收日期",
+     "prop": "readAt"
+    },
+    {
+     "text": "审批日期",
+     "prop": "approvedAt"
+    },
+    {
+     "text": "审批结论",
+     "prop": "approvedString"
+    },
+    {
+     "text": "审批意见",
+     "prop": "comment"
+    }
+   ],
+   "row_count": 0
+  },
+  {
+   "sel": "body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-attachment:nth-of-type(1)>div.attachment-drop-zone:nth-of-type(1)>qd-dynamic-table>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+   "title": "",
+   "add_sel": "",
+   "headers": [
+    {
+     "text": "序号",
+     "prop": ""
+    },
+    {
+     "text": "",
+     "prop": "icon"
+    },
+    {
+     "text": "状态",
+     "prop": "status"
+    },
+    {
+     "text": "类型",
+     "prop": "type"
+    },
+    {
+     "text": "",
+     "prop": "isEncrypted"
+    },
+    {
+     "text": "文件名",
+     "prop": "fileName"
+    },
+    {
+     "text": "大小",
+     "prop": "size"
+    },
+    {
+     "text": "提交人",
+     "prop": "createdName"
+    },
+    {
+     "text": "上传时间",
+     "prop": "createdAt"
+    },
+    {
+     "text": "备注",
+     "prop": "description"
+    }
+   ],
+   "row_count": 0
+  }
+ ]
+}

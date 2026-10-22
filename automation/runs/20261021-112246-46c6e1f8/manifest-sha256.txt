@@ -1,0 +1,9 @@
+# ENHANCED_FINAL artifact manifest (run 20261021-112246-46c6e1f8, contract ctr-a8dea6f2)
+# generated 2026-10-21T12:10:44
+7b7a8c219149c60148698b5992d801e2ae22655f4636cf10d6f616e21d979654     13906  【feature01-企业微信自动化办公】/automation/form-schema.json
+92c703b72b7c97f4c6442cd69fa3af29d78bc85bd45dfa0b4c27f471e14db81b      6574  【feature01-企业微信自动化办公】/automation/runs/20261021-112246-46c6e1f8/report.md
+28f997f5fdd84d2110b192a4cd74810fe6fce5c03a0cfabbb2e98475b0367fdf      4132  【feature01-企业微信自动化办公】/automation/runs/20261021-112246-46c6e1f8/events.jsonl
+7d80fca600a0ec4093254c2a0993255007190ab55eb90c036788af8237b1dd6c      1180  【feature01-企业微信自动化办公】/automation/runs/20261021-112246-46c6e1f8/stage1_result.json
+3e2974df99a2f5d5d0bf0737611120140bff0835f2bb84769823472e377153d3     17331  【feature01-企业微信自动化办公】/stage1_browser_probe.py
+8da2f4c8a4cc13295312c1b860d5a8ed14880fbe0fadaaf3869a45d80b44ef77      4750  team-task.md
+5ab5b4366a8fcc813a41caff26a726e8f5d124425c1a1f71e7301da028ff12fc      7973  team-progress.md

@@ -1,0 +1,65 @@
+{
+ "steps": [
+  {
+   "tool": "App",
+   "args": {
+    "mode": "switch",
+    "name": "企业微信"
+   }
+  },
+  {
+   "tool": "Wait",
+   "args": {
+    "duration": 2
+   }
+  },
+  {
+   "tool": "Click",
+   "args": {
+    "loc": [
+     589,
+     342
+    ]
+   }
+  },
+  {
+   "tool": "Wait",
+   "args": {
+    "duration": 3
+   }
+  },
+  {
+   "tool": "Snapshot",
+   "args": {
+    "use_vision": false,
+    "use_ui_tree": true,
+    "use_annotation": false
+   },
+   "out": "automation/runs/20261021-131724-1c1aadbd/evidence/p0_formtab_now.txt"
+  },
+  {
+   "tool": "Click",
+   "args": {
+    "loc": [
+     519,
+     342
+    ]
+   }
+  },
+  {
+   "tool": "Wait",
+   "args": {
+    "duration": 2
+   }
+  },
+  {
+   "tool": "Snapshot",
+   "args": {
+    "use_vision": false,
+    "use_ui_tree": true,
+    "use_annotation": false
+   },
+   "out": "automation/runs/20261021-131724-1c1aadbd/evidence/p0_restored_list.txt"
+  }
+ ]
+}

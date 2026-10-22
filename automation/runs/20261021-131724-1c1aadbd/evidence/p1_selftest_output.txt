@@ -1,0 +1,25 @@
+== T1 定位失败 ==
+  PASS  pick_target 0 命中 → NOT_FOUND
+  PASS  pick_target 多命中 → AMBIGUOUS
+  PASS  pick_target 无 doc_id → TARGET_UNSPECIFIED（不选替身）
+  PASS  pick_target 唯一命中 → OK 且行含 href
+== T2 身份不符 ==
+  PASS  URL+oaNav=3 无账户证据 → 不得 LOGGED_IN（v1 缺陷守卫）
+  PASS  登录域名 → LOGIN_REQUIRED
+  PASS  密码框 → LOGIN_REQUIRED
+  PASS  三证齐全（姓名+退出+导航+内页）→ LOGGED_IN
+  PASS  eval_error → UNKNOWN
+== T3 预算耗尽 ==
+  PASS  tech 耗尽抛错 / login 耗尽归零 / 看护可启停
+== T4 证据目录冲突 ==
+  PASS  同 run 二次初始化 → attempt_002；旧文件零覆盖；原子写无 tmp 残留
+  PASS  run id 参数化（缺口#1 回归：无写死 run）
+== T5 恢复到错误单据 ==
+  PASS  恢复到另一张单据 → 比对失败并指出差异字段；同对象 → 通过
+== 阶段状态机 / 整体成功口径 ==
+  PASS  依赖阶段非 PASS → 后续 SKIPPED 不执行
+  PASS  整体成功=业务断言（非 DONE 默认；c4/c5 恒 NOT_AUTHORIZED）
+== 回归守卫 / 脱敏 ==
+  PASS  无 type=new 回退 / 无 WRITE_BTN 死代码 / URL 认证参数脱敏 / 控制台脱敏
+
+SELFTEST ALL PASS（10 组用例，覆盖 T1–T5 + 状态机 + 回归守卫）

@@ -1,0 +1,335 @@
+{"event": "profile_lock_acquired", "pid": 8664, "ts": "2026-10-21T13:47:20"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_001", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-21T13:47:20"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-21T13:47:20"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-21T13:47:29"}
+{"event": "login_wait_end", "outcome": "STILL_BLOCKED", "waited_s": 480.0, "ts": "2026-10-21T13:55:33"}
+{"event": "probe_end", "reason": "BLOCKED(c1_entry_login)", "tech_used_s": 3.7, "login_wait_s": 480.0, "budget_respected": true, "ts": "2026-10-21T13:55:34"}
+{"event": "profile_lock_acquired", "pid": 12260, "ts": "2026-10-21T14:00:30"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_002", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-21T14:00:30"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-21T14:00:30"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-21T14:00:40"}
+{"event": "login_wait_end", "outcome": "STILL_BLOCKED", "waited_s": 480.0, "ts": "2026-10-21T14:08:43"}
+{"event": "login_wait_timeout_candidates", "candidates": ["陈晶", "最近使用", "日常事务", "公共信息", "企业文化", "流程管理", "招聘管理", "人事表单", "人才发展", "培训管理"], "ts": "2026-10-21T14:08:43"}
+{"event": "probe_end", "reason": "BLOCKED(c1_entry_login)", "tech_used_s": 3.5, "login_wait_s": 480.0, "budget_respected": true, "ts": "2026-10-21T14:08:43"}
+{"event": "profile_lock_acquired", "pid": 13188, "ts": "2026-10-21T14:10:37"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_003", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-21T14:10:37"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-21T14:10:38"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-21T14:10:47"}
+{"event": "login_wait_end", "outcome": "LOGGED_IN", "waited_s": 25.0, "ts": "2026-10-21T14:11:13"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 3.8, "login_wait_s": 25.0, "budget_respected": true, "ts": "2026-10-21T14:11:15"}
+{"event": "profile_lock_acquired", "pid": 20336, "ts": "2026-10-21T14:15:54"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_004", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-21T14:15:54"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-21T14:15:55"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-21T14:16:05"}
+{"event": "login_wait_end", "outcome": "LOGGED_IN", "waited_s": 20.1, "ts": "2026-10-21T14:16:26"}
+{"event": "pick_wait_start", "pick_wait_cap": 900.0, "ts": "2026-10-21T14:16:30"}
+{"event": "pick_wait_end", "waited_s": 456.3, "chosen": null, "ts": "2026-10-21T14:24:06"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 8.3, "login_wait_s": 20.1, "budget_respected": true, "ts": "2026-10-21T14:24:07"}
+{"event": "profile_lock_acquired", "pid": 19648, "ts": "2026-10-21T16:44:45"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_005", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-21T16:44:45"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-21T16:44:45"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-21T16:44:56"}
+{"event": "login_wait_end", "outcome": "STILL_BLOCKED", "waited_s": 480.0, "ts": "2026-10-21T16:52:58"}
+{"event": "login_wait_timeout_candidates", "candidates": [], "ts": "2026-10-21T16:52:58"}
+{"event": "probe_end", "reason": "BLOCKED(c1_entry_login)", "tech_used_s": 3.9, "login_wait_s": 480.0, "budget_respected": true, "ts": "2026-10-21T16:52:59"}
+{"event": "profile_lock_acquired", "pid": 17460, "ts": "2026-10-21T16:53:14"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_006", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-21T16:53:14"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-21T16:53:15"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-21T16:53:23"}
+{"event": "login_wait_end", "outcome": "LOGGED_IN", "waited_s": 421.1, "ts": "2026-10-21T17:00:26"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-21T17:00:27"}
+{"event": "fill_end", "total": 30, "matched": 0, "deferred": 0, "mismatch": 30, "ts": "2026-10-21T17:00:34"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 11.4, "login_wait_s": 421.1, "budget_respected": true, "ts": "2026-10-21T17:00:35"}
+{"event": "profile_lock_acquired", "pid": 19168, "ts": "2026-10-21T17:24:50"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_007", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-21T17:24:50"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-21T17:24:50"}
+{"event": "session_state_skip", "reason": "missing_or_expired", "ttl_hours": 4.0, "ts": "2026-10-21T17:24:55"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-21T17:24:59"}
+{"event": "login_wait_end", "outcome": "LOGGED_IN", "waited_s": 10.0, "ts": "2026-10-21T17:25:09"}
+{"event": "session_state_saved", "cookies": 2, "origins": 3, "ttl_hours": 4.0, "ts": "2026-10-21T17:25:10"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-21T17:25:10"}
+{"event": "fill_end", "total": 30, "matched": 0, "deferred": 0, "mismatch": 30, "ts": "2026-10-21T17:25:17"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 11.9, "login_wait_s": 10.0, "budget_respected": true, "ts": "2026-10-21T17:25:18"}
+{"event": "profile_lock_acquired", "pid": 6852, "ts": "2026-10-21T17:28:58"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_008", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-21T17:28:58"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-21T17:28:58"}
+{"event": "session_state_injected", "cookies": 2, "origins": 3, "page_storage_origins": 0, "mtime_age_s": 233, "ts": "2026-10-21T17:29:03"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-21T17:29:06"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 3.4, "login_wait_s": 40.1, "budget_respected": true, "ts": "2026-10-21T17:29:50"}
+{"event": "profile_lock_acquired", "pid": 4744, "ts": "2026-10-22T09:54:26"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_009", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T09:54:26"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T09:54:26"}
+{"event": "session_state_skip", "reason": "missing_or_expired", "ttl_hours": 4.0, "ts": "2026-10-22T09:54:35"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-22T09:54:38"}
+{"event": "login_wait_end", "outcome": "LOGGED_IN", "waited_s": 20.0, "ts": "2026-10-22T09:54:59"}
+{"event": "session_state_saved", "cookies": 2, "origins": 3, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T09:54:59"}
+{"event": "probe_end", "reason": "BLOCKED(c2_locate_target)", "tech_used_s": 8.3, "login_wait_s": 20.0, "budget_respected": true, "ts": "2026-10-22T09:55:03"}
+{"event": "profile_lock_acquired", "pid": 12664, "ts": "2026-10-22T10:01:54"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_010", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T10:01:54"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T10:01:54"}
+{"event": "session_state_injected", "cookies": 2, "origins": 3, "page_storage_origins": 1, "mtime_age_s": 420, "ts": "2026-10-22T10:01:59"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T10:02:04"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T10:02:04"}
+{"event": "profile_lock_acquired", "pid": 17944, "ts": "2026-10-22T10:20:35"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_011", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T10:20:35"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T10:20:35"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 1117, "ts": "2026-10-22T10:20:40"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T10:20:45"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T10:20:45"}
+{"event": "fill_end", "total": 12, "matched": 0, "deferred": 1, "mismatch": 11, "surface": "primeNg", "ts": "2026-10-22T10:25:34"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 294.3, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T10:25:35"}
+{"event": "profile_lock_acquired", "pid": 1236, "ts": "2026-10-22T10:39:54"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_012", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T10:39:54"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T10:39:55"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 1155, "ts": "2026-10-22T10:40:00"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T10:40:04"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T10:40:04"}
+{"event": "fill_pick_miss", "target": "公出***", "options": ["", "儿童/百创", "乔丹科技", "中乔发展", "中乔股份", "摄影工作室", "新加坡", "香港乔丹", "香港写意", "乔丹基金", "中乔物流", "厦门实业", "晋江鞋业", "深圳", "合肥1"], "ts": "2026-10-22T10:40:13"}
+{"event": "fill_end", "total": 12, "matched": 2, "deferred": 1, "mismatch": 9, "surface": "primeNg", "ts": "2026-10-22T10:45:18"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 317.8, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T10:45:18"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T10:45:18"}
+{"event": "profile_lock_acquired", "pid": 9020, "ts": "2026-10-22T11:03:20"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_013", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T11:03:20"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T11:03:20"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 1401, "ts": "2026-10-22T11:03:25"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T11:03:30"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T11:03:30"}
+{"event": "fill_pick_miss", "target": "伙食", "options": [], "ts": "2026-10-22T11:06:49"}
+{"event": "fill_pick_miss", "target": "其它***", "options": [], "ts": "2026-10-22T11:07:01"}
+{"event": "fill_end", "total": 30, "matched": 16, "deferred": 1, "mismatch": 13, "surface": "primeNg", "ts": "2026-10-22T11:08:56"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 330.4, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T11:08:56"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T11:08:56"}
+{"event": "profile_lock_acquired", "pid": 18608, "ts": "2026-10-22T11:28:24"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_014", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T11:28:24"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T11:28:24"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 1499, "ts": "2026-10-22T11:28:29"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T11:28:34"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T11:28:34"}
+{"event": "fill_end", "total": 30, "matched": 23, "deferred": 0, "mismatch": 7, "surface": "primeNg", "ts": "2026-10-22T11:34:32"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 362.8, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T11:34:32"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T11:34:32"}
+{"event": "profile_lock_acquired", "pid": 2220, "ts": "2026-10-22T11:44:01"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_015", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T11:44:01"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T11:44:01"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 933, "ts": "2026-10-22T11:44:07"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T11:44:12"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T11:44:12"}
+{"event": "fill_end", "total": 31, "matched": 23, "deferred": 0, "mismatch": 6, "surface": "primeNg", "not_in_form": 2, "ts": "2026-10-22T11:49:55"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 348.0, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T11:49:55"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T11:49:55"}
+{"event": "profile_lock_acquired", "pid": 18184, "ts": "2026-10-22T12:04:23"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_016", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T12:04:23"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T12:04:23"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 1217, "ts": "2026-10-22T12:04:28"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T12:04:33"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T12:04:33"}
+{"event": "fill_overlay_dump", "where": "关联公出单", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T12:04:47"}
+{"event": "fill_overlay_dump", "where": "关联公出单", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T12:04:50"}
+{"event": "fill_end", "total": 31, "matched": 23, "deferred": 0, "mismatch": 6, "surface": "primeNg", "not_in_form": 2, "ts": "2026-10-22T12:10:16"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 347.3, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T12:10:16"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T12:10:16"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 18184, "ts": "2026-10-22T12:32:20"}
+{"event": "profile_lock_acquired", "pid": 516, "ts": "2026-10-22T12:32:20"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_017", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T12:32:20"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T12:32:20"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 1673, "ts": "2026-10-22T12:32:25"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T12:32:30"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T12:32:30"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-22T12:32:45"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T12:32:45"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "ts": "2026-10-22T12:32:46"}
+{"event": "fill_cell_button", "where": "关联公出单/单号", "btn_count": 1, "method": "click", "overlay_open": false, "ts": "2026-10-22T12:32:49"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [], "ts": "2026-10-22T12:32:49"}
+{"event": "fill_cell_button", "where": "预算联动/预算部门", "btn_count": 0, "method": "cell_click", "overlay_open": false, "ts": "2026-10-22T12:38:12"}
+{"event": "fill_budget_stage", "col": "预算部门", "kw": "科技中心", "note": "按钮未开出浮层", "ts": "2026-10-22T12:38:12"}
+{"event": "fill_cell_button", "where": "预算联动/预算单", "btn_count": 1, "method": "click", "overlay_open": false, "ts": "2026-10-22T12:38:14"}
+{"event": "fill_budget_stage", "col": "预算单", "kw": "年度预算项目", "note": "按钮未开出浮层", "ts": "2026-10-22T12:38:14"}
+{"event": "fill_cell_button", "where": "预算联动/预算科目", "btn_count": 1, "method": "click", "overlay_open": false, "ts": "2026-10-22T12:38:16"}
+{"event": "fill_budget_stage", "col": "预算科目", "kw": "年度预算项目", "note": "按钮未开出浮层", "ts": "2026-10-22T12:38:16"}
+{"event": "fill_end", "total": 32, "matched": 23, "deferred": 0, "mismatch": 6, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-22T12:38:20"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 354.7, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T12:38:20"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T12:38:20"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 516, "ts": "2026-10-22T12:59:05"}
+{"event": "profile_lock_acquired", "pid": 14860, "ts": "2026-10-22T12:59:05"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_018", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T12:59:05"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T12:59:05"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 1600, "ts": "2026-10-22T12:59:10"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T12:59:15"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T12:59:15"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-22T12:59:30"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T12:59:30"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "ts": "2026-10-22T12:59:31"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T12:59:35"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [], "ts": "2026-10-22T12:59:35"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:03:33"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [], "ts": "2026-10-22T13:03:33"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "stage": "dblclick", "error": "Locator.dblclick: Timeout 4000ms exceeded.\nCall log:\n  - waiting for locator(\"html.qd-env-prod>body:", "ts": "2026-10-22T13:03:37"}
+{"event": "fill_budget_stage", "col": "预算单", "kws": ["年度预算项目", "科技中心"], "kw": "科技中心", "picked": false, "result": "dblclick失败", "ts": "2026-10-22T13:03:38"}
+{"event": "fill_budget_stage", "col": "预算科目", "kws": ["差旅"], "note": "预算单未选，科目被链式门槛拦截（017 toast 实证），跳过", "ts": "2026-10-22T13:03:38"}
+{"event": "fill_end", "total": 32, "matched": 24, "deferred": 0, "mismatch": 5, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-22T13:03:42"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 272.3, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T13:03:42"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T13:03:42"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 14860, "ts": "2026-10-22T13:15:06"}
+{"event": "profile_lock_acquired", "pid": 13164, "ts": "2026-10-22T13:15:06"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_019", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T13:15:06"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T13:15:06"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 957, "ts": "2026-10-22T13:15:11"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T13:15:16"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T13:15:16"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-22T13:15:30"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T13:15:30"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "ts": "2026-10-22T13:15:31"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:15:35"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T13:15:35"}
+{"event": "fill_pick_miss", "where": "关联单据/单号", "target": "12026096668", "options": ["单据***"], "ts": "2026-10-22T13:15:37"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:19:40"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T13:19:40"}
+{"event": "fill_pick_miss", "where": "预算联动/预算单", "target": "年度预算项目", "options": ["单据***"], "ts": "2026-10-22T13:19:42"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:19:45"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T13:19:45"}
+{"event": "fill_overlay_row", "where": "预算联动/预算单", "row": "15***", "ts": "2026-10-22T13:19:48"}
+{"event": "fill_budget_stage", "col": "预算单", "kws": ["年度预算项目", "科技中心"], "kw": "科技中心", "picked": true, "result": "OK", "echo": "预算部门=科技中心 / 预算单=15625120077 / 预算科目= / 预算项目=", "ts": "2026-10-22T13:19:50"}
+{"event": "fill_table_pick", "where": "预算联动/预算科目", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:19:53"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算科目", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算科目", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T13:19:53"}
+{"event": "fill_pick_miss", "where": "预算联动/预算科目", "target": "差旅", "options": ["项目***"], "ts": "2026-10-22T13:19:55"}
+{"event": "fill_budget_stage", "col": "预算科目", "kws": ["差旅"], "kw": "差旅", "picked": false, "result": "弹表无命中", "ts": "2026-10-22T13:19:56"}
+{"event": "fill_end", "total": 32, "matched": 26, "deferred": 0, "mismatch": 3, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-22T13:20:01"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 289.8, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T13:20:01"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T13:20:01"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 13164, "ts": "2026-10-22T13:30:07"}
+{"event": "profile_lock_acquired", "pid": 8224, "ts": "2026-10-22T13:30:07"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_020", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T13:30:07"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T13:30:07"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 897, "ts": "2026-10-22T13:30:12"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T13:30:16"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T13:30:16"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-22T13:30:30"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T13:30:30"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "ts": "2026-10-22T13:30:31"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:30:36"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T13:30:36"}
+{"event": "fill_pick_miss", "where": "关联单据/单号", "target": "12026096668", "options": ["单据***"], "ts": "2026-10-22T13:30:38"}
+{"event": "fill_table_pick", "where": "关联单据/单号-授权替代", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:30:41"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号-授权替代", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T13:30:41"}
+{"event": "fill_overlay_row", "where": "关联单据/单号-授权替代", "row": "单据***", "ts": "2026-10-22T13:30:44"}
+{"event": "fill_related_substitute", "where": "关联单据/单号", "row": "单据***", "doc_no": "12***", "ts": "2026-10-22T13:30:45"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:33:14"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T13:33:14"}
+{"event": "fill_pick_miss", "where": "预算联动/预算单", "target": "年度预算项目", "options": ["单据***"], "ts": "2026-10-22T13:33:15"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:33:19"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T13:33:19"}
+{"event": "fill_overlay_row", "where": "预算联动/预算单", "row": "15***", "ts": "2026-10-22T13:33:20"}
+{"event": "fill_budget_stage", "col": "预算单", "kws": ["年度预算项目", "科技中心"], "kw": "科技中心", "picked": true, "result": "OK", "echo": "预算部门=科技中心 / 预算单=15625120077 / 预算科目= / 预算项目=", "ts": "2026-10-22T13:33:22"}
+{"event": "fill_table_pick", "where": "预算联动/预算科目", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:33:25"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算科目", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算科目", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T13:33:25"}
+{"event": "fill_pick_miss", "where": "预算联动/预算科目", "target": "差旅", "options": ["项目***"], "ts": "2026-10-22T13:33:27"}
+{"event": "fill_budget_stage", "col": "预算科目", "kws": ["差旅"], "kw": "差旅", "picked": false, "result": "弹表无命中", "ts": "2026-10-22T13:33:28"}
+{"event": "fill_end", "total": 32, "matched": 26, "deferred": 0, "mismatch": 3, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-22T13:33:33"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 200.2, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T13:33:33"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T13:33:33"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 8224, "ts": "2026-10-22T13:51:28"}
+{"event": "profile_lock_acquired", "pid": 10376, "ts": "2026-10-22T13:51:28"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_021", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T13:51:28"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T13:51:28"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 1277, "ts": "2026-10-22T13:51:33"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T13:51:38"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T13:51:38"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-22T13:51:53"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T13:51:53"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "selected": false, "chk": "-", "confirm": "NONE_IN_CAPTURED", "ts": "2026-10-22T13:52:39"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:52:43"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T13:52:43"}
+{"event": "fill_pick_miss", "where": "关联单据/单号", "target": "12026096668", "options": ["单据***"], "ts": "2026-10-22T13:52:45"}
+{"event": "fill_table_pick", "where": "关联单据/单号-授权替代", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:52:49"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号-授权替代", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T13:52:49"}
+{"event": "fill_overlay_row", "where": "关联单据/单号-授权替代", "row": "单据***", "selected": false, "chk": "-", "confirm": "确定", "ts": "2026-10-22T13:52:52"}
+{"event": "fill_related_substitute", "where": "关联单据/单号", "row": "单据***", "doc_no": "12***", "ts": "2026-10-22T13:52:52"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:55:20"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T13:55:20"}
+{"event": "fill_pick_miss", "where": "预算联动/预算单", "target": "年度预算项目", "options": ["单据***"], "ts": "2026-10-22T13:55:22"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:55:26"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T13:55:26"}
+{"event": "fill_overlay_row", "where": "预算联动/预算单", "row": "15***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-22T13:55:27"}
+{"event": "fill_budget_stage", "col": "预算单", "kws": ["年度预算项目", "科技中心"], "kw": "科技中心", "picked": true, "result": "OK", "echo": "预算部门=科技中心 / 预算单=15625120077 / 预算科目= / 预算项目=", "ts": "2026-10-22T13:55:29"}
+{"event": "fill_table_pick", "where": "预算联动/预算科目", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T13:55:32"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算科目", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算科目", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T13:55:32"}
+{"event": "fill_pick_miss", "where": "预算联动/预算科目", "target": "差旅", "options": ["项目***"], "ts": "2026-10-22T13:55:33"}
+{"event": "fill_budget_stage", "col": "预算科目", "kws": ["差旅"], "kw": "差旅", "picked": false, "result": "弹表无命中", "ts": "2026-10-22T13:55:35"}
+{"event": "fill_end", "total": 32, "matched": 26, "deferred": 0, "mismatch": 3, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-22T13:55:39"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 245.8, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T13:55:39"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T13:55:39"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 10376, "ts": "2026-10-22T14:04:00"}
+{"event": "profile_lock_acquired", "pid": 18944, "ts": "2026-10-22T14:04:00"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_022", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T14:04:00"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T14:04:00"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 748, "ts": "2026-10-22T14:04:05"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T14:04:10"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T14:04:10"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-22T14:04:25"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T14:04:25"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "selected": false, "chk": "-", "confirm": "NONE_IN_CAPTURED", "ts": "2026-10-22T14:05:10"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T14:05:15"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T14:05:15"}
+{"event": "fill_pick_miss", "where": "关联单据/单号", "target": "12026096668", "options": ["单据***"], "ts": "2026-10-22T14:05:17"}
+{"event": "fill_table_pick", "where": "关联单据/单号-授权替代", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T14:05:20"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号-授权替代", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T14:05:21"}
+{"event": "fill_overlay_row", "where": "关联单据/单号-授权替代", "row": "结束***", "selected": true, "chk": "-", "confirm": "NONE_IN_CAPTURED", "ts": "2026-10-22T14:05:21"}
+{"event": "fill_related_substitute", "where": "关联单据/单号", "row": "结束***", "doc_no": "24***", "ts": "2026-10-22T14:05:21"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 213.9, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T14:07:39"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T14:07:39"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 18944, "ts": "2026-10-22T14:17:03"}
+{"event": "profile_lock_acquired", "pid": 7804, "ts": "2026-10-22T14:17:03"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_023", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T14:17:03"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T14:17:03"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 778, "ts": "2026-10-22T14:17:08"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T14:17:13"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T14:17:13"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-22T14:17:27"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T14:17:27"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "selected": false, "chk": "-", "confirm": "NONE_IN_CAPTURED", "ts": "2026-10-22T14:18:13"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T14:18:18"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T14:18:18"}
+{"event": "fill_pick_miss", "where": "关联单据/单号", "target": "12026096668", "options": ["单据***"], "ts": "2026-10-22T14:18:20"}
+{"event": "fill_table_pick", "where": "关联单据/单号-授权替代", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T14:18:23"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号-授权替代", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T14:18:23"}
+{"event": "fill_overlay_row", "where": "关联单据/单号-授权替代", "row": "结束***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-22T14:18:25"}
+{"event": "fill_related_substitute", "where": "关联单据/单号", "row": "结束***", "doc_no": "12***", "ts": "2026-10-22T14:18:25"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T14:20:52"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T14:20:52"}
+{"event": "fill_overlay_row", "where": "预算联动/预算单", "row": "15***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-22T14:20:54"}
+{"event": "fill_budget_stage", "col": "预算单", "kw": "日常费用", "picked": true, "result": "OK", "echo": "预算部门=科技中心 / 预算单=15625120075 / 预算科目= / 预算项目=", "ts": "2026-10-22T14:20:55"}
+{"event": "fill_table_pick", "where": "预算联动/预算科目", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T14:20:58"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算科目", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算科目", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T14:20:58"}
+{"event": "fill_overlay_row", "where": "预算联动/预算科目", "row": "年度***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-22T14:21:00"}
+{"event": "fill_budget_stage", "col": "预算科目", "kw": "差旅", "picked": true, "result": "OK", "ts": "2026-10-22T14:21:00"}
+{"event": "fill_end", "total": 32, "matched": 28, "deferred": 0, "mismatch": 1, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-22T14:21:06"}
+{"event": "probe_end", "reason": "FAILED", "tech_used_s": 238.1, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T14:21:06"}
+{"event": "keep_open_start", "minutes": 200.0, "ts": "2026-10-22T14:21:06"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 7804, "ts": "2026-10-22T15:21:09"}
+{"event": "profile_lock_acquired", "pid": 15528, "ts": "2026-10-22T15:21:09"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_024", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-22T15:21:09"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x0", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-22T15:21:09"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 3843, "ts": "2026-10-22T15:21:15"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 4.0, "ts": "2026-10-22T15:21:21"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-22T15:21:21"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-22T15:21:36"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-22T15:21:36"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "selected": false, "chk": "-", "confirm": "NONE_IN_CAPTURED", "ts": "2026-10-22T15:22:21"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T15:22:26"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T15:22:26"}
+{"event": "fill_pick_miss", "where": "关联单据/单号", "target": "12026096668", "options": ["单据***"], "ts": "2026-10-22T15:22:28"}
+{"event": "fill_table_pick", "where": "关联单据/单号-授权替代", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T15:22:31"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号-授权替代", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T15:22:31"}
+{"event": "fill_overlay_row", "where": "关联单据/单号-授权替代", "row": "结束***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-22T15:22:33"}
+{"event": "fill_related_substitute", "where": "关联单据/单号", "row": "结束***", "doc_no": "12***", "ts": "2026-10-22T15:22:33"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T15:25:00"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-22T15:25:00"}
+{"event": "fill_overlay_row", "where": "预算联动/预算单", "row": "15***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-22T15:25:02"}
+{"event": "fill_budget_stage", "col": "预算单", "kw": "日常费用", "picked": true, "result": "OK", "echo": "预算部门=科技中心 / 预算单=15625120075 / 预算科目= / 预算项目=", "ts": "2026-10-22T15:25:03"}
+{"event": "fill_table_pick", "where": "预算联动/预算科目", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-22T15:25:06"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算科目", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算科目", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-22T15:25:06"}
+{"event": "fill_overlay_row", "where": "预算联动/预算科目", "row": "年度***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-22T15:25:08"}
+{"event": "fill_budget_stage", "col": "预算科目", "kw": "差旅", "picked": true, "result": "OK", "ts": "2026-10-22T15:25:08"}
+{"event": "fill_end", "total": 32, "matched": 29, "deferred": 0, "mismatch": 0, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-22T15:25:13"}
+{"event": "probe_end", "reason": "SUCCESS_FILL_ONLY", "tech_used_s": 238.0, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T15:25:13"}
+{"event": "keep_open_start", "minutes": 45.0, "ts": "2026-10-22T15:25:13"}

@@ -1,0 +1,103 @@
+{
+ "probe_version": "v2",
+ "run": "20261021-131724-1c1aadbd",
+ "attempt": "attempt_012",
+ "doc_id": null,
+ "expect_name": "陈晶",
+ "checks": {
+  "c1_entry_login": {
+   "status": "PASS",
+   "reason": "域名内页+账户名命中+导航成立（顶栏无显式退出钮，按放宽判据放行）",
+   "evidence": [
+    "attempt_012/evidence/entry.png"
+   ]
+  },
+  "c2_locate_target": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "FAIL",
+   "reason": "回读不一致 9/12：header/事由 回读『None』；header/是否为一次性 回读『None』；project_note/项目说明 回读『None』；project_note/行程说明 回读『None』；header/关联公出单 回读『None』；expense_detail/0* 回读『None』；expense_detail/1* 回读『None』；detail_summary/0* 回读『None』",
+   "evidence": [
+    "attempt_012/evidence/fill_readback.json",
+    "attempt_012/evidence/fill_final_grid.json",
+    "attempt_012/evidence/fill_99_after.png"
+   ]
+  }
+ },
+ "phases": {
+  "entry": "PASS",
+  "fill": "FAIL"
+ },
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "fill_plan_file": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json",
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 3521,
+  "classify": "LOGGED_IN",
+  "markers": {
+   "url": "https://bpm.qiaodan.com/oa/home",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 29,
+   "forms": 0,
+   "name_hits": 1,
+   "logout_hits": 0
+  },
+  "cookies_names": [
+   "ww_lang",
+   "wwopen.open.sid"
+  ],
+  "screenshot": "attempt_012/evidence/entry.png",
+  "html": "attempt_012/evidence/entry.html"
+ },
+ "fill_summary": {
+  "total": 12,
+  "matched": 2,
+  "surface": "primeNg",
+  "deferred_to_user": [
+   "bank/开户行"
+  ],
+  "mismatch": [
+   "header/事由 回读『None』",
+   "header/是否为一次性 回读『None』",
+   "project_note/项目说明 回读『None』",
+   "project_note/行程说明 回读『None』",
+   "header/关联公出单 回读『None』",
+   "expense_detail/0* 回读『None』",
+   "expense_detail/1* 回读『None』",
+   "detail_summary/0* 回读『None』",
+   "bank/0* 回读『None』"
+  ],
+  "no_save_guard": "未点击 保存/发送/流转/提交/上传/暂存/贴票/终止/返回 等任何按钮"
+ },
+ "finish_reason": "FAILED",
+ "tech_used_s": 317.8,
+ "login_wait_s": 0.0,
+ "wall_s": 323.1,
+ "budget_respected": true
+}

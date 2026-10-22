@@ -1,0 +1,457 @@
+{
+  "$schema_note": "字段规则 v0.2（2026-10-22 收敛）。v0.1 依据 astra §5 初稿；v0.2 按探针实测（run 20261021-131724-1c1aadbd，attempt_023 新建报销单只填不存，28/32 项回读匹配）回填定位方法与可写性。表面结论：Web 表单为 Angular PrimeNG DOM（p-table/p-dropdown），无 iframe/无 canvas；表头字段 label[for=name] 解析；表格按 caption 文本 + thead prop-* 列头定位；选择类字段=单元格点击弹表（footer 确定/取消），选择后回显格只读带出。VERIFIED 仅指实测通过；未测项保持 PENDING，绝不禁 default-to-pass。",
+  "version": "0.2",
+  "source_of_truth": {
+    "doc": "10-21 优化-提升效率/feature01独立评估与解决方案-astra.md",
+    "sections": [
+      "§5 字段规则",
+      "§3 六检查项"
+    ],
+    "structure_evidence": "automation/runs/20261021-112246-46c6e1f8/evidence/s0_ia2_snapshot.txt（IA2 表单区块一手结构）"
+  },
+  "environment_constraints": {
+    "proxy": "本机 WinINET 系统代理=Clash(127.0.0.1:7897)，OA 域名(bpm.qiaodan.com→192.168.34.10 内网)经代理即断。执行器访问 OA 必须绕代理：Playwright 启动加 --no-proxy-server（2026-10-21 实测：直连 200 / 代理 ERR_CONNECTION_CLOSED）",
+    "login": "OA 登录=企微 CorpApp QR SSO（iframe login.work.weixin.qq.com/wwlogin/sso/login，appid=wx7792ec86613522f1，agentid=1000002，redirect_uri=https://bpm.qiaodan.com）；页面无密码框。独立浏览器首次登录须人工扫码一次；profile=automation/.pw-profile 持久化，登录态建立后须验证刷新/重启有效性。本机企微客户端桥接(localhost:50010)在独立 Chromium 下被重置，不能指望自动 SSO",
+    "evidence": "automation/runs/20261021-112246-46c6e1f8/stage1_result.json + report.md Stage1 节"
+  },
+  "doc_identity": {
+    "list_url_pattern": "https://bpm.qiaodan.com/oa/reimburses（列表页，P2 扫码后实测核实；v0.1 误写 /oa/reimburse）",
+    "form_url_pattern": "新建走 UI 入口（首页『新建报销单』按钮，attempt_023 实测）；?type=new URL 直开未测",
+    "list_columns": [
+      "单据编号",
+      "状态",
+      "制单人",
+      "部门",
+      "公司",
+      "年份",
+      "支付方式",
+      "费用类型",
+      "金额",
+      "制单日期",
+      "终审人"
+    ],
+    "blocks": [
+      {
+        "key": "link_detail",
+        "name": "关联单据明细",
+        "web_caption": "关联单据",
+        "web_props": [
+          "bizNumber",
+          "是否为一次性(列)"
+        ],
+        "columns": [
+          "序号",
+          "单据类型",
+          "单据号",
+          "已报销",
+          "本次报销",
+          "是否为一次性"
+        ],
+        "verified": "run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json"
+      },
+      {
+        "key": "reimburse_detail",
+        "name": "报销明细",
+        "web_caption": "报销明细",
+        "web_props": [
+          "reimItem"
+        ],
+        "columns": [
+          "序号",
+          "报销项目",
+          "摘要",
+          "预算部门",
+          "预算单",
+          "预算科目",
+          "预算项目",
+          "报销金额"
+        ],
+        "verified": "run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json"
+      },
+      {
+        "key": "expense_note",
+        "name": "费用说明",
+        "web_caption": "费用说明",
+        "web_props": [
+          "project",
+          "reason"
+        ],
+        "columns": [
+          "序号",
+          "费用类型",
+          "开始日期",
+          "结束日期",
+          "地点",
+          "天数/次数",
+          "金额",
+          "项目说明(列 prop-reason)"
+        ],
+        "verified": "run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json"
+      },
+      {
+        "key": "bank_info",
+        "name": "银行信息",
+        "web_caption": "银行",
+        "web_props": [
+          "payee"
+        ],
+        "columns": [
+          "序号",
+          "收款人",
+          "账号",
+          "开户行(只读带出)",
+          "联行号",
+          "转账金额",
+          "备注"
+        ],
+        "verified": "run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json"
+      }
+    ],
+    "form_buttons_observed": [
+      "保存",
+      "删除",
+      "查看",
+      "复制金额到本次报销金额",
+      "自动换行"
+    ]
+  },
+  "categories": {
+    "C1_系统自动带出项": {
+      "rule": "读取并核验，不主动覆盖人员、公司等身份信息",
+      "fields": [
+        {
+          "业务键": "制单人",
+          "区块": "单据头",
+          "行身份": null,
+          "类型": "text(带出)",
+          "可写": false,
+          "定位方法": "VERIFIED(机制：表头 label[for=name]→input，run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)；值比对本次未执行",
+          "前置条件": "登录态有效（企微 CorpApp QR SSO，session_state.json TTL≈4h）",
+          "回读规则": "进入表单后读值，与预期人员比对（脱敏记录）",
+          "失败处理": "不一致 → 停止并报告，不自动改"
+        },
+        {
+          "业务键": "部门",
+          "区块": "单据头",
+          "行身份": null,
+          "类型": "text/selector(带出)",
+          "可写": false,
+          "定位方法": "VERIFIED(机制：表头 label[for=name]→input，run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)；值比对本次未执行",
+          "前置条件": "登录态有效（企微 CorpApp QR SSO，session_state.json TTL≈4h）",
+          "回读规则": "读值与预期部门比对（历史单据默认=运动表现研究部）",
+          "失败处理": "不一致 → 停止并报告"
+        },
+        {
+          "业务键": "公司",
+          "区块": "单据头",
+          "行身份": null,
+          "类型": "text(带出)",
+          "可写": false,
+          "定位方法": "VERIFIED(机制：表头 label[for=name]→input，run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)；值比对本次未执行",
+          "前置条件": "登录态有效（企微 CorpApp QR SSO，session_state.json TTL≈4h）",
+          "回读规则": "读值与预期公司比对",
+          "失败处理": "不一致 → 停止并报告"
+        }
+      ]
+    },
+    "C2_汇总或计算项": {
+      "rule": "标记为只读；检查明细变化后的计算结果，禁止反复 Type",
+      "fields": [
+        {
+          "业务键": "报销金额合计",
+          "区块": "报销明细",
+          "行身份": null,
+          "类型": "decimal(计算)",
+          "可写": false,
+          "定位方法": "PENDING(DOM)",
+          "前置条件": "明细行已稳定",
+          "回读规则": "明细写入完成后等待页面重算，读合计，与十进制定点自算值比对（精度/币种按已确认口径）",
+          "失败处理": "不重输、不手改合计；差异 → 停止并输出明细+差异清单（复盘教训：自动汇总是页面行为，聊天里说过的不算规则）"
+        },
+        {
+          "业务键": "已报销含审批中",
+          "区块": "关联单据明细",
+          "行身份": "按行",
+          "类型": "decimal(带出)",
+          "可写": false,
+          "定位方法": "PENDING(DOM)",
+          "前置条件": "行存在",
+          "回读规则": "读值核对",
+          "失败处理": "差异 → 报告"
+        }
+      ]
+    },
+    "C3_普通文本_日期_金额": {
+      "rule": "根据字段类型规范化；输入后失焦并等待页面处理，再回读",
+      "fields": [
+        {
+          "业务键": "报销明细.摘要",
+          "区块": "报销明细",
+          "行身份": "区块+稳定行键(序号)",
+          "类型": "text",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(行内编辑，fill→blur→回读匹配；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "行已定位且唯一",
+          "回读规则": "fill→blur→等待重算→读值=期望字符串",
+          "失败处理": "回读不符 → 停后续写入，记原值/期望值"
+        },
+        {
+          "业务键": "费用说明.开始日期",
+          "区块": "费用说明",
+          "行身份": "区块+稳定行键(序号)",
+          "类型": "date",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(date 输入，两行 2026-09-22 回读匹配；结束日期列同法；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "行已定位",
+          "回读规则": "规范化 ISO 日期后比对（复盘教训：银行账号曾被写成日期——日期/账号类型隔离是本类核心约束）",
+          "失败处理": "回读不符 → 停止"
+        },
+        {
+          "业务键": "费用说明.次数天",
+          "区块": "费用说明",
+          "行身份": "按行",
+          "类型": "number/int",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(天数/次数列，1 回读匹配；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "行已定位",
+          "回读规则": "数值化后比对",
+          "失败处理": "回读不符 → 停止"
+        },
+        {
+          "业务键": "费用说明.金额",
+          "区块": "费用说明",
+          "行身份": "按行",
+          "类型": "decimal",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(60.00/191.40 数值等价匹配；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "行已定位",
+          "回读规则": "十进制定点比对（不做 float 相等）",
+          "失败处理": "回读不符 → 停止"
+        },
+        {
+          "业务键": "费用说明.项目说明",
+          "区块": "费用说明",
+          "行身份": "按行",
+          "类型": "text",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(列 prop-reason；表头级『项目说明/行程说明』字段 DOM 实证不存在——模板值由此列承载；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "行已定位",
+          "回读规则": "读值=期望（复盘教训：转账金额曾被写成行程说明——文本/金额字段值域隔离）",
+          "失败处理": "回读不符 → 停止"
+        },
+        {
+          "业务键": "关联单据明细.本次报销",
+          "区块": "关联单据明细",
+          "行身份": "按行",
+          "类型": "decimal",
+          "可写": true,
+          "定位方法": "PENDING(023 未填此列，保持 0.00)",
+          "前置条件": "行已定位；可先核「复制金额到本次报销金额」按钮语义后决定人工公式 vs 按钮",
+          "回读规则": "十进制定点比对",
+          "失败处理": "回读不符 → 停止"
+        },
+        {
+          "业务键": "关联单据明细.摘要 / .数量 / .备注（拆分自 v0.1 合并条目）",
+          "区块": "对应区块",
+          "行身份": "按行",
+          "类型": "text|decimal|int 按列",
+          "可写": "UNKNOWN",
+          "定位方法": "PENDING(023 未填；类型隔离规则同上)",
+          "前置条件": "行已定位",
+          "回读规则": "按类型规范化后比对",
+          "失败处理": "回读不符 → 停止",
+          "$split_note": "v0.1 曾把 报销明细.报销金额 与本组合并；报销金额已单列下方"
+        },
+        {
+          "业务键": "报销明细.报销金额",
+          "区块": "报销明细",
+          "行身份": "按行",
+          "类型": "decimal",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(191.40 数值等价匹配；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "行已定位",
+          "回读规则": "十进制定点比对（不做 float 相等）",
+          "失败处理": "回读不符 → 停"
+        }
+      ]
+    },
+    "C4_下拉_人员_部门_科目选择器": {
+      "rule": "按弹窗内唯一名称及业务标识选择，核验回填值；不按『第几个』点击",
+      "fields": [
+        {
+          "业务键": "报销明细.报销项目",
+          "区块": "报销明细",
+          "行身份": "按行",
+          "类型": "selector(弹窗)",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(单元格点击→『选择表格数据』弹表→模板原词白名单命中行→footer 确定→回显提交；通行费 实测；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "弹表可开且选项唯一匹配（绝不盲选）",
+          "回读规则": "选择后读回填单元格文本=唯一名称+业务标识",
+          "失败处理": "候选不唯一/为空 → 停止该字段交人工"
+        },
+        {
+          "业务键": "报销明细.科目余额",
+          "区块": "报销明细",
+          "行身份": "按行",
+          "类型": "selector/带出(待验)",
+          "可写": "UNKNOWN",
+          "定位方法": "PENDING(Web 表报销明细列头未见此列；IA2 快照有——两表面列集差异待核)",
+          "前置条件": "项目已选",
+          "回读规则": "读值核对",
+          "失败处理": "差异 → 报告"
+        },
+        {
+          "业务键": "费用说明.费用类型",
+          "区块": "费用说明",
+          "行身份": "按行",
+          "类型": "selector",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(prescan 弹表白名单确认，伙食/其它交通 两行实测；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "行已定位",
+          "回读规则": "回填文本=唯一名称",
+          "失败处理": "不唯一 → 停止"
+        },
+        {
+          "业务键": "支付方式",
+          "区块": "单据头",
+          "行身份": null,
+          "类型": "selector",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(p-dropdown 选项列表匹配转账；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "登录态有效",
+          "回读规则": "回填文本核对",
+          "失败处理": "差异 → 停止"
+        },
+        {
+          "业务键": "单据头.关联公出单",
+          "区块": "单据头/关联单据明细",
+          "行身份": "按行",
+          "类型": "selector(两段式)",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(类型下拉选『公出单』→单据选择弹表(列:单据状态/申请日期/单据编号/申请人/公出事由)→行点击高亮→确定→回显提交；12026075605 实测；thead 伪行须跳过、弹表搜索只匹配单据编号；{EV})",
+          "前置条件": "目标单据未被一次性关联消耗；消耗后换选需用户显式授权（023 即此情形，留痕 note）",
+          "回读规则": "关联单据表行文本含所选单据编号且 是否为一次性=是",
+          "失败处理": "无命中行 → 守卫式关闭弹窗，绝不点表头/空行顶替"
+        },
+        {
+          "业务键": "报销明细.预算联动四列(预算部门/预算单/预算科目/预算项目)",
+          "区块": "报销明细",
+          "行身份": "按行",
+          "类型": "selector(链式弹表)+readonly 回显",
+          "可写": "READ_ONLY(回显格不可键入；由链式选择带出)",
+          "定位方法": "VERIFIED(选预算单弹表(候选迭代:15625120075 日常费用预算)→预算科目弹表(模板词差旅白名单，命中差旅费)→四列联动带出 科技中心/15625120075/差旅费/年度预算项目；{EV})",
+          "前置条件": "预算弹表可开；科目表须含模板词命中的科目，否则留空留审(SUBJECT_MISS_NOTED)",
+          "回读规则": "四列终读与模板词前缀包含比对（差旅→差旅费，_budget_pick 白名单同口径）",
+          "失败处理": "候选预算单科目表均无模板词 → 不选非差旅科目顶替，记 SUBJECT_MISS_NOTED"
+        }
+      ]
+    },
+    "C5_表格单元格": {
+      "rule": "按『区块 + 稳定行键 + 列语义』定位；新增行后重新确认身份",
+      "fields": [
+        {
+          "业务键": "通用行定位规则",
+          "区块": "全部四个表格区块",
+          "行身份": "区块容器 + 行序号(稳定键，新增行后重确认) + 列语义(表头文本→列索引运行时解析，不硬编码索引)",
+          "类型": "meta-rule",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(表容器=p-table[ caption 文本]；列=thead td[prop-* 或列头文本匹配→列索引运行时解析；行=tbody tr 序号+『新增』按钮加行后重确认；{EV})",
+          "前置条件": "区块唯一、行唯一、编辑器与单元格绑定关系已验",
+          "回读规则": "写入后按同一定位链回读单元格",
+          "失败处理": "区块/行/列任一不唯一 → 停止；复盘教训：页面位移导致坐标错写 → 坐标只允许作最后降级手段且每次重 Snapshot 确认"
+        }
+      ]
+    },
+    "C6_银行信息": {
+      "rule": "使用独立区块规则；账号按字符串处理，精确核对授权资料，不从 OCR 或旧记忆猜值",
+      "fields": [
+        {
+          "业务键": "银行信息.收款人",
+          "区块": "银行信息",
+          "行身份": "按行",
+          "类型": "text",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(新建单系统按登录人预填 陈晶，回读核对匹配，未键入；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "区块唯一",
+          "回读规则": "字符串精确比对授权资料",
+          "失败处理": "不符 → 停止整单"
+        },
+        {
+          "业务键": "银行信息.账号",
+          "区块": "银行信息",
+          "行身份": "按行",
+          "类型": "string(数字串，非数值!)",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(随收款人系统预填，全串回读匹配；键入路径未走；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "授权资料在手",
+          "回读规则": "字符串逐字符比对；长度/前4后2脱敏记录（复盘教训：此字段曾被写成『2026-09-22』——类型混淆高发点，回读必须全串比对）",
+          "失败处理": "任何不符 → 停止整单并人工复核，禁止局部重试"
+        },
+        {
+          "业务键": "银行信息.开户行",
+          "区块": "银行信息",
+          "行身份": "按行",
+          "类型": "text(readonly 回显)",
+          "可写": "READ_ONLY",
+          "定位方法": "VERIFIED(系统自动带出 中行，只读不可编辑；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "区块唯一",
+          "回读规则": "回填文本=授权资料",
+          "失败处理": "不符 → 停止"
+        },
+        {
+          "业务键": "银行信息.联行号",
+          "区块": "银行信息",
+          "行身份": "按行",
+          "类型": "string",
+          "可写": "UNKNOWN",
+          "定位方法": "PENDING(模板未含值，023 未填)",
+          "前置条件": "授权资料在手",
+          "回读规则": "字符串比对",
+          "失败处理": "不符 → 停止"
+        },
+        {
+          "业务键": "银行信息.转账金额",
+          "区块": "银行信息",
+          "行身份": "按行",
+          "类型": "decimal",
+          "可写": "WRITABLE",
+          "定位方法": "VERIFIED(251.40 数值等价匹配；run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json)",
+          "前置条件": "区块唯一",
+          "回读规则": "十进制定点比对（复盘教训：此字段曾被写成行程说明——文本/金额值域隔离）",
+          "失败处理": "不符 → 停止整单"
+        }
+      ]
+    },
+    "C7_附件": {
+      "rule": "按文件名、大小及可获得的内容标识核对；上传结果未知时先查重",
+      "fields": [
+        {
+          "业务键": "附件上传",
+          "区块": "附件区",
+          "行身份": "按文件条目",
+          "类型": "file",
+          "可写": "UNKNOWN",
+          "定位方法": "PENDING(上传属 OA 写入高危动作，本轮零授权未测)",
+          "前置条件": "授权附件清单在手；同名查重先行",
+          "回读规则": "上传后读文件名+大小(+内容标识可得时) 逐项核对",
+          "失败处理": "结果未知 → 不重复上传，先查重，报告待确认"
+        }
+      ]
+    }
+  },
+  "cross_field_constraints": [
+    "金额一律十进制定点处理，按已确认币种/精度比较；不做浮点相等",
+    "费用说明/报销明细/转账金额三处金额是否必须相等：口径待业务确认，不把『金额相同』当唯一正确性证据（astra §5）",
+    "日期字段与账号字段类型隔离；文本字段与金额字段值域隔离（均为复盘实发事故模式）",
+    "发现目标草稿已有异常值 → 先出『字段/当前值/资料期望值/差异』清单；期望值无可靠来源或超授权 → 不修（本轮实际未触发：草稿不存在）"
+  ],
+  "pending_verification": [
+    "报销明细合计(报销金额合计)回读与重算比对（023 未回读合计）",
+    "科目余额列在 Web 表的存在性（IA2 快照与 Web 表面列集差异）",
+    "联行号/关联单据明细.摘要·数量·备注 的填写路径（模板未含值或未填）",
+    "『复制金额到本次报销金额』按钮语义与安全性（未测）",
+    "附件上传（未授权，PENDING）",
+    "表头 报销类别(submitType)：表单字段但模板未含值——FORM_FIELD_NOT_IN_TEMPLATE，留用户终审",
+    "以上 VERIFIED 证据：run 20261021-131724-1c1aadbd attempt_023 evidence/fill_readback.json + fill_final_grid.json；截图 attempt_023/evidence/fill_99_after.png；浏览器保留在场待人工审核（只填不存）"
+  ]
+}

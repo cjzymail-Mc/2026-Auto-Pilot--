@@ -1,0 +1,42 @@
+{
+ "phases": {
+  "entry": "ok"
+ },
+ "checks": {
+  "c1_entry_login": "BLOCKED_LOGIN"
+ },
+ "aborted": null,
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 1610,
+  "failed_requests": [
+   "net::ERR_ABORTED https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/mono/bootstrap-aegis/179.380a04061b76c71e57dc.js",
+   "net::ERR_CONNECTION_RESET https://localhost.work.weixin.qq.com:50010/checkLoginState"
+  ],
+  "markers": {
+   "url": "https://bpm.qiaodan.com/account/login",
+   "title": "协同办公系统",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 0,
+   "forms": 0
+  },
+  "classify": "LOGIN_REQUIRED",
+  "cookies_names": [
+   "ww_lang"
+  ],
+  "redirect_chain_doc": [
+   "200 https://bpm.qiaodan.com/",
+   "200 https://login.work.weixin.qq.com/wwlogin/sso/login?login_type=CorpApp&appid=wx7792ec86613522f1&agentid=1000002&redirect_uri=https%3A%2F%2Fbpm.qiaodan.com&state=",
+   "200 https://open.work.weixin.qq.com/wwopen/loginStorage"
+  ],
+  "screenshot": "evidence/stage1_1_entry.png",
+  "html": "evidence\\stage1_1_entry.html"
+ },
+ "login_wait_s": 481.9,
+ "finish_reason": "LOGIN_GATE",
+ "tech_used_s": 5.4,
+ "budget_respected": true,
+ "wall_s": 494.3
+}

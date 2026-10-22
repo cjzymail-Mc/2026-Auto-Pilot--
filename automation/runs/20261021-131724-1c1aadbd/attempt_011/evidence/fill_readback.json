@@ -1,0 +1,108 @@
+[
+ {
+  "section": "header",
+  "field": "事由",
+  "target": "公出晋江油补",
+  "surface": "primeNg",
+  "status": "NOT_LOCATED",
+  "match": false
+ },
+ {
+  "section": "header",
+  "field": "支付方式",
+  "target": "转账",
+  "surface": "primeNg",
+  "status": "NOT_LOCATED",
+  "match": false
+ },
+ {
+  "section": "header",
+  "field": "年度",
+  "target": "2026",
+  "surface": "primeNg",
+  "status": "NOT_LOCATED",
+  "match": false
+ },
+ {
+  "section": "header",
+  "field": "是否为一次性",
+  "target": "是",
+  "surface": "primeNg",
+  "status": "CELL_NOT_EDITABLE",
+  "match": false,
+  "method": "related_table_col",
+  "readback": null
+ },
+ {
+  "section": "project_note",
+  "field": "项目说明",
+  "target": "陈晶/延领公出油补",
+  "surface": "primeNg",
+  "status": "NOT_LOCATED",
+  "match": false
+ },
+ {
+  "section": "project_note",
+  "field": "行程说明",
+  "target": "厦门/晋江往返-自驾",
+  "surface": "primeNg",
+  "status": "NOT_LOCATED",
+  "match": false
+ },
+ {
+  "section": "header",
+  "field": "关联公出单",
+  "target": "12026096668",
+  "surface": "primeNg",
+  "method": "inline_cell",
+  "status": "CELL_NOT_EDITABLE",
+  "readback": null,
+  "match": false
+ },
+ {
+  "section": "expense_detail",
+  "row": 0,
+  "surface": "primeNg",
+  "field": "*",
+  "status": "ROW_NOT_CREATED",
+  "match": false,
+  "note": "新增点击后行数仍为 0；诊断截图已存"
+ },
+ {
+  "section": "expense_detail",
+  "row": 1,
+  "surface": "primeNg",
+  "field": "*",
+  "status": "ROW_NOT_CREATED",
+  "match": false,
+  "note": "新增点击后行数仍为 0；诊断截图已存"
+ },
+ {
+  "section": "detail_summary",
+  "row": 0,
+  "surface": "primeNg",
+  "field": "*",
+  "status": "ROW_NOT_CREATED",
+  "match": false,
+  "note": "新增点击后行数仍为 0；诊断截图已存"
+ },
+ {
+  "section": "bank",
+  "row": 0,
+  "surface": "primeNg",
+  "field": "*",
+  "status": "ROW_NOT_CREATED",
+  "match": false,
+  "note": "新增点击后行数仍为 0；诊断截图已存"
+ },
+ {
+  "section": "bank",
+  "field": "开户行",
+  "target": "中国银行支行全称（用户终审）",
+  "surface": "primeNg",
+  "status": "DEFERRED_TO_USER",
+  "readback": "None | 联行号 None",
+  "match": false,
+  "note": "支行全称无法唯一确定，按约不猜，留人工选择"
+ }
+]

@@ -1,0 +1,113 @@
+{
+ "probe_version": "v2",
+ "run": "20261021-131724-1c1aadbd",
+ "attempt": "attempt_009",
+ "doc_id": null,
+ "expect_name": "陈晶",
+ "checks": {
+  "c1_entry_login": {
+   "status": "PASS",
+   "reason": "扫码后账户姓名命中+内页导航成立（顶栏无显式退出钮）",
+   "evidence": [
+    "attempt_009/evidence/after_login.png"
+   ]
+  },
+  "c2_locate_target": {
+   "status": "BLOCKED",
+   "reason": "未提供 --doc-id：按约不自动选择替身单据，停在列表盘点",
+   "evidence": [
+    "attempt_009/evidence/list_rows.json"
+   ]
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "NOT_RUN",
+   "reason": "未启用 --fill-plan（只读任务不新建/不填写）",
+   "evidence": []
+  }
+ },
+ "phases": {
+  "entry": "LOGIN_REQUIRED",
+  "login_wait": "PASS",
+  "locate": "BLOCKED",
+  "structure": "SKIPPED",
+  "recover": "SKIPPED"
+ },
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 3112,
+  "classify": "LOGIN_REQUIRED",
+  "markers": {
+   "url": "https://bpm.qiaodan.com/account/login",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 0,
+   "forms": 0,
+   "name_hits": 0,
+   "logout_hits": 0
+  },
+  "cookies_names": [
+   "ww_lang"
+  ],
+  "screenshot": "attempt_009/evidence/entry.png",
+  "html": "attempt_009/evidence/entry.html"
+ },
+ "list_scope": {
+  "url": "https://bpm.qiaodan.com/oa/reimburses",
+  "rows_on_first_page": 16,
+  "filters_visible": [
+   "BizStatus0=",
+   "BizNumber1=",
+   "CreatedPath2=陈晶",
+   "CorpCode4=",
+   "AppliedDeptPath5=",
+   "AppliedPath7=",
+   "AppliedDuty8=",
+   "PayType9=",
+   "SubmitType10=",
+   "BizCompletedName12=",
+   "BizLastAuditName13=",
+   "CurrencyType14=",
+   "Description15=",
+   "TotalCost16=",
+   "Payee17=",
+   "BudgetDeptName18=",
+   "Digest19=",
+   "Description20=",
+   "Cost21=",
+   "BizNumber22="
+  ],
+  "note": "查询范围=默认列表首屏；未翻页、未改筛选。『未发现』仅指该范围。"
+ },
+ "locate": {
+  "status": "TARGET_UNSPECIFIED",
+  "rows_seen": 16
+ },
+ "finish_reason": "BLOCKED(c2_locate_target)",
+ "tech_used_s": 8.3,
+ "login_wait_s": 20.0,
+ "wall_s": 37.8,
+ "budget_respected": true
+}
