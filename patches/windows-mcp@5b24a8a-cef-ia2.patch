@@ -1,0 +1,199 @@
+diff --git a/src/windows_mcp/tree/service.py b/src/windows_mcp/tree/service.py
+index 811467d..f7fdf46 100755
+--- a/src/windows_mcp/tree/service.py
++++ b/src/windows_mcp/tree/service.py
+@@ -95,6 +95,41 @@ def _runtime_identity(node: Any) -> Optional[tuple[int, ...]]:
+         return None
+     return parts or None
+ 
++
++def _cef_render_child_hwnd(top_hwnd: int) -> Optional[int]:
++    """Return the first ``Chrome_RenderWidgetHostHWND`` child HWND of a window.
++
++    Embedded-Chromium hosts (WeCom's OA webview, Electron-style apps that are
++    not browsers) serve their web accessibility tree from this render-widget
++    HWND via MSAA/IA2, not through the top window's UIA tree. Pure Win32 —
++    EnumChildWindows + GetClassName — so the host's accessibility provider is
++    never entered just to decide whether to probe it. Multi-view hosts may
++    expose several render HWNDs; the first is the primary view.
++    """
++    import ctypes
++    from ctypes import wintypes
++
++    user32 = ctypes.windll.user32
++    found: list[int] = []
++    window_enum_proc = ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
++    user32.EnumChildWindows.argtypes = [wintypes.HWND, window_enum_proc, wintypes.LPARAM]
++    user32.GetClassNameW.argtypes = [wintypes.HWND, wintypes.LPWSTR, wintypes.INT]
++
++    def _on_child(hwnd: int, _lparam: int) -> bool:
++        buf = ctypes.create_unicode_buffer(64)
++        user32.GetClassNameW(hwnd, buf, 64)
++        if "Chrome_RenderWidgetHostHWND" in buf.value:
++            found.append(hwnd)
++            return False
++        return True
++
++    try:
++        user32.EnumChildWindows(top_hwnd, window_enum_proc(_on_child), 0)
++    except Exception:
++        pass
++    return found[0] if found else None
++
++
+ if TYPE_CHECKING:
+     from windows_mcp.desktop.service import Desktop
+ 
+@@ -261,10 +296,14 @@ class Tree:
+                 is_browser = self.desktop.is_window_browser(temp_node)
+             except Exception:
+                 pass
+-            task_inputs.append((handle, is_browser))
++            # Embedded-Chromium host that is not a browser (e.g. WeCom's OA
++            # webview): web content is only reachable via MSAA/IA2 from the
++            # render-widget child HWND (see get_nodes).
++            is_cef = not is_browser and _cef_render_child_hwnd(handle) is not None
++            task_inputs.append((handle, is_browser, is_cef))
+ 
+         retry_counts = {handle: 0 for handle in windows_handles}
+-        for handle, is_browser in task_inputs:
++        for handle, is_browser, is_cef in task_inputs:
+             if self.element_budget.exhausted:
+                 logger.debug(
+                     "[Tree] Element budget exhausted (%d/%d) — skipping remaining windows",
+@@ -274,7 +313,7 @@ class Tree:
+                 break
+             for attempt in range(THREAD_MAX_RETRIES + 1):
+                 try:
+-                    result = self.get_nodes(handle, is_browser, wait_time=0.5 * (2 ** (attempt - 1)) if attempt > 0 else 0, use_dom=use_dom)
++                    result = self.get_nodes(handle, is_browser, wait_time=0.5 * (2 ** (attempt - 1)) if attempt > 0 else 0, use_dom=use_dom, is_cef=is_cef)
+                     if result:
+                         element_nodes, scroll_nodes, info_nodes, win_sem_node = result
+                         interactive_nodes.extend(element_nodes)
+@@ -919,7 +958,7 @@ class Tree:
+             case _:
+                 return window_name
+ 
+-    def get_nodes(self, handle: int, is_browser:bool=False, wait_time:float=0, use_dom:bool=False) -> tuple[list[TreeElementNode],list[ScrollElementNode],list[TextElementNode],Optional[SemanticNode]]:
++    def get_nodes(self, handle: int, is_browser:bool=False, wait_time:float=0, use_dom:bool=False, is_cef:bool=False) -> tuple[list[TreeElementNode],list[ScrollElementNode],list[TextElementNode],Optional[SemanticNode]]:
+         if wait_time > 0:
+             sleep(wait_time)
+         try:
+@@ -1040,8 +1079,76 @@ class Tree:
+                             window_name=window_name,
+                         ))
+ 
++            # CEF hosts (embedded Chromium that is not a browser: WeCom's OA
++            # webview, Electron-style apps) expose their web content only
++            # through the MSAA/IA2 tree served from the render-widget child
++            # HWND — the UIA walk above saw empty panes. Walk IA2 and merge,
++            # independent of use_dom, so a plain Snapshot shows the embedded
++            # web content. Chromium builds that tree lazily: the first query
++            # may return an empty document (it still acts as the door-knock
++            # that enables accessibility), so retry briefly before giving up.
++            if is_cef and not is_browser:
++                render_hwnd = _cef_render_child_hwnd(handle)
++                if render_hwnd:
++                    window_box = BoundingBox(
++                        left=window_bounding_box.left,
++                        top=window_bounding_box.top,
++                        right=window_bounding_box.right,
++                        bottom=window_bounding_box.bottom,
++                        width=window_bounding_box.width(),
++                        height=window_bounding_box.height(),
++                    )
++                    ia2_result = None
++                    for _attempt in range(3):
++                        ia2_result = ia2_traversal.traverse_window(
++                            hwnd=render_hwnd,
++                            window_name=window_name,
++                            window_bounding_box=window_box,
++                        )
++                        if ia2_result:
++                            break
++                        sleep(0.5)
++                    if ia2_result:
++                        remaining = self.element_budget.remaining
++                        capped_interactive = ia2_result.interactive_nodes[:remaining]
++                        remaining_after_interactive = max(0, remaining - len(capped_interactive))
++                        capped_informative = ia2_result.informative_nodes[:remaining_after_interactive]
++                        if (
++                            len(capped_interactive) < len(ia2_result.interactive_nodes)
++                            or len(capped_informative) < len(ia2_result.informative_nodes)
++                        ):
++                            self.element_budget.truncated = True
++                        self.element_budget.try_consume(len(capped_interactive) + len(capped_informative))
++                        dom_interactive_nodes.extend(capped_interactive)
++                        dom_informative_nodes.extend(capped_informative)
++                        if window_sem_node is not None:
++                            for n in capped_interactive:
++                                window_sem_node.add_child(SemanticNode(
++                                    control_type=n.control_type,
++                                    element_type='interactive',
++                                    name=n.name,
++                                    window_name=n.window_name,
++                                    center=n.center,
++                                    bounding_box=n.bounding_box,
++                                    metadata=dict(n.metadata),
++                                ))
++                            for text_node in capped_informative:
++                                if text_node.text:
++                                    window_sem_node.add_child(SemanticNode(
++                                        control_type='Text',
++                                        element_type='informative',
++                                        name=text_node.text,
++                                        window_name=window_name,
++                                    ))
++                        logger.info(
++                            "CEF IA2 merge for '%s' produced %d interactive / %d informative nodes",
++                            window_name,
++                            len(ia2_result.interactive_nodes),
++                            len(ia2_result.informative_nodes),
++                        )
++
+             if use_dom:
+-                if is_browser:
++                if is_browser or is_cef:
+                     return (dom_interactive_nodes, scrollable_nodes, dom_informative_nodes, window_sem_node)
+                 else:
+                     return ([], [], [], None)
+diff --git a/tests/test_tree_service.py b/tests/test_tree_service.py
+index 0c16735..8249bdd 100644
+--- a/tests/test_tree_service.py
++++ b/tests/test_tree_service.py
+@@ -377,7 +377,7 @@ class TestElementBudgetStopsTraversal:
+             lambda handle: MagicMock(ClassName="SomeWindow", Name="Some Window"),
+         )
+ 
+-        def fake_get_nodes(self, handle, is_browser=False, wait_time=0, use_dom=False):
++        def fake_get_nodes(self, handle, is_browser=False, wait_time=0, use_dom=False, is_cef=False):
+             calls.append(handle)
+             return ([], [], [], None)
+ 
+@@ -568,7 +568,7 @@ def _traversal_recorder(
+ 
+     traversed = []
+ 
+-    def fake_get_nodes(self, handle, is_browser=False, wait_time=0, use_dom=False):
++    def fake_get_nodes(self, handle, is_browser=False, wait_time=0, use_dom=False, is_cef=False):
+         traversed.append(handle)
+         return ([], [], [], None)
+ 
+@@ -752,7 +752,7 @@ class TestProcessExclusion:
+         # Retries sleep between attempts; irrelevant here and slow in a test.
+         monkeypatch.setattr("windows_mcp.tree.service.sleep", lambda seconds: None)
+ 
+-        def failing_get_nodes(self, handle, is_browser=False, wait_time=0, use_dom=False):
++        def failing_get_nodes(self, handle, is_browser=False, wait_time=0, use_dom=False, is_cef=False):
+             attempts.append(handle)
+             raise RuntimeError("provider unavailable")
+ 
+@@ -776,7 +776,7 @@ class TestProcessExclusion:
+             excluded="Code.exe",
+         )
+ 
+-        def budgeting_get_nodes(self, handle, is_browser=False, wait_time=0, use_dom=False):
++        def budgeting_get_nodes(self, handle, is_browser=False, wait_time=0, use_dom=False, is_cef=False):
+             traversed.append(handle)
+             self.element_budget.try_consume(1)
+             return ([], [], [], None)

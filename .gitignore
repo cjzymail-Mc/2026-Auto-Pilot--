@@ -1,0 +1,7 @@
+# 活体登录 token + 浏览器缓存（50MB）——绝不入库
+automation/.pw-profile/
+# 嵌套外部 repo（自有 .git）
+Windows-MCP/
+# Python
+__pycache__/
+*.pyc
