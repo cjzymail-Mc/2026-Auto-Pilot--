@@ -1,0 +1,12 @@
+handle=133590 max_depth=14 nodes=9 named=2
+control_type_histogram=[('PaneControl', 7), ('WindowControl', 1), ('DocumentControl', 1)]
+============================================================
+[WindowControl] name='企业微信' class='WeWorkWindow' aid='' rect=(0,0,1026,1160)
+  [PaneControl] name='' class='TitleBarWindow' aid='' rect=(0,0,1026,28)
+  [PaneControl] name='' class='PerryShadowWnd' aid='' rect=(-18,-18,1044,1178)
+  [PaneControl] name='企业微信-工作台' class='WXworkWindow - 企业微信-工作台' aid='' rect=(60,0,1026,1160)
+    [PaneControl] name='' class='WXWorkWebViewHostWindow' aid='' rect=(61,77,1025,1159)
+      [PaneControl] name='' class='CefBrowserWindow' aid='' rect=(61,77,1025,1159)
+        [PaneControl] name='' class='Chrome_WidgetWin_1' aid='' rect=(61,77,1025,1159)
+          [DocumentControl] name='' class='Chrome_RenderWidgetHostHWND' aid='28470096' rect=(61,77,1025,1159)
+          [PaneControl] name='' class='' aid='' rect=(61,77,1025,1159)

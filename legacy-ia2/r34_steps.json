@@ -1,0 +1,1 @@
+{"steps":[{"tool":"Shortcut","args":{"shortcut":"ESC"},"out":"r34_e1.txt"},{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"r34_a.txt"}]}

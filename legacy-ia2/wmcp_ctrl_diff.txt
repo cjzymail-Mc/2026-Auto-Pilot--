@@ -1,0 +1,856 @@
+=== ONLY BEFORE ===
+    Cursor Position: (1253, 277)
+    ├── window "企业微信"
+    │   ├── 窗格 "企业微信-工作台"
+    │   │   ├── (81,96) 链接 ""  [action: click]
+    │   │   ├── (981,96) 链接 "陈晶 "  [action: click]
+    │   │   ├── (85,130) 选项卡项目 "工作台"  [action: click]
+    │   │   ├── (134,130) 选项卡项目 "报销单"  [action: click]
+    │   │   ├── (204,130) 选项卡项目 "新增报销"  [action: click]
+    │   │   ├── 选项卡面板 "新增报销"
+    │   │   │   ├── (207,163) 按钮 "导入"  [action: click]
+    │   │   │   ├── (269,163) 按钮 "发票识别"  [action: click]
+    │   │   │   ├── (457,163) 按钮 "返回"  [action: click]
+    │   │   │   ├── (345,200) 编辑 "单据状态"  [action: click]  [value:"编制中"]
+    │   │   │   ├── (815,200) 编辑 "单据编号"  [action: click]
+    │   │   │   ├── (332,227) 编辑 " 申请人"  [action: click]  [value:"陈晶"]
+    │   │   │   ├── (517,227) 按钮 "选择组织"  [action: click]
+    │   │   │   ├── (815,227) 编辑 "申请日期"  [action: click]  [value:"2026-10-20"]
+    │   │   │   ├── (331,253) 编辑 " 职位"  [action: click]  [value:"高级经理"]
+    │   │   │   ├── (516,253) 按钮 "更多"  [action: click]
+    │   │   │   ├── (815,253) 编辑 " 工号"  [action: click]  [value:"116070053"]
+    │   │   │   ├── (331,279) 编辑 " 申请部门"  [action: click]  [value:"运动表现研究部"]
+    │   │   │   ├── (516,279) 按钮 "更多"  [action: click]
+    │   │   │   ├── (815,279) 编辑 "联系电话"  [action: click]  [value:"15980451184"]
+    │   │   │   ├── (517,305) 菜单项目 ""  [action: click]
+    │   │   │   ├── (987,305) 菜单项目 ""  [action: click]
+    │   │   │   ├── (987,332) 菜单项目 ""  [action: click]
+    │   │   │   ├── (517,361) 菜单项目 ""  [action: click]
+    │   │   │   ├── (987,361) 菜单项目 ""  [action: click]
+    │   │   │   ├── (345,388) 编辑 " 报销金额"  [action: click]
+    │   │   │   ├── (801,388) 编辑 "大写金额"  [action: click]
+    │   │   │   ├── (986,388) 按钮 "更多"  [action: click]
+    │   │   │   ├── (345,414) 编辑 "借款金额"  [action: click]
+    │   │   │   ├── (815,414) 编辑 "应退金额"  [action: click]
+    │   │   │   ├── (345,440) 编辑 "应付金额"  [action: click]
+    │   │   │   ├── (566,467) 编辑 " 备注"  [action: click]
+    │   │   │   ├── (986,467) 按钮 "更多"  [action: click]
+    │   │   │   ├── (82,510) 选项卡项目 ""  [action: click]
+    │   │   │   ├── (81,550) 链接 ""  [action: click]
+    │   │   │   ├── (156,549) 按钮 "新增"  [action: click]
+    │   │   │   ├── (994,549) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,609) 链接 ""  [action: click]
+    │   │   │   ├── (994,608) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (93,672) 按钮 "全选"  [action: click]
+    │   │   │   ├── (142,672) 按钮 "反选"  [action: click]
+    │   │   │   ├── (472,671) 链接 ""  [action: click]
+    │   │   │   ├── (502,671) 链接 ""  [action: click]
+    │   │   │   ├── (533,671) 链接 "1"  [action: click]
+    │   │   │   ├── (564,671) 链接 ""  [action: click]
+    │   │   │   ├── (594,671) 链接 ""  [action: click]
+    │   │   │   ├── (993,671) 菜单项目 ""  [action: click]
+    │   │   │   ├── (81,708) 链接 ""  [action: click]
+    │   │   │   ├── (156,707) 按钮 "新增"  [action: click]
+    │   │   │   ├── (994,707) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,779) 链接 ""  [action: click]
+    │   │   │   ├── (156,778) 按钮 "新增"  [action: click]
+    │   │   │   ├── (994,778) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,844) 链接 ""  [action: click]
+    │   │   │   ├── (156,843) 按钮 "新增"  [action: click]
+    │   │   │   ├── (994,843) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,903) 链接 ""  [action: click]
+    │   │   │   ├── (156,902) 按钮 "新增"  [action: click]
+    │   │   │   ├── (234,902) 按钮 "历史记录"  [action: click]
+    │   │   │   ├── (994,902) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,974) 链接 ""  [action: click]
+    │   │   │   ├── (156,973) 按钮 "查看流程"  [action: click]
+    │   │   │   ├── (994,973) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,1033) 链接 ""  [action: click]
+    │   │   │   ├── (156,1032) 按钮 "添加附件"  [action: click]
+    │   │   │   ├── (338,1032) 按钮 "重新识别"  [action: click]
+    │   │   │   └── (994,1032) 按钮 "自动换行"  [action: click]
+    │   │   └── (543,618) 文档 "新增报销"  [action: click]  [focused]  [value:"https://bpm.qiaodan.com/oa/reimburse?type=new&t=1792463116991"]
+    │   ├── (81,96) link ""  [action: click]
+    │   ├── (981,96) link "陈晶 "  [action: click]
+    │   ├── (85,130) tab "工作台"  [action: click]
+    │   ├── (134,130) tab "报销单"  [action: click]
+    │   ├── (204,130) tab "新增报销"  [action: click]
+    │   ├── (89,163) button "保存"  [action: click]
+    │   ├── (145,163) button "商旅订单"  [action: click]
+    │   ├── (207,163) button "导入"  [action: click]
+    │   ├── (269,163) button "发票识别"  [action: click]
+    │   ├── (325,163) button "发送"  [action: click]
+    │   ├── (369,163) button "流转"  [action: click]
+    │   ├── (413,163) button "终止"  [action: click]
+    │   ├── (457,163) button "返回"  [action: click]
+    │   ├── (517,227) button "选择组织"  [action: click]
+    │   ├── (516,253) button "更多"  [action: click]
+    │   ├── (516,279) button "更多"  [action: click]
+    │   ├── (986,388) button "更多"  [action: click]
+    │   ├── (986,467) button "更多"  [action: click]
+    │   ├── (82,510) tab ""  [action: click]
+    │   ├── (81,550) link ""  [action: click]
+    │   ├── (156,549) button "新增"  [action: click]
+    │   ├── (182,549) button "插入"  [action: click]
+    │   ├── (208,549) button "删除"  [action: click]
+    │   ├── (994,549) button "自动换行"  [action: click]
+    │   ├── (81,609) link ""  [action: click]
+    │   ├── (180,608) button "复制"  [action: click]
+    │   ├── (206,608) button "删除"  [action: click]
+    │   ├── (232,608) button "复制金额到本次报销金额"  [action: click]
+    │   ├── (994,608) button "自动换行"  [action: click]
+    │   ├── (77,632) check box "check box"  [action: toggle]
+    │   ├── (93,672) button "全选"  [action: click]
+    │   ├── (142,672) button "反选"  [action: click]
+    │   ├── (472,671) link ""  [action: click]
+    │   ├── (502,671) link ""  [action: click]
+    │   ├── (533,671) link "1"  [action: click]
+    │   ├── (564,671) link ""  [action: click]
+    │   ├── (594,671) link ""  [action: click]
+    │   ├── (81,708) link ""  [action: click]
+    │   ├── (156,707) button "新增"  [action: click]
+    │   ├── (182,707) button "插入"  [action: click]
+    │   ├── (208,707) button "复制"  [action: click]
+    │   ├── (234,707) button "删除"  [action: click]
+    │   ├── (260,707) button "向下填充选中单元格数据"  [action: click]
+    │   ├── (994,707) button "自动换行"  [action: click]
+    │   ├── (81,779) link ""  [action: click]
+    │   ├── (156,778) button "新增"  [action: click]
+    │   ├── (182,778) button "插入"  [action: click]
+    │   ├── (208,778) button "复制"  [action: click]
+    │   ├── (234,778) button "删除"  [action: click]
+    │   ├── (994,778) button "自动换行"  [action: click]
+    │   ├── (81,844) link ""  [action: click]
+    │   ├── (156,843) button "新增"  [action: click]
+    │   ├── (182,843) button "插入"  [action: click]
+    │   ├── (208,843) button "删除"  [action: click]
+    │   ├── (994,843) button "自动换行"  [action: click]
+    │   ├── (81,903) link ""  [action: click]
+    │   ├── (156,902) button "新增"  [action: click]
+    │   ├── (182,902) button "插入"  [action: click]
+    │   ├── (208,902) button "删除"  [action: click]
+    │   ├── (234,902) button "历史记录"  [action: click]
+    │   ├── (994,902) button "自动换行"  [action: click]
+    │   ├── (81,974) link ""  [action: click]
+    │   ├── (156,973) button "查看流程"  [action: click]
+    │   ├── (994,973) button "自动换行"  [action: click]
+    │   ├── (81,1033) link ""  [action: click]
+    │   ├── (156,1032) button "添加附件"  [action: click]
+    │   ├── (182,1032) button "上传"  [action: click]
+    │   ├── (208,1032) button "修改信息"  [action: click]
+    │   ├── (234,1032) button "下载"  [action: click]
+    │   ├── (260,1032) button "预览"  [action: click]
+    │   ├── (286,1032) button "预览全部"  [action: click]
+    │   ├── (312,1032) button "删除"  [action: click]
+    │   ├── (338,1032) button "重新识别"  [action: click]
+    │   ├── (994,1032) button "自动换行"  [action: click]
+    │   ├── text ""
+    │   ├── text "今天是您加入中乔体育大家庭第"
+    │   ├── text "3740"
+    │   ├── text "天"
+    │   ├── text "陈晶"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "单据状态"
+    │   ├── text "单据状态"
+    │   ├── text "单据编号"
+    │   ├── text "单据编号"
+    │   ├── text ""
+    │   ├── text "申请人"
+    │   ├── text " 申请人"
+    │   ├── text "申请日期"
+    │   ├── text "申请日期"
+    │   ├── text ""
+    │   ├── text "职位"
+    │   ├── text " 职位"
+    │   ├── text ""
+    │   ├── text "工号"
+    │   ├── text " 工号"
+    │   ├── text ""
+    │   ├── text "申请部门"
+    │   ├── text " 申请部门"
+    │   ├── text "联系电话"
+    │   ├── text "联系电话"
+    │   ├── text ""
+    │   ├── text "公司"
+    │   ├── text "厦门乔丹科技有限公司"
+    │   ├── text ""
+    │   ├── text "流程归属"
+    │   ├── text "乔丹科技"
+    │   ├── text "预算年度"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "报销方式"
+    │   ├── text ""
+    │   ├── text "币种"
+    │   ├── text "人民币"
+    │   ├── text ""
+    │   ├── text "报销类别"
+    │   ├── text ""
+    │   ├── text "报销金额"
+    │   ├── text " 报销金额"
+    │   ├── text "大写金额"
+    │   ├── text "大写金额"
+    │   ├── text "借款金额"
+    │   ├── text "借款金额"
+    │   ├── text "应退金额"
+    │   ├── text "应退金额"
+    │   ├── text "应付金额"
+    │   ├── text "应付金额"
+    │   ├── text ""
+    │   ├── text "备注"
+    │   ├── text " 备注"
+    │   ├── text "基础信息"
+    │   ├── text ""
+    │   ├── text "关联单据"
+    │   ├── text "序号"
+    │   ├── text "单据类型"
+    │   ├── text "单据号"
+    │   ├── text "单据金额"
+    │   ├── text "已报销(含审批中)"
+    │   ├── text "本次报销"
+    │   ├── text "是否为最后一次"
+    │   ├── text "备注"
+    │   ├── text ""
+    │   ├── text "关联单据明细"
+    │   ├── text "序号"
+    │   ├── text "单据类型"
+    │   ├── text "单据号"
+    │   ├── text "摘要"
+    │   ├── text "金额"
+    │   ├── text "数量"
+    │   ├── text "已报销(含审批中)"
+    │   ├── text "本次报销"
+    │   ├── text "备注"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "1"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "共 0 条"
+    │   ├── text "20"
+    │   ├── text ""
+    │   ├── text "报销明细"
+    │   ├── text "序号"
+    │   ├── text "报销项目"
+    │   ├── text "摘要"
+    │   ├── text "预算部门"
+    │   ├── text "预算单"
+    │   ├── text "预算归属"
+    │   ├── text "预算科目"
+    │   ├── text "预算项目"
+    │   ├── text "科目总额"
+    │   ├── text ""
+    │   ├── text "费用说明"
+    │   ├── text "序号"
+    │   ├── text "费用类型"
+    │   ├── text "开始日期"
+    │   ├── text "结束日期"
+    │   ├── text "地点"
+    │   ├── text "次数/天"
+    │   ├── text "金额"
+    │   ├── text "项目说明"
+    │   ├── text ""
+    │   ├── text "银行信息"
+    │   ├── text "序号"
+    │   ├── text "收款人"
+    │   ├── text "账号"
+    │   ├── text "开户行"
+    │   ├── text "联行号"
+    │   ├── text "转账金额"
+    │   ├── text "备注"
+    │   ├── text ""
+    │   ├── text "确认人"
+    │   ├── text "序号"
+    │   ├── text "姓名"
+    │   ├── text "部门"
+    │   ├── text "职位"
+    │   ├── text "确认"
+    │   ├── text "确认时间"
+    │   ├── text "确认意见"
+    │   ├── text "发送时间"
+    │   ├── text "发送人"
+    │   ├── text "备注"
+    │   ├── text ""
+    │   ├── text "审批记录"
+    │   ├── text "序号"
+    │   ├── text "审批人"
+    │   ├── text "部门"
+    │   ├── text "职位"
+    │   ├── text "接收日期"
+    │   ├── text "审批日期"
+    │   ├── text "审批结论"
+    │   ├── text "审批意见"
+    │   ├── text ""
+    │   ├── text "附件"
+    │   ├── text "发票文件的大小不得超过10MB，否则无法识别。"
+    │   ├── text "序号"
+    │   ├── text "状态"
+    │   ├── text "类型"
+    │   ├── text "文件名"
+    │   ├── text "大小"
+    │   ├── text "提交人"
+    │   ├── text "上传时间"
+    │   ├── text "备注"
+    │   ├── text "icon. 要获取缺失的图片说明，请打开上下文菜单。"
+    │   └── text "欢迎使用中乔协同办公！V2610151839"
+    ├── window ""
+    ├── window "WeMail"
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window "Microsoft Text Input Application"
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window "任务栏"
+    │   └── 窗格 "任务栏"
+    │       ├── (24,1180) 按钮 "开始"  [action: click]
+    │       ├── 工具栏 "运行中的应用程序"
+    │       │   ├── (75,1180) 按钮 "PowerShell 7 (x64)"  [action: click]
+    │       │   ├── (124,1180) 按钮 "命令提示符 - 1 个运行窗口"  [action: click]
+    │       │   ├── (173,1180) 按钮 "启动有道云笔记"  [action: click]
+    │       │   ├── (222,1180) 按钮 "Google Chrome"  [action: click]
+    │       │   ├── (271,1180) 按钮 "Microsoft Edge"  [action: click]
+    │       │   ├── (320,1180) 按钮 "Clash Verge"  [action: click]
+    │       │   ├── (369,1180) 按钮 "文件资源管理器 - 1 个运行窗口"  [action: click]
+    │       │   ├── (418,1180) 按钮 "企业微信 - 1 个运行窗口"  [action: click]
+    │       │   ├── (467,1180) 按钮 "终端 - 1 个运行窗口"  [action: click]
+    │       │   ├── (516,1180) 按钮 "Python - 1 个运行窗口"  [action: click]
+    │       │   ├── (565,1180) 菜单项目 "Git Bash - 4 个运行窗口"  [action: click]
+    │       │   └── (614,1180) 按钮 "Visual Studio Code - 1 个运行窗口"  [action: click]
+    │       ├── (1664,1180) 按钮 "通知 V 形"  [action: click]
+    │       ├── 工具栏 "用户提示通知区域"
+    │       │   ├── (1688,1180) 按钮 "Clash Verge 2.5.2
+系统代理: on
+TUN: off
+订阅: Mc-VIP"  [action: click]
+    │       │   ├── (1712,1180) 按钮 "企业微信: 陈晶"  [action: click]
+    │       │   ├── (1736,1180) 按钮 "用户名称：User17921 
+终端编号：17921 
+终端版本：7.51.260318.SC 正式版"  [action: click]
+    │       │   └── (1760,1180) 按钮 "扬声器: 静音"  [action: click]
+    │       ├── 窗格 "任务栏输入指示"
+    │       │   └── (1783,1180) 按钮 "输入法模式图标 - 英语模式
+单击右键以查看更多选项"  [action: click]
+    │       ├── (1830,1180) 按钮 "系统时钟, 12:21, ‎2026/‎10/‎20"  [action: click]
+    │       ├── (1891,1180) 按钮 "操作中心，2 个新通知"  [action: click]
+    │       └── (1917,1180) 按钮 "显示桌面"  [action: click]
+    ├── window ""
+    └── window ""
+
+=== ONLY AFTER ===
+    Cursor Position: (134, 130)
+    └── window "企业微信"
+        ├── 窗格 "企业微信-工作台"
+        │   ├── (81,96) 链接 ""  [action: click]
+        │   ├── (981,96) 链接 "陈晶 "  [action: click]
+        │   ├── (85,130) 选项卡项目 "工作台"  [action: click]
+        │   ├── (134,130) 选项卡项目 "报销单"  [action: click]
+        │   ├── (204,130) 选项卡项目 "新增报销"  [action: click]
+        │   ├── 选项卡面板 "报销单"
+        │   │   ├── (89,163) 按钮 "查询"  [action: click]
+        │   │   ├── (133,163) 按钮 "添加新项"  [action: click]
+        │   │   ├── (397,163) 按钮 "导出"  [action: click]
+        │   │   ├── (459,163) 按钮 "导入模板"  [action: click]
+        │   │   ├── (521,163) 按钮 "返回"  [action: click]
+        │   │   ├── (82,200) 选项卡项目 ""  [action: click]
+        │   │   ├── 区域 "查询条件 "
+        │   │   │   ├── (804,231) 编辑 "单据编号"  [action: click]
+        │   │   │   ├── (317,257) 编辑 "制单人"  [action: click]  [value:"陈晶"]
+        │   │   │   ├── (507,257) 按钮 "选择组织"  [action: click]
+        │   │   │   ├── (792,284) 编辑 "申请部门"  [action: click]
+        │   │   │   ├── (982,284) 按钮 "选择组织"  [action: click]
+        │   │   │   ├── (792,310) 编辑 "申请人"  [action: click]
+        │   │   │   ├── (982,310) 按钮 "选择组织"  [action: click]
+        │   │   │   ├── (329,337) 编辑 "申请人职位"  [action: click]
+        │   │   │   ├── (329,390) 编辑 "结束人员"  [action: click]
+        │   │   │   ├── (804,390) 编辑 "业务终审人"  [action: click]
+        │   │   │   ├── (804,416) 编辑 "备注"  [action: click]
+        │   │   │   └── (231,442) 沙网 "报销总金额"  [action: click]
+        │   │   ├── (82,483) 选项卡项目 ""  [action: click]
+        │   │   ├── 区域 "明细查询条件 "
+        │   │   │   ├── (329,514) 编辑 "收款人"  [action: click]
+        │   │   │   ├── (804,514) 编辑 "预算部门"  [action: click]
+        │   │   │   ├── (329,540) 编辑 "摘要"  [action: click]
+        │   │   │   ├── (804,540) 编辑 "备注"  [action: click]
+        │   │   │   ├── (231,566) 沙网 "金额"  [action: click]
+        │   │   │   └── (804,567) 编辑 "关联单号"  [action: click]
+        │   │   ├── (85,630) 项 "1"  [action: click]
+        │   │   ├── (133,630) 项 "结束"  [action: click]
+        │   │   ├── (208,630) 项 "15426095951"  [action: click]
+        │   │   ├── (283,630) 项 "陈晶"  [action: click]
+        │   │   ├── (349,630) 项 "2026-09-30"  [action: click]
+        │   │   ├── (470,630) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,630) 项 "高级经理 更多操作"  [action: click]
+        │   │   ├── (590,630) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,630) 项 "运动表现研究部 更多操作"  [action: click]
+        │   │   ├── (661,630) 项 "厦门乔丹科技有限公司"  [action: click]
+        │   │   ├── (771,630) 项 "2026"  [action: click]
+        │   │   ├── (851,630) 项 "转账"  [action: click]
+        │   │   ├── (953,630) 项 "差旅费"  [action: click]
+        │   │   ├── (85,655) 项 "2"  [action: click]
+        │   │   ├── (133,655) 项 "结束"  [action: click]
+        │   │   ├── (208,655) 项 "15425123390"  [action: click]
+        │   │   ├── (283,655) 项 "陈晶"  [action: click]
+        │   │   ├── (349,655) 项 "2025-12-15"  [action: click]
+        │   │   ├── (470,655) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,655) 项 "高级经理 更多操作"  [action: click]
+        │   │   ├── (590,655) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,655) 项 "运动表现研究部 更多操作"  [action: click]
+        │   │   ├── (661,655) 项 "厦门乔丹科技有限公司"  [action: click]
+        │   │   ├── (771,655) 项 "2025"  [action: click]
+        │   │   ├── (851,655) 项 "转账"  [action: click]
+        │   │   ├── (953,655) 项 "差旅费"  [action: click]
+        │   │   ├── (85,680) 项 "3"  [action: click]
+        │   │   ├── (133,680) 项 "结束"  [action: click]
+        │   │   ├── (208,680) 项 "15425084773"  [action: click]
+        │   │   ├── (283,680) 项 "陈晶"  [action: click]
+        │   │   ├── (349,680) 项 "2025-08-26"  [action: click]
+        │   │   ├── (470,680) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,680) 项 "经理 更多操作"  [action: click]
+        │   │   ├── (590,680) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,680) 项 "运动表现研究部 更多操作"  [action: click]
+        │   │   ├── (661,680) 项 "厦门乔丹科技有限公司"  [action: click]
+        │   │   ├── (771,680) 项 "2025"  [action: click]
+        │   │   ├── (851,680) 项 "转账"  [action: click]
+        │   │   ├── (953,680) 项 "差旅费"  [action: click]
+        │   │   ├── (85,705) 项 "4"  [action: click]
+        │   │   ├── (133,705) 项 "结束"  [action: click]
+        │   │   ├── (208,705) 项 "CWBX2018060014"  [action: click]
+        │   │   ├── (283,705) 项 "陈晶"  [action: click]
+        │   │   ├── (349,705) 项 "2018-06-13"  [action: click]
+        │   │   ├── (470,705) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,705) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,705) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,705) 项 "运动表现研究部 更多操作"  [action: click]
+        │   │   ├── (851,705) 项 "现金"  [action: click]
+        │   │   ├── (953,705) 项 "差旅费"  [action: click]
+        │   │   ├── (85,730) 项 "5"  [action: click]
+        │   │   ├── (133,730) 项 "结束"  [action: click]
+        │   │   ├── (208,730) 项 "SCCWBX2017110011"  [action: click]
+        │   │   ├── (283,730) 项 "陈晶"  [action: click]
+        │   │   ├── (349,730) 项 "2017-11-13"  [action: click]
+        │   │   ├── (470,730) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,730) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,730) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,730) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,730) 项 "现金"  [action: click]
+        │   │   ├── (953,730) 项 "设计费用"  [action: click]
+        │   │   ├── (85,755) 项 "6"  [action: click]
+        │   │   ├── (133,755) 项 "结束"  [action: click]
+        │   │   ├── (208,755) 项 "SCCWBX2017052665"  [action: click]
+        │   │   ├── (283,755) 项 "陈晶"  [action: click]
+        │   │   ├── (349,755) 项 "2017-05-17"  [action: click]
+        │   │   ├── (470,755) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,755) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,755) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,755) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,755) 项 "现金"  [action: click]
+        │   │   ├── (953,755) 项 "研发材料费"  [action: click]
+        │   │   ├── (85,780) 项 "7"  [action: click]
+        │   │   ├── (133,780) 项 "结束"  [action: click]
+        │   │   ├── (208,780) 项 "SCCWBX2017052654"  [action: click]
+        │   │   ├── (283,780) 项 "陈晶"  [action: click]
+        │   │   ├── (349,780) 项 "2017-05-03"  [action: click]
+        │   │   ├── (470,780) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,780) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,780) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,780) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,780) 项 "现金"  [action: click]
+        │   │   ├── (953,780) 项 "设计费用"  [action: click]
+        │   │   ├── (85,805) 项 "8"  [action: click]
+        │   │   ├── (133,805) 项 "结束"  [action: click]
+        │   │   ├── (208,805) 项 "SCCWBX2017042644"  [action: click]
+        │   │   ├── (283,805) 项 "陈晶"  [action: click]
+        │   │   ├── (349,805) 项 "2017-04-24"  [action: click]
+        │   │   ├── (470,805) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,805) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,805) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,805) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,805) 项 "现金"  [action: click]
+        │   │   ├── (953,805) 项 "差旅费"  [action: click]
+        │   │   ├── (85,830) 项 "9"  [action: click]
+        │   │   ├── (133,830) 项 "结束"  [action: click]
+        │   │   ├── (208,830) 项 "SCCWBX2017042643"  [action: click]
+        │   │   ├── (283,830) 项 "陈晶"  [action: click]
+        │   │   ├── (349,830) 项 "2017-04-24"  [action: click]
+        │   │   ├── (470,830) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,830) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,830) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,830) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,830) 项 "现金"  [action: click]
+        │   │   ├── (953,830) 项 "研发材料费"  [action: click]
+        │   │   ├── (85,855) 项 "10"  [action: click]
+        │   │   ├── (133,855) 项 "结束"  [action: click]
+        │   │   ├── (208,855) 项 "SCCWBX2017032621"  [action: click]
+        │   │   ├── (283,855) 项 "陈晶"  [action: click]
+        │   │   ├── (349,855) 项 "2017-03-27"  [action: click]
+        │   │   ├── (470,855) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,855) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,855) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,855) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,855) 项 "现金"  [action: click]
+        │   │   ├── (953,855) 项 "差旅费"  [action: click]
+        │   │   ├── (85,880) 项 "11"  [action: click]
+        │   │   ├── (133,880) 项 "结束"  [action: click]
+        │   │   ├── (208,880) 项 "SCCWBX2017032609"  [action: click]
+        │   │   ├── (283,880) 项 "陈晶"  [action: click]
+        │   │   ├── (349,880) 项 "2017-03-17"  [action: click]
+        │   │   ├── (470,880) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,880) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,880) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,880) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,880) 项 "现金"  [action: click]
+        │   │   ├── (953,880) 项 "研发材料费"  [action: click]
+        │   │   ├── (85,905) 项 "12"  [action: click]
+        │   │   ├── (133,905) 项 "结束"  [action: click]
+        │   │   ├── (208,905) 项 "SCCWBX2017032598"  [action: click]
+        │   │   ├── (283,905) 项 "陈晶"  [action: click]
+        │   │   ├── (349,905) 项 "2017-03-03"  [action: click]
+        │   │   ├── (470,905) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,905) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,905) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,905) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,905) 项 "现金"  [action: click]
+        │   │   ├── (953,905) 项 "差旅费"  [action: click]
+        │   │   ├── (85,930) 项 "13"  [action: click]
+        │   │   ├── (133,930) 项 "结束"  [action: click]
+        │   │   ├── (208,930) 项 "SCCWBX2016122554"  [action: click]
+        │   │   ├── (283,930) 项 "陈晶"  [action: click]
+        │   │   ├── (349,930) 项 "2016-12-30"  [action: click]
+        │   │   ├── (470,930) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,930) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,930) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,930) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,930) 项 "现金"  [action: click]
+        │   │   ├── (953,930) 项 "研发材料费"  [action: click]
+        │   │   ├── (85,955) 项 "14"  [action: click]
+        │   │   ├── (133,955) 项 "结束"  [action: click]
+        │   │   ├── (208,955) 项 "SCCWBX2016112492"  [action: click]
+        │   │   ├── (283,955) 项 "陈晶"  [action: click]
+        │   │   ├── (349,955) 项 "2016-11-02"  [action: click]
+        │   │   ├── (470,955) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,955) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,955) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,955) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,955) 项 "现金"  [action: click]
+        │   │   ├── (953,955) 项 "差旅费"  [action: click]
+        │   │   ├── (85,980) 项 "15"  [action: click]
+        │   │   ├── (133,980) 项 "结束"  [action: click]
+        │   │   ├── (208,980) 项 "SCCWBX2016112490"  [action: click]
+        │   │   ├── (283,980) 项 "陈晶"  [action: click]
+        │   │   ├── (349,980) 项 "2016-11-01"  [action: click]
+        │   │   ├── (470,980) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,980) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,980) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,980) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,980) 项 "现金"  [action: click]
+        │   │   ├── (953,980) 项 "研发材料费"  [action: click]
+        │   │   ├── (85,1005) 项 "16"  [action: click]
+        │   │   ├── (133,1005) 项 "结束"  [action: click]
+        │   │   ├── (208,1005) 项 "SCCWBX2016082442"  [action: click]
+        │   │   ├── (283,1005) 项 "陈晶"  [action: click]
+        │   │   ├── (349,1005) 项 "2016-08-15"  [action: click]
+        │   │   ├── (470,1005) 按钮 "更多操作"  [action: click]
+        │   │   ├── (433,1005) 项 "高级研究员 更多操作"  [action: click]
+        │   │   ├── (590,1005) 按钮 "更多操作"  [action: click]
+        │   │   ├── (541,1005) 项 "科技中心 更多操作"  [action: click]
+        │   │   ├── (851,1005) 项 "现金"  [action: click]
+        │   │   ├── (953,1005) 项 "差旅费"  [action: click]
+        │   │   ├── (420,1045) 链接 ""  [action: click]
+        │   │   ├── (450,1045) 链接 ""  [action: click]
+        │   │   ├── (481,1045) 链接 "1"  [action: click]
+        │   │   ├── (512,1045) 链接 ""  [action: click]
+        │   │   ├── (542,1045) 链接 ""  [action: click]
+        │   │   └── (993,1045) 菜单项目 ""  [action: click]
+        │   └── (543,618) 文档 "报销单"  [action: click]  [value:"https://bpm.qiaodan.com/oa/reimburses"]
+        ├── (81,96) link ""  [action: click]
+        ├── (981,96) link "陈晶 "  [action: click]
+        ├── (85,130) tab "工作台"  [action: click]
+        ├── (134,130) tab "报销单"  [action: click]
+        ├── (204,130) tab "新增报销"  [action: click]
+        ├── (89,163) button "查询"  [action: click]
+        ├── (133,163) button "添加新项"  [action: click]
+        ├── (177,163) button "修改所选项"  [action: click]
+        ├── (221,163) button "删除"  [action: click]
+        ├── (265,163) button "查看"  [action: click]
+        ├── (309,163) button "复制"  [action: click]
+        ├── (353,163) button "流程"  [action: click]
+        ├── (397,163) button "导出"  [action: click]
+        ├── (459,163) button "导入模板"  [action: click]
+        ├── (521,163) button "返回"  [action: click]
+        ├── (82,200) tab ""  [action: click]
+        ├── (507,257) button "选择组织"  [action: click]
+        ├── (982,284) button "选择组织"  [action: click]
+        ├── (982,310) button "选择组织"  [action: click]
+        ├── (82,483) tab ""  [action: click]
+        ├── (470,630) button "更多操作"  [action: click]
+        ├── (590,630) button "更多操作"  [action: click]
+        ├── (470,655) button "更多操作"  [action: click]
+        ├── (590,655) button "更多操作"  [action: click]
+        ├── (470,680) button "更多操作"  [action: click]
+        ├── (590,680) button "更多操作"  [action: click]
+        ├── (470,705) button "更多操作"  [action: click]
+        ├── (590,705) button "更多操作"  [action: click]
+        ├── (470,730) button "更多操作"  [action: click]
+        ├── (590,730) button "更多操作"  [action: click]
+        ├── (470,755) button "更多操作"  [action: click]
+        ├── (590,755) button "更多操作"  [action: click]
+        ├── (470,780) button "更多操作"  [action: click]
+        ├── (590,780) button "更多操作"  [action: click]
+        ├── (470,805) button "更多操作"  [action: click]
+        ├── (590,805) button "更多操作"  [action: click]
+        ├── (470,830) button "更多操作"  [action: click]
+        ├── (590,830) button "更多操作"  [action: click]
+        ├── (470,855) button "更多操作"  [action: click]
+        ├── (590,855) button "更多操作"  [action: click]
+        ├── (470,880) button "更多操作"  [action: click]
+        ├── (590,880) button "更多操作"  [action: click]
+        ├── (470,905) button "更多操作"  [action: click]
+        ├── (590,905) button "更多操作"  [action: click]
+        ├── (470,930) button "更多操作"  [action: click]
+        ├── (590,930) button "更多操作"  [action: click]
+        ├── (470,955) button "更多操作"  [action: click]
+        ├── (590,955) button "更多操作"  [action: click]
+        ├── (470,980) button "更多操作"  [action: click]
+        ├── (590,980) button "更多操作"  [action: click]
+        ├── (470,1005) button "更多操作"  [action: click]
+        ├── (590,1005) button "更多操作"  [action: click]
+        ├── (420,1045) link ""  [action: click]
+        ├── (450,1045) link ""  [action: click]
+        ├── (481,1045) link "1"  [action: click]
+        ├── (512,1045) link ""  [action: click]
+        ├── (542,1045) link ""  [action: click]
+        ├── text ""
+        ├── text "今天是您加入中乔体育大家庭第"
+        ├── text "3740"
+        ├── text "天"
+        ├── text "陈晶"
+        ├── text ""
+        ├── text ""
+        ├── text ""
+        ├── text "查询条件"
+        ├── text "单据状态"
+        ├── text ""
+        ├── text "单据编号"
+        ├── text "单据编号"
+        ├── text "制单人"
+        ├── text "制单人"
+        ├── text "制单日期"
+        ├── text "-"
+        ├── text "公司"
+        ├── text ""
+        ├── text "申请部门"
+        ├── text "申请部门"
+        ├── text "申请日期"
+        ├── text "-"
+        ├── text "申请人"
+        ├── text "申请人"
+        ├── text "申请人职位"
+        ├── text "申请人职位"
+        ├── text "报销方式"
+        ├── text ""
+        ├── text "报销类别"
+        ├── text ""
+        ├── text "结束日期"
+        ├── text "-"
+        ├── text "结束人员"
+        ├── text "结束人员"
+        ├── text "业务终审人"
+        ├── text "业务终审人"
+        ├── text "币种"
+        ├── text ""
+        ├── text "备注"
+        ├── text "备注"
+        ├── text "报销总金额"
+        ├── text "-"
+        ├── text "明细查询条件"
+        ├── text "收款人"
+        ├── text "收款人"
+        ├── text "预算部门"
+        ├── text "预算部门"
+        ├── text "摘要"
+        ├── text "摘要"
+        ├── text "备注"
+        ├── text "备注"
+        ├── text "金额"
+        ├── text "-"
+        ├── text "关联单号"
+        ├── text "关联单号"
+        ├── text "序号"
+        ├── text "单据状态"
+        ├── text "单据编号"
+        ├── text "申请人"
+        ├── text "申请日期"
+        ├── text "职位"
+        ├── text "申请部门"
+        ├── text "公司"
+        ├── text "预算年度"
+        ├── text "报销方式"
+        ├── text "报销类别"
+        ├── text "1"
+        ├── text "结束"
+        ├── text "15426095951"
+        ├── text "陈晶"
+        ├── text "2026-09-30"
+        ├── text "高级经理"
+        ├── text "运动表现研究部"
+        ├── text "厦门乔丹科技有限公司"
+        ├── text "2026"
+        ├── text "转账"
+        ├── text "差旅费"
+        ├── text "2"
+        ├── text "结束"
+        ├── text "15425123390"
+        ├── text "陈晶"
+        ├── text "2025-12-15"
+        ├── text "高级经理"
+        ├── text "运动表现研究部"
+        ├── text "厦门乔丹科技有限公司"
+        ├── text "2025"
+        ├── text "转账"
+        ├── text "差旅费"
+        ├── text "3"
+        ├── text "结束"
+        ├── text "15425084773"
+        ├── text "陈晶"
+        ├── text "2025-08-26"
+        ├── text "经理"
+        ├── text "运动表现研究部"
+        ├── text "厦门乔丹科技有限公司"
+        ├── text "2025"
+        ├── text "转账"
+        ├── text "差旅费"
+        ├── text "4"
+        ├── text "结束"
+        ├── text "CWBX2018060014"
+        ├── text "陈晶"
+        ├── text "2018-06-13"
+        ├── text "高级研究员"
+        ├── text "运动表现研究部"
+        ├── text "现金"
+        ├── text "差旅费"
+        ├── text "5"
+        ├── text "结束"
+        ├── text "SCCWBX2017110011"
+        ├── text "陈晶"
+        ├── text "2017-11-13"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "设计费用"
+        ├── text "6"
+        ├── text "结束"
+        ├── text "SCCWBX2017052665"
+        ├── text "陈晶"
+        ├── text "2017-05-17"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "研发材料费"
+        ├── text "7"
+        ├── text "结束"
+        ├── text "SCCWBX2017052654"
+        ├── text "陈晶"
+        ├── text "2017-05-03"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "设计费用"
+        ├── text "8"
+        ├── text "结束"
+        ├── text "SCCWBX2017042644"
+        ├── text "陈晶"
+        ├── text "2017-04-24"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "差旅费"
+        ├── text "9"
+        ├── text "结束"
+        ├── text "SCCWBX2017042643"
+        ├── text "陈晶"
+        ├── text "2017-04-24"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "研发材料费"
+        ├── text "10"
+        ├── text "结束"
+        ├── text "SCCWBX2017032621"
+        ├── text "陈晶"
+        ├── text "2017-03-27"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "差旅费"
+        ├── text "11"
+        ├── text "结束"
+        ├── text "SCCWBX2017032609"
+        ├── text "陈晶"
+        ├── text "2017-03-17"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "研发材料费"
+        ├── text "12"
+        ├── text "结束"
+        ├── text "SCCWBX2017032598"
+        ├── text "陈晶"
+        ├── text "2017-03-03"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "差旅费"
+        ├── text "13"
+        ├── text "结束"
+        ├── text "SCCWBX2016122554"
+        ├── text "陈晶"
+        ├── text "2016-12-30"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "研发材料费"
+        ├── text "14"
+        ├── text "结束"
+        ├── text "SCCWBX2016112492"
+        ├── text "陈晶"
+        ├── text "2016-11-02"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "差旅费"
+        ├── text "15"
+        ├── text "结束"
+        ├── text "SCCWBX2016112490"
+        ├── text "陈晶"
+        ├── text "2016-11-01"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "研发材料费"
+        ├── text "16"
+        ├── text "结束"
+        ├── text "SCCWBX2016082442"
+        ├── text "陈晶"
+        ├── text "2016-08-15"
+        ├── text "高级研究员"
+        ├── text "科技中心"
+        ├── text "现金"
+        ├── text "差旅费"
+        ├── text ""
+        ├── text ""
+        ├── text "1"
+        ├── text ""
+        ├── text ""
+        ├── text "共 16 条"
+        └── text "20"
+... [truncated: reached the 500-element capture limit — some elements were not visited. Narrow the view (filter by window, scroll to the area of interest, use_dom=True for a browser page) or raise WINDOWS_MCP_MAX_TREE_ELEMENTS for a complete tree.]

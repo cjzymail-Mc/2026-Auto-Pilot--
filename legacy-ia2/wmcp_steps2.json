@@ -1,0 +1,8 @@
+{
+  "steps": [
+    {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "wmcp_ctrl_before.txt"},
+    {"tool": "Click", "args": {"loc": [134, 130], "button": "left", "clicks": 1}, "out": "wmcp_ctrl_click.txt"},
+    {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "wmcp_ctrl_after.txt"},
+    {"tool": "App", "args": {"mode": "switch", "name": "测试 claude-glm"}, "out": "wmcp_ctrl_switchback.txt"}
+  ]
+}

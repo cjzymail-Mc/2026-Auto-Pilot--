@@ -1,0 +1,1 @@
+{"steps": [{"tool": "App", "args": {"mode": "switch", "name": "企业微信"}}, {"tool": "Wait", "args": {"duration": 1}}, {"tool": "Click", "args": {"loc": [660, 655], "button": "left", "clicks": 1}}, {"tool": "Wait", "args": {"duration": 2}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "r94_d.txt"}]}

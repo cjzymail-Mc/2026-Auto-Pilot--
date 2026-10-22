@@ -1,0 +1,13 @@
+top hwnd=133590 total_child_hwnds=5
+  child hwnd=1051530 class=WXworkWindow - 企业微信-工作台
+  child hwnd=658754 class=WXWorkWebViewHostWindow
+  child hwnd=396624 class=CefBrowserWindow
+  child hwnd=396626 class=Chrome_WidgetWin_1
+  child hwnd=199980 class=Chrome_RenderWidgetHostHWND
+render_hwnds=[199980]
+============================================================
+probing AccessibleObjectFromWindow hwnd=199980
+  got IAccessible in 0.55s
+[document] '新增报销' val='https://bpm.qiaodan.com/oa/reimburse?type=new&t=179246311699' loc=(61, 77, 964, 1082)
+  <enum err argument 2: TypeError: expected LP_c_void_p instance instead of pointer to LP_POINTER(IAccessible)>
+SUMMARY hwnd=199980: nodes=1 named=1 roles=[('document', 1)]

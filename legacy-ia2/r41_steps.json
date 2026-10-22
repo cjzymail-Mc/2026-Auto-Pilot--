@@ -1,0 +1,1 @@
+{"steps": [{"tool": "Shortcut", "args": {"shortcut": "ESC"}}, {"tool": "Wait", "args": {"duration": 1}}, {"tool": "Click", "args": {"loc": [554, 677], "button": "left", "clicks": 1}}, {"tool": "Wait", "args": {"duration": 2}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "r41_dd.txt"}]}

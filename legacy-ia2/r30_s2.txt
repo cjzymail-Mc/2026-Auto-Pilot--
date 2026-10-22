@@ -1,0 +1,5 @@
+﻿LANGS=zh-Hans-CN
+MAXDIM=10000
+IMG=680x88
+5,29 10x12  * 援 = 引 人 力 源
+TOTAL_LINES=1

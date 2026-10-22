@@ -1,0 +1,12 @@
+ApplicationFrameHost | 设置 | 196838
+clash-verge |  | 330798
+explorer |  | 65784
+FlutterPlugins |  | 68140
+LdTermPlug |  | 66850
+mintty | ✳ 回顾桌面自动化项目讨论记录 | 461888
+mintty | ⠂ 查看PowerShell滚动修复进展 | 462112
+SystemSettings | 设置 | 131308
+TextInputHost | Microsoft Text Input Application | 132268
+WeMail | WeMail | 68356
+WindowsTerminal | Hot-Fix | 1182648
+WXWork | 企业微信 | 133590

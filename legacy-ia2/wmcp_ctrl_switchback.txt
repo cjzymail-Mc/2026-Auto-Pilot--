@@ -1,0 +1,1 @@
+Switched to ✳ 测试 Claude-Glm 是否支持 Workflow 命令 window.

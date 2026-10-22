@@ -1,0 +1,115 @@
+
+    Cursor Position: (265, 163)
+Visible Displays: 0:\\.\DISPLAY1 (0,0,1920,1200) primary
+
+    Active Desktop:
+    Name
+---------
+Desktop 1
+
+    All Desktops:
+    Name
+---------
+Desktop 1
+Desktop 2
+
+    Focused Window:
+    Name      Depth  Status      Width    Height    Handle
+------  -------  --------  -------  --------  --------
+企业微信         18  Normal       1026      1160    133590
+
+    Opened Windows:
+    Name                                      Depth  Status       Width    Height    Handle
+--------------------------------------  -------  ---------  -------  --------  --------
+Mc-Expert-repo                                1  Minimized        0         0   2165766
+【feature01-企业微信自动化办公】                         2  Minimized        0         0   1706758
+⠂ 修复 git bash 滚动条消失问题                         3  Normal         835       473   3541530
+Hot-Fix                                      10  Minimized        0         0    200372
+Hot-Fix                                      12  Minimized        0         0   1182648
+✳ 测试 claude-glm 是否支持 workflow 命令             16  Minimized        0         0   1706952
+Mc-debug 10月探索.md - Visual Studio Code       19  Minimized        0         0    134778
+start-flowboard.cmd - 快捷方式                   23  Minimized      160        28   1117534
+设置                                           26  Normal        1215       694    196838
+⠂ 了解 feature01 最新进展                          28  Normal         835       473   2362482
+C:\Windows\py.exe                            30  Minimized      160        28   3541242
+
+
+    UI Tree:
+    desktop
+    ├── window "企业微信"
+    │   ├── 窗格 "企业微信-工作台"
+    │   │   ├── (81,96) 链接 ""  [action: click]
+    │   │   ├── (993,96) 链接 "陈晶 "  [action: click]
+    │   │   ├── (85,130) 选项卡项目 "工作台"  [action: click]
+    │   │   ├── (134,130) 选项卡项目 "报销单"  [action: click]
+    │   │   ├── (204,130) 选项卡项目 "新增报销"  [action: click]
+    │   │   ├── (281,130) 选项卡项目 "查看报销"  [action: click]
+    │   │   └── (543,618) 文档 "查看报销"  [action: click]  [focused]  [value:"https://bpm.qiaodan.com/oa/reimburse?type=view&id=92d41ffd042746e390f0a070118ca1d9"]
+    │   ├── (81,96) link ""  [action: click]
+    │   ├── (993,96) link "陈晶 "  [action: click]
+    │   ├── (85,130) tab "工作台"  [action: click]
+    │   ├── (134,130) tab "报销单"  [action: click]
+    │   ├── (204,130) tab "新增报销"  [action: click]
+    │   ├── (281,130) tab "查看报销"  [action: click]
+    │   ├── text ""
+    │   ├── text "今天是您加入中乔体育大家庭第"
+    │   ├── text "3740"
+    │   ├── text "天"
+    │   ├── text "陈晶"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "icon. 要获取缺失的图片说明，请打开上下文菜单。"
+    │   └── text "欢迎使用中乔协同办公！V2610151839"
+    ├── window ""
+    ├── window "WeMail"
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window "Microsoft Text Input Application"
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window "任务栏"
+    │   └── 窗格 "任务栏"
+    │       ├── (24,1180) 按钮 "开始"  [action: click]
+    │       ├── 工具栏 "运行中的应用程序"
+    │       │   ├── (75,1180) 按钮 "PowerShell 7 (x64)"  [action: click]
+    │       │   ├── (124,1180) 按钮 "命令提示符 - 1 个运行窗口"  [action: click]
+    │       │   ├── (173,1180) 按钮 "启动有道云笔记"  [action: click]
+    │       │   ├── (222,1180) 按钮 "Google Chrome"  [action: click]
+    │       │   ├── (271,1180) 按钮 "Microsoft Edge"  [action: click]
+    │       │   ├── (320,1180) 按钮 "Clash Verge"  [action: click]
+    │       │   ├── (369,1180) 菜单项目 "文件资源管理器 - 3 个运行窗口"  [action: click]
+    │       │   ├── (418,1180) 按钮 "企业微信 - 1 个运行窗口"  [action: click]
+    │       │   ├── (467,1180) 按钮 "终端 - 1 个运行窗口"  [action: click]
+    │       │   ├── (516,1180) 按钮 "Python - 1 个运行窗口"  [action: click]
+    │       │   ├── (565,1180) 菜单项目 "Git Bash - 3 个运行窗口"  [action: click]
+    │       │   └── (614,1180) 按钮 "Visual Studio Code - 1 个运行窗口"  [action: click]
+    │       ├── (1664,1180) 按钮 "通知 V 形"  [action: click]
+    │       ├── 工具栏 "用户提示通知区域"
+    │       │   ├── (1688,1180) 按钮 "Clash Verge 2.5.2
+系统代理: on
+TUN: off
+订阅: Mc-VIP"  [action: click]
+    │       │   ├── (1712,1180) 按钮 "企业微信: 陈晶"  [action: click]
+    │       │   ├── (1736,1180) 按钮 "用户名称：User17921 
+终端编号：17921 
+终端版本：7.51.260318.SC 正式版"  [action: click]
+    │       │   └── (1760,1180) 按钮 "扬声器: 静音"  [action: click]
+    │       ├── 窗格 "任务栏输入指示"
+    │       │   └── (1783,1180) 按钮 "输入法模式图标 - 中文模式
+
+单击右键以查看更多选项"  [action: click]
+    │       ├── (1830,1180) 按钮 "系统时钟, 13:48, ‎2026/‎10/‎20"  [action: click]
+    │       ├── (1891,1180) 按钮 "操作中心，3 个新通知"  [action: click]
+    │       └── (1917,1180) 按钮 "显示桌面"  [action: click]
+    ├── window ""
+    └── window ""

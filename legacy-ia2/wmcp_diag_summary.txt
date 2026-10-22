@@ -1,0 +1,22 @@
+=== Pass 1 (full Desktop.get_state) done in 7.7s ===
+budget count=31 limit=500 truncated=False exhausted=False
+[pass1] semantic_tree chars=2607
+[pass1] marker '企业微信': 2
+[pass1] marker '新增报销': 0
+[pass1] marker '报销单': 0
+[pass1] marker '保存': 0
+[pass1] marker '发送': 0
+[pass1] marker '申请人': 0
+[pass1] marker '报销明细': 0
+[pass1] marker 'WeWork': 0
+=== Pass 2 (tree.get_state WeCom only) done in 12.4s ===
+budget count=292 limit=500 truncated=False exhausted=False
+[pass2] semantic_tree chars=11344
+[pass2] marker '企业微信': 2
+[pass2] marker '新增报销': 4
+[pass2] marker '报销单': 2
+[pass2] marker '保存': 1
+[pass2] marker '发送': 3
+[pass2] marker '申请人': 3
+[pass2] marker '报销明细': 1
+[pass2] marker 'WeWork': 0

@@ -1,0 +1,1 @@
+{"steps":[{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"r2_pre.txt"},{"tool":"Click","args":{"loc":[133,163],"button":"left","clicks":1},"out":"r2_click.txt"},{"tool":"Wait","args":{"duration":2000}},{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"r2_s1.txt"}]}

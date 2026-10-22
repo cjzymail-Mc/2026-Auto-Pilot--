@@ -1,0 +1,546 @@
+
+    Cursor Position: (85, 130)
+Visible Displays: 0:\\.\DISPLAY1 (0,0,1920,1200) primary
+
+    Active Desktop:
+    Name
+---------
+Desktop 1
+
+    All Desktops:
+    Name
+---------
+Desktop 1
+Desktop 2
+
+    Focused Window:
+    Name      Depth  Status      Width    Height    Handle
+------  -------  --------  -------  --------  --------
+企业微信         19  Normal       1026      1160    133590
+
+    Opened Windows:
+    Name                                      Depth  Status       Width    Height    Handle
+--------------------------------------  -------  ---------  -------  --------  --------
+Mc-Expert-repo                                1  Minimized        0         0   2165766
+【feature01-企业微信自动化办公】                         2  Minimized        0         0   1706758
+无标题 - 画图                                      3  Minimized        0         0    200850
+✳ 修复 git bash 滚动条消失问题                         4  Normal         835       473   3541530
+C:\Windows\py.exe                             7  Minimized      160        28   3541242
+Hot-Fix                                      11  Normal         906       701    200372
+Hot-Fix                                      13  Minimized        0         0   1182648
+✳ 测试 claude-glm 是否支持 workflow 命令             17  Minimized        0         0   1706952
+start-flowboard.cmd - 快捷方式                   23  Minimized      160        28   1117534
+设置                                           27  Normal        1215       694    196838
+⠐ 了解 feature01 最新进展                          30  Normal         835       473   2362482
+✳ 安装 Codex CLI Windows standalone 版本         31  Normal         835       473   3542776
+Mc-debug 10月探索.md - Visual Studio Code       32  Minimized        0         0    134778
+
+
+    UI Tree:
+    desktop
+    ├── window "企业微信"
+    │   ├── 窗格 "企业微信-工作台"
+    │   │   ├── (81,96) 链接 ""  [action: click]
+    │   │   ├── (981,96) 链接 "陈晶 "  [action: click]
+    │   │   ├── (85,130) 选项卡项目 "工作台"  [action: click]
+    │   │   ├── (134,130) 选项卡项目 "报销单"  [action: click]
+    │   │   ├── 选项卡面板 "工作台"
+    │   │   │   ├── (123,176) 链接 " 待办任务"  [action: click]
+    │   │   │   ├── (204,176) 链接 "抄送消息"  [action: click]
+    │   │   │   ├── (294,176) 链接 "审批时效 [1.44时]"  [action: click]
+    │   │   │   ├── (155,202) 链接 "内购券领取：26Q3内购券"  [action: click]
+    │   │   │   ├── (508,202) 链接 "09-23"  [action: click]
+    │   │   │   ├── (304,563) 链接 "1"  [action: click]
+    │   │   │   ├── (652,176) 链接 "组织人事"  [action: click]
+    │   │   │   ├── (682,176) 链接 "[7]"  [action: click]
+    │   │   │   ├── (738,176) 链接 "经营相关"  [action: click]
+    │   │   │   ├── (768,176) 链接 "[4]"  [action: click]
+    │   │   │   ├── (823,176) 链接 "行政事务"  [action: click]
+    │   │   │   ├── (853,176) 链接 "[2]"  [action: click]
+    │   │   │   ├── (909,176) 链接 "文化宣导"  [action: click]
+    │   │   │   ├── (939,176) 链接 "[2]"  [action: click]
+    │   │   │   ├── (606,202) 链接 "关于王华离职的通知"  [action: click]
+    │   │   │   ├── (973,202) 链接 "09-28"  [action: click]
+    │   │   │   ├── (696,220) 链接 "关于品牌全球代言人官宣期员工社交媒体规范使用通知"  [action: click]
+    │   │   │   ├── (973,220) 链接 "09-20"  [action: click]
+    │   │   │   ├── (606,238) 链接 "关于李岩离职的通知"  [action: click]
+    │   │   │   ├── (973,238) 链接 "09-19"  [action: click]
+    │   │   │   ├── (638,256) 链接 "关于召开27Q3新品预览会的通知"  [action: click]
+    │   │   │   ├── (973,256) 链接 "09-17"  [action: click]
+    │   │   │   ├── (588,274) 链接 "人事任命通知"  [action: click]
+    │   │   │   ├── (973,274) 链接 "09-14"  [action: click]
+    │   │   │   ├── (588,292) 链接 "人事任命通知"  [action: click]
+    │   │   │   ├── (973,292) 链接 "09-10"  [action: click]
+    │   │   │   ├── (721,310) 链接 "关于启动2027年经营计划、全面预算与组织绩效编制工作的通知"  [action: click]
+    │   │   │   ├── (973,310) 链接 "09-07"  [action: click]
+    │   │   │   ├── (643,328) 链接 "关于2026年国庆节放假安排的通知"  [action: click]
+    │   │   │   ├── (973,328) 链接 "09-04"  [action: click]
+    │   │   │   ├── (654,346) 链接 "关于个人审批时效数据看板上线的通知"  [action: click]
+    │   │   │   ├── (973,346) 链接 "09-04"  [action: click]
+    │   │   │   ├── (643,364) 链接 "关于2026年中秋节放假安排的通知"  [action: click]
+    │   │   │   ├── (973,364) 链接 "09-01"  [action: click]
+    │   │   │   ├── (588,382) 链接 "人事任命通知"  [action: click]
+    │   │   │   ├── (973,382) 链接 "08-24"  [action: click]
+    │   │   │   ├── (642,400) 链接 "关于部分区域公司人事调整的通知"  [action: click]
+    │   │   │   ├── (973,400) 链接 "08-18"  [action: click]
+    │   │   │   ├── (612,418) 链接 "关于刘召荣离职的通知"  [action: click]
+    │   │   │   ├── (973,418) 链接 "08-17"  [action: click]
+    │   │   │   ├── (684,436) 链接 "关于成人事业部服配产品部门组织架构调整的通知"  [action: click]
+    │   │   │   ├── (973,436) 链接 "08-11"  [action: click]
+    │   │   │   ├── (630,454) 链接 "关于设立“产品体验日”的通知"  [action: click]
+    │   │   │   ├── (973,454) 链接 "08-10"  [action: click]
+    │   │   │   ├── (702,472) 链接 "关于鞋供应链管理平台采购管理中心工作调整安排的通知"  [action: click]
+    │   │   │   ├── (973,472) 链接 "08-05"  [action: click]
+    │   │   │   ├── (696,490) 链接 "关于鞋供应链管理平台品管中心负责人岗位代理的通知"  [action: click]
+    │   │   │   ├── (973,490) 链接 "08-05"  [action: click]
+    │   │   │   ├── (620,508) 链接 "关于27Q2新品订货会通知"  [action: click]
+    │   │   │   ├── (973,508) 链接 "08-05"  [action: click]
+    │   │   │   ├── (612,526) 链接 "关于彭梅清离职的通知"  [action: click]
+    │   │   │   ├── (973,526) 链接 "07-31"  [action: click]
+    │   │   │   ├── (672,544) 链接 "关于办公用电规范、严格节能降耗要求的通知"  [action: click]
+    │   │   │   ├── (973,544) 链接 "07-30"  [action: click]
+    │   │   │   ├── (750,563) 链接 "1"  [action: click]
+    │   │   │   ├── (769,563) 链接 "2"  [action: click]
+    │   │   │   ├── (789,563) 链接 "3"  [action: click]
+    │   │   │   ├── (123,602) 链接 " 提交任务"  [action: click]
+    │   │   │   ├── (304,990) 链接 "1"  [action: click]
+    │   │   │   ├── 区域 " 中乔风采"
+    │   │   │   │   └── (990,970) 按钮 ""  [action: click]
+    │   │   │   ├── (187,1037) 链接 "流程"  [action: click]
+    │   │   │   ├── (248,1037) 链接 "规章制度"  [action: click]
+    │   │   │   ├── (310,1037) 链接 "标准"  [action: click]
+    │   │   │   ├── (445,1037) 编辑 "输入查询内容"  [action: click]
+    │   │   │   ├── (181,1063) 链接 "QM261001G-中乔质量管理手册V1.0"  [action: click]
+    │   │   │   ├── (508,1063) 链接 "10-20"  [action: click]
+    │   │   │   ├── (205,1081) 链接 "SSC260901R-鞋供应商产品保密管理办法V2.0"  [action: click]
+    │   │   │   ├── (508,1081) 链接 "09-23"  [action: click]
+    │   │   │   ├── (183,1099) 链接 "ADM240101R-行政管理制度手册V2.0"  [action: click]
+    │   │   │   ├── (508,1099) 链接 "09-17"  [action: click]
+    │   │   │   ├── (207,1117) 链接 "HRM241202R-中乔体育创新奖励管理制度V2.0"  [action: click]
+    │   │   │   ├── (508,1117) 链接 "07-28"  [action: click]
+    │   │   │   ├── (171,1135) 链接 "HRM231001R-干部管理制度V2.0"  [action: click]
+    │   │   │   ├── (508,1135) 链接 "07-27"  [action: click]
+    │   │   │   ├── (183,1152) 链接 "HRM260701R-员工退休管理制度V2.0"  [action: click]
+    │   │   │   ├── (508,1152) 链接 "07-27"  [action: click]
+    │   │   │   ├── (652,1037) 链接 "普法"  [action: click]
+    │   │   │   ├── (714,1037) 链接 "案件通报"  [action: click]
+    │   │   │   ├── (910,1037) 编辑 "输入查询内容"  [action: click]
+    │   │   │   ├── (684,1063) 链接 "亮剑侵权制假，坚守维权底线，捍卫乔丹品牌权益"  [action: click]
+    │   │   │   ├── (973,1063) 链接 "09-20"  [action: click]
+    │   │   │   ├── (633,1081) 链接 "户外徒步：免责协议≠免责金牌"  [action: click]
+    │   │   │   ├── (973,1081) 链接 "08-27"  [action: click]
+    │   │   │   ├── (696,1099) 链接 "使用公司部门专用章、财务章签合同，合同是否有效？"  [action: click]
+    │   │   │   ├── (973,1099) 链接 "07-30"  [action: click]
+    │   │   │   ├── (618,1117) 链接 "民营企业贪腐类犯罪新规"  [action: click]
+    │   │   │   ├── (973,1117) 链接 "05-26"  [action: click]
+    │   │   │   ├── (660,1135) 链接 "合同扫描件上加盖印章是否具有法律效力"  [action: click]
+    │   │   │   ├── (973,1135) 链接 "05-26"  [action: click]
+    │   │   │   ├── (684,1152) 链接 "重拳打假，维权到底，坚决捍卫“乔丹”品牌权益！"  [action: click]
+    │   │   │   └── (973,1152) 链接 "01-13"  [action: click]
+    │   │   └── (543,618) 文档 "工作台"  [action: click]  [value:"https://bpm.qiaodan.com/oa/home"]
+    │   ├── (81,96) link ""  [action: click]
+    │   ├── (981,96) link "陈晶 "  [action: click]
+    │   ├── (85,130) tab "工作台"  [action: click]
+    │   ├── (134,130) tab "报销单"  [action: click]
+    │   ├── (123,176) link " 待办任务"  [action: click]
+    │   ├── (204,176) link "抄送消息"  [action: click]
+    │   ├── (294,176) link "审批时效 [1.44时]"  [action: click]
+    │   ├── (517,176) link "https://bpm.qiaodan.com/"  [action: click]
+    │   ├── (155,202) link "内购券领取：26Q3内购券"  [action: click]
+    │   ├── (508,202) link "09-23"  [action: click]
+    │   ├── (304,563) link "1"  [action: click]
+    │   ├── (652,176) link "组织人事"  [action: click]
+    │   ├── (682,176) link "[7]"  [action: click]
+    │   ├── (738,176) link "经营相关"  [action: click]
+    │   ├── (768,176) link "[4]"  [action: click]
+    │   ├── (823,176) link "行政事务"  [action: click]
+    │   ├── (853,176) link "[2]"  [action: click]
+    │   ├── (909,176) link "文化宣导"  [action: click]
+    │   ├── (939,176) link "[2]"  [action: click]
+    │   ├── (982,175) link "javascript:;"  [action: click]
+    │   ├── (606,202) link "关于王华离职的通知"  [action: click]
+    │   ├── (973,202) link "09-28"  [action: click]
+    │   ├── (696,220) link "关于品牌全球代言人官宣期员工社交媒体规范使用通知"  [action: click]
+    │   ├── (973,220) link "09-20"  [action: click]
+    │   ├── (606,238) link "关于李岩离职的通知"  [action: click]
+    │   ├── (973,238) link "09-19"  [action: click]
+    │   ├── (638,256) link "关于召开27Q3新品预览会的通知"  [action: click]
+    │   ├── (973,256) link "09-17"  [action: click]
+    │   ├── (588,274) link "人事任命通知"  [action: click]
+    │   ├── (973,274) link "09-14"  [action: click]
+    │   ├── (588,292) link "人事任命通知"  [action: click]
+    │   ├── (973,292) link "09-10"  [action: click]
+    │   ├── (721,310) link "关于启动2027年经营计划、全面预算与组织绩效编制工作的通知"  [action: click]
+    │   ├── (973,310) link "09-07"  [action: click]
+    │   ├── (643,328) link "关于2026年国庆节放假安排的通知"  [action: click]
+    │   ├── (973,328) link "09-04"  [action: click]
+    │   ├── (654,346) link "关于个人审批时效数据看板上线的通知"  [action: click]
+    │   ├── (973,346) link "09-04"  [action: click]
+    │   ├── (643,364) link "关于2026年中秋节放假安排的通知"  [action: click]
+    │   ├── (973,364) link "09-01"  [action: click]
+    │   ├── (588,382) link "人事任命通知"  [action: click]
+    │   ├── (973,382) link "08-24"  [action: click]
+    │   ├── (642,400) link "关于部分区域公司人事调整的通知"  [action: click]
+    │   ├── (973,400) link "08-18"  [action: click]
+    │   ├── (612,418) link "关于刘召荣离职的通知"  [action: click]
+    │   ├── (973,418) link "08-17"  [action: click]
+    │   ├── (684,436) link "关于成人事业部服配产品部门组织架构调整的通知"  [action: click]
+    │   ├── (973,436) link "08-11"  [action: click]
+    │   ├── (630,454) link "关于设立“产品体验日”的通知"  [action: click]
+    │   ├── (973,454) link "08-10"  [action: click]
+    │   ├── (702,472) link "关于鞋供应链管理平台采购管理中心工作调整安排的通知"  [action: click]
+    │   ├── (973,472) link "08-05"  [action: click]
+    │   ├── (696,490) link "关于鞋供应链管理平台品管中心负责人岗位代理的通知"  [action: click]
+    │   ├── (973,490) link "08-05"  [action: click]
+    │   ├── (620,508) link "关于27Q2新品订货会通知"  [action: click]
+    │   ├── (973,508) link "08-05"  [action: click]
+    │   ├── (612,526) link "关于彭梅清离职的通知"  [action: click]
+    │   ├── (973,526) link "07-31"  [action: click]
+    │   ├── (672,544) link "关于办公用电规范、严格节能降耗要求的通知"  [action: click]
+    │   ├── (973,544) link "07-30"  [action: click]
+    │   ├── (750,563) link "1"  [action: click]
+    │   ├── (769,563) link "2"  [action: click]
+    │   ├── (789,563) link "3"  [action: click]
+    │   ├── (123,602) link " 提交任务"  [action: click]
+    │   ├── (517,602) link "https://bpm.qiaodan.com/"  [action: click]
+    │   ├── (304,990) link "1"  [action: click]
+    │   ├── (982,600) link "https://bpm.qiaodan.com/"  [action: click]
+    │   ├── (548,970) button ""  [action: click]
+    │   ├── (990,970) button ""  [action: click]
+    │   ├── (187,1037) link "流程"  [action: click]
+    │   ├── (248,1037) link "规章制度"  [action: click]
+    │   ├── (310,1037) link "标准"  [action: click]
+    │   ├── (181,1063) link "QM261001G-中乔质量管理手册V1.0"  [action: click]
+    │   ├── (508,1063) link "10-20"  [action: click]
+    │   ├── (205,1081) link "SSC260901R-鞋供应商产品保密管理办法V2.0"  [action: click]
+    │   ├── (508,1081) link "09-23"  [action: click]
+    │   ├── (183,1099) link "ADM240101R-行政管理制度手册V2.0"  [action: click]
+    │   ├── (508,1099) link "09-17"  [action: click]
+    │   ├── (207,1117) link "HRM241202R-中乔体育创新奖励管理制度V2.0"  [action: click]
+    │   ├── (508,1117) link "07-28"  [action: click]
+    │   ├── (171,1135) link "HRM231001R-干部管理制度V2.0"  [action: click]
+    │   ├── (508,1135) link "07-27"  [action: click]
+    │   ├── (183,1152) link "HRM260701R-员工退休管理制度V2.0"  [action: click]
+    │   ├── (508,1152) link "07-27"  [action: click]
+    │   ├── (652,1037) link "普法"  [action: click]
+    │   ├── (714,1037) link "案件通报"  [action: click]
+    │   ├── (684,1063) link "亮剑侵权制假，坚守维权底线，捍卫乔丹品牌权益"  [action: click]
+    │   ├── (973,1063) link "09-20"  [action: click]
+    │   ├── (633,1081) link "户外徒步：免责协议≠免责金牌"  [action: click]
+    │   ├── (973,1081) link "08-27"  [action: click]
+    │   ├── (696,1099) link "使用公司部门专用章、财务章签合同，合同是否有效？"  [action: click]
+    │   ├── (973,1099) link "07-30"  [action: click]
+    │   ├── (618,1117) link "民营企业贪腐类犯罪新规"  [action: click]
+    │   ├── (973,1117) link "05-26"  [action: click]
+    │   ├── (660,1135) link "合同扫描件上加盖印章是否具有法律效力"  [action: click]
+    │   ├── (973,1135) link "05-26"  [action: click]
+    │   ├── (684,1152) link "重拳打假，维权到底，坚决捍卫“乔丹”品牌权益！"  [action: click]
+    │   ├── (973,1152) link "01-13"  [action: click]
+    │   ├── text ""
+    │   ├── text "今天是您加入中乔体育大家庭第"
+    │   ├── text "3740"
+    │   ├── text "天"
+    │   ├── text "陈晶"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "待办任务"
+    │   ├── text "|"
+    │   ├── text "抄送消息"
+    │   ├── text "|"
+    │   ├── text "审批时效"
+    │   ├── text "[1.44时]"
+    │   ├── text "内购券领取：26Q3内购券"
+    │   ├── text "09-23"
+    │   ├── text "1"
+    │   ├── text ""
+    │   ├── text "公告栏"
+    │   ├── text ">"
+    │   ├── text "组织人事"
+    │   ├── text "[7]"
+    │   ├── text "|"
+    │   ├── text "经营相关"
+    │   ├── text "[4]"
+    │   ├── text "|"
+    │   ├── text "行政事务"
+    │   ├── text "[2]"
+    │   ├── text "|"
+    │   ├── text "文化宣导"
+    │   ├── text "[2]"
+    │   ├── text "关于王华离职的通知"
+    │   ├── text "09-28"
+    │   ├── text "关于品牌全球代言人官宣期员工社交媒体规范使用通知"
+    │   ├── text "09-20"
+    │   ├── text "·"
+    │   ├── text "关于李岩离职的通知"
+    │   ├── text "09-19"
+    │   ├── text "·"
+    │   ├── text "关于召开27Q3新品预览会的通知"
+    │   ├── text "09-17"
+    │   ├── text "人事任命通知"
+    │   ├── text "09-14"
+    │   ├── text "人事任命通知"
+    │   ├── text "09-10"
+    │   ├── text "关于启动2027年经营计划、全面预算与组织绩效编制工作的通知"
+    │   ├── text "09-07"
+    │   ├── text "·"
+    │   ├── text "关于2026年国庆节放假安排的通知"
+    │   ├── text "09-04"
+    │   ├── text "·"
+    │   ├── text "关于个人审批时效数据看板上线的通知"
+    │   ├── text "09-04"
+    │   ├── text "·"
+    │   ├── text "关于2026年中秋节放假安排的通知"
+    │   ├── text "09-01"
+    │   ├── text "人事任命通知"
+    │   ├── text "08-24"
+    │   ├── text "关于部分区域公司人事调整的通知"
+    │   ├── text "08-18"
+    │   ├── text "·"
+    │   ├── text "关于刘召荣离职的通知"
+    │   ├── text "08-17"
+    │   ├── text "·"
+    │   ├── text "关于成人事业部服配产品部门组织架构调整的通知"
+    │   ├── text "08-11"
+    │   ├── text "·"
+    │   ├── text "关于设立“产品体验日”的通知"
+    │   ├── text "08-10"
+    │   ├── text "关于鞋供应链管理平台采购管理中心工作调整安排的通知"
+    │   ├── text "08-05"
+    │   ├── text "关于鞋供应链管理平台品管中心负责人岗位代理的通知"
+    │   ├── text "08-05"
+    │   ├── text "·"
+    │   ├── text "关于27Q2新品订货会通知"
+    │   ├── text "08-05"
+    │   ├── text "关于彭梅清离职的通知"
+    │   ├── text "07-31"
+    │   ├── text "关于办公用电规范、严格节能降耗要求的通知"
+    │   ├── text "07-30"
+    │   ├── text "1"
+    │   ├── text "2"
+    │   ├── text "3"
+    │   ├── text ""
+    │   ├── text "提交任务"
+    │   ├── text "1"
+    │   ├── text ""
+    │   ├── text "中乔风采"
+    │   ├── text "《中乔风采·干部文化特刊》"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "管理规范"
+    │   ├── text ">"
+    │   ├── text "流程"
+    │   ├── text "|"
+    │   ├── text "规章制度"
+    │   ├── text "|"
+    │   ├── text "标准"
+    │   ├── text "输入查询内容"
+    │   ├── text "QM261001G-中乔质量管理手册V1.0"
+    │   ├── text "10-20"
+    │   ├── text "SSC260901R-鞋供应商产品保密管理办法V2.0"
+    │   ├── text "09-23"
+    │   ├── text "ADM240101R-行政管理制度手册V2.0"
+    │   ├── text "09-17"
+    │   ├── text "HRM241202R-中乔体育创新奖励管理制度V2.0"
+    │   ├── text "07-28"
+    │   ├── text "HRM231001R-干部管理制度V2.0"
+    │   ├── text "07-27"
+    │   ├── text "HRM260701R-员工退休管理制度V2.0"
+    │   ├── text "07-27"
+    │   ├── text ""
+    │   ├── text "法制专栏"
+    │   ├── text ">"
+    │   ├── text "普法"
+    │   ├── text "|"
+    │   ├── text "案件通报"
+    │   ├── text "输入查询内容"
+    │   ├── text "亮剑侵权制假，坚守维权底线，捍卫乔丹品牌权益"
+    │   ├── text "09-20"
+    │   ├── text "户外徒步：免责协议≠免责金牌"
+    │   ├── text "08-27"
+    │   ├── text "使用公司部门专用章、财务章签合同，合同是否有效？"
+    │   ├── text "07-30"
+    │   ├── text "民营企业贪腐类犯罪新规"
+    │   ├── text "05-26"
+    │   ├── text "合同扫描件上加盖印章是否具有法律效力"
+    │   ├── text "05-26"
+    │   ├── text "重拳打假，维权到底，坚决捍卫“乔丹”品牌权益！"
+    │   ├── text "01-13"
+    │   ├── text "icon"
+    │   └── text "欢迎使用协同办公！V2610151839"
+    ├── window ""
+    ├── window "WeMail"
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window "Microsoft Text Input Application"
+    ├── window ""
+    │   ├── (38,35) 列表项目 "此电脑"  [action: click]
+    │   ├── (38,122) 列表项目 "回收站"  [action: click]
+    │   ├── (38,217) 列表项目 "Adobe Photoshop CC"  [action: click]
+    │   ├── (38,296) 列表项目 "微信"  [action: click]
+    │   ├── (38,383) 列表项目 "快速维护"  [action: click]
+    │   ├── (38,478) 列表项目 "【巭 䨻 📷 🎁】2025年工作备忘录 2025-02-11 备份.txt"  [action: click]
+    │   ├── (38,565) 列表项目 "2025-01-03 RD48 鞋-185%倍率射出超轻中底及运动鞋的研发 - 快捷方式"  [action: click]
+    │   ├── (38,905) 列表项目 "do_not_sleep.py"  [action: click]
+    │   ├── (38,1000) 列表项目 "start-flowboard.cmd - 快捷方式"  [action: click]
+    │   ├── (38,1087) 列表项目 "2023-11-23 Mp4 - 快捷方式"  [action: click]
+    │   ├── (114,43) 列表项目 "IDLE (Python 3.12 64-bit)"  [action: click]
+    │   ├── (114,122) 列表项目 "有道云笔记"  [action: click]
+    │   ├── (114,209) 列表项目 "XMind"  [action: click]
+    │   ├── (114,304) 列表项目 "Google Chrome"  [action: click]
+    │   ├── (114,826) 列表项目 "科技中心2027-2029年战略规划4.pptx"  [action: click]
+    │   ├── (114,1087) 列表项目 "Claude Code Learning - 快捷方式"  [action: click]
+    │   ├── (190,35) 列表项目 "百度网盘"  [action: click]
+    │   ├── (190,122) 列表项目 "企业云盘"  [action: click]
+    │   ├── (190,209) 列表项目 "mpc-hc64"  [action: click]
+    │   ├── (190,1079) 列表项目 "2026"  [action: click]
+    │   ├── (266,35) 列表项目 "HEIF-Utility"  [action: click]
+    │   ├── (266,130) 列表项目 "Upload - 快捷方式"  [action: click]
+    │   ├── (266,304) 列表项目 "Agent攻略+2026-03-31（林鸿基）.xmind"  [action: click]
+    │   ├── (266,557) 列表项目 "RD48"  [action: click]
+    │   ├── (266,644) 列表项目 "RD53"  [action: click]
+    │   ├── (342,43) 列表项目 "2026 exiftool.zip"  [action: click]
+    │   ├── (342,122) 列表项目 "Upload"  [action: click]
+    │   ├── (494,296) 列表项目 "2242.gif"  [action: click]
+    │   ├── (570,304) 列表项目 "Ana Ivanovic Hitting Backhands In Slow Motion - BNP Paribas Open 2013.mp4"  [action: click]
+    │   ├── (570,383) 列表项目 "bb687647gy1igdova3oqrj23b04eob2f.jpg"  [action: click]
+    │   ├── (646,296) 列表项目 "c39d6d3e-ce44-42ce-ac04-b8982de2ff62.png"  [action: click]
+    │   ├── (646,913) 列表项目 "★★★★★ 2025年 工作' 学习' 生活 2025-10-15.xlsx - 快捷方式"  [action: click]
+    │   ├── (722,43) 列表项目 "piano manuscript.pptx - 快捷方式"  [action: click]
+    │   ├── (722,1000) 列表项目 "★ 2022本周工作"  [action: click]
+    │   ├── (798,43) 列表项目 "《从0到1（读书笔记）》彼得·蒂尔 布莱克·马斯特斯.pdf"  [action: click]
+    │   ├── (798,913) 列表项目 "【SSRC】★ 项目经理周报更新"  [action: click]
+    │   ├── (798,1000) 列表项目 "2024 Worklite - 快捷方式"  [action: click]
+    │   ├── (874,43) 列表项目 "截图 - 快捷方式"  [action: click]
+    │   ├── (874,130) 列表项目 "2025汽车产业增长数据：国家统计局.png"  [action: click]
+    │   ├── (874,992) 列表项目 "绩效考核相关"  [action: click]
+    │   ├── (950,43) 列表项目 "2020 Tennis - 快捷方式"  [action: click]
+    │   ├── (950,130) 列表项目 "2025瑞士游客统计数据.png"  [action: click]
+    │   ├── (950,992) 列表项目 "差旅报销"  [action: click]
+    │   ├── (1026,43) 列表项目 "Corporate Finance 9th Editon.pdf - 快捷方式"  [action: click]
+    │   ├── (1026,1000) 列表项目 "★ PPT资料汇总 - 快捷方式"  [action: click]
+    │   ├── (1102,43) 列表项目 "【Eng】Corporate Finance,9e,Ross,2010.pdf - 快捷方式"  [action: click]
+    │   ├── (1102,478) 列表项目 "20250212 小鹏汽车-成功秘诀.png"  [action: click]
+    │   ├── (1102,565) 列表项目 "staw 羊毛.png"  [action: click]
+    │   ├── (1102,1000) 列表项目 "Original ( from 吴 )"  [action: click]
+    │   ├── (1178,43) 列表项目 "【Economics】  19th Edition"  [action: click]
+    │   ├── (1178,391) 列表项目 "2026 北航（刚度 vs 强度）.jpg"  [action: click]
+    │   ├── (1178,478) 列表项目 "2025-06-05  展望篮球市场未来 - Nike的长期主义.png"  [action: click]
+    │   ├── (1178,557) 列表项目 "e2ea7d0cgy1i1h8s6119gj23b04eohdv.jpg"  [action: click]
+    │   ├── (1254,43) 列表项目 "【Economics】   18th Edition.pdf"  [action: click]
+    │   ├── (1254,391) 列表项目 "2025-09-22 ChinaWellbeingReport_lululemon_Tsinghua_Final0922.pdf"  [action: click]
+    │   ├── (1254,478) 列表项目 "2025-05-08 黄仁勋：未来AI工厂改变世界.png"  [action: click]
+    │   ├── (1254,565) 列表项目 "越野强装.png"  [action: click]
+    │   ├── (1254,652) 列表项目 "2021 Nike 运动与饮食.png"  [action: click]
+    │   ├── (1330,43) 列表项目 "CF Notebook 2025.xlsx"  [action: click]
+    │   ├── (1330,391) 列表项目 "2025-11-26 Hyrox Puma.jpg"  [action: click]
+    │   ├── (1330,478) 列表项目 "Broad Dollar Index.png"  [action: click]
+    │   ├── (1330,565) 列表项目 "2004 痛并快乐.jpg"  [action: click]
+    │   ├── (1330,652) 列表项目 "企业微信截图_20250701113557.png"  [action: click]
+    │   ├── (1330,1079) 列表项目 "Time-fix.zip"  [action: click]
+    │   ├── (1406,43) 列表项目 "William Joseph - Silent Night 01.png"  [action: click]
+    │   ├── (1406,391) 列表项目 "2024中国路跑赛事白皮书.pdf"  [action: click]
+    │   ├── (1406,565) 列表项目 "MD5消息摘要算法.png"  [action: click]
+    │   ├── (1406,1087) 列表项目 "Recv Files - 快捷方式"  [action: click]
+    │   ├── (1482,391) 列表项目 "东方树叶-长期主义的爆款秘籍.jpg"  [action: click]
+    │   ├── (1482,478) 列表项目 "2024-10-08 （延领）（解密版）022032中3中国国路路跑跑蓝赛皮事书蓝皮书.pdf"  [action: click]
+    │   ├── (1482,565) 列表项目 "2024-06-20 K天王 - 成功得秘诀.png"  [action: click]
+    │   ├── (1482,652) 列表项目 "运动强度与供能 & 血糖.png"  [action: click]
+    │   ├── (1482,1087) 列表项目 "FeiQ.exe - 快捷方式"  [action: click]
+    │   ├── (1558,391) 列表项目 "5年后无法退房.jpg"  [action: click]
+    │   ├── (1558,478) 列表项目 "2025-05-28 BYD 价格战再起.png"  [action: click]
+    │   ├── (1558,565) 列表项目 "What is Contagrip®.png"  [action: click]
+    │   ├── (1558,1079) 列表项目 "Xshell 8"  [action: click]
+    │   ├── (1634,43) 列表项目 "【跑姿的研究】Pose Running - 快捷方式"  [action: click]
+    │   ├── (1634,391) 列表项目 "WF-1000MX5 【618 国补后900+入手】.png"  [action: click]
+    │   ├── (1634,478) 列表项目 "企业微信截图_20250321083428.png"  [action: click]
+    │   ├── (1634,565) 列表项目 "2025 Powershell bat权限.png"  [action: click]
+    │   ├── (1634,652) 列表项目 "2024 ★Match函数终极技巧.png"  [action: click]
+    │   ├── (1634,1087) 列表项目 "2025网球接龙-企业微信.txt - 快捷方式"  [action: click]
+    │   ├── (1710,43) 列表项目 "★★★★ Learning Bookshelf"  [action: click]
+    │   ├── (1710,391) 列表项目 "2026 胖哥材料科普 (1).jpg"  [action: click]
+    │   ├── (1710,470) 列表项目 "6a8ae495gy1htsv1ti3oej20rs0rs0xk.jpg"  [action: click]
+    │   ├── (1710,565) 列表项目 "乔丹尺码对照表 （2021）.png"  [action: click]
+    │   ├── (1710,652) 列表项目 "2025-02 半月板软骨损伤.png"  [action: click]
+    │   ├── (1710,1087) 列表项目 "企业云盘DownLoad"  [action: click]
+    │   ├── (1786,43) 列表项目 "下载 - 快捷方式"  [action: click]
+    │   ├── (1786,122) 列表项目 "FSCapture"  [action: click]
+    │   ├── (1786,391) 列表项目 "2026 胖哥材料科普 (2).jpg"  [action: click]
+    │   ├── (1786,478) 列表项目 "2024-06 轻鸿 京东大神评论.png"  [action: click]
+    │   ├── (1786,565) 列表项目 "论文来源.png"  [action: click]
+    │   ├── (1786,652) 列表项目 "微信图片_20250630141026.jpg"  [action: click]
+    │   ├── (1786,1087) 列表项目 "★软件安装包★"  [action: click]
+    │   ├── (1862,35) 列表项目 "GifCam.exe"  [action: click]
+    │   ├── (1862,130) 列表项目 "Python ( Claude+GPT+Gemini+Grok ) - 快捷方式"  [action: click]
+    │   ├── (1862,217) 列表项目 "【2025 Image】"  [action: click]
+    │   ├── (1862,391) 列表项目 "2026 胖哥材料科普 (3).jpg"  [action: click]
+    │   ├── (1862,478) 列表项目 "2025 消费者画像.jpg"  [action: click]
+    │   ├── (1862,565) 列表项目 "Nike Headquarters.png"  [action: click]
+    │   ├── (1862,913) 列表项目 "2026RD TEMP"  [action: click]
+    │   ├── (1862,1000) 列表项目 "2025 Desktop"  [action: click]
+    │   └── (1862,1087) 列表项目 "2019-2023 企业微信Cache"  [action: click]
+    ├── window ""
+    ├── window "飞秋(FeiQ)---局域网即时通讯"
+    │   └── 对话框 "飞秋(FeiQ)---局域网即时通讯"
+    │       ├── (0,0) 单选按钮 "好友"  [action: click]
+    │       ├── (0,0) 单选按钮 "群"  [action: click]
+    │       ├── (0,0) 单选按钮 "最近"  [action: click]
+    │       ├── (0,0) 单选按钮 "论坛"  [action: click]
+    │       ├── (0,0) 按钮 "上一行"  [action: click]
+    │       ├── (0,0) 按钮 "向下翻页"  [action: click]
+    │       ├── (0,0) 按钮 "下一行"  [action: click]
+    │       ├── (0,0) 滚动条 "垂直滚动条"  [action: click]
+    │       ├── (0,0) 树项目 "我的好友(8)"  [action: click]
+    │       ├── (0,0) 树项目 "对方未分组好友(8)"  [action: click]
+    │       ├── (0,0) 树项目 "AlphaH_Foot(ALPHAH) 192.168.3.2"  [action: click]
+    │       ├── (0,0) 树项目 "kj21(KJ21) 192.168.3.28"  [action: click]
+    │       ├── (0,0) 树项目 "xy206(XY206) 192.168.49.28"  [action: click]
+    │       ├── (0,0) 树项目 "陈晶-Laptop(XY198) 192.168.3.39"  [action: click]
+    │       ├── (0,0) 树项目 "林鸿基(XY58N) 192.168.49.29"  [action: click]
+    │       ├── (0,0) 树项目 "徐亮(XY160A) 192.168.49.5"  [action: click]
+    │       ├── (0,0) 树项目 "延领(XY197) 192.168.3.50"  [action: click]
+    │       ├── (0,0) 树项目 "踰剘卟堠(XY146A) 192.168.49.116"  [action: click]
+    │       ├── (0,0) 树项目 "自己(1)"  [action: click]
+    │       └── (0,0) 树项目 "陈晶(XY24) 192.168.49.194"  [action: click]
+    ├── window ""
+    ├── window "任务栏"
+    │   └── 窗格 "任务栏"
+    │       ├── (24,1180) 按钮 "开始"  [action: click]
+    │       ├── 工具栏 "运行中的应用程序"
+    │       │   ├── (75,1180) 按钮 "PowerShell 7 (x64)"  [action: click]
+    │       │   ├── (124,1180) 按钮 "命令提示符 - 1 个运行窗口"  [action: click]
+    │       │   ├── (173,1180) 按钮 "启动有道云笔记"  [action: click]
+    │       │   ├── (222,1180) 按钮 "Google Chrome"  [action: click]
+    │       │   ├── (271,1180) 按钮 "Microsoft Edge"  [action: click]
+    │       │   ├── (320,1180) 按钮 "Clash Verge"  [action: click]
+    │       │   ├── (369,1180) 菜单项目 "文件资源管理器 - 3 个运行窗口"  [action: click]
+    │       │   ├── (418,1180) 按钮 "企业微信 - 1 个运行窗口"  [action: click]
+    │       │   ├── (467,1180) 按钮 "终端 - 1 个运行窗口"  [action: click]
+    │       │   ├── (516,1180) 按钮 "Python - 1 个运行窗口"  [action: click]
+    │       │   ├── (565,1180) 菜单项目 "Git Bash - 4 个运行窗口"  [action: click]
+    │       │   ├── (614,1180) 按钮 "Visual Studio Code - 1 个运行窗口"  [action: click]
+    │       │   └── (663,1180) 按钮 "画图 - 1 个运行窗口"  [action: click]
+    │       ├── (1664,1180) 按钮 "通知 V 形"  [action: click]
+    │       ├── 工具栏 "用户提示通知区域"
+    │       │   ├── (1688,1180) 按钮 "飞秋FeiQ(在线人数: 9)"  [action: click]
+    │       │   ├── (1712,1180) 按钮 "企业微信: 陈晶"  [action: click]
+    │       │   ├── (1736,1180) 按钮 "用户名称：User17921 
+终端编号：17921 
+终端版本：7.51.260318.SC 正式版"  [action: click]
+    │       │   └── (1760,1180) 按钮 "扬声器: 静音"  [action: click]
+    │       ├── 窗格 "任务栏输入指示"
+    │       │   └── (1783,1180) 按钮 "输入法模式图标 - 中文模式
+
+单击右键以查看更多选项"  [action: click]
+    │       ├── (1830,1180) 按钮 "系统时钟, 14:18, ‎2026/‎10/‎20"  [action: click]
+    │       ├── (1891,1180) 按钮 "操作中心，2 个新通知"  [action: click]
+    │       └── (1917,1180) 按钮 "显示桌面"  [action: click]
+    ├── window ""
+    └── window ""

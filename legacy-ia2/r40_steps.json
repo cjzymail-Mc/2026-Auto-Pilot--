@@ -1,0 +1,1 @@
+{"steps": [{"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "r40_pre.txt"}, {"tool": "Click", "args": {"loc": [541, 629], "button": "left", "clicks": 1}}, {"tool": "Wait", "args": {"duration": 2}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "r40_a.txt"}]}

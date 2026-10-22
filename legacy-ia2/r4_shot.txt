@@ -1,0 +1,26 @@
+
+    Cursor Position: (133, 163)
+Screenshot Original Size: (1920,1200)
+Screenshot Coordinate Scale: 1.111111 — image pixels are downscaled; multiply every image pixel coordinate by 1.111111 before passing to Click, Move, Scroll, or any loc= argument (e.g. image pixel (200, 150) → screen coordinate (222, 167))
+Visible Displays: 0:\\.\DISPLAY1 (0,0,1920,1200) primary
+Screenshot Backend: pillow
+UI Tree: Skipped for fast screenshot-only capture. Call Snapshot when you need interactive or scrollable elements.
+
+    Active Desktop:
+    Name
+---------
+Desktop 1
+
+    All Desktops:
+    Name
+---------
+Desktop 1
+Desktop 2
+
+    Focused Window:
+    No active window found
+
+    Opened Windows:
+    No windows found
+
+<content type=image>

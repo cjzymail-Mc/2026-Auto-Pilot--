@@ -1,0 +1,1 @@
+{"steps":[{"tool":"App","args":{"mode":"switch","name":"企业微信"},"out":"r6_app.txt"},{"tool":"Wait","args":{"duration":1000}},{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"r6_s1.txt"}]}

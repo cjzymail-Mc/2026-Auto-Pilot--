@@ -1,0 +1,1 @@
+{"steps":[{"tool":"Type","args":{"loc":[1017,494],"text":"差旅费","clear":true},"out":"r32_t1.txt"},{"tool":"Shortcut","args":{"shortcut":"DOWN"},"out":"r32_d1.txt"},{"tool":"Shortcut","args":{"shortcut":"ENTER"},"out":"r32_e1.txt"},{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"r32_a.txt"}]}

@@ -1,0 +1,8 @@
+44:     │   │   ├── (85,130) 选项卡项目 "工作台"  [action: click]
+45:     │   │   ├── (134,130) 选项卡项目 "报销单"  [action: click]
+52:     │   │   │   ├── (82,200) 选项卡项目 ""  [action: click]
+66:     │   │   │   ├── (82,483) 选项卡项目 ""  [action: click]
+265:     │   ├── (85,130) tab "工作台"  [action: click]
+266:     │   ├── (134,130) tab "报销单"  [action: click]
+277:     │   ├── (82,200) tab ""  [action: click]
+281:     │   ├── (82,483) tab ""  [action: click]

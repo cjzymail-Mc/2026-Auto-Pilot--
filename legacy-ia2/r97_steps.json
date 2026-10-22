@@ -1,0 +1,1 @@
+{"steps": [{"tool": "App", "args": {"mode": "switch", "name": "企业微信"}}, {"tool": "Wait", "args": {"duration": 1}}, {"tool": "Type", "args": {"text": "2026-09-22", "loc": [858, 655], "clear": true, "press_enter": true}}, {"tool": "Wait", "args": {"duration": 2}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "r97_d.txt"}]}

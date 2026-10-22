@@ -1,0 +1,3 @@
+INIT OK server = {"name": "windows-mcp", "version": "4.1.0"}
+STEP 1/2 App OK in 18.0s
+STEP 2/2 Snapshot OK in 15.4s, saved -> fx_c1_snap.txt

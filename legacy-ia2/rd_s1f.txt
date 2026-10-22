@@ -1,0 +1,384 @@
+
+    Cursor Position: (1180, 1056)
+Visible Displays: 0:\\.\DISPLAY1 (0,0,1920,1200) primary
+
+    Active Desktop:
+    Name
+---------
+Desktop 1
+
+    All Desktops:
+    Name
+---------
+Desktop 1
+Desktop 2
+
+    Focused Window:
+    Name      Depth  Status      Width    Height    Handle
+------  -------  --------  -------  --------  --------
+企业微信         18  Normal       1026      1160    133590
+
+    Opened Windows:
+    Name                                      Depth  Status       Width    Height    Handle
+--------------------------------------  -------  ---------  -------  --------  --------
+Mc-Expert-repo                                1  Minimized        0         0   2165766
+【feature01-企业微信自动化办公】                         2  Minimized        0         0   1706758
+✳ 修复 git bash 滚动条消失问题                         3  Normal         835       473   3541530
+Hot-Fix                                      10  Minimized        0         0    200372
+Hot-Fix                                      12  Minimized        0         0   1182648
+✳ 测试 claude-glm 是否支持 workflow 命令             16  Minimized        0         0   1706952
+Mc-debug 10月探索.md - Visual Studio Code       19  Minimized        0         0    134778
+start-flowboard.cmd - 快捷方式                   23  Minimized      160        28   1117534
+设置                                           26  Normal        1215       694    196838
+⠂ 了解 feature01 最新进展                          28  Normal         835       473   2362482
+C:\Windows\py.exe                            30  Minimized      160        28   3541242
+
+
+    UI Tree:
+    desktop
+    ├── window "企业微信"
+    │   ├── 窗格 "企业微信-工作台"
+    │   │   ├── (81,96) 链接 ""  [action: click]
+    │   │   ├── (981,96) 链接 "陈晶 "  [action: click]
+    │   │   ├── (85,130) 选项卡项目 "工作台"  [action: click]
+    │   │   ├── (134,130) 选项卡项目 "报销单"  [action: click]
+    │   │   ├── (204,130) 选项卡项目 "新增报销"  [action: click]
+    │   │   ├── 选项卡面板 "新增报销"
+    │   │   │   ├── (207,163) 按钮 "导入"  [action: click]
+    │   │   │   ├── (269,163) 按钮 "发票识别"  [action: click]
+    │   │   │   ├── (457,163) 按钮 "返回"  [action: click]
+    │   │   │   ├── (345,200) 编辑 "单据状态"  [action: click]  [value:"编制中"]
+    │   │   │   ├── (815,200) 编辑 "单据编号"  [action: click]
+    │   │   │   ├── (332,227) 编辑 " 申请人"  [action: click]  [value:"陈晶"]
+    │   │   │   ├── (517,227) 按钮 "选择组织"  [action: click]
+    │   │   │   ├── (815,227) 编辑 "申请日期"  [action: click]  [value:"2026-10-20"]
+    │   │   │   ├── (331,253) 编辑 " 职位"  [action: click]  [value:"高级经理"]
+    │   │   │   ├── (516,253) 按钮 "更多"  [action: click]
+    │   │   │   ├── (815,253) 编辑 " 工号"  [action: click]  [value:"116070053"]
+    │   │   │   ├── (331,279) 编辑 " 申请部门"  [action: click]  [value:"运动表现研究部"]
+    │   │   │   ├── (516,279) 按钮 "更多"  [action: click]
+    │   │   │   ├── (815,279) 编辑 "联系电话"  [action: click]  [value:"15980451184"]
+    │   │   │   ├── (517,305) 菜单项目 ""  [action: click]
+    │   │   │   ├── (987,305) 菜单项目 ""  [action: click]
+    │   │   │   ├── (987,332) 菜单项目 ""  [action: click]
+    │   │   │   ├── (517,361) 菜单项目 ""  [action: click]
+    │   │   │   ├── (987,361) 菜单项目 ""  [action: click]
+    │   │   │   ├── (345,388) 编辑 " 报销金额"  [action: click]
+    │   │   │   ├── (801,388) 编辑 "大写金额"  [action: click]
+    │   │   │   ├── (986,388) 按钮 "更多"  [action: click]
+    │   │   │   ├── (345,414) 编辑 "借款金额"  [action: click]
+    │   │   │   ├── (815,414) 编辑 "应退金额"  [action: click]
+    │   │   │   ├── (345,440) 编辑 "应付金额"  [action: click]
+    │   │   │   ├── (566,467) 编辑 " 备注"  [action: click]
+    │   │   │   ├── (986,467) 按钮 "更多"  [action: click]
+    │   │   │   ├── (82,510) 选项卡项目 ""  [action: click]
+    │   │   │   ├── (81,550) 链接 ""  [action: click]
+    │   │   │   ├── (156,549) 按钮 "新增"  [action: click]
+    │   │   │   ├── (994,549) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,609) 链接 ""  [action: click]
+    │   │   │   ├── (994,608) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (93,672) 按钮 "全选"  [action: click]
+    │   │   │   ├── (142,672) 按钮 "反选"  [action: click]
+    │   │   │   ├── (472,671) 链接 ""  [action: click]
+    │   │   │   ├── (502,671) 链接 ""  [action: click]
+    │   │   │   ├── (533,671) 链接 "1"  [action: click]
+    │   │   │   ├── (564,671) 链接 ""  [action: click]
+    │   │   │   ├── (594,671) 链接 ""  [action: click]
+    │   │   │   ├── (993,671) 菜单项目 ""  [action: click]
+    │   │   │   ├── (81,708) 链接 ""  [action: click]
+    │   │   │   ├── (156,707) 按钮 "新增"  [action: click]
+    │   │   │   ├── (994,707) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,779) 链接 ""  [action: click]
+    │   │   │   ├── (156,778) 按钮 "新增"  [action: click]
+    │   │   │   ├── (994,778) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,844) 链接 ""  [action: click]
+    │   │   │   ├── (156,843) 按钮 "新增"  [action: click]
+    │   │   │   ├── (994,843) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,903) 链接 ""  [action: click]
+    │   │   │   ├── (156,902) 按钮 "新增"  [action: click]
+    │   │   │   ├── (234,902) 按钮 "历史记录"  [action: click]
+    │   │   │   ├── (994,902) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,974) 链接 ""  [action: click]
+    │   │   │   ├── (156,973) 按钮 "查看流程"  [action: click]
+    │   │   │   ├── (994,973) 按钮 "自动换行"  [action: click]
+    │   │   │   ├── (81,1033) 链接 ""  [action: click]
+    │   │   │   ├── (156,1032) 按钮 "添加附件"  [action: click]
+    │   │   │   ├── (338,1032) 按钮 "重新识别"  [action: click]
+    │   │   │   └── (994,1032) 按钮 "自动换行"  [action: click]
+    │   │   └── (543,618) 文档 "新增报销"  [action: click]  [value:"https://bpm.qiaodan.com/oa/reimburse?type=new&t=1792463116991"]
+    │   ├── (81,96) link ""  [action: click]
+    │   ├── (981,96) link "陈晶 "  [action: click]
+    │   ├── (85,130) tab "工作台"  [action: click]
+    │   ├── (134,130) tab "报销单"  [action: click]
+    │   ├── (204,130) tab "新增报销"  [action: click]
+    │   ├── (89,163) button "保存"  [action: click]
+    │   ├── (145,163) button "商旅订单"  [action: click]
+    │   ├── (207,163) button "导入"  [action: click]
+    │   ├── (269,163) button "发票识别"  [action: click]
+    │   ├── (325,163) button "发送"  [action: click]
+    │   ├── (369,163) button "流转"  [action: click]
+    │   ├── (413,163) button "终止"  [action: click]
+    │   ├── (457,163) button "返回"  [action: click]
+    │   ├── (517,227) button "选择组织"  [action: click]
+    │   ├── (516,253) button "更多"  [action: click]
+    │   ├── (516,279) button "更多"  [action: click]
+    │   ├── (986,388) button "更多"  [action: click]
+    │   ├── (986,467) button "更多"  [action: click]
+    │   ├── (82,510) tab ""  [action: click]
+    │   ├── (81,550) link ""  [action: click]
+    │   ├── (156,549) button "新增"  [action: click]
+    │   ├── (182,549) button "插入"  [action: click]
+    │   ├── (208,549) button "删除"  [action: click]
+    │   ├── (994,549) button "自动换行"  [action: click]
+    │   ├── (81,609) link ""  [action: click]
+    │   ├── (180,608) button "复制"  [action: click]
+    │   ├── (206,608) button "删除"  [action: click]
+    │   ├── (232,608) button "复制金额到本次报销金额"  [action: click]
+    │   ├── (994,608) button "自动换行"  [action: click]
+    │   ├── (77,632) check box "check box"  [action: toggle]
+    │   ├── (93,672) button "全选"  [action: click]
+    │   ├── (142,672) button "反选"  [action: click]
+    │   ├── (472,671) link ""  [action: click]
+    │   ├── (502,671) link ""  [action: click]
+    │   ├── (533,671) link "1"  [action: click]
+    │   ├── (564,671) link ""  [action: click]
+    │   ├── (594,671) link ""  [action: click]
+    │   ├── (81,708) link ""  [action: click]
+    │   ├── (156,707) button "新增"  [action: click]
+    │   ├── (182,707) button "插入"  [action: click]
+    │   ├── (208,707) button "复制"  [action: click]
+    │   ├── (234,707) button "删除"  [action: click]
+    │   ├── (260,707) button "向下填充选中单元格数据"  [action: click]
+    │   ├── (994,707) button "自动换行"  [action: click]
+    │   ├── (81,779) link ""  [action: click]
+    │   ├── (156,778) button "新增"  [action: click]
+    │   ├── (182,778) button "插入"  [action: click]
+    │   ├── (208,778) button "复制"  [action: click]
+    │   ├── (234,778) button "删除"  [action: click]
+    │   ├── (994,778) button "自动换行"  [action: click]
+    │   ├── (81,844) link ""  [action: click]
+    │   ├── (156,843) button "新增"  [action: click]
+    │   ├── (182,843) button "插入"  [action: click]
+    │   ├── (208,843) button "删除"  [action: click]
+    │   ├── (994,843) button "自动换行"  [action: click]
+    │   ├── (81,903) link ""  [action: click]
+    │   ├── (156,902) button "新增"  [action: click]
+    │   ├── (182,902) button "插入"  [action: click]
+    │   ├── (208,902) button "删除"  [action: click]
+    │   ├── (234,902) button "历史记录"  [action: click]
+    │   ├── (994,902) button "自动换行"  [action: click]
+    │   ├── (81,974) link ""  [action: click]
+    │   ├── (156,973) button "查看流程"  [action: click]
+    │   ├── (994,973) button "自动换行"  [action: click]
+    │   ├── (81,1033) link ""  [action: click]
+    │   ├── (156,1032) button "添加附件"  [action: click]
+    │   ├── (182,1032) button "上传"  [action: click]
+    │   ├── (208,1032) button "修改信息"  [action: click]
+    │   ├── (234,1032) button "下载"  [action: click]
+    │   ├── (260,1032) button "预览"  [action: click]
+    │   ├── (286,1032) button "预览全部"  [action: click]
+    │   ├── (312,1032) button "删除"  [action: click]
+    │   ├── (338,1032) button "重新识别"  [action: click]
+    │   ├── (994,1032) button "自动换行"  [action: click]
+    │   ├── text ""
+    │   ├── text "今天是您加入中乔体育大家庭第"
+    │   ├── text "3740"
+    │   ├── text "天"
+    │   ├── text "陈晶"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "单据状态"
+    │   ├── text "单据状态"
+    │   ├── text "单据编号"
+    │   ├── text "单据编号"
+    │   ├── text ""
+    │   ├── text "申请人"
+    │   ├── text " 申请人"
+    │   ├── text "申请日期"
+    │   ├── text "申请日期"
+    │   ├── text ""
+    │   ├── text "职位"
+    │   ├── text " 职位"
+    │   ├── text ""
+    │   ├── text "工号"
+    │   ├── text " 工号"
+    │   ├── text ""
+    │   ├── text "申请部门"
+    │   ├── text " 申请部门"
+    │   ├── text "联系电话"
+    │   ├── text "联系电话"
+    │   ├── text ""
+    │   ├── text "公司"
+    │   ├── text "厦门乔丹科技有限公司"
+    │   ├── text ""
+    │   ├── text "流程归属"
+    │   ├── text "乔丹科技"
+    │   ├── text "预算年度"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "报销方式"
+    │   ├── text ""
+    │   ├── text "币种"
+    │   ├── text "人民币"
+    │   ├── text ""
+    │   ├── text "报销类别"
+    │   ├── text ""
+    │   ├── text "报销金额"
+    │   ├── text " 报销金额"
+    │   ├── text "大写金额"
+    │   ├── text "大写金额"
+    │   ├── text "借款金额"
+    │   ├── text "借款金额"
+    │   ├── text "应退金额"
+    │   ├── text "应退金额"
+    │   ├── text "应付金额"
+    │   ├── text "应付金额"
+    │   ├── text ""
+    │   ├── text "备注"
+    │   ├── text " 备注"
+    │   ├── text "基础信息"
+    │   ├── text ""
+    │   ├── text "关联单据"
+    │   ├── text "序号"
+    │   ├── text "单据类型"
+    │   ├── text "单据号"
+    │   ├── text "单据金额"
+    │   ├── text "已报销(含审批中)"
+    │   ├── text "本次报销"
+    │   ├── text "是否为最后一次"
+    │   ├── text "备注"
+    │   ├── text ""
+    │   ├── text "关联单据明细"
+    │   ├── text "序号"
+    │   ├── text "单据类型"
+    │   ├── text "单据号"
+    │   ├── text "摘要"
+    │   ├── text "金额"
+    │   ├── text "数量"
+    │   ├── text "已报销(含审批中)"
+    │   ├── text "本次报销"
+    │   ├── text "备注"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "1"
+    │   ├── text ""
+    │   ├── text ""
+    │   ├── text "共 0 条"
+    │   ├── text "20"
+    │   ├── text ""
+    │   ├── text "报销明细"
+    │   ├── text "序号"
+    │   ├── text "报销项目"
+    │   ├── text "摘要"
+    │   ├── text "预算部门"
+    │   ├── text "预算单"
+    │   ├── text "预算归属"
+    │   ├── text "预算科目"
+    │   ├── text "预算项目"
+    │   ├── text "科目总额"
+    │   ├── text ""
+    │   ├── text "费用说明"
+    │   ├── text "序号"
+    │   ├── text "费用类型"
+    │   ├── text "开始日期"
+    │   ├── text "结束日期"
+    │   ├── text "地点"
+    │   ├── text "次数/天"
+    │   ├── text "金额"
+    │   ├── text "项目说明"
+    │   ├── text ""
+    │   ├── text "银行信息"
+    │   ├── text "序号"
+    │   ├── text "收款人"
+    │   ├── text "账号"
+    │   ├── text "开户行"
+    │   ├── text "联行号"
+    │   ├── text "转账金额"
+    │   ├── text "备注"
+    │   ├── text ""
+    │   ├── text "确认人"
+    │   ├── text "序号"
+    │   ├── text "姓名"
+    │   ├── text "部门"
+    │   ├── text "职位"
+    │   ├── text "确认"
+    │   ├── text "确认时间"
+    │   ├── text "确认意见"
+    │   ├── text "发送时间"
+    │   ├── text "发送人"
+    │   ├── text "备注"
+    │   ├── text ""
+    │   ├── text "审批记录"
+    │   ├── text "序号"
+    │   ├── text "审批人"
+    │   ├── text "部门"
+    │   ├── text "职位"
+    │   ├── text "接收日期"
+    │   ├── text "审批日期"
+    │   ├── text "审批结论"
+    │   ├── text "审批意见"
+    │   ├── text ""
+    │   ├── text "附件"
+    │   ├── text "发票文件的大小不得超过10MB，否则无法识别。"
+    │   ├── text "序号"
+    │   ├── text "状态"
+    │   ├── text "类型"
+    │   ├── text "文件名"
+    │   ├── text "大小"
+    │   ├── text "提交人"
+    │   ├── text "上传时间"
+    │   ├── text "备注"
+    │   ├── text "icon. 要获取缺失的图片说明，请打开上下文菜单。"
+    │   └── text "欢迎使用中乔协同办公！V2610151839"
+    ├── window ""
+    ├── window "WeMail"
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window "Microsoft Text Input Application"
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window ""
+    ├── window "任务栏"
+    │   └── 窗格 "任务栏"
+    │       ├── (24,1180) 按钮 "开始"  [action: click]
+    │       ├── 工具栏 "运行中的应用程序"
+    │       │   ├── (75,1180) 按钮 "PowerShell 7 (x64)"  [action: click]
+    │       │   ├── (124,1180) 按钮 "命令提示符 - 1 个运行窗口"  [action: click]
+    │       │   ├── (173,1180) 按钮 "启动有道云笔记"  [action: click]
+    │       │   ├── (222,1180) 按钮 "Google Chrome"  [action: click]
+    │       │   ├── (271,1180) 按钮 "Microsoft Edge"  [action: click]
+    │       │   ├── (320,1180) 按钮 "Clash Verge"  [action: click]
+    │       │   ├── (369,1180) 菜单项目 "文件资源管理器 - 3 个运行窗口"  [action: click]
+    │       │   ├── (418,1180) 按钮 "企业微信 - 1 个运行窗口"  [action: click]
+    │       │   ├── (467,1180) 按钮 "终端 - 1 个运行窗口"  [action: click]
+    │       │   ├── (516,1180) 按钮 "Python - 1 个运行窗口"  [action: click]
+    │       │   ├── (565,1180) 菜单项目 "Git Bash - 3 个运行窗口"  [action: click]
+    │       │   └── (614,1180) 按钮 "Visual Studio Code - 1 个运行窗口"  [action: click]
+    │       ├── (1664,1180) 按钮 "通知 V 形"  [action: click]
+    │       ├── 工具栏 "用户提示通知区域"
+    │       │   ├── (1688,1180) 按钮 "Clash Verge 2.5.2
+系统代理: on
+TUN: off
+订阅: Mc-VIP"  [action: click]
+    │       │   ├── (1712,1180) 按钮 "企业微信: 陈晶"  [action: click]
+    │       │   ├── (1736,1180) 按钮 "用户名称：User17921 
+终端编号：17921 
+终端版本：7.51.260318.SC 正式版"  [action: click]
+    │       │   └── (1760,1180) 按钮 "扬声器: 静音"  [action: click]
+    │       ├── 窗格 "任务栏输入指示"
+    │       │   └── (1783,1180) 按钮 "输入法模式图标 - 英语模式
+
+单击右键以查看更多选项"  [action: click]
+    │       ├── (1830,1180) 按钮 "系统时钟, 13:40, ‎2026/‎10/‎20"  [action: click]
+    │       ├── (1891,1180) 按钮 "操作中心，3 个新通知"  [action: click]
+    │       └── (1917,1180) 按钮 "显示桌面"  [action: click]
+    ├── window ""
+    └── window ""

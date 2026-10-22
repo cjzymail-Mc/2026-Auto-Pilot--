@@ -1,0 +1,5 @@
+INIT OK server = {"name": "windows-mcp", "version": "4.1.0"}
+STEP 1/4 App OK in 9.0s, saved -> v_app2.txt
+STEP 2/4 Snapshot OK in 15.3s, saved -> v_s2pre.txt
+STEP 3/4 Click OK in 0.6s, saved -> v_click2.txt
+STEP 4/4 Snapshot OK in 15.4s, saved -> v_s2.txt

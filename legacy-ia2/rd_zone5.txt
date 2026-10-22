@@ -1,0 +1,60 @@
+1: 
+2:     Cursor Position: (265, 163)
+3: Visible Displays: 0:\\.\DISPLAY1 (0,0,1920,1200) primary
+4: 
+5:     Active Desktop:
+6:     Name
+7: ---------
+8: Desktop 1
+9: 
+10:     All Desktops:
+11:     Name
+12: ---------
+13: Desktop 1
+14: Desktop 2
+15: 
+16:     Focused Window:
+17:     Name      Depth  Status      Width    Height    Handle
+18: ------  -------  --------  -------  --------  --------
+19: 企业微信         18  Normal       1026      1160    133590
+20: 
+21:     Opened Windows:
+22:     Name                                      Depth  Status       Width    Height    Handle
+23: --------------------------------------  -------  ---------  -------  --------  --------
+24: Mc-Expert-repo                                1  Minimized        0         0   2165766
+25: 【feature01-企业微信自动化办公】                         2  Minimized        0         0   1706758
+26: ✳ 修复 git bash 滚动条消失问题                         3  Normal         835       473   3541530
+27: Hot-Fix                                      10  Minimized        0         0    200372
+28: Hot-Fix                                      12  Minimized        0         0   1182648
+29: ✳ 测试 claude-glm 是否支持 workflow 命令             16  Minimized        0         0   1706952
+30: Mc-debug 10月探索.md - Visual Studio Code       19  Minimized        0         0    134778
+31: start-flowboard.cmd - 快捷方式                   23  Minimized      160        28   1117534
+32: 设置                                           26  Normal        1215       694    196838
+33: ⠐ 了解 feature01 最新进展                          28  Normal         835       473   2362482
+34: C:\Windows\py.exe                            30  Minimized      160        28   3541242
+35: 
+36: 
+37:     UI Tree:
+38:     desktop
+39:     ├── window "企业微信"
+40:     │   ├── 窗格 "企业微信-工作台"
+41:     │   │   └── (543,618) 文档 "协同办公系统"  [action: click]  [focused]  [value:"https://bpm.qiaodan.com/account/login?redirect=%2Foa%2Freimburse%3Ftype%3Dview%26id%3
+42:     │   ├── text "QIAODAN"
+43:     │   ├── text "协同办公系统"
+44:     │   └── text "欢迎使用中乔协同办公！V2610151839"
+45:     ├── window ""
+46:     ├── window "WeMail"
+47:     ├── window ""
+48:     ├── window ""
+49:     ├── window ""
+50:     ├── window ""
+51:     ├── window ""
+52:     ├── window ""
+53:     ├── window ""
+54:     ├── window ""
+55:     ├── window "Microsoft Text Input Application"
+56:     ├── window ""
+57:     ├── window ""
+58:     │   ├── (38,35) 列表项目 "此电脑"  [action: click]
+59:     │   ├── (38,122) 列表项目 "回收站"  [action: click]
+60:     │   ├── (38,217) 列表项目 "Adobe Photoshop CC"  [action: click]

@@ -1,0 +1,1 @@
+{"steps":[{"tool":"App","args":{"mode":"switch","name":"企业微信"},"out":"r22_app.txt"},{"tool":"Scroll","args":{"loc":[1000,520],"type":"vertical","direction":"up","wheel_times":8},"out":"r22_sc.txt"},{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"r22_a.txt"}]}

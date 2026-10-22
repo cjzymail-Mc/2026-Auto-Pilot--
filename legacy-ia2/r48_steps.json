@@ -1,0 +1,1 @@
+{"steps": [{"tool": "App", "args": {"mode": "resize", "name": "企业微信", "window_loc": [193, 212], "window_size": [1447, 760]}}, {"tool": "Wait", "args": {"duration": 3}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "r48_tree.txt"}]}

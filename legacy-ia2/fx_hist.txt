@@ -1,0 +1,18 @@
+== f_steps1.json
+{"steps": [{"tool": "App", "args": {"mode": "switch", "name": "企业微信"}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "f_s0.txt"}]}
+== f_steps2.json
+{"steps": [{"tool": "App", "args": {"mode": "switch", "name": "企业微信"}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "f_w0.txt"}, {"tool": "Click", "args": {"loc": [85, 130], "button": "left", "clicks": 1}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "f_w1.txt"}]}
+== f_steps4.json
+{"steps": [{"tool": "App", "args": {"mode": "switch", "name": "企业微信"}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "f_final.txt"}]}
+== v_steps1.json
+{"steps":[{"tool":"App","args":{"mode":"switch","name":"企业微信"},"out":"v_app1.txt"},{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"v_s1.txt"}]}
+
+== v_steps2.json
+{"steps":[{"tool":"App","args":{"mode":"switch","name":"企业微信"},"out":"v_app2.txt"},{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"v_s2pre.txt"},{"tool":"Click","args":{"loc":[134,130],"button":"left","clicks":1},"out":"v_click2.txt"},{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"v_s2.txt"}]}
+
+== rd_steps2.json
+{"steps": [{"tool": "App", "args": {"mode": "switch", "name": "企业微信"}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "rd_pre2.txt"}, {"tool": "Click", "args": {"loc": [134, 130], "button": "left", "clicks": 1}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "rd_s2.txt"}]}
+== rd_steps5.json
+{"steps": [{"tool": "App", "args": {"mode": "switch", "name": "企业微信"}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "rd_s5.txt"}]}
+== rd_steps9.json
+{"steps": [{"tool": "App", "args": {"mode": "switch", "name": "企业微信"}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "rd_pre9.txt"}, {"tool": "Click", "args": {"loc": [325, 163], "button": "left", "clicks": 1}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "rd_s9.txt"}]}

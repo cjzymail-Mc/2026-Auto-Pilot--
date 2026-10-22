@@ -1,0 +1,4 @@
+        │   ├── (85,130) 选项卡项目 "工作台"  [action: click]
+        │   ├── (134,130) 选项卡项目 "报销单"  [action: click]
+        ├── (85,130) tab "工作台"  [action: click]
+        ├── (134,130) tab "报销单"  [action: click]

@@ -1,0 +1,1 @@
+{"steps": [{"tool": "Wait", "args": {"duration": 4}}, {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "r49_tree.txt"}]}

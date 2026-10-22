@@ -1,0 +1,6 @@
+{
+  "steps": [
+    {"tool": "App", "args": {"mode": "switch", "name": "企业微信"}, "out": "wmcp_switch_out.txt"},
+    {"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "wmcp_snapshot4.txt"}
+  ]
+}

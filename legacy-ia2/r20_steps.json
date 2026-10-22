@@ -1,0 +1,1 @@
+{"steps":[{"tool":"App","args":{"mode":"switch","name":"企业微信"},"out":"r20_app.txt"},{"tool":"Click","args":{"loc":[1017,494],"button":"left","clicks":1},"out":"r20_c1.txt"},{"tool":"Type","args":{"text":"差旅费"},"out":"r20_t1.txt"},{"tool":"Snapshot","args":{"use_vision":false,"use_ui_tree":true,"use_annotation":false},"out":"r20_a.txt"}]}

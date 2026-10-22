@@ -1,0 +1,1 @@
+{"steps": [{"tool": "App", "args": {"mode": "switch", "name": "企业微信"}}, {"tool": "Wait", "args": {"duration": 1}}, {"tool": "Click", "args": {"loc": [1236, 720], "button": "left", "clicks": 1}}, {"tool": "Wait", "args": {"duration": 1}}]}

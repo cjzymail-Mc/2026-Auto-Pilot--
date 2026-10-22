@@ -1,0 +1,5 @@
+﻿LANGS=zh-Hans-CN
+MAXDIM=10000
+IMG=340x44
+11,11 11x10  捋 垡 引 丿 辶 力 过 源
+TOTAL_LINES=1

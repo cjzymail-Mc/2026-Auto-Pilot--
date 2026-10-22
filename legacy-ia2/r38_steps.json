@@ -1,0 +1,1 @@
+{"steps": [{"tool": "Snapshot", "args": {"use_vision": false, "use_ui_tree": true, "use_annotation": false}, "out": "r38_tree.txt"}]}

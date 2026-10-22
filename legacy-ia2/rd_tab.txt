@@ -1,0 +1,10 @@
+40:     │   ├── 窗格 "企业微信-工作台"
+43:     │   │   ├── (85,130) 选项卡项目 "工作台"  [action: click]
+44:     │   │   ├── (134,130) 选项卡项目 "报销单"  [action: click]
+45:     │   │   ├── (204,130) 选项卡项目 "新增报销"  [action: click]
+46:     │   │   ├── 选项卡面板 "新增报销"
+108:     │   │   └── (543,618) 文档 "新增报销"  [action: click]  [value:"https://bpm.qiaodan.com/oa/reimburse?type=new&t=1792463116991"]
+111:     │   ├── (85,130) tab "工作台"  [action: click]
+112:     │   ├── (134,130) tab "报销单"  [action: click]
+113:     │   ├── (204,130) tab "新增报销"  [action: click]
+127:     │   ├── (82,510) tab ""  [action: click]
