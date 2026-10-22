@@ -1,0 +1,533 @@
+
+=== L3513 ASSISTANT ===
+补 docstring 一行，然后编译+自检：
+
+=== L3514 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "        走编辑态『选择表格数据』弹表（dblclick 进格现形真按钮）→ 选含单号的行 →\n        白名单确认（若有）。任一步无命中 → 守卫式关闭 + 如实记；终读以表体出现\n        单号为准；绝不盲选。末列兜底已撤（016 实证其开的是『备注』弹窗）。\"\"\"", "new_string": "        走编辑态『选择表格数据』弹表（dblclick 进格现形真按钮）→ 选含单号的行 →\n        白名单确认（若有）。精确单号 miss（原单已被一次性关联消耗，019 实证）→\n        经用户 2026-10-22 授权改搜『公出』选首个公出行，选中单号以回读为准并明记\n        替代。任一步无命中 → 守卫式关闭 + 如实记；终读以表体出现单号为准；绝不\n        盲选。末列兜底已撤（016 实证其开的是『备注』弹窗）。\"\"\""}
+
+--- L3515 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3516 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -m py_compile stage1_browser_probe.py && echo COMPILE_OK && python -X utf8 stage1_probe_selftest.py 2>&1 | tail -8", "description": "Compile and selftest 020 changes"}
+
+--- L3517 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+COMPILE_OK
+== T8 登录态持久化 + PrimeNG 表面解析 ==
+  PASS  _session_state_usable：新鲜可用 / 超 TTL / 空 / 缺 一律正确
+  PASS  _resolve_ng_field：精确 > 别名/互含 > name 提示；不可见项排除
+  PASS  _table_col：精确/拆分/互含/别名（是否为一次性↔是否为最后一次）
+  P
+
+=== L3518 ASSISTANT ===
+ALL PASS。轮换 019 → 020：
+
+=== L3519 ASSISTANT ===
+[TOOL_USE TaskStop] {"task_id": "byyeh0khz"}
+
+--- L3520 TOOL_RESULT ---
+[TOOL_RESULT] {"message":"Successfully stopped task: byyeh0khz (cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 stage1_browser_probe.py --run 20261021-131724-1c1aadbd --expect-name 陈晶 --fill-plan automation/runs/202
+
+=== L3521 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && sleep 3 && powershell -NoProfile -ExecutionPolicy Bypass -File _chk_orphan2.ps1", "description": "Verify no orphan chrome before relaunch"}
+
+--- L3522 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+no orphan chrome on pw-profile
+
+=== L3523 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 stage1_browser_probe.py --run 20261021-131724-1c1aadbd --expect-name 陈晶 --fill-plan automation/runs/20261021-131724-1c1aadbd/fill_plan.json --keep-open-minutes 200", "description": "Launch attempt_020 fill probe", "run_in_background": true}
+
+--- L3524 TOOL_RESULT ---
+[TOOL_RESULT] Command running in background with ID: bm9kb9bbp. Output is being written to: C:\Users\xy24\AppData\Local\Temp\claude\D--Technique-Support-Claude-Code-Learning-Hot-Fix\69b0bce8-1560-409a-93b8-f8b499a52f35\tasks\bm9kb9bbp.output. You will be notified 
+
+=== L3526 ASSISTANT ===
+020 已发（bm9kb9bbp，~5 分钟跑完）。等结果：
+
+=== L3527 ASSISTANT ===
+[TOOL_USE TaskOutput] {"task_id": "bm9kb9bbp", "block": true, "timeout": 540000}
+
+--- L3528 TOOL_RESULT ---
+[TOOL_RESULT] <retrieval_status>timeout</retrieval_status>
+
+<task_id>bm9kb9bbp</task_id>
+
+<task_type>local_bash</task_type>
+
+<status>running</status>
+
+<output>
+ Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+[13:30:07] preflight wininet: ['ProxyEnable    REG_DWORD    
+
+=== L3530 ASSISTANT ===
+020 收尾（200s）。查关键事件与终读：
+
+=== L3531 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/automation/runs/20261021-131724-1c1aadbd\" && python -X utf8 -c \"\nimport json\nevs = [json.loads(l) for l in open('events.jsonl', encoding='utf-8') if l.strip()]\nfor e in evs:\n    if str(e.get('ts','')) >= '2026-10-22T13:30:00':\n        et = e.get('event','')\n        if et in ('fill_table_pick','fill_overlay_row','fill_pick_miss','fill_budget_stage','fill_related_substitute','fill_pick_search_btn','fill_pick_click_error','fill_end','probe_end'):\n            print(json.dumps(e, ensure_ascii=False)[:330])\n\" 2>&1 | head -30 && echo ===MISMATCH=== && python -X utf8 -c \"\nimport json\nrb = json.load(open('attempt_020/evidence/fill_readback.json', encoding='utf-8'))\nprint('total', len(rb), 'matched', sum(1 for r in rb if r.get('match')))\nfor r in rb:\n    if not r.get('match') and r.get('status') not in ('NOT_IN_FORM','FORM_FIELD_NOT_IN_TEMPLATE'):\n        print(json.dumps(r, ensure_ascii=False)[:300])\n\"", "description": "Extract 020 pick events and mismatches"}
+
+--- L3532 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "ts": "2026-10-22T13:30:31"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "to
+
+=== L3539 ASSISTANT ===
+020 战果：**授权替代选单流程走通**（搜「公出」→ 命中行 → 提取单号 12***）+ 预算单 prescan 命中（同 019）。但两个尾巴：
+1. 替代单**点了行却终读未确认**（RELATED_DOC_NOT_CONFIRMED）——查 DOM 看单号格到底回显没有
+2. 预算科目 prescan 也没命中——初始 3 行科目里可能根本没有「差旅」字样，看截图见真名
+
+先查 020 终态 DOM 的关联单据表体 + 预算列：
+
+=== L3540 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/automation/runs/20261021-131724-1c1aadbd\" && python -X utf8 -c \"\nimport re\nhtml = open('attempt_020/evidence/fill_form.html', encoding='utf-8', errors='replace').read()\nprint('len', len(html))\n# 找关联单据表体行里的数字（bizNumber 表）\ni = html.find('prop-bizNumber')\nprint('bizNumber idx', i)\nseg = html[i:i+6000] if i>=0 else ''\n# 表体单元格文本\ncells = re.findall(r'<td[^>]*>(?:(?!</td>).){0,400}</td>', seg, re.S)\nfor c in cells[:14]:\n    txt = re.sub(r'<[^>]+>', ' ', c)\n    txt = re.sub(r'\\s+', ' ', txt).strip()\n    print('TD:', txt[:110])\nprint('---11位数字出现---')\nprint(sorted(set(re.findall(r'1[0-9]{10}', seg)))[:10])\nprint('---预算echo---')\nj = html.find('prop-budgetNo')\nseg2 = html[j:j+6000] if j>=0 else ''\nfor m in re.finditer(r'prop-(budgetDeptName|budgetNo|subjectName|budgetProjectName)[^>]*>(?:(?!</td>).){0,300}', seg2, re.S):\n    t = re.sub(r'<[^>]+>', ' ', m.group(0)); t = re.sub(r'\\s+', ' ', t).strip()\n    print(m.group(1), '=>', t[:80])\n\"", "description": "Inspect 020 final DOM for related-doc cell and budget echo"}
+
+--- L3541 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+len 364703
+bizNumber idx 202823
+---11位数字出现---
+[]
+---预算echo---
+budgetNo => prop-budgetNo ui-sortable-column ui-resizable-column ng-star-inserted" tabindex=
+subjectName => prop-subjectName ui-sortable-c
+
+=== L3543 ASSISTANT ===
+换用探针自己的终态网格证据（fill_final_grid.json）：
+
+=== L3544 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/automation/runs/20261021-131724-1c1aadbd\" && ls attempt_020/evidence/ && python -X utf8 -c \"\nimport json, glob\nf = 'attempt_020/evidence/fill_final_grid.json'\ng = json.load(open(f, encoding='utf-8'))\nprint(type(g))\ns = json.dumps(g, ensure_ascii=False)\nprint('bizNumber' in s, len(s))\nimport re\n# 打印关联单据与预算相关片段\nfor key in ('bizNumber','budgetNo','subjectName','budgetDeptName'):\n    for m in re.finditer(r'\\\"[^\\\"]*'+key+r'[^\\\"]*\\\"\\s*:\\s*(\\[[^\\]]*\\]|\\\"[^\\\"]*\\\")', s):\n        print(key, ':', m.group(0)[:200])\n        break\n\" 2>&1 | head -30", "description": "List 020 evidence and parse final grid values"}
+
+--- L3545 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+entry.html
+entry.png
+fill_00_before.png
+fill_10_header.png
+fill_11_project_note.png
+fill_20_detail.png
+fill_30_summary.png
+fill_40_bank.png
+fill_99_after.png
+fill_budget_no_pick.png
+fill_budget_subject_pick
+
+=== L3546 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/automation/runs/20261021-131724-1c1aadbd\" && python -X utf8 -c \"\nimport json\ng = json.load(open('attempt_020/evidence/fill_final_grid.json', encoding='utf-8'))\nprint('keys:', list(g.keys()))\ndef walk(o, path=''):\n    if isinstance(o, dict):\n        for k, v in o.items(): walk(v, path+'/'+str(k)[:24])\n    elif isinstance(o, list):\n        for i, v in enumerate(o[:3]): walk(v, path+f'[{i}]')\n    else:\n        s = str(o)\n        if any(t in s for t in ('公出','科技中心','差旅','年度预算','1562','1202')) and len(s) < 90:\n            print(path, '=>', s)\nwalk(g)\n\" 2>&1 | head -40", "description": "Walk final grid for related-doc and budget values"}
+
+--- L3547 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+keys: ['fields', 'tables']
+
+=== L3549 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/automation/runs/20261021-131724-1c1aadbd\" && python -X utf8 -c \"\nimport json\ng = json.load(open('attempt_020/evidence/fill_final_grid.json', encoding='utf-8'))\nfor t in g['tables']:\n    print('TABLE', t.get('title'), t.get('prop') or '', 'rows', t.get('row_count'))\n    for r in (t.get('rows') or [])[:2]:\n        print('  ROW:', json.dumps(r, ensure_ascii=False)[:400])\n\" 2>&1 | head -25", "description": "Print 020 final grid tables and rows"}
+
+--- L3550 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+TABLE 关联单据  rows 1
+TABLE 关联单据明细  rows 0
+TABLE 报销明细  rows 1
+TABLE 费用说明  rows 2
+TABLE 银行信息  rows 1
+TABLE 确认人  rows 0
+TABLE 审批记录  rows 0
+TABLE 附件  rows 0
+
+=== L3551 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/automation/runs/20261021-131724-1c1aadbd\" && python -X utf8 -c \"\nimport json\ng = json.load(open('attempt_020/evidence/fill_final_grid.json', encoding='utf-8'))\nt = [x for x in g['tables'] if x.get('title')=='关联单据'][0]\nprint(json.dumps(t, ensure_ascii=False, indent=1)[:800])\nt2 = [x for x in g['tables'] if x.get('title')=='报销明细'][0]\nprint(json.dumps(t2, ensure_ascii=False, indent=1)[:1500])\n\"", "description": "Dump related-doc and summary tables from final grid"}
+
+--- L3552 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+{
+ "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-cont
+
+=== L3558 ASSISTANT ===
+grid 只存选择器不存值。直接从 fill_form.html 抠两处表体文本：
+
+=== L3559 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/automation/runs/20261021-131724-1c1aadbd\" && python -X utf8 -c \"\nimport re\nhtml = open('attempt_020/evidence/fill_form.html', encoding='utf-8', errors='replace').read()\ndef txt(s): return re.sub(r'\\s+',' ', re.sub(r'<[^>]+>',' ', s)).strip()\n# 所有 tbody 段落里有内容的\ntbodies = re.findall(r'<tbody[^>]*>(.*?)</tbody>', html, re.S)\nprint('tbody count', len(tbodies))\nfor i, tb in enumerate(tbodies):\n    t = txt(tb)\n    if t and len(t) > 3:\n        print(f'--TB{i}--', t[:330])\n\" 2>&1 | head -30", "description": "Extract all non-empty tbody text from 020 DOM"}
+
+--- L3560 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+tbody count 16
+--TB1-- 1 公出单 0.00 0.00 0.00 是
+--TB5-- 1 通行费 科技中心 15625120077 科技中心 191.40
+--TB7-- 1 伙食 2026-09-22 2026-09-22 晋江 1 60.00 陈晶 延领公出餐补 2 其它交通 2026-09-22 2026-09-22 厦门/晋江 1 191.40 厦门/晋江往返 - 自驾
+
+
+=== L3562 ASSISTANT ===
+**020 终态 DOM 破案关键**：
+- 关联单据行：`1 公出单 0.00 0.00 0.00 是`——类型✓一次性✓，**但单号列空**（点行+确定没提交成功）
+- 汇总行：`通行费 科技中心 15625120077 科技中心 191.40`——预算单/部门/归属已回显，**科目/项目仍空**
+
+两张决定性截图上 CDN 做视觉分析（替代弹表初始行 + 科目弹表 3 行真名）：
+
+=== L3563 ASSISTANT ===
+[TOOL_USE Read] {"file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\automation\\runs\\20261021-131724-1c1aadbd\\attempt_020\\evidence\\fill_related_sub_pick.png"}
+
+=== L3564 ASSISTANT ===
+[TOOL_USE Read] {"file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\automation\\runs\\20261021-131724-1c1aadbd\\attempt_020\\evidence\\fill_budget_subject_pick.png"}
+
+--- L3565 TOOL_RESULT ---
+[TOOL_RESULT] 
+
+--- L3570 TOOL_RESULT ---
+[TOOL_RESULT] 
+
+=== L3576 ASSISTANT ===
+**🌐 Z.ai Built-in Tool: analyze_image**
+
+**Input:**
+```json
+{"imageSource":"https://maas-log-prod.cn-wlcb.ufileos.com/anthropic/6edf72b4-44a9-4b92-a3fb-7eb65985bca4/D%3A%5CTechnique%20Support%5CClaude%20Code%20Learning%5CHot-Fix%5C%E3%80%90feature01-%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E8%87%AA%E5%8A%A8%E5%8C%96%E5%8A%9E%E5%85%AC%E3%80%91%5Cautomation%5Cruns%5C20261021-131724-1c1aadbd%5Cattempt_020%5Cevidence%5Cfill_related_sub_pick.png?UCloudPublicKey=TOKEN_e15ba47a-d098-4fbd-9afc-a0dcf0e4e621&Expires=1792649562&Signature=YN4ccItktxpOvIMZMOIGzj1bFRo=","prompt":"这是 Angular PrimeNG 报销单页面截图，此刻『关联单据』表格已有一行（单据类型=公出单），刚双击该行『单据号』单元格进编辑态并点了『选择表格数据』按钮，弹出了『单据选择』弹窗（此截图为弹窗刚开、还没搜索时的状态）。请逐项具体描述：1) 弹窗表格的完整列头（按顺序列出所有列名）；2) 当前可见数据行有几行？逐行读出内容（序号/单据类型/单据号/日期/申请人/金额/摘要/状态——数字尽量精确辨认）；3) 有哪些行的单据类型是『公出单』或摘要含『公出』？它们的单据号分别是多少；4) 弹窗顶部搜索框的 placeholder 文字和旁边的按钮文字；5) 行选择是勾选框还是点行高亮？当前有没有已选中/高亮的行？"}
+```
+*Executing on server...*
+
+
+=== L3578 ASSISTANT ===
+**Output:**
+**analyze_image_result_summary:** [{"text": "\"很抱歉，这张截图分辨率较低，弹窗内的文字已模糊到无法逐字精确辨认（列头、行内容、单据号等数字/汉字均呈锯齿状，强行“读出”只会是编造）。以下是基于页面结构可以**确认/合理推断**的部分，以及无法辨认的说明：\\n\\n**1) 弹窗表格列头**\\n从界面元素位置可推断大致包含：选择列（行首）、序号、单据类型、单据号、日期、申请人、金额、摘要/事由、状态。但具体列名文字因模糊无法逐字确认。\\n\\n**2) 当前可见数据行数**\\n弹窗表格约可见 13～15 行数据（底部有分页条，显示类似 \\\"1/xx 页”）。但每一行的单据类型、单据号、日期、金额等具体内...
+                                                
+
+=== L3579 ASSISTANT ===
+[TOOL_RESULT] ["很抱歉，这张截图分辨率较低，弹窗内的文字已模糊到无法逐字精确辨认（列头、行内容、单据号等数字/汉字均呈锯齿状，强行“读出”只会是编造）。以下是基于页面结构可以**确认/合理推断**的部分，以及无法辨认的说明：\n\n**1) 弹窗表格列头**\n从界面元素位置可推断大致包含：选择列（行首）、序号、单据类型、单据号、日期、申请人、金额、摘要/事由、状态。但具体列名文字因模糊无法逐字确认。\n\n**2) 当前可见数据行数**\n弹窗表格约可见 13～15 行数据（底部有分页条，显示类似 \"1/xx 页”）。但每一行的单据类型、单据号、日期、金额等具体内容在当前分辨率下无法可靠读出，我不能给出看似精确实为猜测的数字。\n\n**3) 公出单行**\n无法辨认哪些行的单据类型是“公出单”、摘要是否含“公出”字样，也无法读出对应单据号。\n\n**4) 搜索框与按钮**\n弹窗顶部确实有一个输入框（placeholder 文字无法辨认，按此类组件惯例通常是“请输入单据号/摘要关键字”之类）和一个查询/搜索按钮（按钮文字约2字，疑为“查询”或“搜索”，无法确认）。\n\n**5) 选择交互方式**\n从 UI 看不出行首有复选框列的明显方框，弹窗底部右侧有“确定/取消”类按钮，多数此类 PrimeNG 单选弹窗是**点击行高亮选中**；当前可见行中没有明显的高亮/选中行（无明显蓝色高亮条）。这一点也受分辨率限制，不能100%确定。\n\n**建议**：如需准确回答，请提供更高分辨率的原截图，或截取弹窗区域放大后再发一次，我可以逐行精确读出内容。"]
+
+=== L3581 ASSISTANT ===
+截图分辨率不够 OCR。不猜——给 021 加**原始行落盘**：弹表候选的完整行文本（含未脱敏原文）写入 evidence 目录 `fill_dialog_rows.jsonl`（证据文件保原始值，控制台/事件仍走 mask），一轮拿到两处弹表的全部真名：
+
+=== L3582 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "        cands = _dump()\n        self.log_event(event=\"fill_overlay_dump\", where=tag,\n                       overlays=[{k: c.get(k) for k in (\"cls\", \"title\", \"inputs\", \"rows\", \"tables\")}\n                                 for c in cands[:4]])\n        if not cands:\n            self._dialog_close_guarded(page)\n            return False", "new_string": "        cands = _dump()\n        self.log_event(event=\"fill_overlay_dump\", where=tag,\n                       overlays=[{k: c.get(k) for k in (\"cls\", \"title\", \"inputs\", \"rows\", \"tables\")}\n                                 for c in cands[:4]])\n        self._dump_rows_evidence(tag, cands)\n        if not cands:\n            self._dialog_close_guarded(page)\n            return False"}
+
+--- L3583 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3589 USER ===
+This session is being continued from a previous conversation that ran out of context. The summary below covers the earlier portion of the conversation.
+
+Summary:
+1. Primary Request and Intent:
+   Governing (unchanged): verify 【自动填写单据】capability — fill a NEW reimbursement form in probe Chromium per template “★★★2026-09-30 【厦门-晋江】报销模板.png”， values “全部按默认值走：【公出晋江油补】【关联公出单、是一次性】”； user reviews the filled form personally; NEVER save/submit.
+   LATEST USER CORRECTIONS/DIRECTIVES (this segment, verbatim):
+   - “我判断错误了，公出单关联当时我选的【一次性】，因此你找不到那个公出单很正常，因为那个公出单是一次性的，已经被关联掉了。但不影响你选单据的能力；你随便选一个别的公出单试试” → doc 12026096668 is consumed (one-time, already associated); user authorizes picking ANY other 公出单 to demonstrate selection capability.
+   - “如果workflow模式能提升效率，你可以开workflow；我给你授权” → addressed: fill loop is single-browser serial (executor.lock), workflow not applicable to critical path; may use for #13 evidence sweep.
+   Standing (inherited): “赶紧让我再扫一次码，我即将离开，你继续完成任务，完成后不要保存、也不要提交；我会等你完成后，再来审核”； 4h se
+
+=== L3601 ASSISTANT ===
+[TOOL_USE Grep] {"pattern": "def _overlay_search_pick|def _pick_candidates|def _dump_rows_evidence|def _dialog_close_guarded", "path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "output_mode": "content", "-n": true}
+
+--- L3602 TOOL_RESULT ---
+[TOOL_RESULT] 1767:    def _pick_candidates(self, frame):
+1907:    def _overlay_search_pick(self, page, frame, keyword, tag, prescan=False):
+1991:    def _dialog_close_guarded(self, page):
+
+=== L3604 ASSISTANT ===
+[TOOL_USE Read] {"file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "limit": 130, "offset": 1760}
+
+--- L3605 TOOL_RESULT ---
+[TOOL_RESULT] 1760	
+1761	    def _overlay_open(self, frame):
+1762	        """当前有内容（输入框或行）的浮层清单——区分『无浮层』与『有浮层没命中』。"""
+1763	        return [c for c in self._overlay_dump(frame)
+1764	                if isinstance(c, dict) and not c.get("err")
+1765	                and
+
+=== L3606 ASSISTANT ===
+[TOOL_USE Read] {"file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "limit": 105, "offset": 1890}
+
+--- L3607 TOOL_RESULT ---
+[TOOL_RESULT] 1890	                               error=f"{str(e1)[:60]}|js:{str(e2)[:60]}")
+1891	                return False, "选择按钮点击失败"
+1892	        page.wait_for_timeout(1200)
+1893	        toast = self._toast_read(frame)
+1894	        has = bool(self._overlay_o
+
+=== L3613 ASSISTANT ===
+[TOOL_USE Grep] {"-n": true, "output_mode": "content", "path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "pattern": "def shot|def log_event|evidence|def _evidence|self\\.ev_dir|ev_dir", "head_limit": 40}
+
+--- L3614 TOOL_RESULT ---
+[TOOL_RESULT] 82:    "c1_entry_login": {"status": NOT_RUN, "reason": "", "evidence": []},
+83:    "c2_locate_target": {"status": NOT_RUN, "reason": "", "evidence": []},
+84:    "c3_structure": {"status": NOT_RUN, "reason": "", "evidence": []},
+85:    "c4_normal_fiel
+
+=== L3616 ASSISTANT ===
+[TOOL_USE Read] {"file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "limit": 55, "offset": 928}
+
+--- L3617 TOOL_RESULT ---
+[TOOL_RESULT] 928	        self.run_dir.mkdir(parents=True, exist_ok=True)
+929	        n = 1
+930	        while (self.run_dir / f"attempt_{n:03d}").exists():
+931	            n += 1
+932	        self.attempt = self.run_dir / f"attempt_{n:03d}"
+933	        self.ev = se
+
+=== L3619 ASSISTANT ===
+Now adding `_dump_rows_evidence` (raw rows → evidence jsonl) and hardening `_scan_pick` with selection-state verify + checkbox fallback + confirm-click logging — the three open 020 hypotheses:
+
+=== L3620 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "    def shot(self, page, name):", "new_string": "    def _dump_rows_evidence(self, tag, cands, note=\"\"):\n        \"\"\"弹表原始行文落盘（attempt_020 教训）：events.jsonl 全程 mask + 截图分辨率\n        不足 OCR，020 到底点中了哪一行（『单据***』含公出却无单号）无法复盘。原始值\n        只进 attempt 证据目录 fill_dialog_rows.jsonl（契约：证据文件保原始值，控制台/\n        事件仍 mask），追加不覆盖，异常绝不影响主流程。\"\"\"\n        try:\n            rec = {\"ts\": time.strftime(\"%Y-%m-%dT%H:%M:%S\"), \"where\": tag,\n                   \"cands\": [{k: c.get(k) for k in (\"sel\", \"cls\", \"title\", \"input_sel\",\n                                                    \"buttons\", \"row_list\")}\n                             for c in (cands or []) if isinstance(c, dict)]}\n            if note:\n                rec[\"note\"] = note\n            with io.open(self.ev / \"fill_dialog_rows.jsonl\", \"a\",\n                         encoding=\"utf-8\", newline=\"\\n\") as f:\n                f.write(json.dumps(rec, ensure_ascii=False) + \"\\n\")\n        except Exception:\n            pass\n\n    def shot(self, page, name):"}
+
+--- L3621 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3627 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "        def _scan_pick(cands):\n            \"\"\"B) 行扫归一化命中→点行→白名单确认；返回命中行原文或 None。\"\"\"\n            for c in cands:\n                for r in (c.get(\"row_list\") or []):\n                    rn = self._opt_norm(r.get(\"text\") or \"\")\n                    if rn and (kn in rn or rn in kn):\n                        frame.locator(r[\"sel\"]).first.click(timeout=8000)\n                        page.wait_for_timeout(800)\n                        self.log_event(event=\"fill_overlay_row\", where=tag,\n                                       row=mask(r.get(\"text\") or \"\")[:80])\n                        for b in (c.get(\"buttons\") or []):\n                            if b.get(\"text\") in self._DIALOG_CONFIRM and not b.get(\"disabled\"):\n                                self._click_guard(b[\"text\"])\n                                frame.locator(b[\"sel\"]).first.click(timeout=8000)\n                                page.wait_for_timeout(800)\n                                break\n                        return r.get(\"text\") or
+
+--- L3628 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3630 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "            # B) 全量候选行扫命中（016 修复：不再要求浮层带输入框）\n            hit_text = _scan_pick(_dump())\n            if hit_text:\n                self._last_pick_row = hit_text\n                return True\n            self.log_event(event=\"fill_pick_miss\", where=tag, target=str(keyword)[:40],\n                           options=[mask(r.get(\"text\") or \"\")[:40]\n                                    for c2 in _dump() for r in (c2.get(\"row_list\") or [])][:12])", "new_string": "            # B) 全量候选行扫命中（016 修复：不再要求浮层带输入框）\n            post = _dump()\n            hit_text = _scan_pick(post)\n            if hit_text:\n                self._last_pick_row = hit_text\n                return True\n            # 搜索后原始行文落盘（020 教训：miss 时也要知道搜索到底留下了什么）\n            self._dump_rows_evidence(tag, post, note=\"post_search_miss\")\n            self.log_event(event=\"fill_pick_miss\", where=tag, target=str(keyword)[:40],\n                           options=[mask(r.get(\"text\") or \"\")[:40]\n                                    for c2 in _dump() for r in 
+
+--- L3631 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3633 ASSISTANT ===
+[TOOL_USE Grep] {"-A": 18, "-n": true, "output_mode": "content", "path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "pattern": "授权改选其他公出单"}
+
+--- L3634 TOOL_RESULT ---
+[TOOL_RESULT] 2241:                                               "授权改选其他公出单，选中单号见 readback")
+2242-                                self.log_event(event="fill_related_substitute",
+2243-                                               where="关联单据/单号",
+2244-           
+
+=== L3635 ASSISTANT ===
+[TOOL_USE Read] {"file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "limit": 30, "offset": 2214}
+
+--- L3636 TOOL_RESULT ---
+[TOOL_RESULT] 2214	                        page.wait_for_timeout(1200)
+2215	                        self.shot(page, "fill_related_type_picked.png")
+2216	                        # 第 2 步：单号——类型选定后若选择面未自动开出，走『选择表格数据』
+2217	                        # 弹表流（attempt_018；017
+
+=== L3641 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "                            if picked:\n                                sub_row = getattr(self, \"_last_pick_row\", \"\") or \"\"\n                                sub_no = re.search(r\"\\d{8,}\", sub_row)\n                                if sub_no:\n                                    value = sub_no.group(0)\n                                rec[\"note\"] = (\"原单据号已被一次性关联消耗，经用户2026-10-22\"\n                                               \"授权改选其他公出单，选中单号见 readback\")\n                                self.log_event(event=\"fill_related_substitute\",\n                                               where=\"关联单据/单号\",", "new_string": "                            if picked:\n                                sub_row = getattr(self, \"_last_pick_row\", \"\") or \"\"\n                                sub_no = re.search(r\"\\d{8,}\", sub_row)\n                                if sub_no:\n                                    value = sub_no.group(0)\n                                    sub_note = \"选中单号取自行文，终读以它为准\"\n                             
+
+--- L3642 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3644 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 -m py_compile stage1_browser_probe.py && python -X utf8 stage1_browser_probe.py --selftest 2>&1 | tail -20", "description": "Compile probe and run offline selftest"}
+
+--- L3645 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+usage: stage1_browser_probe.py [-h] [--run RUN] [--doc-id DOC_ID]
+                               --expect-name EXPECT_NAME
+                               [--tech-budget TECH_BUDGET]
+                     
+
+=== L3646 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 stage1_browser_probe.py --selftest --expect-name selftest 2>&1 | tail -8", "description": "Run probe offline selftest"}
+
+--- L3647 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+usage: stage1_browser_probe.py [-h] [--run RUN] [--doc-id DOC_ID]
+                               --expect-name EXPECT_NAME
+                               [--tech-budget TECH_BUDGET]
+                     
+
+=== L3650 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && ls *.py *_test* 2>/dev/null; grep -ln \"selftest\" *.py 2>/dev/null", "description": "Find selftest entry in repo scripts"}
+
+--- L3651 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+cdn_test.png
+stage1_browser_probe.py
+stage1_probe_selftest.py
+v_expand.py
+wmcp_diag.py
+wmcp_ia2_probe.py
+wmcp_probe.py
+wmcp_rawdump.py
+stage1_browser_probe.py
+stage1_probe_selftest.py
+
+=== L3652 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 stage1_probe_selftest.py 2>&1 | tail -12", "description": "Run offline probe selftest suite"}
+
+--- L3653 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+  PASS  fill_match 数值等价/空白归一；大写≠数字
+  PASS  _locate_cell 精确优先 / 别名 / 同表头带约束 / 未命中→None
+  PASS  type=new 仅存在于授权路径（NEW_FORM_PATH 唯一）/ fill 阶段门禁 / NO_SAVE 守卫在源
+  PASS  填写任务整体口径：c1+c7→SUCCESS_FILL_ONLY；c7 FAI
+
+=== L3655 ASSISTANT ===
+编译通过，自检全部通过。轮转 020 → 021：
+
+=== L3656 ASSISTANT ===
+[TOOL_USE TaskStop] {"task_id": "bm9kb9bbp"}
+
+--- L3657 TOOL_RESULT ---
+[TOOL_RESULT] {"message":"Successfully stopped task: bm9kb9bbp (cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 stage1_browser_probe.py --run 20261021-131724-1c1aadbd --expect-name 陈晶 --fill-plan automation/runs/202
+
+=== L3662 ASSISTANT ===
+[TOOL_USE Bash] {"command": "sleep 3 && powershell -NoProfile -ExecutionPolicy Bypass -File \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/_chk_orphan2.ps1\"", "description": "Wait then check for orphan chrome on pw-profile"}
+
+--- L3663 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+no orphan chrome on pw-profile
+
+=== L3664 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 stage1_browser_probe.py --run 20261021-131724-1c1aadbd --expect-name 陈晶 --fill-plan automation/runs/20261021-131724-1c1aadbd/fill_plan.json --keep-open-minutes 200", "description": "Launch attempt 021 fill probe (background)", "run_in_background": true}
+
+--- L3665 TOOL_RESULT ---
+[TOOL_RESULT] Command running in background with ID: bkc0d56p4. Output is being written to: C:\Users\xy24\AppData\Local\Temp\claude\D--Technique-Support-Claude-Code-Learning-Hot-Fix\69b0bce8-1560-409a-93b8-f8b499a52f35\tasks\bkc0d56p4.output. You will be notified 
+
+=== L3667 ASSISTANT ===
+021 已启动（后台 `bkc0d56p4`）。本轮在选行流加了三处诊断+修复：命中行**原始行文落盘** `fill_dialog_rows.jsonl`（证据目录保原文，事件仍脱敏）、点行后**选中态核验**（高亮/aria-selected，未选中补点行内勾选框）、**确认按钮点击留痕**（点了哪个/一个没抓到）。等它跑完直接拿真名复盘，不再隔截图猜。
+
+=== L3668 ASSISTANT ===
+[TOOL_USE TaskOutput] {"task_id": "bkc0d56p4", "block": true, "timeout": 420000}
+
+--- L3669 TOOL_RESULT ---
+[TOOL_RESULT] <retrieval_status>timeout</retrieval_status>
+
+<task_id>bkc0d56p4</task_id>
+
+<task_type>local_bash</task_type>
+
+<status>running</status>
+
+<output>
+ Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+[13:51:28] preflight wininet: ['ProxyEnable    REG_DWORD    
+
+=== L3671 ASSISTANT ===
+021 跑完（fill 仍 FAIL，意料内）。直接看原始行文金矿：
+
+=== L3672 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/automation/runs/20261021-131724-1c1aadbd\" && wc -l attempt_021/evidence/fill_dialog_rows.jsonl 2>/dev/null && tail -5 events.jsonl", "description": "Check raw dialog rows file exists and recent events"}
+
+--- L3673 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+12 attempt_021/evidence/fill_dialog_rows.jsonl
+{"event": "fill_pick_miss", "where": "预算联动/预算科目", "target": "差旅", "options": ["项目***"], "ts": "2026-10-22T13:55:33"}
+{"event": "fill_budget_stage", "col": "预算科
+
+=== L3675 ASSISTANT ===
+[TOOL_USE Read] {"file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\automation\\runs\\20261021-131724-1c1aadbd\\attempt_021\\evidence\\fill_dialog_rows.jsonl"}
+
+--- L3676 TOOL_RESULT ---
+[TOOL_RESULT] 1	{"ts": "2026-10-22T13:51:53", "where": "关联单据/单据类型", "cands": [{"sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1
+
+=== L3682 ASSISTANT ===
+021 的原始行文一锤定音，三大谜团全部解开：
+
+1. **020 替代点击谜团**：`PICKED row='单据状态 申请日期 单据编号 申请人 公出事由'` —— 点中的是**表头行**！搜索“公出”把表滤空只剩表头，而表头里恰好有“**公出**事由”列名 → 匹配 → 点表头 → 无选中态 → 确定 → 空提交。
+2. **单号弹表初始态根本不用搜**：第一步选完“公出单”类型后，弹表初始就是 11 行**陈晶的公出单**（12026075605 量产会议 / 12025121473 陪同供应商参观晋江二厂 / …）。搜索框只匹配单据编号，词搜必空。
+3. **预算科目三科目真名**：合作研发费 / 外购模具费 / 咨询服务费 —— **都不含差旅**。当前选的预算单 15625120077（项目预算）就没有差旅科目；候选里 **15625120075 = 2026 年日常费用预算** —— 差旅费理应在这。且 record 10 证明：真数据行点击后 `highlighted=True` + 确定 → 回显成功，选行语义没问题。
+
+022 修复方案：跳过表头行；替代模式改“首个数据行直选”（不搜索）；预算单改为**迭代候选单直到科目表出现差旅**（差旅不在→换下一张，全部没有→如实留空）。动手：
+
+=== L3683 ASSISTANT ===
+[TOOL_USE Grep] {"-A": 45, "-n": true, "output_mode": "content", "path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "pattern": "def _try_budget_pick"}
+
+--- L3684 TOOL_RESULT ---
+[TOOL_RESULT] 2319:    def _try_budget_pick(self, page, frame):
+2320-        """预算联动（attempt_018 重写；017 DOM+toast 实证定案）：预算列分两类——
+2321-        预算部门/预算归属/预算项目/科目总额/科目余额 是 readonly 回显格（td class
+2322-        含 readonly，无编辑器，选中预算单后系统带出）；可编辑的 预算单/预算科目 是
+2323-        p-c
+
+=== L3685 ASSISTANT ===
+[TOOL_USE Read] {"file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "limit": 75, "offset": 2364}
+
+--- L3686 TOOL_RESULT ---
+[TOOL_RESULT] 2364	                    stage["note"] = "列未找到"
+2365	                else:
+2366	                    td = self._cell_loc(page, t, 0, ci)
+2367	                    ok, note = False, "未尝试"
+2368	                    for kw in PLAN_KWS[col]:
+2369	          
+
+=== L3692 ASSISTANT ===
+三大根因都实锤了，022 修复开始。改动一：`_scan_pick` 抽出 `_pick_row`（点行→选中态核验→确认留痕）+ **表头行永不选**（021 被点中的就是含"公出事由"列名的 thead）：
+
+=== L3693 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "        def _scan_pick(cands):\n            \"\"\"B) 行扫归一化命中→点行→选中态核验→白名单确认；返回命中行原文或 None。\n            020 教训：点行+确定后单号格仍空——行可能是 li 树节点/表头（无单号可提取），\n            或选中要走勾选框而非行点击。故：点行后核验选中态（ui-state-highlight/\n            aria-selected），未选中则补点行内 checkbox/radio；确认按钮点了哪个（或一个\n            都没抓到）必须留痕，原始行文走 fill_dialog_rows.jsonl。\"\"\"\n            for c in cands:\n                for r in (c.get(\"row_list\") or []):\n                    rn = self._opt_norm(r.get(\"text\") or \"\")\n                    if rn and (kn in rn or rn in kn):\n                        row_loc = frame.locator(r[\"sel\"]).first\n                        row_loc.click(timeout=8000)\n                        page.wait_for_timeout(600)\n                        # 选中态核验：行高亮/aria-selected；未选中→行内勾选框兜底\n                        highlighted, chk_method = False, \"\"\n                        try:\n                            cls = row_loc.get_attribute(\"class\") or \"\"\n                            aria = row_loc.get_attribute(\"aria-selected\")\n                            
+
+--- L3698 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3699 ASSISTANT ===
+改动二：`_overlay_search_pick` 加 `first_data_row` 模式（授权替代专用——不搜索、直选首个含 8 位单号的数据行）：
+
+=== L3700 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "    def _overlay_search_pick(self, page, frame, keyword, tag, prescan=False):\n        \"\"\"搜索浮层通用选点流（attempt_017/019）：候选=浮层清单+弹窗容器补扫合并\n        （_pick_candidates——p-dialog 弹表 position 过滤漏检的根治）。两段式：A) 有\n        输入框的候选→填关键词+回车，再补点弹窗内显式『查询/搜索/检索』按钮（弹表\n        带独立查询钮，回车未必触发服务端检索）；B) 全部候选（填词刷新后的 + 原始\n        面板）行扫归一化命中→点行。prescan=True 时先扫原始行（attempt_019 教训：\n        预算科目弹表本有 3 行科目，搜索词过滤后只剩表头行——小弹表先扫原行再搜索）。\n        命中行才点；候选内有白名单确认按钮才确认。无候选/无命中 → 守卫式关闭（含\n        Escape 兜底）并如实返回 False，可见选项必留痕（fill_pick_miss）——绝不盲选。\n        018 教训：早退路径也必须守卫关闭，否则残留弹窗的遮罩挡住后续单元格 dblclick。\n        命中行原文存 self._last_pick_row（回读选中单号用；日志仍走 mask）。\"\"\"", "new_string": "    def _overlay_search_pick(self, page, frame, keyword, tag, prescan=False,\n                             first_data_row=False):\n        \"\"\"搜索浮层通用选点流（attempt_017/019）：候选=浮层清单+弹窗容器补扫合并\n        （_pick_candidates——p-dialog 弹表 position 过滤漏检的根治）。两段式：A) 有\n        输入框的候选→填关键词+回车，再补点弹窗内显式『查询/搜索/检索』按钮（弹表\n        带独立查询钮，回车未必触发服务端检索）；B) 全部候选（填词刷新后的 + 原始\n        面板）行扫归一化命中→点行（021 起表头行一律跳过）。p
+
+--- L3701 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3702 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "        kn = self._opt_norm(str(keyword))\n        try:", "new_string": "        kn = self._opt_norm(str(keyword))\n        if first_data_row:\n            # 授权替代专用：首个非表头且含 8 位以上单号的数据行直选（含选中态核验\n            # + 白名单确认），不进搜索两段式\n            for c in cands:\n                for r in (c.get(\"row_list\") or []):\n                    if _is_thead(r):\n                        continue\n                    if re.search(r\"\\d{8,}\", r.get(\"text\") or \"\"):\n                        hit_text = _pick_row(c, r)\n                        if hit_text:\n                            self._last_pick_row = hit_text\n                            return True\n            self._dump_rows_evidence(tag, cands, note=\"first_data_row_miss\")\n            self._dialog_close_guarded(page)\n            return False\n        try:"}
+
+--- L3703 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3704 ASSISTANT ===
+改动三/四：`_cell_table_pick` 透传 + 替代调用切到 `first_data_row`：
+
+=== L3705 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "    def _cell_table_pick(self, page, frame, td, keyword, tag, shot=None, prescan=False):", "new_string": "    def _cell_table_pick(self, page, frame, td, keyword, tag, shot=None, prescan=False,\n                         first_data_row=False):"}
+
+--- L3706 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3712 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "        if self._overlay_search_pick(page, frame, keyword, tag, prescan=prescan):\n            return True, \"OK\"\n        return False, \"弹表无命中\"", "new_string": "        if self._overlay_search_pick(page, frame, keyword, tag, prescan=prescan,\n                                     first_data_row=first_data_row):\n            return True, \"OK\"\n        return False, \"弹表无命中\""}
+
+--- L3713 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3714 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "                        if not picked:\n                            picked, _note = self._cell_table_pick(\n                                page, frame, td, \"公出\", \"关联单据/单号-授权替代\",\n                                shot=\"fill_related_sub_pick.png\")", "new_string": "                        if not picked:\n                            picked, _note = self._cell_table_pick(\n                                page, frame, td, \"公出\", \"关联单据/单号-授权替代\",\n                                shot=\"fill_related_sub_pick.png\",\n                                prescan=True, first_data_row=True)"}
+
+--- L3715 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3717 ASSISTANT ===
+改动五：`_try_budget_pick` 重写为**候选预算单迭代**——选单→开科目表→prescan“差旅”，命中才确认；全无差旅则如实留空留审（绝不拿非差旅科目顶替）：
+
+=== L3718 ASSISTANT ===
+[TOOL_USE Edit] {"replace_all": false, "file_path": "D:\\Technique Support\\Claude Code Learning\\Hot-Fix\\【feature01-企业微信自动化办公】\\stage1_browser_probe.py", "old_string": "            stages = []\n            # 模板原词白名单：预算单计划值为 null（模板未含单号）→ 用 预算项目/预算部门\n            # 模板词搜预算单弹表；预算科目用模板词 差旅\n            PLAN_KWS = {\"预算单\": (\"年度预算项目\", \"科技中心\"), \"预算科目\": (\"差旅\",)}\n            budget_no_ok = False\n            for col in (\"预算单\", \"预算科目\"):\n                stage = {\"col\": col, \"kws\": list(PLAN_KWS[col])}\n                stages.append(stage)\n                if col == \"预算科目\" and not budget_no_ok:\n                    stage[\"note\"] = \"预算单未选，科目被链式门槛拦截（017 toast 实证），跳过\"\n                    self.log_event(event=\"fill_budget_stage\", **stage)\n                    continue\n                ci = _table_col(t.get(\"headers\", []), col)\n                if ci is None:\n                    stage[\"note\"] = \"列未找到\"\n                else:\n                    td = self._cell_loc(page, t, 0, ci)\n                    ok, note = False, \"未尝试\"\n                    for kw in PLAN_KWS[col]:\n                        stage[\"kw\"] = kw\n                        shot = (\"fill_budget_no_pick.png\" if 
+
+--- L3719 TOOL_RESULT ---
+[TOOL_RESULT] The file D:\Technique Support\Claude Code Learning\Hot-Fix\【feature01-企业微信自动化办公】\stage1_browser_probe.py has been updated successfully. (file state is current in your context — no need to Read it back)
+
+=== L3724 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 -m py_compile stage1_browser_probe.py && python -X utf8 stage1_probe_selftest.py 2>&1 | tail -6", "description": "Compile and selftest probe after 022 edits"}
+
+--- L3725 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+  PASS  _resolve_ng_field：精确 > 别名/互含 > name 提示；不可见项排除
+  PASS  _table_col：精确/拆分/互含/别名（是否为一次性↔是否为最后一次）
+  PASS  守卫扩展：新增/确定/取消等放行；空白变体禁点词仍拦截
+  PASS  静态完整性：会话持久化 + PrimeNG 表面件全在场；日志只记条数
+
+SELFTEST ALL PASS（1
+
+=== L3726 ASSISTANT ===
+ALL PASS。轮转 021 → 022：
+
+=== L3727 ASSISTANT ===
+[TOOL_USE TaskStop] {"task_id": "bkc0d56p4"}
+
+--- L3728 TOOL_RESULT ---
+[TOOL_RESULT] {"message":"Successfully stopped task: bkc0d56p4 (cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 stage1_browser_probe.py --run 20261021-131724-1c1aadbd --expect-name 陈晶 --fill-plan automation/runs/202
+
+=== L3729 ASSISTANT ===
+[TOOL_USE Bash] {"command": "sleep 3 && powershell -NoProfile -ExecutionPolicy Bypass -File \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】/_chk_orphan2.ps1\"", "description": "Verify no orphan chrome before 022 launch"}
+
+--- L3730 TOOL_RESULT ---
+[TOOL_RESULT]  Git Bash 已切换到 Clash / socks5h 代理 (7897端口) 
+no orphan chrome on pw-profile
+
+=== L3731 ASSISTANT ===
+[TOOL_USE Bash] {"command": "cd \"/d/Technique Support/Claude Code Learning/Hot-Fix/【feature01-企业微信自动化办公】\" && python -X utf8 stage1_browser_probe.py --run 20261021-131724-1c1aadbd --expect-name 陈晶 --fill-plan automation/runs/20261021-131724-1c1aadbd/fill_plan.json --keep-open-minutes 200", "description": "Launch attempt 022 fill probe (background)", "run_in_background": true}
+
+--- L3732 TOOL_RESULT ---
+[TOOL_RESULT] Command running in background with ID: bw3lzjch3. Output is being written to: C:\Users\xy24\AppData\Local\Temp\claude\D--Technique-Support-Claude-Code-Learning-Hot-Fix\69b0bce8-1560-409a-93b8-f8b499a52f35\tasks\bw3lzjch3.output. You will be notified 
+
+=== L3733 ASSISTANT ===
+[TOOL_USE TaskOutput] {"task_id": "bw3lzjch3", "block": true, "timeout": 480000}
