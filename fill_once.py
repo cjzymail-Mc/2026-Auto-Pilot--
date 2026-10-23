@@ -21,8 +21,8 @@ def main():
         sys.exit(f"[fill_once] fill_plan 缺失: {plan}")
     ss = os.path.join("automation", ".pw-profile", "session_state.json")
     age_h = (time.time() - os.path.getmtime(ss)) / 3600 if os.path.exists(ss) else 99.0
-    if age_h > 3.5:
-        print(f"[fill_once][warn] 登录态已 {age_h:.1f}h（>3.5h），大概率回落扫码（需人工扫）")
+    if age_h > 9:
+        print(f"[fill_once][warn] 登录态已 {age_h:.1f}h（>9h，逼近 10h TTL），大概率回落扫码（需人工扫）")
     else:
         print(f"[fill_once] 登录态 {age_h:.1f}h 新鲜，预计免扫码直注")
     cmd = [sys.executable, "-X", "utf8", "stage1_browser_probe.py",

@@ -23,7 +23,7 @@ repo 级 skill：`bpm-fill-run`（`.claude/skills/`）。改过 `stage1_browser_
 - Clash 系统代理劫持内网域名：Chromium 必须 `--no-proxy-server`（探针已内置）
 - 判活用 ctypes OpenProcess；**禁** `os.kill(pid,0)`（Windows 上等价 CTRL_C_EVENT，会杀停靠浏览器）
 - Python 一律 `-X utf8`（默认 GBK 乱码）
-- 登录态 `automation/.pw-profile/session_state.json`：4h TTL 滚动续期；过期回落企微扫码需人工（~21s）
+- 登录态 `automation/.pw-profile/session_state.json`：10h TTL 滚动续期（2026-10-23 由 4h 调整）；过期回落企微扫码需人工（~21s）
 
 ## 目录速查
 

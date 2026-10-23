@@ -12,7 +12,7 @@ stage1_browser_probe.py   主探针：登录→测绘→fill→回读→截图�
 stage1_probe_selftest.py  离线自测（改探针后先跑这个）
 automation/
   runs/                   23 个 attempt 的证据工件（events.jsonl/stage1_result.json/截图/回读）
-  .pw-profile/            浏览器 profile + session_state.json（登录态，TTL 4h 滚动续期）
+  .pw-profile/            浏览器 profile + session_state.json（登录态，TTL 10h 滚动续期，2026-10-23 起）
   form-schema.json        表单结构字典（v0.2，PrimeNG prop-* 枚举）
   fixtures/               自测夹具
 templates/                报销单模板原图 + OCR 切块（新报销类型的入口材料）
@@ -30,7 +30,7 @@ patches/                  Windows-MCP 本地改造补丁（基于上游 5b24a8a�
 0. **一键启动填写轮**：`python fill_once.py`（只填不存 + 浏览器驻留 45 分钟待审；探针额外参数原样透传，如 `--keep-open-minutes 90`）。预期：登录态直注免扫码、填写 ~4 分钟（238s 确定性）。改过探针必须先跑 `python -X utf8 stage1_probe_selftest.py` 再来。
 1. **cwd 必须是仓库根**：探针内用 `automation\runs\...` 相对路径，挪动 `stage1_browser_probe.py` 或 `automation/` 的相对位置会破（`fill_once.py` 已内置自动 chdir）。
 2. **代理**：WinINET 系统代理=Clash 会劫持内网域名 bpm.qiaodan.com（192.168.34.10），Chromium 启动必须带 `--no-proxy-server`（探针已内置）。
-3. **登录**：唯一通道是企微 CorpApp QR iframe（appid=wx7792ec86613522f1）。登录态存 sessionStorage（qd_access_token 等 3 键）随 cookies 落盘，4h TTL 滚动续期；过期或注入被拒则回落扫码（约 21s）。
+3. **登录**：唯一通道是企微 CorpApp QR iframe（appid=wx7792ec86613522f1）。登录态存 sessionStorage（qd_access_token 等 3 键）随 cookies 落盘，10h TTL 滚动续期（2026-10-23 由 4h 调整；服务端会话若先过期仍回落扫码，约 21s）。
 4. **只填不存红线**：`no_save_guard`（保存/发送/流转/提交/上传/暂存/贴票/审批 一律禁点）。⚠️ 保存授权用户已口头松口（2026-10-22 10:48）但从未正式落到工作指令，**未澄清前维持只填不存**；若放开，先终局截图+回读核对再点。
 5. **Windows 凶器**：探针判活勿用 `os.kill(pid, 0)`——Windows 上等价 CTRL_C_EVENT 会杀掉停靠浏览器，用 ctypes OpenProcess。
 6. **表单是 Angular PrimeNG**（非 SpreadJS）：字段包装在 `div.row.dfc-container.prop-*`，标签在旁 `label.display-label`；dblclick 进 ui-editing-cell 才挂控件；弹表选行守三硬规则（表头永不选 / prescan 优先 / 选中态核验+确认留痕）。

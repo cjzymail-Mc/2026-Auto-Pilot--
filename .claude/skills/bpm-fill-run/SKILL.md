@@ -14,7 +14,7 @@ cd "D:/Technique Support/Claude Code Learning/2026-Auto-Pilot 企业微信"
 python -X utf8 fill_once.py            # 额外参数原样透传，如 --keep-open-minutes 90
 ```
 
-`fill_once.py` 已固化：run id（attempt 自动递增）、expect-name、fill-plan 路径、keep-open 45min、登录态 TTL 预检（>3.5h 会提示需人工扫码）。
+`fill_once.py` 已固化：run id（attempt 自动递增）、expect-name、fill-plan 路径、keep-open 45min、登录态 TTL 预检（>9h 提示需人工扫码；TTL=10h，2026-10-23 起）。
 
 ## 执行节奏（目标：分钟级，不考古）
 
