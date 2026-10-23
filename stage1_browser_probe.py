@@ -17,7 +17,7 @@
   对话框一律 dismiss（绝不 accept——accept 可能确认写入）
 - 填写任务（--fill-plan）单独授权，只作用于 新建报销单 页：按 fill_plan 值写入并逐格回读；
   保存/发送/流转/提交/上传/暂存/贴票/终止/返回/审批 一律不点击（NO_SAVE_WORDS + _click_guard 守卫）
-- 登录态持久化（用户拍板 2026-10-21，有效期 4h）：登录确认后导出 storage_state 至 profile 受限
+- 登录态持久化（用户拍板 2026-10-21 建立 4h；2026-10-23 调整为 10h 工作日免重扫）：登录确认后导出 storage_state 至 profile 受限
   目录（cookie 值只落该文件，日志/证据只记条数）；TTL 内重启注入免重复扫码；
   服务端会话过期不受探针控制——注入后仍被要求登录时回落扫码等待，不静默伪造登录态
 - 表面自适应：SpreadJS（GC 存在）走单元格 API 路径；否则按 Angular PrimeNG DOM 处理
@@ -38,6 +38,7 @@
 离线自测（不起浏览器）: python -X utf8 stage1_probe_selftest.py
 """
 import argparse
+import contextlib
 import io
 import json
 import os
@@ -59,10 +60,11 @@ NEW_FORM_PATH = "/oa/reimburse?type=new"
 NO_SAVE_WORDS = ("保存", "发送", "流转", "提交", "上传", "暂存", "贴票", "终止", "返回",
                  "审批", "同意", "驳回", "导入", "商旅", "发票识别")
 PROFILE = BASE / "automation" / ".pw-profile"
-# 登录态持久化（用户拍板 2026-10-21，有效期 4h）：登录确认后导出 storage_state（含 cookie 值——
-# 只落 profile 受限目录，日志/证据只记条数，绝不记值）；TTL 内重启注入免重复扫码
+# 登录态持久化（用户拍板 2026-10-21 建立 4h；2026-10-23 调整为 10h）：登录确认后导出 storage_state（含 cookie 值——
+# 只落 profile 受限目录，日志/证据只记条数，绝不记值）；TTL=本地信任窗口，服务端会话若先过期，
+# 注入失效自动回落扫码门（不静默伪造登录态），故放宽到 10h 无正确性风险
 SESSION_STATE = PROFILE / "session_state.json"
-SESSION_TTL = 4 * 3600.0
+SESSION_TTL = 10 * 3600.0
 
 
 def _session_state_usable(path, now=None, ttl=SESSION_TTL):
@@ -982,6 +984,35 @@ class Probe:
         with io.open(self.run_dir / "events.jsonl", "a", encoding="utf-8", newline="\n") as f:
             f.write(json.dumps(kw, ensure_ascii=False) + "\n")
 
+    # ---- 动作级计时（2026-10-23 效率证据链：只加观测不改行为）----
+    def _timing(self, action, **fields):
+        """计时段上下文：进入记 t0（perf_counter + epoch ms），退出追加 timing 事件
+        （event=timing / action / t0_ms / dur_ms / outcome=ok|timeout|error / exc 异常
+        类型名）。Timeout 类异常单独标 outcome=timeout——『捕获异常后继续』的默认
+        45s 烧穿由此显形；fields 携带 where/section/field 等定位计数。仅观测：
+        不含任何等待/重试逻辑，被包行为逐字节不变。"""
+        t0 = time.perf_counter()
+        t0_ms = int(time.time() * 1000)
+        holder = {}
+
+        @contextlib.contextmanager
+        def _cm():
+            try:
+                yield holder
+            except BaseException as e:
+                holder["outcome"] = "timeout" if "Timeout" in type(e).__name__ else "error"
+                holder["exc"] = type(e).__name__
+                raise
+            finally:
+                dur_ms = round((time.perf_counter() - t0) * 1000)
+                try:
+                    self.log_event(event="timing", action=action, t0_ms=t0_ms,
+                                   dur_ms=dur_ms, outcome=holder.get("outcome", "ok"),
+                                   exc=holder.get("exc", ""), **fields)
+                except Exception:
+                    pass
+        return _cm()
+
     def say(self, *a):
         print(time.strftime("[%H:%M:%S]"), *a, flush=True)
 
@@ -1013,7 +1044,8 @@ class Probe:
 
     def shot(self, page, name):
         try:
-            page.screenshot(path=str(self.ev / name), full_page=False)
+            with self._timing("screenshot", name=str(name)):
+                page.screenshot(path=str(self.ev / name), full_page=False)
             return f"{self.attempt.name}/evidence/{name}"
         except Exception as e:
             return f"screenshot_failed:{e!r}"
@@ -1639,7 +1671,8 @@ class Probe:
         ftype = field.get("type")
         try:
             if ftype in ("dropdown", "multiselect") and field.get("comp"):
-                picked = self._pick_option(page, frame, page.locator(field["comp"]).first, value, ftype)
+                with self._timing("pick_option", kind=str(ftype)):
+                    picked = self._pick_option(page, frame, page.locator(field["comp"]).first, value, ftype)
                 if picked is None:
                     return "OPTION_NOT_FOUND", None, "overlay_pick"
                 return "OK", self._ng_value(frame, field["comp"]), "overlay_pick"
@@ -1700,16 +1733,17 @@ class Probe:
         """点面板标题栏『新增』（过守卫）扩一行/开行编辑弹窗；返回最新表格映射。
         022 教训：残留弹窗的 ui-dialog-mask 会拦截 新增 点击直到 45s 超时崩局——
         点前防御性清场（同 _cell_table_pick）。"""
-        t = self._table_by_prop(frame, prop, title_hint)
-        if t is None or not t.get("add_sel"):
-            return t
-        if self._visible_dialog(frame) is not None or self._overlay_open(frame):
-            self._dialog_close_guarded(page)
-            page.wait_for_timeout(400)
-        self._click_guard("新增")
-        page.locator(t["add_sel"]).first.click()
-        page.wait_for_timeout(1200)
-        return self._table_by_prop(frame, prop, title_hint)
+        with self._timing("row_add", prop=str(prop)):
+            t = self._table_by_prop(frame, prop, title_hint)
+            if t is None or not t.get("add_sel"):
+                return t
+            if self._visible_dialog(frame) is not None or self._overlay_open(frame):
+                self._dialog_close_guarded(page)
+                page.wait_for_timeout(400)
+            self._click_guard("新增")
+            page.locator(t["add_sel"]).first.click()
+            page.wait_for_timeout(1200)
+            return self._table_by_prop(frame, prop, title_hint)
 
     def _cell_loc(self, page, t, rowno, ci):
         # 数据行在 body 表（scrollable 结构 thead/tbody 分表），列序与 header 表 colgroup 一一对应
@@ -1750,16 +1784,28 @@ class Probe:
                 comp = cell.locator(".ui-dropdown, .ui-multiselect").first
                 if comp.count() == 0:
                     return "CELL_NOT_EDITABLE", info.get("text")
-                picked = self._pick_option(page, frame, comp, value, kind)
+                with self._timing("pick_option", kind=str(kind)):
+                    picked = self._pick_option(page, frame, comp, value, kind)
                 if picked is None:
                     return "OPTION_NOT_FOUND", info.get("text")
                 page.wait_for_timeout(300)
                 return "OK", self._cell_settle_read(page, frame, cell)
-            for act in ("dblclick", "click"):
+            for ai, act in enumerate(("dblclick", "click"), 1):
+                t_act = time.perf_counter()
                 try:
-                    getattr(cell, act)()
+                    with self._timing("cell_activate", act=str(act),
+                                      attempt=ai, attempts=2):
+                        getattr(cell, act)()
                     page.wait_for_timeout(500)
-                except Exception:
+                except Exception as e:
+                    # D2（2026-10-23）吞掉前留痕：异常类型+该次耗时+继续行为（语义
+                    # 不变仍 continue）；timing 子事件另带 outcome=timeout|error——
+                    # 内层捕获自此在事件层可见，外层 cell_fill 仍可 outcome=ok
+                    self.log_event(event="inner_exc", where="cell_activate",
+                                   act=str(act), attempt=ai, attempts=2,
+                                   exc=type(e).__name__,
+                                   dur_ms=round((time.perf_counter() - t_act) * 1000),
+                                   behavior="continue_next_act")
                     continue
                 # attempt_018：『是否为最后一次』类格——p-dropdown 组件 dblclick 进编辑态
                 # （ui-editing-cell）才挂载（017 终局 DOM 实证），入口的静态探测看不到
@@ -1768,7 +1814,8 @@ class Probe:
                                          ("multiselect", ".ui-multiselect")):
                     comp = cell.locator(comp_sel).first
                     if comp.count():
-                        picked = self._pick_option(page, frame, comp, value, kind_c)
+                        with self._timing("pick_option", kind=str(kind_c)):
+                            picked = self._pick_option(page, frame, comp, value, kind_c)
                         if picked is None:
                             return "OPTION_NOT_FOUND", info.get("text")
                         page.wait_for_timeout(300)
@@ -1776,14 +1823,41 @@ class Probe:
                 inp = cell.locator("input:not([type='hidden']), textarea, select").first
                 try:
                     if inp.count():
-                        if (inp.evaluate("el => el.tagName") == "SELECT"):
-                            inp.select_option(str(value))
+                        st = inp.evaluate(
+                            "el => ({tag: el.tagName, ro: !!(el.readOnly || el.disabled)})")
+                        # D4-b（2026-10-23）actionability 预判：readonly/disabled 的挂载
+                        # input（预算科目等只读回显列）fill/select_option 会等满默认
+                        # 45s 才超时（round-1 L466 cell_fill 91803ms=45s×2 定论）。
+                        # evaluate 对在挂元素即时返回；仅凭「当前没有 input」不判只读，
+                        # 必须见到 readOnly/disabled 阳性证据才跳过该次写入——值由
+                        # 预算联动带出+回读核验（budget_respected 不变）；双击后才挂载
+                        # 的可写编辑器 ro=False，照常 fill 不误伤。
+                        if st.get("ro"):
+                            self.log_event(event="cell_input_skip", act=str(act),
+                                           attempt=ai, attempts=2,
+                                           reason="readonly_or_disabled",
+                                           note="挂载输入框只读/禁用：跳过 fill 死等路径")
+                            continue
+                        if st.get("tag") == "SELECT":
+                            # 显式 8s 局部短超时（先例：行点击 timeout=8000），不再
+                            # 等满全局默认 45s
+                            with self._timing("cell_input_write", how="select_option",
+                                              attempt=ai, attempts=2):
+                                inp.select_option(str(value), timeout=8000)
                         else:
-                            inp.fill(str(value))
+                            with self._timing("cell_input_write", how="fill",
+                                              attempt=ai, attempts=2):
+                                inp.fill(str(value), timeout=8000)
                             page.keyboard.press("Enter")
                         page.wait_for_timeout(400)
                         return "OK", self._cell_settle_read(page, frame, cell)
-                except Exception:
+                except Exception as e:
+                    # D2（2026-10-23）吞掉前留痕：timing 子事件 cell_input_write 含
+                    # outcome=timeout|error/exc/dur_ms（被吞的内层异常自此可见）
+                    self.log_event(event="inner_exc", where="cell_input_write",
+                                   act=str(act), attempt=ai, attempts=2,
+                                   exc=type(e).__name__,
+                                   behavior="continue_next_act")
                     continue
             return "CELL_NOT_EDITABLE", info.get("text")
         except Exception as e:
@@ -1798,7 +1872,8 @@ class Probe:
 
     def _overlay_dump(self, frame):
         try:
-            return frame.evaluate(OVERLAY_DUMP_JS) or []
+            with self._timing("overlay_dump"):
+                return frame.evaluate(OVERLAY_DUMP_JS) or []
         except Exception as e:
             return [{"err": str(e)[:120]}]
 
@@ -1813,26 +1888,28 @@ class Probe:
         p-dialog 弹表（panel_open=true 而 fill_overlay_dump 空）——DIALOG_DUMP_JS 抓
         得到的容器逐个做容器内补扫（DIALOG_SCOPE_DUMP_JS），与浮层清单去重合并后
         喂同一条两段式选行流。任何一源失败不影响另一源。"""
-        cands = [c for c in self._overlay_dump(frame)
-                 if isinstance(c, dict) and not c.get("err")]
-        seen = {c.get("sel") for c in cands}
-        try:
-            dl = frame.evaluate(DIALOG_DUMP_JS) or []
-        except Exception:
-            dl = []
-        for d in dl:
-            if not isinstance(d, dict) or not d.get("sel") or d.get("sel") in seen:
-                continue
+        with self._timing("pick_candidates"):
+            cands = [c for c in self._overlay_dump(frame)
+                     if isinstance(c, dict) and not c.get("err")]
+            seen = {c.get("sel") for c in cands}
             try:
-                extra = frame.evaluate(
-                    DIALOG_SCOPE_DUMP_JS,
-                    frame.locator(d["sel"]).first.element_handle())
+                dl = frame.evaluate(DIALOG_DUMP_JS) or []
             except Exception:
-                continue
-            if extra and isinstance(extra, dict):
-                cands.append(extra)
-                seen.add(extra.get("sel"))
-        return cands
+                dl = []
+            for d in dl:
+                if not isinstance(d, dict) or not d.get("sel") or d.get("sel") in seen:
+                    continue
+                try:
+                    # H1 计时候选（45s 间隙）：element_handle() 无显式超时，行不存在时烧满默认 45s
+                    with self._timing("dialog_element_handle", dsel=str(d.get("sel"))[:60]):
+                        eh = frame.locator(d["sel"]).first.element_handle()
+                    extra = frame.evaluate(DIALOG_SCOPE_DUMP_JS, eh)
+                except Exception:
+                    continue
+                if extra and isinstance(extra, dict):
+                    cands.append(extra)
+                    seen.add(extra.get("sel"))
+            return cands
 
     def _cell_button_open(self, page, frame, td, tag, shot=None):
         """格内 button-behind 开浮层（attempt_017）：按钮常 hover 才显、甚至 DOM 在而
@@ -1841,7 +1918,8 @@ class Probe:
         无按钮则试格点击本身。返回『是否真的开出了浮层/对话框』，方法与计数逐次留痕。"""
         method = ""
         try:
-            td.hover(timeout=8000)
+            with self._timing("cell_button_hover", where=str(tag)):
+                td.hover(timeout=8000)
         except Exception as e:
             self.log_event(event="fill_cell_button", where=tag, stage="hover",
                            error=str(e)[:100])
@@ -1901,22 +1979,24 @@ class Probe:
             self._dialog_close_guarded(page)
             page.wait_for_timeout(400)
         try:
-            td.dblclick(timeout=4000)
+            with self._timing("table_pick_dblclick", where=str(tag)):
+                td.dblclick(timeout=4000)
         except Exception as e:
             self.log_event(event="fill_table_pick", where=tag, stage="dblclick",
                            error=str(e)[:100])
             return False, "dblclick失败"
         page.wait_for_timeout(600)
         editing = False
-        for _ in range(3):
-            try:
-                cls = td.get_attribute("class") or ""
-            except Exception:
-                cls = ""
-            if "ui-editing-cell" in cls:
-                editing = True
-                break
-            page.wait_for_timeout(400)
+        with self._timing("table_pick_editing_poll", where=str(tag)):
+            for _ in range(3):
+                try:
+                    cls = td.get_attribute("class") or ""
+                except Exception:
+                    cls = ""
+                if "ui-editing-cell" in cls:
+                    editing = True
+                    break
+                page.wait_for_timeout(400)
         btn = td.locator("button[aria-label='选择表格数据'], .tableselect button").first
         if btn.count() == 0:
             self.log_event(event="fill_table_pick", where=tag, editing=editing,
@@ -1924,12 +2004,14 @@ class Probe:
             return False, "编辑态未现选择按钮"
         method = ""
         try:
-            btn.click(timeout=4000)
-            method = "click"
+            with self._timing("table_pick_btn", where=str(tag)):
+                btn.click(timeout=4000)
+                method = "click"
         except Exception as e1:
             try:
-                frame.evaluate("el => el.click()", btn.element_handle())
-                method = "js_click"
+                with self._timing("table_pick_btn_js", where=str(tag)):
+                    frame.evaluate("el => el.click()", btn.element_handle())
+                    method = "js_click"
             except Exception as e2:
                 self.log_event(event="fill_table_pick", where=tag, stage="pick_btn",
                                error=f"{str(e1)[:60]}|js:{str(e2)[:60]}")
@@ -1977,12 +2059,42 @@ class Probe:
             page.wait_for_timeout(600)
             # 选中态核验：行高亮/aria-selected；未选中→行内勾选框兜底
             highlighted, chk_method = False, ""
-            try:
-                cls = row_loc.get_attribute("class") or ""
-                aria = row_loc.get_attribute("aria-selected")
-                highlighted = ("ui-state-highlight" in cls) or (aria == "true")
-            except Exception:
-                pass
+            # D4-a（2026-10-23）场景判据——点行后行是否仍挂在 DOM（count() 瞬时返回
+            # 不等待，同型先例 _cell_info 守卫）：
+            #  · 行已消失 =「点行即关」型 dropdown 浮层（单据类型）：行 detach 后
+            #    get_attribute 会对失效定位器等满默认 45s（round-1 L365
+            #    overlay_pick_row 45822ms 定论）。选中提交与否改由浮层状态核验：
+            #    浮层已关 = 点击即选中提交（PrimeNG dropdown 语义）→ 走外层成功
+            #    路径；浮层仍开 = 未提交 → 如实按未选中失败收口，不默认成功。
+            #  · 行仍在 = 选中+确认式 p-dialog 弹表（单号弹表/预算联动）：沿用原
+            #    选中态核验+白名单确认，行为不变（get_attribute 对在挂元素即时返回）。
+            if row_loc.count() == 0:
+                ov_open = bool(self._overlay_open(frame))
+                highlighted = not ov_open
+                chk_method = ("row_detached_overlay_open" if ov_open
+                              else "row_detached_overlay_state")
+                self.log_event(event="pick_row_detached", where=tag,
+                               overlay_open=ov_open, chk=chk_method)
+                if ov_open:
+                    self._dump_rows_evidence(
+                        tag, [],
+                        note=f"DETACHED-UNCOMMITTED row={r.get('text')!r} "
+                             f"overlay_open=True → 按未选中收口（不默认成功）")
+                    return ""
+            else:
+                t_ver = time.perf_counter()
+                try:
+                    with self._timing("pick_row_verify", attempt=1, attempts=2):
+                        cls = row_loc.get_attribute("class") or ""
+                        aria = row_loc.get_attribute("aria-selected")
+                    highlighted = ("ui-state-highlight" in cls) or (aria == "true")
+                except Exception as e:
+                    # D2（2026-10-23）吞掉前留痕：timing 子事件含 outcome/dur_ms，
+                    # 原语义不变——仍落入勾选框兜底
+                    self.log_event(event="inner_exc", where="pick_row_verify",
+                                   attempt=1, attempts=2, exc=type(e).__name__,
+                                   dur_ms=round((time.perf_counter() - t_ver) * 1000),
+                                   behavior="pass_to_checkbox_fallback")
             if not highlighted:
                 chk = row_loc.locator(
                     "input[type='checkbox'], input[type='radio'], "
@@ -2051,10 +2163,12 @@ class Probe:
                         continue
                     rn = self._opt_norm(r.get("text") or "")
                     if rn and (kn in rn or rn in kn):
-                        return _pick_row(c, r) or None
+                        with self._timing("overlay_pick_row", where=str(tag)):
+                            return _pick_row(c, r) or None
             return None
 
-        cands = _dump()
+        with self._timing("overlay_dump_candidates", where=str(tag)):
+            cands = _dump()
         self.log_event(event="fill_overlay_dump", where=tag,
                        overlays=[{k: c.get(k) for k in ("cls", "title", "inputs", "rows", "tables")}
                                  for c in cands[:4]])
@@ -2072,7 +2186,8 @@ class Probe:
                     if _is_thead(r):
                         continue
                     if re.search(r"\d{8,}", r.get("text") or ""):
-                        hit_text = _pick_row(c, r)
+                        with self._timing("overlay_pick_row_first", where=str(tag)):
+                            hit_text = _pick_row(c, r)
                         if hit_text:
                             self._last_pick_row = hit_text
                             return True
@@ -2086,7 +2201,8 @@ class Probe:
         try:
             # prescan：先扫原始行，命中即选（小弹表不过搜索）
             if prescan:
-                hit_text = _scan_pick(cands)
+                with self._timing("overlay_prescan", where=str(tag)):
+                    hit_text = _scan_pick(cands)
                 if hit_text:
                     self._last_pick_row = hit_text
                     return True
@@ -2094,9 +2210,10 @@ class Probe:
             inp = next((c for c in cands if c.get("input_sel")), None)
             if inp is not None:
                 try:
-                    frame.locator(inp["input_sel"]).first.fill(str(keyword), timeout=4000)
-                    page.keyboard.press("Enter")
-                    page.wait_for_timeout(1500)
+                    with self._timing("overlay_search_fill", where=str(tag)):
+                        frame.locator(inp["input_sel"]).first.fill(str(keyword), timeout=4000)
+                        page.keyboard.press("Enter")
+                        page.wait_for_timeout(1500)
                 except Exception as e:
                     self.log_event(event="fill_pick_click_error", where=tag,
                                    error=f"search_fill:{str(e)[:100]}")
@@ -2104,8 +2221,9 @@ class Probe:
                     if b.get("text") in ("查询", "搜索", "检索") and not b.get("disabled"):
                         try:
                             self._click_guard(b["text"])
-                            frame.locator(b["sel"]).first.click(timeout=8000)
-                            page.wait_for_timeout(1500)
+                            with self._timing("overlay_search_btn", where=str(tag)):
+                                frame.locator(b["sel"]).first.click(timeout=8000)
+                                page.wait_for_timeout(1500)
                             self.log_event(event="fill_pick_search_btn", where=tag,
                                            btn=b["text"])
                         except Exception as e:
@@ -2113,8 +2231,9 @@ class Probe:
                                            error=f"search_btn:{str(e)[:100]}")
                         break
             # B) 全量候选行扫命中（016 修复：不再要求浮层带输入框）
-            post = _dump()
-            hit_text = _scan_pick(post)
+            with self._timing("overlay_post_scan", where=str(tag)):
+                post = _dump()
+                hit_text = _scan_pick(post)
             if hit_text:
                 self._last_pick_row = hit_text
                 return True
@@ -2135,7 +2254,8 @@ class Probe:
                 self._click_guard(txt)
                 b = page.locator(".ui-dialog button", has_text=txt).last
                 if b.count() and b.is_visible():
-                    b.click()
+                    with self._timing("dialog_close_click", btn=str(txt)):
+                        b.click()
                     page.wait_for_timeout(500)
                     return True
             except RuntimeError:
@@ -2207,19 +2327,20 @@ class Probe:
             return [{**base, "field": str(prop), "status": "TABLE_NOT_FOUND", "match": False}]
         guard_n = 0
         dlg_tried = False
-        while (t.get("row_count") or 0) <= rowno and guard_n < 3:
-            guard_n += 1
-            t = self._row_add(page, frame, prop, title_hint) or t
-            dlg = self._visible_dialog(frame)
-            if dlg and not dlg_tried:
-                dlg_tried = True
-                drecs = self._dialog_fill(page, frame, dlg, row, section)
-                recs += drecs
-                if not any(r.get("status") == "DIALOG_WRONG" for r in drecs):
-                    return recs
-                continue          # 错弹窗已守卫关闭：回到行数检查再试
-            if (t.get("row_count") or 0) <= rowno:
-                page.wait_for_timeout(800)
+        with self._timing("row_add_loop", section=str(section), row=rowno):
+            while (t.get("row_count") or 0) <= rowno and guard_n < 3:
+                guard_n += 1
+                t = self._row_add(page, frame, prop, title_hint) or t
+                dlg = self._visible_dialog(frame)
+                if dlg and not dlg_tried:
+                    dlg_tried = True
+                    drecs = self._dialog_fill(page, frame, dlg, row, section)
+                    recs += drecs
+                    if not any(r.get("status") == "DIALOG_WRONG" for r in drecs):
+                        return recs
+                    continue          # 错弹窗已守卫关闭：回到行数检查再试
+                if (t.get("row_count") or 0) <= rowno:
+                    page.wait_for_timeout(800)
         # 行仍未出现：整行如实记 + 诊断截图，不让 element_handle 烧 45s/列
         if (t.get("row_count") or 0) <= rowno:
             self.shot(page, f"fill_diag_{section}_r{rowno}.png")
@@ -2244,28 +2365,30 @@ class Probe:
                 recs.append({**rec, "status": "ALREADY", "method": "prefilled",
                              "readback": cur.get("text"), "match": True})
                 continue
-            st, rb = self._fill_ng_cell(page, frame, cell, str(value))
+            with self._timing("cell_fill", section=str(section), row=rowno, field=str(label)):
+                st, rb = self._fill_ng_cell(page, frame, cell, str(value))
             recs.append({**rec, "status": st if st != "OK" else ("OK" if fill_match(rb, str(value)) else "MISMATCH"),
                          "readback": rb, "match": st == "OK" and fill_match(rb, str(value))})
         # 联动/滞后复核：预算部门/科目/项目等只读回显列可能在前序列（摘要/金额）填完后才被系统
         # 自动带出（attempt_013 CELL_NOT_EDITABLE×3 疑此）；空回读的失败记录静置后重读一次，
         # 命中如实改记 settle_reread——重读改判留痕，不做无据默认
-        page.wait_for_timeout(800)
-        t = self._table_by_prop(frame, prop, title_hint) or t
-        headers = t.get("headers", headers)
-        for r0 in recs:
-            if r0.get("status") in ("CELL_NOT_EDITABLE", "MISMATCH") and not r0.get("readback") \
-                    and r0.get("target") is not None:
-                ci2 = _table_col(headers, r0.get("field"))
-                if ci2 is None:
-                    continue
-                cur2 = self._cell_info(frame, self._cell_loc(page, t, rowno, ci2))
-                if fill_match(cur2.get("text"), str(r0.get("target"))):
-                    r0.update(status="OK", method="settle_reread",
-                              readback=cur2.get("text"), match=True,
-                              note="首读为空，静置后系统已带出/回显落定")
-                else:
-                    r0.update(readback=cur2.get("text"))
+        with self._timing("settle_reread", section=str(section), row=rowno):
+            page.wait_for_timeout(800)
+            t = self._table_by_prop(frame, prop, title_hint) or t
+            headers = t.get("headers", headers)
+            for r0 in recs:
+                if r0.get("status") in ("CELL_NOT_EDITABLE", "MISMATCH") and not r0.get("readback") \
+                        and r0.get("target") is not None:
+                    ci2 = _table_col(headers, r0.get("field"))
+                    if ci2 is None:
+                        continue
+                    cur2 = self._cell_info(frame, self._cell_loc(page, t, rowno, ci2))
+                    if fill_match(cur2.get("text"), str(r0.get("target"))):
+                        r0.update(status="OK", method="settle_reread",
+                                  readback=cur2.get("text"), match=True,
+                                  note="首读为空，静置后系统已带出/回显落定")
+                    else:
+                        r0.update(readback=cur2.get("text"))
         return recs
 
     def _fill_related_doc(self, page, frame, value):
@@ -2296,7 +2419,9 @@ class Probe:
                 if self._cell_button_open(page, frame, td, "关联公出单",
                                           shot="fill_related_cell_pick.png"):
                     # 第 1 步：单据类型（关键词取模板词『公出』）
-                    if self._overlay_search_pick(page, frame, "公出", "关联单据/单据类型"):
+                    with self._timing("overlay_pick", where="关联单据/单据类型"):
+                        ok_type = self._overlay_search_pick(page, frame, "公出", "关联单据/单据类型")
+                    if ok_type:
                         page.wait_for_timeout(1200)
                         self.shot(page, "fill_related_type_picked.png")
                         # 第 2 步：单号——类型选定后若选择面未自动开出，走『选择表格数据』
@@ -2304,21 +2429,24 @@ class Probe:
                         # external-link 跳转按钮，空单号点了无操作；真选择器在编辑态
                         # 模板 .tableselect 里，dblclick 进编辑态才现形）
                         if self._overlay_open(frame):
-                            picked = self._overlay_search_pick(page, frame, str(value),
-                                                               "关联单据/单号")
+                            with self._timing("overlay_pick", where="关联单据/单号"):
+                                picked = self._overlay_search_pick(page, frame, str(value),
+                                                                   "关联单据/单号")
                         else:
-                            picked, _note = self._cell_table_pick(
-                                page, frame, td, str(value), "关联单据/单号",
-                                shot="fill_related_doc_pick.png")
+                            with self._timing("table_pick", where="关联单据/单号"):
+                                picked, _note = self._cell_table_pick(
+                                    page, frame, td, str(value), "关联单据/单号",
+                                    shot="fill_related_doc_pick.png")
                         # 授权替代（2026-10-22 用户）：原单据号已被一次性关联消耗，
                         # 选单列表不再出现（018/019 实证）——精确单号 miss 后改搜
                         # 模板词『公出』选首个公出行；选中单号取自命中行原文，终读
                         # 以它为准，事件/记录明记授权替代，绝不静默换值
                         if not picked:
-                            picked, _note = self._cell_table_pick(
-                                page, frame, td, "公出", "关联单据/单号-授权替代",
-                                shot="fill_related_sub_pick.png",
-                                prescan=True, first_data_row=True)
+                            with self._timing("table_pick", where="关联单据/单号-授权替代"):
+                                picked, _note = self._cell_table_pick(
+                                    page, frame, td, "公出", "关联单据/单号-授权替代",
+                                    shot="fill_related_sub_pick.png",
+                                    prescan=True, first_data_row=True)
                             if picked:
                                 sub_row = getattr(self, "_last_pick_row", "") or ""
                                 # 022 实证：行文日期与单号连排（…2026-07-2412026075605…），
@@ -2343,7 +2471,8 @@ class Probe:
             self._dialog_close_guarded(page)
             # 兜底：直填『单据号』格（历史 inline 兜底从未生效，保留但以终读为准）
             if ci_doc is not None:
-                st, rb = self._fill_ng_cell(page, frame, self._cell_loc(page, t, 0, ci_doc), str(value))
+                with self._timing("cell_fill", section="related_inline", row=0, field="单据号"):
+                    st, rb = self._fill_ng_cell(page, frame, self._cell_loc(page, t, 0, ci_doc), str(value))
                 rec.update(method="inline_cell", status=st if st != "OK" else
                            ("OK" if fill_match(rb, str(value)) else "MISMATCH"),
                            readback=rb, match=st == "OK" and fill_match(rb, str(value)))
@@ -2351,15 +2480,16 @@ class Probe:
             rec.update(method="type_then_doc_overlay")
         # 终读：表体是否含单号（弹表确定后回显有延迟，轮询 3×800ms）
         body2 = ""
-        for _ in range(3):
-            t2 = self._table_by_prop(frame, "bizNumber", "关联单据")
-            try:
-                body2 = page.locator(t2.get("body_sel") or t2["sel"]).first.locator("tbody").inner_text() or "" if t2 else ""
-            except Exception:
-                body2 = ""
-            if str(value) in body2:
-                break
-            page.wait_for_timeout(800)
+        with self._timing("related_final_read"):
+            for _ in range(3):
+                t2 = self._table_by_prop(frame, "bizNumber", "关联单据")
+                try:
+                    body2 = page.locator(t2.get("body_sel") or t2["sel"]).first.locator("tbody").inner_text() or "" if t2 else ""
+                except Exception:
+                    body2 = ""
+                if str(value) in body2:
+                    break
+                page.wait_for_timeout(800)
         if str(value) in body2:
             rec.update(readback=str(value), match=True)
             rec.pop("status", None) if rec.get("match") else None
@@ -2397,7 +2527,8 @@ class Probe:
             return {**rec, "status": "OK", "method": "auto_display",
                     "readback": f"{bank_txt} | 联行号 {code_txt}", "match": True, "note": note}
         if ci_bank is not None:
-            self._fill_ng_cell(page, frame, self._cell_loc(page, t, 0, ci_bank), "中国银行")
+            with self._timing("cell_fill", section="bank", row=0, field="开户行下拉"):
+                self._fill_ng_cell(page, frame, self._cell_loc(page, t, 0, ci_bank), "中国银行")
             page.wait_for_timeout(1000)
             bank_txt, code_txt = txt(ci_bank), txt(ci_code)
             if "中国银行" in _norm_cell(bank_txt or "") and str(code_txt or "").startswith("104"):
@@ -2459,9 +2590,10 @@ class Probe:
                 stage = {"col": "预算单", "kw": bkw}
                 stages.append(stage)
                 td = self._cell_loc(page, t, 0, ci)
-                ok, note = self._cell_table_pick(
-                    page, frame, td, bkw, "预算联动/预算单",
-                    shot="fill_budget_no_pick.png", prescan=True)
+                with self._timing("table_pick", where="预算联动/预算单"):
+                    ok, note = self._cell_table_pick(
+                        page, frame, td, bkw, "预算联动/预算单",
+                        shot="fill_budget_no_pick.png", prescan=True)
                 stage.update(picked=ok, result=note)
                 if not ok:
                     self.log_event(event="fill_budget_stage", **stage)
@@ -2481,9 +2613,10 @@ class Probe:
                     stages.append({"col": "预算科目", "kw": "差旅", "note": "列未找到"})
                     break
                 td2 = self._cell_loc(page, t, 0, ci_subj)
-                ok2, note2 = self._cell_table_pick(
-                    page, frame, td2, "差旅", "预算联动/预算科目",
-                    shot="fill_budget_subject_pick.png", prescan=True)
+                with self._timing("table_pick", where="预算联动/预算科目"):
+                    ok2, note2 = self._cell_table_pick(
+                        page, frame, td2, "差旅", "预算联动/预算科目",
+                        shot="fill_budget_subject_pick.png", prescan=True)
                 st2 = {"col": "预算科目", "kw": "差旅", "picked": ok2, "result": note2}
                 stages.append(st2)
                 self.log_event(event="fill_budget_stage", **st2)
@@ -2531,18 +2664,19 @@ class Probe:
         # Angular 异步绑定 name/label：goto 后立即枚举时可写字段常无名（attempt_010 教训）→
         # 轮询至「可写且带 name」字段出现，最多 ~15s
         fields = []
-        for attempt_i in range(6):
-            try:
-                fields = frame.evaluate(FORM_MAP_JS) or []
-            except Exception as e:
-                self.log_event(event="fill_ng_map_error", error=str(e)[:160])
-                break
-            if any(f.get("name") and not f.get("readonly") for f in fields):
-                break
-            self.log_event(event="fill_ng_field_wait", round=attempt_i,
-                           named_writable=sum(1 for f in fields
-                                              if f.get("name") and not f.get("readonly")))
-            page.wait_for_timeout(2500)
+        with self._timing("ng_map_wait"):
+            for attempt_i in range(6):
+                try:
+                    fields = frame.evaluate(FORM_MAP_JS) or []
+                except Exception as e:
+                    self.log_event(event="fill_ng_map_error", error=str(e)[:160])
+                    break
+                if any(f.get("name") and not f.get("readonly") for f in fields):
+                    break
+                self.log_event(event="fill_ng_field_wait", round=attempt_i,
+                               named_writable=sum(1 for f in fields
+                                                  if f.get("name") and not f.get("readonly")))
+                page.wait_for_timeout(2500)
         # 表头区填写前再刷一次（表单初始化耗时不定，晚到的 name 绑定在此收敛）
         try:
             fields = frame.evaluate(FORM_MAP_JS) or fields
@@ -2553,13 +2687,14 @@ class Probe:
         rb = []
         # 1) 表头区 + 项目说明（label 解析；关联公出单走专属路径）
         for section in ("header", "project_note"):
-            for label, spec in (plan.get(section) or {}).items():
-                value = spec.get("value") if isinstance(spec, dict) else spec
-                if value is None or (section == "header" and label == "关联公出单"):
-                    continue
-                rb.append(self._fill_ng_labeled(page, frame, fields, section, label, str(value)))
-                self.say(f"FILL {section}/{label} →", mask(str(value)))
-            self.shot(page, f"fill_1{'0' if section == 'header' else '1'}_{section}.png")
+            with self._timing("section_fill", section=str(section)):
+                for label, spec in (plan.get(section) or {}).items():
+                    value = spec.get("value") if isinstance(spec, dict) else spec
+                    if value is None or (section == "header" and label == "关联公出单"):
+                        continue
+                    rb.append(self._fill_ng_labeled(page, frame, fields, section, label, str(value)))
+                    self.say(f"FILL {section}/{label} →", mask(str(value)))
+                self.shot(page, f"fill_1{'0' if section == 'header' else '1'}_{section}.png")
         # 表头级字段核正（attempt_014 DOM 实证）：『项目说明』在表单中仅作费用明细列头（prop-reason），
         # 『行程说明』全 DOM 0 命中——模板这两项本就由费用明细行承载，如实标注 NOT_IN_FORM 而非计失败
         for r in rb:
@@ -2579,15 +2714,17 @@ class Probe:
         if rel is not None:
             rv = rel.get("value") if isinstance(rel, dict) else rel
             if rv is not None:
-                rb.append(self._fill_related_doc(page, frame, rv))
-                self.say("FILL header/关联公出单 →", mask(str(rv)))
+                with self._timing("section_fill", section="related_doc"):
+                    rb.append(self._fill_related_doc(page, frame, rv))
+                    self.say("FILL header/关联公出单 →", mask(str(rv)))
         once = [r for r in rb if r.get("field") == "是否为一次性" and not r.get("match")]
         if once:
             t = self._table_by_prop(frame, "bizNumber", "关联单据")
             if t:
                 ci = _table_col(t.get("headers", []), "是否为一次性")   # 别名含 是否为最后一次
                 if ci is not None:
-                    st, rbv = self._fill_ng_cell(page, frame, self._cell_loc(page, t, 0, ci), "是")
+                    with self._timing("cell_fill", section="related_once", row=0, field="是否为一次性"):
+                        st, rbv = self._fill_ng_cell(page, frame, self._cell_loc(page, t, 0, ci), "是")
                     for r in once:
                         r.update(method="related_table_col",
                                  status=st if st != "OK" else ("OK" if fill_match(rbv, "是") else "MISMATCH"),
@@ -2597,61 +2734,67 @@ class Probe:
         for rowno, key in enumerate(("row1", "row2")):
             row = (plan.get("expense_detail_table") or {}).get(key)
             if row:
-                rb += self._fill_ng_table_row(page, frame, "expense_detail", rowno, row, "project", "费用说明")
+                with self._timing("table_row_fill", section="expense_detail", row=rowno):
+                    rb += self._fill_ng_table_row(page, frame, "expense_detail", rowno, row, "project", "费用说明")
         self.shot(page, "fill_20_detail.png")
         # 4) 汇总行（报销项目列 prop-reimItem；表 caption=报销明细）
         row = (plan.get("detail_summary_table") or {}).get("row1")
         if row:
-            rb += self._fill_ng_table_row(page, frame, "detail_summary", 0, row, "reimItem", "报销明细")
+            with self._timing("table_row_fill", section="detail_summary", row=0):
+                rb += self._fill_ng_table_row(page, frame, "detail_summary", 0, row, "reimItem", "报销明细")
         self.shot(page, "fill_30_summary.png")
         # 4b) 预算联动尝试（模板三预算列为只读回显，模板值 科技中心/差旅/年度预算项目）：
         #     只搜模板原词、命中行才白名单确认，否则守卫式关闭——绝无盲选
-        rb += self._try_budget_pick(page, frame)
+        with self._timing("section_fill", section="budget_pick"):
+            rb += self._try_budget_pick(page, frame)
         # 5) 银行信息（收款人列 prop-payee；开户行专属校验）
         brow = {label: str(spec.get("value") if isinstance(spec, dict) else spec)
                 for label, spec in (plan.get("bank_info") or {}).items()
                 if label != "开户行" and (spec.get("value") if isinstance(spec, dict) else spec) is not None}
         if brow:
-            rb += self._fill_ng_table_row(page, frame, "bank", 0, brow, "payee", "银行")
-        rb.append(self._fill_bank_name_ng(page, frame))
+            with self._timing("table_row_fill", section="bank", row=0):
+                rb += self._fill_ng_table_row(page, frame, "bank", 0, brow, "payee", "银行")
+        with self._timing("section_fill", section="bank_name"):
+            rb.append(self._fill_bank_name_ng(page, frame))
         self.shot(page, "fill_40_bank.png")
         # 5b) 终读复核：插入/选入/联动之后，空回读的 CELL_NOT_EDITABLE 记录再读一次
         # （预算列/是否为最后一次 等 只读回显格可能此刻才被系统带出；改判一律留痕 method）
-        page.wait_for_timeout(800)
-        _SEC_PROP = {"expense_detail": ("project", "费用说明"),
-                     "detail_summary": ("reimItem", "报销明细"),
-                     "bank": ("payee", "银行"),
-                     "header": ("bizNumber", "关联单据")}
-        for r0 in rb:
-            if r0.get("status") == "CELL_NOT_EDITABLE" and not r0.get("readback") \
-                    and r0.get("target") is not None:
-                prop = _SEC_PROP.get(r0.get("section"))
-                if not prop:
-                    continue
-                tt = self._table_by_prop(frame, prop[0], prop[1])
-                if not tt:
-                    continue
-                ci2 = _table_col(tt.get("headers", []), r0.get("field"))
-                if ci2 is None:
-                    continue
-                cur2 = self._cell_info(frame, self._cell_loc(page, tt, r0.get("row", 0), ci2))
-                if fill_match(cur2.get("text"), str(r0.get("target"))):
-                    r0.update(status="OK", method="final_reread", readback=cur2.get("text"),
-                              match=True, note="选择/联动后系统带出，终读确认")
-                else:
-                    r0.update(readback=cur2.get("text"))
-                    # 预算链白名单改判（attempt_023 记账时序教训）：模板词是正式项简称
-                    # （差旅→差旅费），_budget_pick 已按模板词白名单确认整链；字段级
-                    # 终读与联动同口径（包含关系）改判，其余字段恒走严格 fill_match
-                    if (r0.get("field") in ("预算部门", "预算单", "预算科目", "预算项目")
-                            and any(x.get("field") == "_budget_pick" and x.get("match")
-                                    for x in rb)):
-                        tv = _norm_cell(str(r0.get("target")))
-                        if tv and tv in _norm_cell(cur2.get("text") or ""):
-                            r0.update(status="OK", method="final_reread_whitelist",
-                                      match=True,
-                                      note="模板词为正式值简称（差旅→差旅费）；"
-                                           "_budget_pick 联动链已按模板词白名单确认")
+        with self._timing("section_fill", section="final_reread"):
+            page.wait_for_timeout(800)
+            _SEC_PROP = {"expense_detail": ("project", "费用说明"),
+                         "detail_summary": ("reimItem", "报销明细"),
+                         "bank": ("payee", "银行"),
+                         "header": ("bizNumber", "关联单据")}
+            for r0 in rb:
+                if r0.get("status") == "CELL_NOT_EDITABLE" and not r0.get("readback") \
+                        and r0.get("target") is not None:
+                    prop = _SEC_PROP.get(r0.get("section"))
+                    if not prop:
+                        continue
+                    tt = self._table_by_prop(frame, prop[0], prop[1])
+                    if not tt:
+                        continue
+                    ci2 = _table_col(tt.get("headers", []), r0.get("field"))
+                    if ci2 is None:
+                        continue
+                    cur2 = self._cell_info(frame, self._cell_loc(page, tt, r0.get("row", 0), ci2))
+                    if fill_match(cur2.get("text"), str(r0.get("target"))):
+                        r0.update(status="OK", method="final_reread", readback=cur2.get("text"),
+                                  match=True, note="选择/联动后系统带出，终读确认")
+                    else:
+                        r0.update(readback=cur2.get("text"))
+                        # 预算链白名单改判（attempt_023 记账时序教训）：模板词是正式项简称
+                        # （差旅→差旅费），_budget_pick 已按模板词白名单确认整链；字段级
+                        # 终读与联动同口径（包含关系）改判，其余字段恒走严格 fill_match
+                        if (r0.get("field") in ("预算部门", "预算单", "预算科目", "预算项目")
+                                and any(x.get("field") == "_budget_pick" and x.get("match")
+                                        for x in rb)):
+                            tv = _norm_cell(str(r0.get("target")))
+                            if tv and tv in _norm_cell(cur2.get("text") or ""):
+                                r0.update(status="OK", method="final_reread_whitelist",
+                                          match=True,
+                                          note="模板词为正式值简称（差旅→差旅费）；"
+                                               "_budget_pick 联动链已按模板词白名单确认")
         # 6) verdict（与 SpreadJS 路径同形：matched/deferred+not_in_form/mismatch → c7）
         matched = [r for r in rb if r.get("match")]
         deferred = [r for r in rb if r.get("status") == "DEFERRED_TO_USER"]
@@ -2678,6 +2821,16 @@ class Probe:
         ev = [f"{self.attempt.name}/evidence/fill_readback.json",
               f"{self.attempt.name}/evidence/fill_final_grid.json",
               f"{self.attempt.name}/evidence/fill_99_after.png"]
+        # D2（2026-10-23）字段级失败返回值进业务结果事件：rb 逐条（含
+        # CELL_NOT_EDITABLE/OPTION_NOT_FOUND 等状态与改判 method）落 events.jsonl，
+        # 不再只有 fill_end 聚合计数；回读原文留在 fill_readback.json（事件层不携带
+        # 值，维持脱敏惯例）
+        for r in rb:
+            self.log_event(event="fill_field_result",
+                           section=str(r.get("section")), field=str(r.get("field")),
+                           row=r.get("row"), status=str(r.get("status")),
+                           match=bool(r.get("match")),
+                           method=str(r.get("method") or "-"))
         self.log_event(event="fill_end", total=len(rb), matched=len(matched),
                        deferred=len(deferred), mismatch=len(mismatch), surface="primeNg",
                        not_in_form=len(not_in_form), form_not_in_template=len(form_nf))
@@ -2708,7 +2861,8 @@ class Probe:
         self.say("FILL 新建报销单（只填不存；保存/发送/流转等绝不点击）")
         self.log_event(event="fill_start", plan=str(self.fill_plan_path),
                        goal=(plan.get("meta") or {}).get("goal"))
-        page.goto(assert_internal(HOST + NEW_FORM_PATH), wait_until="domcontentloaded", timeout=45000)
+        with self._timing("goto_new_form"):
+            page.goto(assert_internal(HOST + NEW_FORM_PATH), wait_until="domcontentloaded", timeout=45000)
         page.wait_for_timeout(4000)
         frame, surf = self._form_frame(page)
         dom_fields = frame.evaluate(DOM_FIELDS_JS) or []
@@ -2918,7 +3072,7 @@ class Probe:
             self.log_event(event="session_state_inject_error", error=str(e)[:160])
 
     def _save_session_state(self):
-        """登录确认后导出登录态到 profile 受限目录（用户拍板 2026-10-21：扫码后 4h 免重复扫）。
+        """登录确认后导出登录态到 profile 受限目录（用户拍板：2026-10-21 建立 4h，2026-10-23 起 10h 免重复扫）。
         storage_state（cookie+localStorage）之外，另从活页采集 sessionStorage（BPM token 所在，
         attempt_007 实证）。cookie/storage 值只落该文件（不进日志/证据），日志只记条数与键名。"""
         try:

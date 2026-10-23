@@ -406,6 +406,37 @@ def _t8_static():
 case("静态完整性：会话持久化 + PrimeNG 表面件全在场；日志只记条数", _t8_static)
 
 
+# T9（2026-10-23 round-2）：D2 观测件 / D4 局部守卫增量不变量——只新增，不放松上面任何断言
+def _t9_static():
+    src = io.open(P.BASE / "stage1_browser_probe.py", encoding="utf-8").read()
+    # D2：三处内层 except 吞前留痕 + 尝试序号 + 字段级结果事件
+    for tok in ('event="inner_exc", where="cell_activate"',
+                'event="inner_exc", where="cell_input_write"',
+                'event="inner_exc", where="pick_row_verify"',
+                'behavior="continue_next_act"',
+                'behavior="pass_to_checkbox_fallback"',
+                "attempt=ai, attempts=2",
+                'event="cell_input_skip"',
+                'reason="readonly_or_disabled"',
+                'event="pick_row_detached"',
+                "row_detached_overlay_state",
+                "row_detached_overlay_open",
+                'event="fill_field_result"'):
+        assert tok in src, f"D2/D4 观测件缺件: {tok}"
+    # D4-b：写入路径显式 8s 局部短超时（先例：行点击 timeout=8000）
+    assert "inp.select_option(str(value), timeout=8000)" in src, "select_option 缺局部短超时"
+    assert "inp.fill(str(value), timeout=8000)" in src, "fill 缺局部短超时"
+    # D4-a：行 detach 的 count() 存在性守卫（同型先例 _cell_info）
+    assert "if row_loc.count() == 0:" in src, "pick_row 缺行 detach 守卫"
+    assert 'row_loc.get_attribute("class") or ""' in src, "在挂行选中态核验原链须保持"
+    # 红线锚点：全局默认 45000 不动（恰 1 处）、600ms 防御等待仍在、
+    # get_attribute 未被加 45s 标签冒充 timeout 证据
+    assert src.count("set_default_timeout(45000)") == 1, "全局默认超时 45000 必须原值唯一"
+    assert "page.wait_for_timeout(600)" in src, "600ms 防御等待必须保留"
+    assert "get_attribute(\"class\", timeout" not in src, "不得给 get_attribute 贴 timeout 标签造假"
+case("T9 D2 观测件/D4 局部守卫增量在场 + 全局超时原值锚点", _t9_static)
+
+
 # 清理 selftest run 目录（只删 selftest- 前缀，绝不触碰真实 run）
 def _cleanup():
     runs = BASE / "automation" / "runs"
@@ -419,4 +450,4 @@ print()
 if FAILED:
     print(f"SELFTEST FAILED: {len(FAILED)} → {FAILED}")
     sys.exit(1)
-print("SELFTEST ALL PASS（12 组用例，覆盖 T1–T8 + 状态机 + 回归守卫）")
+print("SELFTEST ALL PASS（13 组用例，覆盖 T1–T9 + 状态机 + 回归守卫）")

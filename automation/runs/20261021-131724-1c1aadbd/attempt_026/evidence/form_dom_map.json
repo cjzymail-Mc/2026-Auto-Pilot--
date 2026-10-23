@@ -1,0 +1,168 @@
+{
+ "ready": {
+  "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+  "frame": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+  "dom_fields": 17,
+  "gc": false,
+  "spreads": 0
+ },
+ "dom_fields": [
+  {
+   "i": 0,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "搜索",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 1,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "20",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 2,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 3,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 4,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 5,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 6,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 7,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 8,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 9,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 10,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 11,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n\n序号\n\t\n\t状态\n\t类型\n\t\n\t文件名\n\t大小\n\t提",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 12,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n\n序号\n\t\n\t状态\n\t类型\n\t\n\t文件名\n\t大小\n\t提",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 13,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n\n序号\n\t\n\t状态\n\t类型\n\t\n\t文件名\n\t大小\n\t提",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 14,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n\n序号\n\t\n\t状态\n\t类型\n\t\n\t文件名\n\t大小\n\t提",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 15,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n\n序号\n\t\n\t状态\n\t类型\n\t\n\t文件名\n\t大小\n\t提",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 16,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  }
+ ],
+ "spread": {
+  "gc": false,
+  "spreads": []
+ }
+}
