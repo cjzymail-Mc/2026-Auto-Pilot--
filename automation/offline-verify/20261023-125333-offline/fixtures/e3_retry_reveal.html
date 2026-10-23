@@ -1,0 +1,11 @@
+<!doctype html><meta charset="utf-8"><title>E3</title>
+<body><table><tbody><tr>
+<td id="cell-retry" style="padding:6px;border:1px solid #ccc">再试<input id="ri" style="display:none"></td>
+</tr></tbody></table>
+<script>
+var n = 0;
+document.getElementById('cell-retry').addEventListener('click', function(){
+  n += 1;
+  if (n >= 3) { document.getElementById('ri').style.display = ''; }
+});
+</script></body>

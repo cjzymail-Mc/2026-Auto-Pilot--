@@ -1,0 +1,226 @@
+{
+ "generated": "2026-10-23T12:52:19",
+ "contract": "ctr-a10bb3f6",
+ "round": 2,
+ "probe_sha256_head": "8b3caf86370bafaa",
+ "total": 34,
+ "passed": 33,
+ "failed": 1,
+ "scenarios": [
+  "A",
+  "A2",
+  "B",
+  "C",
+  "D",
+  "E1",
+  "E2",
+  "E3",
+  "GLOBAL"
+ ],
+ "results": [
+  {
+   "scenario": "A",
+   "assertion": "真实链返回 True（外层成功路径）",
+   "ok": true,
+   "detail": "res=True"
+  },
+  {
+   "scenario": "A",
+   "assertion": "pick_row_detached 事件 + overlay_open=False",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "A",
+   "assertion": "overlay_pick_row 完成（无 45s 死等）",
+   "ok": true,
+   "detail": "dur=769ms wall=0.9s"
+  },
+  {
+   "scenario": "A",
+   "assertion": "fill_overlay_row selected=True（选中提交）",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "A2",
+   "assertion": "真实链返回 False（按未选中收口）",
+   "ok": true,
+   "detail": "res=False"
+  },
+  {
+   "scenario": "A2",
+   "assertion": "pick_row_detached overlay_open=True 留痕",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "A2",
+   "assertion": "未默认成功（fill_overlay_row selected=False）",
+   "ok": false,
+   "detail": ""
+  },
+  {
+   "scenario": "A2",
+   "assertion": "失败路径也无 45s 死等（<10s）",
+   "ok": true,
+   "detail": "dur=743ms wall=1.4s"
+  },
+  {
+   "scenario": "B",
+   "assertion": "真实链返回 True",
+   "ok": true,
+   "detail": "res=True"
+  },
+  {
+   "scenario": "B",
+   "assertion": "pick_row_verify（在挂行核验，即时返回）",
+   "ok": true,
+   "detail": "{'event': 'timing', 'action': 'pick_row_verify', 't0_ms': 1792731106759, 'dur_ms': 18, 'outcome': 'ok', 'exc': '', 'attempt': 1, 'attempts': 2, 'ts': '2026-10-23T12:51:46'}"
+  },
+  {
+   "scenario": "B",
+   "assertion": "fill_overlay_row selected=True + confirm=确定",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "B",
+   "assertion": "确认后弹窗已关（守卫未触发 dialog_still_open）",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "B",
+   "assertion": "页面对话框已移除",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "C",
+   "assertion": "返回 CELL_NOT_EDITABLE（既有语义不变）",
+   "ok": true,
+   "detail": "st=CELL_NOT_EDITABLE"
+  },
+  {
+   "scenario": "C",
+   "assertion": "cell_input_skip×2（attempt 1/2）带 readonly_or_disabled",
+   "ok": true,
+   "detail": "skips=[(1, 'readonly_or_disabled'), (2, 'readonly_or_disabled')]"
+  },
+  {
+   "scenario": "C",
+   "assertion": "未发起任何 fill/select_option（无 cell_input_write）",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "C",
+   "assertion": "整格 <10s（旧路径 91.8s）",
+   "ok": true,
+   "detail": "wall=1.3s"
+  },
+  {
+   "scenario": "D",
+   "assertion": "返回 OK",
+   "ok": true,
+   "detail": "st=OK"
+  },
+  {
+   "scenario": "D",
+   "assertion": "回读=写入值（Enter 提交回 td）",
+   "ok": true,
+   "detail": "rb='新编辑值'"
+  },
+  {
+   "scenario": "D",
+   "assertion": "cell_activate 带尝试序号（attempt/attempts）",
+   "ok": true,
+   "detail": "activate=[(1, 2)]"
+  },
+  {
+   "scenario": "D",
+   "assertion": "cell_input_write how=fill outcome=ok（可写编辑器未误伤）",
+   "ok": true,
+   "detail": "{'event': 'timing', 'action': 'cell_input_write', 't0_ms': 1792731109962, 'dur_ms': 34, 'outcome': 'ok', 'exc': '', 'how': 'fill', 'attempt': 1, 'attempts': 2, 'ts': '2026-10-23T12:51:49'}"
+  },
+  {
+   "scenario": "D",
+   "assertion": "整格 <10s",
+   "ok": true,
+   "detail": "wall=1.2s"
+  },
+  {
+   "scenario": "E1",
+   "assertion": "返回 CELL_NOT_EDITABLE（缺失=如实报）",
+   "ok": true,
+   "detail": "st=CELL_NOT_EDITABLE"
+  },
+  {
+   "scenario": "E1",
+   "assertion": "cell_activate×2（attempt 1/2）",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "E1",
+   "assertion": "无 inner_exc / 无 skip / 无 write（纯缺失不产生异常记录）",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "E1",
+   "assertion": "整格 <10s",
+   "ok": true,
+   "detail": "wall=1.3s"
+  },
+  {
+   "scenario": "E2",
+   "assertion": "inner_exc×2（exc=TimeoutError，吞前留痕）",
+   "ok": true,
+   "detail": "[(1, 'TimeoutError', None), (2, 'TimeoutError', None)]"
+  },
+  {
+   "scenario": "E2",
+   "assertion": "cell_input_write×2 全 outcome=timeout（异常可见非吞）",
+   "ok": true,
+   "detail": "[(1, 'timeout', 8012), (2, 'timeout', 8020)]"
+  },
+  {
+   "scenario": "E2",
+   "assertion": "单次 ≈8s 局部短超时（非 45s 死等）",
+   "ok": true,
+   "detail": "durs=[8012, 8020]"
+  },
+  {
+   "scenario": "E2",
+   "assertion": "继续后仍 CELL_NOT_EDITABLE（行为语义不变）",
+   "ok": true,
+   "detail": "st=CELL_NOT_EDITABLE"
+  },
+  {
+   "scenario": "E3",
+   "assertion": "attempt=1 outcome=timeout + attempt=2 outcome=ok（逐次可见）",
+   "ok": true,
+   "detail": "a1=timeout a2=ok"
+  },
+  {
+   "scenario": "E3",
+   "assertion": "inner_exc 仅 attempt=1（第 2 次成功不再有）",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "scenario": "E3",
+   "assertion": "重试后返回 OK（再次尝试可成功）",
+   "ok": true,
+   "detail": "st=OK"
+  },
+  {
+   "scenario": "GLOBAL",
+   "assertion": "全程无 ≥45000ms 计时段（死等消除）",
+   "ok": true,
+   "detail": "[]"
+  }
+ ]
+}

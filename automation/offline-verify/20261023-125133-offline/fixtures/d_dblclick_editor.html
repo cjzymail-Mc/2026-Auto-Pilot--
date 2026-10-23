@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><title>D</title>
+<body><table><tbody><tr>
+<td id="cell-edit" style="padding:6px;border:1px solid #ccc">原值</td>
+</tr></tbody></table>
+<script>
+var td = document.getElementById('cell-edit');
+td.addEventListener('dblclick', function(){
+  if (td.querySelector('input')) return;
+  var i = document.createElement('input');
+  i.value = td.textContent.trim();
+  i.addEventListener('keydown', function(ev){
+    if (ev.key === 'Enter') { td.textContent = this.value; this.remove(); }
+  });
+  td.appendChild(i); i.focus();
+});
+</script></body>

@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>B</title>
+<body style="margin:0">
+<div class="ui-dialog" id="dlg" style="position:fixed;top:60px;left:60px;width:380px;height:240px;background:#fff;border:1px solid #666;z-index:10">
+<div class="ui-dialog-title">选择公出单</div>
+<table style="width:100%"><thead><tr><th>公出单号</th></tr></thead>
+<tbody><tr id="brow"><td style="padding:6px">12026075605 公出单</td></tr></tbody></table>
+<div class="ui-dialog-footer" style="padding:8px;text-align:right">
+<button id="bok">确定</button><button id="bcancel">取消</button></div></div>
+<script>
+document.getElementById('brow').addEventListener('click', function(){ this.classList.add('ui-state-highlight'); });
+document.getElementById('bok').addEventListener('click', function(){ this.closest('.ui-dialog').remove(); });
+</script></body>

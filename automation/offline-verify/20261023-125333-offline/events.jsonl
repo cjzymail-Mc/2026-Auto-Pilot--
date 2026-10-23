@@ -1,0 +1,75 @@
+{"event": "offline_marker", "scenario": "A_dropdown_close_success", "phase": "start", "ts": "2026-10-23T12:53:40"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731220930, "dur_ms": 36, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:40"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731220930, "dur_ms": 49, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:40"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792731220930, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "离线A-dropdown点行即关", "ts": "2026-10-23T12:53:40"}
+{"event": "fill_overlay_dump", "where": "离线A-dropdown点行即关", "overlays": [{"cls": "ui-dropdown-panel", "title": "", "inputs": 0, "rows": 2, "tables": 0}], "ts": "2026-10-23T12:53:40"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731221727, "dur_ms": 9, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:41"}
+{"event": "pick_row_detached", "where": "离线A-dropdown点行即关", "overlay_open": false, "chk": "row_detached_overlay_state", "ts": "2026-10-23T12:53:41"}
+{"event": "fill_overlay_row", "where": "离线A-dropdown点行即关", "row": "命中***", "selected": true, "chk": "row_detached_overlay_state", "confirm": "NONE_IN_CAPTURED", "ts": "2026-10-23T12:53:41"}
+{"event": "timing", "action": "overlay_pick_row", "t0_ms": 1792731220985, "dur_ms": 770, "outcome": "ok", "exc": "", "where": "离线A-dropdown点行即关", "ts": "2026-10-23T12:53:41"}
+{"event": "timing", "action": "overlay_prescan", "t0_ms": 1792731220985, "dur_ms": 772, "outcome": "ok", "exc": "", "where": "离线A-dropdown点行即关", "ts": "2026-10-23T12:53:41"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731221759, "dur_ms": 373, "outcome": "ok", "exc": "", "name": "a_close.png", "ts": "2026-10-23T12:53:42"}
+{"event": "offline_marker", "scenario": "A_dropdown_close_success", "phase": "end", "wall_s": 0.87, "ts": "2026-10-23T12:53:42"}
+{"event": "offline_marker", "scenario": "A2_overlay_open_fail_loud", "phase": "start", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731222177, "dur_ms": 24, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731222177, "dur_ms": 47, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792731222177, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "离线A2-浮层仍开", "ts": "2026-10-23T12:53:42"}
+{"event": "fill_overlay_dump", "where": "离线A2-浮层仍开", "overlays": [{"cls": "ui-dropdown-panel", "title": "", "inputs": 0, "rows": 2, "tables": 0}], "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731222933, "dur_ms": 10, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:42"}
+{"event": "pick_row_detached", "where": "离线A2-浮层仍开", "overlay_open": true, "chk": "row_detached_overlay_open", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "overlay_pick_row", "t0_ms": 1792731222235, "dur_ms": 712, "outcome": "ok", "exc": "", "where": "离线A2-浮层仍开", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "overlay_prescan", "t0_ms": 1792731222235, "dur_ms": 714, "outcome": "ok", "exc": "", "where": "离线A2-浮层仍开", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731222950, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731222950, "dur_ms": 24, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "overlay_post_scan", "t0_ms": 1792731222950, "dur_ms": 26, "outcome": "ok", "exc": "", "where": "离线A2-浮层仍开", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731222979, "dur_ms": 10, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:42"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731222979, "dur_ms": 20, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:42"}
+{"event": "fill_pick_miss", "where": "离线A2-浮层仍开", "target": "命中行", "options": ["干扰***"], "ts": "2026-10-23T12:53:43"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731223593, "dur_ms": 105, "outcome": "ok", "exc": "", "name": "a2_open_fail.png", "ts": "2026-10-23T12:53:43"}
+{"event": "offline_marker", "scenario": "A2_overlay_open_fail_loud", "phase": "end", "wall_s": 1.44, "ts": "2026-10-23T12:53:43"}
+{"event": "offline_marker", "scenario": "B_dialog_confirm_unchanged", "phase": "start", "ts": "2026-10-23T12:53:43"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731223724, "dur_ms": 32, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:43"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731223724, "dur_ms": 43, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:43"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792731223724, "dur_ms": 46, "outcome": "ok", "exc": "", "where": "离线B-确认式弹表", "ts": "2026-10-23T12:53:43"}
+{"event": "fill_overlay_dump", "where": "离线B-确认式弹表", "overlays": [{"cls": "ui-dialog", "title": "选择公出单", "inputs": 0, "rows": 2, "tables": 1}], "ts": "2026-10-23T12:53:43"}
+{"event": "timing", "action": "pick_row_verify", "t0_ms": 1792731224463, "dur_ms": 18, "outcome": "ok", "exc": "", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:53:44"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731225348, "dur_ms": 7, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:53:45"}
+{"event": "fill_overlay_row", "where": "离线B-确认式弹表", "row": "12***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-23T12:53:45"}
+{"event": "timing", "action": "overlay_pick_row", "t0_ms": 1792731223774, "dur_ms": 1586, "outcome": "ok", "exc": "", "where": "离线B-确认式弹表", "ts": "2026-10-23T12:53:45"}
+{"event": "timing", "action": "overlay_prescan", "t0_ms": 1792731223774, "dur_ms": 1598, "outcome": "ok", "exc": "", "where": "离线B-确认式弹表", "ts": "2026-10-23T12:53:45"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731225376, "dur_ms": 120, "outcome": "ok", "exc": "", "name": "b_dialog.png", "ts": "2026-10-23T12:53:45"}
+{"event": "offline_marker", "scenario": "B_dialog_confirm_unchanged", "phase": "end", "wall_s": 1.67, "ts": "2026-10-23T12:53:45"}
+{"event": "offline_marker", "scenario": "C_readonly_skip", "phase": "start", "ts": "2026-10-23T12:53:45"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731225624, "dur_ms": 42, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:53:45"}
+{"event": "cell_input_skip", "act": "dblclick", "attempt": 1, "attempts": 2, "reason": "readonly_or_disabled", "note": "挂载输入框只读/禁用：跳过 fill 死等路径", "ts": "2026-10-23T12:53:46"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731226232, "dur_ms": 46, "outcome": "ok", "exc": "", "act": "click", "attempt": 2, "attempts": 2, "ts": "2026-10-23T12:53:46"}
+{"event": "cell_input_skip", "act": "click", "attempt": 2, "attempts": 2, "reason": "readonly_or_disabled", "note": "挂载输入框只读/禁用：跳过 fill 死等路径", "ts": "2026-10-23T12:53:46"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731226846, "dur_ms": 115, "outcome": "ok", "exc": "", "name": "c_ro.png", "ts": "2026-10-23T12:53:46"}
+{"event": "offline_marker", "scenario": "C_readonly_skip", "phase": "end", "wall_s": 1.33, "ts": "2026-10-23T12:53:46"}
+{"event": "offline_marker", "scenario": "D_dblclick_editor_ok", "phase": "start", "ts": "2026-10-23T12:53:46"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731227061, "dur_ms": 58, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:53:47"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731227692, "dur_ms": 26, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:53:47"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731228179, "dur_ms": 105, "outcome": "ok", "exc": "", "name": "d_edit.png", "ts": "2026-10-23T12:53:48"}
+{"event": "offline_marker", "scenario": "D_dblclick_editor_ok", "phase": "end", "wall_s": 1.21, "ts": "2026-10-23T12:53:48"}
+{"event": "offline_marker", "scenario": "E1_missing_element", "phase": "start", "ts": "2026-10-23T12:53:48"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731228383, "dur_ms": 46, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:53:48"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731228966, "dur_ms": 25, "outcome": "ok", "exc": "", "act": "click", "attempt": 2, "attempts": 2, "ts": "2026-10-23T12:53:48"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731229530, "dur_ms": 110, "outcome": "ok", "exc": "", "name": "e1_missing.png", "ts": "2026-10-23T12:53:49"}
+{"event": "offline_marker", "scenario": "E1_missing_element", "phase": "end", "wall_s": 1.24, "ts": "2026-10-23T12:53:49"}
+{"event": "offline_marker", "scenario": "E2_hidden_continue", "phase": "start", "ts": "2026-10-23T12:53:49"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731229740, "dur_ms": 38, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:53:49"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731230346, "dur_ms": 8025, "outcome": "timeout", "exc": "TimeoutError", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:53:58"}
+{"event": "inner_exc", "where": "cell_input_write", "act": "dblclick", "attempt": 1, "attempts": 2, "exc": "TimeoutError", "behavior": "continue_next_act", "ts": "2026-10-23T12:53:58"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731238374, "dur_ms": 37, "outcome": "ok", "exc": "", "act": "click", "attempt": 2, "attempts": 2, "ts": "2026-10-23T12:53:58"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731238977, "dur_ms": 8017, "outcome": "timeout", "exc": "TimeoutError", "how": "fill", "attempt": 2, "attempts": 2, "ts": "2026-10-23T12:54:06"}
+{"event": "inner_exc", "where": "cell_input_write", "act": "click", "attempt": 2, "attempts": 2, "exc": "TimeoutError", "behavior": "continue_next_act", "ts": "2026-10-23T12:54:06"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731246999, "dur_ms": 126, "outcome": "ok", "exc": "", "name": "e2_hidden.png", "ts": "2026-10-23T12:54:07"}
+{"event": "offline_marker", "scenario": "E2_hidden_continue", "phase": "end", "wall_s": 17.35, "ts": "2026-10-23T12:54:07"}
+{"event": "offline_marker", "scenario": "E3_retry_success", "phase": "start", "ts": "2026-10-23T12:54:07"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731247236, "dur_ms": 43, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:54:07"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731247839, "dur_ms": 8017, "outcome": "timeout", "exc": "TimeoutError", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:54:15"}
+{"event": "inner_exc", "where": "cell_input_write", "act": "dblclick", "attempt": 1, "attempts": 2, "exc": "TimeoutError", "behavior": "continue_next_act", "ts": "2026-10-23T12:54:15"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731255864, "dur_ms": 31, "outcome": "ok", "exc": "", "act": "click", "attempt": 2, "attempts": 2, "ts": "2026-10-23T12:54:15"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731256463, "dur_ms": 21, "outcome": "ok", "exc": "", "how": "fill", "attempt": 2, "attempts": 2, "ts": "2026-10-23T12:54:16"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731256944, "dur_ms": 113, "outcome": "ok", "exc": "", "name": "e3_retry.png", "ts": "2026-10-23T12:54:17"}
+{"event": "offline_marker", "scenario": "E3_retry_success", "phase": "end", "wall_s": 9.81, "ts": "2026-10-23T12:54:17"}
