@@ -333,3 +333,430 @@
 {"event": "fill_end", "total": 32, "matched": 29, "deferred": 0, "mismatch": 0, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-22T15:25:13"}
 {"event": "probe_end", "reason": "SUCCESS_FILL_ONLY", "tech_used_s": 238.0, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-22T15:25:13"}
 {"event": "keep_open_start", "minutes": 45.0, "ts": "2026-10-22T15:25:13"}
+{"event": "profile_lock_acquired", "pid": 15032, "ts": "2026-10-23T11:03:14"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_025", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-23T11:03:14"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-23T11:03:15"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 298, "ts": "2026-10-23T11:03:23"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724607212, "dur_ms": 926, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T11:03:28"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 10.0, "ts": "2026-10-23T11:03:32"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-23T11:03:37"}
+{"event": "timing", "action": "goto_new_form", "t0_ms": 1792724617334, "dur_ms": 292, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:03:37"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724622006, "dur_ms": 1932, "outcome": "ok", "exc": "", "name": "fill_00_before.png", "ts": "2026-10-23T11:03:43"}
+{"event": "timing", "action": "ng_map_wait", "t0_ms": 1792724625271, "dur_ms": 46, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:03:45"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792724626385, "dur_ms": 2070, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T11:03:48"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792724629869, "dur_ms": 3167, "outcome": "ok", "exc": "", "kind": "multiselect", "ts": "2026-10-23T11:03:53"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724633237, "dur_ms": 246, "outcome": "ok", "exc": "", "name": "fill_10_header.png", "ts": "2026-10-23T11:03:53"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792724625419, "dur_ms": 8073, "outcome": "ok", "exc": "", "section": "header", "ts": "2026-10-23T11:03:53"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724633522, "dur_ms": 322, "outcome": "ok", "exc": "", "name": "fill_11_project_note.png", "ts": "2026-10-23T11:03:53"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792724633519, "dur_ms": 337, "outcome": "ok", "exc": "", "section": "project_note", "ts": "2026-10-23T11:03:53"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724633972, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:03:53"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792724633935, "dur_ms": 1547, "outcome": "ok", "exc": "", "prop": "bizNumber", "ts": "2026-10-23T11:03:55"}
+{"event": "timing", "action": "cell_button_hover", "t0_ms": 1792724635507, "dur_ms": 73, "outcome": "ok", "exc": "", "where": "关联公出单", "ts": "2026-10-23T11:03:55"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724637510, "dur_ms": 216, "outcome": "ok", "exc": "", "name": "fill_related_cell_pick.png", "ts": "2026-10-23T11:03:57"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724637739, "dur_ms": 17, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:03:57"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-23T11:03:57"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724637767, "dur_ms": 18, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:03:57"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792724637767, "dur_ms": 34, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:03:57"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792724637767, "dur_ms": 45, "outcome": "ok", "exc": "", "where": "关联单据/单据类型", "ts": "2026-10-23T11:03:57"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-23T11:03:57"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724637819, "dur_ms": 15, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:03:57"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792724637819, "dur_ms": 33, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:03:57"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "selected": false, "chk": "-", "confirm": "NONE_IN_CAPTURED", "ts": "2026-10-23T11:04:43"}
+{"event": "timing", "action": "overlay_pick_row", "t0_ms": 1792724637860, "dur_ms": 45822, "outcome": "ok", "exc": "", "where": "关联单据/单据类型", "ts": "2026-10-23T11:04:43"}
+{"event": "timing", "action": "overlay_post_scan", "t0_ms": 1792724637819, "dur_ms": 45874, "outcome": "ok", "exc": "", "where": "关联单据/单据类型", "ts": "2026-10-23T11:04:43"}
+{"event": "timing", "action": "overlay_pick", "t0_ms": 1792724637767, "dur_ms": 45936, "outcome": "ok", "exc": "", "where": "关联单据/单据类型", "ts": "2026-10-23T11:04:43"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724684920, "dur_ms": 271, "outcome": "ok", "exc": "", "name": "fill_related_type_picked.png", "ts": "2026-10-23T11:04:45"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724686304, "dur_ms": 22, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:04:46"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724686336, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:04:46"}
+{"event": "timing", "action": "table_pick_dblclick", "t0_ms": 1792724688623, "dur_ms": 297, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T11:04:48"}
+{"event": "timing", "action": "table_pick_editing_poll", "t0_ms": 1792724691951, "dur_ms": 17, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T11:04:51"}
+{"event": "timing", "action": "table_pick_btn", "t0_ms": 1792724691982, "dur_ms": 352, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T11:04:52"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724693741, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:04:53"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724693775, "dur_ms": 235, "outcome": "ok", "exc": "", "name": "fill_related_doc_pick.png", "ts": "2026-10-23T11:04:54"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-23T11:04:54"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724694039, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:04:54"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792724701719, "dur_ms": 22, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T11:05:01"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792724694039, "dur_ms": 12292, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:06"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792724694039, "dur_ms": 17513, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T11:05:11"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-23T11:05:11"}
+{"event": "timing", "action": "overlay_search_fill", "t0_ms": 1792724711561, "dur_ms": 1683, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T11:05:13"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724713246, "dur_ms": 27, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:13"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792724713314, "dur_ms": 20, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T11:05:13"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792724713246, "dur_ms": 105, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:13"}
+{"event": "timing", "action": "overlay_post_scan", "t0_ms": 1792724713246, "dur_ms": 111, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T11:05:13"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724713366, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:13"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792724713399, "dur_ms": 22, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T11:05:13"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792724713366, "dur_ms": 82, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:13"}
+{"event": "fill_pick_miss", "where": "关联单据/单号", "target": "12026096668", "options": ["单据***"], "ts": "2026-10-23T11:05:13"}
+{"event": "timing", "action": "dialog_close_click", "t0_ms": 1792724713512, "dur_ms": 147, "outcome": "ok", "exc": "", "btn": "取消", "ts": "2026-10-23T11:05:13"}
+{"event": "timing", "action": "table_pick", "t0_ms": 1792724686328, "dur_ms": 27858, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T11:05:14"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724714198, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:14"}
+{"event": "timing", "action": "table_pick_dblclick", "t0_ms": 1792724714449, "dur_ms": 269, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T11:05:14"}
+{"event": "timing", "action": "table_pick_editing_poll", "t0_ms": 1792724715348, "dur_ms": 18, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T11:05:15"}
+{"event": "timing", "action": "table_pick_btn", "t0_ms": 1792724715381, "dur_ms": 460, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T11:05:15"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724717219, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:17"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724717282, "dur_ms": 235, "outcome": "ok", "exc": "", "name": "fill_related_sub_pick.png", "ts": "2026-10-23T11:05:17"}
+{"event": "fill_table_pick", "where": "关联单据/单号-授权替代", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-23T11:05:17"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724717614, "dur_ms": 15, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:17"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792724717655, "dur_ms": 20, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T11:05:17"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792724717614, "dur_ms": 82, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:17"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792724717614, "dur_ms": 91, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T11:05:17"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号-授权替代", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-23T11:05:17"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724719542, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:19"}
+{"event": "fill_overlay_row", "where": "关联单据/单号-授权替代", "row": "结束***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-23T11:05:19"}
+{"event": "timing", "action": "overlay_pick_row_first", "t0_ms": 1792724717720, "dur_ms": 1854, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T11:05:19"}
+{"event": "timing", "action": "table_pick", "t0_ms": 1792724714187, "dur_ms": 5389, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T11:05:19"}
+{"event": "fill_related_substitute", "where": "关联单据/单号", "row": "结束***", "doc_no": "12***", "ts": "2026-10-23T11:05:19"}
+{"event": "timing", "action": "related_final_read", "t0_ms": 1792724719597, "dur_ms": 45, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:19"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792724633880, "dur_ms": 87071, "outcome": "ok", "exc": "", "section": "related_doc", "ts": "2026-10-23T11:05:20"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724721122, "dur_ms": 413, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:05:21"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792724725997, "dur_ms": 4480, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T11:05:30"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724721079, "dur_ms": 9766, "outcome": "ok", "exc": "", "section": "related_once", "row": 0, "field": "是否为一次性", "ts": "2026-10-23T11:05:30"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724730913, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:30"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792724730872, "dur_ms": 1549, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T11:05:32"}
+{"event": "timing", "action": "row_add_loop", "t0_ms": 1792724730872, "dur_ms": 1562, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "ts": "2026-10-23T11:05:32"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792724732554, "dur_ms": 4853, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T11:05:37"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724732496, "dur_ms": 5263, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "费用类型", "ts": "2026-10-23T11:05:37"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724737859, "dur_ms": 398, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:05:38"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724737818, "dur_ms": 2417, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "开始日期", "ts": "2026-10-23T11:05:40"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724740356, "dur_ms": 336, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:05:40"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724740311, "dur_ms": 2844, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "结束日期", "ts": "2026-10-23T11:05:43"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724745391, "dur_ms": 246, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:05:45"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724745347, "dur_ms": 1612, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "地点", "ts": "2026-10-23T11:05:46"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724747078, "dur_ms": 308, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:05:47"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724747037, "dur_ms": 1609, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "天数/次数", "ts": "2026-10-23T11:05:48"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724748751, "dur_ms": 292, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:05:49"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724748708, "dur_ms": 1635, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "金额", "ts": "2026-10-23T11:05:50"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724750442, "dur_ms": 315, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:05:50"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724750401, "dur_ms": 1787, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "费用说明", "ts": "2026-10-23T11:05:52"}
+{"event": "timing", "action": "settle_reread", "t0_ms": 1792724752202, "dur_ms": 837, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "ts": "2026-10-23T11:05:53"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792724730845, "dur_ms": 22200, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "ts": "2026-10-23T11:05:53"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724753106, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:05:53"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792724753072, "dur_ms": 1852, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T11:05:54"}
+{"event": "timing", "action": "row_add_loop", "t0_ms": 1792724753072, "dur_ms": 1863, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "ts": "2026-10-23T11:05:54"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792724755071, "dur_ms": 4785, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T11:05:59"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724755015, "dur_ms": 5208, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "费用类型", "ts": "2026-10-23T11:06:00"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724760328, "dur_ms": 350, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:00"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724760285, "dur_ms": 2374, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "开始日期", "ts": "2026-10-23T11:06:02"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724762761, "dur_ms": 325, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:03"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724762718, "dur_ms": 8577, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "结束日期", "ts": "2026-10-23T11:06:11"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724772844, "dur_ms": 249, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:13"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724772802, "dur_ms": 1544, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "地点", "ts": "2026-10-23T11:06:14"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724774446, "dur_ms": 293, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:14"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724774403, "dur_ms": 1543, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "天数/次数", "ts": "2026-10-23T11:06:15"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724776048, "dur_ms": 301, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:16"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724776005, "dur_ms": 1602, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "金额", "ts": "2026-10-23T11:06:17"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724777708, "dur_ms": 307, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:18"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724777666, "dur_ms": 1669, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "费用说明", "ts": "2026-10-23T11:06:19"}
+{"event": "timing", "action": "settle_reread", "t0_ms": 1792724779335, "dur_ms": 851, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "ts": "2026-10-23T11:06:20"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792724753047, "dur_ms": 27141, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "ts": "2026-10-23T11:06:20"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724780191, "dur_ms": 238, "outcome": "ok", "exc": "", "name": "fill_20_detail.png", "ts": "2026-10-23T11:06:20"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724780564, "dur_ms": 10, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:06:20"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792724780530, "dur_ms": 1614, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T11:06:22"}
+{"event": "timing", "action": "row_add_loop", "t0_ms": 1792724780530, "dur_ms": 1726, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "ts": "2026-10-23T11:06:22"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724782392, "dur_ms": 307, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:22"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724782348, "dur_ms": 6101, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "费用项目/摘要", "ts": "2026-10-23T11:06:28"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724789125, "dur_ms": 298, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:29"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724789080, "dur_ms": 5466, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "金额", "ts": "2026-10-23T11:06:34"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724794783, "dur_ms": 243, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:35"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724795712, "dur_ms": 137, "outcome": "ok", "exc": "", "act": "click", "ts": "2026-10-23T11:06:35"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724794740, "dur_ms": 1843, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "预算部门", "ts": "2026-10-23T11:06:36"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724796724, "dur_ms": 295, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:06:37"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724842702, "dur_ms": 152, "outcome": "ok", "exc": "", "act": "click", "ts": "2026-10-23T11:07:22"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724796683, "dur_ms": 91803, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "预算科目", "ts": "2026-10-23T11:08:08"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724888587, "dur_ms": 284, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:08:08"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724889540, "dur_ms": 152, "outcome": "ok", "exc": "", "act": "click", "ts": "2026-10-23T11:08:09"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724888545, "dur_ms": 1809, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "预算项目", "ts": "2026-10-23T11:08:10"}
+{"event": "timing", "action": "settle_reread", "t0_ms": 1792724890383, "dur_ms": 993, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "ts": "2026-10-23T11:08:11"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792724780501, "dur_ms": 110876, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "ts": "2026-10-23T11:08:11"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724891419, "dur_ms": 240, "outcome": "ok", "exc": "", "name": "fill_30_summary.png", "ts": "2026-10-23T11:08:11"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724891749, "dur_ms": 10, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:11"}
+{"event": "timing", "action": "table_pick_dblclick", "t0_ms": 1792724891789, "dur_ms": 300, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T11:08:12"}
+{"event": "timing", "action": "table_pick_editing_poll", "t0_ms": 1792724892754, "dur_ms": 39, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T11:08:12"}
+{"event": "timing", "action": "table_pick_btn", "t0_ms": 1792724892818, "dur_ms": 323, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T11:08:13"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724894446, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:14"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724894521, "dur_ms": 214, "outcome": "ok", "exc": "", "name": "fill_budget_no_pick.png", "ts": "2026-10-23T11:08:14"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-23T11:08:14"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724894778, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:14"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792724894814, "dur_ms": 21, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T11:08:14"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792724894778, "dur_ms": 90, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:14"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792724894778, "dur_ms": 96, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T11:08:14"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-23T11:08:14"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724896708, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:16"}
+{"event": "fill_overlay_row", "where": "预算联动/预算单", "row": "15***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-23T11:08:16"}
+{"event": "timing", "action": "overlay_pick_row", "t0_ms": 1792724894886, "dur_ms": 1861, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T11:08:16"}
+{"event": "timing", "action": "overlay_prescan", "t0_ms": 1792724894885, "dur_ms": 1876, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T11:08:16"}
+{"event": "timing", "action": "table_pick", "t0_ms": 1792724891739, "dur_ms": 5035, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T11:08:16"}
+{"event": "fill_budget_stage", "col": "预算单", "kw": "日常费用", "picked": true, "result": "OK", "echo": "预算部门=科技中心 / 预算单=15625120075 / 预算科目= / 预算项目=", "ts": "2026-10-23T11:08:18"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724898219, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:18"}
+{"event": "timing", "action": "table_pick_dblclick", "t0_ms": 1792724898261, "dur_ms": 314, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T11:08:18"}
+{"event": "timing", "action": "table_pick_editing_poll", "t0_ms": 1792724899195, "dur_ms": 16, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T11:08:19"}
+{"event": "timing", "action": "table_pick_btn", "t0_ms": 1792724899227, "dur_ms": 351, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T11:08:19"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724900802, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:20"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724900828, "dur_ms": 212, "outcome": "ok", "exc": "", "name": "fill_budget_subject_pick.png", "ts": "2026-10-23T11:08:21"}
+{"event": "fill_table_pick", "where": "预算联动/预算科目", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-23T11:08:21"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724901085, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:21"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792724901112, "dur_ms": 19, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T11:08:21"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792724901085, "dur_ms": 63, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:21"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792724901085, "dur_ms": 80, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T11:08:21"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算科目", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算科目", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-23T11:08:21"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792724903012, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T11:08:23"}
+{"event": "fill_overlay_row", "where": "预算联动/预算科目", "row": "年度***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-23T11:08:23"}
+{"event": "timing", "action": "overlay_pick_row", "t0_ms": 1792724901180, "dur_ms": 1893, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T11:08:23"}
+{"event": "timing", "action": "overlay_prescan", "t0_ms": 1792724901180, "dur_ms": 1939, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T11:08:23"}
+{"event": "timing", "action": "table_pick", "t0_ms": 1792724898210, "dur_ms": 4939, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T11:08:23"}
+{"event": "fill_budget_stage", "col": "预算科目", "kw": "差旅", "picked": true, "result": "OK", "ts": "2026-10-23T11:08:23"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792724891700, "dur_ms": 13018, "outcome": "ok", "exc": "", "section": "budget_pick", "ts": "2026-10-23T11:08:24"}
+{"event": "timing", "action": "row_add_loop", "t0_ms": 1792724904763, "dur_ms": 0, "outcome": "ok", "exc": "", "section": "bank", "row": 0, "ts": "2026-10-23T11:08:24"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792724905001, "dur_ms": 334, "outcome": "ok", "exc": "", "act": "dblclick", "ts": "2026-10-23T11:08:25"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792724904956, "dur_ms": 1938, "outcome": "ok", "exc": "", "section": "bank", "row": 0, "field": "转账金额", "ts": "2026-10-23T11:08:26"}
+{"event": "timing", "action": "settle_reread", "t0_ms": 1792724906909, "dur_ms": 881, "outcome": "ok", "exc": "", "section": "bank", "row": 0, "ts": "2026-10-23T11:08:27"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792724904737, "dur_ms": 3094, "outcome": "ok", "exc": "", "section": "bank", "row": 0, "ts": "2026-10-23T11:08:27"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792724907833, "dur_ms": 115, "outcome": "ok", "exc": "", "section": "bank_name", "ts": "2026-10-23T11:08:27"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724910969, "dur_ms": 214, "outcome": "ok", "exc": "", "name": "fill_40_bank.png", "ts": "2026-10-23T11:08:31"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792724917784, "dur_ms": 1122, "outcome": "ok", "exc": "", "section": "final_reread", "ts": "2026-10-23T11:08:38"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724925725, "dur_ms": 202, "outcome": "ok", "exc": "", "name": "fill_99_after.png", "ts": "2026-10-23T11:08:45"}
+{"event": "fill_end", "total": 32, "matched": 29, "deferred": 0, "mismatch": 0, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-23T11:08:47"}
+{"event": "probe_end", "reason": "SUCCESS_FILL_ONLY", "tech_used_s": 330.0, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-23T11:08:53"}
+{"event": "keep_open_start", "minutes": 45.0, "ts": "2026-10-23T11:08:53"}
+{"event": "keep_open_end", "ts": "2026-10-23T11:53:53"}
+{"event": "profile_lock_acquired", "pid": 17836, "ts": "2026-10-23T12:55:11"}
+{"event": "probe_start", "run": "20261021-131724-1c1aadbd", "attempt": "attempt_026", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-23T12:55:11"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-23T12:55:13"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 6712, "ts": "2026-10-23T12:55:24"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731328190, "dur_ms": 1613, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T12:55:29"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 10.0, "ts": "2026-10-23T12:55:30"}
+{"event": "fill_start", "plan": "automation\\runs\\20261021-131724-1c1aadbd\\fill_plan.json", "goal": "按 2026-09-30 报销模板在探针 Chromium 新建报销单中填入全部字段；只填不存，保存/发送/流转/上传由用户执行", "ts": "2026-10-23T12:55:30"}
+{"event": "timing", "action": "goto_new_form", "t0_ms": 1792731330649, "dur_ms": 1128, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:31"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731335983, "dur_ms": 225, "outcome": "ok", "exc": "", "name": "fill_00_before.png", "ts": "2026-10-23T12:55:36"}
+{"event": "fill_ng_field_wait", "round": 0, "named_writable": 0, "ts": "2026-10-23T12:55:36"}
+{"event": "timing", "action": "ng_map_wait", "t0_ms": 1792731336208, "dur_ms": 2577, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:38"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792731339556, "dur_ms": 1680, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T12:55:41"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792731341244, "dur_ms": 1992, "outcome": "ok", "exc": "", "kind": "multiselect", "ts": "2026-10-23T12:55:43"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731343243, "dur_ms": 221, "outcome": "ok", "exc": "", "name": "fill_10_header.png", "ts": "2026-10-23T12:55:43"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792731338849, "dur_ms": 4615, "outcome": "ok", "exc": "", "section": "header", "ts": "2026-10-23T12:55:43"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731343490, "dur_ms": 192, "outcome": "ok", "exc": "", "name": "fill_11_project_note.png", "ts": "2026-10-23T12:55:43"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792731343490, "dur_ms": 196, "outcome": "ok", "exc": "", "section": "project_note", "ts": "2026-10-23T12:55:43"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731343768, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:43"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792731343735, "dur_ms": 1522, "outcome": "ok", "exc": "", "prop": "bizNumber", "ts": "2026-10-23T12:55:45"}
+{"event": "timing", "action": "cell_button_hover", "t0_ms": 1792731345272, "dur_ms": 73, "outcome": "ok", "exc": "", "where": "关联公出单", "ts": "2026-10-23T12:55:45"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731347133, "dur_ms": 267, "outcome": "ok", "exc": "", "name": "fill_related_cell_pick.png", "ts": "2026-10-23T12:55:47"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731347402, "dur_ms": 25, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:47"}
+{"event": "fill_cell_button", "where": "关联公出单", "btn_count": 1, "method": "click", "overlay_open": true, "ts": "2026-10-23T12:55:47"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731347434, "dur_ms": 16, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:47"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731347434, "dur_ms": 34, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:47"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792731347434, "dur_ms": 41, "outcome": "ok", "exc": "", "where": "关联单据/单据类型", "ts": "2026-10-23T12:55:47"}
+{"event": "fill_overlay_dump", "where": "关联单据/单据类型", "overlays": [{"cls": "ng-trigger ng-trigger-overlayAnimation ng-tns-c41-163 ui-dropdown-panel ui-widget ui-widget-content ", "title": "", "inputs": 0, "rows": 12, "tables": 0}], "ts": "2026-10-23T12:55:47"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731347482, "dur_ms": 19, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:47"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731347482, "dur_ms": 44, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:47"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731348311, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:48"}
+{"event": "pick_row_detached", "where": "关联单据/单据类型", "overlay_open": false, "chk": "row_detached_overlay_state", "ts": "2026-10-23T12:55:48"}
+{"event": "fill_overlay_row", "where": "关联单据/单据类型", "row": "公出***", "selected": true, "chk": "row_detached_overlay_state", "confirm": "NONE_IN_CAPTURED", "ts": "2026-10-23T12:55:48"}
+{"event": "timing", "action": "overlay_pick_row", "t0_ms": 1792731347533, "dur_ms": 825, "outcome": "ok", "exc": "", "where": "关联单据/单据类型", "ts": "2026-10-23T12:55:48"}
+{"event": "timing", "action": "overlay_post_scan", "t0_ms": 1792731347482, "dur_ms": 878, "outcome": "ok", "exc": "", "where": "关联单据/单据类型", "ts": "2026-10-23T12:55:48"}
+{"event": "timing", "action": "overlay_pick", "t0_ms": 1792731347434, "dur_ms": 929, "outcome": "ok", "exc": "", "where": "关联单据/单据类型", "ts": "2026-10-23T12:55:48"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731349579, "dur_ms": 208, "outcome": "ok", "exc": "", "name": "fill_related_type_picked.png", "ts": "2026-10-23T12:55:49"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731349789, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:49"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731349820, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:49"}
+{"event": "timing", "action": "table_pick_dblclick", "t0_ms": 1792731349833, "dur_ms": 279, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T12:55:50"}
+{"event": "timing", "action": "table_pick_editing_poll", "t0_ms": 1792731350720, "dur_ms": 20, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T12:55:50"}
+{"event": "timing", "action": "table_pick_btn", "t0_ms": 1792731350757, "dur_ms": 392, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T12:55:51"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731352372, "dur_ms": 14, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:52"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731352408, "dur_ms": 229, "outcome": "ok", "exc": "", "name": "fill_related_doc_pick.png", "ts": "2026-10-23T12:55:52"}
+{"event": "fill_table_pick", "where": "关联单据/单号", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-23T12:55:52"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731352639, "dur_ms": 18, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:52"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792731352678, "dur_ms": 20, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T12:55:52"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731352639, "dur_ms": 79, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:52"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792731352639, "dur_ms": 80, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T12:55:52"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-23T12:55:52"}
+{"event": "timing", "action": "overlay_search_fill", "t0_ms": 1792731352726, "dur_ms": 1638, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T12:55:54"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731354363, "dur_ms": 10, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:54"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792731354393, "dur_ms": 21, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T12:55:54"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731354363, "dur_ms": 65, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:54"}
+{"event": "timing", "action": "overlay_post_scan", "t0_ms": 1792731354363, "dur_ms": 68, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T12:55:54"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731354433, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:54"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792731354459, "dur_ms": 21, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T12:55:54"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731354433, "dur_ms": 62, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:54"}
+{"event": "fill_pick_miss", "where": "关联单据/单号", "target": "12026096668", "options": ["单据***"], "ts": "2026-10-23T12:55:54"}
+{"event": "timing", "action": "dialog_close_click", "t0_ms": 1792731354528, "dur_ms": 130, "outcome": "ok", "exc": "", "btn": "取消", "ts": "2026-10-23T12:55:54"}
+{"event": "timing", "action": "table_pick", "t0_ms": 1792731349811, "dur_ms": 5375, "outcome": "ok", "exc": "", "where": "关联单据/单号", "ts": "2026-10-23T12:55:55"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731355199, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:55"}
+{"event": "timing", "action": "table_pick_dblclick", "t0_ms": 1792731355211, "dur_ms": 256, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T12:55:55"}
+{"event": "timing", "action": "table_pick_editing_poll", "t0_ms": 1792731356081, "dur_ms": 17, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T12:55:56"}
+{"event": "timing", "action": "table_pick_btn", "t0_ms": 1792731356114, "dur_ms": 636, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T12:55:56"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731357974, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:57"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731358005, "dur_ms": 228, "outcome": "ok", "exc": "", "name": "fill_related_sub_pick.png", "ts": "2026-10-23T12:55:58"}
+{"event": "fill_table_pick", "where": "关联单据/单号-授权替代", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-23T12:55:58"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731358236, "dur_ms": 15, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:58"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792731358275, "dur_ms": 19, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T12:55:58"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731358236, "dur_ms": 81, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:55:58"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792731358236, "dur_ms": 83, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T12:55:58"}
+{"event": "fill_overlay_dump", "where": "关联单据/单号-授权替代", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-164 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "单据号", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-23T12:55:58"}
+{"event": "timing", "action": "pick_row_verify", "t0_ms": 1792731359114, "dur_ms": 30, "outcome": "ok", "exc": "", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:55:59"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731360178, "dur_ms": 13, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:56:00"}
+{"event": "fill_overlay_row", "where": "关联单据/单号-授权替代", "row": "结束***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-23T12:56:00"}
+{"event": "timing", "action": "overlay_pick_row_first", "t0_ms": 1792731358325, "dur_ms": 1877, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T12:56:00"}
+{"event": "timing", "action": "table_pick", "t0_ms": 1792731355188, "dur_ms": 5015, "outcome": "ok", "exc": "", "where": "关联单据/单号-授权替代", "ts": "2026-10-23T12:56:00"}
+{"event": "fill_related_substitute", "where": "关联单据/单号", "row": "结束***", "doc_no": "12***", "ts": "2026-10-23T12:56:00"}
+{"event": "timing", "action": "related_final_read", "t0_ms": 1792731360206, "dur_ms": 42, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:56:00"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792731343687, "dur_ms": 16562, "outcome": "ok", "exc": "", "section": "related_doc", "ts": "2026-10-23T12:56:00"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731360326, "dur_ms": 373, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:00"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792731361234, "dur_ms": 4407, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T12:56:05"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731360275, "dur_ms": 5782, "outcome": "ok", "exc": "", "section": "related_once", "row": 0, "field": "是否为一次性", "ts": "2026-10-23T12:56:06"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731366118, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:56:06"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792731366082, "dur_ms": 1856, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T12:56:07"}
+{"event": "timing", "action": "row_add_loop", "t0_ms": 1792731366082, "dur_ms": 1882, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "ts": "2026-10-23T12:56:07"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792731368812, "dur_ms": 4708, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T12:56:13"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731368752, "dur_ms": 5126, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "费用类型", "ts": "2026-10-23T12:56:13"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731373981, "dur_ms": 378, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:14"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731374956, "dur_ms": 71, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:15"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731373937, "dur_ms": 2272, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "开始日期", "ts": "2026-10-23T12:56:16"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731376315, "dur_ms": 327, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:16"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731377234, "dur_ms": 58, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:17"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731376271, "dur_ms": 2213, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "结束日期", "ts": "2026-10-23T12:56:18"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731378582, "dur_ms": 239, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:18"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731379420, "dur_ms": 49, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:19"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731378539, "dur_ms": 1487, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "地点", "ts": "2026-10-23T12:56:20"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731380129, "dur_ms": 292, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:20"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731381017, "dur_ms": 49, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:21"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731380084, "dur_ms": 1567, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "天数/次数", "ts": "2026-10-23T12:56:21"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731381751, "dur_ms": 277, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:22"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731382614, "dur_ms": 48, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:22"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731381708, "dur_ms": 1522, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "金额", "ts": "2026-10-23T12:56:23"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731383330, "dur_ms": 282, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:23"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731384213, "dur_ms": 48, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:24"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731383288, "dur_ms": 1543, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "field": "费用说明", "ts": "2026-10-23T12:56:24"}
+{"event": "timing", "action": "settle_reread", "t0_ms": 1792731384831, "dur_ms": 838, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "ts": "2026-10-23T12:56:25"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792731366059, "dur_ms": 19611, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 0, "ts": "2026-10-23T12:56:25"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731385728, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:56:25"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792731385695, "dur_ms": 1611, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T12:56:27"}
+{"event": "timing", "action": "row_add_loop", "t0_ms": 1792731385695, "dur_ms": 1623, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "ts": "2026-10-23T12:56:27"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792731387562, "dur_ms": 4715, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T12:56:32"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731387506, "dur_ms": 5145, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "费用类型", "ts": "2026-10-23T12:56:32"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731392754, "dur_ms": 331, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:33"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731393679, "dur_ms": 63, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:33"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731392710, "dur_ms": 2201, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "开始日期", "ts": "2026-10-23T12:56:34"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731395005, "dur_ms": 307, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:35"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731395931, "dur_ms": 60, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:35"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731394965, "dur_ms": 2206, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "结束日期", "ts": "2026-10-23T12:56:37"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731397267, "dur_ms": 240, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:37"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731398104, "dur_ms": 47, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:38"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731397227, "dur_ms": 1480, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "地点", "ts": "2026-10-23T12:56:38"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731398806, "dur_ms": 266, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:39"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731399657, "dur_ms": 45, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:39"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731398766, "dur_ms": 1491, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "天数/次数", "ts": "2026-10-23T12:56:40"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731400356, "dur_ms": 282, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:40"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731401225, "dur_ms": 47, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:41"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731400314, "dur_ms": 1526, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "金额", "ts": "2026-10-23T12:56:41"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731401938, "dur_ms": 281, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:42"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731402805, "dur_ms": 46, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:42"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731401898, "dur_ms": 1531, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "field": "费用说明", "ts": "2026-10-23T12:56:43"}
+{"event": "timing", "action": "settle_reread", "t0_ms": 1792731403430, "dur_ms": 846, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "ts": "2026-10-23T12:56:44"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792731385672, "dur_ms": 18605, "outcome": "ok", "exc": "", "section": "expense_detail", "row": 1, "ts": "2026-10-23T12:56:44"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731404283, "dur_ms": 216, "outcome": "ok", "exc": "", "name": "fill_20_detail.png", "ts": "2026-10-23T12:56:44"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731404559, "dur_ms": 10, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:56:44"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792731404525, "dur_ms": 1519, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T12:56:46"}
+{"event": "timing", "action": "row_add_loop", "t0_ms": 1792731404525, "dur_ms": 1530, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "ts": "2026-10-23T12:56:46"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731406154, "dur_ms": 307, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:46"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731407044, "dur_ms": 76, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:47"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731406114, "dur_ms": 1575, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "费用项目/摘要", "ts": "2026-10-23T12:56:47"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731407793, "dur_ms": 281, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:48"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731408670, "dur_ms": 51, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:48"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731407751, "dur_ms": 1557, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "金额", "ts": "2026-10-23T12:56:49"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731409407, "dur_ms": 257, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:49"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731410226, "dur_ms": 136, "outcome": "ok", "exc": "", "act": "click", "attempt": 2, "attempts": 2, "ts": "2026-10-23T12:56:50"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731409364, "dur_ms": 1565, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "预算部门", "ts": "2026-10-23T12:56:50"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731411029, "dur_ms": 282, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:51"}
+{"event": "cell_input_skip", "act": "dblclick", "attempt": 1, "attempts": 2, "reason": "readonly_or_disabled", "note": "挂载输入框只读/禁用：跳过 fill 死等路径", "ts": "2026-10-23T12:56:51"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731411900, "dur_ms": 131, "outcome": "ok", "exc": "", "act": "click", "attempt": 2, "attempts": 2, "ts": "2026-10-23T12:56:52"}
+{"event": "cell_input_skip", "act": "click", "attempt": 2, "attempts": 2, "reason": "readonly_or_disabled", "note": "挂载输入框只读/禁用：跳过 fill 死等路径", "ts": "2026-10-23T12:56:52"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731410984, "dur_ms": 1654, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "预算科目", "ts": "2026-10-23T12:56:52"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731412739, "dur_ms": 266, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:53"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731413577, "dur_ms": 137, "outcome": "ok", "exc": "", "act": "click", "attempt": 2, "attempts": 2, "ts": "2026-10-23T12:56:53"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731412695, "dur_ms": 1579, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "field": "预算项目", "ts": "2026-10-23T12:56:54"}
+{"event": "timing", "action": "settle_reread", "t0_ms": 1792731414275, "dur_ms": 963, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "ts": "2026-10-23T12:56:55"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792731404500, "dur_ms": 10739, "outcome": "ok", "exc": "", "section": "detail_summary", "row": 0, "ts": "2026-10-23T12:56:55"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731415240, "dur_ms": 203, "outcome": "ok", "exc": "", "name": "fill_30_summary.png", "ts": "2026-10-23T12:56:55"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731415494, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:56:55"}
+{"event": "timing", "action": "table_pick_dblclick", "t0_ms": 1792731415515, "dur_ms": 287, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T12:56:55"}
+{"event": "timing", "action": "table_pick_editing_poll", "t0_ms": 1792731416434, "dur_ms": 17, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T12:56:56"}
+{"event": "timing", "action": "table_pick_btn", "t0_ms": 1792731416469, "dur_ms": 432, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T12:56:56"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731418143, "dur_ms": 11, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:56:58"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731418168, "dur_ms": 208, "outcome": "ok", "exc": "", "name": "fill_budget_no_pick.png", "ts": "2026-10-23T12:56:58"}
+{"event": "fill_table_pick", "where": "预算联动/预算单", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-23T12:56:58"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731418378, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:56:58"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792731418405, "dur_ms": 18, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T12:56:58"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731418378, "dur_ms": 58, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:56:58"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792731418378, "dur_ms": 59, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T12:56:58"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算单", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算单", "inputs": 1, "rows": 4, "tables": 3}], "ts": "2026-10-23T12:56:58"}
+{"event": "timing", "action": "pick_row_verify", "t0_ms": 1792731419240, "dur_ms": 28, "outcome": "ok", "exc": "", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:56:59"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731420239, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:57:00"}
+{"event": "fill_overlay_row", "where": "预算联动/预算单", "row": "15***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-23T12:57:00"}
+{"event": "timing", "action": "overlay_pick_row", "t0_ms": 1792731418441, "dur_ms": 1813, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T12:57:00"}
+{"event": "timing", "action": "overlay_prescan", "t0_ms": 1792731418441, "dur_ms": 1815, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T12:57:00"}
+{"event": "timing", "action": "table_pick", "t0_ms": 1792731415482, "dur_ms": 4774, "outcome": "ok", "exc": "", "where": "预算联动/预算单", "ts": "2026-10-23T12:57:00"}
+{"event": "fill_budget_stage", "col": "预算单", "kw": "日常费用", "picked": true, "result": "OK", "echo": "预算部门=科技中心 / 预算单=15625120075 / 预算科目= / 预算项目=", "ts": "2026-10-23T12:57:01"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731421705, "dur_ms": 14, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:57:01"}
+{"event": "timing", "action": "table_pick_dblclick", "t0_ms": 1792731421765, "dur_ms": 391, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T12:57:02"}
+{"event": "timing", "action": "table_pick_editing_poll", "t0_ms": 1792731422775, "dur_ms": 15, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T12:57:02"}
+{"event": "timing", "action": "table_pick_btn", "t0_ms": 1792731422805, "dur_ms": 378, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T12:57:03"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731424408, "dur_ms": 12, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:57:04"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731424433, "dur_ms": 218, "outcome": "ok", "exc": "", "name": "fill_budget_subject_pick.png", "ts": "2026-10-23T12:57:04"}
+{"event": "fill_table_pick", "where": "预算联动/预算科目", "editing": true, "method": "click", "panel_open": true, "toast": null, "ts": "2026-10-23T12:57:04"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731424660, "dur_ms": 14, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:57:04"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792731424688, "dur_ms": 19, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T12:57:04"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792731424660, "dur_ms": 69, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:57:04"}
+{"event": "timing", "action": "overlay_dump_candidates", "t0_ms": 1792731424660, "dur_ms": 76, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T12:57:04"}
+{"event": "fill_overlay_dump", "where": "预算联动/预算科目", "overlays": [{"cls": "ng-trigger ng-trigger-animation ng-tns-c17-173 table-select-dialog ui-dialog ui-widget ui-widget-con", "title": "预算科目", "inputs": 1, "rows": 12, "tables": 3}], "ts": "2026-10-23T12:57:04"}
+{"event": "timing", "action": "pick_row_verify", "t0_ms": 1792731425535, "dur_ms": 27, "outcome": "ok", "exc": "", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:57:05"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792731426543, "dur_ms": 15, "outcome": "ok", "exc": "", "ts": "2026-10-23T12:57:06"}
+{"event": "fill_overlay_row", "where": "预算联动/预算科目", "row": "年度***", "selected": true, "chk": "-", "confirm": "确定", "ts": "2026-10-23T12:57:06"}
+{"event": "timing", "action": "overlay_pick_row", "t0_ms": 1792731424741, "dur_ms": 1821, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T12:57:06"}
+{"event": "timing", "action": "overlay_prescan", "t0_ms": 1792731424741, "dur_ms": 1822, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T12:57:06"}
+{"event": "timing", "action": "table_pick", "t0_ms": 1792731421695, "dur_ms": 4869, "outcome": "ok", "exc": "", "where": "预算联动/预算科目", "ts": "2026-10-23T12:57:06"}
+{"event": "fill_budget_stage", "col": "预算科目", "kw": "差旅", "picked": true, "result": "OK", "ts": "2026-10-23T12:57:06"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792731415444, "dur_ms": 12536, "outcome": "ok", "exc": "", "section": "budget_pick", "ts": "2026-10-23T12:57:07"}
+{"event": "timing", "action": "row_add_loop", "t0_ms": 1792731428005, "dur_ms": 0, "outcome": "ok", "exc": "", "section": "bank", "row": 0, "ts": "2026-10-23T12:57:08"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792731428220, "dur_ms": 317, "outcome": "ok", "exc": "", "act": "dblclick", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:57:08"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792731429120, "dur_ms": 48, "outcome": "ok", "exc": "", "how": "fill", "attempt": 1, "attempts": 2, "ts": "2026-10-23T12:57:09"}
+{"event": "timing", "action": "cell_fill", "t0_ms": 1792731428175, "dur_ms": 1570, "outcome": "ok", "exc": "", "section": "bank", "row": 0, "field": "转账金额", "ts": "2026-10-23T12:57:09"}
+{"event": "timing", "action": "settle_reread", "t0_ms": 1792731429748, "dur_ms": 837, "outcome": "ok", "exc": "", "section": "bank", "row": 0, "ts": "2026-10-23T12:57:10"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792731427982, "dur_ms": 2604, "outcome": "ok", "exc": "", "section": "bank", "row": 0, "ts": "2026-10-23T12:57:10"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792731430591, "dur_ms": 112, "outcome": "ok", "exc": "", "section": "bank_name", "ts": "2026-10-23T12:57:10"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731430706, "dur_ms": 210, "outcome": "ok", "exc": "", "name": "fill_40_bank.png", "ts": "2026-10-23T12:57:10"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792731430917, "dur_ms": 1015, "outcome": "ok", "exc": "", "section": "final_reread", "ts": "2026-10-23T12:57:11"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792731432003, "dur_ms": 201, "outcome": "ok", "exc": "", "name": "fill_99_after.png", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "header", "field": "事由", "row": null, "status": "None", "match": true, "method": "fill", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "header", "field": "支付方式", "row": null, "status": "None", "match": true, "method": "overlay_pick", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "header", "field": "年度", "row": null, "status": "None", "match": true, "method": "overlay_pick", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "header", "field": "是否为一次性", "row": null, "status": "OK", "match": true, "method": "related_table_col", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "project_note", "field": "项目说明", "row": null, "status": "NOT_IN_FORM", "match": false, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "project_note", "field": "行程说明", "row": null, "status": "NOT_IN_FORM", "match": false, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "header", "field": "报销类别(submitType)", "row": null, "status": "FORM_FIELD_NOT_IN_TEMPLATE", "match": false, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "header", "field": "关联公出单", "row": null, "status": "None", "match": true, "method": "type_then_doc_overlay", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "费用类型", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "开始日期", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "结束日期", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "地点", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "天数/次数", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "金额", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "费用说明", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "费用类型", "row": 1, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "开始日期", "row": 1, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "结束日期", "row": 1, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "地点", "row": 1, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "天数/次数", "row": 1, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "金额", "row": 1, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "expense_detail", "field": "费用说明", "row": 1, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "detail_summary", "field": "费用项目/摘要", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "detail_summary", "field": "金额", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "detail_summary", "field": "预算部门", "row": 0, "status": "OK", "match": true, "method": "final_reread", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "detail_summary", "field": "预算科目", "row": 0, "status": "OK", "match": true, "method": "final_reread", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "detail_summary", "field": "预算项目", "row": 0, "status": "OK", "match": true, "method": "final_reread", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "detail_summary", "field": "_budget_pick", "row": null, "status": "OK", "match": true, "method": "cell_table_pick", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "bank", "field": "收款人", "row": 0, "status": "ALREADY", "match": true, "method": "prefilled", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "bank", "field": "银行账号", "row": 0, "status": "ALREADY", "match": true, "method": "prefilled", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "bank", "field": "转账金额", "row": 0, "status": "OK", "match": true, "method": "-", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_field_result", "section": "bank", "field": "开户行", "row": null, "status": "OK", "match": true, "method": "auto_display", "ts": "2026-10-23T12:57:12"}
+{"event": "fill_end", "total": 32, "matched": 29, "deferred": 0, "mismatch": 0, "surface": "primeNg", "not_in_form": 2, "form_not_in_template": 1, "ts": "2026-10-23T12:57:12"}
+{"event": "probe_end", "reason": "SUCCESS_FILL_ONLY", "tech_used_s": 107.6, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-23T12:57:12"}
