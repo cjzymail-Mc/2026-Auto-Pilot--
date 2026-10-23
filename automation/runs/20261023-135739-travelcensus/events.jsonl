@@ -1,0 +1,39 @@
+{"event": "profile_lock_acquired", "pid": 16824, "ts": "2026-10-23T13:57:39"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 319, "ts": "2026-10-23T13:57:46"}
+{"event": "travel_census_start", "cutoff": "2024-10-23", "limit": 63, "v": "4-checkpoint-first", "ts": "2026-10-23T13:57:46"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792735070044, "dur_ms": 526, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T13:57:50"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 10.0, "ts": "2026-10-23T13:57:51"}
+{"event": "org_picker_opened", "row": "CreatedPath", "ts": "2026-10-23T13:57:58"}
+{"event": "org_node_clicked", "row": "CreatedPath", "picked": "运动表现研究部", "ts": "2026-10-23T13:58:00"}
+{"event": "org_dialog_confirmed", "row": "CreatedPath", "btn": "确定", "ts": "2026-10-23T13:58:01"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792735082611, "dur_ms": 219, "outcome": "ok", "exc": "", "name": "org_CreatedPath_picked.png", "ts": "2026-10-23T13:58:02"}
+{"event": "list_ep_found", "url": "https://oa.api.qiaodan.com/reimburse/query/20/1?for=1", "expect_total": 469, "ts": "2026-10-23T13:58:04"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/92d41ffd042746e390f0a070118ca1d9", "status": 401, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/detail/92d41ffd042746e390f0a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/get/92d41ffd042746e390f0a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/view/92d41ffd042746e390f0a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/info/92d41ffd042746e390f0a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/query/20/1/92d41ffd042746e390f0a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/query/20/1?id=92d41ffd042746e390f0a070118ca1d9", "status": 405, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/92d41ffd-0427-46e3-90f0-a070118ca1d9", "status": 401, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/detail/92d41ffd-0427-46e3-90f0-a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/get/92d41ffd-0427-46e3-90f0-a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/view/92d41ffd-0427-46e3-90f0-a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/info/92d41ffd-0427-46e3-90f0-a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/query/20/1/92d41ffd-0427-46e3-90f0-a070118ca1d9", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/query/20/1?id=92d41ffd-0427-46e3-90f0-a070118ca1d9", "status": 405, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/15426095951", "status": 401, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/detail/15426095951", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/get/15426095951", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/view/15426095951", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/info/15426095951", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/query/20/1/15426095951", "status": 404, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_candidate_reject", "url": "https://oa.api.qiaodan.com/reimburse/query/20/1?id=15426095951", "status": 405, "head": "", "ts": "2026-10-23T13:58:05"}
+{"event": "detail_route", "where": "same_page", "url": "https://bpm.qiaodan.com/oa/reimburses", "ts": "2026-10-23T13:58:08"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792735088910, "dur_ms": 227, "outcome": "ok", "exc": "", "name": "checkpoint_detail_view.png", "ts": "2026-10-23T13:58:09"}
+{"event": "table_wait_timeout", "url": "https://bpm.qiaodan.com/oa/home", "ts": "2026-10-23T13:58:39"}
+{"event": "checkpoint_detail_ok", "mode": "domview", "biz": "1542***", "tpl": "", "arrays": 0, "biz_check": true, "ts": "2026-10-23T13:58:41"}
+{"event": "api_paged_fetch", "got": 0, "ts": "2026-10-23T13:58:41"}
+{"event": "census_page", "page": 1, "api_items": 230, "page_text": "", "ts": "2026-10-23T13:58:43"}
+{"event": "travel_census_end", "mode": "domview", "docs": 1, "targets": 0, "ts": "2026-10-23T13:58:43"}
+{"event": "travel_census_close", "outcome": "OK", "ts": "2026-10-23T13:58:43"}

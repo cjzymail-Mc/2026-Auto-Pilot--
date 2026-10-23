@@ -1,0 +1,17 @@
+{"event": "profile_lock_acquired", "pid": 18076, "ts": "2026-10-23T10:58:01"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 698, "ts": "2026-10-23T10:58:09"}
+{"event": "travel_census_start", "cutoff": "2024-10-23", "limit": 63, "ts": "2026-10-23T10:58:09"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724292990, "dur_ms": 1591, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T10:58:14"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 10.0, "ts": "2026-10-23T10:58:25"}
+{"event": "org_picker_opened", "row": "CreatedPath", "ts": "2026-10-23T10:58:33"}
+{"event": "org_node_clicked", "row": "CreatedPath", "picked": "运动表现研究部", "ts": "2026-10-23T10:58:36"}
+{"event": "org_dialog_confirmed", "row": "CreatedPath", "btn": "确定", "ts": "2026-10-23T10:58:37"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792724318538, "dur_ms": 503, "outcome": "ok", "exc": "", "name": "org_CreatedPath_picked.png", "ts": "2026-10-23T10:58:39"}
+{"event": "census_page", "page": 1, "api_items": 20, "dom_rows": 20, "page_text": "123 共 469 条 20", "ts": "2026-10-23T10:58:42"}
+{"event": "census_page", "page": 2, "api_items": 40, "dom_rows": 40, "page_text": "123 共 469 条 20", "ts": "2026-10-23T10:58:45"}
+{"event": "census_page", "page": 3, "api_items": 60, "dom_rows": 60, "page_text": "234 共 469 条 20", "ts": "2026-10-23T10:58:48"}
+{"event": "census_page", "page": 4, "api_items": 80, "dom_rows": 80, "page_text": "345 共 469 条 20", "ts": "2026-10-23T10:58:51"}
+{"event": "census_page", "page": 5, "api_items": 100, "dom_rows": 100, "page_text": "456 共 469 条 20", "ts": "2026-10-23T10:58:53"}
+{"event": "census_items_total", "api_items": 100, "dom_rows": 100, "list_ep": "https://oa.api.qiaodan.com/reimburse/query/20/6?for=1", "ts": "2026-10-23T10:58:56"}
+{"event": "travel_census_end", "mode": "none", "docs": 0, "ts": "2026-10-23T10:58:56"}
+{"event": "travel_census_close", "outcome": "OK", "ts": "2026-10-23T10:58:56"}

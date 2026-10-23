@@ -1,0 +1,72 @@
+{"event": "profile_lock_acquired", "pid": 15612, "ts": "2026-10-23T14:08:31"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 335, "ts": "2026-10-23T14:08:37"}
+{"event": "travel_census_start", "cutoff": "2024-10-23", "limit": 63, "v": "4-checkpoint-first", "ts": "2026-10-23T14:08:37"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792735721174, "dur_ms": 633, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T14:08:41"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 10.0, "ts": "2026-10-23T14:08:43"}
+{"event": "org_picker_opened", "row": "CreatedPath", "ts": "2026-10-23T14:08:51"}
+{"event": "org_node_clicked", "row": "CreatedPath", "picked": "运动表现研究部", "ts": "2026-10-23T14:08:54"}
+{"event": "org_dialog_confirmed", "row": "CreatedPath", "btn": "确定", "ts": "2026-10-23T14:08:55"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792735736390, "dur_ms": 225, "outcome": "ok", "exc": "", "name": "org_CreatedPath_picked.png", "ts": "2026-10-23T14:08:56"}
+{"event": "list_ep_found", "url": "https://oa.api.qiaodan.com/reimburse/query/20/1?for=1", "expect_total": 469, "ts": "2026-10-23T14:08:58"}
+{"event": "detail_route", "where": "same_page", "url": "https://bpm.qiaodan.com/oa/reimburse?type=view&id=92d41ffd042746e390f0a070118ca1d9", "ts": "2026-10-23T14:09:03"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792735745584, "dur_ms": 563, "outcome": "ok", "exc": "", "name": "checkpoint_detail_view.png", "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/floworg/detail?user=116070053", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/menu/kind?kind=20", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.Admin.ViewModels&class=QiaoDan.Flow.ViewModels.CountersignViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.Admin.ViewModels&class=QiaoDan.Admin.ViewModels.AttachmentViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict?code=PRINTHIDDEN", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.Admin.ViewModels&class=QiaoDan.Flow.ViewModels.FlowTaskViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.FinanceCnapViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.FinanceHotelViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict?code=FinanceBridgeCheck", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/menu?moduleId=eacb8477-6b84-4d66-83d6-142048de0eb3", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/menu/kind?kind=10", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict/enum?name=QiaoDan.Flow.FlowNodeKind,%20QiaoDan.Core&name=QiaoDan.Flow.ApproveMode,%20QiaoDan.Core&name=QiaoDan.Flow", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.Admin.ViewModels&class=QiaoDan.Flow.ViewModels.FlowTaskExtraViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/financecnap/cnap-types", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.ReimburseViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://rybbit.dev.qiaodan.com/api/track", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/module/eacb8477-6b84-4d66-83d6-142048de0eb3/attachment/", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/financecnap/cnap-areas", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.LoanViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/attachment?bizId=eacb8477-6b84-4d66-83d6-142048de0eb3&bizType=", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/reimburse/92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict/enum?name=QiaoDan.OA.Core.BizCategory,%20QiaoDan.OA.Core&name=QiaoDan.OA.Core.PriorityCode,%20QiaoDan.OA.Core&name=", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict?code=BXXM&code=DJGS&code=BXFS&code=BZLB&code=BXLB", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/module/eacb8477-6b84-4d66-83d6-142048de0eb3/BizModule", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/reimburse/details/92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.ReimDetailViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/reimburse/relations/92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.ReimRelationViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict?code=BXXM&code=XJLLXM&code=BudgetGenre&code=DJGS&code=FYYSFYGS&code=NJHY", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/reimburse/detailrels/92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict?code=31&code=31&code=YESNO", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/biztype/oa/BizRelationTypes/31", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/biztype/oa/BizRelationTypes/31", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.ReimDetailRelViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/reimburse/costs/92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict/enum?name=QiaoDan.OA.Core.OABizType,%20QiaoDan.OA.Core", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.ReimCostViewModel", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/reimburse/banks/92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict?code=FYLX", "status": 200, "ts": "2026-10-23T14:09:06"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.ReimBankViewModel", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/reimburse/products/92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/modelfield?assembly=QiaoDan.OA.ViewModels&class=QiaoDan.OA.ViewModels.ReimProductViewModel", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict?code=CWGXDJXT", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/Countersign?bizId=92d41ffd042746e390f0a070118ca1d9&bizType=31", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/attachment?bizId=92d41ffd042746e390f0a070118ca1d9&bizType=", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/flow/?bizId=92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict/enum?name=QiaoDan.Flow.TaskKind,%20QiaoDan.Core&name=QiaoDan.Flow.TaskStatus,%20QiaoDan.Core", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/attachment?bizId=92d41ffd042746e390f0a070118ca1d9&bizType=", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/flow/?bizId=92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/BizVersion/by-biz?entityId=92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict?code=QRCode", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/invoiceOcr/GetInvoiceOcrByRelationBizId?relationBizId=92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/flow/Relation/4a2a2c80e8b94aa0a59fbd1e1b6d5615", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/flowtask/?flowId=4a2a2c80e8b94aa0a59fbd1e1b6d5615", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/invoiceOcr/GetInvoiceOcrByRelationBizId?relationBizId=92d41ffd042746e390f0a070118ca1d9", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://admin.api.qiaodan.com/dict?code=budget-year", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "captured_xhr", "url": "https://oa.api.qiaodan.com/invoiceOcr/GetInvoiceOcrErrorByAttachments", "status": 200, "ts": "2026-10-23T14:09:07"}
+{"event": "children_view", "ok": true, "title": "查看报销", "tables": 6, "ts": "2026-10-23T14:09:09"}
+{"event": "api_headers_captured", "names": ["accept", "authorization", "client-app", "content-type", "qd-language", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "user-agent"], "ts": "2026-10-23T14:09:09"}
+{"event": "travel_census_close", "outcome": "OK", "ts": "2026-10-23T14:09:09"}

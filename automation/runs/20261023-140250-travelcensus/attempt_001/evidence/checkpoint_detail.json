@@ -1,0 +1,9 @@
+{
+ "bizNumber": "15426095951",
+ "createdAt": "2026-09-30",
+ "fetch": {
+  "status": 200,
+  "ct": "application/json; charset=utf-8",
+  "body": "{\"id\":\"92d41ffd042746e390f0a070118ca1d9\",\"upperCost\":\"贰佰伍拾壹元肆角\",\"currencyTotalCost\":251.40,\"payType\":\"02\",\"totalCost\":251.40,\"bizCost\":251.40,\"taxCost\":1.42,\"loanCost\":0.00,\"payCost\":251.40,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部\",\"appliedCenterCode\":\"MK33\",\"appliedCenterName\":\"科技中心\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-10-19T16:02:47.058144+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-09-30T17:24:58.958854+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426095951\",\"appliedAt\":\"2026-09-30T14:11:15.489+08:00\",\"appliedBy\":\"116070053\",\"appliedName\":\"陈晶\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/116070053\",\"appliedPost\":\"经理\",\"appliedPhone\":\"15980451184\",\"appliedPostLevel\":65,\"appliedDuty\":\"高级经理\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"116070053\",\"createdName\":\"陈晶\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/116070053\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-09-30T14:29:03.333889+08:00\",\"description\":\"公出晋江油补\",\"_v_\":\"ALNqcdsXaEWi3cDTEu4cSw\"}"
+ }
+}

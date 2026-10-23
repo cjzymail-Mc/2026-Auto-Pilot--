@@ -1,0 +1,674 @@
+{
+ "mode": "api",
+ "cutoff": "2024-10-23",
+ "dept": "运动表现研究部",
+ "submittype_map": {
+  "08": "差旅费",
+  "11": "研发材料费",
+  "15": "快递费",
+  "02": "低值易耗品、办公用品采购",
+  "04": "福利费、劳保用品",
+  "01": "其他费用",
+  "24": "维修费",
+  "06": "各项会议支出"
+ },
+ "checkpoint": {
+  "bizNumber": "15426095951",
+  "src": "ids_from",
+  "tpl_url": "https://oa.api.qiaodan.com/reimburse/92d41ffd042746e390f0a070118ca1d9",
+  "token_form": "dashless",
+  "shape": {
+   "bizNumber_found": true,
+   "shape": {
+    "id": "str",
+    "upperCost": "str",
+    "currencyTotalCost": "float",
+    "payType": "str",
+    "totalCost": "float",
+    "bizCost": "float",
+    "taxCost": "float",
+    "loanCost": "float",
+    "payCost": "float",
+    "quitCost": "float",
+    "submitType": "str",
+    "invoice": "bool",
+    "sales": "bool",
+    "else": "bool",
+    "currencyType": "str",
+    "budgetYears": "str",
+    "appliedDeptPathName": "str",
+    "appliedCenterCode": "str",
+    "appliedCenterName": "str",
+    "flowNext": "bool",
+    "exchangeRate": "float",
+    "priorityCode": "int",
+    "totalRealPayCost": "float",
+    "xSmartStatus": "int",
+    "isBackFlow": "bool",
+    "bizCompletedAt": "str",
+    "bizCompletedBy": "str",
+    "bizCompletedName": "str",
+    "bizLastAuditAt": "str",
+    "bizLastAuditBy": "str",
+    "bizLastAuditName": "str",
+    "bankWay": "int",
+    "inLast": "bool",
+    "bizCategory": "int",
+    "corpCode": "str",
+    "bizOrign": "str",
+    "bizOrigin": "str",
+    "bizStatus": "int",
+    "bizNumber": "str",
+    "appliedAt": "str",
+    "appliedBy": "str",
+    "appliedName": "str",
+    "appliedPath": "str",
+    "appliedPost": "str",
+    "appliedPhone": "str",
+    "appliedPostLevel": "int",
+    "appliedDuty": "str",
+    "appliedDept": "str",
+    "appliedDeptName": "str",
+    "appliedDeptPath": "str",
+    "createdBy": "str",
+    "createdName": "str",
+    "createdPath": "str",
+    "createdDept": "str",
+    "createdDeptName": "str",
+    "createdDeptPath": "str",
+    "createdAt": "str",
+    "description": "str",
+    "_v_": "str"
+   },
+   "detail_arrays": []
+  }
+ },
+ "api_items": 449,
+ "expect_total": 469,
+ "targets": 52,
+ "docs": [
+  {
+   "bizNumber": "15426095951",
+   "createdAt": "2026-09-30",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"92d41ffd042746e390f0a070118ca1d9\",\"upperCost\":\"贰佰伍拾壹元肆角\",\"currencyTotalCost\":251.40,\"payType\":\"02\",\"totalCost\":251.40,\"bizCost\":251.40,\"taxCost\":1.42,\"loanCost\":0.00,\"payCost\":251.40,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部\",\"appliedCenterCode\":\"MK33\",\"appliedCenterName\":\"科技中心\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-10-19T16:02:47.058144+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-09-30T17:24:58.958854+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426095951\",\"appliedAt\":\"2026-09-30T14:11:15.489+08:00\",\"appliedBy\":\"116070053\",\"appliedName\":\"陈晶\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/116070053\",\"appliedPost\":\"经理\",\"appliedPhone\":\"15980451184\",\"appliedPostLevel\":65,\"appliedDuty\":\"高级经理\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"116070053\",\"createdName\":\"陈晶\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/116070053\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-09-30T14:29:03.333889+08:00\",\"description\":\"公出晋江油补\",\"_v_\":\"ALNqcdsXaEWi3cDTEu4cSw\"}"
+   }
+  },
+  {
+   "id": "0efbd24cdf9a4414a8b71174ad087176",
+   "bizNumber": "15426071058",
+   "createdAt": "2026-07-03",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"0efbd24cdf9a4414a8b71174ad087176\",\"upperCost\":\"壹佰玖拾壹元贰角捌分\",\"currencyTotalCost\":191.28,\"payType\":\"02\",\"totalCost\":191.28,\"bizCost\":191.28,\"taxCost\":1.32,\"loanCost\":0.00,\"payCost\":191.28,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/篮球组\",\"appliedCenterCode\":\"MK33\",\"appliedCenterName\":\"科技中心\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-07-29T14:04:08.574992+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-07-10T08:02:43.736292+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426071058\",\"appliedAt\":\"2026-07-03T08:46:29.598+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"助理研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-07-03T09:06:39.537443+08:00\",\"description\":\"晋江公出\",\"_v_\":\"PWxC1aSjx0GEabpd/i5IHA\"}"
+   }
+  },
+  {
+   "id": "1a08dff57fab43c28d7f8077fbea231b",
+   "bizNumber": "15426065467",
+   "createdAt": "2026-06-29",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"1a08dff57fab43c28d7f8077fbea231b\",\"upperCost\":\"贰佰陆拾元\",\"currencyTotalCost\":260.00,\"payType\":\"02\",\"totalCost\":260.00,\"bizCost\":260.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":260.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/跑步组\",\"appliedCenterCode\":\"MK33\",\"appliedCenterName\":\"科技中心\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-07-14T18:00:15.645279+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-06-30T09:00:52.304936+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426065467\",\"appliedAt\":\"2026-06-29T16:43:09.194+08:00\",\"appliedBy\":\"250100037\",\"appliedName\":\"隋晗\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/250100037\",\"appliedPost\":\"主管\",\"appliedPhone\":\"18810303159\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"250100037\",\"createdName\":\"隋晗\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/250100037\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-06-29T16:46:42.894358+08:00\",\"description\":\"6.20-6.22北京差旅\",\"_v_\":\"vQ1kvVoHP0+j+FHXFfBlAA\"}"
+   }
+  },
+  {
+   "id": "a5a97164e162439580702c5b46ccaf3c",
+   "bizNumber": "15426055014",
+   "createdAt": "2026-05-26",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"a5a97164e162439580702c5b46ccaf3c\",\"upperCost\":\"叁佰肆拾元\",\"currencyTotalCost\":340.00,\"payType\":\"02\",\"totalCost\":340.00,\"bizCost\":340.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":340.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/跑步组\",\"appliedCenterCode\":\"MK33\",\"appliedCenterName\":\"科技中心\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-06-04T16:05:15.330161+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-05-27T18:24:24.257107+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426055014\",\"appliedAt\":\"2026-05-26T16:59:14.246+08:00\",\"appliedBy\":\"250100037\",\"appliedName\":\"隋晗\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/250100037\",\"appliedPost\":\"主管\",\"appliedPhone\":\"18810303159\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"250100037\",\"createdName\":\"隋晗\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/250100037\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-05-26T17:04:02.257273+08:00\",\"description\":\"5.21~5.24差旅\",\"_v_\":\"ECkzqKREKUCqvbcqGhoZTA\"}"
+   }
+  },
+  {
+   "id": "d5f3969d27e94f9993c7024d4af921a0",
+   "bizNumber": "15426045479",
+   "createdAt": "2026-04-30",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"d5f3969d27e94f9993c7024d4af921a0\",\"upperCost\":\"壹佰捌拾元\",\"currencyTotalCost\":180.00,\"payType\":\"02\",\"totalCost\":180.00,\"bizCost\":180.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":180.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/跑步组\",\"appliedCenterCode\":\"MK33\",\"appliedCenterName\":\"科技中心\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-05-11T18:00:24.32827+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-04-30T13:31:29.617197+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426045479\",\"appliedAt\":\"2026-04-30T09:19:15.785+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-04-30T09:24:43.200164+08:00\",\"description\":\"出差丽江差旅报销\",\"_v_\":\"ypO7uWQ8QUy3TTeTtOQKXg\"}"
+   }
+  },
+  {
+   "id": "55b5bde2366f4eaf89e9d3b7d05192ab",
+   "bizNumber": "15426033079",
+   "createdAt": "2026-03-17",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"55b5bde2366f4eaf89e9d3b7d05192ab\",\"upperCost\":\"陆佰贰拾元\",\"currencyTotalCost\":620.00,\"payType\":\"02\",\"totalCost\":620.00,\"bizCost\":620.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":620.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/篮球组\",\"appliedCenterCode\":\"MK33\",\"appliedCenterName\":\"科技中心\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-03-30T16:02:17.461715+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-03-18T10:07:50.789648+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426033079\",\"appliedAt\":\"2026-03-17T08:36:21.358+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"助理研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-03-17T08:39:52.314045+08:00\",\"description\":\"茵宝KO差旅报销\",\"_v_\":\"YK9ytH5UVkuSvnob+VAVIg\"}"
+   }
+  },
+  {
+   "id": "fdc4153e27c847f78eee28a04153a585",
+   "bizNumber": "15426032858",
+   "createdAt": "2026-03-16",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"fdc4153e27c847f78eee28a04153a585\",\"upperCost\":\"伍佰肆拾元\",\"currencyTotalCost\":540.00,\"payType\":\"02\",\"totalCost\":540.00,\"bizCost\":540.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":540.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/跑步组\",\"appliedCenterCode\":\"MK33\",\"appliedCenterName\":\"科技中心\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-03-19T18:00:26.278468+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-03-17T11:35:05.317019+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426032858\",\"appliedAt\":\"2026-03-16T09:16:07.824+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-03-16T09:28:53.315698+08:00\",\"description\":\"石家庄协助品牌体考体测线下活动/代言人plaid3.0样鞋沟通\",\"_v_\":\"hj/QfPGMmkOf32qEWSBcwg\"}"
+   }
+  },
+  {
+   "id": "720ef7dd87364cf187b2f3be3268905e",
+   "bizNumber": "15426032687",
+   "createdAt": "2026-03-14",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"720ef7dd87364cf187b2f3be3268905e\",\"upperCost\":\"贰佰肆拾元\",\"currencyTotalCost\":240.00,\"payType\":\"02\",\"totalCost\":240.00,\"bizCost\":240.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":240.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/篮球组\",\"appliedCenterCode\":\"MK33\",\"appliedCenterName\":\"科技中心\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-03-17T18:01:04.776021+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-03-16T11:07:07.094092+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426032687\",\"appliedAt\":\"2026-03-14T13:40:46.292+08:00\",\"appliedBy\":\"210600951\",\"appliedName\":\"杨祖锐\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/210600951\",\"appliedPost\":\"主管\",\"appliedPhone\":\"15623223727\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"210600951\",\"createdName\":\"杨祖锐\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/210600951\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-03-14T13:45:20.720356+08:00\",\"description\":\"差旅费用报销\",\"_v_\":\"P8bg2wDlgEaoXW/yHs9p6Q\"}"
+   }
+  },
+  {
+   "id": "fa5c5b03e3cc454a94aedeb91f780877",
+   "bizNumber": "15426022360",
+   "createdAt": "2026-02-09",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"fa5c5b03e3cc454a94aedeb91f780877\",\"upperCost\":\"柒佰贰拾元\",\"currencyTotalCost\":720.00,\"payType\":\"02\",\"totalCost\":720.00,\"bizCost\":720.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":720.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/跑步组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-02-27T18:01:43.871956+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-02-09T17:15:05.257044+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426022360\",\"appliedAt\":\"2026-02-09T09:41:55.795+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-02-09T09:47:50.069414+08:00\",\"description\":\"飞影PLAID 3.0云南线下活动以及跑者调研\",\"_v_\":\"TPhTrqKN8UGlbjyiEqZK7w\"}"
+   }
+  },
+  {
+   "id": "83367424fd43466cbc7376ca7ccc2a03",
+   "bizNumber": "15426020406",
+   "createdAt": "2026-02-02",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"83367424fd43466cbc7376ca7ccc2a03\",\"upperCost\":\"壹佰捌拾玖元陆角伍分\",\"currencyTotalCost\":189.65,\"payType\":\"02\",\"totalCost\":189.65,\"bizCost\":189.65,\"taxCost\":1.00,\"loanCost\":0.00,\"payCost\":189.65,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2026\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/篮球组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-02-11T18:00:57.975149+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2026-02-02T11:51:04.336654+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15426020406\",\"appliedAt\":\"2026-02-02T09:07:22.448+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"助理研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2026-02-02T09:09:04.971956+08:00\",\"description\":\"晋江公出报销\",\"_v_\":\"sIkaT2YtykSB3uebHmv4Vg\"}"
+   }
+  },
+  {
+   "id": "69c286dedeaa4ec6818159ce5be140d5",
+   "bizNumber": "15425124854",
+   "createdAt": "2025-12-22",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"69c286dedeaa4ec6818159ce5be140d5\",\"upperCost\":\"贰仟壹佰肆拾柒元叁角玖分\",\"currencyTotalCost\":2147.39,\"payType\":\"02\",\"totalCost\":2147.39,\"bizCost\":2147.39,\"taxCost\":112.98,\"loanCost\":0.00,\"payCost\":2147.39,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/篮球组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-01-07T18:00:18.574631+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-12-22T12:15:21.654886+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425124854\",\"appliedAt\":\"2025-12-22T08:45:07.66+08:00\",\"appliedBy\":\"210600951\",\"appliedName\":\"杨祖锐\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/210600951\",\"appliedPost\":\"主管\",\"appliedPhone\":\"15623223727\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"210600951\",\"createdName\":\"杨祖锐\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/210600951\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-12-22T09:17:53.721967+08:00\",\"description\":\"机器人公司拜访与HYROX赛事调研\",\"_v_\":\"RLZcOJJaMkK3am0CllIDVA\"}"
+   }
+  },
+  {
+   "id": "c73119cd8ce245e9b7b6a4af31b5fcf3",
+   "bizNumber": "15425124793",
+   "createdAt": "2025-12-21",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"c73119cd8ce245e9b7b6a4af31b5fcf3\",\"upperCost\":\"柒佰叁拾伍元壹角\",\"currencyTotalCost\":735.10,\"payType\":\"02\",\"totalCost\":735.10,\"bizCost\":735.10,\"taxCost\":2.88,\"loanCost\":0.00,\"payCost\":735.10,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/篮球组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2026-01-07T18:00:18.500245+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-12-22T15:07:19.36884+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425124793\",\"appliedAt\":\"2025-12-21T15:32:18.779+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"助理研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-12-21T15:38:36.761353+08:00\",\"description\":\"上海差旅报销\",\"_v_\":\"xG6+2jfmpkeFxB20CZ24Qg\"}"
+   }
+  },
+  {
+   "id": "f55ab9631c814f198a996d38c7b5c270",
+   "bizNumber": "15425123390",
+   "createdAt": "2025-12-15",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"f55ab9631c814f198a996d38c7b5c270\",\"upperCost\":\"贰佰伍拾捌元陆角\",\"currencyTotalCost\":258.60,\"payType\":\"02\",\"totalCost\":258.60,\"bizCost\":258.60,\"taxCost\":1.11,\"loanCost\":0.00,\"payCost\":258.60,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-12-17T18:01:32.834578+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-12-15T15:04:55.634071+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425123390\",\"appliedAt\":\"2025-12-15T09:40:24.457+08:00\",\"appliedBy\":\"116070053\",\"appliedName\":\"陈晶\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/116070053\",\"appliedPost\":\"经理\",\"appliedPhone\":\"15980451184\",\"appliedPostLevel\":65,\"appliedDuty\":\"高级经理\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"116070053\",\"createdName\":\"陈晶\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/116070053\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-12-15T10:06:10.40191+08:00\",\"description\":\"公出晋江油补\",\"_v_\":\"49CMnmmEIUusARJ+9BuPnw\"}"
+   }
+  },
+  {
+   "id": "7a4085f765bc45079473085499880090",
+   "bizNumber": "15425123013",
+   "createdAt": "2025-12-12",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"7a4085f765bc45079473085499880090\",\"upperCost\":\"贰仟壹佰柒拾陆元玖角叁分\",\"currencyTotalCost\":2176.93,\"payType\":\"02\",\"totalCost\":2176.93,\"bizCost\":2176.93,\"taxCost\":11.91,\"loanCost\":0.00,\"payCost\":2176.93,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/跑步组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-12-17T18:01:32.992502+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-12-12T15:39:50.783267+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425123013\",\"appliedAt\":\"2025-12-12T09:56:09.733+08:00\",\"appliedBy\":\"117070006\",\"appliedName\":\"徐亮\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/117070006\",\"appliedPost\":\"经理\",\"appliedPhone\":\"17605078513\",\"appliedPostLevel\":30,\"appliedDuty\":\"高级研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"117070006\",\"createdName\":\"徐亮\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/117070006\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-12-12T13:10:15.403915+08:00\",\"description\":\"公出油补\",\"_v_\":\"HV0goVhosUWnZlvtRmvFjw\"}"
+   }
+  },
+  {
+   "id": "9671399f67cf4ffe98fb518721cda20f",
+   "bizNumber": "15425122445",
+   "createdAt": "2025-12-09",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"9671399f67cf4ffe98fb518721cda20f\",\"upperCost\":\"壹佰捌拾元\",\"currencyTotalCost\":180.00,\"payType\":\"02\",\"totalCost\":180.00,\"bizCost\":180.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":180.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-12-16T18:01:31.018862+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-12-09T20:27:40.562755+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425122445\",\"appliedAt\":\"2025-12-09T13:23:11.598+08:00\",\"appliedBy\":\"250100037\",\"appliedName\":\"隋晗\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/250100037\",\"appliedPost\":\"主管\",\"appliedPhone\":\"18810303159\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"250100037\",\"createdName\":\"隋晗\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/250100037\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-12-09T13:33:39.235244+08:00\",\"description\":\"12.6-12.7上海差旅\",\"_v_\":\"Q3z42SVM8kultkTs1mKC8w\"}"
+   }
+  },
+  {
+   "id": "1ef3c494756e45508b937e2a3e7a62a8",
+   "bizNumber": "15425122401",
+   "createdAt": "2025-12-09",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"1ef3c494756e45508b937e2a3e7a62a8\",\"upperCost\":\"伍佰贰拾元\",\"currencyTotalCost\":520.00,\"payType\":\"02\",\"totalCost\":520.00,\"bizCost\":520.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":520.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-12-16T18:01:30.950053+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-12-09T20:27:30.69523+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425122401\",\"appliedAt\":\"2025-12-09T11:26:21.344+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-12-09T11:30:50.783119+08:00\",\"description\":\"南宁马拉松调研\",\"_v_\":\"CherbJM6SEePfrd9p8CewQ\"}"
+   }
+  },
+  {
+   "id": "a831d6643dc949c3998d65b91b21a9d7",
+   "bizNumber": "15425122073",
+   "createdAt": "2025-12-08",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"a831d6643dc949c3998d65b91b21a9d7\",\"upperCost\":\"捌佰元\",\"currencyTotalCost\":800.00,\"payType\":\"02\",\"totalCost\":800.00,\"bizCost\":800.00,\"taxCost\":45.28,\"loanCost\":0.00,\"payCost\":800.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/篮球组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-12-10T18:00:59.512967+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-12-08T15:04:50.27455+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425122073\",\"appliedAt\":\"2025-12-08T09:33:55.824+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"助理研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-12-08T09:47:53.999912+08:00\",\"description\":\"南宁发布会酒店报销（线下统一预定支付，价格低于商旅系统）\",\"_v_\":\"jqkCq7+tXkmKrqMWLGue9A\"}"
+   }
+  },
+  {
+   "id": "5f205c31f03142c7a0bbb5d897ffd7be",
+   "bizNumber": "15425112622",
+   "createdAt": "2025-11-11",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"5f205c31f03142c7a0bbb5d897ffd7be\",\"upperCost\":\"柒佰零柒元柒角\",\"currencyTotalCost\":707.70,\"payType\":\"02\",\"totalCost\":707.70,\"bizCost\":707.70,\"taxCost\":4.88,\"loanCost\":0.00,\"payCost\":707.70,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/篮球组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-12-02T18:00:31.13004+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-11-21T18:28:23.585428+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425112622\",\"appliedAt\":\"2025-11-11T17:20:48.74+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"助理研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-11-11T17:26:33.06227+08:00\",\"description\":\"苏州差旅报销\",\"_v_\":\"qCRZrUwnSUm1VKvO9kYBtg\"}"
+   }
+  },
+  {
+   "id": "09bdb84c71834340af55b998b50a6649",
+   "bizNumber": "15425105893",
+   "createdAt": "2025-10-31",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"09bdb84c71834340af55b998b50a6649\",\"upperCost\":\"贰仟肆佰肆拾伍元\",\"currencyTotalCost\":2445.00,\"payType\":\"02\",\"totalCost\":2445.00,\"bizCost\":2445.00,\"taxCost\":167.20,\"loanCost\":0.00,\"payCost\":2445.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/篮球组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-11-06T12:01:38.140447+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-10-31T13:04:26.388805+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425105893\",\"appliedAt\":\"2025-10-31T08:52:19.208+08:00\",\"appliedBy\":\"210600951\",\"appliedName\":\"杨祖锐\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/210600951\",\"appliedPost\":\"主管\",\"appliedPhone\":\"15623223727\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"210600951\",\"createdName\":\"杨祖锐\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330502/210600951\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-10-31T09:08:14.46682+08:00\",\"description\":\"差旅费用报销\",\"_v_\":\"gFo8Nl4aFkSho+bSwQAHpg\"}"
+   }
+  },
+  {
+   "id": "64c3c285c61b49f788ddfe5b6a0beb21",
+   "bizNumber": "15425104727",
+   "createdAt": "2025-10-24",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"64c3c285c61b49f788ddfe5b6a0beb21\",\"upperCost\":\"贰仟肆佰贰拾叁元柒角捌分\",\"currencyTotalCost\":2423.78,\"payType\":\"02\",\"totalCost\":2423.78,\"bizCost\":2423.78,\"taxCost\":161.46,\"loanCost\":0.00,\"payCost\":2423.78,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/中乔集团/中乔股份/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-10-29T14:02:09.807622+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-10-24T15:28:50.765508+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425104727\",\"appliedAt\":\"2025-10-24T13:18:37.362+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/ZQGF/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/ZQGF/MK33/MK3305\",\"createdAt\":\"2025-10-24T13:35:55.931752+08:00\",\"description\":\"广州出差报销（三人）\",\"_v_\":\"krDGWEadEESUueFaLXV5ug\"}"
+   }
+  },
+  {
+   "id": "35899017f4404f3a9011a9a247a7f030",
+   "bizNumber": "15425091006",
+   "createdAt": "2025-09-02",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"35899017f4404f3a9011a9a247a7f030\",\"upperCost\":\"捌佰捌拾柒元零捌分\",\"currencyTotalCost\":887.08,\"payType\":\"02\",\"totalCost\":887.08,\"bizCost\":887.08,\"taxCost\":3.70,\"loanCost\":0.00,\"payCost\":887.08,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/篮球组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-09-09T18:00:31.257556+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-09-03T12:36:35.447721+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425091006\",\"appliedAt\":\"2025-09-02T16:23:18.156+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"助理研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-09-02T16:31:28.706439+08:00\",\"description\":\"2025-8-29 至9-1 哈尔滨马拉松出差报销\",\"_v_\":\"ZCtHA3d1yEyFp5vFBoV21w\"}"
+   }
+  },
+  {
+   "id": "19d9518252e1458395694a141967eaef",
+   "bizNumber": "15425085196",
+   "createdAt": "2025-08-28",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"19d9518252e1458395694a141967eaef\",\"upperCost\":\"壹佰玖拾柒元\",\"currencyTotalCost\":197.00,\"payType\":\"02\",\"totalCost\":197.00,\"bizCost\":197.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":197.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/篮球组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-09-05T16:00:49.644646+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-08-29T14:06:01.467988+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425085196\",\"appliedAt\":\"2025-08-28T16:50:34.612+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"助理研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-08-28T17:39:41.0626+08:00\",\"description\":\"晋江公出报销\",\"_v_\":\"T6DQZbf5a0Sl9GNiXBoNOQ\"}"
+   }
+  },
+  {
+   "id": "91becbf93fc24511acbc558bcc36eb4d",
+   "bizNumber": "15425084773",
+   "createdAt": "2025-08-26",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"91becbf93fc24511acbc558bcc36eb4d\",\"upperCost\":\"贰佰柒拾元玖角\",\"currencyTotalCost\":270.90,\"payType\":\"02\",\"totalCost\":270.90,\"bizCost\":270.90,\"taxCost\":1.37,\"loanCost\":0.00,\"payCost\":270.90,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-09-09T18:00:31.141674+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-08-26T17:56:24.891031+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425084773\",\"appliedAt\":\"2025-08-26T14:39:45.281+08:00\",\"appliedBy\":\"116070053\",\"appliedName\":\"陈晶\",\"appliedPath\":\"/QD/MK33/MK3305/116070053\",\"appliedPost\":\"经理\",\"appliedPhone\":\"15980451184\",\"appliedPostLevel\":60,\"appliedDuty\":\"经理\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"116070053\",\"createdName\":\"陈晶\",\"createdPath\":\"/QD/MK33/MK3305/116070053\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-08-26T15:20:54.521207+08:00\",\"description\":\"公出晋江油补\",\"_v_\":\"WvsWnp9CLU2jhVrmL5GrRg\"}"
+   }
+  },
+  {
+   "id": "a732166d507948488265a60cb9be4b7d",
+   "bizNumber": "15425084375",
+   "createdAt": "2025-08-25",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"a732166d507948488265a60cb9be4b7d\",\"upperCost\":\"捌佰伍拾捌元\",\"currencyTotalCost\":858.00,\"payType\":\"02\",\"totalCost\":858.00,\"bizCost\":858.00,\"taxCost\":55.98,\"loanCost\":0.00,\"payCost\":858.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-09-01T17:37:16.379632+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-08-26T17:56:39.406211+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425084375\",\"appliedAt\":\"2025-08-25T08:56:52.638+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-08-25T09:12:50.145328+08:00\",\"description\":\"第11届国际发明奖广州出差\",\"_v_\":\"z4k6MaYoe0OX8PCrotX3ow\"}"
+   }
+  },
+  {
+   "id": "e4bea96c2bed4170bbf67f60b1c3740b",
+   "bizNumber": "15425083486",
+   "createdAt": "2025-08-18",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"e4bea96c2bed4170bbf67f60b1c3740b\",\"upperCost\":\"贰仟零壹拾元陆角\",\"currencyTotalCost\":2010.60,\"payType\":\"02\",\"totalCost\":2010.60,\"bizCost\":2010.60,\"taxCost\":123.80,\"loanCost\":0.00,\"payCost\":2010.60,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/篮球组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-08-22T16:02:05.733256+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-08-20T12:12:03.733438+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425083486\",\"appliedAt\":\"2025-08-18T15:32:11.567+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"助理研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-08-18T15:42:00.380918+08:00\",\"description\":\"2025/8/14-8/16 广硕工厂出差报销\",\"_v_\":\"zt/jJ9SsoEaUz2aO8DsGTA\"}"
+   }
+  },
+  {
+   "id": "dd48ff6dfbe644b18b1376486129eee3",
+   "bizNumber": "15425082895",
+   "createdAt": "2025-08-14",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"dd48ff6dfbe644b18b1376486129eee3\",\"upperCost\":\"柒佰伍拾捌元柒角陆分\",\"currencyTotalCost\":758.76,\"payType\":\"02\",\"totalCost\":758.76,\"bizCost\":758.76,\"taxCost\":3.87,\"loanCost\":0.00,\"payCost\":758.76,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-08-18T16:02:44.832037+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-08-14T15:04:00.374583+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425082895\",\"appliedAt\":\"2025-08-14T09:30:54.639+08:00\",\"appliedBy\":\"117070006\",\"appliedName\":\"徐亮\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/117070006\",\"appliedPost\":\"经理\",\"appliedPhone\":\"17605078513\",\"appliedPostLevel\":30,\"appliedDuty\":\"高级研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"117070006\",\"createdName\":\"徐亮\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/117070006\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-08-14T11:17:11.704353+08:00\",\"description\":\"公出晋江油补\",\"_v_\":\"TDEB9FNSfkqyZOzrdOQsMw\"}"
+   }
+  },
+  {
+   "id": "08a88f81221f4a10992f9cfb5fbc61dc",
+   "bizNumber": "15425082858",
+   "createdAt": "2025-08-14",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"08a88f81221f4a10992f9cfb5fbc61dc\",\"upperCost\":\"叁佰零叁元玖角叁分\",\"currencyTotalCost\":303.93,\"payType\":\"02\",\"totalCost\":303.93,\"bizCost\":303.93,\"taxCost\":1.86,\"loanCost\":0.00,\"payCost\":303.93,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-08-18T16:03:12.385909+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-08-14T10:35:45.372679+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425082858\",\"appliedAt\":\"2025-08-14T08:46:37.55+08:00\",\"appliedBy\":\"117070006\",\"appliedName\":\"徐亮\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/117070006\",\"appliedPost\":\"经理\",\"appliedPhone\":\"17605078513\",\"appliedPostLevel\":30,\"appliedDuty\":\"高级研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"117070006\",\"createdName\":\"徐亮\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/117070006\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-08-14T09:12:43.620926+08:00\",\"description\":\"云南出差\",\"_v_\":\"kWOBmJmQ8EO4Zm6RCsKqbg\"}"
+   }
+  },
+  {
+   "id": "06d20601964648df9f6b5afa23845e1d",
+   "bizNumber": "15425082541",
+   "createdAt": "2025-08-12",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"06d20601964648df9f6b5afa23845e1d\",\"upperCost\":\"叁佰叁拾元陆角\",\"currencyTotalCost\":330.60,\"payType\":\"02\",\"totalCost\":330.60,\"bizCost\":330.60,\"taxCost\":1.66,\"loanCost\":0.00,\"payCost\":330.60,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-08-15T16:01:53.208036+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-08-12T18:03:13.014433+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425082541\",\"appliedAt\":\"2025-08-12T10:26:56.232+08:00\",\"appliedBy\":\"250100037\",\"appliedName\":\"隋晗\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/250100037\",\"appliedPost\":\"主管\",\"appliedPhone\":\"18810303159\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"250100037\",\"createdName\":\"隋晗\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/250100037\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-08-12T10:52:54.995939+08:00\",\"description\":\"7.30-8.1成都差旅费\",\"_v_\":\"Wv6+60dHcEmzfstP+ooMLw\"}"
+   }
+  },
+  {
+   "id": "74c29c6394e046259ba428161157afd2",
+   "bizNumber": "15425082517",
+   "createdAt": "2025-08-12",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"74c29c6394e046259ba428161157afd2\",\"upperCost\":\"叁佰贰拾叁元贰角\",\"currencyTotalCost\":323.20,\"payType\":\"02\",\"totalCost\":323.20,\"bizCost\":323.20,\"taxCost\":0.46,\"loanCost\":0.00,\"payCost\":323.20,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-08-15T16:01:52.966021+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-08-12T18:03:09.405645+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425082517\",\"appliedAt\":\"2025-08-12T09:03:17.233+08:00\",\"appliedBy\":\"250100037\",\"appliedName\":\"隋晗\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/250100037\",\"appliedPost\":\"主管\",\"appliedPhone\":\"18810303159\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"250100037\",\"createdName\":\"隋晗\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/250100037\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-08-12T09:50:13.768084+08:00\",\"description\":\"8.9-8.11差旅费\",\"_v_\":\"UCyaM9DqTkSt0ULC7MC6nw\"}"
+   }
+  },
+  {
+   "id": "a858e33574c54291baa475ae47098760",
+   "bizNumber": "15425075960",
+   "createdAt": "2025-07-31",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"a858e33574c54291baa475ae47098760\",\"upperCost\":\"柒仟玖佰壹拾伍元陆角柒分\",\"currencyTotalCost\":7915.67,\"payType\":\"02\",\"totalCost\":7915.67,\"bizCost\":7915.67,\"taxCost\":1.82,\"loanCost\":0.00,\"payCost\":7915.67,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-08-07T18:03:17.60731+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-07-31T14:45:46.09912+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425075960\",\"appliedAt\":\"2025-07-31T08:53:40.844+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-07-31T09:46:15.438427+08:00\",\"description\":\"挪威2025FBS学术会议出差报销\",\"_v_\":\"bWZsVzeVj0aF7+LTcA+05A\"}"
+   }
+  },
+  {
+   "id": "af52f0bdf4d74cd295851df4209a7b95",
+   "bizNumber": "15425074688",
+   "createdAt": "2025-07-24",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"af52f0bdf4d74cd295851df4209a7b95\",\"upperCost\":\"捌佰零肆元叁角贰分\",\"currencyTotalCost\":804.32,\"payType\":\"02\",\"totalCost\":804.32,\"bizCost\":804.32,\"taxCost\":47.47,\"loanCost\":0.00,\"payCost\":804.32,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-07-25T16:04:40.615094+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-07-24T13:53:29.599399+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425074688\",\"appliedAt\":\"2025-07-24T11:22:15.57+08:00\",\"appliedBy\":\"116070053\",\"appliedName\":\"陈晶\",\"appliedPath\":\"/QD/MK33/MK3305/116070053\",\"appliedPost\":\"经理\",\"appliedPhone\":\"15980451184\",\"appliedPostLevel\":60,\"appliedDuty\":\"经理\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"210600951\",\"createdName\":\"杨祖锐\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/210600951\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-07-24T11:38:11.274508+08:00\",\"description\":\"创新项目沟通差旅报销\",\"_v_\":\"Q463sb5iyU2az9yt7cfv4Q\"}"
+   }
+  },
+  {
+   "id": "29c166b894d24559830cf4c069802e70",
+   "bizNumber": "15425071838",
+   "createdAt": "2025-07-07",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"29c166b894d24559830cf4c069802e70\",\"upperCost\":\"壹元\",\"currencyTotalCost\":1.00,\"payType\":\"02\",\"totalCost\":1.00,\"bizCost\":1.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":1.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bankWay\":0,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":5,\"bizNumber\":\"15425071838\",\"appliedAt\":\"2025-07-07T17:18:58.805+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-07-07T17:19:52.933102+08:00\",\"description\":\"1\",\"_v_\":\"bM2Edih4y0q9d4DF1cYULg\"}"
+   }
+  },
+  {
+   "id": "fe574879818946d58e43c3b2b170778a",
+   "bizNumber": "15425070973",
+   "createdAt": "2025-07-03",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"fe574879818946d58e43c3b2b170778a\",\"upperCost\":\"捌佰零陆元陆角\",\"currencyTotalCost\":806.60,\"payType\":\"02\",\"totalCost\":806.60,\"bizCost\":806.60,\"taxCost\":10.66,\"loanCost\":0.00,\"payCost\":806.60,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/篮球组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-07-16T17:05:44.842975+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-07-03T15:43:08.135199+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425070973\",\"appliedAt\":\"2025-07-03T09:17:38.476+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"管培生\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-07-03T10:48:29.857892+08:00\",\"description\":\"KJ中国行西安站出行报销\",\"_v_\":\"oNFa9cSGbUKbL86r8PfyTA\"}"
+   }
+  },
+  {
+   "id": "8ac20e42e94f4bab84b5af480e6a0871",
+   "bizNumber": "15425070958",
+   "createdAt": "2025-07-03",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"8ac20e42e94f4bab84b5af480e6a0871\",\"upperCost\":\"柒佰柒拾柒元壹角伍分\",\"currencyTotalCost\":777.15,\"payType\":\"02\",\"totalCost\":777.15,\"bizCost\":777.15,\"taxCost\":46.28,\"loanCost\":0.00,\"payCost\":777.15,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/篮球组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-07-09T15:48:43.681981+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-07-04T08:33:41.701195+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425070958\",\"appliedAt\":\"2025-07-03T09:56:31.559+08:00\",\"appliedBy\":\"117070015\",\"appliedName\":\"延领\",\"appliedPath\":\"/QD/MK33/MK3305/MK330502/117070015\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17759209190\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"117070015\",\"createdName\":\"延领\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/117070015\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-07-03T10:23:15.100123+08:00\",\"description\":\"报销\",\"_v_\":\"AdcdLs8EDUmtrt1uyGHmxg\"}"
+   }
+  },
+  {
+   "id": "09199963cab3417e925e9c5ce0ab184d",
+   "bizNumber": "15425064531",
+   "createdAt": "2025-06-23",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"09199963cab3417e925e9c5ce0ab184d\",\"upperCost\":\"叁佰贰拾壹元零贰分\",\"currencyTotalCost\":321.02,\"payType\":\"02\",\"totalCost\":321.02,\"bizCost\":321.02,\"taxCost\":1.92,\"loanCost\":0.00,\"payCost\":321.02,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-07-03T12:04:33.656804+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-06-23T16:59:28.328618+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425064531\",\"appliedAt\":\"2025-06-23T09:08:59.523+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-06-23T09:20:23.472643+08:00\",\"description\":\"前往上海大使馆办理挪威签证\",\"_v_\":\"kWHb0vS8JE2O7Pdv7sewOA\"}"
+   }
+  },
+  {
+   "id": "2cc892e05d4342fda253c207dd342e07",
+   "bizNumber": "15425063846",
+   "createdAt": "2025-06-18",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"2cc892e05d4342fda253c207dd342e07\",\"upperCost\":\"玖佰伍拾元肆角肆分\",\"currencyTotalCost\":950.44,\"payType\":\"02\",\"totalCost\":950.44,\"bizCost\":950.44,\"taxCost\":52.65,\"loanCost\":0.00,\"payCost\":950.44,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/篮球组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-07-04T16:01:43.859471+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-06-18T15:04:55.31822+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425063846\",\"appliedAt\":\"2025-06-18T09:09:36.478+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"管培生\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-06-18T09:30:05.055686+08:00\",\"description\":\"6.15-6.17 2报销\",\"_v_\":\"mTonADkFjkykVHUDunjU0A\"}"
+   }
+  },
+  {
+   "id": "55d6c4e8bf4046768feca0755d19aa2e",
+   "bizNumber": "15425061148",
+   "createdAt": "2025-06-03",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"55d6c4e8bf4046768feca0755d19aa2e\",\"upperCost\":\"伍佰柒拾壹元陆角肆分\",\"currencyTotalCost\":571.64,\"payType\":\"02\",\"totalCost\":571.64,\"bizCost\":571.64,\"taxCost\":4.41,\"loanCost\":0.00,\"payCost\":571.64,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-06-09T15:05:37.908142+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-06-04T15:04:40.680119+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"bizCategory\":0,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425061148\",\"appliedAt\":\"2025-06-03T16:11:34.917+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-06-03T16:38:47.648973+08:00\",\"description\":\"5.30-5.31差旅费\",\"_v_\":\"MnWCXJAZUEugPhI3FLXVqg\"}"
+   }
+  },
+  {
+   "id": "cb75eacf8b194560b0ebd770c4a2488b",
+   "bizNumber": "15425044530",
+   "createdAt": "2025-04-22",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"cb75eacf8b194560b0ebd770c4a2488b\",\"upperCost\":\"壹佰捌拾捌元\",\"currencyTotalCost\":188.00,\"payType\":\"02\",\"totalCost\":188.00,\"bizCost\":188.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":188.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-04-25T16:02:01.109487+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-04-23T14:26:20.330741+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425044530\",\"appliedAt\":\"2025-04-22T16:52:01.128+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/MK33/MK3305/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"管培生\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-04-22T17:03:01.699451+08:00\",\"description\":\"4.21公出报销\",\"_v_\":\"4yoMFaIYpk+DDOlFjOqvBw\"}"
+   }
+  },
+  {
+   "id": "35663b19d4244b909136f9a2759c3411",
+   "bizNumber": "15425043249",
+   "createdAt": "2025-04-15",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"35663b19d4244b909136f9a2759c3411\",\"upperCost\":\"壹仟壹佰贰拾柒元零贰分\",\"currencyTotalCost\":1127.02,\"payType\":\"02\",\"totalCost\":1127.02,\"bizCost\":1127.02,\"taxCost\":16.52,\"loanCost\":0.00,\"payCost\":1127.02,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-04-21T15:02:09.432734+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-04-15T17:28:59.064912+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425043249\",\"appliedAt\":\"2025-04-15T13:24:36.577+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/MK33/MK3305/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"管培生\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-04-15T15:09:29.819663+08:00\",\"description\":\"4.10-4.13差旅费\",\"_v_\":\"yZ47td47hESZgJREyLoUQg\"}"
+   }
+  },
+  {
+   "id": "f7c7fd3fec554a99b18de6a8216e1776",
+   "bizNumber": "15425042347",
+   "createdAt": "2025-04-10",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"f7c7fd3fec554a99b18de6a8216e1776\",\"upperCost\":\"捌佰柒拾柒元壹角肆分\",\"currencyTotalCost\":877.14,\"payType\":\"02\",\"totalCost\":877.14,\"bizCost\":877.14,\"taxCost\":46.12,\"loanCost\":0.00,\"payCost\":877.14,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/篮球组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-04-14T15:03:13.064652+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-04-10T17:31:14.527277+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425042347\",\"appliedAt\":\"2025-04-10T09:00:01.39+08:00\",\"appliedBy\":\"210600951\",\"appliedName\":\"杨祖锐\",\"appliedPath\":\"/QD/MK33/MK3305/MK330502/210600951\",\"appliedPost\":\"主管\",\"appliedPhone\":\"15623223727\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"210600951\",\"createdName\":\"杨祖锐\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/210600951\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-04-10T09:08:24.605907+08:00\",\"description\":\"4.7-4.9差旅费\",\"_v_\":\"9bl50r0hQUaYcM/A+EHLDg\"}"
+   }
+  },
+  {
+   "id": "b90fbe9fe7394cc58b454ec7820912d3",
+   "bizNumber": "15425040007",
+   "createdAt": "2025-04-01",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"b90fbe9fe7394cc58b454ec7820912d3\",\"upperCost\":\"壹仟贰佰零捌元贰角玖分\",\"currencyTotalCost\":1208.29,\"payType\":\"02\",\"totalCost\":1208.29,\"bizCost\":1208.29,\"taxCost\":46.51,\"loanCost\":0.00,\"payCost\":1208.29,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-04-07T15:04:48.124405+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-04-01T15:06:49.605202+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425040007\",\"appliedAt\":\"2025-04-01T08:51:33.054+08:00\",\"appliedBy\":\"117070006\",\"appliedName\":\"徐亮\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/117070006\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17605078513\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"117070006\",\"createdName\":\"徐亮\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/117070006\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-04-01T09:06:59.854905+08:00\",\"description\":\"3.28-3.30差旅费\",\"_v_\":\"heAkm7Y7wEmkVHsqlbsVrA\"}"
+   }
+  },
+  {
+   "id": "2a0898e7ab57404c946dc9960d4e2d13",
+   "bizNumber": "15425036129",
+   "createdAt": "2025-03-31",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"2a0898e7ab57404c946dc9960d4e2d13\",\"upperCost\":\"叁佰肆拾肆元玖角\",\"currencyTotalCost\":344.90,\"payType\":\"02\",\"totalCost\":344.90,\"bizCost\":344.90,\"taxCost\":1.31,\"loanCost\":0.00,\"payCost\":344.90,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-04-07T15:04:47.243674+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-04-01T15:06:53.860277+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425036129\",\"appliedAt\":\"2025-03-31T13:45:37.496+08:00\",\"appliedBy\":\"250100037\",\"appliedName\":\"隋晗\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/250100037\",\"appliedPost\":\"主管\",\"appliedPhone\":\"18810303159\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"250100037\",\"createdName\":\"隋晗\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/250100037\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-03-31T14:01:47.704895+08:00\",\"description\":\"3.28-3.30差旅费\",\"_v_\":\"YwfOBsufdEmy+z5vIhUU2g\"}"
+   }
+  },
+  {
+   "id": "3c05ebd9a7a04905bc5934187e2877e3",
+   "bizNumber": "15425032494",
+   "createdAt": "2025-03-11",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"3c05ebd9a7a04905bc5934187e2877e3\",\"upperCost\":\"壹仟捌佰伍拾贰元壹角玖分\",\"currencyTotalCost\":1852.19,\"payType\":\"02\",\"totalCost\":1852.19,\"bizCost\":1852.19,\"taxCost\":96.13,\"loanCost\":0.00,\"payCost\":1852.19,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/篮球组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-03-13T11:03:09.266891+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-03-11T15:16:44.714262+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425032494\",\"appliedAt\":\"2025-03-11T09:46:51.826+08:00\",\"appliedBy\":\"117070015\",\"appliedName\":\"延领\",\"appliedPath\":\"/QD/MK33/MK3305/MK330502/117070015\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17759209190\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"117070015\",\"createdName\":\"延领\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/117070015\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-03-11T10:22:26.258341+08:00\",\"description\":\"3.6-3.7差旅费\",\"_v_\":\"jrpgRldq7UKYnL78XvMtUw\"}"
+   }
+  },
+  {
+   "id": "05685d73d7f04b25b272f81d8639817c",
+   "bizNumber": "15425032288",
+   "createdAt": "2025-03-10",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"05685d73d7f04b25b272f81d8639817c\",\"upperCost\":\"贰佰肆拾叁元\",\"currencyTotalCost\":243.00,\"payType\":\"02\",\"totalCost\":243.00,\"bizCost\":243.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":243.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-03-12T15:02:17.416142+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-03-11T09:10:44.545614+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425032288\",\"appliedAt\":\"2025-03-10T13:15:54.399+08:00\",\"appliedBy\":\"240600122\",\"appliedName\":\"庄旭宏\",\"appliedPath\":\"/QD/MK33/MK3305/240600122\",\"appliedPost\":\"专员\",\"appliedPhone\":\"18876529380\",\"appliedPostLevel\":30,\"appliedDuty\":\"管培生\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-03-10T13:29:17.504402+08:00\",\"description\":\"3.7公出报销\",\"_v_\":\"HIHakA8zxkq1E9/Qaz8Yrg\"}"
+   }
+  },
+  {
+   "id": "f55a49860f644ae5a7e765c37341a60a",
+   "bizNumber": "15425023361",
+   "createdAt": "2025-02-18",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"f55a49860f644ae5a7e765c37341a60a\",\"upperCost\":\"壹仟玖佰伍拾壹元壹角\",\"currencyTotalCost\":1951.10,\"payType\":\"02\",\"totalCost\":1951.10,\"bizCost\":1951.10,\"taxCost\":96.13,\"loanCost\":0.00,\"payCost\":1951.10,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-02-26T15:05:59.038187+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-02-25T15:03:35.678551+08:00\",\"bizLastAuditBy\":\"198010001\",\"bizLastAuditName\":\"丁国雄\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425023361\",\"appliedAt\":\"2025-02-18T08:51:00.273+08:00\",\"appliedBy\":\"116050008\",\"appliedName\":\"阮果清\",\"appliedPath\":\"/QD/MK33/116050008\",\"appliedPost\":\"总监\",\"appliedPhone\":\"13774851561\",\"appliedPostLevel\":80,\"appliedDuty\":\"高级总监\",\"appliedDept\":\"MK33\",\"appliedDeptName\":\"科技中心\",\"appliedDeptPath\":\"/QD/MK33\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-02-18T09:12:15.091717+08:00\",\"description\":\"2.14-2.16差旅费\",\"_v_\":\"kpDRsJsusUSO9QTSy84hWQ\"}"
+   }
+  },
+  {
+   "id": "55373383a285414c824c9282fc955b15",
+   "bizNumber": "15425023197",
+   "createdAt": "2025-02-17",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"55373383a285414c824c9282fc955b15\",\"upperCost\":\"壹仟捌佰贰拾伍元贰角贰分\",\"currencyTotalCost\":1825.22,\"payType\":\"02\",\"totalCost\":1825.22,\"bizCost\":1825.22,\"taxCost\":63.90,\"loanCost\":0.00,\"payCost\":1825.22,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-02-21T15:03:52.798411+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-02-18T08:07:26.104442+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425023197\",\"appliedAt\":\"2025-02-17T10:18:04.777+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-02-17T10:43:38.245591+08:00\",\"description\":\"2.14-2.16差旅费\",\"_v_\":\"QsuMC6sWjU60waT1jQcxig\"}"
+   }
+  },
+  {
+   "id": "664c067bf39745d1a1f255636a9c796d",
+   "bizNumber": "15425014653",
+   "createdAt": "2025-01-22",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"664c067bf39745d1a1f255636a9c796d\",\"upperCost\":\"壹仟零柒拾柒元陆角肆分\",\"currencyTotalCost\":1077.64,\"payType\":\"02\",\"totalCost\":1077.64,\"bizCost\":1077.64,\"taxCost\":31.07,\"loanCost\":0.00,\"payCost\":1077.64,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-02-10T15:01:47.70375+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-01-22T17:12:03.688778+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425014653\",\"appliedAt\":\"2025-01-22T13:09:35.831+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-01-22T14:47:48.824342+08:00\",\"description\":\"1.20-1.21差旅费\",\"_v_\":\"7Ayre0rw+kGQ97R75tgbTg\"}"
+   }
+  },
+  {
+   "id": "9231d518b43f4503b2bfd1394e6e1e40",
+   "bizNumber": "15425014616",
+   "createdAt": "2025-01-22",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"9231d518b43f4503b2bfd1394e6e1e40\",\"upperCost\":\"壹仟贰佰叁拾壹元贰角贰分\",\"currencyTotalCost\":1231.22,\"payType\":\"02\",\"totalCost\":1231.22,\"bizCost\":1231.22,\"taxCost\":38.42,\"loanCost\":0.00,\"payCost\":1231.22,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2025\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-02-10T15:01:47.682016+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-01-22T17:11:59.592973+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425014616\",\"appliedAt\":\"2025-01-22T09:56:49.343+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-01-22T10:22:56.687407+08:00\",\"description\":\"1.16-1.18差旅费\",\"_v_\":\"cibyWxmjikC9XxeMm2QD0Q\"}"
+   }
+  },
+  {
+   "id": "04804add87f24a1f996b2dbd9db321bb",
+   "bizNumber": "15425012189",
+   "createdAt": "2025-01-09",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"04804add87f24a1f996b2dbd9db321bb\",\"upperCost\":\"壹仟元陆角捌分\",\"currencyTotalCost\":1000.68,\"payType\":\"02\",\"totalCost\":1000.68,\"bizCost\":1000.68,\"taxCost\":35.11,\"loanCost\":0.00,\"payCost\":1000.68,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2024\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2025-01-15T14:02:41.427223+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2025-01-09T13:24:00.081785+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15425012189\",\"appliedAt\":\"2025-01-09T10:06:36.802+08:00\",\"appliedBy\":\"116070053\",\"appliedName\":\"陈晶\",\"appliedPath\":\"/QD/MK33/MK3305/116070053\",\"appliedPost\":\"经理\",\"appliedPhone\":\"15980451184\",\"appliedPostLevel\":60,\"appliedDuty\":\"经理\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"210600951\",\"createdName\":\"杨祖锐\",\"createdPath\":\"/QD/MK33/MK3305/MK330502/210600951\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2025-01-09T10:33:18.021088+08:00\",\"description\":\"1.7-1.8差旅费\",\"_v_\":\"tXaT5uxi4EWKQl5TUiTrlQ\"}"
+   }
+  },
+  {
+   "id": "0448da71e7be4da881891f938038dcb7",
+   "bizNumber": "15424125685",
+   "createdAt": "2024-12-23",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"0448da71e7be4da881891f938038dcb7\",\"upperCost\":\"壹仟伍佰零陆元肆角伍分\",\"currencyTotalCost\":1506.45,\"payType\":\"02\",\"totalCost\":1506.45,\"bizCost\":1506.45,\"taxCost\":91.56,\"loanCost\":0.00,\"payCost\":1506.45,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2024\",\"appliedDeptPathName\":\"/乔丹体育/科技中心\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2024-12-31T15:02:03.047914+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2024-12-31T11:16:10.180319+08:00\",\"bizLastAuditBy\":\"198010001\",\"bizLastAuditName\":\"丁国雄\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15424125685\",\"appliedAt\":\"2024-12-23T14:19:15.494+08:00\",\"appliedBy\":\"116050008\",\"appliedName\":\"阮果清\",\"appliedPath\":\"/QD/MK33/116050008\",\"appliedPost\":\"总监\",\"appliedPhone\":\"13774851561\",\"appliedPostLevel\":80,\"appliedDuty\":\"高级总监\",\"appliedDept\":\"MK33\",\"appliedDeptName\":\"科技中心\",\"appliedDeptPath\":\"/QD/MK33\",\"createdBy\":\"240600122\",\"createdName\":\"庄旭宏\",\"createdPath\":\"/QD/MK33/MK3305/240600122\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2024-12-23T14:45:27.869232+08:00\",\"description\":\"12.15-12.16 差旅费报销\",\"_v_\":\"b3iRRK4pZkqAPYgSWEpPig\"}"
+   }
+  },
+  {
+   "id": "a04a93723a3d492ba99b0a38249f2cdd",
+   "bizNumber": "15424125030",
+   "createdAt": "2024-12-20",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"a04a93723a3d492ba99b0a38249f2cdd\",\"upperCost\":\"叁仟贰佰叁拾元\",\"currencyTotalCost\":3230.00,\"payType\":\"02\",\"totalCost\":3230.00,\"bizCost\":3230.00,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":3230.00,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2024\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2024-12-25T14:07:42.189217+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2024-12-20T17:34:07.950412+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15424125030\",\"appliedAt\":\"2024-12-20T09:25:08.23+08:00\",\"appliedBy\":\"117070006\",\"appliedName\":\"徐亮\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/117070006\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17605078513\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"117070006\",\"createdName\":\"徐亮\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/117070006\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2024-12-20T14:26:05.97945+08:00\",\"description\":\"公出晋江路费补贴\",\"_v_\":\"z39z4msyKU6svw4Ipa86LA\"}"
+   }
+  },
+  {
+   "id": "e03c9fa9fce9407c9c8cb93b47be082d",
+   "bizNumber": "15424111675",
+   "createdAt": "2024-11-05",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"e03c9fa9fce9407c9c8cb93b47be082d\",\"upperCost\":\"壹万叁仟柒佰玖拾叁元玖角肆分\",\"currencyTotalCost\":13793.94,\"payType\":\"02\",\"totalCost\":13793.94,\"bizCost\":13793.94,\"taxCost\":0.00,\"loanCost\":0.00,\"payCost\":13793.94,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2024\",\"appliedDeptPathName\":\"/乔丹体育/科技中心\",\"flowNext\":false,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2024-11-21T15:06:35.060565+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2024-11-20T10:24:37.678731+08:00\",\"bizLastAuditBy\":\"198010001\",\"bizLastAuditName\":\"丁国雄\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15424111675\",\"appliedAt\":\"2024-11-05T08:46:16.706+08:00\",\"appliedBy\":\"116050008\",\"appliedName\":\"阮果清\",\"appliedPath\":\"/QD/MK33/116050008\",\"appliedPost\":\"总监\",\"appliedPhone\":\"13774851561\",\"appliedPostLevel\":80,\"appliedDuty\":\"高级总监\",\"appliedDept\":\"MK33\",\"appliedDeptName\":\"科技中心\",\"appliedDeptPath\":\"/QD/MK33\",\"createdBy\":\"240600121\",\"createdName\":\"何双庆\",\"createdPath\":\"/QD/MK33/MK3305/240600121\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2024-11-05T17:29:05.00211+08:00\",\"description\":\"东京&大阪10月29日-11月3日巡店(6天5晚)\",\"_v_\":\"RxGxcBIWq0GTNF1FAl0aBw\"}"
+   }
+  },
+  {
+   "id": "0ceb16e55463480eb15755f1026acef9",
+   "bizNumber": "15424106064",
+   "createdAt": "2024-10-31",
+   "code": "08",
+   "fetch": {
+    "status": 200,
+    "ct": "application/json; charset=utf-8",
+    "body": "{\"id\":\"0ceb16e55463480eb15755f1026acef9\",\"upperCost\":\"壹仟叁佰贰拾陆元伍角伍分\",\"currencyTotalCost\":1326.55,\"payType\":\"02\",\"totalCost\":1326.55,\"bizCost\":1326.55,\"taxCost\":58.95,\"loanCost\":0.00,\"payCost\":1326.55,\"quitCost\":0.00,\"submitType\":\"08\",\"invoice\":false,\"sales\":false,\"else\":false,\"currencyType\":\"RMB\",\"budgetYears\":\"2024\",\"appliedDeptPathName\":\"/乔丹体育/科技中心/运动表现研究部/跑步组\",\"flowNext\":true,\"exchangeRate\":1.0000,\"priorityCode\":0,\"totalRealPayCost\":0.00,\"xSmartStatus\":0,\"isBackFlow\":false,\"bizCompletedAt\":\"2024-11-05T12:02:46.289917+08:00\",\"bizCompletedBy\":\"210704548\",\"bizCompletedName\":\"沈琴琴\",\"bizLastAuditAt\":\"2024-10-31T18:45:20.369325+08:00\",\"bizLastAuditBy\":\"116050008\",\"bizLastAuditName\":\"阮果清\",\"bankWay\":1,\"inLast\":false,\"corpCode\":\"1003\",\"bizOrign\":\"QDTech\",\"bizOrigin\":\"QDTech\",\"bizStatus\":4,\"bizNumber\":\"15424106064\",\"appliedAt\":\"2024-10-31T11:29:05.204+08:00\",\"appliedBy\":\"220602092\",\"appliedName\":\"张宇昂\",\"appliedPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"appliedPost\":\"主管\",\"appliedPhone\":\"17611263556\",\"appliedPostLevel\":30,\"appliedDuty\":\"研究员\",\"appliedDept\":\"MK3305\",\"appliedDeptName\":\"运动表现研究部\",\"appliedDeptPath\":\"/QD/MK33/MK3305\",\"createdBy\":\"220602092\",\"createdName\":\"张宇昂\",\"createdPath\":\"/QD/MK33/MK3305/MK330501/220602092\",\"createdDept\":\"MK3305\",\"createdDeptName\":\"运动表现研究部\",\"createdDeptPath\":\"/QD/MK33/MK3305\",\"createdAt\":\"2024-10-31T11:47:36.166134+08:00\",\"description\":\"10.27-10.29差旅费\",\"_v_\":\"5MIZLpV8f0akLC2DKhIq2g\"}"
+   }
+  }
+ ],
+ "list_ep": "https://oa.api.qiaodan.com/reimburse/query/20/24?for=1",
+ "ts": "2026-10-23T14:04:48"
+}

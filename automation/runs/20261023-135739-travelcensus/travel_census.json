@@ -1,0 +1,949 @@
+{
+ "mode": "domview",
+ "cutoff": "2024-10-23",
+ "dept": "运动表现研究部",
+ "submittype_map": {
+  "08": "差旅费",
+  "11": "研发材料费",
+  "15": "快递费",
+  "02": "低值易耗品、办公用品采购",
+  "04": "福利费、劳保用品",
+  "01": "其他费用",
+  "24": "维修费",
+  "06": "各项会议支出"
+ },
+ "checkpoint": {
+  "bizNumber": "15426095951",
+  "src": "ids_from",
+  "tpl_url": null,
+  "token_form": null,
+  "shape": {
+   "view_tables": 1,
+   "view_props": 120,
+   "bizNumber_found": true
+  }
+ },
+ "api_items": 230,
+ "expect_total": 469,
+ "targets": 0,
+ "docs": [
+  {
+   "bizNumber": "15426095951",
+   "createdAt": "2026-09-30",
+   "view": {
+    "url": "https://bpm.qiaodan.com/oa/reimburses",
+    "tables": [
+     {
+      "heads": [],
+      "rows": [
+       [
+        "1",
+        "编制中",
+        "15426104120",
+        "庄旭宏",
+        "2026-10-20",
+        "助理研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "研发材料费",
+        "9,935.16",
+        "庄旭宏",
+        "2026-10-20",
+        "",
+        "",
+        "",
+        "",
+        "科技中心26年9月科技中心外购样品报销"
+       ],
+       [
+        "2",
+        "结束",
+        "15426101596",
+        "张宇昂",
+        "2026-10-08",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "低值易耗品、办公用品采购",
+        "9,974.76",
+        "张宇昂",
+        "2026-10-08",
+        "沈琴琴",
+        "2026-10-12",
+        "阮果清",
+        "2026-10-09",
+        "科技中心第三季度 AI工具申购申请报销"
+       ],
+       [
+        "3",
+        "结束",
+        "15426095951",
+        "陈晶",
+        "2026-09-30",
+        "高级经理",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "251.40",
+        "陈晶",
+        "2026-09-30",
+        "沈琴琴",
+        "2026-10-19",
+        "阮果清",
+        "2026-09-30",
+        "公出晋江油补"
+       ],
+       [
+        "4",
+        "结束",
+        "15426095264",
+        "徐亮",
+        "2026-09-28",
+        "高级研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "244.90",
+        "徐亮",
+        "2026-09-28",
+        "沈琴琴",
+        "2026-10-14",
+        "阮果清",
+        "2026-09-28",
+        "公出油补"
+       ],
+       [
+        "5",
+        "结束",
+        "15426094791",
+        "徐亮",
+        "2026-09-24",
+        "高级研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "180.00",
+        "徐亮",
+        "2026-09-24",
+        "沈琴琴",
+        "2026-10-14",
+        "阮果清",
+        "2026-09-28",
+        "代言人亚运会用鞋沟通"
+       ],
+       [
+        "6",
+        "结束",
+        "15426094780",
+        "张宇昂",
+        "2026-09-24",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "快递费",
+        "347.50",
+        "张宇昂",
+        "2026-09-24",
+        "沈琴琴",
+        "2026-09-29",
+        "阮果清",
+        "2026-09-28",
+        "样品寄送"
+       ],
+       [
+        "7",
+        "结束",
+        "15426094566",
+        "庄旭宏",
+        "2026-09-23",
+        "助理研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "研发材料费",
+        "9,128.84",
+        "庄旭宏",
+        "2026-09-23",
+        "沈琴琴",
+        "2026-09-28",
+        "阮果清",
+        "2026-09-23",
+        "2026年8月外购样品报销"
+       ],
+       [
+        "8",
+        "结束",
+        "15426093534",
+        "隋晗",
+        "2026-09-17",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "低值易耗品、办公用品采购",
+        "4,199.14",
+        "隋晗",
+        "2026-09-17",
+        "沈琴琴",
+        "2026-09-22",
+        "阮果清",
+        "2026-09-17",
+        "科技中心6~9月办公用品采购"
+       ],
+       [
+        "9",
+        "结束",
+        "15426093498",
+        "张宇昂",
+        "2026-09-17",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "280.00",
+        "张宇昂",
+        "2026-09-17",
+        "沈琴琴",
+        "2026-09-22",
+        "阮果清",
+        "2026-09-17",
+        "哈尔滨马拉松技术支持以及市调"
+       ],
+       [
+        "10",
+        "结束",
+        "15426093015",
+        "徐亮",
+        "2026-09-14",
+        "高级研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "633.84",
+        "徐亮",
+        "2026-09-14",
+        "沈琴琴",
+        "2026-09-21",
+        "阮果清",
+        "2026-09-14",
+        "公出油补"
+       ],
+       [
+        "11",
+        "结束",
+        "15426092991",
+        "徐亮",
+        "2026-09-14",
+        "高级研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "600.00",
+        "徐亮",
+        "2026-09-14",
+        "沈琴琴",
+        "2026-09-18",
+        "阮果清",
+        "2026-09-14",
+        "长沙出差&兰州出差"
+       ],
+       [
+        "12",
+        "结束",
+        "15426092845",
+        "隋晗",
+        "2026-09-14",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "260.00",
+        "隋晗",
+        "2026-09-14",
+        "沈琴琴",
+        "2026-09-18",
+        "阮果清",
+        "2026-09-14",
+        "9.4-9.6长沙差旅"
+       ],
+       [
+        "13",
+        "结束",
+        "15426083536",
+        "杨祖锐",
+        "2026-08-18",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "快递费",
+        "31.00",
+        "杨祖锐",
+        "2026-08-18",
+        "沈琴琴",
+        "2026-08-25",
+        "阮果清",
+        "2026-08-18",
+        "调货快递到付报销"
+       ],
+       [
+        "14",
+        "结束",
+        "15426082926",
+        "张宇昂",
+        "2026-08-14",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "快递费",
+        "66.00",
+        "张宇昂",
+        "2026-08-14",
+        "沈琴琴",
+        "2026-08-25",
+        "阮果清",
+        "2026-08-14",
+        "样品寄送快递费用报销"
+       ],
+       [
+        "15",
+        "结束",
+        "15426082393",
+        "隋晗",
+        "2026-08-10",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "500.00",
+        "隋晗",
+        "2026-08-10",
+        "沈琴琴",
+        "2026-08-18",
+        "阮果清",
+        "2026-08-11",
+        "8.3-8.7云南玉溪差旅"
+       ],
+       [
+        "16",
+        "结束",
+        "15426081816",
+        "庄旭宏",
+        "2026-08-07",
+        "助理研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "400.00",
+        "庄旭宏",
+        "2026-08-07",
+        "沈琴琴",
+        "2026-08-13",
+        "阮果清",
+        "2026-08-07",
+        "茵宝足球代言人脚型测量&需求沟通 差旅报销"
+       ],
+       [
+        "17",
+        "结束",
+        "15426075122",
+        "庄旭宏",
+        "2026-07-28",
+        "助理研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "研发材料费",
+        "7,280.04",
+        "庄旭宏",
+        "2026-07-28",
+        "沈琴琴",
+        "2026-07-30",
+        "阮果清",
+        "2026-07-28",
+        "科技中心26年7月外购样品报销"
+       ],
+       [
+        "18",
+        "结束",
+        "15426074859",
+        "杨祖锐",
+        "2026-07-27",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "360.00",
+        "杨祖锐",
+        "2026-07-27",
+        "沈琴琴",
+        "2026-07-30",
+        "阮果清",
+        "2026-07-27",
+        "KJ中国行脚型测量差旅报销"
+       ],
+       [
+        "19",
+        "结束",
+        "15426073836",
+        "杨祖锐",
+        "2026-07-20",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "差旅费",
+        "1,540.00",
+        "杨祖锐",
+        "2026-07-20",
+        "沈琴琴",
+        "2026-07-24",
+        "阮果清",
+        "2026-07-21",
+        "代言人脚型扫描差旅报销"
+       ],
+       [
+        "20",
+        "结束",
+        "15426071977",
+        "张宇昂",
+        "2026-07-07",
+        "研究员",
+        "运动表现研究部",
+        "厦门乔丹科技有限公司",
+        "2026",
+        "转账",
+        "快递费",
+        "153.85",
+        "张宇昂",
+        "2026-07-07",
+        "沈琴琴",
+        "2026-07-09",
+        "阮果清",
+        "2026-07-08",
+        "样品寄送回收快递费用报销"
+       ]
+      ]
+     }
+    ],
+    "props": [
+     {
+      "cls": "field-col-header prop-bizStatus print-hidden ui-sortable-col",
+      "text": "单据状态"
+     },
+     {
+      "cls": "field-col-header prop-bizNumber ui-sortable-column ui-resiza",
+      "text": "单据编号"
+     },
+     {
+      "cls": "field-col-header prop-appliedName ui-sortable-column ui-resi",
+      "text": "申请人"
+     },
+     {
+      "cls": "field-col-header prop-appliedAt ui-sortable-column ui-resiza",
+      "text": "申请日期"
+     },
+     {
+      "cls": "field-col-header prop-appliedDuty hidden-lz ui-sortable-colu",
+      "text": "职位"
+     },
+     {
+      "cls": "field-col-header prop-appliedDeptName hidden-lz ui-sortable-",
+      "text": "申请部门"
+     },
+     {
+      "cls": "field-col-header prop-corpCode print-hidden ui-sortable-colu",
+      "text": "公司"
+     },
+     {
+      "cls": "field-col-header prop-budgetYears hidden-lz ui-sortable-colu",
+      "text": "预算年度"
+     },
+     {
+      "cls": "field-col-header prop-payType ui-sortable-column ui-resizabl",
+      "text": "报销方式"
+     },
+     {
+      "cls": "field-col-header prop-submitType hidden-lz ui-sortable-colum",
+      "text": "报销类别"
+     },
+     {
+      "cls": "field-col-header prop-totalCost bg-warning text-danger ui-so",
+      "text": "报销金额"
+     },
+     {
+      "cls": "field-col-header prop-createdName print-hidden ui-sortable-c",
+      "text": "制单人"
+     },
+     {
+      "cls": "field-col-header prop-createdAt print-hidden ui-sortable-col",
+      "text": "制单日期"
+     },
+     {
+      "cls": "field-col-header prop-bizCompletedName print-hidden ui-sorta",
+      "text": "终审人"
+     },
+     {
+      "cls": "field-col-header prop-bizCompletedAt print-hidden ui-sortabl",
+      "text": "终审日期"
+     },
+     {
+      "cls": "field-col-header prop-bizLastAuditName print-hidden ui-sorta",
+      "text": "业务终审人"
+     },
+     {
+      "cls": "field-col-header prop-bizLastAuditAt print-hidden ui-sortabl",
+      "text": "业务终审日期"
+     },
+     {
+      "cls": "field-col-header prop-description col-12 ui-sortable-column ",
+      "text": "备注"
+     },
+     {
+      "cls": "field-col prop-bizStatus print-hidden readonly ng-star-inser",
+      "text": "编制中"
+     },
+     {
+      "cls": "field-col prop-bizNumber readonly ng-star-inserted",
+      "text": "15426104120"
+     },
+     {
+      "cls": "field-col prop-appliedName readonly ng-star-inserted",
+      "text": "庄旭宏"
+     },
+     {
+      "cls": "field-col prop-appliedAt readonly ng-star-inserted",
+      "text": "2026-10-20"
+     },
+     {
+      "cls": "field-col prop-appliedDuty hidden-lz readonly ng-star-insert",
+      "text": "助理研究员"
+     },
+     {
+      "cls": "field-col prop-appliedDeptName hidden-lz readonly ng-star-in",
+      "text": "运动表现研究部"
+     },
+     {
+      "cls": "field-col prop-corpCode print-hidden readonly ng-star-insert",
+      "text": "厦门乔丹科技有限公司"
+     },
+     {
+      "cls": "field-col prop-budgetYears hidden-lz readonly ng-star-insert",
+      "text": "2026"
+     },
+     {
+      "cls": "field-col prop-payType readonly ng-star-inserted",
+      "text": "转账"
+     },
+     {
+      "cls": "field-col prop-submitType hidden-lz readonly ng-star-inserte",
+      "text": "研发材料费"
+     },
+     {
+      "cls": "field-col prop-totalCost bg-warning text-danger readonly ng-",
+      "text": "9,935.16"
+     },
+     {
+      "cls": "field-col prop-createdName print-hidden readonly ng-star-ins",
+      "text": "庄旭宏"
+     },
+     {
+      "cls": "field-col prop-createdAt print-hidden readonly ng-star-inser",
+      "text": "2026-10-20"
+     },
+     {
+      "cls": "field-col prop-bizCompletedName print-hidden readonly ng-sta",
+      "text": ""
+     },
+     {
+      "cls": "field-col prop-bizCompletedAt print-hidden readonly ng-star-",
+      "text": ""
+     },
+     {
+      "cls": "field-col prop-bizLastAuditName print-hidden readonly ng-sta",
+      "text": ""
+     },
+     {
+      "cls": "field-col prop-bizLastAuditAt print-hidden readonly ng-star-",
+      "text": ""
+     },
+     {
+      "cls": "field-col prop-description col-12 readonly ng-star-inserted",
+      "text": "科技中心26年9月科技中心外购样品报销"
+     },
+     {
+      "cls": "field-col prop-bizStatus print-hidden readonly ng-star-inser",
+      "text": "结束"
+     },
+     {
+      "cls": "field-col prop-bizNumber readonly ng-star-inserted",
+      "text": "15426101596"
+     },
+     {
+      "cls": "field-col prop-appliedName readonly ng-star-inserted",
+      "text": "张宇昂"
+     },
+     {
+      "cls": "field-col prop-appliedAt readonly ng-star-inserted",
+      "text": "2026-10-08"
+     },
+     {
+      "cls": "field-col prop-appliedDuty hidden-lz readonly ng-star-insert",
+      "text": "研究员"
+     },
+     {
+      "cls": "field-col prop-appliedDeptName hidden-lz readonly ng-star-in",
+      "text": "运动表现研究部"
+     },
+     {
+      "cls": "field-col prop-corpCode print-hidden readonly ng-star-insert",
+      "text": "厦门乔丹科技有限公司"
+     },
+     {
+      "cls": "field-col prop-budgetYears hidden-lz readonly ng-star-insert",
+      "text": "2026"
+     },
+     {
+      "cls": "field-col prop-payType readonly ng-star-inserted",
+      "text": "转账"
+     },
+     {
+      "cls": "field-col prop-submitType hidden-lz readonly ng-star-inserte",
+      "text": "低值易耗品、办公用品采购"
+     },
+     {
+      "cls": "field-col prop-totalCost bg-warning text-danger readonly ng-",
+      "text": "9,974.76"
+     },
+     {
+      "cls": "field-col prop-createdName print-hidden readonly ng-star-ins",
+      "text": "张宇昂"
+     },
+     {
+      "cls": "field-col prop-createdAt print-hidden readonly ng-star-inser",
+      "text": "2026-10-08"
+     },
+     {
+      "cls": "field-col prop-bizCompletedName print-hidden readonly ng-sta",
+      "text": "沈琴琴"
+     },
+     {
+      "cls": "field-col prop-bizCompletedAt print-hidden readonly ng-star-",
+      "text": "2026-10-12"
+     },
+     {
+      "cls": "field-col prop-bizLastAuditName print-hidden readonly ng-sta",
+      "text": "阮果清"
+     },
+     {
+      "cls": "field-col prop-bizLastAuditAt print-hidden readonly ng-star-",
+      "text": "2026-10-09"
+     },
+     {
+      "cls": "field-col prop-description col-12 readonly ng-star-inserted",
+      "text": "科技中心第三季度 AI工具申购申请报销"
+     },
+     {
+      "cls": "field-col prop-bizStatus print-hidden readonly ng-star-inser",
+      "text": "结束"
+     },
+     {
+      "cls": "field-col prop-bizNumber readonly ng-star-inserted",
+      "text": "15426095951"
+     },
+     {
+      "cls": "field-col prop-appliedName readonly ng-star-inserted",
+      "text": "陈晶"
+     },
+     {
+      "cls": "field-col prop-appliedAt readonly ng-star-inserted",
+      "text": "2026-09-30"
+     },
+     {
+      "cls": "field-col prop-appliedDuty hidden-lz readonly ng-star-insert",
+      "text": "高级经理"
+     },
+     {
+      "cls": "field-col prop-appliedDeptName hidden-lz readonly ng-star-in",
+      "text": "运动表现研究部"
+     },
+     {
+      "cls": "field-col prop-corpCode print-hidden readonly ng-star-insert",
+      "text": "厦门乔丹科技有限公司"
+     },
+     {
+      "cls": "field-col prop-budgetYears hidden-lz readonly ng-star-insert",
+      "text": "2026"
+     },
+     {
+      "cls": "field-col prop-payType readonly ng-star-inserted",
+      "text": "转账"
+     },
+     {
+      "cls": "field-col prop-submitType hidden-lz readonly ng-star-inserte",
+      "text": "差旅费"
+     },
+     {
+      "cls": "field-col prop-totalCost bg-warning text-danger readonly ng-",
+      "text": "251.40"
+     },
+     {
+      "cls": "field-col prop-createdName print-hidden readonly ng-star-ins",
+      "text": "陈晶"
+     },
+     {
+      "cls": "field-col prop-createdAt print-hidden readonly ng-star-inser",
+      "text": "2026-09-30"
+     },
+     {
+      "cls": "field-col prop-bizCompletedName print-hidden readonly ng-sta",
+      "text": "沈琴琴"
+     },
+     {
+      "cls": "field-col prop-bizCompletedAt print-hidden readonly ng-star-",
+      "text": "2026-10-19"
+     },
+     {
+      "cls": "field-col prop-bizLastAuditName print-hidden readonly ng-sta",
+      "text": "阮果清"
+     },
+     {
+      "cls": "field-col prop-bizLastAuditAt print-hidden readonly ng-star-",
+      "text": "2026-09-30"
+     },
+     {
+      "cls": "field-col prop-description col-12 readonly ng-star-inserted",
+      "text": "公出晋江油补"
+     },
+     {
+      "cls": "field-col prop-bizStatus print-hidden readonly ng-star-inser",
+      "text": "结束"
+     },
+     {
+      "cls": "field-col prop-bizNumber readonly ng-star-inserted",
+      "text": "15426095264"
+     },
+     {
+      "cls": "field-col prop-appliedName readonly ng-star-inserted",
+      "text": "徐亮"
+     },
+     {
+      "cls": "field-col prop-appliedAt readonly ng-star-inserted",
+      "text": "2026-09-28"
+     },
+     {
+      "cls": "field-col prop-appliedDuty hidden-lz readonly ng-star-insert",
+      "text": "高级研究员"
+     },
+     {
+      "cls": "field-col prop-appliedDeptName hidden-lz readonly ng-star-in",
+      "text": "运动表现研究部"
+     },
+     {
+      "cls": "field-col prop-corpCode print-hidden readonly ng-star-insert",
+      "text": "厦门乔丹科技有限公司"
+     },
+     {
+      "cls": "field-col prop-budgetYears hidden-lz readonly ng-star-insert",
+      "text": "2026"
+     },
+     {
+      "cls": "field-col prop-payType readonly ng-star-inserted",
+      "text": "转账"
+     },
+     {
+      "cls": "field-col prop-submitType hidden-lz readonly ng-star-inserte",
+      "text": "差旅费"
+     },
+     {
+      "cls": "field-col prop-totalCost bg-warning text-danger readonly ng-",
+      "text": "244.90"
+     },
+     {
+      "cls": "field-col prop-createdName print-hidden readonly ng-star-ins",
+      "text": "徐亮"
+     },
+     {
+      "cls": "field-col prop-createdAt print-hidden readonly ng-star-inser",
+      "text": "2026-09-28"
+     },
+     {
+      "cls": "field-col prop-bizCompletedName print-hidden readonly ng-sta",
+      "text": "沈琴琴"
+     },
+     {
+      "cls": "field-col prop-bizCompletedAt print-hidden readonly ng-star-",
+      "text": "2026-10-14"
+     },
+     {
+      "cls": "field-col prop-bizLastAuditName print-hidden readonly ng-sta",
+      "text": "阮果清"
+     },
+     {
+      "cls": "field-col prop-bizLastAuditAt print-hidden readonly ng-star-",
+      "text": "2026-09-28"
+     },
+     {
+      "cls": "field-col prop-description col-12 readonly ng-star-inserted",
+      "text": "公出油补"
+     },
+     {
+      "cls": "field-col prop-bizStatus print-hidden readonly ng-star-inser",
+      "text": "结束"
+     },
+     {
+      "cls": "field-col prop-bizNumber readonly ng-star-inserted",
+      "text": "15426094791"
+     },
+     {
+      "cls": "field-col prop-appliedName readonly ng-star-inserted",
+      "text": "徐亮"
+     },
+     {
+      "cls": "field-col prop-appliedAt readonly ng-star-inserted",
+      "text": "2026-09-24"
+     },
+     {
+      "cls": "field-col prop-appliedDuty hidden-lz readonly ng-star-insert",
+      "text": "高级研究员"
+     },
+     {
+      "cls": "field-col prop-appliedDeptName hidden-lz readonly ng-star-in",
+      "text": "运动表现研究部"
+     },
+     {
+      "cls": "field-col prop-corpCode print-hidden readonly ng-star-insert",
+      "text": "厦门乔丹科技有限公司"
+     },
+     {
+      "cls": "field-col prop-budgetYears hidden-lz readonly ng-star-insert",
+      "text": "2026"
+     },
+     {
+      "cls": "field-col prop-payType readonly ng-star-inserted",
+      "text": "转账"
+     },
+     {
+      "cls": "field-col prop-submitType hidden-lz readonly ng-star-inserte",
+      "text": "差旅费"
+     },
+     {
+      "cls": "field-col prop-totalCost bg-warning text-danger readonly ng-",
+      "text": "180.00"
+     },
+     {
+      "cls": "field-col prop-createdName print-hidden readonly ng-star-ins",
+      "text": "徐亮"
+     },
+     {
+      "cls": "field-col prop-createdAt print-hidden readonly ng-star-inser",
+      "text": "2026-09-24"
+     },
+     {
+      "cls": "field-col prop-bizCompletedName print-hidden readonly ng-sta",
+      "text": "沈琴琴"
+     },
+     {
+      "cls": "field-col prop-bizCompletedAt print-hidden readonly ng-star-",
+      "text": "2026-10-14"
+     },
+     {
+      "cls": "field-col prop-bizLastAuditName print-hidden readonly ng-sta",
+      "text": "阮果清"
+     },
+     {
+      "cls": "field-col prop-bizLastAuditAt print-hidden readonly ng-star-",
+      "text": "2026-09-28"
+     },
+     {
+      "cls": "field-col prop-description col-12 readonly ng-star-inserted",
+      "text": "代言人亚运会用鞋沟通"
+     },
+     {
+      "cls": "field-col prop-bizStatus print-hidden readonly ng-star-inser",
+      "text": "结束"
+     },
+     {
+      "cls": "field-col prop-bizNumber readonly ng-star-inserted",
+      "text": "15426094780"
+     },
+     {
+      "cls": "field-col prop-appliedName readonly ng-star-inserted",
+      "text": "张宇昂"
+     },
+     {
+      "cls": "field-col prop-appliedAt readonly ng-star-inserted",
+      "text": "2026-09-24"
+     },
+     {
+      "cls": "field-col prop-appliedDuty hidden-lz readonly ng-star-insert",
+      "text": "研究员"
+     },
+     {
+      "cls": "field-col prop-appliedDeptName hidden-lz readonly ng-star-in",
+      "text": "运动表现研究部"
+     },
+     {
+      "cls": "field-col prop-corpCode print-hidden readonly ng-star-insert",
+      "text": "厦门乔丹科技有限公司"
+     },
+     {
+      "cls": "field-col prop-budgetYears hidden-lz readonly ng-star-insert",
+      "text": "2026"
+     },
+     {
+      "cls": "field-col prop-payType readonly ng-star-inserted",
+      "text": "转账"
+     },
+     {
+      "cls": "field-col prop-submitType hidden-lz readonly ng-star-inserte",
+      "text": "快递费"
+     },
+     {
+      "cls": "field-col prop-totalCost bg-warning text-danger readonly ng-",
+      "text": "347.50"
+     },
+     {
+      "cls": "field-col prop-createdName print-hidden readonly ng-star-ins",
+      "text": "张宇昂"
+     }
+    ]
+   }
+  }
+ ],
+ "list_ep": "https://oa.api.qiaodan.com/rule/HomeQueryByOption?pageIndex=1&pageSize=100000",
+ "ts": "2026-10-23T13:58:43"
+}

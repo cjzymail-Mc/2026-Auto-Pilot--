@@ -1,0 +1,42 @@
+{"event": "profile_lock_acquired", "pid": 20140, "ts": "2026-10-23T14:21:46"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 789, "ts": "2026-10-23T14:21:52"}
+{"event": "travel_census_start", "cutoff": "2024-10-23", "limit": 63, "v": "4-checkpoint-first", "ts": "2026-10-23T14:21:52"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792736515983, "dur_ms": 724, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T14:21:56"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 10.0, "ts": "2026-10-23T14:21:57"}
+{"event": "org_picker_opened", "row": "CreatedPath", "ts": "2026-10-23T14:22:04"}
+{"event": "org_node_clicked", "row": "CreatedPath", "picked": "运动表现研究部", "ts": "2026-10-23T14:22:07"}
+{"event": "org_dialog_confirmed", "row": "CreatedPath", "btn": "确定", "ts": "2026-10-23T14:22:09"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792736529929, "dur_ms": 237, "outcome": "ok", "exc": "", "name": "org_CreatedPath_picked.png", "ts": "2026-10-23T14:22:10"}
+{"event": "list_ep_found", "url": "https://oa.api.qiaodan.com/reimburse/query/20/1?for=1", "expect_total": 469, "ts": "2026-10-23T14:22:11"}
+{"event": "api_headers_captured", "names": ["accept", "authorization", "client-app", "content-type", "qd-language", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "user-agent"], "ts": "2026-10-23T14:22:11"}
+{"event": "checkpoint_children", "rows": {"details": 2, "costs": 2, "relations": 1, "banks": 1, "products": 0, "detailrels": 1}, "status": {"details": 200, "costs": 200, "relations": 200, "banks": 200, "products": 200, "detailrels": 200}, "ts": "2026-10-23T14:22:13"}
+{"event": "checkpoint_detail_ok", "mode": "api", "biz": "1542***", "tpl": "https://oa.api.qiaodan.com/reimburse/92d41ffd042746e390f0a070118ca1d9", "arrays": 0, "biz_check": true, "children": {"details": 2, "costs": 2, "relations": 1, "banks": 1, "products": 0, "detailrels": 1}, "ts": "2026-10-23T14:22:13"}
+{"event": "api_paged_fetch", "got": 0, "ts": "2026-10-23T14:22:13"}
+{"event": "ui_seed_refire", "seed": 36, "after": 35, "ts": "2026-10-23T14:22:24"}
+{"event": "census_page", "page": 1, "api_items": 35, "page_text": "123 共 469 条 20", "ts": "2026-10-23T14:22:26"}
+{"event": "census_page", "page": 2, "api_items": 55, "page_text": "123 共 469 条 20", "ts": "2026-10-23T14:22:29"}
+{"event": "census_page", "page": 3, "api_items": 74, "page_text": "234 共 469 条 20", "ts": "2026-10-23T14:22:32"}
+{"event": "census_page", "page": 4, "api_items": 93, "page_text": "345 共 469 条 20", "ts": "2026-10-23T14:22:36"}
+{"event": "census_page", "page": 5, "api_items": 113, "page_text": "456 共 469 条 20", "ts": "2026-10-23T14:22:39"}
+{"event": "census_page", "page": 6, "api_items": 133, "page_text": "567 共 469 条 20", "ts": "2026-10-23T14:22:42"}
+{"event": "census_page", "page": 7, "api_items": 153, "page_text": "678 共 469 条 20", "ts": "2026-10-23T14:22:46"}
+{"event": "census_page", "page": 8, "api_items": 173, "page_text": "789 共 469 条 20", "ts": "2026-10-23T14:22:49"}
+{"event": "census_page", "page": 9, "api_items": 193, "page_text": "8910 共 469 条 20", "ts": "2026-10-23T14:22:52"}
+{"event": "census_page", "page": 10, "api_items": 213, "page_text": "91011 共 469 条 20", "ts": "2026-10-23T14:22:56"}
+{"event": "census_page", "page": 11, "api_items": 233, "page_text": "101112 共 469 条 20", "ts": "2026-10-23T14:22:59"}
+{"event": "census_page", "page": 12, "api_items": 253, "page_text": "111213 共 469 条 20", "ts": "2026-10-23T14:23:02"}
+{"event": "census_page", "page": 13, "api_items": 273, "page_text": "121314 共 469 条 20", "ts": "2026-10-23T14:23:06"}
+{"event": "census_page", "page": 14, "api_items": 293, "page_text": "131415 共 469 条 20", "ts": "2026-10-23T14:23:09"}
+{"event": "census_page", "page": 15, "api_items": 313, "page_text": "141516 共 469 条 20", "ts": "2026-10-23T14:23:12"}
+{"event": "census_page", "page": 16, "api_items": 333, "page_text": "151617 共 469 条 20", "ts": "2026-10-23T14:23:16"}
+{"event": "census_page", "page": 17, "api_items": 353, "page_text": "161718 共 469 条 20", "ts": "2026-10-23T14:23:19"}
+{"event": "census_page", "page": 18, "api_items": 373, "page_text": "171819 共 469 条 20", "ts": "2026-10-23T14:23:22"}
+{"event": "census_page", "page": 19, "api_items": 393, "page_text": "181920 共 469 条 20", "ts": "2026-10-23T14:23:26"}
+{"event": "census_page", "page": 20, "api_items": 413, "page_text": "192021 共 469 条 20", "ts": "2026-10-23T14:23:29"}
+{"event": "census_page", "page": 21, "api_items": 432, "page_text": "202122 共 469 条 20", "ts": "2026-10-23T14:23:32"}
+{"event": "census_page", "page": 22, "api_items": 451, "page_text": "212223 共 469 条 20", "ts": "2026-10-23T14:23:35"}
+{"event": "census_page", "page": 23, "api_items": 467, "page_text": "222324 共 469 条 20", "ts": "2026-10-23T14:23:39"}
+{"event": "census_page", "page": 24, "api_items": 469, "page_text": "222324 共 469 条 20", "ts": "2026-10-23T14:23:42"}
+{"event": "detail_batch_start", "mode": "api", "n": 63, "url": "https://oa.api.qiaodan.com/reimburse/92d41ffd042746e390f0a070118ca1d9", "ts": "2026-10-23T14:23:42"}
+{"event": "travel_census_end", "mode": "api", "docs": 63, "validated": 63, "targets": 63, "baseline_want": 63, "ts": "2026-10-23T14:25:10"}
+{"event": "travel_census_close", "outcome": "OK", "ts": "2026-10-23T14:25:10"}

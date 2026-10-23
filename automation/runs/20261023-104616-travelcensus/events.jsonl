@@ -1,0 +1,13 @@
+{"event": "profile_lock_acquired", "pid": 18804, "ts": "2026-10-23T10:46:16"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 1495, "ts": "2026-10-23T10:46:24"}
+{"event": "travel_census_start", "cutoff": "2024-10-23", "limit": 63, "ts": "2026-10-23T10:46:24"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 10.0, "ts": "2026-10-23T10:46:30"}
+{"event": "org_picker_opened", "row": "CreatedPath", "ts": "2026-10-23T10:46:38"}
+{"event": "org_node_clicked", "row": "CreatedPath", "picked": "运动表现研究部", "ts": "2026-10-23T10:46:41"}
+{"event": "org_dialog_confirmed", "row": "CreatedPath", "btn": "确定", "ts": "2026-10-23T10:46:42"}
+{"event": "census_page", "page": 1, "items": 0, "page_text": "123 共 469 条 20", "ts": "2026-10-23T10:46:46"}
+{"event": "census_page", "page": 2, "items": 0, "page_text": "123 共 469 条 20", "ts": "2026-10-23T10:46:48"}
+{"event": "census_page", "page": 3, "items": 0, "page_text": "234 共 469 条 20", "ts": "2026-10-23T10:46:50"}
+{"event": "census_items_total", "items": 0, "list_ep": "", "ts": "2026-10-23T10:46:53"}
+{"event": "travel_census_end", "mode": "none", "docs": 0, "ts": "2026-10-23T10:46:53"}
+{"event": "travel_census_close", "outcome": "OK", "ts": "2026-10-23T10:46:53"}

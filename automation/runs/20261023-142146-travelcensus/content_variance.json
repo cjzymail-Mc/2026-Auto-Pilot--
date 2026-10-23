@@ -1,0 +1,7378 @@
+{
+ "n_docs": 63,
+ "main_keys_constant": 50,
+ "main_keys_variable": {
+  "appliedCenterCode": 18,
+  "appliedCenterName": 18,
+  "bizCompletedAt": 62,
+  "bizCompletedBy": 62,
+  "bizCompletedName": 62,
+  "bizLastAuditAt": 62,
+  "bizLastAuditBy": 62,
+  "bizLastAuditName": 62,
+  "bizCategory": 47
+ },
+ "docs": [
+  {
+   "bizNumber": "15426095951",
+   "createdAt": "2026-09-30",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 2
+    },
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425123390",
+   "createdAt": "2025-12-15",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425084773",
+   "createdAt": "2025-08-26",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426095264",
+   "createdAt": "2026-09-28",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 2
+    },
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 3,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426094791",
+   "createdAt": "2026-09-24",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426093498",
+   "createdAt": "2026-09-17",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426093015",
+   "createdAt": "2026-09-14",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 2
+    },
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 6,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 3,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 3
+    },
+    "bizTypeName": {
+     "公出单": 3
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 3,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 3
+    },
+    "bizTypeName": {
+     "公出单": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15426092991",
+   "createdAt": "2026-09-14",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15426092845",
+   "createdAt": "2026-09-14",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426082393",
+   "createdAt": "2026-08-10",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 2
+    },
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426081816",
+   "createdAt": "2026-08-07",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 2
+    },
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15426074859",
+   "createdAt": "2026-07-27",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 2
+    },
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15426073836",
+   "createdAt": "2026-07-20",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 2
+    },
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 4,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15426071058",
+   "createdAt": "2026-07-03",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 0,
+   "costs_keys": [],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426065467",
+   "createdAt": "2026-06-29",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426055014",
+   "createdAt": "2026-05-26",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426045479",
+   "createdAt": "2026-04-30",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426033079",
+   "createdAt": "2026-03-17",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 4,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 4
+    },
+    "occupyRelationType": {
+     "0": 4
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 3,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   },
+   "banks_n": 3,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 3,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15426032858",
+   "createdAt": "2026-03-16",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 3,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 3,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15426032687",
+   "createdAt": "2026-03-14",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15426022360",
+   "createdAt": "2026-02-09",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 3,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   },
+   "banks_n": 3,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 3,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15426020406",
+   "createdAt": "2026-02-02",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetOwner",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "genreId",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "genreId": {
+     "": 1
+    },
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 0,
+   "costs_keys": [],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425124854",
+   "createdAt": "2025-12-22",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 12,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 12
+    }
+   },
+   "costs_n": 3,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 3,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   },
+   "banks_n": 3,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 3,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15425124793",
+   "createdAt": "2025-12-21",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 7,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 7
+    }
+   },
+   "costs_n": 3,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 3,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   },
+   "banks_n": 3,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 3,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15425123013",
+   "createdAt": "2025-12-12",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 20,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 9,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 9
+    },
+    "bizTypeName": {
+     "公出单": 9
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 9,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 9
+    },
+    "bizTypeName": {
+     "公出单": 9
+    }
+   }
+  },
+  {
+   "bizNumber": "15425122445",
+   "createdAt": "2025-12-09",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425122401",
+   "createdAt": "2025-12-09",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 1,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425122073",
+   "createdAt": "2025-12-08",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 0,
+   "costs_keys": [],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425112622",
+   "createdAt": "2025-11-11",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 5,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 5
+    }
+   },
+   "costs_n": 4,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 6,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 6
+    },
+    "bizTypeName": {
+     "出差单": 6
+    }
+   },
+   "banks_n": 3,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 6,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 6
+    },
+    "bizTypeName": {
+     "出差单": 6
+    }
+   }
+  },
+  {
+   "bizNumber": "15425105893",
+   "createdAt": "2025-10-31",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 9,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 9
+    }
+   },
+   "costs_n": 2,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 3,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   },
+   "banks_n": 3,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 3,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15425104727",
+   "createdAt": "2025-10-24",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 4,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 4
+    }
+   },
+   "costs_n": 8,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 3,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   },
+   "banks_n": 3,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 3,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 3
+    },
+    "bizTypeName": {
+     "出差单": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15425091006",
+   "createdAt": "2025-09-02",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 4,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425085196",
+   "createdAt": "2025-08-28",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 0,
+   "costs_keys": [],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425084375",
+   "createdAt": "2025-08-25",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 4,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425083486",
+   "createdAt": "2025-08-18",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 5,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 5
+    }
+   },
+   "costs_n": 17,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425082895",
+   "createdAt": "2025-08-14",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 6,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 3,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 3
+    },
+    "bizTypeName": {
+     "公出单": 3
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 3,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 3
+    },
+    "bizTypeName": {
+     "公出单": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15425082858",
+   "createdAt": "2025-08-14",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 5,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425082541",
+   "createdAt": "2025-08-12",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 4,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425082517",
+   "createdAt": "2025-08-12",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 5,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425075960",
+   "createdAt": "2025-07-31",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 32,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425074688",
+   "createdAt": "2025-07-24",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 8,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425071838",
+   "createdAt": "2025-07-07",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 5,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 0,
+   "costs_keys": [],
+   "costs_enums": {},
+   "relations_n": 0,
+   "relations_keys": [],
+   "relations_enums": {},
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 0,
+   "detailrels_keys": [],
+   "detailrels_enums": {}
+  },
+  {
+   "bizNumber": "15425070973",
+   "createdAt": "2025-07-03",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 12,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "description",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425070958",
+   "createdAt": "2025-07-03",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 7,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425064531",
+   "createdAt": "2025-06-23",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 5,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425063846",
+   "createdAt": "2025-06-18",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 9,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425061148",
+   "createdAt": "2025-06-03",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 9,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425044530",
+   "createdAt": "2025-04-22",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 0,
+   "costs_keys": [],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425043249",
+   "createdAt": "2025-04-15",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 4,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 4
+    }
+   },
+   "costs_n": 15,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 4,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 4
+    },
+    "bizTypeName": {
+     "出差单": 4
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 4,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 4
+    },
+    "bizTypeName": {
+     "出差单": 4
+    }
+   }
+  },
+  {
+   "bizNumber": "15425042347",
+   "createdAt": "2025-04-10",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 5,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425040007",
+   "createdAt": "2025-04-01",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 7,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425036129",
+   "createdAt": "2025-03-31",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 3,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425032494",
+   "createdAt": "2025-03-11",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 12,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "description",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425032288",
+   "createdAt": "2025-03-10",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 2,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 2
+    }
+   },
+   "costs_n": 3,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 1
+    },
+    "bizTypeName": {
+     "公出单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425023361",
+   "createdAt": "2025-02-18",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 4,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 4
+    }
+   },
+   "costs_n": 4,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15425023197",
+   "createdAt": "2025-02-17",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 14,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425014653",
+   "createdAt": "2025-01-22",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 12,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425014616",
+   "createdAt": "2025-01-22",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 8,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 2,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 2,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 2
+    },
+    "bizTypeName": {
+     "出差单": 2
+    }
+   }
+  },
+  {
+   "bizNumber": "15425012189",
+   "createdAt": "2025-01-09",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 6,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15424125685",
+   "createdAt": "2024-12-23",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 6,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "description",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 6
+    }
+   },
+   "costs_n": 6,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  },
+  {
+   "bizNumber": "15424125030",
+   "createdAt": "2024-12-20",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 1,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 1
+    }
+   },
+   "costs_n": 26,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 13,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "4": 13
+    },
+    "bizTypeName": {
+     "公出单": 13
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 13,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "4": 13
+    },
+    "bizTypeName": {
+     "公出单": 13
+    }
+   }
+  },
+  {
+   "bizNumber": "15424111675",
+   "createdAt": "2024-11-05",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 20,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 2,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1,
+     "34": 1
+    },
+    "bizTypeName": {
+     "出差单": 1,
+     "申请书": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 4,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "digest",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1,
+     "34": 3
+    },
+    "bizTypeName": {
+     "出差单": 1,
+     "申请书": 3
+    }
+   }
+  },
+  {
+   "bizNumber": "15424106064",
+   "createdAt": "2024-10-31",
+   "topup": "",
+   "main_payType": "02",
+   "main_submitType": "08",
+   "main_bizStatus": 4,
+   "details_n": 3,
+   "details_keys": [
+    "budgetBizOrigin",
+    "budgetDept",
+    "budgetDeptName",
+    "budgetDetId",
+    "budgetId",
+    "budgetItemCode",
+    "budgetItemName",
+    "budgetKey",
+    "budgetNo",
+    "budgetUseCost",
+    "budgetYear",
+    "cost",
+    "detCost",
+    "digest",
+    "id",
+    "occupyRelationType",
+    "realCost",
+    "reimItem",
+    "reimburseId",
+    "reimedCost",
+    "serialNumber",
+    "sortOrder",
+    "subjectId",
+    "subjectName",
+    "subjectSurplus",
+    "subjectTotalCost",
+    "taxCost",
+    "taxRate"
+   ],
+   "details_enums": {
+    "occupyRelationType": {
+     "0": 3
+    }
+   },
+   "costs_n": 9,
+   "costs_keys": [
+    "cost",
+    "count",
+    "endDate",
+    "id",
+    "project",
+    "projectPlace",
+    "reason",
+    "reimburseId",
+    "sortOrder",
+    "startDate"
+   ],
+   "costs_enums": {},
+   "relations_n": 1,
+   "relations_keys": [
+    "bizCost",
+    "bizId",
+    "bizNumber",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "description",
+    "id",
+    "isLast",
+    "nowCost",
+    "reimburseId",
+    "totalReimedCost"
+   ],
+   "relations_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   },
+   "banks_n": 1,
+   "banks_keys": [
+    "account",
+    "bank",
+    "bankCode",
+    "cost",
+    "id",
+    "payee",
+    "reimburseId",
+    "serialNumber",
+    "sortOrder"
+   ],
+   "banks_enums": {},
+   "detailrels_n": 1,
+   "detailrels_keys": [
+    "bizDetailCost",
+    "bizDetailId",
+    "bizDetailNum",
+    "bizId",
+    "bizNo",
+    "bizSystem",
+    "bizType",
+    "bizTypeName",
+    "cost",
+    "id",
+    "reimburseId",
+    "usedCost"
+   ],
+   "detailrels_enums": {
+    "bizType": {
+     "3": 1
+    },
+    "bizTypeName": {
+     "出差单": 1
+    }
+   }
+  }
+ ]
+}
