@@ -1,0 +1,21 @@
+execution-check（B 自证记录）— workflow 9b0a6332fea8480283a898e5c01a6ed9 round 1 / 合同 ctr-d1e7876b
+生成：2026-10-23（P6f 收尾时点），B session f5a8a013-0b23-440b-a744-a6d1ce4e5838
+
+1. done_when 四条映射
+   - [埋点+行为零变化] _timing 上下文管理器 + 45 处 with 包裹；git diff +263/-186 = 176 对纯缩进配对 + 10 行实质（5 行 SESSION_TTL 4h→10h 系冻结合同前既有工作区改动、5 行埋点等价重构结构行）；所有 wait/timeout 数值原样。验证：py_compile、离线冒烟 4 路径 JSONL 合法、git diff -U0 逐行配对分析。
+   - [selftest 全绿] python -X utf8 stage1_probe_selftest.py ALL PASS 退出码 0（mc-expert 终审独立复跑亦 exit 0）。
+   - [一轮实测] fill_once → attempt_025（2026-10-23 11:03:37→11:08:53）：fill 跨度 308.6s、158 条 timing 事件、0 timeout/0 error；stage1_result.json 判定 29/32 零 mismatch、finish_reason=SUCCESS_FILL_ONLY、budget_respected=true——与 attempt_024 同级，观测未扰动行为。
+   - [分析报告] docs/路线与评估/2026-10-23-报销单填写耗时-动作级计时证据链.md：45s 定论=_pick_row 选中态 get_attribute(stage1_browser_probe.py:2026) 点行关浮层 detach 死等（H1/H2/H3 证伪）；~101s 构成=预算科目 cell 91.8s = inp.fill(:1819) 默认超时×2（M1 证实/M2 证实/M3 证伪）；E1/E2 离线微实验复证等待语义 + 预算联动 p-dialog 同函数 1.9s 反向对照。
+
+2. 独立终审（P6e ENHANCED_FINAL，fresh mc-expert 三轮）
+   R1 GO_WITH_CHANGES → R2 GO_WITH_CHANGES(A-E 对账) → R3 VERDICT=GO / HASH_VALIDITY=VALID / UNVERIFIED_SCOPE=NONE / 八面全 PASS。
+   终审绑定 hash：stage1_browser_probe.py=3275d51d28151a71973d1e6b27689418342a46040df94d5367f4d72cd7ebeefe；报告=7ca43f075d409c20c144fae471b25749bd13113b593b1ec5c9b48a596285a024；events.jsonl(前521行)=6c29c7feb3c2d790d6df8d64b3996f4a0915d3d87476ff260f29177d06b78994；attempt_025/stage1_result.json=76af23539b7036c8af3c5e75bff8632013f7cf126402240d87626cb837505925。
+
+3. events.jsonl 终审后追加核验
+   L522 {"event":"keep_open_end","ts":"2026-10-23T11:53:53"}——keep-open 驻留期满生命周期标记（后台任务 bxblbzfhm exit 0）。前 521 行前缀 sha256 精确复现终审值 6c29c7fe…（纯追加、无改动），终审结论不受影响。交接绑定新鲜全文件 hash=ff9e09c0970aa100e97289931cfe4df06ba11373ee8e133dba2582254ee9ed23。
+
+4. 红线遵守
+   no_save_guard 生效（未点任何保存类按钮，SUCCESS_FILL_ONLY）；.pw-profile 未进 git/日志/报告；结论全部可回溯 events.jsonl 行号/stage1_result/报告；legacy-ia2 未动；防御性等待与 45s 默认超时原值未动（只测量不优化）。
+
+5. 失败计数
+   failure_counts = {}（零 failure_key：selftest 一次全绿、实测一次到位、158 条 timing 0 timeout/0 error）。

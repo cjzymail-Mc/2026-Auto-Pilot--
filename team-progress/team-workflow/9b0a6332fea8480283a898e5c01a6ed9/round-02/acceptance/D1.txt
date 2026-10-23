@@ -1,0 +1,27 @@
+D1 业务结果不退化 + 红线零触碰 — PASS_DYNAMIC（A 独立复核，2026-10-23）
+
+基线要求：优化不得使业务结果退化（29/32 零 mismatch、budget_respected、结构性留空如实）；
+§3 九条约束全程遵守（600ms 轮询/Tab blur+3×回读/45000 全局默认不动；存在性判断须验业务后置条件；不 force/JS-click；不静默改账号/金额/日期/关联单据/预算）。
+
+A 独立证据：
+1. attempt_026/stage1_result.json（hash cb1d53db… 复核一致）：matched 29/32，mismatch=[]，
+   SUCCESS_FILL_ONLY，budget_respected=True；结构性留空与 024/025 同级——
+   not_in_form=[项目说明, 行程说明]，form_not_in_template=[submitType]，不猜填。
+2. fill_field_result×32：match=True×29 / False×3（恰为上述三项结构性留空）；
+   关联公出单 match=True method=type_then_doc_overlay；预算部门/科目/项目全 OK
+   match=True method=final_reread（预算联动带出+严格回读后置条件保持）。字段级事件
+   不带回读值（脱敏惯例，keys 实查：event/field/match/method/row/section/status/ts）。
+3. 代码锚点原值不动（A 逐条 grep 实查）：NO_SAVE_WORDS :60、_click_guard :1377、
+   set_default_timeout(45000) :3035、wait_for_timeout(600) :1623/:1988/:2059；
+   行点击 click(timeout=8000) :2058 为既有先例原样；无 force/JS-click 替代校验。
+4. 只填不存：026 窗口（L523-762）save 类词过滤仅命中 fill_start 的事件描述文本
+   （"只填不存，保存/发送/流转/上传由用户执行"——红线声明本身），无任何 save 类点击事件。
+5. .pw-profile 零外泄：session_state_injected/saved（L526/L528）仅记条数与 origin
+   （cookies:2, origins:1, key_counts），无 token 内容；全部新增事件类型复查无敏感串。
+6. events.jsonl 追加式机械证明：前 522 行 sha256 前缀 == round-1 终态 ff9e09c0…
+   （A 复算 prefix522 相等），现 762 行，全文 sha256 == handoff 6104848f…。
+7. legacy-ia2/ git status 为空（零改动）。
+8. selftest A 独立复跑：13 组 ALL PASS（含 T9 新增红线锚点不变量：
+   set_default_timeout(45000)==1、wait_for_timeout(600) 在场）。
+
+结论：业务结果同级不退化，九条约束逐条在案。PASS_DYNAMIC。

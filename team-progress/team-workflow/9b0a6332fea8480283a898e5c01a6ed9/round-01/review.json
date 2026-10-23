@@ -1,0 +1,79 @@
+{
+  "decision": "rework",
+  "summary": "Round 1（合同 ctr-d1e7876b，只加观测）在范围内高质量完成并全量通过独立复核：D1/D3/D7 PASS_DYNAMIC（A 实算：29/32 零 mismatch、结构性留空三项如实、selftest 独立复跑全绿、报告关键数值 45822/91803/110876/273.4/308.6/35.2 全部从 events.jsonl 复算一致、四件 artifacts hash + 前缀 hash 全对）。D2 FAIL：_timing 仅 with 边界 ok|timeout|error/exc，两处内层 except（:2029 pass / :1823 continue）吞掉前无记录、无尝试序号/总次数、五类离线验证未交付——159 条 timing 全 ok、exc 全空，两大死等异常在事件层不可见（基线 §2 预言的观测缺口仍在，报告 §4.4 已如实声明）。D4/D5/D6 为计划未执行项（round-1 明确不动行为），按 D7 纪律记未完成、不计失败。下一轮（round 2）派发：D2 内层观测补齐 + D4 两处死等局部优化（前置判据/后置核验/失败路径）+ D5 selftest/四类局部验证/优化后真实填写 + D6 对照初版与 D3 报告修订（缝隙桶单列已埋点 screenshot ~2.4s、附统一复算脚本）。",
+  "failure_counts": {
+    "review|content|internal_exception_unrecorded|D2": 1
+  },
+  "checks": [
+    {
+      "id": "D1",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-01/acceptance/D1.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9b0a6332fea8480283a898e5c01a6ed9\\round-01\\acceptance\\D1.txt": "bd402204df93961afa3371002d90bd758892f11dd331ce6e2c6524ae114ce94e"
+      }
+    },
+    {
+      "id": "D2",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-01/acceptance/D2.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9b0a6332fea8480283a898e5c01a6ed9\\round-01\\acceptance\\D2.txt": "c9c52b677500c0538703f0c928a3626e290dde01174bbaffe92018c48333527b"
+      }
+    },
+    {
+      "id": "D3",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-01/acceptance/D3.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9b0a6332fea8480283a898e5c01a6ed9\\round-01\\acceptance\\D3.txt": "aea9a3a5bb1cc3b172667371cb9d6a760077758f2fc5f4ea6eb0a8f591e86ef6"
+      }
+    },
+    {
+      "id": "D4",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-01/acceptance/D4.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9b0a6332fea8480283a898e5c01a6ed9\\round-01\\acceptance\\D4.txt": "424935cebbbffb741c427e0aba3f662d4bad2378bddf86cbca6fe4b2b298e886"
+      }
+    },
+    {
+      "id": "D5",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-01/acceptance/D5.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9b0a6332fea8480283a898e5c01a6ed9\\round-01\\acceptance\\D5.txt": "943d861dff39b04e186c73e7535a8dd2b5472df6114ba6357e8f7e5519946913"
+      }
+    },
+    {
+      "id": "D6",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-01/acceptance/D6.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9b0a6332fea8480283a898e5c01a6ed9\\round-01\\acceptance\\D6.txt": "fce2fabd5d518f31656d41d0c4e7e55a70d5c7e9d0c42d7be2f170bdb19c1ce2"
+      }
+    },
+    {
+      "id": "D7",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-01/acceptance/D7.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9b0a6332fea8480283a898e5c01a6ed9\\round-01\\acceptance\\D7.txt": "73556fd2816f47a3133ef57f37453a396557f430d6919c9e66ac5a5a658378a5"
+      }
+    }
+  ]
+}

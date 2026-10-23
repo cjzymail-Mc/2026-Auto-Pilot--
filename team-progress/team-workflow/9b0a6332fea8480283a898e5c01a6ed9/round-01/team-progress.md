@@ -1,0 +1,1 @@
+（空占位说明：本文件由 B 在 round-2 初始化时误 cp 已被 helper 清空的根 team-progress.md 产生，无内容、可忽略/待人工清理。round-1 progress 正本 = 本目录 `execution/team-progress.md`，sha256=83c7f24a329c3b5ad6a4c916566cffbd46cee7010aa6e7a44b02ee8eef922bbe，与 .team-workflow-state.json last_live 一致。）

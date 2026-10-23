@@ -1,0 +1,17 @@
+A 独立验收 D1（操作边界与业务正确性保持）— 2026-10-23，PASS_DYNAMIC
+方法：A 直接检查实物/原始数据，不采信 B 自述。
+1. attempt_025 stage1_result.json 实读：fill_summary total=32 matched=29 mismatch=[]（零 mismatch）；
+   finish_reason=SUCCESS_FILL_ONLY；budget_respected=true；expect_name=陈晶。
+   三项未匹配恰为结构性留空：not_in_form=[project_note/项目说明, project_note/行程说明]，
+   form_not_in_template=[header/报销类别(submitType)] —— 无猜填补分。
+2. no_save_guard：stage1_browser_probe.py :60 NO_SAVE_WORDS、:1377-1378 _click_guard 拒绝逻辑在源码；
+   结果文件 no_save_guard 字段声明未点击保存/发送/流转/提交/上传/暂存/贴票/终止/返回。
+3. 防御性等待原样：set_default_timeout(45000)（:2958，值不变）、wait_for_timeout(600)×3（:1623/:1951/:2022）。
+   SESSION_TTL=10h（:67）系冻结合同前既有改动，AGENTS.md「2026-10-23 由 4h 调整」预先登记，非本轮。
+4. selftest A 独立复跑：python -X utf8 stage1_probe_selftest.py → SELFTEST ALL PASS（12 组用例）exit 0。
+5. events.jsonl 追加式：前 521 行前缀 sha256 复现终审值 6c29c7fe…，L522 为 keep_open_end 生命周期标记。
+6. 凭证红线：.pw-profile 由 .gitignore:2 忽略、git ls-files 零跟踪；events.jsonl 中 session_state_saved/injected
+   事件仅记条数（cookies: 2），无 token/Authorization/cookie 值；报告 0 命中。
+7. legacy-ia2/ 无改动（git status 无该路径）；既有未提交工作区 M 文件与 round-01 source 保留项清单一致。
+8. §6 后续建议未被转为本次必做项；跨重启恢复未混入。
+结论：round-1 交付范围内 D1 成立。优化轮仍须逐轮复核本条。

@@ -1,0 +1,9 @@
+A 独立验收 D7（交接完整且独立验收成立）— 2026-10-23，PASS_DYNAMIC
+1. handoff-input.json artifacts 四件 hash A 全部实算复核：stage1_browser_probe.py=3275d51d…、
+   报告=7ca43f07…、events.jsonl=ff9e09c0…（全文件）、attempt_025/stage1_result.json=76af2353… —— 全 MATCH。
+2. events.jsonl 前缀完整性：前 521 行 sha256=6c29c7fe… 复现 mc-expert 终审绑定值；L522 keep_open_end 纯追加。
+3. evidence 三路径在盘非空：execution-check.txt / team-progress.md / attempt_025/stage1_result.json。
+4. B 完成合法性：progress COMPLETE+P6✓、漏斗 P0-P6、合同 ctr-d1e7876b 链验 PASS、helper finish 通过（A_REVIEW 交接）。
+5. A 独立验收流程：本轮重读冻结基线（hash 4b5b386a… 核对一致）、按 criteria D1-D7 逐条对实物核验（见同目录），
+   后对照 B 报告；差异已记录（D2 缺口、D3 小瑕疵、D4/D5/D6 未执行）。
+6. 本轮无人工门/熔断/同 key 三次失败；LIMIT/WAIT_HUMAN 未被包装为完成。

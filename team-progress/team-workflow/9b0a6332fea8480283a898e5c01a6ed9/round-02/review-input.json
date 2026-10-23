@@ -1,0 +1,14 @@
+{
+  "decision": "pass",
+  "summary": "Round 2（合同 ctr-a10bb3f6）全量独立验收通过：D1–D7 全部 PASS_DYNAMIC，失败字典 D2 key 闭合。A 独立复核要点：①基线 hash 未漂移，handoff 10 项工件哈希全对，events.jsonl 前 522 行字节不变（追加式机械证明），全文 hash 一致；②attempt_026 = SUCCESS_FILL_ONLY、29/32 零 mismatch、budget_respected=True、结构性留空三项与 024/025 同级不猜填，tech 107.6s（round-1 330.0s）；③D2 三处 inner_exc 吞前留痕逐行核验（:1804/:1857/:2094，exc/dur/attempt/attempts/behavior，原 continue/pass 语义不变），真实轮 inner_exc=0 系守卫前置拦截所致，可见性由离线阳性对照机械证明（E2 TimeoutError×2 + outcome=timeout 8025/8017ms；E3 attempt1 timeout→attempt2 ok），五类离线场景 34/34 在盘（首跑 33/34 失败迭代工件保留）；④D4-a overlay_pick_row 45822→825ms（count() 场景判据：浮层关=选中/浮层开=fail-loud 不默认成功，A2 夹具证失败路径 1.4s），D4-b cell_fill 预算科目 91803→1654ms（readOnly/disabled 阳性证据才 skip，双击挂载可写编辑器 D 夹具证不误伤，fill 显式 8s 局部超时），预算联动 final_reread matched 不变，≥45000ms 段 6→0；全局 45000/600ms/NO_SAVE 锚点代码逐条核验未动；⑤selftest A 本机独立复跑 13 组全绿（T9 新增红线锚点不变量）；⑥recalc_timeline.py A 独立重跑，025（308.6/286.0/273.0/12.9/22.6）与 026（101.6/97.1/86.6/10.5/4.4）逐项吻合 round-1 报告、A round-1 复算与 handoff 三方；⑦报告三处修订（§3 缝隙拆解 12.9+22.6 闭合 308.6、§5 后记、附录 D）带合同标记不改写历史；对照文档含目标调用级+整单三口径表、已知差异声明、历史单次观测并列、120~180s 明示实验目标非承诺；⑧红线：无 save 类事件（词过滤命中仅为红线声明文本）、session_state 仅记条数、legacy-ia2 零改动、无 force/JS-click、字段级事件脱敏。P2 四项挂账透明（P2-1/P2-2 代码瑕疵列后续轮候选、P2-3 git commit/P2-4 legacy 清理属用户侧），基线 §6 明示不要求，不构成缺口；保存授权口径仍悬于用户侧（如实未越权处理）。failure_counts 承接 round-1 历史 key（D2 计数 1 为历史累计记录，本轮 D2 已 PASS_DYNAMIC 修复闭合，未新增失败）。全部 criteria PASS_DYNAMIC + B 合法完成 → DONE。",
+  "failure_counts": {"review|content|internal_exception_unrecorded|D2": 1},
+  "checks": [
+    {"id": "D1", "status": "PASS_DYNAMIC", "evidence": ["team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-02/acceptance/D1.txt"]},
+    {"id": "D2", "status": "PASS_DYNAMIC", "evidence": ["team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-02/acceptance/D2.txt"]},
+    {"id": "D3", "status": "PASS_DYNAMIC", "evidence": ["team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-02/acceptance/D3.txt"]},
+    {"id": "D4", "status": "PASS_DYNAMIC", "evidence": ["team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-02/acceptance/D4.txt"]},
+    {"id": "D5", "status": "PASS_DYNAMIC", "evidence": ["team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-02/acceptance/D5.txt"]},
+    {"id": "D6", "status": "PASS_DYNAMIC", "evidence": ["team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-02/acceptance/D6.txt"]},
+    {"id": "D7", "status": "PASS_DYNAMIC", "evidence": ["team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-02/acceptance/D7.txt"]}
+  ]
+}

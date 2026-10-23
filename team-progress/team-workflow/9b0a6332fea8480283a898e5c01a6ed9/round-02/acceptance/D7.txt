@@ -1,0 +1,23 @@
+D7 过程纪律（工件权威/追加式/脱敏/不越权）— PASS_DYNAMIC（A 独立复核）
+
+A 独立证据：
+1. 基线完整性：冻结基线 hash 4b5b386ae60f9df0f94de7e578a076c0b92bdefbd5834b99b21a09e02b3f3492
+   本轮 review 开始时复核未漂移；criteria sha256 65f26731… 沿用，七项逐条覆盖（见各 D*.txt）。
+2. 交接工件哈希 10/10 全对（A 逐一复算 sha256 与 handoff.artifacts/evidence_hashes 比对：
+   探针/selftest/offline 脚本/offline_result/events.jsonl/stage1_result/recalc/
+   对照文档/修订报告/team-progress.md）。
+3. events.jsonl 追加式机械证明：前 522 行（round-1 终态）字节不变
+   （prefix sha256 == ff9e09c0…），762 行全文 == handoff 声明 6104848f…。
+4. 脱敏：全部新增事件类型（inner_exc/cell_input_skip/pick_row_detached/
+   fill_field_result）无凭证、无回读值、无敏感请求；session_state 事件仅记条数/origin。
+5. B 完成合法性：outcome=complete，helper 归档 handoff 可读；合同 ctr-a10bb3f6；
+   失败字典 D2 key 本轮闭合（无二次失败，无需 FIRST_FAILURE_MXP_REVIEW 陪审，
+   触发/跳过原因记录在案）；ENHANCED_FINAL fresh mc-expert GO 为加分项（A 不采信
+   陪审结论，全部判据 A 独立复核得出）。
+6. 越权检查：无越权修复（A 本轮只写 round-02/acceptance/ 验收证据，未动 B 的合同/
+   progress/业务产物）；未把人工门改自动返工——保存授权仍如实悬于用户侧。
+7. 挂账透明：P2-1（header 字段 status="None" 字符串瑕疵）/P2-2（recalc _ln 死字段）
+   列后续轮候选，P2-3 git commit / P2-4 legacy 清理归用户侧，均在 team-progress.md
+   如实记录——不构成验收缺口（基线 §6 明示不要求）。
+
+结论：全程工件权威、追加式、脱敏、无越权。PASS_DYNAMIC。

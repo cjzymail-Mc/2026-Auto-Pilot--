@@ -1,0 +1,24 @@
+{
+  "outcome": "complete",
+  "summary": "round-2（合同 ctr-a10bb3f6，A review rework 五项）全部完成并经 fresh mc-expert ENHANCED_FINAL 终审 VERDICT=GO（六维全 PASS，哈希绑定 10 项零漂移）。D2 内层观测补齐：探针三处内层 except 吞前留痕（inner_exc 事件，where=cell_activate/cell_input_write/pick_row_verify）+ 激活/写入全程 attempt/attempts 序号 + 字段级 fill_field_result×32 落盘；可见性由离线阳性对照证明（E2/E3 夹具真实产生 inner_exc×3，automation/offline-verify/20261023-125333-offline/ 34/34）。D4-a 单据类型浮层死等消除：overlay_pick_row 45822ms→825ms（row detach 后按浮层开/关场景判据：关=row_detached_overlay_state 判选中、开=fail-loud 不默认成功）。D4-b 预算科目格死等消除：cell_fill 91803ms→1654ms（只读阳性证据才 cell_input_skip×2，可写延迟挂载编辑器不误伤，fill 显式 8s 局部短超时）。全窗口 ≥45000ms 计时段 6→0；全局默认超时 45000 与 600ms 防御轮询原值未动（selftest 红线锚点锁定）。D5 整单实测 attempt_026：SUCCESS_FILL_ONLY，tech=107.6s（round-1 为 330.0s），29/32 零 mismatch，budget_respected=True，结构性留空 3 项不猜填；反向对照 p-dialog 预算联动 1813/1821ms 原链无损。D6/D3：统一复算脚本 docs/路线与评估/recalc_timeline.py（025 复算 308.6/286.0/273.0/12.9/22.6s 与 round-1 报告及 A 复算口径精确吻合；026=101.6/97.1/86.6/10.5/4.4s）；round-1 报告三处修订 diff 可证（§3 缝隙拆解 + §5 后记 + 附录 D，历史结论未改写）；新对照文档含已知差异如实声明（单次观测非受控 A/B、120~180s 实验目标非承诺）。selftest 13 组全绿（T9 新增不变量）。尚存事项：失败字典 key review|content|internal_exception_unrecorded|D2 本轮一次做对已闭合；P2 非阻断建议 4 项挂账 team-progress.md（P2-3 git commit / P2-4 legacy 清理属用户侧，P2-1/P2-2 代码瑕疵列后续轮候选）；保存授权口径澄清仍悬于用户侧（不属本轮范围）。红线全程：只填不存（026 词过滤零 save 类事件）、.pw-profile 零外泄、events.jsonl 仅追加（前 522 行 round-1 终态字节不变）、legacy-ia2 零改动。",
+  "artifacts": {
+    "stage1_browser_probe.py": "8b3caf86370bafaa8b2dae794cc3df7e2f48cdbe3ac574bc52fe44a135bb9b07",
+    "stage1_probe_selftest.py": "dd08100d70c0e7838d54ca5f0b121528189a972252bbe1e062911d295ed3845e",
+    "stage1_offline_verify.py": "e4558e1cc417d83671e1a1e3288522b4203cdf4f9b3bdff35766f55a3c28ac14",
+    "automation/offline-verify/20261023-125333-offline/offline_result.json": "51b385878fe9366b80a61f9cc08e0e98181668f6c0ee5270c5ece1ec1b307646",
+    "automation/runs/20261021-131724-1c1aadbd/events.jsonl": "6104848f1fe8b40331783606dd6bfe54f153b989a03b5644cfbb00dcc9adb91e",
+    "automation/runs/20261021-131724-1c1aadbd/attempt_026/stage1_result.json": "cb1d53db1fc6f6f6832648557f988ba027221deb676c630f0cf03f11f32f5b8c",
+    "docs/路线与评估/recalc_timeline.py": "b14d3859904118708d524e9521eaa9390d7adf5a57ebf6ac7291085c70d1735a",
+    "docs/路线与评估/2026-10-23-round2-死等消除与内层观测-前后对照.md": "3745d3729b3363ce9fdca58583722f6747d3740b78eeae94904b8721fa36746a",
+    "docs/路线与评估/2026-10-23-报销单填写耗时-动作级计时证据链.md": "259952922c56d48dfdc4bb7ffcc6fb930120edb96841b5961e10cca50d1cb7d0",
+    "team-progress.md": "3809a6337d831934d2476ad418651dbe1a1121040d5047c7c17d5e69444bbd91"
+  },
+  "evidence": [
+    "automation/offline-verify/20261023-125333-offline/offline_result.json",
+    "automation/offline-verify/20261023-125333-offline/events.jsonl",
+    "automation/runs/20261021-131724-1c1aadbd/attempt_026/stage1_result.json",
+    "automation/runs/20261021-131724-1c1aadbd/attempt_026/evidence/fill_readback.json",
+    "automation/runs/20261021-131724-1c1aadbd/events.jsonl"
+  ],
+  "failure_counts": {"review|content|internal_exception_unrecorded|D2": 1}
+}

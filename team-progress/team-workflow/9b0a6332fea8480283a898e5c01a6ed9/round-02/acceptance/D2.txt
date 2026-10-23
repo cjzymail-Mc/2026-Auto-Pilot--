@@ -1,0 +1,35 @@
+D2 内层观测补齐（吞掉前留痕 + 尝试序号 + 五类离线验证）— PASS_DYNAMIC（A 独立复核）
+
+round-1 FAIL 缺口：159 条 timing 全 ok、exc 全空，两处内层 except 吞掉的 TimeoutError
+事件层不可见；无尝试序号；五类离线验证缺失。
+
+A 独立证据（round-2）：
+1. 三处 inner_exc 吞前留痕（代码逐行核验，语义不变）：
+   - stage1_browser_probe.py:1804 where=cell_activate——t_act 起点 :1794，exc 类型名 +
+     dur_ms + behavior="continue_next_act"，随后原 continue；
+   - :1857 where=cell_input_write——同结构留痕后原 continue（dur 由 timing 子事件
+     cell_input_write outcome=timeout|error 承载）；
+   - :2094 where=pick_row_verify——留痕后仍落勾选框兜底（behavior=pass_to_checkbox_fallback）。
+   异常处理原流程未改（该 pass 仍 pass、该 continue 仍 continue）；未把 45s 改标 timeout。
+2. 尝试序号/总次数：激活循环 enumerate(("dblclick","click"),1)（:1793），
+   cell_activate/cell_input_write/cell_input_skip/pick_row_verify 全带 attempt/attempts
+   （:1796/:1844/:1848/:1836/:2087）。真实轮 026：attempt_numbered_activate=22（A 复算）。
+3. 真实轮（attempt_026）观测落盘：cell_input_skip×2（L670/L672，reason=
+   readonly_or_disabled，attempt=1/2）、pick_row_detached×1（L553 overlay_open=False
+   chk=row_detached_overlay_state）+ fill_overlay_row selected=true（L554）、
+   fill_field_result×32、pick_row_verify ok×3（dur 27-30ms）。字段失败返回值
+   （CELL_NOT_EDITABLE/NOT_IN_FORM/FORM_FIELD_NOT_IN_TEMPLATE）进 fill_field_result。
+4. 真实轮 inner_exc=0 的定性：两处死等路径被守卫提前拦截、未走到 except——无被吞异常
+   发生（期望行为），非观测缺失。可见性由离线阳性对照机械证明：
+   automation/offline-verify/20261023-125333-offline/ 34/34——
+   E2 夹具：inner_exc×2（exc=TimeoutError）+ cell_input_write×2 outcome=timeout
+   （dur 8025/8017ms ≈8s 局部短超时，非 45s）后仍 CELL_NOT_EDITABLE（语义不变）；
+   E3 夹具：attempt1 timeout 留 inner_exc、attempt2 ok 返回 OK（再次尝试可成功）。
+5. 五类离线场景全在盘（A 逐条读 offline_result.json 断言）：
+   A 正常成功（4）、E1 缺失元素（4，无 inner_exc/skip/write 如实）、C 不可编辑（4）、
+   E2 内部捕获后继续（4）、E3 再次尝试（3）+ A2 失败路径（4）+ GLOBAL 无 ≥45s 段（1）。
+   首跑 33/34 失败迭代工件 20261023-125133-offline/ 保留（诚实记录）。
+6. selftest T9 静态不变量锁定观测件在场（A 复跑 13 组全绿）。
+
+结论：round-1 预言的观测缺口已闭合，可见性有离线阳性对照与代码双重证明。PASS_DYNAMIC。
+失败字典 key review|content|internal_exception_unrecorded|D2 本轮一次做对 → 闭合。

@@ -1,0 +1,18 @@
+A 独立验收 D2（观测能识别被内部捕获的异常及重试）— 2026-10-23，FAIL（部分达标，核心缺口在）
+已达标部分（A 复算证实）：
+- 动作身份/起止/耗时：159 条 timing（fill 窗口 158），字段 action/t0_ms/dur_ms/outcome/exc + where/section/row/field 定位。
+- 父子包含区间可判定：L466 cell_fill(预算科目,dur=91803) 完整落在 L471 table_row_fill(detail_summary,dur=110876) 区间内，
+  A 按区间包含关系复算顶层段，嵌套未重复相加。
+未达标缺口（对基线 §4 D2 逐条）：
+1. 尝试序号及总尝试次数：_timing（:988-1004）仅记 with 边界 ok|timeout|error/exc，无 attempt/retry 计数字段；
+   _fill_ng_cell 激活循环（dblclick→fill→click→fill）逐次尝试无序号。
+2. 在 except 吞掉之前记录脱敏异常类型：_pick_row :2025-2030 `except Exception: pass`、
+   _fill_ng_cell :1823 `except Exception: continue` 均原样吞掉、吞掉前无任何记录 —— 与基线 §2 预言的观测缺口
+   完全一致：attempt_025 全部 159 条 timing outcome=ok、exc 全空，两大死等（45822ms/91803ms）的内部
+   TimeoutError 在事件层不可见，归因仍靠「dur≈45000×N + 代码路径 + E1/E2 离线复证」三角推断
+   （报告 §4.4 已如实声明此限制——措辞诚实，但观测能力本身未达 D2）。
+3. 区分「函数正常返回/业务结果成功/内部捕获过异常」：外层 outcome=ok 覆盖内部超时，字段失败返回值
+   （CELL_NOT_EDITABLE）未进业务结果事件。
+4. 五类离线验证（正常成功/缺失元素/不可编辑/内部捕获后继续/再次尝试）：未交付；E1/E2 仅复证
+   get_attribute/fill 的等待语义，非对观测埋点的五类验证。
+failure_counts 登记：review|content|internal_exception_unrecorded|D2 = 1（首次判定，非重复失败）。

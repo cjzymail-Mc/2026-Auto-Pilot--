@@ -1,0 +1,21 @@
+{
+  "outcome": "complete",
+  "summary": "Round 1 完成（合同 ctr-d1e7876b，只加观测不改行为）：stage1_browser_probe.py 新增 _timing 上下文管理器 + 45 处包裹（diff +263/-186 = 176 纯缩进配对 + 10 行实质（5 SESSION_TTL 前置改动 + 5 等价重构），所有 wait/timeout 数值原样，selftest ALL PASS exit 0）；fill_once 实测 attempt_025：fill 跨度 308.6s、158 条 timing 事件、0 timeout/error，29/32 零 mismatch SUCCESS_FILL_ONLY budget_respected=true（与 attempt_024 同级，观测未扰动行为）；报告落盘并经 fresh mc-expert 三轮终审 GO（HASH_VALIDITY=VALID / UNVERIFIED_SCOPE=NONE）。两大疑点定论：45s=_pick_row 选中态 get_attribute(:2026) 点行关浮层行 detach 默认超时死等（except 吞，选点已成功，H1/H2/H3 证伪）；汇总行 ~101s 中 91.8s=预算科目格 inp.fill(:1819) 默认超时×2（readonly 列挂不可操作 input，终值由预算联动回填）；合计 ~137s 纯死等可安全消除（修法已入报告 §4）。events.jsonl 终审后纯追加 1 行 keep_open_end（L522），前 521 行前缀 hash 复现终审值，交接绑新鲜全文件 hash。B 已 COMPLETE+P6✓，等 A 验收。证据细节（终审三轮记录、红线遵守、追加核验）见 execution-check.txt 与 team-progress.md。",
+  "artifacts": {
+    "stage1_browser_probe.py": "3275d51d28151a71973d1e6b27689418342a46040df94d5367f4d72cd7ebeefe",
+    "docs/路线与评估/2026-10-23-报销单填写耗时-动作级计时证据链.md": "7ca43f075d409c20c144fae471b25749bd13113b593b1ec5c9b48a596285a024",
+    "automation/runs/20261021-131724-1c1aadbd/events.jsonl": "ff9e09c0970aa100e97289931cfe4df06ba11373ee8e133dba2582254ee9ed23",
+    "automation/runs/20261021-131724-1c1aadbd/attempt_025/stage1_result.json": "76af23539b7036c8af3c5e75bff8632013f7cf126402240d87626cb837505925"
+  },
+  "evidence": [
+    "team-progress/team-workflow/9b0a6332fea8480283a898e5c01a6ed9/round-01/execution-check.txt",
+    "team-progress.md",
+    "automation/runs/20261021-131724-1c1aadbd/attempt_025/stage1_result.json"
+  ],
+  "failure_counts": {},
+  "evidence_hashes": {
+    "team-progress\\team-workflow\\9b0a6332fea8480283a898e5c01a6ed9\\round-01\\execution-check.txt": "cfd8d4735babff2dd34a55c71ed368f674adce8429a8bd98b727d761922a3cab",
+    "team-progress.md": "83c7f24a329c3b5ad6a4c916566cffbd46cee7010aa6e7a44b02ee8eef922bbe",
+    "automation\\runs\\20261021-131724-1c1aadbd\\attempt_025\\stage1_result.json": "76af23539b7036c8af3c5e75bff8632013f7cf126402240d87626cb837505925"
+  }
+}

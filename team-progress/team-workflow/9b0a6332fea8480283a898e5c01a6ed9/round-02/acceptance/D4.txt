@@ -1,0 +1,38 @@
+D4 两处死等消除（前置判据/优化/后置条件/失败路径）— PASS_DYNAMIC（A 独立复核）
+
+A 独立证据（代码 + 真实轮 events + 离线夹具三重）：
+
+D4-a 单据类型 dropdown 死等（round-1: overlay_pick_row 45822ms @ L365）：
+1. 前置判据（:2062-2077 逐行核验）：点击后 row_loc.count()==0（瞬时返回不等待，
+   同型先例 _cell_info 守卫）区分场景——行 detach=「点行即关」dropdown；行在挂=
+   确认式 p-dialog（走原 get_attribute 核验路径 :2087-2090，行为不变）。
+2. 优化：detach 后不再对失效定位器 get_attribute 等满 45s；改判浮层状态——
+   浮层关=点击即选中提交（PrimeNG 语义，chk=row_detached_overlay_state）；
+   浮层开=未提交，fail-loud 留痕（DETACHED-UNCOMMITTED + _dump_rows_evidence）
+   返回空按未选中收口，不默认成功。
+3. 真实轮实测：overlay_pick_row(关联单据/单据类型) 45822→825ms（L555，A 从
+   events.jsonl 复算）；L553/554 判据事件落盘；单据类型回读 matched（29/32 内）。
+4. 失败路径离线证明：A2 夹具——行消失但浮层仍开 → res=False、无 fill_overlay_row
+   早退 + fill_pick_miss 留痕、wall 1.4s（无 45s 死等）。
+5. 确认式弹表不误伤：B 夹具 pick_row_verify 即时返回 + selected=True + confirm=确定
+   弹窗关闭；真实轮 p-dialog 预算联动 1813/1821ms（round-1 1861/1893ms 同级无损），
+   pick_row_verify ok×3。
+
+D4-b 预算科目格死等（round-1: cell_fill 91803ms = 45s×2 @ L466）：
+1. 前置判据（:1823-1840 逐行核验）：挂载 input 后 evaluate 读 {tag, readOnly||disabled}
+   ——仅凭阳性证据（ro=True）才 cell_input_skip；「当前没有 input」（count==0）不判
+   只读（直接落到激活重试，不产生 skip）。双击后才挂载的可写编辑器 ro=False 照常 fill。
+2. 优化：skip×2（dblclick/click 各一次）后不再对只读回显列 fill 死等；可写路径
+   fill/select_option 显式 timeout=8000 局部短超时（:1846/:1850，行点击 timeout=8000
+   同型先例）——基线明示允许的局部显式超时，全局 45000 原值未动。
+3. 后置条件：预算三字段（部门/科目/项目）仍由预算联动带出 + final_reread 严格回读
+   match=True，budget_respected=True 不变（stage1_result + fill_field_result 双证）。
+4. 合法编辑器不误伤：D 夹具——双击挂载可写编辑器返回 OK、回读=写入值、
+   cell_input_write how=fill outcome=ok；E3 夹具 attempt2 成功路径在场。
+5. 真实轮实测：cell_fill(预算科目) 91803→1654ms（L673，A 复算）+ cell_input_skip×2
+   （L670/L672 带 reason=readonly_or_disabled + attempt 序号）。
+
+全窗口 ≥45000ms 计时段：6→0（A 用 B 交付的 recalc_timeline.py 独立重跑两轮扫描所得）。
+全局默认超时 45000、600ms 防御轮询、Tab blur+3×回读原值未动（代码锚点 + selftest T9）。
+
+结论：两处消除均定位到目标调用本身，判据/守卫/失败路径三件齐，确认式路径无损。PASS_DYNAMIC。

@@ -1,0 +1,8 @@
+A 独立验收 D5（验证覆盖真实控件机制与整单结果）— 2026-10-23，FAIL（部分达标；主体未执行）
+已达标（round-1 范围内）：
+- selftest：A 独立复跑 ALL PASS exit 0；B/mc-expert 记录其在真实填写（11:03）前运行（execution-check.txt §1）。
+- 埋点实测轮 attempt_025 工件齐备：events.jsonl/stage1_result.json/回读/终局截图，满足 D1（29/32 零 mismatch）。
+未执行（依赖 D4 优化，属 round-2 计划项）：
+- 四类局部验证（点击后消失浮层/需选中确认弹表/预算不可编辑回显/双击挂载编辑器）未交付；
+- 「覆盖两个目标场景的优化后真实填写」不存在（attempt_025 为优化前观测轮）。
+不计入 failure_counts（未执行计划项）。

@@ -1,0 +1,18 @@
+A 独立验收 D3（分解与根因报告可复算、措辞符合证据强度）— 2026-10-23，PASS_DYNAMIC
+A 用自写脚本从 automation/runs/20261021-131724-1c1aadbd/events.jsonl 独立重算（不采信报告数字）：
+- 关键事件逐行复核：L365 overlay_pick_row(关联单据/单据类型) dur=45822 outcome=ok；L367 overlay_pick 45936；
+  L380 overlay_dump_candidates 17513；L392 table_pick(单号) 27858；L466 cell_fill(预算科目) 91803；
+  L471 table_row_fill(detail_summary) 110876；L487/L505 预算联动 overlay_pick_row 1861/1893（反向对照）——全对。
+- 总量：timing 全文件 159 条 / fill 窗口（L342 fill_start 11:03:37 → L519 fill_end 11:08:47）158 条；
+  outcome 分布 ok=159，timeout/error=0；probe_end 11:08:53。
+- 跨度与顶层：span（first_t0 11:03:37.334 → last_end 11:08:45.927）=308.6s；
+  顶层段复算 detail_summary 110.9 + related_doc 87.1 + expense_detail 49.3（22.2+27.1）+ budget_pick 13.0
+  + header 8.1 + bank 3.1 + 杂项 2.0 = 273.4s；缝隙 35.2s 已声明构成（related_once 9.8s 明示 + 胶水）。
+- 措辞与证据强度：H1/H2/H3 证伪、M1 证实细化、M3 证伪均有实测数（dialog_element_handle ≤22ms 等）；
+  45s/91.8s 归因明确标注「靠三方互证，非直接计时点」（§4.4）；TTL 改动与 diff 176+10 归因在附录 C，
+  SESSION_TTL 前置改动与 AGENTS.md 登记吻合；跨轮波动（232s↔308.6s）如实并列为结构分解依据。
+小瑕疵（不动摇可复算性，转下轮报告修订）：
+- A 区间复算得顶层 18 事件合计 286.0s；报告 35.2s「未细包缝隙」桶中除明示的 related_once 9.8s 外，
+  还含 ~2.4s 已埋点 screenshot 时长（L344/453/472），以「say/截图间隔」带过、未单列为已覆盖段。
+- 报告未附统一复算脚本（关键数值已行号锚定、单值可 sed 复核；A 本次以自写脚本复算通过）。
+上述两项已写入 round-2 任务（缝隙桶单列 + 附复算脚本）。

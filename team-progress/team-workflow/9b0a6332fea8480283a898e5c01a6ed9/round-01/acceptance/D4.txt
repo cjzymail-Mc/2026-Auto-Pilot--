@@ -1,0 +1,7 @@
+A 独立验收 D4（两处已确认无效操作完成局部优化）— 2026-10-23，FAIL（计划项未执行，非重复失败）
+round-1 合同（ctr-d1e7876b）明确「只加观测不改行为」：报告 §3.2/§4.1/§4.2 均明言修法「本轮未动」，
+代码复核确认——_pick_row :2026 get_attribute 仍无显式超时、:1829 仍裸 except:pass；
+_fill_ng_cell :1819 inp.fill 仍无显式超时、:1823 仍 except:continue。attempt_025 中
+overlay_pick_row=45822ms、cell_fill(预算科目)=91803ms 两处死等仍在（A 复算证实）。
+按基线 D7 纪律记为「普通尚未执行的计划项=未完成」，不计入 failure_counts。
+观测基础已备齐（前置判据/后置条件/失败路径所需事实已入报告 §4 + 本轮 acceptance/D2/D3），转 round-2 执行。

@@ -1,0 +1,23 @@
+D5 验证与优化后真实填写 — PASS_DYNAMIC（A 独立复核）
+
+A 独立证据：
+1. selftest A 本机独立复跑（非采信 B 输出）：python -X utf8 stage1_probe_selftest.py
+   → SELFTEST ALL PASS（13 组，T1–T9 + 状态机 + 回归守卫）。T9 为本轮新增不变量
+   （D2 观测件/D4 局部守卫在场 + set_default_timeout(45000)==1 + wait_for_timeout(600)
+   在场 + get_attribute 不贴 timeout 标签）。
+2. 四类局部验证场景（离线夹具，真实方法驱动，34/34）：
+   - 点击后消失的浮层：A 夹具（res=True + pick_row_detached overlay_open=False，无死等）；
+   - 需选中+确认的表格弹窗：B 夹具（pick_row_verify + selected=True + confirm=确定）；
+   - 预算不可编辑回显字段：C 夹具（CELL_NOT_EDITABLE 语义不变 + skip×2 + 无任何
+     fill/select_option 发起 + wall 1.3s，旧路径 91.8s）；
+   - 双击后才挂载的合法编辑器：D 夹具（OK + 回读=写入值 + cell_input_write ok）。
+3. 优化后真实整单一轮：attempt_026（run 20261021-131724-1c1aadbd）完整工件在盘——
+   stage1_result.json（hash cb1d53db…）、fill_readback.json（hash 6ac1750b…）、
+   fill_final_grid.json、fill_dialog_rows.jsonl、终局截图 fill_99_after.png 及全套
+   过程截图/HTML/DOM map（A 列目录核实 19 件）。
+4. 非退化判定（A 直读 stage1_result）：SUCCESS_FILL_ONLY，29/32 零 mismatch，
+   budget_respected=True，login_wait=0.0，tech_used_s=107.6（round-1 为 330.0），
+   结构性留空三项与 024/025 完全一致、不猜填。
+5. 无人工门/资源阻断情节（登录态当日新鲜直注），不适用 WAIT_HUMAN 分支。
+
+结论：selftest + 四类局部验证 + 优化后真实填写三件全齐且 A 独立复跑复证。PASS_DYNAMIC。
