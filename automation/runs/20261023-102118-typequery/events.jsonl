@@ -1,0 +1,34 @@
+{"event": "profile_lock_acquired", "pid": 11688, "ts": "2026-10-23T10:21:18"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 737, "ts": "2026-10-23T10:21:24"}
+{"event": "type_query_start", "dept": "运动表现研究部", "mode": "readonly", "ts": "2026-10-23T10:21:24"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 10.0, "ts": "2026-10-23T10:21:30"}
+{"event": "org_picker_opened", "row": "CreatedPath", "ts": "2026-10-23T10:21:42"}
+{"event": "org_node_clicked", "row": "CreatedPath", "picked": "运动表现研究部", "ts": "2026-10-23T10:21:44"}
+{"event": "org_dialog_confirmed", "row": "CreatedPath", "btn": "确定", "ts": "2026-10-23T10:21:45"}
+{"event": "list_page_read", "tag": "dept", "page": 1, "rows_new": 20, "total_seen": 20, "page_text": "123 共 469 条 20", "ts": "2026-10-23T10:21:49"}
+{"event": "list_page_read", "tag": "dept", "page": 2, "rows_new": 20, "total_seen": 40, "page_text": "123 共 469 条 20", "ts": "2026-10-23T10:21:51"}
+{"event": "list_page_read", "tag": "dept", "page": 3, "rows_new": 20, "total_seen": 60, "page_text": "234 共 469 条 20", "ts": "2026-10-23T10:21:53"}
+{"event": "list_page_read", "tag": "dept", "page": 4, "rows_new": 20, "total_seen": 80, "page_text": "345 共 469 条 20", "ts": "2026-10-23T10:21:55"}
+{"event": "list_page_read", "tag": "dept", "page": 5, "rows_new": 20, "total_seen": 100, "page_text": "456 共 469 条 20", "ts": "2026-10-23T10:21:57"}
+{"event": "list_page_read", "tag": "dept", "page": 6, "rows_new": 20, "total_seen": 120, "page_text": "567 共 469 条 20", "ts": "2026-10-23T10:21:59"}
+{"event": "list_page_read", "tag": "dept", "page": 7, "rows_new": 20, "total_seen": 140, "page_text": "678 共 469 条 20", "ts": "2026-10-23T10:22:01"}
+{"event": "list_page_read", "tag": "dept", "page": 8, "rows_new": 20, "total_seen": 160, "page_text": "789 共 469 条 20", "ts": "2026-10-23T10:22:03"}
+{"event": "list_page_read", "tag": "dept", "page": 9, "rows_new": 20, "total_seen": 180, "page_text": "8910 共 469 条 20", "ts": "2026-10-23T10:22:05"}
+{"event": "list_page_read", "tag": "dept", "page": 10, "rows_new": 20, "total_seen": 200, "page_text": "91011 共 469 条 20", "ts": "2026-10-23T10:22:07"}
+{"event": "list_page_read", "tag": "dept", "page": 11, "rows_new": 20, "total_seen": 220, "page_text": "101112 共 469 条 20", "ts": "2026-10-23T10:22:10"}
+{"event": "list_page_read", "tag": "dept", "page": 12, "rows_new": 20, "total_seen": 240, "page_text": "111213 共 469 条 20", "ts": "2026-10-23T10:22:12"}
+{"event": "list_page_read", "tag": "dept", "page": 13, "rows_new": 20, "total_seen": 260, "page_text": "121314 共 469 条 20", "ts": "2026-10-23T10:22:14"}
+{"event": "list_page_read", "tag": "dept", "page": 14, "rows_new": 20, "total_seen": 280, "page_text": "131415 共 469 条 20", "ts": "2026-10-23T10:22:16"}
+{"event": "list_page_read", "tag": "dept", "page": 15, "rows_new": 20, "total_seen": 300, "page_text": "141516 共 469 条 20", "ts": "2026-10-23T10:22:18"}
+{"event": "list_page_read", "tag": "dept", "page": 16, "rows_new": 20, "total_seen": 320, "page_text": "151617 共 469 条 20", "ts": "2026-10-23T10:22:21"}
+{"event": "list_page_read", "tag": "dept", "page": 17, "rows_new": 20, "total_seen": 340, "page_text": "161718 共 469 条 20", "ts": "2026-10-23T10:22:23"}
+{"event": "list_page_read", "tag": "dept", "page": 18, "rows_new": 20, "total_seen": 360, "page_text": "171819 共 469 条 20", "ts": "2026-10-23T10:22:25"}
+{"event": "list_page_read", "tag": "dept", "page": 19, "rows_new": 20, "total_seen": 380, "page_text": "181920 共 469 条 20", "ts": "2026-10-23T10:22:27"}
+{"event": "list_page_read", "tag": "dept", "page": 20, "rows_new": 20, "total_seen": 400, "page_text": "192021 共 469 条 20", "ts": "2026-10-23T10:22:29"}
+{"event": "list_page_read", "tag": "dept", "page": 21, "rows_new": 20, "total_seen": 420, "page_text": "202122 共 469 条 20", "ts": "2026-10-23T10:22:31"}
+{"event": "list_page_read", "tag": "dept", "page": 22, "rows_new": 20, "total_seen": 440, "page_text": "212223 共 469 条 20", "ts": "2026-10-23T10:22:33"}
+{"event": "list_page_read", "tag": "dept", "page": 23, "rows_new": 20, "total_seen": 460, "page_text": "222324 共 469 条 20", "ts": "2026-10-23T10:22:35"}
+{"event": "list_page_read", "tag": "dept", "page": 24, "rows_new": 9, "total_seen": 469, "page_text": "222324 共 469 条 20", "ts": "2026-10-23T10:22:37"}
+{"event": "submittype_enum_fail", "error": "Locator.click: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"div.form-row.SubmitType input\").first\n    - locator resolved to <input type=\"text\" ro", "ts": "2026-10-23T10:22:41"}
+{"event": "type_query_end", "rows": 469, "rows_2y": 135, "types_2y": 8, "filter": "制单人=运动表现研究部（按钮「查询」）", "ts": "2026-10-23T10:22:42"}
+{"event": "type_query_close", "outcome": "OK", "ts": "2026-10-23T10:22:42"}

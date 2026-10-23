@@ -1,0 +1,11 @@
+{"event": "profile_lock_acquired", "pid": 18576, "ts": "2026-10-23T10:03:45"}
+{"event": "session_state_skip", "reason": "missing_or_expired", "ttl_hours": 10.0, "ts": "2026-10-23T10:03:54"}
+{"event": "type_query_start", "dept": "运动表现研究部", "mode": "readonly", "ts": "2026-10-23T10:03:54"}
+{"event": "login_wait_start", "login_wait_cap": 480.0, "ts": "2026-10-23T10:03:58"}
+{"event": "login_wait_end", "outcome": "LOGGED_IN", "waited_s": 10.0, "ts": "2026-10-23T10:04:10"}
+{"event": "session_state_saved", "cookies": 2, "origins": 3, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 10.0, "ts": "2026-10-23T10:04:12"}
+{"event": "submittype_enum_fail", "error": "Locator.click: Timeout 3000ms exceeded.\nCall log:\n  - waiting for locator(\"div.form-row.SubmitType input\").first\n    - locator resolved to <input type=\"text\" ro", "ts": "2026-10-23T10:04:19"}
+{"event": "org_filter_fail", "row": "CreatedPath", "error": "ORG_PICKER_NOT_OPENED:CreatedPath", "ts": "2026-10-23T10:04:23"}
+{"event": "org_filter_fail", "row": "AppliedDeptPath", "error": "ORG_PICKER_NOT_OPENED:AppliedDeptPath", "ts": "2026-10-23T10:04:28"}
+{"event": "type_query_end", "rows": 0, "types": 0, "filter": null, "ts": "2026-10-23T10:04:28"}
+{"event": "type_query_close", "outcome": "OK", "ts": "2026-10-23T10:04:28"}
