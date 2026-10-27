@@ -1,0 +1,1518 @@
+{
+  "schema_version": "1.0",
+  "kind": "read_only_type_field_study",
+  "expected_operator": "陈晶",
+  "personnel_policy": "preserve_system_defaults",
+  "records": [
+    {
+      "number": "15426075122",
+      "document_type": "rd_materials",
+      "uuid": "3b866686b82c41659e66a4f9a887a4bf",
+      "operator": "陈晶",
+      "snapshot_path": "automation/runs/type-view-15426075122-20261023-200031/template_snapshot.json",
+      "snapshot_sha256": "abf11b4dcdedcbe88f551d1de78b305621775dd05dda26450dffb4db199a7208",
+      "view_path": "automation/runs/type-view-15426075122-20261023-200031/attempt_001/evidence/template_view_observation.json",
+      "view_sha256": "6e093f67edd90d69280103f3c588471fc94a581b4ae4171976ff3d6c329138cc",
+      "screenshot": "automation/runs/type-view-15426075122-20261023-200031/attempt_001/evidence/template_view.png",
+      "api_counts": {
+        "details": 4,
+        "costs": 0,
+        "relations": 0,
+        "banks": 4,
+        "products": 11,
+        "detailrels": 0
+      },
+      "observed_tables": [
+        {
+          "title": "关联单据",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNumber"
+            },
+            {
+              "text": "单据金额",
+              "prop": "bizCost"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "totalReimedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "nowCost"
+            },
+            {
+              "text": "是否为最后一次",
+              "prop": "isLast"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "关联单据明细",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNo"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "金额",
+              "prop": "bizDetailCost"
+            },
+            {
+              "text": "数量",
+              "prop": "bizDetailNum"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "usedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "报销明细",
+          "row_count": 4,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "报销项目",
+              "prop": "reimItem"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "预算部门",
+              "prop": "budgetDeptName"
+            },
+            {
+              "text": "预算单",
+              "prop": "budgetNo"
+            },
+            {
+              "text": "预算归属",
+              "prop": "budgetOwner"
+            },
+            {
+              "text": "预算科目",
+              "prop": "subjectName"
+            },
+            {
+              "text": "预算项目",
+              "prop": "budgetItemName"
+            },
+            {
+              "text": "科目总额",
+              "prop": "subjectTotalCost"
+            },
+            {
+              "text": "科目余额",
+              "prop": "subjectSurplus"
+            },
+            {
+              "text": "报销金额",
+              "prop": "cost"
+            },
+            {
+              "text": "年季会议",
+              "prop": "quarterlyMeet"
+            },
+            {
+              "text": "占用单号",
+              "prop": "occupyRelationNo"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "费用说明",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "费用类型",
+              "prop": "project"
+            },
+            {
+              "text": "开始日期",
+              "prop": "startDate"
+            },
+            {
+              "text": "结束日期",
+              "prop": "endDate"
+            },
+            {
+              "text": "地点",
+              "prop": "projectPlace"
+            },
+            {
+              "text": "次数/天",
+              "prop": "count"
+            },
+            {
+              "text": "金额",
+              "prop": "cost"
+            },
+            {
+              "text": "项目说明",
+              "prop": "reason"
+            }
+          ]
+        },
+        {
+          "title": "物品档案",
+          "row_count": 11,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "编号",
+              "prop": "code"
+            },
+            {
+              "text": "名称",
+              "prop": "name"
+            },
+            {
+              "text": "购买人",
+              "prop": "purchaser"
+            },
+            {
+              "text": "价格",
+              "prop": "price"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "银行信息",
+          "row_count": 4,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "收款人",
+              "prop": "payee"
+            },
+            {
+              "text": "账号",
+              "prop": "account"
+            },
+            {
+              "text": "开户行",
+              "prop": "bank"
+            },
+            {
+              "text": "联行号",
+              "prop": "bankCode"
+            },
+            {
+              "text": "转账金额",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        }
+      ],
+      "new_form_editors_verified": false
+    },
+    {
+      "number": "15426082926",
+      "document_type": "express",
+      "uuid": "9c33f4d02f3a436381710d1f23ccc114",
+      "operator": "陈晶",
+      "snapshot_path": "automation/runs/type-view-15426082926-20261023-200001/template_snapshot.json",
+      "snapshot_sha256": "c47a6a98befad975128716e75f98cf93839be27663a3ba035b5c1a32bce9ed45",
+      "view_path": "automation/runs/type-view-15426082926-20261023-200001/attempt_001/evidence/template_view_observation.json",
+      "view_sha256": "9ceb9782bcffd1a377854be8bd8bba289f805230eb76b10b19fa94b6c83d08d3",
+      "screenshot": "automation/runs/type-view-15426082926-20261023-200001/attempt_001/evidence/template_view.png",
+      "api_counts": {
+        "details": 1,
+        "costs": 3,
+        "relations": 0,
+        "banks": 2,
+        "products": 0,
+        "detailrels": 0
+      },
+      "observed_tables": [
+        {
+          "title": "关联单据",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNumber"
+            },
+            {
+              "text": "单据金额",
+              "prop": "bizCost"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "totalReimedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "nowCost"
+            },
+            {
+              "text": "是否为最后一次",
+              "prop": "isLast"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "关联单据明细",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNo"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "金额",
+              "prop": "bizDetailCost"
+            },
+            {
+              "text": "数量",
+              "prop": "bizDetailNum"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "usedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "报销明细",
+          "row_count": 1,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "报销项目",
+              "prop": "reimItem"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "预算部门",
+              "prop": "budgetDeptName"
+            },
+            {
+              "text": "预算单",
+              "prop": "budgetNo"
+            },
+            {
+              "text": "预算归属",
+              "prop": "budgetOwner"
+            },
+            {
+              "text": "预算科目",
+              "prop": "subjectName"
+            },
+            {
+              "text": "预算项目",
+              "prop": "budgetItemName"
+            },
+            {
+              "text": "科目总额",
+              "prop": "subjectTotalCost"
+            },
+            {
+              "text": "科目余额",
+              "prop": "subjectSurplus"
+            },
+            {
+              "text": "报销金额",
+              "prop": "cost"
+            },
+            {
+              "text": "年季会议",
+              "prop": "quarterlyMeet"
+            },
+            {
+              "text": "占用单号",
+              "prop": "occupyRelationNo"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "费用说明",
+          "row_count": 3,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "费用类型",
+              "prop": "project"
+            },
+            {
+              "text": "开始日期",
+              "prop": "startDate"
+            },
+            {
+              "text": "结束日期",
+              "prop": "endDate"
+            },
+            {
+              "text": "地点",
+              "prop": "projectPlace"
+            },
+            {
+              "text": "次数/天",
+              "prop": "count"
+            },
+            {
+              "text": "金额",
+              "prop": "cost"
+            },
+            {
+              "text": "项目说明",
+              "prop": "reason"
+            }
+          ]
+        },
+        {
+          "title": "银行信息",
+          "row_count": 2,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "收款人",
+              "prop": "payee"
+            },
+            {
+              "text": "账号",
+              "prop": "account"
+            },
+            {
+              "text": "开户行",
+              "prop": "bank"
+            },
+            {
+              "text": "联行号",
+              "prop": "bankCode"
+            },
+            {
+              "text": "转账金额",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        }
+      ],
+      "new_form_editors_verified": false
+    },
+    {
+      "number": "15426083536",
+      "document_type": "express",
+      "uuid": "a6ed2610506a441bad3cf36c0543c972",
+      "operator": "陈晶",
+      "snapshot_path": "automation/runs/type-view-15426083536-20261023-195950/template_snapshot.json",
+      "snapshot_sha256": "c60fb16d2d2862ca3c56dd0b47213cb56eaa3a2e00da8ef2b34fd941c15e2853",
+      "view_path": "automation/runs/type-view-15426083536-20261023-195950/attempt_001/evidence/template_view_observation.json",
+      "view_sha256": "096c79e80733254c9135073f90fae03ff4a40337c9078f00c40cb77a44f3672c",
+      "screenshot": "automation/runs/type-view-15426083536-20261023-195950/attempt_001/evidence/template_view.png",
+      "api_counts": {
+        "details": 1,
+        "costs": 0,
+        "relations": 0,
+        "banks": 1,
+        "products": 0,
+        "detailrels": 0
+      },
+      "observed_tables": [
+        {
+          "title": "关联单据",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNumber"
+            },
+            {
+              "text": "单据金额",
+              "prop": "bizCost"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "totalReimedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "nowCost"
+            },
+            {
+              "text": "是否为最后一次",
+              "prop": "isLast"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "关联单据明细",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNo"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "金额",
+              "prop": "bizDetailCost"
+            },
+            {
+              "text": "数量",
+              "prop": "bizDetailNum"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "usedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "报销明细",
+          "row_count": 1,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "报销项目",
+              "prop": "reimItem"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "预算部门",
+              "prop": "budgetDeptName"
+            },
+            {
+              "text": "预算单",
+              "prop": "budgetNo"
+            },
+            {
+              "text": "预算归属",
+              "prop": "budgetOwner"
+            },
+            {
+              "text": "预算科目",
+              "prop": "subjectName"
+            },
+            {
+              "text": "预算项目",
+              "prop": "budgetItemName"
+            },
+            {
+              "text": "科目总额",
+              "prop": "subjectTotalCost"
+            },
+            {
+              "text": "科目余额",
+              "prop": "subjectSurplus"
+            },
+            {
+              "text": "报销金额",
+              "prop": "cost"
+            },
+            {
+              "text": "年季会议",
+              "prop": "quarterlyMeet"
+            },
+            {
+              "text": "占用单号",
+              "prop": "occupyRelationNo"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "费用说明",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "费用类型",
+              "prop": "project"
+            },
+            {
+              "text": "开始日期",
+              "prop": "startDate"
+            },
+            {
+              "text": "结束日期",
+              "prop": "endDate"
+            },
+            {
+              "text": "地点",
+              "prop": "projectPlace"
+            },
+            {
+              "text": "次数/天",
+              "prop": "count"
+            },
+            {
+              "text": "金额",
+              "prop": "cost"
+            },
+            {
+              "text": "项目说明",
+              "prop": "reason"
+            }
+          ]
+        },
+        {
+          "title": "银行信息",
+          "row_count": 1,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "收款人",
+              "prop": "payee"
+            },
+            {
+              "text": "账号",
+              "prop": "account"
+            },
+            {
+              "text": "开户行",
+              "prop": "bank"
+            },
+            {
+              "text": "联行号",
+              "prop": "bankCode"
+            },
+            {
+              "text": "转账金额",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        }
+      ],
+      "new_form_editors_verified": false
+    },
+    {
+      "number": "15426094566",
+      "document_type": "rd_materials",
+      "uuid": "b1a23b1f54d641cf9627ad6b02f45acd",
+      "operator": "陈晶",
+      "snapshot_path": "automation/runs/type-view-15426094566-20261023-200017/template_snapshot.json",
+      "snapshot_sha256": "f266671bbc12cd3770ba55bee53510369954e16d9a868ba7d0063b1b3facacc7",
+      "view_path": "automation/runs/type-view-15426094566-20261023-200017/attempt_001/evidence/template_view_observation.json",
+      "view_sha256": "82acfe450c92660c8f7e242e7e4090fe7ac1bda25c7f59c5eddb0ccbf34ecd45",
+      "screenshot": "automation/runs/type-view-15426094566-20261023-200017/attempt_001/evidence/template_view.png",
+      "api_counts": {
+        "details": 3,
+        "costs": 0,
+        "relations": 0,
+        "banks": 3,
+        "products": 10,
+        "detailrels": 0
+      },
+      "observed_tables": [
+        {
+          "title": "关联单据",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNumber"
+            },
+            {
+              "text": "单据金额",
+              "prop": "bizCost"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "totalReimedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "nowCost"
+            },
+            {
+              "text": "是否为最后一次",
+              "prop": "isLast"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "关联单据明细",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNo"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "金额",
+              "prop": "bizDetailCost"
+            },
+            {
+              "text": "数量",
+              "prop": "bizDetailNum"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "usedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "报销明细",
+          "row_count": 3,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "报销项目",
+              "prop": "reimItem"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "预算部门",
+              "prop": "budgetDeptName"
+            },
+            {
+              "text": "预算单",
+              "prop": "budgetNo"
+            },
+            {
+              "text": "预算归属",
+              "prop": "budgetOwner"
+            },
+            {
+              "text": "预算科目",
+              "prop": "subjectName"
+            },
+            {
+              "text": "预算项目",
+              "prop": "budgetItemName"
+            },
+            {
+              "text": "科目总额",
+              "prop": "subjectTotalCost"
+            },
+            {
+              "text": "科目余额",
+              "prop": "subjectSurplus"
+            },
+            {
+              "text": "报销金额",
+              "prop": "cost"
+            },
+            {
+              "text": "年季会议",
+              "prop": "quarterlyMeet"
+            },
+            {
+              "text": "占用单号",
+              "prop": "occupyRelationNo"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "费用说明",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "费用类型",
+              "prop": "project"
+            },
+            {
+              "text": "开始日期",
+              "prop": "startDate"
+            },
+            {
+              "text": "结束日期",
+              "prop": "endDate"
+            },
+            {
+              "text": "地点",
+              "prop": "projectPlace"
+            },
+            {
+              "text": "次数/天",
+              "prop": "count"
+            },
+            {
+              "text": "金额",
+              "prop": "cost"
+            },
+            {
+              "text": "项目说明",
+              "prop": "reason"
+            }
+          ]
+        },
+        {
+          "title": "物品档案",
+          "row_count": 10,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "编号",
+              "prop": "code"
+            },
+            {
+              "text": "名称",
+              "prop": "name"
+            },
+            {
+              "text": "购买人",
+              "prop": "purchaser"
+            },
+            {
+              "text": "价格",
+              "prop": "price"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "银行信息",
+          "row_count": 3,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "收款人",
+              "prop": "payee"
+            },
+            {
+              "text": "账号",
+              "prop": "account"
+            },
+            {
+              "text": "开户行",
+              "prop": "bank"
+            },
+            {
+              "text": "联行号",
+              "prop": "bankCode"
+            },
+            {
+              "text": "转账金额",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        }
+      ],
+      "new_form_editors_verified": false
+    },
+    {
+      "number": "15426094780",
+      "document_type": "express",
+      "uuid": "f9eaadcfc3ba4e35a0f6e80ae425faf6",
+      "operator": "陈晶",
+      "snapshot_path": "automation/runs/type-view-15426094780-20261023-194930/template_snapshot.json",
+      "snapshot_sha256": "ec5878bde88ede757f0730b042fd030de600f764e769d1e5c104e1a6043c140d",
+      "view_path": "automation/runs/type-view-15426094780-20261023-194930/attempt_001/evidence/template_view_observation.json",
+      "view_sha256": "c499a7054539e02333dc3f3d3c0172d1063e8b0136203ddf529ee8d82e12c71f",
+      "screenshot": "automation/runs/type-view-15426094780-20261023-194930/attempt_001/evidence/template_view.png",
+      "api_counts": {
+        "details": 1,
+        "costs": 8,
+        "relations": 0,
+        "banks": 4,
+        "products": 0,
+        "detailrels": 0
+      },
+      "observed_tables": [
+        {
+          "title": "关联单据",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNumber"
+            },
+            {
+              "text": "单据金额",
+              "prop": "bizCost"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "totalReimedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "nowCost"
+            },
+            {
+              "text": "是否为最后一次",
+              "prop": "isLast"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "关联单据明细",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNo"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "金额",
+              "prop": "bizDetailCost"
+            },
+            {
+              "text": "数量",
+              "prop": "bizDetailNum"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "usedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "报销明细",
+          "row_count": 1,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "报销项目",
+              "prop": "reimItem"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "预算部门",
+              "prop": "budgetDeptName"
+            },
+            {
+              "text": "预算单",
+              "prop": "budgetNo"
+            },
+            {
+              "text": "预算归属",
+              "prop": "budgetOwner"
+            },
+            {
+              "text": "预算科目",
+              "prop": "subjectName"
+            },
+            {
+              "text": "预算项目",
+              "prop": "budgetItemName"
+            },
+            {
+              "text": "科目总额",
+              "prop": "subjectTotalCost"
+            },
+            {
+              "text": "科目余额",
+              "prop": "subjectSurplus"
+            },
+            {
+              "text": "报销金额",
+              "prop": "cost"
+            },
+            {
+              "text": "年季会议",
+              "prop": "quarterlyMeet"
+            },
+            {
+              "text": "占用单号",
+              "prop": "occupyRelationNo"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "费用说明",
+          "row_count": 8,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "费用类型",
+              "prop": "project"
+            },
+            {
+              "text": "开始日期",
+              "prop": "startDate"
+            },
+            {
+              "text": "结束日期",
+              "prop": "endDate"
+            },
+            {
+              "text": "地点",
+              "prop": "projectPlace"
+            },
+            {
+              "text": "次数/天",
+              "prop": "count"
+            },
+            {
+              "text": "金额",
+              "prop": "cost"
+            },
+            {
+              "text": "项目说明",
+              "prop": "reason"
+            }
+          ]
+        },
+        {
+          "title": "银行信息",
+          "row_count": 4,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "收款人",
+              "prop": "payee"
+            },
+            {
+              "text": "账号",
+              "prop": "account"
+            },
+            {
+              "text": "开户行",
+              "prop": "bank"
+            },
+            {
+              "text": "联行号",
+              "prop": "bankCode"
+            },
+            {
+              "text": "转账金额",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        }
+      ],
+      "new_form_editors_verified": false
+    },
+    {
+      "number": "15426104120",
+      "document_type": "rd_materials",
+      "uuid": "c10c49a24ba7437daac5c4e1c51deaa9",
+      "operator": "陈晶",
+      "snapshot_path": "automation/runs/type-view-15426104120-20261023-194942/template_snapshot.json",
+      "snapshot_sha256": "18dc5f4d5ea8e4a2d7532e6c0d5d4bd20febf16333f1d55eecd5bd0cab90a135",
+      "view_path": "automation/runs/type-view-15426104120-20261023-194942/attempt_001/evidence/template_view_observation.json",
+      "view_sha256": "9975f47831752ac5641918d4a7146a7c75368e5ea8e57995911695d6eabff473",
+      "screenshot": "automation/runs/type-view-15426104120-20261023-194942/attempt_001/evidence/template_view.png",
+      "api_counts": {
+        "details": 4,
+        "costs": 0,
+        "relations": 0,
+        "banks": 4,
+        "products": 18,
+        "detailrels": 0
+      },
+      "observed_tables": [
+        {
+          "title": "关联单据",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNumber"
+            },
+            {
+              "text": "单据金额",
+              "prop": "bizCost"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "totalReimedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "nowCost"
+            },
+            {
+              "text": "是否为最后一次",
+              "prop": "isLast"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "关联单据明细",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "单据类型",
+              "prop": "bizTypeName"
+            },
+            {
+              "text": "单据号",
+              "prop": "bizNo"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "金额",
+              "prop": "bizDetailCost"
+            },
+            {
+              "text": "数量",
+              "prop": "bizDetailNum"
+            },
+            {
+              "text": "已报销(含审批中)",
+              "prop": "usedCost"
+            },
+            {
+              "text": "本次报销",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "报销明细",
+          "row_count": 4,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "报销项目",
+              "prop": "reimItem"
+            },
+            {
+              "text": "摘要",
+              "prop": "digest"
+            },
+            {
+              "text": "预算部门",
+              "prop": "budgetDeptName"
+            },
+            {
+              "text": "预算单",
+              "prop": "budgetNo"
+            },
+            {
+              "text": "预算归属",
+              "prop": "budgetOwner"
+            },
+            {
+              "text": "预算科目",
+              "prop": "subjectName"
+            },
+            {
+              "text": "预算项目",
+              "prop": "budgetItemName"
+            },
+            {
+              "text": "科目总额",
+              "prop": "subjectTotalCost"
+            },
+            {
+              "text": "科目余额",
+              "prop": "subjectSurplus"
+            },
+            {
+              "text": "报销金额",
+              "prop": "cost"
+            },
+            {
+              "text": "年季会议",
+              "prop": "quarterlyMeet"
+            },
+            {
+              "text": "占用单号",
+              "prop": "occupyRelationNo"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "费用说明",
+          "row_count": 0,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "费用类型",
+              "prop": "project"
+            },
+            {
+              "text": "开始日期",
+              "prop": "startDate"
+            },
+            {
+              "text": "结束日期",
+              "prop": "endDate"
+            },
+            {
+              "text": "地点",
+              "prop": "projectPlace"
+            },
+            {
+              "text": "次数/天",
+              "prop": "count"
+            },
+            {
+              "text": "金额",
+              "prop": "cost"
+            },
+            {
+              "text": "项目说明",
+              "prop": "reason"
+            }
+          ]
+        },
+        {
+          "title": "物品档案",
+          "row_count": 18,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "编号",
+              "prop": "code"
+            },
+            {
+              "text": "名称",
+              "prop": "name"
+            },
+            {
+              "text": "购买人",
+              "prop": "purchaser"
+            },
+            {
+              "text": "价格",
+              "prop": "price"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        },
+        {
+          "title": "银行信息",
+          "row_count": 4,
+          "headers": [
+            {
+              "text": "序号",
+              "prop": ""
+            },
+            {
+              "text": "收款人",
+              "prop": "payee"
+            },
+            {
+              "text": "账号",
+              "prop": "account"
+            },
+            {
+              "text": "开户行",
+              "prop": "bank"
+            },
+            {
+              "text": "联行号",
+              "prop": "bankCode"
+            },
+            {
+              "text": "转账金额",
+              "prop": "cost"
+            },
+            {
+              "text": "备注",
+              "prop": "description"
+            }
+          ]
+        }
+      ],
+      "new_form_editors_verified": false
+    }
+  ],
+  "production_new_forms": 0,
+  "production_saves": 0,
+  "real_fill_verified": false,
+  "real_save_verified": false
+}

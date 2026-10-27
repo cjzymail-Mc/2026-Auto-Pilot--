@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-23",
+  "user_statement": "你从历史表单中挑选一些复杂度高的单据作为模板，进行真实填写测试，我给你授权，继续",
+  "prior_personnel_instruction": "每次新建单据都会自动填写登陆人信息，这些你不用管，按默认，（本机是陈晶）",
+  "operator": "陈晶",
+  "allow_history_replay": true,
+  "allow_new_unsaved_test_pages": true,
+  "allow_fill": true,
+  "allow_save": false,
+  "allow_submit": false,
+  "personnel_policy": "preserve_system_defaults",
+  "purpose": "complex historical express and rd_materials real UI fill tests; not new expenses",
+  "selected_templates": {
+    "express": "15426094780",
+    "rd_materials": "15426104120"
+  },
+  "scope": "necessary control diagnosis and evidence-backed fix/retests; distinct rounds identify code changes; no blind repeats",
+  "cleanup": "inventory and retain evidence, then normally close only this round's own unsaved temporary test context; preserve other sessions and all saved originals"
+}

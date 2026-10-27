@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BPM task intake (preparation only)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "document_type",
+    "operator",
+    "template_biz_number",
+    "materials_dir",
+    "statement",
+    "authorization"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "document_type": {
+      "enum": [
+        "travel",
+        "express",
+        "rd_materials"
+      ],
+      "$comment": "New types support preparation only until observed structure is modeled."
+    },
+    "operator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "template_biz_number": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
+    "template_snapshot_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "materials_dir": {
+      "type": "string",
+      "minLength": 1
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "task_id",
+        "statement",
+        "allow_submit"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "fill_only",
+            "save_draft"
+          ]
+        },
+        "task_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "allow_submit": {
+          "const": false
+        }
+      }
+    },
+    "facts_payload": {
+      "type": "string",
+      "description": "Optional agent intermediate payload (FactSet + blueprint) enabling automatic stage advance MATERIALS_READY->FACTS_BUILT->RECONCILED->PLAN_READY inside task preparation; never user-authored internal JSON."
+    },
+    "identity_relations": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "login_operator": { "$ref": "#/$defs/identity_role" },
+        "form_creator": { "$ref": "#/$defs/identity_role" },
+        "expense_owner": { "$ref": "#/$defs/identity_role" }
+      },
+      "$comment": "BPM-SELFDRIVE-20261027-V1 R2 D5 (2026-10-27): 区分登录操作人/新页制单人/费用所属人并各自带来源；角色未知按 NEEDS_INPUT 上报，不为对照值换人、不默认零餐补（bpm_identity.validate_identity_relations）。"
+    }
+  },
+  "$defs": {
+    "identity_role": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "source", "source_locator"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "source": { "enum": ["oa_profile", "template_page", "system_observation", "user_statement", "workout_detail"] },
+        "source_locator": { "type": "string", "minLength": 1 },
+        "verified_at": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

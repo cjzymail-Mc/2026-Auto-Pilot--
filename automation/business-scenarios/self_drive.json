@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "self_drive",
+  "version": "1.0.0",
+  "status": "rules_frozen_implemented_offline",
+  "status_note": "能力分层如实标注：规则与确定性计算已实现并通过离线测试；计划 schema/生成器/执行器集成与真实填写验收属后续阶段（合同 BPM-SELFDRIVE-20261027-V1 §7 P3-P5）。",
+  "applicable_form": {
+    "document_type": "travel",
+    "submit_type_code": "08",
+    "submit_type_display": "差旅费"
+  },
+  "identification": {
+    "required_evidence": [
+      "真实模板快照核实的表单种类与费用类别（travel/差旅费/08）",
+      "本次公里统计表（含用户公里数）",
+      "油票/通行费票据原件集合",
+      "用户执行意图（一句话）"
+    ],
+    "exclusion_rule": "不能仅凭单号、备注『公出油补』或『存在交通费』把差旅判成自驾；识别须输出采用证据与排除依据，冲突/多候选只读整理缺口"
+  },
+  "rules": {
+    "model": "self_drive_strict_surplus_v1",
+    "rate_per_km": "1.00",
+    "meal_per_valid_day": "30.00",
+    "meal_scope": "仅本次报销单制单人；有效日 = 本次材料/报销范围 ∩ 该制单人已核实参与公出事实日，按日去重；同日多事实/多单只计一次；不乘同行人数、不按票数或关联单数计",
+    "strict_gate": "greater",
+    "formulas": {
+      "row_transport": "原始公里数 × rate_per_km + 该行唯一通行票金额之和",
+      "M": "全部行公里补贴合计",
+      "T": "全部范围内唯一通行费合计",
+      "C": "有效公出日去重数 × meal_per_valid_day",
+      "R": "M + T + C",
+      "O": "本次有效去重油票价税合计（仅覆盖池，不进费用行）",
+      "F": "O + T",
+      "coverage_gate": "允许填写条件 F > R（等于或小于均拒绝，无浮点容差）"
+    },
+    "separation": {
+      "fuel_is_coverage_only": "油票只作覆盖凭据：O 增大只影响 F/margin，永不增加 R",
+      "summary_sheets_not_rebilled": "汇总单区分票据/行程双版式，仅交叉核对不重复计费",
+      "historical_meal_values_not_reused": ["12", "18", "24", "36", "48"],
+      "historical_meal_note": "旧单历史餐补值仅用于定位旧单差异；新规则固定 30.00/有效日，不沿用、不折算、不按小时拆分"
+    },
+    "legacy_model_coexistence": "旧 fuel_pool_strict_surplus（R=M+T）按 V3 冻结口径并存，旧任务不静默升级；新场景计划必须绑定本配置版本与哈希"
+  },
+  "rule_source": {
+    "contract": "feature01-细化报销skill/2026-10-27 报销单-自驾公出类技能固化施工合同-V1.md",
+    "sections": ["§4.4"],
+    "user_rule_statement": "餐补 30 元/有效公出日（仅本次报销单制单人、本次范围∩已核实参与日、按日去重）；公里按用户公里数 1.00 元/公里（V3 §4.1 冻结口径沿用）"
+  },
+  "materials_required": {
+    "km_sheet": "含用户公里数与通行费列的统计 Excel（同结构副本回填，不改原件结构）",
+    "toll_invoices": "范围内唯一通行费票据（机读文本层优先，视觉仅交叉验证）",
+    "fuel_invoices": "覆盖池油票（有效去重）",
+    "trip_orders": "真实公出单事实行（费用所属人参与日核实，写入前 MD 先落盘）"
+  },
+  "capability_layers": {
+    "code_implemented": ["规则配置加载校验", "确定性金额模型 evaluate_self_drive", "反例对账 helpers（逐行/逐单/日期）"],
+    "offline_verified": "tests/test_bpm_self_drive.py（§6.1 经典反例/正向对照/日期反例/新旧行为分离）",
+    "real_fill_verified": false,
+    "real_save_verified": false
+  },
+  "binding": {
+    "config_sha256_field": "plan/事实层引用本文件时绑定 sha256（自动化由 bpm_self_drive.rules_sha256 提供）",
+    "future_plan_key": "self_drive_coverage（schema/生成器集成属后续轮，不在本配置内承诺）"
+  }
+}

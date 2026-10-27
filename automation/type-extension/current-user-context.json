@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-10-23",
+  "source": "current conversation user instruction",
+  "user_statement": "每次新建单据都会自动填写登陆人信息，这些你不用管，按默认，（本机是陈晶）",
+  "expected_operator": "陈晶",
+  "new_form_personnel": "preserve_system_defaults",
+  "change_applicant": false,
+  "real_materials_provided": false,
+  "specific_task_save_authorization_provided": false,
+  "purpose": "current implementation/research context only; not an executable task or reimbursement evidence"
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "authorized_historical_replay_not_new_expenses",
+  "plan_hash": "e1edb76b410bdac1e7db2233b85e2075c7e9a4da9a185bd1c9c43343aad6cc9d",
+  "rows": {
+    "relations": 0,
+    "details": 1,
+    "costs": 8,
+    "banks": 4
+  },
+  "lineage": {
+    "template_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\type-view-15426094780-20261023-194930\\template_snapshot.json",
+    "template_sha256": "ec5878bde88ede757f0730b042fd030de600f764e769d1e5c104e1a6043c140d",
+    "view_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\type-view-15426094780-20261023-194930\\attempt_001\\evidence\\template_view_observation.json",
+    "view_sha256": "c499a7054539e02333dc3f3d3c0172d1063e8b0136203ddf529ee8d82e12c71f",
+    "defaults_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\type-test-defaults-20261023-204140\\attempt_001\\evidence\\default_personnel.json",
+    "defaults_sha256": "e3bf312ddf608f6179229033ef8144f5c79d3bd38228fe5393af5c93f89271f2",
+    "authorization_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-extension\\live-test-authorization.json",
+    "authorization_sha256": "8950fd603ba9843d9d5c3627885ea72c122354162572e255a4e4468764f5195d"
+  },
+  "save_permitted": false
+}

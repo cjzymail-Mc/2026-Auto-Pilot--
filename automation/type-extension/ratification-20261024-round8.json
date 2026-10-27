@@ -1,0 +1,13 @@
+{
+  "ts": "2026-10-24T09:34:35.322492+00:00",
+  "event": "P1_A_RATIFICATION_EXECUTED",
+  "contract": "ctr-633d23ae",
+  "ratifies": "round-7 ctr-381e0163 两处合同外写入",
+  "files": {
+    "bpm_plan_generate.py": "identity 绑定+system_observation 观察工件强制（收紧）",
+    "bpm_ui.py": "supersede_dead_form_intent 零写/写后未存迁移（append-only/拒 SAVE_*/活页拒接）"
+  },
+  "authorization_source": "team-task.md round-8 source item 0（A 已核实 round-07/acceptance/A-verification.md §6）",
+  "standing_write_list_effective": true,
+  "scope_guard": "其他新文件仍须先停-增补-再写，不外推"
+}

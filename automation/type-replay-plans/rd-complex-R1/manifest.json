@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\rd-complex-R1\\test-inputs",
+  "files": [
+    {
+      "material_id": "sha256:0102db88c5cd04cf31dc3159d6fb8a38462e80b00aefdd410a4887961ec05a73",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\rd-complex-R1\\test-inputs\\authorized_replay_facts.json",
+      "relative_path": "authorized_replay_facts.json",
+      "sha256": "0102db88c5cd04cf31dc3159d6fb8a38462e80b00aefdd410a4887961ec05a73",
+      "size_bytes": 9944,
+      "duplicate_paths": []
+    }
+  ]
+}

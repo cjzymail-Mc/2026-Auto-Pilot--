@@ -1,0 +1,194 @@
+{
+  "recorded_at": "2026-10-23",
+  "scope": "explicitly authorized complex historical replay, real OA unsaved filling; not new expenses",
+  "authorization": {
+    "path": "automation/type-extension/live-test-authorization.json",
+    "sha256": "8950fd603ba9843d9d5c3627885ea72c122354162572e255a4e4468764f5195d"
+  },
+  "status": "REAL_FILL_PASS_BOTH_TYPES",
+  "records": [
+    {
+      "document_type": "express",
+      "historical_template_number": "15426094780",
+      "run": "types-express-complex-R2",
+      "attempt": "attempt_001",
+      "task_id": "type-replay-20261023-express-complex-R2-defaultbank",
+      "plan_sha256": "ca8c3a0ec26e4a66fbec169284a2dd6c28ad31f18114a4782bc9c42579867f6e",
+      "status": "SUCCESS_FILL_ONLY",
+      "counts": {
+        "relations": {
+          "expected": 0,
+          "actual": 0
+        },
+        "details": {
+          "expected": 1,
+          "actual": 1
+        },
+        "costs": {
+          "expected": 8,
+          "actual": 8
+        },
+        "banks": {
+          "expected": 4,
+          "actual": 4
+        }
+      },
+      "amounts": {
+        "details": "347.50",
+        "banks": "347.50",
+        "costs": "347.50",
+        "total": "347.50"
+      },
+      "operator": "陈晶",
+      "personnel": "system_defaults_preserved",
+      "save_status": "NOT_ATTEMPTED",
+      "new_biz_number": null,
+      "new_uuid": null,
+      "persistence_verified": false,
+      "evidence": {
+        "independent_verification.json": {
+          "path": "automation/runs/types-express-complex-R2/attempt_001/evidence/independent_verification.json",
+          "sha256": "c2c49b82028b1841410e66499cd0e66ba373c9a9515311251ca78e98ab815161"
+        },
+        "independent_readback.json": {
+          "path": "automation/runs/types-express-complex-R2/attempt_001/evidence/independent_readback.json",
+          "sha256": "b1e575ca9465395592a4ce389c23b0334a831ceccb85eaf6fa91c8e6b1c7f82a"
+        },
+        "v1_final.png": {
+          "path": "automation/runs/types-express-complex-R2/attempt_001/evidence/v1_final.png",
+          "sha256": "2cd0cb8c7de307fc82e43538375c16baf005968268f9cf95e3c938cd94976108"
+        },
+        "test_page_close_inventory.json": {
+          "path": "automation/runs/types-express-complex-R2/attempt_001/evidence/test_page_close_inventory.json",
+          "sha256": "c6aa6d7dcd5d3e84091a13dfd40fe2914ac13c2a6945310f6e9f9f200dc35338"
+        },
+        "new_form_before_header.json": {
+          "path": "automation/runs/types-express-complex-R2/attempt_001/evidence/new_form_before_header.json",
+          "sha256": "0f874615f312e9577b7bf1756669a190281ee789837feab97ac3d677f5daf9c2"
+        },
+        "new_form_after_header.json": {
+          "path": "automation/runs/types-express-complex-R2/attempt_001/evidence/new_form_after_header.json",
+          "sha256": "b26929f9a234e5a0157964ed032ab181835d9e3e1ffb575a7c73dff20ac85792"
+        }
+      },
+      "result": {
+        "path": "automation/runs/types-express-complex-R2/attempt_001/stage1_result.json",
+        "sha256": "c7892993e19e8e101019f6923b910160e2dbc37fc832eca3d3370bec416f8a4d"
+      },
+      "execution_source_manifest": {
+        "path": "automation/runs/types-express-complex-R2/execution_source_manifest.json",
+        "sha256": "cda6b70a188900cc00d486154dbff613ac7d20a6fc1586501d6eba7c07d6ec0b"
+      },
+      "plan": {
+        "path": "automation/type-replay-plans/express-complex-R2-defaultbank/fill_plan.json",
+        "sha256": "8430ec77b1dbe1278605c522d283ba38e9567c70983ddaf2fc89f354171c4450"
+      }
+    },
+    {
+      "document_type": "rd_materials",
+      "historical_template_number": "15426104120",
+      "run": "types-rd-complex-R2",
+      "attempt": "attempt_001",
+      "task_id": "type-replay-20261023-rd-complex-R2-namepicker",
+      "plan_sha256": "8e0dadcce84178eecc212b1147b0510d3b6ac85e544648078cb3ed58d18901e5",
+      "status": "SUCCESS_FILL_ONLY",
+      "counts": {
+        "relations": {
+          "expected": 0,
+          "actual": 0
+        },
+        "details": {
+          "expected": 4,
+          "actual": 4
+        },
+        "costs": {
+          "expected": 0,
+          "actual": 0
+        },
+        "banks": {
+          "expected": 4,
+          "actual": 4
+        },
+        "products": {
+          "expected": 18,
+          "actual": 18
+        }
+      },
+      "amounts": {
+        "details": "9935.16",
+        "banks": "9935.16",
+        "products": "9935.16",
+        "total": "9935.16"
+      },
+      "operator": "陈晶",
+      "personnel": "system_defaults_preserved",
+      "save_status": "NOT_ATTEMPTED",
+      "new_biz_number": null,
+      "new_uuid": null,
+      "persistence_verified": false,
+      "evidence": {
+        "independent_verification.json": {
+          "path": "automation/runs/types-rd-complex-R2/attempt_001/evidence/independent_verification.json",
+          "sha256": "fa0e7265772f850dff664f9bf5a1e2c5199bc6fc8bb70ae8efd47e279eefb143"
+        },
+        "independent_readback.json": {
+          "path": "automation/runs/types-rd-complex-R2/attempt_001/evidence/independent_readback.json",
+          "sha256": "b2498c1a726090c29c2b0497a3299996628bac9550d04017431783c6e1ee0be1"
+        },
+        "v1_final.png": {
+          "path": "automation/runs/types-rd-complex-R2/attempt_001/evidence/v1_final.png",
+          "sha256": "6a7e129bf21527175da2b8af0a4437ac8a3bcc3d2d5a1a585ebe3fb6617ffe72"
+        },
+        "test_page_close_inventory.json": {
+          "path": "automation/runs/types-rd-complex-R2/attempt_001/evidence/test_page_close_inventory.json",
+          "sha256": "6d6ded80166d89604196d4d212c2e7bfd664ee09c7795ae8be889f7efb000661"
+        },
+        "new_form_before_header.json": {
+          "path": "automation/runs/types-rd-complex-R2/attempt_001/evidence/new_form_before_header.json",
+          "sha256": "fc60ff171b3f21e0607878fce729dbb65246d7196b018d853d875416a51e610d"
+        },
+        "new_form_after_header.json": {
+          "path": "automation/runs/types-rd-complex-R2/attempt_001/evidence/new_form_after_header.json",
+          "sha256": "b6764776bcb38d70906975eb52e8a38b7f164abf301a04a6cefb3d04a45b9ed1"
+        }
+      },
+      "result": {
+        "path": "automation/runs/types-rd-complex-R2/attempt_001/stage1_result.json",
+        "sha256": "838404f4264ecc8ebeb128fb90bcab38944817802d94c50f6f1bf2a6f71237f9"
+      },
+      "execution_source_manifest": {
+        "path": "automation/runs/types-rd-complex-R2/execution_source_manifest.json",
+        "sha256": "67811c21df9c6464bbd2165fd27636e994f521a5900f0ee31cbac558f4f5445a"
+      },
+      "plan": {
+        "path": "automation/type-replay-plans/rd-complex-R2-namepicker/fill_plan.json",
+        "sha256": "51a8184ac77f232287ef4d22e39c03bc3034c080d941a239f59878f0eb2b4a47"
+      }
+    }
+  ],
+  "gates": {
+    "G1": "PASS_REAL_REPLAY",
+    "G2": "PASS_REAL_REPLAY",
+    "G3": "PASS_REAL_REPLAY",
+    "G4": "PASS_REAL_REPLAY",
+    "G5": "NOT_AUTHORIZED_NOT_EXECUTED",
+    "G6": "NO_SAVED_NEW_IDENTITY",
+    "G7": "NOT_EXECUTED",
+    "G8": "MULTIROW_PASS_REAL_INVOICES_NOT_TESTED",
+    "G9": "ARCHIVE_SELECTION_PASS_PERSISTENCE_NOT_TESTED"
+  },
+  "goal_complete": false,
+  "remaining": [
+    "specific_save_authorization_and_real_business_materials_or_explicit_test_draft_save_scope",
+    "controlled_save_unique_identity_reopen_persistence_unsubmitted",
+    "same_task_readonly_recovery",
+    "real_invoice_material_acceptance"
+  ],
+  "final_offline_result": {
+    "path": "automation/offline-verify/types-real-fill-final-20261023/build_result.json",
+    "sha256": "154f409934e1a18469c98f6faac8a8eb6c7380c705cb5eb0bc60de42c897a5ce",
+    "status": "OFFLINE_PASS",
+    "test_count": 120
+  },
+  "final_source_audit": "automation/type-extension/real-fill-final-audit.json"
+}

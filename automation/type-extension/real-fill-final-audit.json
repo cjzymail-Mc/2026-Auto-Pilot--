@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "offline_result": "automation/offline-verify/types-real-fill-final-20261023/build_result.json",
+  "files": 39,
+  "frozen_matches_build": true,
+  "post_build_drift": [],
+  "unchanged_from_baseline": [
+    "stage1_browser_probe.py",
+    "stage1_probe_selftest.py",
+    "automation/document-types/travel.json"
+  ],
+  "skill_quick_validate": "PASS",
+  "production_save_verified": false
+}

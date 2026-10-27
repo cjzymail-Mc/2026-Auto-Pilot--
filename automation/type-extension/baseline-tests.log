@@ -1,0 +1,49 @@
+..usage: python.exe -m unittest [-h] [--run RUN] [--doc-id DOC_ID]
+                              [--legacy-regression]
+                              [--resume-attempt RESUME_ATTEMPT] --expect-name
+                              EXPECT_NAME [--tech-budget TECH_BUDGET]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--interactive-pick] [--pick-wait PICK_WAIT]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--login-only | --fill-plan FILL_PLAN]
+python.exe -m unittest: error: run id 必须为仓库 runs 下的简单名称（1–100 个字母、数字、下划线或连字符）
+usage: python.exe -m unittest [-h] [--run RUN] [--doc-id DOC_ID]
+                              [--legacy-regression]
+                              [--resume-attempt RESUME_ATTEMPT] --expect-name
+                              EXPECT_NAME [--tech-budget TECH_BUDGET]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--interactive-pick] [--pick-wait PICK_WAIT]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--login-only | --fill-plan FILL_PLAN]
+python.exe -m unittest: error: wall_cap 必须是有限的非负数（执行预算/墙钟须大于零）
+usage: python.exe -m unittest [-h] [--run RUN] [--doc-id DOC_ID]
+                              [--legacy-regression]
+                              [--resume-attempt RESUME_ATTEMPT] --expect-name
+                              EXPECT_NAME [--tech-budget TECH_BUDGET]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--interactive-pick] [--pick-wait PICK_WAIT]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--login-only | --fill-plan FILL_PLAN]
+python.exe -m unittest: error: keep_open_minutes 必须是有限的非负数（执行预算/墙钟须大于零）
+...................................usage: python.exe -m unittest [-h] (--task TASK | --fill-plan FILL_PLAN)
+                              [--expect-name EXPECT_NAME] [--run RUN]
+                              [--resume-run RESUME_RUN]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--validate-only] [--legacy-regression]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--tech-budget TECH_BUDGET]
+python.exe -m unittest: error: one of the arguments --task --fill-plan is required
+{"status": "NEEDS_INPUT", "issues": [{"path": "/tables/details", "code": "AMOUNT_MISMATCH", "message": "amount sum differs from totalCost"}, {"path": "/tables/banks", "code": "AMOUNT_MISMATCH", "message": "amount sum differs from totalCost"}, {"path": "/tables/costs", "code": "AMOUNT_MISMATCH", "message": "amount sum differs from totalCost"}, {"path": "/header/totalCost", "code": "SOURCE_INVALID", "message": "located value differs from planned value"}], "browser_launched": false}
+[18:57:06] PROGRESS relations: 1 rows complete
+[18:57:15] PROGRESS costs: 4 rows complete
+[18:57:19] PROGRESS details: 3 rows complete
+[18:57:24] PROGRESS banks: 3 rows complete
+[18:57:30] PROGRESS relations: 1 rows complete
+[18:57:30] PROGRESS costs: 0 rows complete
+[18:57:30] PROGRESS details: 1 rows complete
+[18:57:31] PROGRESS banks: 1 rows complete
+.............................................................
+----------------------------------------------------------------------
+Ran 98 tests in 57.974s
+
+OK

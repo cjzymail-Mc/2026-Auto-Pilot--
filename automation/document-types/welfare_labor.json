@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "config_version": "1.0",
+  "title": "报销单",
+  "header": {
+    "corpCode": {"label": "公司", "type": "text", "editor": "identity"},
+    "bizOrign": {"label": "流程归属", "type": "text", "editor": "dropdown"},
+    "budgetYears": {"label": "预算年度", "type": "identifier", "editor": "dropdown"},
+    "payType": {"label": "报销方式", "type": "text", "editor": "dropdown"},
+    "currencyType": {"label": "币种", "type": "text", "editor": "identity"},
+    "submitType": {"label": "报销类别", "type": "text", "editor": "dropdown", "allowed_values": ["福利费、劳保用品"]},
+    "description": {"label": "备注", "type": "text", "editor": "input"},
+    "totalCost": {"label": "报销金额", "type": "money", "editor": "computed"}
+  },
+  "tables": {
+    "relations": {
+      "title": "关联单据",
+      "columns": {
+        "bizTypeName": {"label": "单据类型", "type": "text", "editor": "dropdown", "allowed_values": []},
+        "bizNumber": {"label": "单据号", "type": "identifier", "editor": "relation_dialog"},
+        "nowCost": {"label": "本次报销", "type": "money", "editor": "detail_sum"},
+        "isLast": {"label": "是否为最后一次", "type": "text", "editor": "dropdown", "allowed_values": ["是", "否"]}
+      }
+    },
+    "details": {
+      "title": "报销明细",
+      "columns": {
+        "reimItem": {"label": "报销项目", "type": "text", "editor": "selector"},
+        "digest": {"label": "摘要", "type": "text", "editor": "input"},
+        "budgetDeptName": {"label": "预算部门", "type": "text", "editor": "readonly"},
+        "budgetNo": {"label": "预算单", "type": "identifier", "editor": "budget_dialog"},
+        "subjectName": {"label": "预算科目", "type": "text", "editor": "subject_dialog"},
+        "budgetItemName": {"label": "预算项目", "type": "text", "editor": "readonly"},
+        "cost": {"label": "报销金额", "type": "money", "editor": "input"},
+        "budgetOwner": {"label": "预算归属", "type": "text", "editor": "readonly"}
+      },
+      "readback_extra_fields": {
+        "subjectTotalCost": "readonly_money",
+        "subjectSurplus": "readonly_money",
+        "budgetUseCost": "readonly_money",
+        "description": "empty"
+      }
+    },
+    "costs": {
+      "title": "费用说明",
+      "columns": {
+        "project": {"label": "费用类型", "type": "text", "editor": "selector"},
+        "startDate": {"label": "开始日期", "type": "date", "editor": "input"},
+        "endDate": {"label": "结束日期", "type": "date", "editor": "input"},
+        "projectPlace": {"label": "地点", "type": "text", "editor": "input"},
+        "count": {"label": "次数/天", "type": "count", "editor": "input"},
+        "cost": {"label": "金额", "type": "money", "editor": "input"},
+        "reason": {"label": "项目说明", "type": "text", "editor": "input"}
+      }
+    },
+    "banks": {
+      "title": "银行信息",
+      "columns": {
+        "payee": {"label": "收款人", "type": "text", "editor": "identity"},
+        "account": {"label": "账号", "type": "identifier", "editor": "identity"},
+        "bank": {"label": "开户行", "type": "text", "editor": "readonly"},
+        "bankCode": {"label": "联行号", "type": "identifier", "editor": "branch_dialog"},
+        "cost": {"label": "转账金额", "type": "money", "editor": "input"}
+      },
+      "readback_extra_fields": {"description": "empty"}
+    }
+  },
+  "matching": "exact rendered option labels and business identifiers; no synonym or first-option fallback",
+  "extra_table_projections": {
+    "detailrels": {
+      "from_table": "relations",
+      "fields": {"bizNo": "bizNumber", "bizTypeName": "bizTypeName", "cost": "nowCost"},
+      "zero_fields": ["bizDetailCost", "bizDetailNum", "usedCost"],
+      "cardinality": "one_detail_per_relation",
+      "supported_relation_types": [],
+      "observed_relation_types": [
+        {"bizTypeName": "福利申请单", "bizType": 74, "detail_form": "zero_amount",
+         "evidence": "automation/runs/20261024-170000-fiveresearch/raw_15426071883_fulilabao.json"}
+      ],
+      "system_field_rules": {
+        "bizDetailCost": {"empty_display": "readonly_zero", "relation_types": ["福利申请单"],
+                          "evidence": "automation/runs/20261024-170000-fiveresearch/raw_15426071883_fulilabao.json detailrels[0] bizDetailCost=0.00（关联行存在、明细额度全零，实测）"},
+        "bizDetailNum": {"empty_display": "readonly_zero", "relation_types": ["福利申请单"],
+                         "evidence": "automation/runs/20261024-170000-fiveresearch/raw_15426071883_fulilabao.json detailrels[0] bizDetailNum=0.00"},
+        "usedCost": {"empty_display": "readonly_zero", "relation_types": ["福利申请单"],
+                     "evidence": "automation/runs/20261024-170000-fiveresearch/raw_15426071883_fulilabao.json detailrels[0] usedCost=0.00"}
+      },
+      "note": "实测形态：福利申请单(74)关联行 detailrels 明细级额度全零（与 02 非零形态相反）。plan 级非空 relations 建模待 bpm_plan 授权轮（本轮裁决①）；supported_relation_types 维持空=执行层不启用。"
+    }
+  },
+  "document_type": "welfare_labor",
+  "category": {"label": "福利费、劳保用品", "api_code": "04"},
+  "execution_state": "offline_modeled_live_pending",
+  "invoice_policy": {
+    "mode": "document_level",
+    "required": false,
+    "evidence": "automation/runs/20261024-170000-fiveresearch/raw_15426071883_fulilabao.json main.invoice=false（文档级无发票，实测）"
+  },
+  "reim_item_prefix": {
+    "observed_values": ["04003"],
+    "evidence": "automation/runs/20261024-170000-fiveresearch/raw_15426071883_fulilabao.json details[0].reimItem（实测；枚举不穷举，编辑器联动待观察）"
+  },
+  "costs_applicability": {
+    "default": "not_applicable",
+    "reason_basis": "本类历史单 costs 全空（研究样本 15426071883 costs=0 行）；材料须携带当次来源理由",
+    "evidence": "automation/runs/20261024-170000-fiveresearch/research_fulilabao_15426071883.md §2"
+  },
+  "capabilities": {
+    "historical_read": {"state": "live_read_verified", "scope": "research raw GET observed_reimburse_uuid_get; not new-form editor verification"},
+    "array_fill": {"state": "offline_chain_verified_live_pending"},
+    "draft_save": {"state": "production_pending"}
+  },
+  "required_observations": [
+    "OBSERVED 2026-10-24 attempt_007 (automation/runs/20261024-213500-type0204-observe/attempt_007/evidence/observe_result.json): category linkage renders same 8 tables as 02; reimItem 04 dropdown enum {宿舍费用,食堂费用,住房补贴,团建费,员工福利} 6 options; relation type enum 20 options incl 公出单/出差单; header editors incl appliedName readonly",
+    "PENDING: budgetNo/subjectName row editors mode=table_dialog status=NO_TABLE_DIALOG on new form (same unresolved form as 02; needs targeted re-probe under new hypothesis)",
+    "PENDING type-integration round: 福利申请单(bizType 74) relation picker zero-amount form reproduction on new form; cross-department budget selector data scope (预算主体≠申请人部门); material-driven fill-only fill verification. Save/reopen verification only in a future round with explicit save authorization (V3 fill_only: not a current-round pending condition)"
+  ],
+  "unsupported": [
+    "nonempty_relations",
+    "row_level_invoice_allocation",
+    "loan_offsets",
+    "attachments",
+    "invoice_upload",
+    "submit",
+    "partial_invoice_reimbursement",
+    "quantity_invoice_allocation",
+    "unit_price_times_count",
+    "products"
+  ],
+  "history_evidence": [
+    "automation/runs/20261024-170000-fiveresearch/raw_15426071883_fulilabao.json",
+    "automation/runs/20261024-170000-fiveresearch/research_fulilabao_15426071883.md",
+    "automation/runs/20261023-142146-travelcensus/travel_census.json"
+  ]
+}

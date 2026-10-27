@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\rd-complex-R2-namepicker\\test-inputs",
+  "files": [
+    {
+      "material_id": "sha256:a81396ebc48edc5f6354adf7db9361286de51d814d7f285b4e700ac45ffe9838",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\rd-complex-R2-namepicker\\test-inputs\\authorized_replay_facts.json",
+      "relative_path": "authorized_replay_facts.json",
+      "sha256": "a81396ebc48edc5f6354adf7db9361286de51d814d7f285b4e700ac45ffe9838",
+      "size_bytes": 9955,
+      "duplicate_paths": []
+    }
+  ]
+}

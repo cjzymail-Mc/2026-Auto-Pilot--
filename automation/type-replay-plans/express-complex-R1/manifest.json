@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\express-complex-R1\\test-inputs",
+  "files": [
+    {
+      "material_id": "sha256:12ddcaf1a00fa69b1c61a22a00c7289480a75a903149a6ee91b6e1441e1c8250",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\express-complex-R1\\test-inputs\\authorized_replay_facts.json",
+      "relative_path": "authorized_replay_facts.json",
+      "sha256": "12ddcaf1a00fa69b1c61a22a00c7289480a75a903149a6ee91b6e1441e1c8250",
+      "size_bytes": 6329,
+      "duplicate_paths": []
+    }
+  ]
+}

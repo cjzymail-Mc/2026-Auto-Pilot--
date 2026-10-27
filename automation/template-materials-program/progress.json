@@ -1,0 +1,564 @@
+{
+ "schema_version": "1.0",
+ "program": "template-materials",
+ "authority_note": "本文件是唯一权威进度台账；notes.md 是可读摘要，两者冲突以本文件为准。当前任务目标与验收标准以 feature01-细化报销skill/2026-10-26 真实公出案例独立解析与OA填写施工合同-冻结V3.md（BPM-MATERIALS-20261026-V3）为准；2026-10-24 任务书及 V1/V2 保留为历史依据。",
+ "baseline_document": "feature01-细化报销skill/2026-10-26 真实公出案例独立解析与OA填写施工合同-冻结V3.md",
+ "created_at": "2026-10-24T10:10:00+08:00",
+ "updated_at": "2026-10-26T22:05:00+08:00",
+ "status_enum": [
+  "待做",
+  "进行中",
+  "待复核",
+  "缺外部输入",
+  "已验证"
+ ],
+ "work_packages": {
+  "W00": {
+   "title": "接手基线与总台账",
+   "status": "已验证",
+   "evidence": [
+    "automation/template-materials-program/baseline-review-20261024.md（成立项 A1-A8 + 差距项 B1-B8，含文件与 sha256/16 绑定）",
+    "automation/template-materials-program/progress.json（本台账）"
+   ],
+   "evidence_layer": "W00 复核=一手盘上核验（文件/内容/哈希），非二手报告转述",
+   "notes": "任务书 §3 差距表与实际一致；旧成果按冻结范围承接"
+  },
+  "W01": {
+   "title": "用户请求与模板决策（+R4-P2 四条加固+未知类别只读识别）",
+   "status": "已验证",
+   "evidence": [
+    "bpm_request.py：W01a 请求登记——结构校验封闭键集（template_biz_number/materials_dir/statement 必填+可选明确指定/用户政策），齐备→register_derived role=user_request 版本化工件落派生根（sources=本次原件哈希，记录携 user_instruction 语义）；缺要素→NEEDS_INPUT+GAP_FIELDS 形状缺口且不落盘",
+    "bpm_request.py：W01b 模板核对——cached_template 缓存定向读取（唯一命中/全 200 在彼处强制）+快照 uuid/applicant/header 留证（corpus path+sha256）；类别识别 code/label→封闭注册 document_type；声明类别与模板矛盾→集中冲突报告（category_mismatch/declared_category_unregistered）不悄悄换类；normalize 先抛非类别错误时回查原始 doc 判根因",
+    "bpm_request.py：未知类别只读识别——identify_unknown 读原始 doc 产报告（观察类别/注册对照/不支持部分/主表子表结构证据/登记开发子任务建议/writable=false），resolve_template 对未登记类别自动转报告；resolve_type/build_reuse_matrix 写入路径全部拒绝，不映射『其他费用』绕过",
+    "bpm_request.py：W01c 复用矩阵——六字段组封闭（form_identity 仅 identify/stable_context 复用需依据+旧年度预算须确认/current_person 不被模板历史人员覆盖/current_business+proven_references 禁模板来源/empty_tables 只 not_applicable 带理由）；adopt/replace 必绑 fact_id，值从事实取（fact_field 显式映射如 corpCode←company），字段级 locator 覆盖；register_matrix role=decision_matrix 落派生根；entries_from_matrix 产 blueprint 绑定项建议",
+    "R4-P2 四条闭合：bpm_facts._validate_fact_invariants 共享 add()/from_payload 全套构造不变量；bpm_plan_generate expect_money 缺 amount 键显式失败+前置门 3 拒绝无 input_hashes 的被绑定 material/template 事实（不自动补绑定）；_dec 正例实质断言",
+    "tests/test_bpm_request.py（19）+test_bpm_plan_generate 增 3+test_bpm_facts 增 6：登记两态/唯一性/矛盾集中/未知识别+写入拒绝/矩阵六组+三冒充反例（模板旧金额冒充本次、旧年度预算无确认沿用、模板历史申请人覆盖）/矩阵 blueprint→生成器→validate_plan 空 issues 贯通",
+    "automation/offline-verify/template-materials-20261024-w01-final/build_result.json：OFFLINE_PASS（probe-selftest exit 0 + capability-tests 218/218）；source_manifest 51 键自动含 bpm_request.py"
+   ],
+   "evidence_layer": "离线已验证（单元+统一离线构建）；live OA 读模板属 W06 浏览器轮",
+   "notes": "bpm_materials.DERIVED_ROLES 显式扩 user_request+decision_matrix 两枚举（封闭枚举扩充非宽容补全）"
+  },
+  "W02": {
+   "title": "原始资料工作区（原件/派生双根契约）",
+   "status": "已验证",
+   "evidence": [
+    "bpm_materials.py：DUAL_MANIFEST_VERSION=2.0 双根 manifest（originals_root/derived_root 互不嵌套、files/derived_files、role 封闭枚举、sources 来源关系、哈希/尺寸重算）；prepare_dual_materials/register_derived/validate_dual_manifest/dual_hash_sets；validate_image_documents 与 validate_value_proof 按 manifest 版本分流（v2.0：提取 JSON 必须是派生根 role=reviewed_extraction 工件并绑定原件哈希；proof kind 必填，agent 推断不得 kind=user）",
+    "bpm_plan.py：4 处最小接线（manifest 校验分流/sources kind +agent_reviewed/corroborates 上下文/reviewed-extraction 绑定分流），v1.0 路径不变",
+    "automation/fill-plan.schema.json：sources.kind 与 valueProof.kind 枚举 +agent_reviewed",
+    "tests/test_bpm_materials_dual.py：7 测试全绿（合法双根/根外拒绝/原件+派生哈希漂移拒绝/v1.0 兼容读取/agent 推断 kind=user 反例/register 边界/双根发票流闭合）",
+    "automation/offline-verify/template-materials-20261024-102400/build_result.json：OFFLINE_PASS（probe-selftest exit 0 + capability-tests 127/127）"
+   ],
+   "evidence_layer": "离线已验证（单元+统一离线构建）；未涉及页面机制，无浏览器验收项",
+   "notes": "B1/B2 差距闭合：复核 JSON 合法落位于派生根；kind 不再静默默认 user"
+  },
+  "W03": {
+   "title": "PDF/图片/表格理解（agent 自提取复核）",
+   "status": "已验证",
+   "evidence": [
+    "bpm_extraction.py：四链路——PDF 嵌入文本行级锚点提取+Decimal 闭合复核；图片本地渲染+封闭 OCR 引擎注册（barstub 确定性像素引擎，无 tesseract 不新增第三方库）+ocr_result/reviewed_extraction 两层分离；xlsx 多 sheet/隐藏行/筛选/表头/合计行/公式缓存或本地 SUM 重算/前导零/跨表重复提示；CSV 行列定位+丢精度缺口；语义类别盘点（内容哈希判重、关键词+版面/表结构判类、文件名不作证据、不确定标待定）；结构化缺口 GAP_FIELDS 封闭",
+    "tests/test_bpm_extraction.py + tests/fixtures/w03/（全合成）：13 测试全绿，覆盖 D1-D5 面（PDF 端到端两层/金额不闭合缺口/定位锚点；图片两层+复核不一致拒绝+agent-visual 诚实证据；xlsx 语义+数值编号丢精度缺口；CSV 定位+科学计数/尾零；分类四类+文件名反例+内容判重；R2-P1 任意 CWD 相对根回归×2）",
+    "bpm_materials.py：R2-P1 修复——register_derived 与 validate_image_documents 两处 derived_root 解析统一挂 manifest 所在目录（相对根不再受 CWD 影响）",
+    "automation/offline-verify/template-materials-20261024-111625/build_result.json：OFFLINE_PASS（probe-selftest exit 0 + capability-tests 146/146；子集模式 -p test_bpm_*.py 实际覆盖全部测试文件，与全量 discover 146 等价）"
+   ],
+   "evidence_layer": "离线已验证（单元+统一离线构建）；无浏览器验收项",
+   "notes": "R2-P1 已闭合；R2-P2 文档统一 discover 写法已落实（构建内子集口径如上注明）；复核证据逐字段留 review_evidence，OCR 裸输出层永不携带 reviewed"
+  },
+  "W04": {
+   "title": "本次事实与对账（+R2-P5 构建源清单修复）",
+   "status": "已验证",
+   "evidence": [
+    "bpm_facts.py：版本化业务事实层——FactSet 稳定 ID（F-0001…）、封闭来源枚举 material_extraction/template/user_instruction/system_observation/deterministic_computation（绑定派生工件的事实禁标 user_instruction，agent 推断不伪装用户；确定性计算强制 derivation；定位 locator 必填）；分配/免票依据引用事实 ID 不复制票号金额（add_allocation 引用完整性校验）；check_version_drift 按绑定哈希比对识别受影响事实标记 needs_replan，不改写既有事实（frozen Fact）",
+    "bpm_facts.py：程序化对账 reconcile（先于业务写入）——同票多扫按号码归并+票面跨扫一致阻断；票据 Decimal 闭合（票面≠分配/部分票面/超分配阻断）；费用行完整分配或免票依据（免票无理由拒绝）；汇总层 vs 明细层一致；总额分层闭合（总额=明细=收款合计，跨层相加重复计费不接受）；适用说明按类别闭合；费用说明 vs 报销范围；收款身份组（残缺/同名冲突阻断，缺位视为候选未建非冲突）；未知业务表边界阻断；同金额不禁报（显式 pass）；跨任务发票提示（只读扫描 task-registry *.form.json 的 authorized_revision*.numbers/全文，提示级不阻断，目录缺失降级）；数量乘单价/借款抵扣在事实构造期即 ValueError 拒绝",
+    "tests/test_bpm_facts.py + tests/fixtures/w04/（全合成，stamp w04-v2）：28 测试全绿——来源规则/稳定引用/版本漂移不改写/正向闭合（含同金额双费）/W03 产物集成（真实 reviewed_extraction 建票闭合、Excel 112.00 vs 票面 128.70 冲突双向定位阻断、同票双扫描去重后单计、duplicate_copy 组内两副本组级消费一次、同号不同票面跨扫阻断）/边界（数量乘单价、借款抵扣、未知表、部分票面、未覆盖+免票无理由）/收款身份（残缺/同名冲突/缺位非冲突）/分层（汇总明细不符、跨层双计、范围越界、适用说明不闭合）/registry 提示（numbers 数组命中+目录缺失降级）",
+    "verify_bpm_build.py：R2-P5 修复——源清单改为 显式 CODE ∪ 根目录 bpm_*.py glob ∪ fill_once.py；先导 run template-materials-20261024-1158-r2p5fix OFFLINE_PASS 验证 manifest 45 键含 bpm_extraction.py（哈希与 round-2 冻结一致）后才做 W04",
+    "automation/offline-verify/template-materials-20261024-w04-final/build_result.json：OFFLINE_PASS（probe-selftest exit 0 + capability-tests 174/174）；source_manifest.json 47 键含 bpm_extraction.py 与 bpm_facts.py 及全部根业务模块——后续新 bpm_* 模块自动冻结，杜绝主交付模块漏出绑定"
+   ],
+   "evidence_layer": "离线已验证（单元+统一离线构建）；无浏览器验收项",
+   "notes": "R2-P5/R2-P6 均闭合：源清单自动纳入；duplicate_copy 组级语义有专测。事实层为 W05 计划衔接的上游：reconcile 报告 blocked=False 是生成计划的前置门"
+  },
+  "W05": {
+   "title": "计划生成与衔接（+R3-P2a/b 两小修）",
+   "status": "已验证",
+   "evidence": [
+    "bpm_facts.py：R3-P2a——_dec 超 2 位小数（如 100.004/0.005/1.234）显式 raise 金额语义歧义，不再静默 quantize；R3-P2b——reconcile 收款身份组新增同账号不同户名检测（同 account 不同 name 即 payee_identity block，detail 携带双方 locators）；新增 FactSet.from_payload 反序列化（键集/重复 ID 校验、按 fact_id 排序），与 to_payload 往返闭环",
+    "bpm_plan_generate.py：W05a 事实→计划生成器——双前置门（reconcile blocked 拒绝 + check_version_drift/current_bindings 与逐事实工件哈希现场重算漂移拒绝）；来源坐标统一 file#inner（xlsx Sheet!A1/JSON 指针/CSV row:col），覆盖定位拒绝跨文件偷换；fact.source→kind 映射封闭（material_extraction 按 manifest originals/derived 落位 material/agent_reviewed、template 哈希须与快照一致、user_instruction→user 且禁绑派生工件、deterministic_computation→derived 显式 sum inputs、system_observation v1 显式拒绝）；金额值必须与事实金额一致、derived 合计现场重算闭合；invoice_extractions 绑定 reviewed 提取（票号/票面/原件哈希三核）并按主表过滤分配、分配合计须与票面闭合；免票依据→no_invoice_rows 有源 proof；产出当场过 validate_plan(verify_sources=True)，失败即 PlanGenerationError(issues) 不放宽",
+    "fill_once.py + automation/task.schema.json：W05b 准备链路内部阶段衔接——facts_payload（agent 中间产物，FactSet 载荷+blueprint，非用户手写）可选键；prepare_task 阶段机 MATERIALS_READY→FACTS_BUILT→RECONCILED→PLAN_READY/NEEDS_INPUT，PLAN_READY 落 fill_plan.json 到 run 且 gaps=[]；对账阻断/生成器缺陷分别落 RECONCILIATION_BLOCKED/GENERATOR_INVALID 结构化缺口（GAP_FIELDS 形状）；无 facts_payload 旧断言全部保持（NEEDS_INPUT/MATERIALS_READY/不启浏览器）；events.jsonl 记录 stage",
+    "tests/test_bpm_plan_generate.py + tests/fixtures/w05/（全合成，stamp w05-v3）：16 测试全绿——R3-P2 两小修+payload 往返；travel 生成器 e2e（validate_plan 空 issues+load_plan 回读+分配指向主表行+票据哈希绑定）；六道前置门反例（对账阻断/绑定漂移/工件漂移/值事实不一致/校验失败带 issues/system_observation 拒绝）；express 免票+双空表（no_invoice_rows 有源 proof、table_applicability 空表全集有源理由、budgetOwner 列）；阶段衔接四例（PLAN_READY/blocked→FACTS_BUILT+结构化缺口键集/sabotage→RECONCILED+GENERATOR_INVALID/无 payload 旧断言保持）",
+    "automation/offline-verify/template-materials-20261024-w05-final/build_result.json：OFFLINE_PASS（probe-selftest exit 0 + capability-tests 190/190）；source_manifest.json 49 键自动含 bpm_plan_generate.py（R2-P5 glob 机制首次带新模块过统一构建）"
+   ],
+   "evidence_layer": "离线已验证（单元+统一离线构建）；无浏览器验收项（真实填写属 W06+）",
+   "notes": "双根 manifest derived_root 为绝对路径属 v1 既有契约，目录搬迁会使提取工件脱离派生根被显式拒绝——payload 与工件同根生成，不引入搬迁语义"
+  },
+  "W06": {
+   "title": "三类端到端成熟化（travel/express/rd_materials 真实本次业务）",
+   "status": "进行中",
+   "notes": "V3-R00（ctr-08d9de84）完成断点接手与供料盘点；V3-R02（ctr-fe416d87）完成 CASE-01 真实原件独立解析：73 件全分类去重（52 身份=27 通行费+5 油票+20 汇总单身份×2 版式）、逐票票面事实带锚点、交叉核验全绿（票数 40/40、页脚 40/40、成员闭合 40/40、独立票 54/54、大写↔小写 72/72、价税闭合 25/25）、4 同尺寸簇全判不同身份、期间链 2025-08-25→12-10（油票全 12-12）、Excel 21 行观测（km=subsidy=1438）、T=486.93/O=2031.17 仅观测不裁定、原件两次全量哈希零漂移、9 张渲染抽检；证据 automation/runs/20261026-115500-v3r02-case01/（CASE-01-report.md + case01-facts.json + consistency + raw + evidence）。CASE-02..08 待后续轮。 V3-R03（ctr-14bb5408）完成 CASE-02（20/20 行↔27/27 票逐票裁定、副本 H 列回填+I 公式、重开实测 I24=1924.93=独立 Decimal 复算、73 件原件零漂移、cell 变更清单）与 CASE-04（bpm_coverage fuel_pool_strict_surplus 五处分离：FACT_KINDS/schema coverage 块/validate_plan 严格门/evaluate_coverage 独立核验/双报告；F>R/F=R/F<R/±0.01 与覆盖富余反例 21 测试；真例 K=1438 M=1438.00 T=486.93 R=1924.93 O=2031.17 F=2518.10 margin=593.17 门槛 PASS）；证据 runs/20261026-131000-v3r03-case02/。CASE-03 公出单查证与 CASE-05..08 留后续轮。"
+  },
+  "W07": {
+   "title": "两类中频接入（低值办公/福利劳保）",
+   "status": "待做",
+   "notes": "02/04 已注册+离线建模（offline_modeled_live_pending）；live 观察部分完成（attempt_007：类别联动/枚举/picker 形态），budgetNo/subjectName NO_TABLE_DIALOG 未解+config 回填遗漏——移交类型接入工作包；V3 明确其他类别扩展不阻塞公出案例主线"
+  },
+  "W08": {
+   "title": "三类低频接入（其他/维修/会议）",
+   "status": "待做"
+  },
+  "W09": {
+   "title": "无人参与的独立验收与交付",
+   "status": "待做",
+   "notes": "伴随每类执行（W06-W08），独立 agent 按原始证据验收"
+  },
+  "W10": {
+   "title": "新 session 验收与最终交接",
+   "status": "待做"
+  }
+ },
+ "type_status": {
+  "travel": "代码+离线已验证；真实整单（回放口径）已验证 attempt_026；本次原件端到端未验；真实公出案例原件已供料（feature01-细化报销skill/12月公出-发票/，73 文件，V3-R00 盘点完成）",
+  "express": "代码+离线已验证；复杂结构历史回放已验证（types-express-complex-R2）；本次原件端到端未验",
+  "rd_materials": "代码+离线已验证；复杂结构历史回放已验证（types-rd-complex-R2）；本次原件端到端未验",
+  "低值易耗品办公用品": "已注册 office_supplies（round-9 ctr-15712bcb）：config+封闭注册+离线链 EXECUTION_READY；live 控件观察部分完成（submitType 联动/8 表结构/reimItem 5 枚举/关联类型枚举，attempt_007），budgetNo/subjectName=NO_TABLE_DIALOG 未解；config required_observations 回填遗漏（r10 断点，移交类型接入工作包）",
+  "福利费劳保用品": "已注册 welfare_labor（round-9 ctr-15712bcb）：config+封闭注册+离线链 EXECUTION_READY；live 控件观察部分完成（reimItem 6 枚举/关联类型枚举，attempt_007），budgetNo/subjectName=NO_TABLE_DIALOG 未解；config required_observations 回填遗漏（r10 断点，移交类型接入工作包）",
+  "其他费用": "未注册",
+  "维修费": "未注册",
+  "各项会议支出": "未注册"
+ },
+ "unclosed_defects": [
+  "D23 source_manifest 覆盖：V3-R00 已以唯一构建 materials-v3r00-20261026-101500 闭环（manifest 60 键含五类型 config+notes+bpm_chain+22 tests，OFFLINE_PASS）；历史失败计数保留在 workflow 失败字典",
+  "D22 active_output_semantics：V3-R02 已修复——verify_bpm_build real_input_layers(materials_dir, save_instruction_required) 三态语义（missing/supplied/waived），fill_only 下 specific_create_and_save_instruction 转 waived 不再冒充 missing_real_inputs；新增 5 测试（test_bpm_build_output_semantics.py）随全量 287 tests OK；唯一构建 materials-v3r02-20261026-121653 OFFLINE_PASS（--materials-dir 实测 supplied）",
+  "02/04 budgetNo/subjectName 选择器 NO_TABLE_DIALOG 根因未定（既有工件定位穷尽，需新假设局部复测）",
+  "本案例模板身份缺口（用户未指定完整单号；见 missing_inputs）"
+ ],
+ "closed_in_v3r02": [
+  "02/04 config required_observations 回填+notes.md 修订（r10 遗留，本轮授权写面内完成；welfare_labor.notes.md 含『观察状态回填』节，office_supplies 同步）"
+ ],
+ "errata": [
+  "R00-report §4『bpm_extraction 一页多票显式拒绝』行测试指针勘误：承重断言在 tests/test_bpm_extraction.py::D18MatrixTests::test_d18_pdf_one_page_two_invoices_pins_single_record_contract（D18 矩阵 §3-1，运行入口 `python -X utf8 -m unittest discover -s tests -p test_bpm_extraction.py -k test_d18_pdf_one_page_two_invoices`，tests 无 __init__.py 不支持点分模块路径）；tests/test_bpm_round10_sync.py 实际仅含 ManifestSyncTests/SchemaEnumSyncTests，无多票断言（V3-R02 按轮次任务核实并在此登记；冻结件 R00-report.md 本身不改）。【订正】类名初记 MultiPageRenderTests 系误，mc-expert 终审 P2-1 指正，已核实 tests/test_bpm_extraction.py:390 类定义并单测运行 OK 后订正",
+  "V3-R03 口径勘误：合同与初版报告'74 件（含 xlsx）'应为 73 件原件（manifest pre/post_hash_files=73）；'74'系 73 原件+1 run 目录副本的混记。零漂移结论不受影响（73/73 双向对账）。冻结合同文不改，本条为登记（mc-expert 终审 P2 指正）",
+  "V3-R03 .gitignore 越面疑云澄清：两行防护性 ignore（automation/.local-session/ 与 .claude/settings.local.json）内容早于本工作流（工作流启动前 gitStatus 快照即 M 态；round-2 终审实测 mtime=10-24）；round-3 窗口 13:15:01 mtime 变化无内容差异（B 零写调用），终审 P1 按证据澄清为非本轮写入，不作追认先例",
+  "V3-R04 订正 V3-R03 .gitignore 归属：13:15:01 mtime 变化系 A 侧 2026-10-26 13:15:01 按用户明确要求写入（非 B 写入，也非无来源变化）；其中 automation/.local-session/ 行确系工作流启动前遗留，V3-R03 原结论该部分不变",
+  {
+   "round": "V3-R06",
+   "date": "2026-10-26",
+   "finding": "mc-expert ENHANCED_FINAL P2-1/P2-2（GO 附带）",
+   "note": "① artifacts.events.jsonl 登记值 373b25e5… 系登记时刻快照（前 18 行）；其后追加 BUILD_CARRY_V3R05_VERIFIED 一条（内容已经审计独立证实），终态 19 行整体哈希 01b8f79967d3…。events.jsonl 为追加式可变文件，不参与终局哈希绑定（stage1_result 同口径）。② 模板快照存在两种序列化副本：run 根 template_snapshot.json=7c71bd42…（登记绑定值），attempt_001/evidence/template_snapshot.json=58e0ccf21971…（同一次读取的 evidence 副本，JSON 键排序后语义等价，审计已复核）。",
+   "events_final_sha256": "01b8f79967d337c1460a1769cdea9c268fbc62d4e95236c3d1cfb2b37b90d92b",
+   "events_final_lines": 19,
+   "evidence_snapshot_copy_sha256": "58e0ccf21971298ad257575c7b72383b3e0f795a7e621d6d944b54a5f51cdfb7",
+   "disposition": "加法订正：不改既有键值，终态值以本条为准"
+  }
+ ],
+ "missing_inputs": [
+  "【CLOSED 2026-10-26 V3-R06】模板单号 15426095951 已由用户 2026-10-26 在 A 窗口提供（原话「模板单号是 15426095951，也就是【陈晶】最近的一张报销单，继续」，入 team-task.md src-db223254）；来源=用户输入非 agent 自查。快照已读（travel 兼容，sha256 7c71bd42…），CASE-05/06 前置解除",
+  "其他七类各自的『本次真实原始材料』未提供——按 V3 §1.2 不属本轮完成门槛，留后续需求"
+ ],
+ "authorization_scope": {
+  "save": "不测保存、不验收保存成功/新单号/UUID/重开/持久化（V3 fill_only）；SaveController/registry 守卫原样保留",
+  "browser": "V3 授权链：R00 已完成只读登录/身份核验（20261026-100537-login60，陈晶 116070053 authenticated）；后续轮公出单模块只读查找+真实 OA 只填不存；单 profile 单执行者",
+  "materials": "原件只读+哈希；工作簿仅同结构副本回填（CASE-02）；不自动 commit、不上传业务材料"
+ },
+ "active_run_profile": {
+  "workflow_run": "d91601924848489f84e317e68582de26",
+  "workflow_round": 6,
+  "team_run": "20261026-171850-db223254",
+  "contract_id": "ctr-cfe67f13",
+  "profile_id": "6f998b924ecf48b0b8c2b6ea16ef54ba",
+  "principal": "陈晶(116070053)",
+  "identity_checked_at": "2026-10-26T09:22:12+00:00",
+  "note": "V3-R06 刷新（登录探查+模板快照双观测三员同一；validate-only 止，OA 填写未测）"
+ },
+ "pending_human_nonblocking": [
+  "R2-P3（承上轮 P2-3）：验收工件 git commit（用户侧遗留决策）",
+  "R2-P4（承上轮 P2-4）：legacy docs 旧 token 键名清理（权限类命令，人工）"
+ ],
+ "next_actionable": "V3 真实公出案例 fill_only 考核全链收口（B7 终局标记已落）：B6 复核 CONSISTENT、CASE-08 新 session 收敛一致、skill 文档收口完成；剩余为用户侧遗留（git commit、legacy token 清理、.gitignore 增补评估）与后续观察（digest agent_reviewed 放行建议、校验器 corpCode 宽度、parsed PDF 占位）。保存/重开/持久化验收未在本案例行使，未来具体任务另有明确保存指令时按红线执行。",
+ "rounds": [
+  {
+   "round": 1,
+   "date": "2026-10-24",
+   "team_run": "20261024-100330-35ce11c1",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "ctr-4199eb39",
+   "summary": "W00 基线复核+总台账建立；W02 双根契约（manifest v2.0）实现并全量离线验证通过（127/127 + OFFLINE_PASS）",
+   "artifacts": [
+    "automation/template-materials-program/baseline-review-20261024.md",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md",
+    "bpm_materials.py",
+    "bpm_plan.py",
+    "automation/fill-plan.schema.json",
+    "tests/test_bpm_materials_dual.py",
+    "automation/offline-verify/template-materials-20261024-102400/build_result.json"
+   ]
+  },
+  {
+   "round": 2,
+   "date": "2026-10-24",
+   "team_run": "20261024-105600-20e40597",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "ctr-ca6d8a81",
+   "summary": "W03 原件理解四链路（PDF 锚点提取复核/图片两层/表格语义/语义盘点+缺口登记）+R2-P1 相对根修复；新契约 13 测试+全量 146/146+OFFLINE_PASS",
+   "artifacts": [
+    "bpm_extraction.py",
+    "bpm_materials.py",
+    "tests/test_bpm_extraction.py",
+    "tests/fixtures/w03/",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md",
+    "automation/offline-verify/template-materials-20261024-111625/build_result.json"
+   ]
+  },
+  {
+   "round": 3,
+   "date": "2026-10-24",
+   "team_run": "20261024-114148-e0a60bed",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "ctr-1eecdddb",
+   "summary": "W04 事实层+对账（bpm_facts.py：稳定 ID/五类来源/版本漂移/票据闭合/跨源冲突/分层闭合/收款身份/边界拒绝/跨任务提示）+R2-P5 构建源清单修复（根 bpm_*.py 自动冻结）；新契约 28 测试+全量 174/174+两次 OFFLINE_PASS",
+   "artifacts": [
+    "bpm_facts.py",
+    "tests/test_bpm_facts.py",
+    "tests/fixtures/w04/",
+    "verify_bpm_build.py",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md",
+    "automation/offline-verify/template-materials-20261024-1158-r2p5fix/build_result.json",
+    "automation/offline-verify/template-materials-20261024-w04-final/build_result.json"
+   ]
+  },
+  {
+   "round": 4,
+   "date": "2026-10-24",
+   "team_run": "20261024-122428-83144781",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "ctr-afabdc8a",
+   "summary": "W05 计划生成与衔接（bpm_plan_generate.py 事实→v1.0 计划生成器双前置门+来源坐标 file#inner+正式校验不放宽；fill_once 阶段机 MATERIALS_READY→PLAN_READY 与 facts_payload 可选键；task.schema 同步）+R3-P2a/b 两小修（_dec 两位小数、同账号不同户名）；新契约 16 测试+全量 190/190+OFFLINE_PASS（源清单 49 键自动含新模块）",
+   "artifacts": [
+    "bpm_plan_generate.py",
+    "bpm_facts.py",
+    "fill_once.py",
+    "automation/task.schema.json",
+    "tests/test_bpm_plan_generate.py",
+    "tests/fixtures/w05/",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md",
+    "automation/offline-verify/template-materials-20261024-w05-final/build_result.json"
+   ]
+  },
+  {
+   "round": 5,
+   "date": "2026-10-24",
+   "team_run": "20261024-131905-30ee7ae1",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "ctr-1a5b516d",
+   "summary": "W01 用户请求与模板决策（bpm_request.py：请求登记派生工件/缓存定向模板核对+类别矛盾集中报告/未知类别只读识别+写入拒绝/六组复用矩阵+三冒充反例+矩阵 blueprint 生成器贯通）+R4-P2 四条加固（from_payload 共享不变量/expect_money amount 键/无哈希事实拒绝/_dec 实质断言）；28 新测试+全量 218/218+OFFLINE_PASS（源清单 51 键自动含新模块）",
+   "artifacts": [
+    "bpm_request.py",
+    "bpm_facts.py",
+    "bpm_plan_generate.py",
+    "bpm_materials.py",
+    "tests/test_bpm_request.py",
+    "tests/test_bpm_plan_generate.py",
+    "tests/test_bpm_facts.py",
+    "tests/fixtures/w01/",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md",
+    "automation/offline-verify/template-materials-20261024-w01-final/build_result.json"
+   ]
+  },
+  {
+   "round": 6,
+   "date": "2026-10-24",
+   "team_run": "20261024-140229-b401214d",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "ctr-ed80c9d0",
+   "artifacts": [
+    "bpm_request.py",
+    "tests/test_bpm_request.py",
+    "tests/test_skill_docs.py",
+    ".claude/skills/bpm-fill-run/SKILL.md",
+    ".claude/skills/bpm-fill-run/references/full-chain.md",
+    "automation/runs/20261024-150200-tpllive/",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md",
+    "automation/offline-verify/template-materials-20261024-w06-final/"
+   ],
+   "summary": "W06 前置：执行串联（execution_ready 真实 validate-only 子进程两态+操作人封闭来源+session record helper）+ skill 新链路增补（full-chain.md+结构校验 9/9，红线文字逐字不动）+ live 模板读取成功留证（15426095951 只读 live 与缓存全一致）+ R5-P2 三条落地；全量 236/236 全绿，唯一 run template-materials-20261024-w06-final OFFLINE_PASS。"
+  },
+  {
+   "round": 7,
+   "date": "2026-10-24",
+   "team_run": "（见归档）",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "（归档 team-task.md 内）",
+   "summary": "r7 差旅真实历史回放填写+独立 DOM 核验（travelloop 15426093015；证据 automation/runs/20261024-163009-3250e7d0/ 与 round-07 acceptance）",
+   "artifacts": [
+    "team-progress/team-workflow/a7618f4fa0b040fa81782c93eb1bc926/round-07/"
+   ]
+  },
+  {
+   "round": 8,
+   "date": "2026-10-24",
+   "team_run": "（见归档）",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "（归档 team-task.md 内）",
+   "summary": "r8 快递/研发真实历史回放填写+独立 DOM 核验（15426094780 / 15426104120；证据 automation/runs/20261024-173807-72170651/、20261024-174803-cd2e04e4/ 与 round-08 acceptance）",
+   "artifacts": [
+    "team-progress/team-workflow/a7618f4fa0b040fa81782c93eb1bc926/round-08/"
+   ]
+  },
+  {
+   "round": 9,
+   "date": "2026-10-24",
+   "team_run": "（见归档）",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "（归档 team-task.md 内）",
+   "summary": "r9 02/04 首件放量（config+封闭注册+离线链 EXECUTION_READY）+全量 273 tests+OFFLINE_PASS；A 验收 20 PASS/1 BLOCKED/6 FAIL；round-9 披露三项授权面遗漏",
+   "artifacts": [
+    "team-progress/team-workflow/a7618f4fa0b040fa81782c93eb1bc926/round-09/",
+    "automation/offline-verify/template-materials-20261024-r9-acceptance/"
+   ]
+  },
+  {
+   "round": 10,
+   "date": "2026-10-24",
+   "team_run": "（见归档）",
+   "workflow_run": "a7618f4fa0b040fa81782c93eb1bc926",
+   "contract_id": "ctr-8cb7b247",
+   "summary": "r10 附属同步三项（manifest 五类型/schema enum/一页多票拒绝）+bpm_chain.py+四类 validate-only+02/04 观察 attempt_001-007 已落盘，但未完成最终冻结/交接，B_RUNNING 断点；2026-10-26 操作员维护归档 RETIRED_NOT_COMPLETED（代码在途成果经 V3-R00 核实保留）",
+   "artifacts": [
+    "team-progress/team-workflow/a7618f4fa0b040fa81782c93eb1bc926/operator-recovery-20261026-v3/",
+    "automation/runs/20261024-211000-chain-r10-*/",
+    "automation/runs/20261024-213500-type0204-observe/"
+   ]
+  },
+  {
+   "round": "V3-R00",
+   "date": "2026-10-26",
+   "team_run": "20261026-095208-a68a0869",
+   "workflow_run": "d91601924848489f84e317e68582de26",
+   "contract_id": "ctr-08d9de84",
+   "summary": "V3 新工作流首轮 R00：断点接手盘点+归档核实（RETIRED_NOT_COMPLETED）；registry 10 条全 FORM_INTENT 无保存意图；登录/身份只读核验（陈晶 authenticated）；r10 三项三态核实并经唯一构建 materials-v3r00-20261026-101500 冻结（OFFLINE_PASS，manifest 60 键含 22 tests，D23 闭环）；四链绑定 sha 重算全匹配；02/04 已实测/NO_TABLE_DIALOG 分类；案例 73 文件逐件哈希+Excel 只读结构+模板身份缺口登记+模型差异清单；台账纠偏至 fill_only 口径",
+   "artifacts": [
+    "automation/runs/20261026-100322-v3r00-inventory/",
+    "automation/runs/20261026-100537-login60/",
+    "automation/offline-verify/materials-v3r00-20261026-101500/",
+    "automation/template-materials-program/progress.json"
+   ]
+  },
+  {
+   "round": "V3-R02",
+   "date": "2026-10-26",
+   "team_run": "20261026-095208-a68a0869",
+   "workflow_run": "d91601924848489f84e317e68582de26",
+   "contract_id": "ctr-fe416d87",
+   "summary": "V3 第二轮：D22 修复（real_input_layers 三态语义+5 新测试+全量 287 OK+唯一构建 materials-v3r02-20261026-121653 OFFLINE_PASS）；CASE-01 完成（73 件→52 身份全量解析：27 通行费 T=486.93+5 油票 O=2031.17+20 汇总单身份×票据/行程双版式；交叉核验票数/页脚/成员闭合 40/40、独立票 54/54、大写↔小写 72/72、价税闭合 25/25；4 同尺寸簇全不同身份；期间 2025-08-25→12-10、油票全 12-12；Excel 21 行 km=subsidy=1438 观测；0906 拆分票/0917 返程同安站/1210 晋江南拆分票如实登记；两次全量哈希零漂移+9 渲染抽检；机器+人工双报告）；承接项完成（02/04 required_observations 回填+notes 修订、R00-report §4 多票测试指针勘误入台账 errata、模板缺口维持 PENDING_HUMAN_NONBLOCKING）",
+   "artifacts": [
+    "verify_bpm_build.py",
+    "tests/test_bpm_build_output_semantics.py",
+    "automation/runs/20261026-115500-v3r02-case01/",
+    "automation/offline-verify/materials-v3r02-20261026-121653/",
+    "automation/document-types/office_supplies.json",
+    "automation/document-types/welfare_labor.json",
+    "automation/document-types/office_supplies.notes.md",
+    "automation/document-types/welfare_labor.notes.md",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md"
+   ]
+  },
+  {
+   "round": "V3-R03",
+   "date": "2026-10-26",
+   "team_run": "20261026-125832-39b87f83",
+   "workflow_run": "d91601924848489f84e317e68582de26",
+   "contract_id": "ctr-14bb5408",
+   "summary": "V3 第三轮：CASE-02 范围裁定+副本回填+可靠重算（20 行↔27 票逐票映射零缺口；COM 副本 H 列逐票金额+行内 I=G+H 公式、I24 沿用 SUM；重开实测=独立 Decimal 复算=1924.93；73 件原件前后零漂移；cell 变更清单；列位纠偏 G→H 登记）；CASE-04 覆盖模型五处分离（bpm_coverage.py 新模块+FACT_KINDS 一行+schema 可选块+validate_plan 严格门+独立核验+双报告；21 反例测试 F>R/F=R/F<R/±0.01/富余不加报；通用回归零放宽）；真例覆盖 PASS（R=1924.93 F=2518.10 margin=593.17）；全量 308 OK+唯一构建 materials-v3r03-20261026-131656 OFFLINE_PASS（manifest 63 键含新件）",
+   "artifacts": [
+    "bpm_coverage.py",
+    "bpm_facts.py",
+    "bpm_plan.py",
+    "automation/fill-plan.schema.json",
+    "tests/test_bpm_coverage.py",
+    "automation/runs/20261026-131000-v3r03-case02/",
+    "automation/offline-verify/materials-v3r03-20261026-131656/",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md"
+   ]
+  },
+  {
+   "round": "V3-R04",
+   "date": "2026-10-26",
+   "team_run": "20261026-141933-c685aed0",
+   "workflow_run": "d91601924848489f84e317e68582de26",
+   "contract_id": "ctr-50808d2d",
+   "summary": "V3 第四轮（CASE-03 公出单模块逐票查证，fill_only 零写入）：真实模块 /oa/workouts 定向宽窗查询（申请+制单日期 2025-01-01..2026-12-31，制单人清空为全组织 CreatedPath=\"/\" 逐页核实，5 页 96 单+截图）；陈晶申请人 13 单全详情双通道采集（观测只读 GET /WorkOut/<uuid32> 200 bizNumber 互证 + 查看路由页 /oa/workout?type=view&id= 截图/文本，21 行明细含行级公出人员）；缺日全组织候选 8 单排除证据（同行同事单行级均不含陈晶）；27 张通行费逐票 actual_trip_matches（机器+人读双版本）：12 票同日陈晶单匹配（Σ221.02，5 单 12025085485/12025092237/12025105858/12025115547/12025121473，含 reimed 状态）+15 票如实零匹配（Σ265.91，5 日 0904/0917/0928/1124/1210，附排除依据）；三向复算票集 27 恒等/Σ=486.93/逐单票数与 Excel 行闭合；attempt_010 api-fallback-* 因 uuid 替换缺陷整体作废并在 manifest 登记；零占位选择、与占位语义严格分离；纯查证轮无源码/schema 改动，全量 unittest+offline-verify 沿用 V3-R03（308 OK / materials-v3r03-20261026-131656）并在此说明",
+   "artifacts": [
+    "automation/runs/20261026-143340-v3r04-case03/",
+    "automation/runs/20261026-143340-v3r04-case03/actual_trip_matches.json",
+    "automation/runs/20261026-143340-v3r04-case03/CASE-03-report.md",
+    "automation/runs/20261026-143340-v3r04-case03/details3d-manifest.json",
+    "automation/runs/20261026-143340-v3r04-case03/candidates3e-manifest.json",
+    "automation/runs/20261026-143340-v3r04-case03/chen-docs.json"
+   ]
+  },
+  {
+   "round": "V3-R05",
+   "date": "2026-10-26",
+   "team_run": "20261026-160050-e6a907d0",
+   "workflow_run": "d91601924848489f84e317e68582de26",
+   "contract_id": "ctr-82e59a70",
+   "summary": "V3 第五轮（证据卫生修复，零 OA 浏览器/零业务写入/不进 CASE-05..08）：O1 wide-query-manifest 每页加 sha256_file（文件字节可复算）+顶层 hash_semantics（原 sha256 保留=logical 口径）；根因=run 内 case03_probe._drain_capture:123-124 紧凑串计哈希而落盘 indent=1，共享探针无此缺陷，防复发规范新增 .claude/skills/bpm-fill-run/references/evidence-hash-semantics.md（附 O2 双日期口径与 DOM 文本噪声未来口径）。O2 candidates3e-manifest 与 actual_trip_matches 各加 date_field_semantics（matched=实际公出时间/排除块=自然区间，12 张 MATCHED 两口径等价；12025095297 分歧示例入说明）。O3 12 条 matched_doc 逐单回读 attempt_011 api-detail 原始 body 加 applicant=陈晶/applicant_user_id=116070053；ui_text 等价替换为 run 相对路径；CASE-03-report 逐单表加申请人列。final-artifact-hashes 同步（6 键新值+补登 wide-query-manifest/CASE-03-report+revision 说明）。73 原件第 5 轮零漂移复核（vs v3r00 manifest 全 73 sha 相等）。观察项闭环：active_run_profile 刷新（旧值 workflow_round=3/R02 team_run/R03 contract 见 round 条目）；schema 字节基线建立（materials-v3r05-20261026-162500/fill-plan.schema.json.v3r05-baseline.bak，构建前后 ba7b065f… 一致）；verify_bpm_build capability pattern test_bpm_*.py→test_*.py（299→308 与全量等价，OFFLINE_PASS 实证）；test_bpm_round10_sync docstring 按 errata[0] 订正；round-1 source.md sha256 属性名不改（冻结历史件，红线登记）；detail3d 文本噪声不改历史（采集规范给未来口径）。触及测试/构建/skill references → selftest 4.4s 全绿+全量 308 OK+唯一新构建 materials-v3r05-20261026-162500 OFFLINE_PASS；before/after 哈希对照表 automation/runs/20261026-161500-v3r05-hygiene/revision-hashes.json （before=round-4 finish 归档 handoff 权威值）。模板身份缺口维持 PENDING_HUMAN_NONBLOCKING（等用户提供完整模板单号后进 CASE-05）。",
+   "artifacts": [
+    "automation/runs/20261026-161500-v3r05-hygiene/",
+    "automation/runs/20261026-161500-v3r05-hygiene/revision-hashes.json",
+    "automation/runs/20261026-143340-v3r04-case03/wide-query-manifest.json",
+    "automation/runs/20261026-143340-v3r04-case03/candidates3e-manifest.json",
+    "automation/runs/20261026-143340-v3r04-case03/actual_trip_matches.json",
+    "automation/runs/20261026-143340-v3r04-case03/final-artifact-hashes.json",
+    "automation/runs/20261026-143340-v3r04-case03/CASE-03-report.md",
+    ".claude/skills/bpm-fill-run/references/evidence-hash-semantics.md",
+    "verify_bpm_build.py",
+    "tests/test_bpm_round10_sync.py",
+    "automation/offline-verify/materials-v3r05-20261026-162500/"
+   ]
+  },
+  {
+   "round": "V3-R06",
+   "date": "2026-10-26",
+   "team_run": "20261026-171850-db223254",
+   "workflow_run": "d91601924848489f84e317e68582de26",
+   "contract_id": "ctr-cfe67f13",
+   "summary": "V3 第六轮（CASE-05 模板定向读取 + CASE-06 可执行计划，validate-only 止，零业务写入/零关联选择/不测保存）。模板缺口 CLOSED：单号 15426095951 系用户 2026-10-26 在 A 窗口提供（原话入任务文），非 agent 自查。CASE-05（层次=真实控件已验证·只读）：bpm_template --live 读陈晶最新报销单，快照 sha256 7c71bd42…（uuid 92d41ffd…, travel 兼容，products 实测 0 行）；三员身份链同一（登录操作人=制单人=申请人=陈晶/116070053，两独立观测）；旧 relation 公出单 12026096668 已被旧单使用→禁复用。CASE-06（层次=离线已验证）：fill-plan v1.0（文件 sha256 0d5b22cd…，fill_once 规范化 plan_hash 1b3ba0b9…）——details 2 行（交通费/通行费 486.93+交通费/公里补贴 1438.00）、costs 20 行（其它交通 2025-08-25~12-10，逐行公里补贴+逐票通行费+no_invoice 可定位理由）、banks 1 行（收款四字段模板证据采用，cost 1924.93）、relations 留空（travel 契约禁 table_applicability，理由/占位语义入 not_applicable；随机测试占位留 CASE-07，与 actual_trip_matches 严格分离，零编造单号/UUID）；sources 170（template 14+material 156，每值 path/locator/sha256）；coverage 全量并独立重算闭合（K=1438/rate=1.00/M=1438.00/T=486.93/R=1924.93/O=2031.17/F=2518.10/margin=593.17，F>R）；fill_once --validate-only --expect-name 陈晶 首轮 PLAN_VALIDATED；jsonschema SCHEMA_OK。字段复用矩阵双版本（采用/替换/不适用+依据；公司标签取公出单模块实测行 7 非旧单推导）。73 原件第 6 轮零漂移 73/73。源码/schema/测试零改动→沿用 V3-R05 构建（materials-v3r05-20261026-162500 OFFLINE_PASS）。不冒充：OA 填写/占位关联=未测（CASE-07）。",
+   "artifacts": {
+    "run_dir": "automation/runs/20261026-172300-v3r06-template-plan/",
+    "template_snapshot.json": "7c71bd42b9730635adb24c7c0d410895605b2ccaa2ca6ff1cf75a94a06b0567a",
+    "fill-plan.json": "0d5b22cd6f12058dd04567b3bb63b14ca1775cbd51690e324ece118a3a242fa8",
+    "case06-task-material.json": "a6583a298da434eb50caa5d29362e0d1387135313ca24e5f3d15923ba1e1d3b3",
+    "materials-manifest.json": "d78b16bce9b14b25f41b78cf415f791983dfb2ba434e792c9a6ddf79dd664d6a",
+    "field-reuse-matrix.json": "8cbafac3bacfc8329afdbe868afe3a01344d7d79f7a4da82187b3800d0bdca15",
+    "field-reuse-matrix.md": "8c669cac5c0eca5e0b5b153e1a6eca1b1490a7a24527005a141e349545a4f1a4",
+    "CASE-06-report.md": "27bf28a02bcba051da81e121ad555688c1f40ef4e8e8b63275fc009012c741d9",
+    "validate_only_output.json": "0e1f0a4cf9d3861e76fa8bf723986bc7913b16d6661d24154a6db91818309429",
+    "events.jsonl": "373b25e58bb980cb0c208dde2e604a14f90fb014ffdd56f5bfd0c040bbbac53e"
+   }
+  },
+  {
+   "round": "V3-R07",
+   "date": "2026-10-26",
+   "team_run": "20261026-180546-c1c5d877",
+   "workflow_run": "d91601924848489f84e317e68582de26",
+   "contract_id": "ctr-affef776",
+   "summary": "V3 第七轮：CASE-07 正式入口真实填写+受限随机测试占位关联（fill_only，层次=真实控件已验证·填写+回读·未保存）。前置只读全绿（bpm_login 陈晶/116070053 authenticated；registry 10 文件无 SAVE_INTENT/SAVE_UNCERTAIN，v1.1 task journal 先不存在；绑定链 v1.1 baseline=round-6 fill-plan 0d5b22cd…、template 7c71bd42…、manifest c45d6c4d…=上游5件+case07材料08767578…+真实枚举369a4793…；coverage F=2518.10>R=1924.93 复验过、时序入 events）。真实关联控件枚举 attempt_002（dialog 首屏 20 行/共 76，未翻页未检索，titlebar X 关闭，selection_performed=false、bizNumber_after_close=''，零选择零副作用；22 项下拉全选项留档；attempt_001 教训=新增行后编辑态已挂载且面板已展开，无条件组件 click 是 toggle 会收起面板，已对齐 bpm_ui._pick_option 修复）。执行变体 v1.1（零偏离断言过：除 task_id/授权/test_context/not_applicable[0]/relations/oa_test_relations/4 源/materials 外逐路径==v1.0；jsonschema+validate_plan(verify_sources=True) issues=[]）。正式入口真实填写 SUCCESS_FILL_ONLY（18:29:39→18:34:50，tech 309.5s）：header+details 2+costs 20+banks 1+占位关联 1 行全部真实原生控件写入，input_plan_snapshot 与 v1.1 字节相同（6c9d1b6f…）。B5 独立回读：ok=true issues=[]，行数四表全等，金额四向 1924.93==R，额外/重复/缺失=0/0/0，completeness 六区 true；零保存类点击，save_status=NOT_ATTEMPTED，keep_open 15min 干净，own_test_page_close unsaved=true，页面编制中无单号无 UUID；registry journal FORM_INTENT。73 原件第 7 轮零漂移 73/73。源码/schema/测试有改（bpm_plan oa_test_relations 块+schema+8 测试）→全量 unittest 316 OK(4 skip)+唯一新 offline-verify materials-v3r07-20261026-1900 OFFLINE_PASS。B6 独立复核与 B7 终局标记、CASE-08 新 session 验收留 round 8。",
+   "placeholder_relation_section": {
+    "method": "random.Random(seed).randrange",
+    "seed": "6074a75771428d7e",
+    "seed_derivation": "sha256('20261026-180546-c1c5d877-case07')[:16]（team_run 派生，先验提交）",
+    "candidates": "真实 relation dialog 默认首屏 20 行/共 76（attempt_002 枚举，未翻页未检索）",
+    "exclusion": "12026096668（已用真实公出单）核验不在候选，0 命中无移除",
+    "chosen": {
+     "index": 6,
+     "bizNumber": "12024070132",
+     "row": "结束/2024-07-01/陈晶/项目跟进"
+    },
+    "readback": {
+     "bizTypeName": "公出单",
+     "bizNumber": "12024070132",
+     "nowCost": "1,924.93(readonly)==1924.93",
+     "isLast": "是",
+     "detailrels_projection": "唯一行 bizNo=12024070132 cost=1,924.93，其余只读空白"
+    },
+    "zero_override": "占位带出只读字段 bizCost=0.00/totalReimedCost=0.00/description=陈晶(2024-06-24) 未影响 costs 20 行与四向金额复算",
+    "separation": "与 actual_trip_matches（v3r04-case03，12 MATCHED/15 NO_MATCH）分开建模/核验/报告，零冒充；旧单关联未动、未占用 12026096668；未观察即时持久占用（页面始终编制中无 UUID）",
+    "scope_binding": "仅本案例+fill_only；不改普通业务实际完整对应要求"
+   },
+   "artifacts": {
+    "prep_run": "automation/runs/20261026-181500-v3r07-fill/",
+    "fill_run": "automation/runs/20261026-183000-v3r07-fill/",
+    "fill_plan_v11_sha256": "6c9d1b6fd719124e30b3af0e5cba7fb9df783abc3ae6c7a65e763734ec721f7c",
+    "relation_enumeration_sha256": "369a47938da2215e0cc11a495128e0a7f75f8ef3d2c8d0948607df972b3b0176",
+    "task_material_sha256": "08767578dcb057c4be121c2049c4870389247fe6d421f42cfe96fc1770a061d2",
+    "manifest_v11_sha256": "c45d6c4d5eadba3ba9e46ea4cd7effec179f8468a986055a5c89704ab4c0b78f",
+    "independent_readback_sha256": "868a920d1c0310b136bf15e73ca907250b884f251ddde7f0e3d966f110b5d3a7",
+    "independent_verification_sha256": "170cbdb5d182240c57e6efa482a8be244b3543a74c8b43d26a38e75bee23c1cc",
+    "stage1_result_sha256": "6ef51f876152dd7a668c6b1ac1627abcc23abbbba9b6ee0784dc99ae0d86c7d2",
+    "fill_events_sha256": "d30ec412e4ce723fb6a8c4b97ffa5f6bdf1a46116de2c3f0cd245ef88ee89f95",
+    "prep_events_sha256": "af761684b50f30a1a3470d049be249940b903f838059bbe156bbaa7c23a30764",
+    "b5_report_sha256": "579151b67f3f1a7a01aca43ebe688d11df60e6687ba1a67414e54db831a431e7",
+    "b5_diff_summary_sha256": "7400d428393777869aad8b69f1529361d8a199b15200449e6ddb508bb4e282b1",
+    "offline_verify": "automation/offline-verify/materials-v3r07-20261026-1900/ OFFLINE_PASS(selftest+316)",
+    "unittest": "python -X utf8 -m unittest discover -s tests → 316 OK (skipped=4)",
+    "originals_zero_drift_7th": "73/73 vs automation/runs/20261026-100322-v3r00-inventory/case-file-manifest.json"
+   }
+  },
+  {
+   "round": "V3-R08",
+   "date": "2026-10-26",
+   "team_run": "20261026-192005-82e4775e",
+   "workflow_run": "d91601924848489f84e317e68582de26",
+   "contract_id": "ctr-3057b56a",
+   "summary": "V3 第八轮（收尾轮）：B6 全链独立复核 + CASE-08 新 session 使用验收 + B7 终局标记 + §12.3 最终清单与用户报告 + skill 文档收口；零业务写入（不新建报销页、不重填、不保存、不动 registry 意图、不改旧单、不重新占用已用公出单 12026096668；浏览器零业务动作，模板走 census 缓存）。B6（全新 mc-expert，零上下文）：七面独立重算=CONSISTENT 零差异——73 原件哈希对账、票面独立抽取、Excel 双通道、13 张公出单原始 API 重放重判、模板复用边界（14/170 sources）、v1.0 闭合、v1.1 14 叶路径差异+种子重放、B5 回读逐字段与占位零泄露；8 条观察均非差异（④种子字符串传参已补 travel.md）。CASE-08（全新 general-purpose，零上下文，白名单输入先验落盘）：阶段一独立重建至自有 v1.0 PLAN_VALIDATED（其独立 --task run 20261026-193100-0527f5dc）；阶段二四面对比核心全 CONSISTENT（27 票号集合逐张全等、coverage 全链、banks、身份、CASE-03 Σ闭合、模板快照一致）；3 项非金额差异如实（码vs显示名——交付链显示名口径更符合真实填写、证据深度 72 分类vs0+20免票、粒度 20vs2 cost 行）；过程中 3 次视觉读票幻觉均被机读+汇总单互证纠出（0904 定案 16104706）；一次 429 配额中断按等待重置后恢复同一 agent 上下文。skill 收口（纯文档）：SKILL.md 步骤2 机读文本层优先+双通道裁决；plan-contract.md 三处（PDF/图片机读优先、applicant 值纳入 sources、corpCode 显示名互引）；travel.md 前期已补 oa_test_relations 正式生成路径与 seed 字符串传参注记。行为类建议（digest agent_reviewed 放行、校验器 corpCode 码/显示名宽度、parsed PDF 占位）登记观察不改代码。本轮无源码/schema/测试变更→不新增 unittest/offline-verify（最新构建仍 materials-v3r07-20261026-1900 OFFLINE_PASS selftest+316）；73 原件第 8 轮零漂移 73/73。未保存结论：全案例 fill_only 完成，层次=真实控件已验证·填写+回读·未保存；页面盘点=v3r07 填写页 keep_open 后干净关闭（编制中、无 bizNumber、无 UUID、own_test_page_close unsaved=true），本轮无遗留业务页，profile 锁已释放，registry 仅 FORM_INTENT 无 SAVE_INTENT/SAVE_UNCERTAIN/SAVE_SUCCESS。",
+   "b7_terminal_marker": {
+    "marker": "B7_TERMINAL_V3_CASE_COMPLETE",
+    "scope": "V3 真实公出案例（模板 15426095951）fill_only 考核全链收口",
+    "fill_only_completion": {
+     "layer": "真实控件已验证·填写+回读·未保存",
+     "unsaved_evidence": "v3r07 attempt_001 SUCCESS_FILL_ONLY；save_status=NOT_ATTEMPTED；页面状态编制中、无 bizNumber、无 UUID；own_test_page_close unsaved=true",
+     "save_clicks": "保存/提交/发送/流转/上传/暂存/贴票/审批类点击 0 次（round-6/7/8 合计）",
+     "old_orders": "模板旧单关联未修改未释放；已用真实公出单 12026096668 未重新占用（枚举候选核验 0 命中）",
+     "registry": "无 SAVE_INTENT/SAVE_UNCERTAIN/SAVE_SUCCESS；仅 FORM_INTENT（fill_only）",
+     "not_claimed": "不宣称重新报销成功；保存/重开/持久化能力未在本案例行使，仍按红线受控"
+    },
+    "case_index": {
+     "CASE-01 原件解析": "automation/runs/20261026-115500-v3r02-case01/",
+     "CASE-02 Excel 回填+重算": "automation/runs/20261026-131000-v3r03-case02/",
+     "CASE-03 逐票公出单对照": "automation/runs/20261026-143340-v3r04-case03/",
+     "CASE-04 覆盖门槛": "随 CASE-02 证据（F=2518.10>R=1924.93 margin 593.17）",
+     "CASE-05/06 模板+计划": "automation/runs/20261026-172300-v3r06-template-plan/",
+     "CASE-07 真实填写+占位": "automation/runs/20261026-181500-v3r07-fill/ + automation/runs/20261026-183000-v3r07-fill/",
+     "CASE-08 新 session 验收": "automation/runs/20261026-192400-v3r08-final/case08/",
+     "B6 独立复核/B7 终局/最终清单": "automation/runs/20261026-192400-v3r08-final/"
+    },
+    "independent_review": {
+     "B6": "CONSISTENT 七面零差异（12fb3a90…）",
+     "CASE-08": "PASS_DYNAMIC 核心收敛一致（a1c6c862…）"
+    }
+   },
+   "artifacts": {
+    "final_run": "automation/runs/20261026-192400-v3r08-final/",
+    "b6_report_sha256": "12fb3a90e486c95afe8b963d11e1b4210dc53520a4504e227e5a85805a85b380",
+    "case08_report_sha256": "b24af05e49b8a1f1a9e436ef5233b60d370f47406d60106d8f562348a06414b5",
+    "user_report_sha256": "47646621c0e174acaae5d281c8aca4b292bdbc04a6a23232476570a514712a4a",
+    "case08_fill_plan_v10_sha256": "e600f67ad6a11267888f0c2da3f838bf20695f37aba6e62ec72f28786090edbc",
+    "case08_input_manifest_sha256": "482cabde6a77302cdb6b25e118bb159ae7b8737b151ef5e5aafc6f2d62788e5b",
+    "case08_comparison_sha256": "469dfc7dfd48a806f3ac036e8c6ae081027be41d94ef268dafd5ee788665977a",
+    "case08_skill_assessment_sha256": "f8131622584622759fe75086e770c538479890554f484b1149204f8793934239",
+    "final_manifest": "automation/runs/20261026-192400-v3r08-final/final-manifest.json（§12.3，B7 后生成）",
+    "skill_doc_patches": [
+     ".claude/skills/bpm-fill-run/SKILL.md",
+     ".claude/skills/bpm-fill-run/references/plan-contract.md",
+     ".claude/skills/bpm-fill-run/references/travel.md"
+    ],
+    "originals_zero_drift_8th": "73/73 vs automation/runs/20261026-100322-v3r00-inventory/case-file-manifest.json",
+    "offline_verify_latest": "automation/offline-verify/materials-v3r07-20261026-1900/ OFFLINE_PASS(selftest+316)（round-8 无代码变更，沿用）",
+    "case08_input_log_sha256": "fa5501eb6b0254812d2b1cd9520312ef3c94f584b4660c886b517c1eda59c1bc",
+    "mc_final_report_sha256": "101d39094e4e540bfa315648201cbd084208b5f6d201d02508c5ad41d0d26105",
+    "mc_expert_enhanced_final": "VERDICT=GO 8/8 PASS（P1 无；P2 文档措辞已修：CASE-08-report §四如实界定+input-log 加法订正，新哈希已重登；P3 五条处置见 MC-FINAL-report.md 末节）",
+    "readonly_login_probe_disclosure": "2026-10-26 19:29:16 login60 只读探查（run 20261026-192916-login60，SUCCESS_LOGIN_ONLY，全部写入检查 NOT_AUTHORIZED）——冻结合同允许的只读正式入口，非业务动作；round-8 报告此前未披露，按 mc-expert P3-3 补记"
+   },
+   "errata": [
+    "CASE-08-report.md §四原句\"input-log #1–22 全部落在白名单内\"为过度声明（#10 registry 查询、#16 工具源超出白名单字面；污染目的经核实未破坏）→ 已改为如实界定口径，新版 sha256 b24af05e…（mc-expert 终审 P2，2026-10-26 22:3x）",
+    "case08/input-log.md\"registry 未查询\"与 #10 矛盾 → 末尾加法订正（未改既有行），新版 sha256 fa5501eb…"
+   ]
+  }
+ ],
+ "observations_next_round": [
+  "detail3d-*-text.txt 门户菜单噪声：历史证据件不可变不改；未来采集按 references/evidence-hash-semantics.md 裁剪口径执行（V3-R05 处置=登记+规范）",
+  "round-1 source.md sha256 属性名（值为源块 id 前缀）误导：冻结历史件不回改，读者以 team-task-contract 的 sha256 全值核对（V3-R05 处置=登记不改）",
+  "verify_bpm_build.py:97 附件文件清单仍 bpm-scoped（test_bpm_*.py）：有意保留（capability 已全量等价 308；附件清单语义=bpm 构建附带源，扩面属行为变更非装饰，未动）",
+  "events.jsonl 采集时间戳统一带时区后缀（前 8 条本地无后缀/后 11 条 +00:00 混排需换算；V3-R06 已有 TIMESTAMP_CORRECTION 订正条目；未来采集按 evidence-hash-semantics.md 口径）",
+  "校验器对 corpCode 放行宽度：validate 只查 corpCode==applicant.company 自洽，不强制显示名口径（CASE-08 差异1；真实填写要求显示名，建议后续在校验器侧收紧或文档化口径——行为变更，未动）",
+  "digest 来源约束与 xlsx 表头 locator 现实错配：可作 digest 的原件字符串带换行（F3/H3），建议评估 digest 放行 agent_reviewed 或措辞白名单工件（CASE-08 评估#2；行为变更，未动）",
+  "parsed/*.json 对 PDF 全为 NEEDS_INPUT 占位、prepare_dual_materials 输出目录必须不存在：--task 产物对 PDF 类材料帮助有限（CASE-08 评估#6；后续改进项）",
+  "子代理撞 GLM 账号级 5h 用量上限（429）处置模式：后台定时到重置点后 SendMessage 恢复同一 agent 上下文，保零上下文边界（本轮实证可用）"
+ ]
+}
