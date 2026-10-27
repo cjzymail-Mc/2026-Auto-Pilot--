@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "issues": [],
+  "plan_hash": "8eea9c0562c19bba0293cb1289bd6ed72377b488c475141dc548bd0513815f85",
+  "snapshot_hash": "59a08d4c8a08ef05b2acce20e5dcefd0ae5070cc7edd92ca918de533adfae846",
+  "counts": {
+    "relations": {
+      "expected": 1,
+      "actual": 1
+    },
+    "details": {
+      "expected": 2,
+      "actual": 2
+    },
+    "costs": {
+      "expected": 20,
+      "actual": 20
+    },
+    "banks": {
+      "expected": 1,
+      "actual": 1
+    }
+  },
+  "amounts": {
+    "details": "1924.93",
+    "banks": "1924.93",
+    "costs": "1924.93",
+    "total": "1924.93"
+  }
+}

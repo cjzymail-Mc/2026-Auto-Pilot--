@@ -1,0 +1,18 @@
+{
+  "page": {
+    "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+    "is_new": true,
+    "operator": "陈晶",
+    "biz_number": "",
+    "uuid": "",
+    "status": "编制中"
+  },
+  "test_context": {
+    "purpose": "相同 3 关联 2 明细 6 费用 1 收款规模的正式入口 C1 性能与严格回读对照",
+    "round": "C1",
+    "authorization_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\2026-10-23 真实演示后报销填写提速方案.md",
+    "authorization_sha256": "f99d556e1860b0371d6a5763fdedd1ad8056e40aa93419f1a1bbe0fedc9a7de5"
+  },
+  "save_status": "NOT_ATTEMPTED",
+  "closing_own_test_context_only": true
+}

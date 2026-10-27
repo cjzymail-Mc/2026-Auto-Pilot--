@@ -1,0 +1,1000 @@
+{
+  "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\12月-自驾公出公里数统计表.xlsx",
+  "mode": "open",
+  "sheets_filter": null,
+  "preview_rows": 8,
+  "scan_blanks": true,
+  "sheet_count_total": 1,
+  "sheets_scanned": 1,
+  "sheets": [
+    {
+      "sheet_index": 1,
+      "name": "汇总",
+      "type": -4167,
+      "type_label": "worksheet",
+      "visible": -1,
+      "visible_label": "visible",
+      "used_range": "$B$1:$J$38",
+      "rows": 38,
+      "cols": 9,
+      "header_row": [
+        "自驾公出公里数统计表",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "preview": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "序号",
+          "时间",
+          "出发地",
+          "目的地",
+          "公里数",
+          "补贴金额↵（油车：1元/公里↵电车：0.15元/公里）",
+          "过路费↵（据实）",
+          "合计",
+          "备注"
+        ],
+        [
+          "1.0",
+          "2025-12-10 00:00:00+00:00",
+          "厦门总部",
+          "泉州市新刚鞋材有限公司鞋材",
+          "73.0",
+          "73.0",
+          "",
+          "",
+          "1人"
+        ],
+        [
+          "",
+          "",
+          "泉州市新刚鞋材有限公司鞋材",
+          "厦门总部",
+          "73.0",
+          "73.0",
+          "",
+          "",
+          ""
+        ],
+        [
+          "2.0",
+          "2025-12-04 00:00:00+00:00",
+          "厦门总部",
+          "乔丹二厂",
+          "76.0",
+          "76.0",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "乔丹二厂",
+          "厦门总部",
+          "76.0",
+          "76.0",
+          "",
+          "",
+          ""
+        ],
+        [
+          "3.0",
+          "2025-11-24 00:00:00+00:00",
+          "厦门总部",
+          "泉州市新刚鞋材有限公司鞋材",
+          "73.0",
+          "73.0",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "泉州市新刚鞋材有限公司鞋材",
+          "厦门总部",
+          "73.0",
+          "73.0",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "stray": {
+        "main_block": "$A$1:$A$1",
+        "main_rows": 1,
+        "main_cols": 1,
+        "stray_count": 116,
+        "stray_preview": [
+          {
+            "address": "A3",
+            "row": 3,
+            "col": 1,
+            "value": "序号"
+          },
+          {
+            "address": "B3",
+            "row": 3,
+            "col": 2,
+            "value": "时间"
+          },
+          {
+            "address": "C3",
+            "row": 3,
+            "col": 3,
+            "value": "出发地"
+          },
+          {
+            "address": "D3",
+            "row": 3,
+            "col": 4,
+            "value": "目的地"
+          },
+          {
+            "address": "E3",
+            "row": 3,
+            "col": 5,
+            "value": "公里数"
+          },
+          {
+            "address": "F3",
+            "row": 3,
+            "col": 6,
+            "value": "补贴金额↵（油车：1元/公里↵电车：0.15元/公里）"
+          },
+          {
+            "address": "G3",
+            "row": 3,
+            "col": 7,
+            "value": "过路费↵（据实）"
+          },
+          {
+            "address": "H3",
+            "row": 3,
+            "col": 8,
+            "value": "合计"
+          },
+          {
+            "address": "I3",
+            "row": 3,
+            "col": 9,
+            "value": "备注"
+          },
+          {
+            "address": "A4",
+            "row": 4,
+            "col": 1,
+            "value": "1.0"
+          },
+          {
+            "address": "B4",
+            "row": 4,
+            "col": 2,
+            "value": "2025-12-10 00:00:00+00:00"
+          },
+          {
+            "address": "C4",
+            "row": 4,
+            "col": 3,
+            "value": "厦门总部"
+          },
+          {
+            "address": "D4",
+            "row": 4,
+            "col": 4,
+            "value": "泉州市新刚鞋材有限公司鞋材"
+          },
+          {
+            "address": "E4",
+            "row": 4,
+            "col": 5,
+            "value": "73.0"
+          },
+          {
+            "address": "F4",
+            "row": 4,
+            "col": 6,
+            "value": "73.0"
+          },
+          {
+            "address": "I4",
+            "row": 4,
+            "col": 9,
+            "value": "1人"
+          },
+          {
+            "address": "C5",
+            "row": 5,
+            "col": 3,
+            "value": "泉州市新刚鞋材有限公司鞋材"
+          },
+          {
+            "address": "D5",
+            "row": 5,
+            "col": 4,
+            "value": "厦门总部"
+          },
+          {
+            "address": "E5",
+            "row": 5,
+            "col": 5,
+            "value": "73.0"
+          },
+          {
+            "address": "F5",
+            "row": 5,
+            "col": 6,
+            "value": "73.0"
+          }
+        ],
+        "note": "⚠️ used_range 比主块大，有 116 个非空单元格落在主块外——极可能是上一轮跑脚本残留的临时数据。下次跑前清掉这些单元格可避免污染。"
+      },
+      "note": "",
+      "blank_summary": {
+        "blank": 183,
+        "filled": 117,
+        "merged_blank": 8
+      },
+      "blank_cells": [
+        {
+          "address": "B2",
+          "merged": false
+        },
+        {
+          "address": "C2",
+          "merged": false
+        },
+        {
+          "address": "D2",
+          "merged": false
+        },
+        {
+          "address": "E2",
+          "merged": false
+        },
+        {
+          "address": "F2",
+          "merged": false
+        },
+        {
+          "address": "G2",
+          "merged": false
+        },
+        {
+          "address": "H2",
+          "merged": false
+        },
+        {
+          "address": "I2",
+          "merged": false
+        },
+        {
+          "address": "J2",
+          "merged": false
+        },
+        {
+          "address": "H4",
+          "merged": false
+        },
+        {
+          "address": "I4",
+          "merged": false
+        },
+        {
+          "address": "H5",
+          "merged": false
+        },
+        {
+          "address": "I5",
+          "merged": false
+        },
+        {
+          "address": "H6",
+          "merged": false
+        },
+        {
+          "address": "I6",
+          "merged": false
+        },
+        {
+          "address": "J6",
+          "merged": true
+        },
+        {
+          "address": "H7",
+          "merged": false
+        },
+        {
+          "address": "I7",
+          "merged": false
+        },
+        {
+          "address": "H8",
+          "merged": false
+        },
+        {
+          "address": "I8",
+          "merged": false
+        },
+        {
+          "address": "J8",
+          "merged": true
+        },
+        {
+          "address": "H9",
+          "merged": false
+        },
+        {
+          "address": "I9",
+          "merged": false
+        },
+        {
+          "address": "H10",
+          "merged": false
+        },
+        {
+          "address": "I10",
+          "merged": false
+        },
+        {
+          "address": "J10",
+          "merged": true
+        },
+        {
+          "address": "H11",
+          "merged": false
+        },
+        {
+          "address": "I11",
+          "merged": false
+        },
+        {
+          "address": "H12",
+          "merged": false
+        },
+        {
+          "address": "I12",
+          "merged": false
+        },
+        {
+          "address": "J12",
+          "merged": true
+        },
+        {
+          "address": "H13",
+          "merged": false
+        },
+        {
+          "address": "I13",
+          "merged": false
+        },
+        {
+          "address": "H14",
+          "merged": false
+        },
+        {
+          "address": "I14",
+          "merged": false
+        },
+        {
+          "address": "J14",
+          "merged": true
+        },
+        {
+          "address": "H15",
+          "merged": false
+        },
+        {
+          "address": "I15",
+          "merged": false
+        },
+        {
+          "address": "H16",
+          "merged": false
+        },
+        {
+          "address": "I16",
+          "merged": false
+        },
+        {
+          "address": "J16",
+          "merged": true
+        },
+        {
+          "address": "H17",
+          "merged": false
+        },
+        {
+          "address": "I17",
+          "merged": false
+        },
+        {
+          "address": "H18",
+          "merged": false
+        },
+        {
+          "address": "I18",
+          "merged": false
+        },
+        {
+          "address": "J18",
+          "merged": true
+        },
+        {
+          "address": "H19",
+          "merged": false
+        },
+        {
+          "address": "I19",
+          "merged": false
+        },
+        {
+          "address": "H20",
+          "merged": false
+        },
+        {
+          "address": "I20",
+          "merged": false
+        },
+        {
+          "address": "J20",
+          "merged": true
+        },
+        {
+          "address": "H21",
+          "merged": false
+        },
+        {
+          "address": "I21",
+          "merged": false
+        },
+        {
+          "address": "H22",
+          "merged": false
+        },
+        {
+          "address": "I22",
+          "merged": false
+        },
+        {
+          "address": "J22",
+          "merged": false
+        },
+        {
+          "address": "H23",
+          "merged": false
+        },
+        {
+          "address": "I23",
+          "merged": false
+        },
+        {
+          "address": "J23",
+          "merged": false
+        },
+        {
+          "address": "B24",
+          "merged": false
+        },
+        {
+          "address": "J24",
+          "merged": false
+        },
+        {
+          "address": "B25",
+          "merged": false
+        },
+        {
+          "address": "C25",
+          "merged": false
+        },
+        {
+          "address": "D25",
+          "merged": false
+        },
+        {
+          "address": "E25",
+          "merged": false
+        },
+        {
+          "address": "F25",
+          "merged": false
+        },
+        {
+          "address": "G25",
+          "merged": false
+        },
+        {
+          "address": "H25",
+          "merged": false
+        },
+        {
+          "address": "I25",
+          "merged": false
+        },
+        {
+          "address": "J25",
+          "merged": false
+        },
+        {
+          "address": "B26",
+          "merged": false
+        },
+        {
+          "address": "C26",
+          "merged": false
+        },
+        {
+          "address": "D26",
+          "merged": false
+        },
+        {
+          "address": "E26",
+          "merged": false
+        },
+        {
+          "address": "F26",
+          "merged": false
+        },
+        {
+          "address": "G26",
+          "merged": false
+        },
+        {
+          "address": "H26",
+          "merged": false
+        },
+        {
+          "address": "I26",
+          "merged": false
+        },
+        {
+          "address": "J26",
+          "merged": false
+        },
+        {
+          "address": "B27",
+          "merged": false
+        },
+        {
+          "address": "C27",
+          "merged": false
+        },
+        {
+          "address": "D27",
+          "merged": false
+        },
+        {
+          "address": "E27",
+          "merged": false
+        },
+        {
+          "address": "F27",
+          "merged": false
+        },
+        {
+          "address": "G27",
+          "merged": false
+        },
+        {
+          "address": "H27",
+          "merged": false
+        },
+        {
+          "address": "I27",
+          "merged": false
+        },
+        {
+          "address": "J27",
+          "merged": false
+        },
+        {
+          "address": "B28",
+          "merged": false
+        },
+        {
+          "address": "C28",
+          "merged": false
+        },
+        {
+          "address": "D28",
+          "merged": false
+        },
+        {
+          "address": "E28",
+          "merged": false
+        },
+        {
+          "address": "F28",
+          "merged": false
+        },
+        {
+          "address": "G28",
+          "merged": false
+        },
+        {
+          "address": "H28",
+          "merged": false
+        },
+        {
+          "address": "I28",
+          "merged": false
+        },
+        {
+          "address": "J28",
+          "merged": false
+        },
+        {
+          "address": "B29",
+          "merged": false
+        },
+        {
+          "address": "C29",
+          "merged": false
+        },
+        {
+          "address": "D29",
+          "merged": false
+        },
+        {
+          "address": "E29",
+          "merged": false
+        },
+        {
+          "address": "F29",
+          "merged": false
+        },
+        {
+          "address": "G29",
+          "merged": false
+        },
+        {
+          "address": "H29",
+          "merged": false
+        },
+        {
+          "address": "I29",
+          "merged": false
+        },
+        {
+          "address": "J29",
+          "merged": false
+        },
+        {
+          "address": "B30",
+          "merged": false
+        },
+        {
+          "address": "C30",
+          "merged": false
+        },
+        {
+          "address": "D30",
+          "merged": false
+        },
+        {
+          "address": "E30",
+          "merged": false
+        },
+        {
+          "address": "F30",
+          "merged": false
+        },
+        {
+          "address": "G30",
+          "merged": false
+        },
+        {
+          "address": "H30",
+          "merged": false
+        },
+        {
+          "address": "I30",
+          "merged": false
+        },
+        {
+          "address": "J30",
+          "merged": false
+        },
+        {
+          "address": "B31",
+          "merged": false
+        },
+        {
+          "address": "C31",
+          "merged": false
+        },
+        {
+          "address": "D31",
+          "merged": false
+        },
+        {
+          "address": "E31",
+          "merged": false
+        },
+        {
+          "address": "F31",
+          "merged": false
+        },
+        {
+          "address": "G31",
+          "merged": false
+        },
+        {
+          "address": "H31",
+          "merged": false
+        },
+        {
+          "address": "I31",
+          "merged": false
+        },
+        {
+          "address": "J31",
+          "merged": false
+        },
+        {
+          "address": "B32",
+          "merged": false
+        },
+        {
+          "address": "C32",
+          "merged": false
+        },
+        {
+          "address": "D32",
+          "merged": false
+        },
+        {
+          "address": "E32",
+          "merged": false
+        },
+        {
+          "address": "F32",
+          "merged": false
+        },
+        {
+          "address": "G32",
+          "merged": false
+        },
+        {
+          "address": "H32",
+          "merged": false
+        },
+        {
+          "address": "I32",
+          "merged": false
+        },
+        {
+          "address": "J32",
+          "merged": false
+        },
+        {
+          "address": "B33",
+          "merged": false
+        },
+        {
+          "address": "C33",
+          "merged": false
+        },
+        {
+          "address": "D33",
+          "merged": false
+        },
+        {
+          "address": "E33",
+          "merged": false
+        },
+        {
+          "address": "F33",
+          "merged": false
+        },
+        {
+          "address": "G33",
+          "merged": false
+        },
+        {
+          "address": "H33",
+          "merged": false
+        },
+        {
+          "address": "I33",
+          "merged": false
+        },
+        {
+          "address": "J33",
+          "merged": false
+        },
+        {
+          "address": "B34",
+          "merged": false
+        },
+        {
+          "address": "C34",
+          "merged": false
+        },
+        {
+          "address": "D34",
+          "merged": false
+        },
+        {
+          "address": "E34",
+          "merged": false
+        },
+        {
+          "address": "F34",
+          "merged": false
+        },
+        {
+          "address": "G34",
+          "merged": false
+        },
+        {
+          "address": "H34",
+          "merged": false
+        },
+        {
+          "address": "I34",
+          "merged": false
+        },
+        {
+          "address": "J34",
+          "merged": false
+        },
+        {
+          "address": "C35",
+          "merged": false
+        },
+        {
+          "address": "D35",
+          "merged": false
+        },
+        {
+          "address": "E35",
+          "merged": false
+        },
+        {
+          "address": "F35",
+          "merged": false
+        },
+        {
+          "address": "G35",
+          "merged": false
+        },
+        {
+          "address": "H35",
+          "merged": false
+        },
+        {
+          "address": "I35",
+          "merged": false
+        },
+        {
+          "address": "J35",
+          "merged": false
+        },
+        {
+          "address": "C36",
+          "merged": false
+        },
+        {
+          "address": "D36",
+          "merged": false
+        },
+        {
+          "address": "E36",
+          "merged": false
+        },
+        {
+          "address": "F36",
+          "merged": false
+        },
+        {
+          "address": "G36",
+          "merged": false
+        },
+        {
+          "address": "H36",
+          "merged": false
+        },
+        {
+          "address": "I36",
+          "merged": false
+        },
+        {
+          "address": "J36",
+          "merged": false
+        },
+        {
+          "address": "C37",
+          "merged": false
+        },
+        {
+          "address": "D37",
+          "merged": false
+        },
+        {
+          "address": "E37",
+          "merged": false
+        },
+        {
+          "address": "F37",
+          "merged": false
+        },
+        {
+          "address": "G37",
+          "merged": false
+        },
+        {
+          "address": "H37",
+          "merged": false
+        },
+        {
+          "address": "I37",
+          "merged": false
+        },
+        {
+          "address": "J37",
+          "merged": false
+        },
+        {
+          "address": "C38",
+          "merged": false
+        },
+        {
+          "address": "D38",
+          "merged": false
+        },
+        {
+          "address": "E38",
+          "merged": false
+        },
+        {
+          "address": "F38",
+          "merged": false
+        },
+        {
+          "address": "G38",
+          "merged": false
+        },
+        {
+          "address": "H38",
+          "merged": false
+        },
+        {
+          "address": "I38",
+          "merged": false
+        },
+        {
+          "address": "J38",
+          "merged": false
+        }
+      ],
+      "blank_cells_truncated": false
+    }
+  ],
+  "summary": {
+    "blanks": {
+      "blank": 183,
+      "filled": 117,
+      "merged_blank": 8
+    }
+  }
+}

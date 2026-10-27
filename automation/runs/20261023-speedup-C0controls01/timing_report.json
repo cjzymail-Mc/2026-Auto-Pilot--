@@ -1,0 +1,95 @@
+{
+  "comparable_complete_ui": true,
+  "counts": {
+    "structured_row_written": 9,
+    "exact_picker_blocked": 0,
+    "inner_exc": 0,
+    "model_intervention": 0,
+    "extra_diagnostic_command": 0,
+    "page_navigation": 0
+  },
+  "definitions": {
+    "page_roundtrip": "top-frame navigation; API requests reported separately",
+    "model_intervention": "explicit model intervention events during the UI window; absence is not a global model-call count",
+    "uncovered": "time outside action timing intervals; no causal attribution"
+  },
+  "ui_seconds": 191.48,
+  "strict_pass": true,
+  "instrumented_union_seconds": 185.612,
+  "uncovered_seconds": 5.868,
+  "actions": {
+    "goto_new_form": {
+      "count": 1,
+      "union_seconds": 0.118
+    },
+    "screenshot": {
+      "count": 5,
+      "union_seconds": 0.576
+    },
+    "overlay_dump": {
+      "count": 1,
+      "union_seconds": 0.008
+    },
+    "dialog_element_handle": {
+      "count": 1,
+      "union_seconds": 0.012
+    },
+    "pick_candidates": {
+      "count": 1,
+      "union_seconds": 0.038
+    },
+    "initial_applicant_select": {
+      "count": 1,
+      "union_seconds": 6.253
+    },
+    "pick_option": {
+      "count": 14,
+      "union_seconds": 18.43
+    },
+    "cell_activate": {
+      "count": 102,
+      "union_seconds": 48.374
+    },
+    "cell_blur_readback": {
+      "count": 64,
+      "union_seconds": 3.424
+    },
+    "structured_cell": {
+      "count": 61,
+      "union_seconds": 148.191
+    },
+    "picker_open": {
+      "count": 8,
+      "union_seconds": 11.097
+    },
+    "picker_select_confirm": {
+      "count": 8,
+      "union_seconds": 11.758
+    },
+    "cell_input_write": {
+      "count": 46,
+      "union_seconds": 1.156
+    },
+    "table_row_fill": {
+      "count": 12,
+      "union_seconds": 173.484
+    },
+    "row_add": {
+      "count": 8,
+      "union_seconds": 10.556
+    },
+    "picker_query": {
+      "count": 3,
+      "union_seconds": 4.787
+    },
+    "section_fill": {
+      "count": 4,
+      "union_seconds": 174.088
+    },
+    "independent_readback_verify": {
+      "count": 1,
+      "union_seconds": 0.386
+    }
+  },
+  "target_360_seconds": true
+}

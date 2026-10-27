@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "reviewed": true,
+  "reviewed_by": "round7-B-agent+vision(4.5v)",
+  "reviewed_at": "2026-10-24T08:35:56+00:00",
+  "method": "agent-visual-region-recheck",
+  "original_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-164100-visualreview\\originals\\synthetic_invoice_2p.pdf",
+  "original_sha256": "85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f",
+  "records": [
+    {
+      "record_id": "visual-1",
+      "fields": {
+        "invoice_number": {
+          "value": "SYNTH-2026-0007",
+          "locator": "page:1/region:header/bbox:[150, 304, 1025, 333]"
+        },
+        "invoice_date": {
+          "value": "2026-10-24",
+          "locator": "page:1/region:header/bbox:[150, 367, 1025, 396]"
+        },
+        "buyer": {
+          "value": "厦门某某科技有限公司",
+          "locator": "page:1/region:body/bbox:[150, 429, 1025, 458]"
+        },
+        "seller": {
+          "value": "晋江某某服务中心",
+          "locator": "page:1/region:body/bbox:[150, 492, 1025, 521]"
+        },
+        "total_in_words": {
+          "value": "陆佰叁拾叁元捌角肆分",
+          "locator": "page:1/region:body/bbox:[150, 804, 1025, 833]"
+        },
+        "total_amount": {
+          "value": "633.84",
+          "locator": "page:1/region:body/bbox:[150, 867, 1025, 896]"
+        },
+        "detail_line_1": {
+          "value": "其它交通费 191.28",
+          "locator": "page:2/region:header/bbox:[150, 304, 1025, 333]"
+        },
+        "detail_line_2": {
+          "value": "伙食费 24.00",
+          "locator": "page:2/region:header/bbox:[150, 367, 1025, 396]"
+        }
+      }
+    }
+  ],
+  "review_evidence": {
+    "invoice_number": {
+      "verified_via": "agent-visual-region-recheck",
+      "mechanical_crosscheck": "unavailable-no-engine-output"
+    },
+    "invoice_date": {
+      "verified_via": "agent-visual-region-recheck",
+      "mechanical_crosscheck": "unavailable-no-engine-output"
+    },
+    "buyer": {
+      "verified_via": "agent-visual-region-recheck",
+      "mechanical_crosscheck": "unavailable-no-engine-output"
+    },
+    "seller": {
+      "verified_via": "agent-visual-region-recheck",
+      "mechanical_crosscheck": "unavailable-no-engine-output"
+    },
+    "total_in_words": {
+      "verified_via": "agent-visual-region-recheck",
+      "mechanical_crosscheck": "unavailable-no-engine-output"
+    },
+    "total_amount": {
+      "verified_via": "agent-visual-region-recheck",
+      "mechanical_crosscheck": "unavailable-no-engine-output"
+    },
+    "detail_line_1": {
+      "verified_via": "agent-visual-region-recheck",
+      "mechanical_crosscheck": "unavailable-no-engine-output"
+    },
+    "detail_line_2": {
+      "verified_via": "agent-visual-region-recheck",
+      "mechanical_crosscheck": "unavailable-no-engine-output"
+    }
+  },
+  "gaps": []
+}

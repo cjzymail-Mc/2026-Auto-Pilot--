@@ -1,0 +1,353 @@
+{"event": "timing", "action": "entry_plan_validation_binding", "t0_ms": 1792751003725.3105, "dur_ms": 232.1416015625, "outcome": "ok", "plan_hash": "00d529af225367384db475dadbb7949206d177d8a0bc065a8982c13e15191ab3", "source_manifest_sha256": "c00d1a7ff5030a1235522d81a50edcd539c8fe8fa72fb8a7c2357ad746535413"}
+{"event": "profile_lock_acquired", "pid": 18704, "ts": "2026-10-23T18:23:24"}
+{"event": "probe_start", "run": "20261023-speedup-C1", "attempt": "attempt_001", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-23T18:23:24"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-23T18:23:24"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 365, "ts": "2026-10-23T18:23:25"}
+{"event": "timing", "action": "browser_session_start", "t0_ms": 1792751004391, "dur_ms": 1056, "outcome": "ok", "exc": "", "ts": "2026-10-23T18:23:25"}
+{"event": "page_navigation", "epoch_ms": 1792751005686, "ts": "2026-10-23T18:23:25"}
+{"event": "page_navigation", "epoch_ms": 1792751006219, "ts": "2026-10-23T18:23:26"}
+{"event": "page_navigation", "epoch_ms": 1792751007103, "ts": "2026-10-23T18:23:27"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792751008168, "dur_ms": 381, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T18:23:28"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 24.0, "ts": "2026-10-23T18:23:28"}
+{"event": "structured_fill_start", "plan_hash": "00d529af225367384db475dadbb7949206d177d8a0bc065a8982c13e15191ab3", "ts": "2026-10-23T18:23:29"}
+{"event": "UI_START", "epoch_ms": 1792751009250, "round": "C1", "rows": {"relations": 3, "details": 2, "costs": 6, "banks": 1}, "network": "chromium --no-proxy-server; fresh test context", "cache": "cold context; session reused", "ts": "2026-10-23T18:23:29"}
+{"event": "fill_start", "plan": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\speedup-plans\\C1\\fill_plan.json", "goal": null, "ts": "2026-10-23T18:23:29"}
+{"event": "page_navigation", "epoch_ms": 1792751009338, "ts": "2026-10-23T18:23:29"}
+{"event": "timing", "action": "goto_new_form", "t0_ms": 1792751009253, "dur_ms": 151, "outcome": "ok", "exc": "", "ts": "2026-10-23T18:23:29"}
+{"event": "page_navigation", "epoch_ms": 1792751009678, "ts": "2026-10-23T18:23:29"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792751013440, "dur_ms": 124, "outcome": "ok", "exc": "", "name": "fill_00_before.png", "ts": "2026-10-23T18:23:33"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792751016660, "dur_ms": 5, "outcome": "ok", "exc": "", "ts": "2026-10-23T18:23:36"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792751016670, "dur_ms": 27, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-23T18:23:36"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792751016660, "dur_ms": 64, "outcome": "ok", "exc": "", "ts": "2026-10-23T18:23:36"}
+{"event": "timing", "action": "initial_applicant_select", "t0_ms": 1792751013698, "dur_ms": 6273, "outcome": "ok", "exc": "", "ts": "2026-10-23T18:23:39"}
+{"event": "person_identities_locked", "applicant_employee_verified": true, "creator_unchanged": true, "ts": "2026-10-23T18:23:40"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751020214, "dur_ms": 1647, "outcome": "ok", "exc": "", "kind": "multiselect", "ts": "2026-10-23T18:23:41"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751021891, "dur_ms": 1282, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T18:23:43"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751023228, "dur_ms": 1605, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T18:23:44"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751025555, "dur_ms": 22, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-23T18:23:45"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751025632, "dur_ms": 773, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:23:46"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751026425, "dur_ms": 1305, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "ts": "2026-10-23T18:23:47"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751027747, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "ts": "2026-10-23T18:23:47"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751025621, "dur_ms": 2175, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "ts": "2026-10-23T18:23:47"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751027820, "dur_ms": 742, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:23:48"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792751028600, "dur_ms": 1438, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-23T18:23:50"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792751030186, "dur_ms": 1609, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-23T18:23:51"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751031795, "dur_ms": 46, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-23T18:23:51"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751031842, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-23T18:23:51"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751027808, "dur_ms": 4069, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-23T18:23:51"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751031879, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "bizNo", "ts": "2026-10-23T18:23:51"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751031919, "dur_ms": 747, "outcome": "ok", "exc": "", "where": "detailrels/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:23:52"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751032703, "dur_ms": 70, "outcome": "ok", "exc": "", "where": "detailrels/0/cost", "how": "mounted_native", "ts": "2026-10-23T18:23:52"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751033213, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "detailrels/0/cost", "ts": "2026-10-23T18:23:53"}
+{"event": "cell_already_equal", "table": "relations", "row": 0, "field": "isLast", "ts": "2026-10-23T18:23:53"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751025555, "dur_ms": 7725, "outcome": "ok", "exc": "", "section": "relations", "row": 0, "ts": "2026-10-23T18:23:53"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792751033301, "dur_ms": 1314, "outcome": "ok", "exc": "", "section": "relations", "ts": "2026-10-23T18:23:54"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751034615, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-23T18:23:54"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751034728, "dur_ms": 1308, "outcome": "ok", "exc": "", "where": "relations/1/bizTypeName", "ts": "2026-10-23T18:23:56"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751036053, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "relations/1/bizTypeName", "ts": "2026-10-23T18:23:56"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751034684, "dur_ms": 1433, "outcome": "ok", "exc": "", "where": "relations/1/bizTypeName", "ts": "2026-10-23T18:23:56"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751036144, "dur_ms": 765, "outcome": "ok", "exc": "", "where": "relations/1/bizNumber", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:23:56"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792751036962, "dur_ms": 1368, "outcome": "ok", "exc": "", "where": "relations/1/bizNumber", "ts": "2026-10-23T18:23:58"}
+{"event": "timing", "action": "picker_query", "t0_ms": 1792751038358, "dur_ms": 1569, "outcome": "ok", "exc": "", "where": "relations/1/bizNumber", "ts": "2026-10-23T18:23:59"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792751039939, "dur_ms": 1489, "outcome": "ok", "exc": "", "where": "relations/1/bizNumber", "ts": "2026-10-23T18:24:01"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751041428, "dur_ms": 85, "outcome": "ok", "exc": "", "where": "relations/1/bizNumber", "ts": "2026-10-23T18:24:01"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751041512, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-23T18:24:01"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751036134, "dur_ms": 5415, "outcome": "ok", "exc": "", "where": "relations/1/bizNumber", "ts": "2026-10-23T18:24:01"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751041550, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "bizNo", "ts": "2026-10-23T18:24:01"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751041586, "dur_ms": 735, "outcome": "ok", "exc": "", "where": "detailrels/1/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:02"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751042383, "dur_ms": 77, "outcome": "ok", "exc": "", "where": "detailrels/1/cost", "how": "mounted_native", "ts": "2026-10-23T18:24:02"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751042891, "dur_ms": 38, "outcome": "ok", "exc": "", "where": "detailrels/1/cost", "ts": "2026-10-23T18:24:02"}
+{"event": "cell_already_equal", "table": "relations", "row": 1, "field": "isLast", "ts": "2026-10-23T18:24:02"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751033281, "dur_ms": 9682, "outcome": "ok", "exc": "", "section": "relations", "row": 1, "ts": "2026-10-23T18:24:02"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792751042986, "dur_ms": 1318, "outcome": "ok", "exc": "", "section": "relations", "ts": "2026-10-23T18:24:04"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751044305, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-23T18:24:04"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751044408, "dur_ms": 1364, "outcome": "ok", "exc": "", "where": "relations/2/bizTypeName", "ts": "2026-10-23T18:24:05"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751045802, "dur_ms": 79, "outcome": "ok", "exc": "", "where": "relations/2/bizTypeName", "ts": "2026-10-23T18:24:05"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751044377, "dur_ms": 1521, "outcome": "ok", "exc": "", "where": "relations/2/bizTypeName", "ts": "2026-10-23T18:24:05"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751045941, "dur_ms": 781, "outcome": "ok", "exc": "", "where": "relations/2/bizNumber", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:06"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792751046790, "dur_ms": 1340, "outcome": "ok", "exc": "", "where": "relations/2/bizNumber", "ts": "2026-10-23T18:24:08"}
+{"event": "timing", "action": "picker_query", "t0_ms": 1792751048161, "dur_ms": 1576, "outcome": "ok", "exc": "", "where": "relations/2/bizNumber", "ts": "2026-10-23T18:24:09"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792751049760, "dur_ms": 1485, "outcome": "ok", "exc": "", "where": "relations/2/bizNumber", "ts": "2026-10-23T18:24:11"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751051246, "dur_ms": 87, "outcome": "ok", "exc": "", "where": "relations/2/bizNumber", "ts": "2026-10-23T18:24:11"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751051333, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-23T18:24:11"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751045929, "dur_ms": 5442, "outcome": "ok", "exc": "", "where": "relations/2/bizNumber", "ts": "2026-10-23T18:24:11"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751051372, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "bizNo", "ts": "2026-10-23T18:24:11"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751051409, "dur_ms": 755, "outcome": "ok", "exc": "", "where": "detailrels/2/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:12"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751052197, "dur_ms": 79, "outcome": "ok", "exc": "", "where": "detailrels/2/cost", "how": "mounted_native", "ts": "2026-10-23T18:24:12"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751052700, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "detailrels/2/cost", "ts": "2026-10-23T18:24:12"}
+{"event": "cell_already_equal", "table": "relations", "row": 2, "field": "isLast", "ts": "2026-10-23T18:24:12"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751042963, "dur_ms": 9802, "outcome": "ok", "exc": "", "section": "relations", "row": 2, "ts": "2026-10-23T18:24:12"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792751052793, "dur_ms": 134, "outcome": "ok", "exc": "", "name": "v1_relations_after.png", "ts": "2026-10-23T18:24:12"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792751025555, "dur_ms": 27373, "outcome": "ok", "exc": "", "section": "relations", "ts": "2026-10-23T18:24:12"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751053154, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T18:24:13"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751053207, "dur_ms": 804, "outcome": "ok", "exc": "", "where": "costs/0/project", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:14"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751054030, "dur_ms": 1247, "outcome": "ok", "exc": "", "where": "costs/0/project", "ts": "2026-10-23T18:24:15"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751055321, "dur_ms": 65, "outcome": "ok", "exc": "", "where": "costs/0/project", "ts": "2026-10-23T18:24:15"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751053196, "dur_ms": 2209, "outcome": "ok", "exc": "", "where": "costs/0/project", "ts": "2026-10-23T18:24:15"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751055442, "dur_ms": 793, "outcome": "ok", "exc": "", "where": "costs/0/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:16"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751056273, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/0/startDate", "how": "mounted_native", "ts": "2026-10-23T18:24:16"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751057350, "dur_ms": 57, "outcome": "ok", "exc": "", "where": "costs/0/startDate", "ts": "2026-10-23T18:24:17"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751055424, "dur_ms": 2005, "outcome": "ok", "exc": "", "where": "costs/0/startDate", "ts": "2026-10-23T18:24:17"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751057454, "dur_ms": 746, "outcome": "ok", "exc": "", "where": "costs/0/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:18"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751058250, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "costs/0/endDate", "how": "mounted_native", "ts": "2026-10-23T18:24:18"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751059354, "dur_ms": 88, "outcome": "ok", "exc": "", "where": "costs/0/endDate", "ts": "2026-10-23T18:24:19"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751057444, "dur_ms": 2014, "outcome": "ok", "exc": "", "where": "costs/0/endDate", "ts": "2026-10-23T18:24:19"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751059488, "dur_ms": 768, "outcome": "ok", "exc": "", "where": "costs/0/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:20"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751060299, "dur_ms": 66, "outcome": "ok", "exc": "", "where": "costs/0/projectPlace", "how": "mounted_native", "ts": "2026-10-23T18:24:20"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751060788, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/0/projectPlace", "ts": "2026-10-23T18:24:20"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751059476, "dur_ms": 1362, "outcome": "ok", "exc": "", "where": "costs/0/projectPlace", "ts": "2026-10-23T18:24:20"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751060860, "dur_ms": 770, "outcome": "ok", "exc": "", "where": "costs/0/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:21"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751061668, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "costs/0/count", "how": "mounted_native", "ts": "2026-10-23T18:24:21"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751062184, "dur_ms": 81, "outcome": "ok", "exc": "", "where": "costs/0/count", "ts": "2026-10-23T18:24:22"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751060852, "dur_ms": 1430, "outcome": "ok", "exc": "", "where": "costs/0/count", "ts": "2026-10-23T18:24:22"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751062305, "dur_ms": 719, "outcome": "ok", "exc": "", "where": "costs/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:23"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751063076, "dur_ms": 94, "outcome": "ok", "exc": "", "where": "costs/0/cost", "how": "mounted_native", "ts": "2026-10-23T18:24:23"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751063596, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/0/cost", "ts": "2026-10-23T18:24:23"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751062296, "dur_ms": 1367, "outcome": "ok", "exc": "", "where": "costs/0/cost", "ts": "2026-10-23T18:24:23"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751063687, "dur_ms": 765, "outcome": "ok", "exc": "", "where": "costs/0/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:24"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751064493, "dur_ms": 61, "outcome": "ok", "exc": "", "where": "costs/0/reason", "how": "mounted_native", "ts": "2026-10-23T18:24:24"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751064983, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/0/reason", "ts": "2026-10-23T18:24:25"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751063678, "dur_ms": 1353, "outcome": "ok", "exc": "", "where": "costs/0/reason", "ts": "2026-10-23T18:24:25"}
+{"event": "structured_row_written", "table": "costs", "row": 0, "row_id": "demo-costs-1", "ts": "2026-10-23T18:24:25"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751053154, "dur_ms": 11877, "outcome": "ok", "exc": "", "section": "costs", "row": 0, "ts": "2026-10-23T18:24:25"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792751065054, "dur_ms": 1317, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-23T18:24:26"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751066372, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T18:24:26"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751066446, "dur_ms": 1242, "outcome": "ok", "exc": "", "where": "costs/1/project", "ts": "2026-10-23T18:24:27"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751067739, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/1/project", "ts": "2026-10-23T18:24:27"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751066418, "dur_ms": 1387, "outcome": "ok", "exc": "", "where": "costs/1/project", "ts": "2026-10-23T18:24:27"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751067831, "dur_ms": 752, "outcome": "ok", "exc": "", "where": "costs/1/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:28"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751068650, "dur_ms": 68, "outcome": "ok", "exc": "", "where": "costs/1/startDate", "how": "mounted_native", "ts": "2026-10-23T18:24:28"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751069790, "dur_ms": 55, "outcome": "ok", "exc": "", "where": "costs/1/startDate", "ts": "2026-10-23T18:24:29"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751067822, "dur_ms": 2043, "outcome": "ok", "exc": "", "where": "costs/1/startDate", "ts": "2026-10-23T18:24:29"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751069890, "dur_ms": 832, "outcome": "ok", "exc": "", "where": "costs/1/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:30"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751070789, "dur_ms": 85, "outcome": "ok", "exc": "", "where": "costs/1/endDate", "how": "mounted_native", "ts": "2026-10-23T18:24:30"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751071876, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/1/endDate", "ts": "2026-10-23T18:24:31"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751069880, "dur_ms": 2067, "outcome": "ok", "exc": "", "where": "costs/1/endDate", "ts": "2026-10-23T18:24:31"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751071974, "dur_ms": 750, "outcome": "ok", "exc": "", "where": "costs/1/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:32"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751072778, "dur_ms": 65, "outcome": "ok", "exc": "", "where": "costs/1/projectPlace", "how": "mounted_native", "ts": "2026-10-23T18:24:32"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751073288, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/1/projectPlace", "ts": "2026-10-23T18:24:33"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751071964, "dur_ms": 1390, "outcome": "ok", "exc": "", "where": "costs/1/projectPlace", "ts": "2026-10-23T18:24:33"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751073380, "dur_ms": 764, "outcome": "ok", "exc": "", "where": "costs/1/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:34"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751074198, "dur_ms": 92, "outcome": "ok", "exc": "", "where": "costs/1/count", "how": "mounted_native", "ts": "2026-10-23T18:24:34"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751074757, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/1/count", "ts": "2026-10-23T18:24:34"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751073370, "dur_ms": 1454, "outcome": "ok", "exc": "", "where": "costs/1/count", "ts": "2026-10-23T18:24:34"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751074853, "dur_ms": 752, "outcome": "ok", "exc": "", "where": "costs/1/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:35"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751075655, "dur_ms": 79, "outcome": "ok", "exc": "", "where": "costs/1/cost", "how": "mounted_native", "ts": "2026-10-23T18:24:35"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751076177, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/1/cost", "ts": "2026-10-23T18:24:36"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751074841, "dur_ms": 1402, "outcome": "ok", "exc": "", "where": "costs/1/cost", "ts": "2026-10-23T18:24:36"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751076269, "dur_ms": 738, "outcome": "ok", "exc": "", "where": "costs/1/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:37"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751077044, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "costs/1/reason", "how": "mounted_native", "ts": "2026-10-23T18:24:37"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751077567, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/1/reason", "ts": "2026-10-23T18:24:37"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751076260, "dur_ms": 1359, "outcome": "ok", "exc": "", "where": "costs/1/reason", "ts": "2026-10-23T18:24:37"}
+{"event": "structured_row_written", "table": "costs", "row": 1, "row_id": "demo-costs-2", "ts": "2026-10-23T18:24:37"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751065033, "dur_ms": 12587, "outcome": "ok", "exc": "", "section": "costs", "row": 1, "ts": "2026-10-23T18:24:37"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792751077641, "dur_ms": 1300, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-23T18:24:38"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751078944, "dur_ms": 33, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T18:24:38"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751079056, "dur_ms": 1243, "outcome": "ok", "exc": "", "where": "costs/2/project", "ts": "2026-10-23T18:24:40"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751080348, "dur_ms": 38, "outcome": "ok", "exc": "", "where": "costs/2/project", "ts": "2026-10-23T18:24:40"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751079027, "dur_ms": 1373, "outcome": "ok", "exc": "", "where": "costs/2/project", "ts": "2026-10-23T18:24:40"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751080428, "dur_ms": 751, "outcome": "ok", "exc": "", "where": "costs/2/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:41"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751081218, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/2/startDate", "how": "mounted_native", "ts": "2026-10-23T18:24:41"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751082281, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "costs/2/startDate", "ts": "2026-10-23T18:24:42"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751080418, "dur_ms": 1940, "outcome": "ok", "exc": "", "where": "costs/2/startDate", "ts": "2026-10-23T18:24:42"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751082381, "dur_ms": 773, "outcome": "ok", "exc": "", "where": "costs/2/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:43"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751083194, "dur_ms": 90, "outcome": "ok", "exc": "", "where": "costs/2/endDate", "how": "mounted_native", "ts": "2026-10-23T18:24:43"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751084302, "dur_ms": 59, "outcome": "ok", "exc": "", "where": "costs/2/endDate", "ts": "2026-10-23T18:24:44"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751082372, "dur_ms": 2024, "outcome": "ok", "exc": "", "where": "costs/2/endDate", "ts": "2026-10-23T18:24:44"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751084444, "dur_ms": 725, "outcome": "ok", "exc": "", "where": "costs/2/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:45"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751085239, "dur_ms": 72, "outcome": "ok", "exc": "", "where": "costs/2/projectPlace", "how": "mounted_native", "ts": "2026-10-23T18:24:45"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751085742, "dur_ms": 48, "outcome": "ok", "exc": "", "where": "costs/2/projectPlace", "ts": "2026-10-23T18:24:45"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751084434, "dur_ms": 1372, "outcome": "ok", "exc": "", "where": "costs/2/projectPlace", "ts": "2026-10-23T18:24:45"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751085830, "dur_ms": 751, "outcome": "ok", "exc": "", "where": "costs/2/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:46"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751086632, "dur_ms": 78, "outcome": "ok", "exc": "", "where": "costs/2/count", "how": "mounted_native", "ts": "2026-10-23T18:24:46"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751087141, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/2/count", "ts": "2026-10-23T18:24:47"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751085820, "dur_ms": 1369, "outcome": "ok", "exc": "", "where": "costs/2/count", "ts": "2026-10-23T18:24:47"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751087215, "dur_ms": 779, "outcome": "ok", "exc": "", "where": "costs/2/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:47"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751088049, "dur_ms": 98, "outcome": "ok", "exc": "", "where": "costs/2/cost", "how": "mounted_native", "ts": "2026-10-23T18:24:48"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751088575, "dur_ms": 48, "outcome": "ok", "exc": "", "where": "costs/2/cost", "ts": "2026-10-23T18:24:48"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751087206, "dur_ms": 1432, "outcome": "ok", "exc": "", "where": "costs/2/cost", "ts": "2026-10-23T18:24:48"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751088663, "dur_ms": 724, "outcome": "ok", "exc": "", "where": "costs/2/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:49"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751089424, "dur_ms": 81, "outcome": "ok", "exc": "", "where": "costs/2/reason", "how": "mounted_native", "ts": "2026-10-23T18:24:49"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751089936, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/2/reason", "ts": "2026-10-23T18:24:49"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751088654, "dur_ms": 1337, "outcome": "ok", "exc": "", "where": "costs/2/reason", "ts": "2026-10-23T18:24:49"}
+{"event": "structured_row_written", "table": "costs", "row": 2, "row_id": "demo-costs-3", "ts": "2026-10-23T18:24:49"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751077621, "dur_ms": 12371, "outcome": "ok", "exc": "", "section": "costs", "row": 2, "ts": "2026-10-23T18:24:49"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792751090031, "dur_ms": 1304, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-23T18:24:51"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751091336, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T18:24:51"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751091441, "dur_ms": 1230, "outcome": "ok", "exc": "", "where": "costs/3/project", "ts": "2026-10-23T18:24:52"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751092708, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/3/project", "ts": "2026-10-23T18:24:52"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751091409, "dur_ms": 1367, "outcome": "ok", "exc": "", "where": "costs/3/project", "ts": "2026-10-23T18:24:52"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751092806, "dur_ms": 740, "outcome": "ok", "exc": "", "where": "costs/3/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:53"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751093616, "dur_ms": 75, "outcome": "ok", "exc": "", "where": "costs/3/startDate", "how": "mounted_native", "ts": "2026-10-23T18:24:53"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751094675, "dur_ms": 73, "outcome": "ok", "exc": "", "where": "costs/3/startDate", "ts": "2026-10-23T18:24:54"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751092794, "dur_ms": 1970, "outcome": "ok", "exc": "", "where": "costs/3/startDate", "ts": "2026-10-23T18:24:54"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751094822, "dur_ms": 747, "outcome": "ok", "exc": "", "where": "costs/3/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:55"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751095607, "dur_ms": 73, "outcome": "ok", "exc": "", "where": "costs/3/endDate", "how": "mounted_native", "ts": "2026-10-23T18:24:55"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751096684, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/3/endDate", "ts": "2026-10-23T18:24:56"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751094784, "dur_ms": 1973, "outcome": "ok", "exc": "", "where": "costs/3/endDate", "ts": "2026-10-23T18:24:56"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751096782, "dur_ms": 744, "outcome": "ok", "exc": "", "where": "costs/3/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:57"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751097565, "dur_ms": 79, "outcome": "ok", "exc": "", "where": "costs/3/projectPlace", "how": "mounted_native", "ts": "2026-10-23T18:24:57"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751098073, "dur_ms": 48, "outcome": "ok", "exc": "", "where": "costs/3/projectPlace", "ts": "2026-10-23T18:24:58"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751096772, "dur_ms": 1367, "outcome": "ok", "exc": "", "where": "costs/3/projectPlace", "ts": "2026-10-23T18:24:58"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751098163, "dur_ms": 753, "outcome": "ok", "exc": "", "where": "costs/3/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:24:58"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751098957, "dur_ms": 85, "outcome": "ok", "exc": "", "where": "costs/3/count", "how": "mounted_native", "ts": "2026-10-23T18:24:59"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751099476, "dur_ms": 37, "outcome": "ok", "exc": "", "where": "costs/3/count", "ts": "2026-10-23T18:24:59"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751098154, "dur_ms": 1378, "outcome": "ok", "exc": "", "where": "costs/3/count", "ts": "2026-10-23T18:24:59"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751099562, "dur_ms": 781, "outcome": "ok", "exc": "", "where": "costs/3/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:00"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751100425, "dur_ms": 64, "outcome": "ok", "exc": "", "where": "costs/3/cost", "how": "mounted_native", "ts": "2026-10-23T18:25:00"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751100928, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/3/cost", "ts": "2026-10-23T18:25:00"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751099551, "dur_ms": 1430, "outcome": "ok", "exc": "", "where": "costs/3/cost", "ts": "2026-10-23T18:25:00"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751101006, "dur_ms": 744, "outcome": "ok", "exc": "", "where": "costs/3/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:01"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751101789, "dur_ms": 78, "outcome": "ok", "exc": "", "where": "costs/3/reason", "how": "mounted_native", "ts": "2026-10-23T18:25:01"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751102301, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/3/reason", "ts": "2026-10-23T18:25:02"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751100995, "dur_ms": 1371, "outcome": "ok", "exc": "", "where": "costs/3/reason", "ts": "2026-10-23T18:25:02"}
+{"event": "structured_row_written", "table": "costs", "row": 3, "row_id": "demo-costs-4", "ts": "2026-10-23T18:25:02"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751089994, "dur_ms": 12375, "outcome": "ok", "exc": "", "section": "costs", "row": 3, "ts": "2026-10-23T18:25:02"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792751102390, "dur_ms": 1315, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-23T18:25:03"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751103705, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T18:25:03"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751103782, "dur_ms": 1229, "outcome": "ok", "exc": "", "where": "costs/4/project", "ts": "2026-10-23T18:25:05"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751105048, "dur_ms": 45, "outcome": "ok", "exc": "", "where": "costs/4/project", "ts": "2026-10-23T18:25:05"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751103752, "dur_ms": 1359, "outcome": "ok", "exc": "", "where": "costs/4/project", "ts": "2026-10-23T18:25:05"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751105139, "dur_ms": 745, "outcome": "ok", "exc": "", "where": "costs/4/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:05"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751105922, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "costs/4/startDate", "how": "mounted_native", "ts": "2026-10-23T18:25:05"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751106967, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/4/startDate", "ts": "2026-10-23T18:25:07"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751105129, "dur_ms": 1912, "outcome": "ok", "exc": "", "where": "costs/4/startDate", "ts": "2026-10-23T18:25:07"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751107070, "dur_ms": 749, "outcome": "ok", "exc": "", "where": "costs/4/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:07"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751107873, "dur_ms": 69, "outcome": "ok", "exc": "", "where": "costs/4/endDate", "how": "mounted_native", "ts": "2026-10-23T18:25:07"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751108936, "dur_ms": 73, "outcome": "ok", "exc": "", "where": "costs/4/endDate", "ts": "2026-10-23T18:25:09"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751107061, "dur_ms": 1964, "outcome": "ok", "exc": "", "where": "costs/4/endDate", "ts": "2026-10-23T18:25:09"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751109051, "dur_ms": 772, "outcome": "ok", "exc": "", "where": "costs/4/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:09"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751109861, "dur_ms": 64, "outcome": "ok", "exc": "", "where": "costs/4/projectPlace", "how": "mounted_native", "ts": "2026-10-23T18:25:09"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751110356, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "costs/4/projectPlace", "ts": "2026-10-23T18:25:10"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751109040, "dur_ms": 1366, "outcome": "ok", "exc": "", "where": "costs/4/projectPlace", "ts": "2026-10-23T18:25:10"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751110434, "dur_ms": 764, "outcome": "ok", "exc": "", "where": "costs/4/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:11"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751111236, "dur_ms": 75, "outcome": "ok", "exc": "", "where": "costs/4/count", "how": "mounted_native", "ts": "2026-10-23T18:25:11"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751111735, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/4/count", "ts": "2026-10-23T18:25:11"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751110424, "dur_ms": 1377, "outcome": "ok", "exc": "", "where": "costs/4/count", "ts": "2026-10-23T18:25:11"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751111831, "dur_ms": 766, "outcome": "ok", "exc": "", "where": "costs/4/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:12"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751112636, "dur_ms": 92, "outcome": "ok", "exc": "", "where": "costs/4/cost", "how": "mounted_native", "ts": "2026-10-23T18:25:12"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751113178, "dur_ms": 47, "outcome": "ok", "exc": "", "where": "costs/4/cost", "ts": "2026-10-23T18:25:13"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751111820, "dur_ms": 1425, "outcome": "ok", "exc": "", "where": "costs/4/cost", "ts": "2026-10-23T18:25:13"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751113272, "dur_ms": 741, "outcome": "ok", "exc": "", "where": "costs/4/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:14"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751114067, "dur_ms": 80, "outcome": "ok", "exc": "", "where": "costs/4/reason", "how": "mounted_native", "ts": "2026-10-23T18:25:14"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751114589, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/4/reason", "ts": "2026-10-23T18:25:14"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751113261, "dur_ms": 1383, "outcome": "ok", "exc": "", "where": "costs/4/reason", "ts": "2026-10-23T18:25:14"}
+{"event": "structured_row_written", "table": "costs", "row": 4, "row_id": "demo-costs-5", "ts": "2026-10-23T18:25:14"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751102369, "dur_ms": 12275, "outcome": "ok", "exc": "", "section": "costs", "row": 4, "ts": "2026-10-23T18:25:14"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792751114668, "dur_ms": 1337, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-23T18:25:16"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751116006, "dur_ms": 11, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-23T18:25:16"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751116083, "dur_ms": 1242, "outcome": "ok", "exc": "", "where": "costs/5/project", "ts": "2026-10-23T18:25:17"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751117358, "dur_ms": 76, "outcome": "ok", "exc": "", "where": "costs/5/project", "ts": "2026-10-23T18:25:17"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751116050, "dur_ms": 1401, "outcome": "ok", "exc": "", "where": "costs/5/project", "ts": "2026-10-23T18:25:17"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751117479, "dur_ms": 769, "outcome": "ok", "exc": "", "where": "costs/5/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:18"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751118317, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/5/startDate", "how": "mounted_native", "ts": "2026-10-23T18:25:18"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751119396, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/5/startDate", "ts": "2026-10-23T18:25:19"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751117467, "dur_ms": 2005, "outcome": "ok", "exc": "", "where": "costs/5/startDate", "ts": "2026-10-23T18:25:19"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751119500, "dur_ms": 796, "outcome": "ok", "exc": "", "where": "costs/5/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:20"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751120337, "dur_ms": 73, "outcome": "ok", "exc": "", "where": "costs/5/endDate", "how": "mounted_native", "ts": "2026-10-23T18:25:20"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751121433, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/5/endDate", "ts": "2026-10-23T18:25:21"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751119491, "dur_ms": 2021, "outcome": "ok", "exc": "", "where": "costs/5/endDate", "ts": "2026-10-23T18:25:21"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751121535, "dur_ms": 780, "outcome": "ok", "exc": "", "where": "costs/5/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:22"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751122354, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "costs/5/projectPlace", "how": "mounted_native", "ts": "2026-10-23T18:25:22"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751122868, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/5/projectPlace", "ts": "2026-10-23T18:25:22"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751121525, "dur_ms": 1392, "outcome": "ok", "exc": "", "where": "costs/5/projectPlace", "ts": "2026-10-23T18:25:22"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751122948, "dur_ms": 775, "outcome": "ok", "exc": "", "where": "costs/5/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:23"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751123762, "dur_ms": 86, "outcome": "ok", "exc": "", "where": "costs/5/count", "how": "mounted_native", "ts": "2026-10-23T18:25:23"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751124291, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/5/count", "ts": "2026-10-23T18:25:24"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751122937, "dur_ms": 1403, "outcome": "ok", "exc": "", "where": "costs/5/count", "ts": "2026-10-23T18:25:24"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751124366, "dur_ms": 765, "outcome": "ok", "exc": "", "where": "costs/5/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:25"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751125183, "dur_ms": 68, "outcome": "ok", "exc": "", "where": "costs/5/cost", "how": "mounted_native", "ts": "2026-10-23T18:25:25"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751125684, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/5/cost", "ts": "2026-10-23T18:25:25"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751124357, "dur_ms": 1395, "outcome": "ok", "exc": "", "where": "costs/5/cost", "ts": "2026-10-23T18:25:25"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751125780, "dur_ms": 753, "outcome": "ok", "exc": "", "where": "costs/5/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:26"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751126574, "dur_ms": 67, "outcome": "ok", "exc": "", "where": "costs/5/reason", "how": "mounted_native", "ts": "2026-10-23T18:25:26"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751127086, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/5/reason", "ts": "2026-10-23T18:25:27"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751125769, "dur_ms": 1401, "outcome": "ok", "exc": "", "where": "costs/5/reason", "ts": "2026-10-23T18:25:27"}
+{"event": "structured_row_written", "table": "costs", "row": 5, "row_id": "demo-costs-6", "ts": "2026-10-23T18:25:27"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751114645, "dur_ms": 12527, "outcome": "ok", "exc": "", "section": "costs", "row": 5, "ts": "2026-10-23T18:25:27"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792751127202, "dur_ms": 104, "outcome": "ok", "exc": "", "name": "v1_costs_after.png", "ts": "2026-10-23T18:25:27"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792751053154, "dur_ms": 74151, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-23T18:25:27"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751127553, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T18:25:27"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751127613, "dur_ms": 770, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:28"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751128406, "dur_ms": 1219, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "ts": "2026-10-23T18:25:29"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751129659, "dur_ms": 75, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "ts": "2026-10-23T18:25:29"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751127602, "dur_ms": 2148, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "ts": "2026-10-23T18:25:29"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751129777, "dur_ms": 790, "outcome": "ok", "exc": "", "where": "details/0/digest", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:30"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751130622, "dur_ms": 68, "outcome": "ok", "exc": "", "where": "details/0/digest", "how": "mounted_native", "ts": "2026-10-23T18:25:30"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751131141, "dur_ms": 41, "outcome": "ok", "exc": "", "where": "details/0/digest", "ts": "2026-10-23T18:25:31"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751129767, "dur_ms": 1434, "outcome": "ok", "exc": "", "where": "details/0/digest", "ts": "2026-10-23T18:25:31"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751131246, "dur_ms": 760, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:32"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792751132073, "dur_ms": 1418, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-23T18:25:33"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792751133519, "dur_ms": 1487, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-23T18:25:35"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751135006, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-23T18:25:35"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751135063, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T18:25:35"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751131235, "dur_ms": 3870, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-23T18:25:35"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751135133, "dur_ms": 764, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:35"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792751135954, "dur_ms": 1359, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-23T18:25:37"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792751137408, "dur_ms": 1442, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-23T18:25:38"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751138850, "dur_ms": 59, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-23T18:25:38"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751138909, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T18:25:38"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751135122, "dur_ms": 3828, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-23T18:25:38"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751138979, "dur_ms": 734, "outcome": "ok", "exc": "", "where": "details/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:39"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751139771, "dur_ms": 76, "outcome": "ok", "exc": "", "where": "details/0/cost", "how": "mounted_native", "ts": "2026-10-23T18:25:39"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751140297, "dur_ms": 41, "outcome": "ok", "exc": "", "where": "details/0/cost", "ts": "2026-10-23T18:25:40"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751138966, "dur_ms": 1388, "outcome": "ok", "exc": "", "where": "details/0/cost", "ts": "2026-10-23T18:25:40"}
+{"event": "structured_row_written", "table": "details", "row": 0, "row_id": "demo-details-1", "ts": "2026-10-23T18:25:40"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751127553, "dur_ms": 12803, "outcome": "ok", "exc": "", "section": "details", "row": 0, "ts": "2026-10-23T18:25:40"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792751140381, "dur_ms": 1331, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-23T18:25:41"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751141712, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T18:25:41"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792751141793, "dur_ms": 1278, "outcome": "ok", "exc": "", "where": "details/1/reimItem", "ts": "2026-10-23T18:25:43"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751143109, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "details/1/reimItem", "ts": "2026-10-23T18:25:43"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751141760, "dur_ms": 1421, "outcome": "ok", "exc": "", "where": "details/1/reimItem", "ts": "2026-10-23T18:25:43"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751143210, "dur_ms": 742, "outcome": "ok", "exc": "", "where": "details/1/digest", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:43"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751143996, "dur_ms": 85, "outcome": "ok", "exc": "", "where": "details/1/digest", "how": "mounted_native", "ts": "2026-10-23T18:25:44"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751144522, "dur_ms": 37, "outcome": "ok", "exc": "", "where": "details/1/digest", "ts": "2026-10-23T18:25:44"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751143199, "dur_ms": 1377, "outcome": "ok", "exc": "", "where": "details/1/digest", "ts": "2026-10-23T18:25:44"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751144605, "dur_ms": 786, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:45"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792751145434, "dur_ms": 1423, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-23T18:25:46"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792751146889, "dur_ms": 1437, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-23T18:25:48"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751148327, "dur_ms": 60, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-23T18:25:48"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751148387, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T18:25:48"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751144594, "dur_ms": 3850, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-23T18:25:48"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751148475, "dur_ms": 750, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:49"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792751149283, "dur_ms": 1394, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-23T18:25:50"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792751150787, "dur_ms": 1488, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-23T18:25:52"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751152275, "dur_ms": 72, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-23T18:25:52"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751152348, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T18:25:52"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751148462, "dur_ms": 3927, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-23T18:25:52"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751152417, "dur_ms": 725, "outcome": "ok", "exc": "", "where": "details/1/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:53"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751153198, "dur_ms": 110, "outcome": "ok", "exc": "", "where": "details/1/cost", "how": "mounted_native", "ts": "2026-10-23T18:25:53"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751153759, "dur_ms": 62, "outcome": "ok", "exc": "", "where": "details/1/cost", "ts": "2026-10-23T18:25:53"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751152405, "dur_ms": 1433, "outcome": "ok", "exc": "", "where": "details/1/cost", "ts": "2026-10-23T18:25:53"}
+{"event": "structured_row_written", "table": "details", "row": 1, "row_id": "demo-details-2", "ts": "2026-10-23T18:25:53"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751140357, "dur_ms": 13482, "outcome": "ok", "exc": "", "section": "details", "row": 1, "ts": "2026-10-23T18:25:53"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792751153867, "dur_ms": 100, "outcome": "ok", "exc": "", "name": "v1_details_after.png", "ts": "2026-10-23T18:25:53"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792751127552, "dur_ms": 26416, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-23T18:25:53"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751154227, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T18:25:54"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751154282, "dur_ms": 759, "outcome": "ok", "exc": "", "where": "banks/0/payee", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:55"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751155075, "dur_ms": 82, "outcome": "ok", "exc": "", "where": "banks/0/payee", "how": "mounted_native", "ts": "2026-10-23T18:25:55"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751155590, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "banks/0/payee", "ts": "2026-10-23T18:25:55"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751154273, "dur_ms": 1366, "outcome": "ok", "exc": "", "where": "banks/0/payee", "ts": "2026-10-23T18:25:55"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751155663, "dur_ms": 754, "outcome": "ok", "exc": "", "where": "banks/0/account", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:25:56"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751156466, "dur_ms": 96, "outcome": "ok", "exc": "", "where": "banks/0/account", "how": "mounted_native", "ts": "2026-10-23T18:25:56"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751156984, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "banks/0/account", "ts": "2026-10-23T18:25:57"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751155654, "dur_ms": 1395, "outcome": "ok", "exc": "", "where": "banks/0/account", "ts": "2026-10-23T18:25:57"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792751157067, "dur_ms": 1354, "outcome": "ok", "exc": "", "where": "banks/0/branch", "ts": "2026-10-23T18:25:58"}
+{"event": "timing", "action": "picker_query", "t0_ms": 1792751158437, "dur_ms": 1597, "outcome": "ok", "exc": "", "where": "banks/0/branch", "ts": "2026-10-23T18:26:00"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792751160045, "dur_ms": 1481, "outcome": "ok", "exc": "", "where": "banks/0/branch", "ts": "2026-10-23T18:26:01"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792751161527, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T18:26:01"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792751161611, "dur_ms": 769, "outcome": "ok", "exc": "", "where": "banks/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T18:26:02"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792751162438, "dur_ms": 100, "outcome": "ok", "exc": "", "where": "banks/0/cost", "how": "mounted_native", "ts": "2026-10-23T18:26:02"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792751162979, "dur_ms": 66, "outcome": "ok", "exc": "", "where": "banks/0/cost", "ts": "2026-10-23T18:26:03"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792751161601, "dur_ms": 1463, "outcome": "ok", "exc": "", "where": "banks/0/cost", "ts": "2026-10-23T18:26:03"}
+{"event": "structured_row_written", "table": "banks", "row": 0, "row_id": "demo-banks-1", "ts": "2026-10-23T18:26:03"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792751154227, "dur_ms": 8838, "outcome": "ok", "exc": "", "section": "banks", "row": 0, "ts": "2026-10-23T18:26:03"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792751163094, "dur_ms": 131, "outcome": "ok", "exc": "", "name": "v1_banks_after.png", "ts": "2026-10-23T18:26:03"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792751154227, "dur_ms": 8999, "outcome": "ok", "exc": "", "section": "banks", "ts": "2026-10-23T18:26:03"}
+{"event": "timing", "action": "independent_readback_verify", "t0_ms": 1792751164087, "dur_ms": 388, "outcome": "ok", "exc": "", "ts": "2026-10-23T18:26:04"}
+{"event": "READBACK_END", "epoch_ms": 1792751164476, "ok": true, "ts": "2026-10-23T18:26:04"}
+{"event": "ui_execution_metrics", "network": {"requests": 165, "failed": 1}, "model_control_interventions": 0, "external_cell_commands": 0, "definitions": "continuous executor; model calls and external read-only diagnostic shell commands are not automatically measured", "ts": "2026-10-23T18:26:04"}
+{"event": "timing", "action": "ui_execution", "t0_ms": 1792751009252, "dur_ms": 155226, "outcome": "ok", "exc": "", "ts": "2026-10-23T18:26:04"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792751164483, "dur_ms": 96, "outcome": "ok", "exc": "", "name": "v1_final.png", "ts": "2026-10-23T18:26:04"}
+{"event": "probe_end", "reason": "SUCCESS_FILL_ONLY", "tech_used_s": 158.9, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-23T18:26:04"}
+{"event": "own_test_page_close", "unsaved": true, "save_attempted": false, "ts": "2026-10-23T18:26:04"}

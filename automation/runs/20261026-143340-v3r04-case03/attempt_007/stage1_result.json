@@ -1,0 +1,149 @@
+{
+ "probe_version": "v2",
+ "run": "20261026-143340-v3r04-case03",
+ "attempt": "attempt_007",
+ "doc_id": null,
+ "expect_name": "陈晶",
+ "checks": {
+  "c1_entry_login": {
+   "status": "PASS",
+   "reason": "域名内页+账户名命中+导航成立（顶栏无显式退出钮，按放宽判据放行）",
+   "evidence": [
+    "attempt_007/evidence/entry.png"
+   ]
+  },
+  "c2_locate_target": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "NOT_RUN",
+   "reason": "未启用 --fill-plan（只读任务不新建/不填写）",
+   "evidence": []
+  }
+ },
+ "phases": {},
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 2550,
+  "classify": "LOGGED_IN",
+  "markers": {
+   "url": "https://bpm.qiaodan.com/oa/home",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 29,
+   "forms": 0,
+   "name_hits": 1,
+   "logout_hits": 0
+  },
+  "cookies_names": [
+   "ww_lang",
+   "wwopen.open.sid"
+  ],
+  "screenshot": "attempt_007/evidence/entry.png",
+  "html": "attempt_007/evidence/entry.html"
+ },
+ "case03_wide": {
+  "stage": "wide-window full capture",
+  "date_from": "2025-01-01",
+  "date_to": "2026-12-31",
+  "pages": [
+   {
+    "page": 1,
+    "size": 20,
+    "evidence": "api-wide-page01-000--WorkOut-query-20-1.json",
+    "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1",
+    "rows": 20,
+    "filters": {
+     "CreatedAt": "1735660800,1798732799.999",
+     "AppliedAt": "1735660800,1798732799.999",
+     "CreatedPath": "/"
+    }
+   },
+   {
+    "page": 2,
+    "size": 20,
+    "evidence": "api-wide-page02-000--WorkOut-query-20-2.json",
+    "sha256": "3a513668e62fd1515e835e7ead46b7c75328338f593332e97202e9d1c2f2d07f",
+    "rows": 20,
+    "filters": {
+     "CreatedAt": "1735660800,1798732799.999",
+     "AppliedAt": "1735660800,1798732799.999",
+     "CreatedPath": "/"
+    }
+   },
+   {
+    "page": 3,
+    "size": 20,
+    "evidence": "api-wide-page03-000--WorkOut-query-20-3.json",
+    "sha256": "c4772118c6e1fec2dab0de1ddf1a8e1ad11fcad883604abe70aee15c312d945f",
+    "rows": 20,
+    "filters": {
+     "CreatedAt": "1735660800,1798732799.999",
+     "AppliedAt": "1735660800,1798732799.999",
+     "CreatedPath": "/"
+    }
+   },
+   {
+    "page": 4,
+    "size": 20,
+    "evidence": "api-wide-page04-000--WorkOut-query-20-4.json",
+    "sha256": "b67358e1b095116a454fb6c1e60dfebf680a674daac3f6b0badde8718a4e6e21",
+    "rows": 20,
+    "filters": {
+     "CreatedAt": "1735660800,1798732799.999",
+     "AppliedAt": "1735660800,1798732799.999",
+     "CreatedPath": "/"
+    }
+   },
+   {
+    "page": 5,
+    "size": 20,
+    "evidence": "api-wide-page05-000--WorkOut-query-20-5.json",
+    "sha256": "94b5e546e81183e1f13cc8493110fa04e56e06c813fcccdad90940774d1bb541",
+    "rows": 16,
+    "filters": {
+     "CreatedAt": "1735660800,1798732799.999",
+     "AppliedAt": "1735660800,1798732799.999",
+     "CreatedPath": "/"
+    }
+   }
+  ],
+  "rows_total": 96,
+  "final_filters": {
+   "CreatedAt": "1735660800,1798732799.999",
+   "AppliedAt": "1735660800,1798732799.999",
+   "CreatedPath": "/"
+  },
+  "pages_captured": 5
+ },
+ "finish_reason": "WIDE_CAPTURED",
+ "tech_used_s": 80.5,
+ "login_wait_s": 0.0,
+ "wall_s": 81.8,
+ "budget_respected": true
+}

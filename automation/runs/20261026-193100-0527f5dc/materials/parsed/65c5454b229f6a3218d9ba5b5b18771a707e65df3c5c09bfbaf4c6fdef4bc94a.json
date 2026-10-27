@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "source_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905厦门到晋江发票1.pdf",
+  "source_sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+  "status": "NEEDS_INPUT",
+  "cells": [],
+  "issues": [
+    {
+      "message": "PDF/image extraction requires reviewed structured JSON with original hash and page/region locators"
+    }
+  ]
+}

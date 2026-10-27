@@ -1,0 +1,4 @@
+{"event": "timing", "action": "task_input_validation", "t0_ms": 1793014260437.27, "dur_ms": 1.99853515625, "outcome": "ok"}
+{"event": "timing", "action": "material_inventory_parse", "t0_ms": 1793014260441.2378, "dur_ms": 519.11669921875, "outcome": "ok"}
+{"event": "timing", "action": "template_snapshot_read_validate", "t0_ms": 1793014260960.3545, "dur_ms": 1.998779296875, "outcome": "ok"}
+{"event": "TASK_PREPARED", "time": 1793014260.9643536, "task_id": "v3r08-case08-15426095951", "status": "NEEDS_INPUT", "stage": "MATERIALS_READY"}

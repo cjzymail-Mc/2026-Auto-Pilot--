@@ -1,0 +1,862 @@
+[
+ {
+  "text": "报销单",
+  "href": "/oa/reimburses"
+ },
+ {
+  "text": "请假单",
+  "href": "/oa/leaves"
+ },
+ {
+  "text": "公出单",
+  "href": "/oa/workouts"
+ },
+ {
+  "text": "公出打卡",
+  "href": "/oa/tripclkins"
+ },
+ {
+  "text": "年假查询",
+  "href": "/oa/vacations"
+ },
+ {
+  "text": "任务中心",
+  "href": "/oa/taskcenter"
+ },
+ {
+  "text": "用户代理",
+  "href": "/oa/useragencies"
+ },
+ {
+  "text": "事项提醒",
+  "href": "/oa/event-reminds"
+ },
+ {
+  "text": "考勤日报",
+  "href": "/oa/cardlists"
+ },
+ {
+  "text": "IT报修单",
+  "href": "/oa/itrepairs"
+ },
+ {
+  "text": "申请书",
+  "href": "/oa/appforms"
+ },
+ {
+  "text": "内部联络函",
+  "href": "/oa/contacts"
+ },
+ {
+  "text": "关联单据授权",
+  "href": "/oa/accredits"
+ },
+ {
+  "text": "上下班打卡",
+  "href": "/oa/onoffclkins"
+ },
+ {
+  "text": "考勤月报",
+  "href": "/oa/cardlistmonths"
+ },
+ {
+  "text": "考勤年报",
+  "href": "/oa/attendance-year-reports"
+ },
+ {
+  "text": "考勤统计",
+  "href": "/oa/attendancequeries"
+ },
+ {
+  "text": "五险一金",
+  "href": "/oa/social-and-fund-reports"
+ },
+ {
+  "text": "签名收集",
+  "href": "/oa/signatures"
+ },
+ {
+  "text": "工作报告",
+  "href": "/oa/weeklys"
+ },
+ {
+  "text": "公告发布",
+  "href": "/oa/affiches"
+ },
+ {
+  "text": "新闻发布",
+  "href": "/oa/newses"
+ },
+ {
+  "text": "温馨提醒",
+  "href": "/oa/kindly-tipses"
+ },
+ {
+  "text": "政策咨询",
+  "href": "/oa/policy-advices"
+ },
+ {
+  "text": "即时通知",
+  "href": "/oa/imsgs"
+ },
+ {
+  "text": "知识中心",
+  "href": "/oa/knowledges"
+ },
+ {
+  "text": "管理规范",
+  "href": "/oa/rules"
+ },
+ {
+  "text": "中乔风采",
+  "href": "/oa/miens"
+ },
+ {
+  "text": "问卷调查",
+  "href": "/oa/satisfactions"
+ },
+ {
+  "text": "创新提案",
+  "href": "/oa/innovative-proposals"
+ },
+ {
+  "text": "广宣申请",
+  "href": "/oa/advertisings"
+ },
+ {
+  "text": "积分查询",
+  "href": "/oa/pointsearchs"
+ },
+ {
+  "text": "积分调整",
+  "href": "/oa/pointadds"
+ },
+ {
+  "text": "兑分申请",
+  "href": "/oa/pointexchanges"
+ },
+ {
+  "text": "证书管理",
+  "href": "/oa/certificates"
+ },
+ {
+  "text": "证书资料",
+  "href": "/oa/certificatemaintains"
+ },
+ {
+  "text": "公众号开通申请",
+  "href": "/oa/official-accounts"
+ },
+ {
+  "text": "流程&制度文件签发申请",
+  "href": "/oa/process-system-signs"
+ },
+ {
+  "text": "流程&制度文件废止申请",
+  "href": "/oa/process-system-abolishes"
+ },
+ {
+  "text": "授权变更申请单",
+  "href": "/oa/authorization-changes"
+ },
+ {
+  "text": "流程优化建议",
+  "href": "/oa/flow-suggestions"
+ },
+ {
+  "text": "应聘登记表",
+  "href": "/oa/resumes"
+ },
+ {
+  "text": "人员需求变更单",
+  "href": "/oa/augments"
+ },
+ {
+  "text": "岗位说明书",
+  "href": "/oa/dutyexplains"
+ },
+ {
+  "text": "猎头需求申请",
+  "href": "/oa/headhunter-requirements"
+ },
+ {
+  "text": "人员异动单",
+  "href": "/oa/transfers"
+ },
+ {
+  "text": "晋升提报单",
+  "href": "/oa/promote-drafts"
+ },
+ {
+  "text": "晋升申请单",
+  "href": "/oa/prodemotes"
+ },
+ {
+  "text": "评优提报单",
+  "href": "/oa/appraising-drafts"
+ },
+ {
+  "text": "转正申请单",
+  "href": "/oa/turnformals"
+ },
+ {
+  "text": "离职申请单",
+  "href": "/oa/dimissions"
+ },
+ {
+  "text": "离职结算单",
+  "href": "/oa/settlements"
+ },
+ {
+  "text": "试用期考察备忘录",
+  "href": "/oa/inspectmemos"
+ },
+ {
+  "text": "员工奖惩单",
+  "href": "/oa/awards"
+ },
+ {
+  "text": "人力申请书",
+  "href": "/oa/staff-app-forms"
+ },
+ {
+  "text": "福利申请单",
+  "href": "/oa/welfares"
+ },
+ {
+  "text": "活动签到单",
+  "href": "/oa/activity-signs"
+ },
+ {
+  "text": "工伤事故申报",
+  "href": "/oa/injurys"
+ },
+ {
+  "text": "入职资料收集",
+  "href": "/oa/employee-info-signs"
+ },
+ {
+  "text": "员工信息变更",
+  "href": "/oa/infochanges"
+ },
+ {
+  "text": "档案借阅单",
+  "href": "/oa/archives-borrowings"
+ },
+ {
+  "text": "工牌补办单",
+  "href": "/oa/rand-reworks"
+ },
+ {
+  "text": "员工合同续签申请",
+  "href": "/oa/contract-renewals"
+ },
+ {
+  "text": "人事电子签",
+  "href": "/oa/employee-contracts"
+ },
+ {
+  "text": "爱心基金申请",
+  "href": "/oa/love-funds"
+ },
+ {
+  "text": "爱心捐款确认",
+  "href": "/oa/love-donations"
+ },
+ {
+  "text": "培养计划提交",
+  "href": "/oa/teaching-plans"
+ },
+ {
+  "text": "培养计划执行&评估",
+  "href": "/oa/teaching-excutes"
+ },
+ {
+  "text": "管培生定岗申请单",
+  "href": "/oa/management-posts"
+ },
+ {
+  "text": "人才盘点单",
+  "href": "/oa/talent-inventories"
+ },
+ {
+  "text": "人才评估单",
+  "href": "/oa/talent-evaluates"
+ },
+ {
+  "text": "九宫格落位",
+  "href": "/oa/talent-inventory-reports"
+ },
+ {
+  "text": "梯队提报",
+  "href": "/oa/echelon-applies"
+ },
+ {
+  "text": "培训申请单",
+  "href": "/oa/train-applies"
+ },
+ {
+  "text": "满意度模板",
+  "href": "/oa/train-evaluations"
+ },
+ {
+  "text": "360评价",
+  "href": "/oa/overall-assessments"
+ },
+ {
+  "text": "评价报告",
+  "href": "/oa/assessment-reports"
+ },
+ {
+  "text": "DISC性格测试",
+  "href": "/oa/disc-tests"
+ },
+ {
+  "text": "DISC个人报告",
+  "href": "/oa/disc-reports"
+ },
+ {
+  "text": "DISC团队报告",
+  "href": "/oa/disc-team-report"
+ },
+ {
+  "text": "出差单",
+  "href": "/oa/evections"
+ },
+ {
+  "text": "加班预申请",
+  "href": "/oa/over-time-plans"
+ },
+ {
+  "text": "加班单",
+  "href": "/oa/overtimes"
+ },
+ {
+  "text": "补签单",
+  "href": "/oa/repairs"
+ },
+ {
+  "text": "补休单",
+  "href": "/oa/disrests"
+ },
+ {
+  "text": "销假单",
+  "href": "/oa/annulleaves"
+ },
+ {
+  "text": "出差变更单",
+  "href": "/oa/evection-changes"
+ },
+ {
+  "text": "出差总结报告",
+  "href": "/oa/evection-summaries"
+ },
+ {
+  "text": "出差盘点单",
+  "href": "/oa/evection-reviews"
+ },
+ {
+  "text": "跨月申请查询",
+  "href": "/oa/span-applies"
+ },
+ {
+  "text": "用车申请",
+  "href": "/oa/vehicles"
+ },
+ {
+  "text": "票务申请",
+  "href": "/oa/tickets"
+ },
+ {
+  "text": "票务退改签",
+  "href": "/oa/endorses"
+ },
+ {
+  "text": "公务接待单",
+  "href": "/oa/civerceptions"
+ },
+ {
+  "text": "商务订房单",
+  "href": "/oa/orderrooms"
+ },
+ {
+  "text": "印章使用单",
+  "href": "/oa/seals"
+ },
+ {
+  "text": "印制名片单",
+  "href": "/oa/printcards"
+ },
+ {
+  "text": "外来人员就餐",
+  "href": "/oa/dine-outsider-meals"
+ },
+ {
+  "text": "报餐单",
+  "href": "/oa/dine-dailies"
+ },
+ {
+  "text": "会议申请",
+  "href": "/oa/conferences"
+ },
+ {
+  "text": "会议室预订",
+  "href": "/oa/meets"
+ },
+ {
+  "text": "会议纪要确认",
+  "href": "/oa/meeting-summaries"
+ },
+ {
+  "text": "展厅预订",
+  "href": "/oa/showrooms"
+ },
+ {
+  "text": "放行单",
+  "href": "/oa/permitpasses"
+ },
+ {
+  "text": "快递单",
+  "href": "/oa/expresses"
+ },
+ {
+  "text": "城市信息",
+  "href": "/oa/airports"
+ },
+ {
+  "text": "访客预约",
+  "href": "/oa/visitor-applies"
+ },
+ {
+  "text": "礼赠申请单",
+  "href": "/oa/gift-applies"
+ },
+ {
+  "text": "商旅送审申请",
+  "href": "/oa/business-travel-audits"
+ },
+ {
+  "text": "计划申请",
+  "href": "/oa/kpiplans"
+ },
+ {
+  "text": "计划变更",
+  "href": "/oa/kpimodifies"
+ },
+ {
+  "text": "考核数据收集",
+  "href": "/oa/kpicollects"
+ },
+ {
+  "text": "考核申请",
+  "href": "/oa/kpiassesses"
+ },
+ {
+  "text": "绩效等级评定",
+  "href": "/oa/kpi-evaluates"
+ },
+ {
+  "text": "绩效面谈",
+  "href": "/oa/kpi-interviews"
+ },
+ {
+  "text": "绩效考核报表",
+  "href": "/oa/kpi-assess-reports"
+ },
+ {
+  "text": "物料需求单",
+  "href": "/oa/demand-lists"
+ },
+ {
+  "text": "物品申领单",
+  "href": "/oa/draws"
+ },
+ {
+  "text": "物品申购单",
+  "href": "/oa/purchs"
+ },
+ {
+  "text": "物品维修单",
+  "href": "/oa/maintens"
+ },
+ {
+  "text": "物料修改单",
+  "href": "/oa/materiels"
+ },
+ {
+  "text": "目录商城",
+  "href": "/oa/material-malls"
+ },
+ {
+  "text": "物流采购需求单",
+  "href": "/oa/logistics-purchases"
+ },
+ {
+  "text": "货品领用单",
+  "href": "/oa/goods-collections"
+ },
+ {
+  "text": "资产卡片",
+  "href": "/oa/assetcards"
+ },
+ {
+  "text": "资产申领单",
+  "href": "/oa/assetdraws"
+ },
+ {
+  "text": "资产申购单",
+  "href": "/oa/assetpurches"
+ },
+ {
+  "text": "资产验收单",
+  "href": "/oa/assetinspects"
+ },
+ {
+  "text": "资产报修单",
+  "href": "/oa/assetmaintains"
+ },
+ {
+  "text": "资产维修单",
+  "href": "/oa/assetrepairs"
+ },
+ {
+  "text": "资产转移单",
+  "href": "/oa/assetshifts"
+ },
+ {
+  "text": "资产处置单",
+  "href": "/oa/assetdisposals"
+ },
+ {
+  "text": "资产借用单",
+  "href": "/oa/asset-lends"
+ },
+ {
+  "text": "资产评估单",
+  "href": "/oa/asset-evaluations"
+ },
+ {
+  "text": "合同档案管理",
+  "href": "/oa/pactrecords"
+ },
+ {
+  "text": "合同审批单",
+  "href": "/oa/pacts"
+ },
+ {
+  "text": "合同更正单",
+  "href": "/oa/pact-changes"
+ },
+ {
+  "text": "项目立项单",
+  "href": "/oa/project-approvals"
+ },
+ {
+  "text": "项目立项变更单",
+  "href": "/oa/project-approval-changes"
+ },
+ {
+  "text": "项目管理",
+  "href": "/oa/projects"
+ },
+ {
+  "text": "项目调整",
+  "href": "/oa/projectadjusts"
+ },
+ {
+  "text": "项目报表",
+  "href": "/oa/projectreports"
+ },
+ {
+  "text": "补贴荣誉报备单",
+  "href": "/oa/subsidy-honors"
+ },
+ {
+  "text": "公益项目申请",
+  "href": "/oa/fund-projects"
+ },
+ {
+  "text": "基金会实物捐赠",
+  "href": "/oa/fund-in-kinds"
+ },
+ {
+  "text": "工程投标单位推荐",
+  "href": "/oa/engineering-bids"
+ },
+ {
+  "text": "工程文件招标会签",
+  "href": "/oa/engineering-documents"
+ },
+ {
+  "text": "工程采购价格确认",
+  "href": "/oa/engineering-purchases"
+ },
+ {
+  "text": "出租价格审批",
+  "href": "/oa/rent-prices"
+ },
+ {
+  "text": "投资项目立项单",
+  "href": "/oa/investment-applies"
+ },
+ {
+  "text": "借款单",
+  "href": "/oa/loans"
+ },
+ {
+  "text": "付款单",
+  "href": "/oa/payments"
+ },
+ {
+  "text": "服务费审批单",
+  "href": "/oa/service-fee-approvals"
+ },
+ {
+  "text": "发票管理",
+  "href": "/oa/invoice-ocrs"
+ },
+ {
+  "text": "银行账户资料",
+  "href": "/oa/finance-banks"
+ },
+ {
+  "text": "银行开户行信息",
+  "href": "/oa/finance-cnaps"
+ },
+ {
+  "text": "跨中心预算关联单",
+  "href": "/oa/budget-accredits"
+ },
+ {
+  "text": "预算单",
+  "href": "/oa/budgets"
+ },
+ {
+  "text": "预算调整单",
+  "href": "/oa/adjusts"
+ },
+ {
+  "text": "预算科目",
+  "href": "/oa/budgetsubjects"
+ },
+ {
+  "text": "预算占用单",
+  "href": "/oa/budget-occupies"
+ },
+ {
+  "text": "预算使用单",
+  "href": "/oa/budget-expenses"
+ },
+ {
+  "text": "预算占用变更单",
+  "href": "/oa/budget-occupy-adjusts"
+ },
+ {
+  "text": "预算科目报表",
+  "href": "/oa/budget-subject-reports"
+ },
+ {
+  "text": "预算跟踪表",
+  "href": "/oa/budgettrackings"
+ },
+ {
+  "text": "法律纠纷",
+  "href": "/oa/law-disputes"
+ },
+ {
+  "text": "商标印花审核",
+  "href": "/oa/trademark-designs"
+ },
+ {
+  "text": "商标版权注册",
+  "href": "/oa/trademark-registers"
+ },
+ {
+  "text": "商标版权档案",
+  "href": "/oa/trademark-archives"
+ },
+ {
+  "text": "专利申请单",
+  "href": "/oa/patent-applies"
+ },
+ {
+  "text": "专利变更单",
+  "href": "/oa/patent-changes"
+ },
+ {
+  "text": "专利档案",
+  "href": "/oa/patent-archives"
+ },
+ {
+  "text": "仓库信息",
+  "href": "/oa/warehouses"
+ },
+ {
+  "text": "物品档案",
+  "href": "/oa/product-infos"
+ },
+ {
+  "text": "物品入库",
+  "href": "/oa/product-increases"
+ },
+ {
+  "text": "物品出库",
+  "href": "/oa/product-decreases"
+ },
+ {
+  "text": "物品借用",
+  "href": "/oa/product-borrows"
+ },
+ {
+  "text": "物品调拨",
+  "href": "/oa/product-shifts"
+ },
+ {
+  "text": "库存调整",
+  "href": "/oa/product-adjusts"
+ },
+ {
+  "text": "物品目录",
+  "href": "/oa/product-catalog"
+ },
+ {
+  "text": "借用清单",
+  "href": "/oa/product-borrow-item"
+ },
+ {
+  "text": "唯一码查询",
+  "href": "/oa/product-rfid-searches"
+ },
+ {
+  "text": "库存查询",
+  "href": "/oa/product-inventory-searches"
+ },
+ {
+  "text": "库存出入库",
+  "href": "/oa/product-in-out-infos"
+ },
+ {
+  "text": "库存结存记录",
+  "href": "/oa/product-balances"
+ },
+ {
+  "text": "异常出库列表",
+  "href": "/oa/product-decrease-exceptions"
+ },
+ {
+  "text": "系统维护单",
+  "href": "/oa/demands"
+ },
+ {
+  "text": "功能权限单",
+  "href": "/oa/purviews"
+ },
+ {
+  "text": "需求BUG单",
+  "href": "/oa/cooperations"
+ },
+ {
+  "text": "实施服务单",
+  "href": "/oa/implement-serves"
+ },
+ {
+  "text": "更新日志",
+  "href": "/oa/releasenotes"
+ },
+ {
+  "text": "质检报告",
+  "href": "/oa/knowledge-quality-reports"
+ },
+ {
+  "text": "功能性报告",
+  "href": "/oa/knowledge-functional-reports"
+ },
+ {
+  "text": "质量标准",
+  "href": "/oa/knowledge-qualitys"
+ },
+ {
+  "text": "鞋检测报告",
+  "href": "/oa/detects"
+ },
+ {
+  "text": "鞋不合格处理-检测",
+  "href": "/oa/unqualified-shoes"
+ },
+ {
+  "text": "质量风险申请单",
+  "href": "/oa/quality-risks"
+ },
+ {
+  "text": "试穿申请",
+  "href": "/oa/tryons"
+ },
+ {
+  "text": "样品制作单",
+  "href": "/oa/spen-makes"
+ },
+ {
+  "text": "样品移交单",
+  "href": "/oa/spen-delivers"
+ },
+ {
+  "text": "样品出库单",
+  "href": "/oa/spen-outs"
+ },
+ {
+  "text": "团购价格申请单",
+  "href": "/oa/group-buy-activities"
+ },
+ {
+  "text": "促销活动申请",
+  "href": "/oa/sale-activity-applies"
+ },
+ {
+  "text": "变价申请",
+  "href": "/oa/change-price-applies"
+ },
+ {
+  "text": "横调申请",
+  "href": "/oa/balance-transfers"
+ },
+ {
+  "text": "零售激励申请单",
+  "href": "/oa/retail-incentives"
+ },
+ {
+  "text": "盘点差异申请单",
+  "href": "/oa/inventory-differences"
+ },
+ {
+  "text": "存货处理申请单",
+  "href": "/oa/inventory-disposals"
+ },
+ {
+  "text": "电商店铺开/关店申请",
+  "href": "/oa/online-stores"
+ },
+ {
+  "text": "达人直播合作申请",
+  "href": "/oa/livestream-collaborations"
+ },
+ {
+  "text": "商品采购下单申请",
+  "href": "/oa/goods-purchases"
+ },
+ {
+  "text": "电商代销方案申请",
+  "href": "/oa/online-consignment-sales"
+ },
+ {
+  "text": "赞助申请单",
+  "href": "/oa/sponsorships"
+ },
+ {
+  "text": "个人卡券",
+  "href": "/oa/coupon-everyones"
+ },
+ {
+  "text": "内购券派发",
+  "href": "/oa/inner-coupon-dispatches"
+ }
+]

@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "kind": "skill_round_snapshot",
+  "round": "8",
+  "snapshot_at": "2026-10-24T18:13:26+08:00",
+  "note": "round-8 轮末快照：R6-P2-2 只读措辞已采纳（红线段逐字不动，test_skill_docs 9/9 OK）",
+  "files": {
+    "SKILL.md": "b41e9e4e9dcc0dd2b263fe083b7f86784e1a8205d4b9b4a97263607590bf1109",
+    "references/express.md": "a141d64283b08d6bffea0e0473d346cd1f3f2a61c2d53c5af9e2f9edbd0f6481",
+    "references/full-chain.md": "72afd5547af65d9d7fb03bbafdcec2740d39cba1534b3ba0596b28c22341cf86",
+    "references/plan-contract.md": "0c708e50b07eb3fe82e9a7a2e284fd804d629f6c84035305eddb07e5dddaeb8f",
+    "references/rd-materials.md": "7f7f8fffa841501322c5ad13001303d05747e8b5586446274e58a07110b6b19f",
+    "references/travel.md": "96c5a2f47833bc4d184718f75a2c27cd1c573f0038833e91c450312be0202609"
+  }
+}

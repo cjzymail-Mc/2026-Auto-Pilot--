@@ -1,0 +1,382 @@
+[
+ {
+  "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintRele:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+  "body_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintRele:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined",
+  "title": "关联单据",
+  "add_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintRele:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-caption.ui-widget-header:nth-of-type(1)>div.caption-container.ng-star-inserted>div.float-left.edit-bar:nth-of-type(1)>button.ui-button.ui-widget:nth-of-type(1)",
+  "pick_sel": "",
+  "headers": [
+   {
+    "text": "序号",
+    "prop": ""
+   },
+   {
+    "text": "单据类型",
+    "prop": "bizTypeName"
+   },
+   {
+    "text": "单据号",
+    "prop": "bizNumber"
+   },
+   {
+    "text": "单据金额",
+    "prop": "bizCost"
+   },
+   {
+    "text": "已报销(含审批中)",
+    "prop": "totalReimedCost"
+   },
+   {
+    "text": "本次报销",
+    "prop": "nowCost"
+   },
+   {
+    "text": "是否为最后一次",
+    "prop": "isLast"
+   },
+   {
+    "text": "备注",
+    "prop": "description"
+   }
+  ],
+  "row_count": 0
+ },
+ {
+  "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.print-hidden:nth-of-type(2)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+  "body_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.print-hidden:nth-of-type(2)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined",
+  "title": "关联单据明细",
+  "add_sel": "",
+  "pick_sel": "",
+  "headers": [
+   {
+    "text": "",
+    "prop": ""
+   },
+   {
+    "text": "序号",
+    "prop": ""
+   },
+   {
+    "text": "单据类型",
+    "prop": "bizTypeName"
+   },
+   {
+    "text": "单据号",
+    "prop": "bizNo"
+   },
+   {
+    "text": "摘要",
+    "prop": "digest"
+   },
+   {
+    "text": "金额",
+    "prop": "bizDetailCost"
+   },
+   {
+    "text": "数量",
+    "prop": "bizDetailNum"
+   },
+   {
+    "text": "已报销(含审批中)",
+    "prop": "usedCost"
+   },
+   {
+    "text": "本次报销",
+    "prop": "cost"
+   },
+   {
+    "text": "备注",
+    "prop": "description"
+   }
+  ],
+  "row_count": 0
+ },
+ {
+  "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost:nth-of-type(3)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+  "body_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost:nth-of-type(3)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined",
+  "title": "报销明细",
+  "add_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost:nth-of-type(3)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-caption.ui-widget-header:nth-of-type(1)>div.caption-container.ng-star-inserted>div.float-left.edit-bar:nth-of-type(1)>button.ui-button.ui-widget:nth-of-type(1)",
+  "pick_sel": "",
+  "headers": [
+   {
+    "text": "序号",
+    "prop": ""
+   },
+   {
+    "text": "报销项目",
+    "prop": "reimItem"
+   },
+   {
+    "text": "摘要",
+    "prop": "digest"
+   },
+   {
+    "text": "预算部门",
+    "prop": "budgetDeptName"
+   },
+   {
+    "text": "预算单",
+    "prop": "budgetNo"
+   },
+   {
+    "text": "预算归属",
+    "prop": "budgetOwner"
+   },
+   {
+    "text": "预算科目",
+    "prop": "subjectName"
+   },
+   {
+    "text": "预算项目",
+    "prop": "budgetItemName"
+   },
+   {
+    "text": "科目总额",
+    "prop": "subjectTotalCost"
+   },
+   {
+    "text": "科目余额",
+    "prop": "subjectSurplus"
+   },
+   {
+    "text": "报销金额",
+    "prop": "cost"
+   },
+   {
+    "text": "年季会议",
+    "prop": "quarterlyMeet"
+   },
+   {
+    "text": "占用单号",
+    "prop": "occupyRelationNo"
+   },
+   {
+    "text": "备注",
+    "prop": "description"
+   }
+  ],
+  "row_count": 0
+ },
+ {
+  "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrint:nth-of-type(4)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+  "body_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrint:nth-of-type(4)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined",
+  "title": "费用说明",
+  "add_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrint:nth-of-type(4)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-caption.ui-widget-header:nth-of-type(1)>div.caption-container.ng-star-inserted>div.float-left.edit-bar:nth-of-type(1)>button.ui-button.ui-widget:nth-of-type(1)",
+  "pick_sel": "",
+  "headers": [
+   {
+    "text": "序号",
+    "prop": ""
+   },
+   {
+    "text": "费用类型",
+    "prop": "project"
+   },
+   {
+    "text": "开始日期",
+    "prop": "startDate"
+   },
+   {
+    "text": "结束日期",
+    "prop": "endDate"
+   },
+   {
+    "text": "地点",
+    "prop": "projectPlace"
+   },
+   {
+    "text": "次数/天",
+    "prop": "count"
+   },
+   {
+    "text": "金额",
+    "prop": "cost"
+   },
+   {
+    "text": "项目说明",
+    "prop": "reason"
+   }
+  ],
+  "row_count": 0
+ },
+ {
+  "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost.bankPrint:nth-of-type(5)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+  "body_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost.bankPrint:nth-of-type(5)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined",
+  "title": "银行信息",
+  "add_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost.bankPrint:nth-of-type(5)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-caption.ui-widget-header:nth-of-type(1)>div.caption-container.ng-star-inserted>div.float-left.edit-bar:nth-of-type(1)>button.ui-button.ui-widget:nth-of-type(1)",
+  "pick_sel": "",
+  "headers": [
+   {
+    "text": "序号",
+    "prop": ""
+   },
+   {
+    "text": "收款人",
+    "prop": "payee"
+   },
+   {
+    "text": "账号",
+    "prop": "account"
+   },
+   {
+    "text": "开户行",
+    "prop": "bank"
+   },
+   {
+    "text": "联行号",
+    "prop": "bankCode"
+   },
+   {
+    "text": "转账金额",
+    "prop": "cost"
+   },
+   {
+    "text": "备注",
+    "prop": "description"
+   }
+  ],
+  "row_count": 0
+ },
+ {
+  "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-countersign:nth-of-type(1)>qd-dynamic-table:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+  "body_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-countersign:nth-of-type(1)>qd-dynamic-table:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined",
+  "title": "确认人",
+  "add_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-countersign:nth-of-type(1)>qd-dynamic-table:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-caption.ui-widget-header:nth-of-type(1)>div.caption-container.ng-star-inserted>div.float-left.edit-bar:nth-of-type(1)>button.ui-button.ui-widget:nth-of-type(1)",
+  "pick_sel": "",
+  "headers": [
+   {
+    "text": "序号",
+    "prop": ""
+   },
+   {
+    "text": "姓名",
+    "prop": "name"
+   },
+   {
+    "text": "部门",
+    "prop": "orgName"
+   },
+   {
+    "text": "职位",
+    "prop": "jobTitle"
+   },
+   {
+    "text": "确认",
+    "prop": "isSigned"
+   },
+   {
+    "text": "确认时间",
+    "prop": "signedAt"
+   },
+   {
+    "text": "确认意见",
+    "prop": "signComment"
+   },
+   {
+    "text": "发送时间",
+    "prop": "sentAt"
+   },
+   {
+    "text": "发送人",
+    "prop": "fromUserName"
+   },
+   {
+    "text": "备注",
+    "prop": "description"
+   }
+  ],
+  "row_count": 0
+ },
+ {
+  "sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-flow-records:nth-of-type(1)>qd-dynamic-table.ng-star-inserted:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+  "body_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-flow-records:nth-of-type(1)>qd-dynamic-table.ng-star-inserted:nth-of-type(1)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined",
+  "title": "审批记录",
+  "add_sel": "",
+  "pick_sel": "",
+  "headers": [
+   {
+    "text": "序号",
+    "prop": ""
+   },
+   {
+    "text": "审批人",
+    "prop": "toUserName"
+   },
+   {
+    "text": "部门",
+    "prop": "toUserOrgName"
+   },
+   {
+    "text": "职位",
+    "prop": "toUserDutyName"
+   },
+   {
+    "text": "接收日期",
+    "prop": "readAt"
+   },
+   {
+    "text": "审批日期",
+    "prop": "approvedAt"
+   },
+   {
+    "text": "审批结论",
+    "prop": "approvedString"
+   },
+   {
+    "text": "审批意见",
+    "prop": "comment"
+   }
+  ],
+  "row_count": 0
+ },
+ {
+  "sel": "body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-attachment:nth-of-type(1)>div.attachment-drop-zone:nth-of-type(1)>qd-dynamic-table>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-header.ui-widget-header:nth-of-type(1)>div.ui-table-scrollable-header-box>table.ui-table-scrollable-header-table",
+  "body_sel": "html.qd-env-prod>body:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-attachment:nth-of-type(1)>div.attachment-drop-zone:nth-of-type(1)>qd-dynamic-table>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined",
+  "title": "附件",
+  "add_sel": "",
+  "pick_sel": "",
+  "headers": [
+   {
+    "text": "序号",
+    "prop": ""
+   },
+   {
+    "text": "",
+    "prop": "icon"
+   },
+   {
+    "text": "状态",
+    "prop": "status"
+   },
+   {
+    "text": "类型",
+    "prop": "type"
+   },
+   {
+    "text": "",
+    "prop": "isEncrypted"
+   },
+   {
+    "text": "文件名",
+    "prop": "fileName"
+   },
+   {
+    "text": "大小",
+    "prop": "size"
+   },
+   {
+    "text": "提交人",
+    "prop": "createdName"
+   },
+   {
+    "text": "上传时间",
+    "prop": "createdAt"
+   },
+   {
+    "text": "备注",
+    "prop": "description"
+   }
+  ],
+  "row_count": 0
+ }
+]

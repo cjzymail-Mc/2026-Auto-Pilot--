@@ -1,0 +1,18 @@
+{
+  "page": {
+    "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+    "is_new": true,
+    "operator": "陈晶",
+    "biz_number": "",
+    "uuid": "",
+    "status": "编制中"
+  },
+  "test_context": {
+    "purpose": "授权历史业务回放的 rd_materials 真实闭环（round-8，只填不存）",
+    "round": "8",
+    "authorization_path": "originals/replay_rd_r8.json",
+    "authorization_sha256": "a81396ebc48edc5f6354adf7db9361286de51d814d7f285b4e700ac45ffe9838"
+  },
+  "save_status": "NOT_ATTEMPTED",
+  "closing_own_test_context_only": true
+}

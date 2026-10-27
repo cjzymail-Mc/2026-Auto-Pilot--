@@ -1,0 +1,10 @@
+{"event": "profile_lock_stale_taken_over", "old_pid": 17180, "ts": "2026-10-27T09:45:55"}
+{"event": "profile_lock_acquired", "pid": 3776, "ts": "2026-10-27T09:45:55"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-27T09:45:55"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 7379, "ts": "2026-10-27T09:45:56"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793065559466, "dur_ms": 608, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-27T09:46:00"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-27T09:46:00"}
+{"event": "xl_captured", "bizNumber": "12025085486", "xuliang_in_rows": true, "covers_trip_date": true, "ts": "2026-10-27T09:46:05"}
+{"event": "xl_captured", "bizNumber": "12025112775", "xuliang_in_rows": true, "covers_trip_date": true, "ts": "2026-10-27T09:46:05"}
+{"event": "xl_captured", "bizNumber": "12025121233", "xuliang_in_rows": true, "covers_trip_date": true, "ts": "2026-10-27T09:46:05"}
+{"event": "xuliang_detail_end", "status": "DETAILS_CAPTURED", "ts": "2026-10-27T09:46:05"}

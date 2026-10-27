@@ -1,0 +1,3 @@
+[16:41:53] preflight wininet: ['ProxyEnable    REG_DWORD    0x1', 'ProxyServer    REG_SZ    127.0.0.1:7897'] | socket443: True
+[16:41:57] entry classify=LOGGED_IN url=https://bpm.qiaodan.com/oa/home name_hits=1 logout_hits=0
+{"status": "TEMPLATE_SNAPSHOT_READY", "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-170000-fiveresearch\\raw_15426101596_dijiazhi.json", "sha256": "86bf99dea2c0a820d72291d21b6277d4f3d1808dc87d2cf424dd854d9323572c"}

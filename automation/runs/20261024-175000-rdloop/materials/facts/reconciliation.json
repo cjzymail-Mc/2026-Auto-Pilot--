@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "blocked": false,
+  "checks": [
+    {
+      "name": "invoice_face_consistency",
+      "status": "pass",
+      "details": [
+        {
+          "invoices": 0
+        }
+      ]
+    },
+    {
+      "name": "invoice_allocation_closure",
+      "status": "pass",
+      "details": [
+        {
+          "invoices": 0,
+          "allocations": 0
+        }
+      ]
+    },
+    {
+      "name": "expense_allocation_coverage",
+      "status": "pass",
+      "details": [
+        {
+          "detail_expenses": 18,
+          "no_invoice_bases": 18
+        }
+      ]
+    },
+    {
+      "name": "summary_detail_consistency",
+      "status": "pass",
+      "details": [
+        {
+          "detail_sum": "9935.16",
+          "summary_sum": "9935.16"
+        }
+      ]
+    },
+    {
+      "name": "total_closure",
+      "status": "pass",
+      "details": [
+        {
+          "total": "9935.16",
+          "bank_sum": "9935.16"
+        }
+      ]
+    },
+    {
+      "name": "applicability_closure",
+      "status": "pass",
+      "details": [
+        {
+          "applicability_facts": 0,
+          "categories": {
+            "26103142": "1089.90",
+            "26103141": "1990.00",
+            "26103140": "699.00",
+            "26103139": "1299.00",
+            "26103138": "325.97",
+            "26103137": "325.97",
+            "26103136": "325.96",
+            "26103135": "799.90",
+            "26103134": "439.04",
+            "26103133": "395.12",
+            "26103132": "324.72",
+            "26103131": "263.12",
+            "26103130": "151.90",
+            "26103129": "127.02",
+            "26103128": "100.46",
+            "26103127": "84.13",
+            "26103126": "87.05",
+            "26103125": "1106.90"
+          }
+        }
+      ]
+    },
+    {
+      "name": "scope_consistency",
+      "status": "pass",
+      "details": [
+        {
+          "scope_facts": 3
+        }
+      ]
+    },
+    {
+      "name": "payee_identity",
+      "status": "pass",
+      "details": [
+        {
+          "payees": 4
+        }
+      ]
+    },
+    {
+      "name": "boundary_unknown_materials",
+      "status": "pass",
+      "details": [
+        {
+          "pending_materials": 0
+        }
+      ]
+    },
+    {
+      "name": "same_amount_not_forbidden",
+      "status": "pass",
+      "details": [
+        {
+          "duplicated_amounts": [
+            "325.97"
+          ],
+          "note": "同金额本身不禁报，闭合与依据另行核对"
+        }
+      ]
+    },
+    {
+      "name": "cross_task_invoice_hints",
+      "status": "info",
+      "details": [
+        {
+          "hints": 0
+        }
+      ]
+    }
+  ],
+  "hints": [],
+  "notes": [],
+  "generated_at": "2026-10-24T09:41:53.038326+00:00"
+}

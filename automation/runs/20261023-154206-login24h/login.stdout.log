@@ -1,0 +1,5 @@
+[15:42:22] preflight wininet: ['ProxyEnable    REG_DWORD    0x1', 'ProxyServer    REG_SZ    127.0.0.1:7897'] | socket443: True
+[15:42:28] entry classify=LOGGED_IN url=https://bpm.qiaodan.com/oa/home name_hits=1 logout_hits=0
+[15:42:28] phase entry -> PASS
+[15:42:28] FINISH SUCCESS_LOGIN_ONLY tech=3.1s login_wait=0.0s attempt=attempt_002
+[15:42:28] LOGIN_DONE 浏览器保留在场约 1440 分钟，登录态本地有效期 24h

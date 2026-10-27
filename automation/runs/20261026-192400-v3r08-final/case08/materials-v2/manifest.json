@@ -1,0 +1,2043 @@
+{
+  "schema_version": "2.0",
+  "originals_root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票",
+  "derived_root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2",
+  "files": [
+    {
+      "material_id": "sha256:775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825厦门到晋江发票.pdf",
+      "relative_path": "0825/0825厦门到晋江发票.pdf",
+      "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+      "size_bytes": 41808,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825晋江到厦门发票.pdf",
+      "relative_path": "0825/0825晋江到厦门发票.pdf",
+      "sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124",
+      "size_bytes": 41801,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0825/0825通行费电子票据汇总单(票据).pdf",
+      "sha256": "ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75",
+      "size_bytes": 45789,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "0825/0825通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7",
+      "size_bytes": 45742,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0825/0825通行费电子票据汇总单(行程).pdf",
+      "sha256": "941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a",
+      "size_bytes": 45558,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0825/0825通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069",
+      "size_bytes": 45529,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904厦门到晋江发票.pdf",
+      "relative_path": "0904/0904厦门到晋江发票.pdf",
+      "sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df",
+      "size_bytes": 41798,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904晋江到厦门发票.pdf",
+      "relative_path": "0904/0904晋江到厦门发票.pdf",
+      "sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b",
+      "size_bytes": 41828,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0904/0904通行费电子票据汇总单(票据).pdf",
+      "sha256": "6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc",
+      "size_bytes": 45806,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "0904/0904通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb",
+      "size_bytes": 45788,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0904/0904通行费电子票据汇总单(行程).pdf",
+      "sha256": "e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071",
+      "size_bytes": 45574,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0904/0904通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7",
+      "size_bytes": 45559,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905厦门到晋江发票1.pdf",
+      "relative_path": "0906/0905厦门到晋江发票1.pdf",
+      "sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+      "size_bytes": 38488,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905厦门到晋江发票2.pdf",
+      "relative_path": "0906/0905厦门到晋江发票2.pdf",
+      "sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb",
+      "size_bytes": 41782,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905晋江到厦门发票1.pdf",
+      "relative_path": "0906/0905晋江到厦门发票1.pdf",
+      "sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e",
+      "size_bytes": 38471,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905晋江到厦门发票2.pdf",
+      "relative_path": "0906/0905晋江到厦门发票2.pdf",
+      "sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1",
+      "size_bytes": 41744,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0906/0905通行费电子票据汇总单(票据).pdf",
+      "sha256": "a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4",
+      "size_bytes": 46812,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "0906/0905通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8",
+      "size_bytes": 46826,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0906/0905通行费电子票据汇总单(行程).pdf",
+      "sha256": "881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8",
+      "size_bytes": 46129,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0906/0905通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14",
+      "size_bytes": 46141,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917厦门到晋江发票1.pdf",
+      "relative_path": "0917/0917厦门到晋江发票1.pdf",
+      "sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55",
+      "size_bytes": 41848,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917厦门到晋江发票2.pdf",
+      "relative_path": "0917/0917厦门到晋江发票2.pdf",
+      "sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937",
+      "size_bytes": 39228,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917晋江到厦门发票1.pdf",
+      "relative_path": "0917/0917晋江到厦门发票1.pdf",
+      "sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3",
+      "size_bytes": 39211,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917晋江到厦门发票2.pdf",
+      "relative_path": "0917/0917晋江到厦门发票2.pdf",
+      "sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3",
+      "size_bytes": 41991,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0917/0917通行费电子票据汇总单(票据).pdf",
+      "sha256": "8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d",
+      "size_bytes": 47147,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917通行费电子票据汇总单(票据)1.pdf",
+      "relative_path": "0917/0917通行费电子票据汇总单(票据)1.pdf",
+      "sha256": "c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f",
+      "size_bytes": 47106,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0917/0917通行费电子票据汇总单(行程).pdf",
+      "sha256": "b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b",
+      "size_bytes": 46416,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0917/0917通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8",
+      "size_bytes": 46477,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928厦门到晋江发票1.pdf",
+      "relative_path": "0928/0928厦门到晋江发票1.pdf",
+      "sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27",
+      "size_bytes": 39226,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928厦门到晋江发票2.pdf",
+      "relative_path": "0928/0928厦门到晋江发票2.pdf",
+      "sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753",
+      "size_bytes": 41844,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928晋江到厦门发票1.pdf",
+      "relative_path": "0928/0928晋江到厦门发票1.pdf",
+      "sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5",
+      "size_bytes": 39213,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928晋江到厦门发票2.pdf",
+      "relative_path": "0928/0928晋江到厦门发票2.pdf",
+      "sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae",
+      "size_bytes": 41827,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0928/0928通行费电子票据汇总单(票据).pdf",
+      "sha256": "d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba",
+      "size_bytes": 47126,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "0928/0928通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce",
+      "size_bytes": 47148,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0928/0928通行费电子票据汇总单(行程).pdf",
+      "sha256": "29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81",
+      "size_bytes": 46396,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0928/0928通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289",
+      "size_bytes": 46415,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028厦门到晋江发票.pdf",
+      "relative_path": "1028/1028厦门到晋江发票.pdf",
+      "sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+      "size_bytes": 41793,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028晋江到厦门发票.pdf",
+      "relative_path": "1028/1028晋江到厦门发票.pdf",
+      "sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc",
+      "size_bytes": 41802,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028通行费电子票据汇总单(票据).pdf",
+      "relative_path": "1028/1028通行费电子票据汇总单(票据).pdf",
+      "sha256": "8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0",
+      "size_bytes": 45792,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1028/1028通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa",
+      "size_bytes": 45794,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028通行费电子票据汇总单(行程).pdf",
+      "relative_path": "1028/1028通行费电子票据汇总单(行程).pdf",
+      "sha256": "f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7",
+      "size_bytes": 45562,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1028/1028通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c",
+      "size_bytes": 45564,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112厦门到晋江发票.pdf",
+      "relative_path": "1112/1112厦门到晋江发票.pdf",
+      "sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a",
+      "size_bytes": 41802,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112晋江到厦门发票.pdf",
+      "relative_path": "1112/1112晋江到厦门发票.pdf",
+      "sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31",
+      "size_bytes": 41822,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112通行费电子票据汇总单(票据).pdf",
+      "relative_path": "1112/1112通行费电子票据汇总单(票据).pdf",
+      "sha256": "75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845",
+      "size_bytes": 45791,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1112/1112通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65",
+      "size_bytes": 45840,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112通行费电子票据汇总单(行程).pdf",
+      "relative_path": "1112/1112通行费电子票据汇总单(行程).pdf",
+      "sha256": "81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6",
+      "size_bytes": 45805,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1112/1112通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa",
+      "size_bytes": 45855,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124厦门到晋江发票.pdf",
+      "relative_path": "1124/1124厦门到晋江发票.pdf",
+      "sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c",
+      "size_bytes": 41818,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124晋江到厦门发票.pdf",
+      "relative_path": "1124/1124晋江到厦门发票.pdf",
+      "sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507",
+      "size_bytes": 41828,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124通行费电子票据汇总单(票据).pdf",
+      "relative_path": "1124/1124通行费电子票据汇总单(票据).pdf",
+      "sha256": "0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657",
+      "size_bytes": 45792,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1124/1124通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d",
+      "size_bytes": 45792,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124通行费电子票据汇总单(行程).pdf",
+      "relative_path": "1124/1124通行费电子票据汇总单(行程).pdf",
+      "sha256": "060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839",
+      "size_bytes": 45803,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1124/1124通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295",
+      "size_bytes": 45804,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204厦门到晋江发票.pdf",
+      "relative_path": "1204/1204厦门到晋江发票.pdf",
+      "sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2",
+      "size_bytes": 41820,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204晋江到厦门发票.pdf",
+      "relative_path": "1204/1204晋江到厦门发票.pdf",
+      "sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574",
+      "size_bytes": 41816,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204通行费电子票据汇总单(票据).pdf",
+      "relative_path": "1204/1204通行费电子票据汇总单(票据).pdf",
+      "sha256": "878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2",
+      "size_bytes": 45786,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1204/1204通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b",
+      "size_bytes": 45789,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204通行费电子票据汇总单(行程).pdf",
+      "relative_path": "1204/1204通行费电子票据汇总单(行程).pdf",
+      "sha256": "c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e",
+      "size_bytes": 45800,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1204/1204通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749",
+      "size_bytes": 45802,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210厦门-晋江发票.pdf",
+      "relative_path": "1210/1210厦门-晋江发票.pdf",
+      "sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188",
+      "size_bytes": 41814,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210晋江-厦门1 (2).pdf",
+      "relative_path": "1210/1210晋江-厦门1 (2).pdf",
+      "sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa",
+      "size_bytes": 41729,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210晋江-厦门1.pdf",
+      "relative_path": "1210/1210晋江-厦门1.pdf",
+      "sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+      "size_bytes": 38482,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210通行费电子票据汇总单(票据)1.pdf",
+      "relative_path": "1210/1210通行费电子票据汇总单(票据)1.pdf",
+      "sha256": "5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272",
+      "size_bytes": 46811,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1210/1210通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299",
+      "size_bytes": 45743,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210通行费电子票据汇总单(行程)1.pdf",
+      "relative_path": "1210/1210通行费电子票据汇总单(行程)1.pdf",
+      "sha256": "934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2",
+      "size_bytes": 46363,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1210/1210通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157",
+      "size_bytes": 45753,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\12月-自驾公出公里数统计表.xlsx",
+      "relative_path": "12月-自驾公出公里数统计表.xlsx",
+      "sha256": "2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83",
+      "size_bytes": 12875,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票1.pdf",
+      "relative_path": "油票/油票1.pdf",
+      "sha256": "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc",
+      "size_bytes": 63415,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票2.pdf",
+      "relative_path": "油票/油票2.pdf",
+      "sha256": "edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74",
+      "size_bytes": 63626,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票3.pdf",
+      "relative_path": "油票/油票3.pdf",
+      "sha256": "6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b",
+      "size_bytes": 62972,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票4.pdf",
+      "relative_path": "油票/油票4.pdf",
+      "sha256": "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452",
+      "size_bytes": 63588,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票5.pdf",
+      "relative_path": "油票/油票5.pdf",
+      "sha256": "3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da",
+      "size_bytes": 63816,
+      "duplicate_paths": []
+    }
+  ],
+  "derived_files": [
+    {
+      "derived_id": "sha256:05a1e3b809a8827e9326b00cc473fdbf0ecbc9b42aac553a0bcfcbebf0797cf5",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6.json",
+      "relative_path": "parsed/775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6.json",
+      "sha256": "05a1e3b809a8827e9326b00cc473fdbf0ecbc9b42aac553a0bcfcbebf0797cf5",
+      "size_bytes": 493,
+      "sources": [
+        "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:7ef3ec77aaf9f48f653b2ff4fa9b9026990d2859a83fdf74bfc4c60cf0ee6a93",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124.json",
+      "relative_path": "parsed/0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124.json",
+      "sha256": "7ef3ec77aaf9f48f653b2ff4fa9b9026990d2859a83fdf74bfc4c60cf0ee6a93",
+      "size_bytes": 493,
+      "sources": [
+        "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:6f24e901ab993c9a3a7d194c516b17113f0eb69f32fa507666b467c89e43a3fe",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75.json",
+      "relative_path": "parsed/ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75.json",
+      "sha256": "6f24e901ab993c9a3a7d194c516b17113f0eb69f32fa507666b467c89e43a3fe",
+      "size_bytes": 510,
+      "sources": [
+        "ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:bbacdbaea7b2b83011dec0a1901aedc93fafeb1955be6ef9442a866fa814e5ed",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7.json",
+      "relative_path": "parsed/319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7.json",
+      "sha256": "bbacdbaea7b2b83011dec0a1901aedc93fafeb1955be6ef9442a866fa814e5ed",
+      "size_bytes": 511,
+      "sources": [
+        "319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:ec93112a0bedd035571a88cd5d692ffe37862b12fb924b0aa4c0c0b12ae98e1f",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a.json",
+      "relative_path": "parsed/941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a.json",
+      "sha256": "ec93112a0bedd035571a88cd5d692ffe37862b12fb924b0aa4c0c0b12ae98e1f",
+      "size_bytes": 510,
+      "sources": [
+        "941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:5aac4abc7f5c10eb7b49f2e765cefeeb7022d9c216a1986b2ef055fc73705e7a",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069.json",
+      "relative_path": "parsed/71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069.json",
+      "sha256": "5aac4abc7f5c10eb7b49f2e765cefeeb7022d9c216a1986b2ef055fc73705e7a",
+      "size_bytes": 511,
+      "sources": [
+        "71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:99fd4eecb2cd353338c4f922f6e36138938e1c9d635da4f92f0d3096b9e233d0",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df.json",
+      "relative_path": "parsed/d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df.json",
+      "sha256": "99fd4eecb2cd353338c4f922f6e36138938e1c9d635da4f92f0d3096b9e233d0",
+      "size_bytes": 493,
+      "sources": [
+        "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:8f29da751bb9b47254e4eb7493e064b2c0848b28abadb5ad45531919eda3572a",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b.json",
+      "relative_path": "parsed/f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b.json",
+      "sha256": "8f29da751bb9b47254e4eb7493e064b2c0848b28abadb5ad45531919eda3572a",
+      "size_bytes": 493,
+      "sources": [
+        "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:004e5fa58230c8da2e81c28c02be7b4cb83eaac41c41794e08058fc99ca02e25",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc.json",
+      "relative_path": "parsed/6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc.json",
+      "sha256": "004e5fa58230c8da2e81c28c02be7b4cb83eaac41c41794e08058fc99ca02e25",
+      "size_bytes": 510,
+      "sources": [
+        "6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:dc85b2a0300c253bce68355479c9080b9240dab4a71bf790d93c44e36ca72c6e",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb.json",
+      "relative_path": "parsed/1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb.json",
+      "sha256": "dc85b2a0300c253bce68355479c9080b9240dab4a71bf790d93c44e36ca72c6e",
+      "size_bytes": 511,
+      "sources": [
+        "1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:c216b8b93c27f09430ed40ed86ba4d26e4c3802ae3d618ee9b57c65d319369b2",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071.json",
+      "relative_path": "parsed/e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071.json",
+      "sha256": "c216b8b93c27f09430ed40ed86ba4d26e4c3802ae3d618ee9b57c65d319369b2",
+      "size_bytes": 510,
+      "sources": [
+        "e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:d34e60dfcd2cb1800138997c236137de872aee3702532070652b1636442c0893",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7.json",
+      "relative_path": "parsed/1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7.json",
+      "sha256": "d34e60dfcd2cb1800138997c236137de872aee3702532070652b1636442c0893",
+      "size_bytes": 511,
+      "sources": [
+        "1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:bfd38944240de9b56e177fea5fde66f16e1bf6d7463a565ef7fb355d747392a7",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a.json",
+      "relative_path": "parsed/65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a.json",
+      "sha256": "bfd38944240de9b56e177fea5fde66f16e1bf6d7463a565ef7fb355d747392a7",
+      "size_bytes": 494,
+      "sources": [
+        "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:dd2b2a59cac6295e48df5b648555f7e5b82ef9ae3b04b24843e3a2496cfd6c23",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb.json",
+      "relative_path": "parsed/c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb.json",
+      "sha256": "dd2b2a59cac6295e48df5b648555f7e5b82ef9ae3b04b24843e3a2496cfd6c23",
+      "size_bytes": 494,
+      "sources": [
+        "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:653e87f0dd24b1b1a02fbec8547f5161f75a6a623692bbff7e7d6afe2d6d4df4",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e.json",
+      "relative_path": "parsed/971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e.json",
+      "sha256": "653e87f0dd24b1b1a02fbec8547f5161f75a6a623692bbff7e7d6afe2d6d4df4",
+      "size_bytes": 494,
+      "sources": [
+        "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:0dc7f2afd02d81ff6f531f309f75a9d4eb587c81df13d37eb742f3d2cd7f6fb3",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1.json",
+      "relative_path": "parsed/f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1.json",
+      "sha256": "0dc7f2afd02d81ff6f531f309f75a9d4eb587c81df13d37eb742f3d2cd7f6fb3",
+      "size_bytes": 494,
+      "sources": [
+        "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:04a48d2da3743bfd612dc5aa1500d4441c933a3c6b282765aa6cbb804607d21d",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4.json",
+      "relative_path": "parsed/a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4.json",
+      "sha256": "04a48d2da3743bfd612dc5aa1500d4441c933a3c6b282765aa6cbb804607d21d",
+      "size_bytes": 510,
+      "sources": [
+        "a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:37319a062ce7d104a1fe09d02e5a1a46b53e16de5819a4f0f3e7107f73b0b9a1",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8.json",
+      "relative_path": "parsed/d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8.json",
+      "sha256": "37319a062ce7d104a1fe09d02e5a1a46b53e16de5819a4f0f3e7107f73b0b9a1",
+      "size_bytes": 511,
+      "sources": [
+        "d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:e4fff17ac3b102e67f3a573b8471d2277c4fe56118f4514461d611d4b6e0cf13",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8.json",
+      "relative_path": "parsed/881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8.json",
+      "sha256": "e4fff17ac3b102e67f3a573b8471d2277c4fe56118f4514461d611d4b6e0cf13",
+      "size_bytes": 510,
+      "sources": [
+        "881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:963277462f3db44d111146c976f4698a183f1b0d29a98656235feb6d9f83ee42",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14.json",
+      "relative_path": "parsed/b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14.json",
+      "sha256": "963277462f3db44d111146c976f4698a183f1b0d29a98656235feb6d9f83ee42",
+      "size_bytes": 511,
+      "sources": [
+        "b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:421115d54a61e4c9d98743aa9eece90a5c8ec217ae05944bf32fa5163b42de31",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55.json",
+      "relative_path": "parsed/545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55.json",
+      "sha256": "421115d54a61e4c9d98743aa9eece90a5c8ec217ae05944bf32fa5163b42de31",
+      "size_bytes": 494,
+      "sources": [
+        "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:13de09d7edacbb285a5102dd8ac46dc476d517a7e6ab5b74095c07b4f3495822",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937.json",
+      "relative_path": "parsed/c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937.json",
+      "sha256": "13de09d7edacbb285a5102dd8ac46dc476d517a7e6ab5b74095c07b4f3495822",
+      "size_bytes": 494,
+      "sources": [
+        "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:01c00f716415a6834e1c738bc1bdcf70416dacb88c9674276e5b2c98d28f83af",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3.json",
+      "relative_path": "parsed/3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3.json",
+      "sha256": "01c00f716415a6834e1c738bc1bdcf70416dacb88c9674276e5b2c98d28f83af",
+      "size_bytes": 494,
+      "sources": [
+        "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:4894843b7c5fcac59d0c3332662b89e24855de2658ddbbcf1639abc082694af8",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3.json",
+      "relative_path": "parsed/a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3.json",
+      "sha256": "4894843b7c5fcac59d0c3332662b89e24855de2658ddbbcf1639abc082694af8",
+      "size_bytes": 494,
+      "sources": [
+        "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:2e90f4fbc55eb9521e1db33a143a256b4a4a3163b3cb5201c17564bc596af1a8",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d.json",
+      "relative_path": "parsed/8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d.json",
+      "sha256": "2e90f4fbc55eb9521e1db33a143a256b4a4a3163b3cb5201c17564bc596af1a8",
+      "size_bytes": 510,
+      "sources": [
+        "8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:318c7966c14b3f57f302a3cc92913575b286d064079560c60083c2fb3d4aba36",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f.json",
+      "relative_path": "parsed/c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f.json",
+      "sha256": "318c7966c14b3f57f302a3cc92913575b286d064079560c60083c2fb3d4aba36",
+      "size_bytes": 511,
+      "sources": [
+        "c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:bb9acf643330e83ed1ad33f6f53547178bd6a561244f85cc8e1152fa3fdee130",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b.json",
+      "relative_path": "parsed/b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b.json",
+      "sha256": "bb9acf643330e83ed1ad33f6f53547178bd6a561244f85cc8e1152fa3fdee130",
+      "size_bytes": 510,
+      "sources": [
+        "b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:82f482fb4b0993e8c249ff80b69cbbac85d9ee73d9b2d77036b40df45b44786d",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8.json",
+      "relative_path": "parsed/f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8.json",
+      "sha256": "82f482fb4b0993e8c249ff80b69cbbac85d9ee73d9b2d77036b40df45b44786d",
+      "size_bytes": 511,
+      "sources": [
+        "f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:a57c78ecec5456f66d181984fa08f000d80d1742df615197ca2a8d98da6fa6a0",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27.json",
+      "relative_path": "parsed/a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27.json",
+      "sha256": "a57c78ecec5456f66d181984fa08f000d80d1742df615197ca2a8d98da6fa6a0",
+      "size_bytes": 494,
+      "sources": [
+        "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:430becb07f9df44e31d98059701592d44e884e2e6f4c09b9763b4d9ecfc22205",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753.json",
+      "relative_path": "parsed/9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753.json",
+      "sha256": "430becb07f9df44e31d98059701592d44e884e2e6f4c09b9763b4d9ecfc22205",
+      "size_bytes": 494,
+      "sources": [
+        "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:e867a670de72bb80769b43d5c71e83753d6928065d5119d965866bb0f9393674",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5.json",
+      "relative_path": "parsed/2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5.json",
+      "sha256": "e867a670de72bb80769b43d5c71e83753d6928065d5119d965866bb0f9393674",
+      "size_bytes": 494,
+      "sources": [
+        "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:4769c589f39755fd4509055b52c5896219c8f9ab7d0cf07da67d51c2dda91120",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae.json",
+      "relative_path": "parsed/73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae.json",
+      "sha256": "4769c589f39755fd4509055b52c5896219c8f9ab7d0cf07da67d51c2dda91120",
+      "size_bytes": 494,
+      "sources": [
+        "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:75d86a5d7611dffd19aa85b8d1d6c0389935ac8e193223dd624222888f8b142d",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba.json",
+      "relative_path": "parsed/d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba.json",
+      "sha256": "75d86a5d7611dffd19aa85b8d1d6c0389935ac8e193223dd624222888f8b142d",
+      "size_bytes": 510,
+      "sources": [
+        "d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:a035c35f3ab279c6d5be37d42ba9a435a36d1d67f8307dfd24166f922658e2d4",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce.json",
+      "relative_path": "parsed/dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce.json",
+      "sha256": "a035c35f3ab279c6d5be37d42ba9a435a36d1d67f8307dfd24166f922658e2d4",
+      "size_bytes": 511,
+      "sources": [
+        "dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:65993c33d0364fd99f58ee54f1a4eaba2cc9f2ab8bdb75627338aa8dd04fe274",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81.json",
+      "relative_path": "parsed/29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81.json",
+      "sha256": "65993c33d0364fd99f58ee54f1a4eaba2cc9f2ab8bdb75627338aa8dd04fe274",
+      "size_bytes": 510,
+      "sources": [
+        "29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:38db0e9ee2ace6de0de409f5287d8989f0b26ed0ad98f6ffb97ae434adf933f5",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289.json",
+      "relative_path": "parsed/4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289.json",
+      "sha256": "38db0e9ee2ace6de0de409f5287d8989f0b26ed0ad98f6ffb97ae434adf933f5",
+      "size_bytes": 511,
+      "sources": [
+        "4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:b4354ea815100c8d5dbcf0575f2ab464c701f8a374d587d31c9a59700641abb9",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd.json",
+      "relative_path": "parsed/b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd.json",
+      "sha256": "b4354ea815100c8d5dbcf0575f2ab464c701f8a374d587d31c9a59700641abb9",
+      "size_bytes": 493,
+      "sources": [
+        "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:5015e07c4d089a1153e638d1913acf5bb48015e1fa69e8468e030e049551885b",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc.json",
+      "relative_path": "parsed/6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc.json",
+      "sha256": "5015e07c4d089a1153e638d1913acf5bb48015e1fa69e8468e030e049551885b",
+      "size_bytes": 493,
+      "sources": [
+        "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:2c1a5f12f02f81e4b9ccf0180e0ca0f7513f8671ac0d8c1fc657348c6b2dab32",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0.json",
+      "relative_path": "parsed/8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0.json",
+      "sha256": "2c1a5f12f02f81e4b9ccf0180e0ca0f7513f8671ac0d8c1fc657348c6b2dab32",
+      "size_bytes": 510,
+      "sources": [
+        "8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:48fdd3c8b512c6a1fcbb6e10a0122a2b4c5260e1c5042a7266fde0370094737f",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa.json",
+      "relative_path": "parsed/c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa.json",
+      "sha256": "48fdd3c8b512c6a1fcbb6e10a0122a2b4c5260e1c5042a7266fde0370094737f",
+      "size_bytes": 511,
+      "sources": [
+        "c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:88dbb855b3c1cd5c454907e00e10cfb57955d046d82437aca8f35fbfa89c42d2",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7.json",
+      "relative_path": "parsed/f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7.json",
+      "sha256": "88dbb855b3c1cd5c454907e00e10cfb57955d046d82437aca8f35fbfa89c42d2",
+      "size_bytes": 510,
+      "sources": [
+        "f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:12e4365a1c83fc9be31160562bc09360bb402c52f8d7f330c9ace7f44678cbfb",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c.json",
+      "relative_path": "parsed/45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c.json",
+      "sha256": "12e4365a1c83fc9be31160562bc09360bb402c52f8d7f330c9ace7f44678cbfb",
+      "size_bytes": 511,
+      "sources": [
+        "45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:bed1fdd3e3027f4a9f1b8d42e6f285bc64695469ebe7644032d3ec503c9ee800",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a.json",
+      "relative_path": "parsed/aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a.json",
+      "sha256": "bed1fdd3e3027f4a9f1b8d42e6f285bc64695469ebe7644032d3ec503c9ee800",
+      "size_bytes": 493,
+      "sources": [
+        "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:05ffaf7c88637a5d29332c184dbe03933759c022638be92270ffc36009a34360",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31.json",
+      "relative_path": "parsed/9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31.json",
+      "sha256": "05ffaf7c88637a5d29332c184dbe03933759c022638be92270ffc36009a34360",
+      "size_bytes": 493,
+      "sources": [
+        "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:10e8b1ee0082529f5c1d38a64790c588f045ee76b779e912ad127f1db425fc0d",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845.json",
+      "relative_path": "parsed/75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845.json",
+      "sha256": "10e8b1ee0082529f5c1d38a64790c588f045ee76b779e912ad127f1db425fc0d",
+      "size_bytes": 510,
+      "sources": [
+        "75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:7aa03bb11742b39cf211da95d29c9e9377dc4639d3d4006ce7a226732cd691cd",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65.json",
+      "relative_path": "parsed/1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65.json",
+      "sha256": "7aa03bb11742b39cf211da95d29c9e9377dc4639d3d4006ce7a226732cd691cd",
+      "size_bytes": 511,
+      "sources": [
+        "1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:c3f8ad5b8f33e320e9458dafa325239bb370c1cf1c8a8fb39fa3f7948a6dafdb",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6.json",
+      "relative_path": "parsed/81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6.json",
+      "sha256": "c3f8ad5b8f33e320e9458dafa325239bb370c1cf1c8a8fb39fa3f7948a6dafdb",
+      "size_bytes": 510,
+      "sources": [
+        "81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:2f8876f09b75d5b248b200cc4548b85774508030675d0387a29a68676086869c",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa.json",
+      "relative_path": "parsed/61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa.json",
+      "sha256": "2f8876f09b75d5b248b200cc4548b85774508030675d0387a29a68676086869c",
+      "size_bytes": 511,
+      "sources": [
+        "61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:bc652dcf83d8185631455d4055b82f7db2aebb6b89e59b07f727274be6b6018c",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c.json",
+      "relative_path": "parsed/4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c.json",
+      "sha256": "bc652dcf83d8185631455d4055b82f7db2aebb6b89e59b07f727274be6b6018c",
+      "size_bytes": 493,
+      "sources": [
+        "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:fefe086a3e9131836879eae27b6559f3a2d7eebca16be5d0b1493537d3e0a99b",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507.json",
+      "relative_path": "parsed/8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507.json",
+      "sha256": "fefe086a3e9131836879eae27b6559f3a2d7eebca16be5d0b1493537d3e0a99b",
+      "size_bytes": 493,
+      "sources": [
+        "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:3d12d929a6162308c63cc3bb13942e8c8bf409068ad8f4beee9ec46cbb5d5fb9",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657.json",
+      "relative_path": "parsed/0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657.json",
+      "sha256": "3d12d929a6162308c63cc3bb13942e8c8bf409068ad8f4beee9ec46cbb5d5fb9",
+      "size_bytes": 510,
+      "sources": [
+        "0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:738a937bc34ea83dbe010b9f6fa341e725db765f865f6581417be2fc0d06addb",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d.json",
+      "relative_path": "parsed/0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d.json",
+      "sha256": "738a937bc34ea83dbe010b9f6fa341e725db765f865f6581417be2fc0d06addb",
+      "size_bytes": 511,
+      "sources": [
+        "0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:fc2b434be67439f7d93fe2dba487ed44b7f35b81116a517da792217072cb32c3",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839.json",
+      "relative_path": "parsed/060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839.json",
+      "sha256": "fc2b434be67439f7d93fe2dba487ed44b7f35b81116a517da792217072cb32c3",
+      "size_bytes": 510,
+      "sources": [
+        "060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:716393a94239f9330103b060a53bba16c71f81d47d2d938319221dc162206611",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295.json",
+      "relative_path": "parsed/cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295.json",
+      "sha256": "716393a94239f9330103b060a53bba16c71f81d47d2d938319221dc162206611",
+      "size_bytes": 511,
+      "sources": [
+        "cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:8fb960e9a08b26eaafde73ddce2764afd7f59b09a0f4ff0b40b784219fa0e6a8",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2.json",
+      "relative_path": "parsed/a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2.json",
+      "sha256": "8fb960e9a08b26eaafde73ddce2764afd7f59b09a0f4ff0b40b784219fa0e6a8",
+      "size_bytes": 493,
+      "sources": [
+        "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:c455e52fd318606278257eab97058053ecd4f07e18122ee69484335fc6b91b43",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574.json",
+      "relative_path": "parsed/880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574.json",
+      "sha256": "c455e52fd318606278257eab97058053ecd4f07e18122ee69484335fc6b91b43",
+      "size_bytes": 493,
+      "sources": [
+        "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:b800494dc42dee400a8e2588e9b7d75c85cb3c3af874abe92af3f768f7081bb7",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2.json",
+      "relative_path": "parsed/878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2.json",
+      "sha256": "b800494dc42dee400a8e2588e9b7d75c85cb3c3af874abe92af3f768f7081bb7",
+      "size_bytes": 510,
+      "sources": [
+        "878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:dd0538bc7968ccc580a47b4ad57709cfd1d3fcb9fb253dea8e0a095e0faaf033",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b.json",
+      "relative_path": "parsed/ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b.json",
+      "sha256": "dd0538bc7968ccc580a47b4ad57709cfd1d3fcb9fb253dea8e0a095e0faaf033",
+      "size_bytes": 511,
+      "sources": [
+        "ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:e3607cb6f67b66cedb00ffd90db54b077e70182789388eacaa0fc58b05534cdb",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e.json",
+      "relative_path": "parsed/c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e.json",
+      "sha256": "e3607cb6f67b66cedb00ffd90db54b077e70182789388eacaa0fc58b05534cdb",
+      "size_bytes": 510,
+      "sources": [
+        "c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:ceada5866a42c965a937092619f750b20c5e3ef8121f67e688c9de654a9e79f5",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749.json",
+      "relative_path": "parsed/72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749.json",
+      "sha256": "ceada5866a42c965a937092619f750b20c5e3ef8121f67e688c9de654a9e79f5",
+      "size_bytes": 511,
+      "sources": [
+        "72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:6fb632ae89e1a491f651600fcba350db7e5d7a3b4f74f243c97665f87380500c",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188.json",
+      "relative_path": "parsed/f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188.json",
+      "sha256": "6fb632ae89e1a491f651600fcba350db7e5d7a3b4f74f243c97665f87380500c",
+      "size_bytes": 491,
+      "sources": [
+        "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:38cfe83187521c88e1138f97eb82dd5f256e7083b01b558b94a05ad6876b216a",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa.json",
+      "relative_path": "parsed/1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa.json",
+      "sha256": "38cfe83187521c88e1138f97eb82dd5f256e7083b01b558b94a05ad6876b216a",
+      "size_bytes": 490,
+      "sources": [
+        "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:d7dbfbd0864ea436bab6079c3f493f5c287c963702dc9d811cc99322bd419bd3",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168.json",
+      "relative_path": "parsed/9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168.json",
+      "sha256": "d7dbfbd0864ea436bab6079c3f493f5c287c963702dc9d811cc99322bd419bd3",
+      "size_bytes": 486,
+      "sources": [
+        "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:7de8ba04b0097a67ea200ba598d99ef9eeda55f9d332f0d29b5e309570227959",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272.json",
+      "relative_path": "parsed/5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272.json",
+      "sha256": "7de8ba04b0097a67ea200ba598d99ef9eeda55f9d332f0d29b5e309570227959",
+      "size_bytes": 511,
+      "sources": [
+        "5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:1b5e00a45fc230c0af580b7bc2b8c1a7bc5528a3befda67b4d4a409110f6c118",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299.json",
+      "relative_path": "parsed/b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299.json",
+      "sha256": "1b5e00a45fc230c0af580b7bc2b8c1a7bc5528a3befda67b4d4a409110f6c118",
+      "size_bytes": 511,
+      "sources": [
+        "b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:8aae3cb033b2a61b22a965bae06028603a4674c73b92592c0693b7fc79763389",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2.json",
+      "relative_path": "parsed/934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2.json",
+      "sha256": "8aae3cb033b2a61b22a965bae06028603a4674c73b92592c0693b7fc79763389",
+      "size_bytes": 511,
+      "sources": [
+        "934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:52fc3244b53c484adb768e249bf2aadc2de1c95f3ff18cab069ab6f2cae4ff2f",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157.json",
+      "relative_path": "parsed/b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157.json",
+      "sha256": "52fc3244b53c484adb768e249bf2aadc2de1c95f3ff18cab069ab6f2cae4ff2f",
+      "size_bytes": 511,
+      "sources": [
+        "b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:208b54651b1699d4854fab094a62dab47572305e0d866abdc136627d4516f8c8",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83.json",
+      "relative_path": "parsed/2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83.json",
+      "sha256": "208b54651b1699d4854fab094a62dab47572305e0d866abdc136627d4516f8c8",
+      "size_bytes": 20585,
+      "sources": [
+        "2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:5adee0a1f1dbe6b23e26a5bd46153b275a921495a14c965de92887f129d4457f",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc.json",
+      "relative_path": "parsed/6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc.json",
+      "sha256": "5adee0a1f1dbe6b23e26a5bd46153b275a921495a14c965de92887f129d4457f",
+      "size_bytes": 477,
+      "sources": [
+        "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:0f6c8249c292d7dcd6799d7756fbec73d379093dc1af436d510af9f4c8b9b00a",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74.json",
+      "relative_path": "parsed/edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74.json",
+      "sha256": "0f6c8249c292d7dcd6799d7756fbec73d379093dc1af436d510af9f4c8b9b00a",
+      "size_bytes": 477,
+      "sources": [
+        "edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:041650e0aab0eacff83d0143e83695c29d7a99890a203a383adfef3723a78f54",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b.json",
+      "relative_path": "parsed/6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b.json",
+      "sha256": "041650e0aab0eacff83d0143e83695c29d7a99890a203a383adfef3723a78f54",
+      "size_bytes": 477,
+      "sources": [
+        "6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:bbbc4c69121054c28bfb80a4dcad24c76e424ce2cd0c50212c943b7ff138f4d5",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452.json",
+      "relative_path": "parsed/70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452.json",
+      "sha256": "bbbc4c69121054c28bfb80a4dcad24c76e424ce2cd0c50212c943b7ff138f4d5",
+      "size_bytes": 477,
+      "sources": [
+        "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:4efadb5f18e51c576827f167e3a3c581dda3d5a00ba9190253301d9677a37115",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\parsed\\3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da.json",
+      "relative_path": "parsed/3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da.json",
+      "sha256": "4efadb5f18e51c576827f167e3a3c581dda3d5a00ba9190253301d9677a37115",
+      "size_bytes": 477,
+      "sources": [
+        "3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-26T14:15:53+00:00"
+    },
+    {
+      "derived_id": "sha256:0e09182fdd691881445a87e9928a400c1742a4a8a4aea1ec2745ef245bc70f90",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16304714.json",
+      "relative_path": "extractions/toll-16304714.json",
+      "sha256": "0e09182fdd691881445a87e9928a400c1742a4a8a4aea1ec2745ef245bc70f90",
+      "size_bytes": 1065,
+      "sources": [
+        "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:54+00:00"
+    },
+    {
+      "derived_id": "sha256:6aebfe4c3d81ce6e7266126e2aa4ae2afdb56954a441146959b6885f182787f9",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16166322.json",
+      "relative_path": "extractions/toll-16166322.json",
+      "sha256": "6aebfe4c3d81ce6e7266126e2aa4ae2afdb56954a441146959b6885f182787f9",
+      "size_bytes": 1065,
+      "sources": [
+        "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:54+00:00"
+    },
+    {
+      "derived_id": "sha256:764ef3b44ae8ae16665af8cd5e841a8c439798d47a0bac667b3c153407c3db59",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16104706.json",
+      "relative_path": "extractions/toll-16104706.json",
+      "sha256": "764ef3b44ae8ae16665af8cd5e841a8c439798d47a0bac667b3c153407c3db59",
+      "size_bytes": 1065,
+      "sources": [
+        "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:55+00:00"
+    },
+    {
+      "derived_id": "sha256:85fe251b7b04041c4248dd78a8d767cf5d7d27d4358c8471a0ebe940065d07f3",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16104709.json",
+      "relative_path": "extractions/toll-16104709.json",
+      "sha256": "85fe251b7b04041c4248dd78a8d767cf5d7d27d4358c8471a0ebe940065d07f3",
+      "size_bytes": 1065,
+      "sources": [
+        "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:55+00:00"
+    },
+    {
+      "derived_id": "sha256:c29240c061b61260c9b3769f9766738508dd4ee60adf59357f5df68c89034683",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-15913017.json",
+      "relative_path": "extractions/toll-15913017.json",
+      "sha256": "c29240c061b61260c9b3769f9766738508dd4ee60adf59357f5df68c89034683",
+      "size_bytes": 1065,
+      "sources": [
+        "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:55+00:00"
+    },
+    {
+      "derived_id": "sha256:230485dfec932a6ffea96b7d8c8aafbf5c08ebb776d4ce98e3ce52914882578f",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16108478.json",
+      "relative_path": "extractions/toll-16108478.json",
+      "sha256": "230485dfec932a6ffea96b7d8c8aafbf5c08ebb776d4ce98e3ce52914882578f",
+      "size_bytes": 1066,
+      "sources": [
+        "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:55+00:00"
+    },
+    {
+      "derived_id": "sha256:1063da36a15da2e57e36cb1dd15404917be46a65d4b4d582f68fde89825be2d3",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-15913011.json",
+      "relative_path": "extractions/toll-15913011.json",
+      "sha256": "1063da36a15da2e57e36cb1dd15404917be46a65d4b4d582f68fde89825be2d3",
+      "size_bytes": 1065,
+      "sources": [
+        "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:56+00:00"
+    },
+    {
+      "derived_id": "sha256:7f831872e4f6f5ec8b0ee988c3749ca9572c3457d4ea1502202e067381296bed",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16366191.json",
+      "relative_path": "extractions/toll-16366191.json",
+      "sha256": "7f831872e4f6f5ec8b0ee988c3749ca9572c3457d4ea1502202e067381296bed",
+      "size_bytes": 1066,
+      "sources": [
+        "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:56+00:00"
+    },
+    {
+      "derived_id": "sha256:603e7fbed4bbc41ee8e7d737b0e130c6c4593bea4af06704262b9669a8ab1c27",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16227300.json",
+      "relative_path": "extractions/toll-16227300.json",
+      "sha256": "603e7fbed4bbc41ee8e7d737b0e130c6c4593bea4af06704262b9669a8ab1c27",
+      "size_bytes": 1066,
+      "sources": [
+        "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:56+00:00"
+    },
+    {
+      "derived_id": "sha256:adafa92f22f6cb1b208bb662f263448a90688675ad5170d9675cd8c0a378e210",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16657870.json",
+      "relative_path": "extractions/toll-16657870.json",
+      "sha256": "adafa92f22f6cb1b208bb662f263448a90688675ad5170d9675cd8c0a378e210",
+      "size_bytes": 1066,
+      "sources": [
+        "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:56+00:00"
+    },
+    {
+      "derived_id": "sha256:33c2ec0e66dc001d7c985bdf28155551c7d8f6e54b770ac91b4bf1c631fc11bd",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16657942.json",
+      "relative_path": "extractions/toll-16657942.json",
+      "sha256": "33c2ec0e66dc001d7c985bdf28155551c7d8f6e54b770ac91b4bf1c631fc11bd",
+      "size_bytes": 1066,
+      "sources": [
+        "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:57+00:00"
+    },
+    {
+      "derived_id": "sha256:266d52d234a3506c5a32a30cb01deb0cefe4e1ae1829c579807783ba7e6a2085",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16227311.json",
+      "relative_path": "extractions/toll-16227311.json",
+      "sha256": "266d52d234a3506c5a32a30cb01deb0cefe4e1ae1829c579807783ba7e6a2085",
+      "size_bytes": 1066,
+      "sources": [
+        "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:57+00:00"
+    },
+    {
+      "derived_id": "sha256:d0cecbf8e0391e5e05fef758d1794da913969d884f97b7edc25041143aea8d0b",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16858364.json",
+      "relative_path": "extractions/toll-16858364.json",
+      "sha256": "d0cecbf8e0391e5e05fef758d1794da913969d884f97b7edc25041143aea8d0b",
+      "size_bytes": 1066,
+      "sources": [
+        "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:57+00:00"
+    },
+    {
+      "derived_id": "sha256:b48c2e95e50dc68340ea53c000355caeda32f0a6f8f74ab573453f851d99a375",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16422064.json",
+      "relative_path": "extractions/toll-16422064.json",
+      "sha256": "b48c2e95e50dc68340ea53c000355caeda32f0a6f8f74ab573453f851d99a375",
+      "size_bytes": 1066,
+      "sources": [
+        "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:57+00:00"
+    },
+    {
+      "derived_id": "sha256:b34d5b2ee977c0fa7649b849677049a4dcb74c42aa7303ea15fe2bcb605d631a",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-16548299.json",
+      "relative_path": "extractions/toll-16548299.json",
+      "sha256": "b34d5b2ee977c0fa7649b849677049a4dcb74c42aa7303ea15fe2bcb605d631a",
+      "size_bytes": 1066,
+      "sources": [
+        "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:58+00:00"
+    },
+    {
+      "derived_id": "sha256:db9e96e594f7fcd1e5a69382bd5a9c56b1d0908d568e09ea1dc83261da10dba0",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-17727508.json",
+      "relative_path": "extractions/toll-17727508.json",
+      "sha256": "db9e96e594f7fcd1e5a69382bd5a9c56b1d0908d568e09ea1dc83261da10dba0",
+      "size_bytes": 1066,
+      "sources": [
+        "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:58+00:00"
+    },
+    {
+      "derived_id": "sha256:09265ee86a4be22de528b0a1e8384f242363282b94f865885378df788aa6158b",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-17793922.json",
+      "relative_path": "extractions/toll-17793922.json",
+      "sha256": "09265ee86a4be22de528b0a1e8384f242363282b94f865885378df788aa6158b",
+      "size_bytes": 1065,
+      "sources": [
+        "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:58+00:00"
+    },
+    {
+      "derived_id": "sha256:58e087c2420d7743ee44cedf5dead018a3a856ae5655a826cd850cc05c8239d3",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-17794993.json",
+      "relative_path": "extractions/toll-17794993.json",
+      "sha256": "58e087c2420d7743ee44cedf5dead018a3a856ae5655a826cd850cc05c8239d3",
+      "size_bytes": 1065,
+      "sources": [
+        "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:58+00:00"
+    },
+    {
+      "derived_id": "sha256:4f31f3d7f580324748c9fbf1d3e21a9391a38d37a48203455fd6328d5222f7fc",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-17950250.json",
+      "relative_path": "extractions/toll-17950250.json",
+      "sha256": "4f31f3d7f580324748c9fbf1d3e21a9391a38d37a48203455fd6328d5222f7fc",
+      "size_bytes": 1065,
+      "sources": [
+        "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:59+00:00"
+    },
+    {
+      "derived_id": "sha256:81d4ce02de78e5a19bff6a737efd4a09c40340927c2b514d857e79b72a5ef07f",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-17952458.json",
+      "relative_path": "extractions/toll-17952458.json",
+      "sha256": "81d4ce02de78e5a19bff6a737efd4a09c40340927c2b514d857e79b72a5ef07f",
+      "size_bytes": 1065,
+      "sources": [
+        "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:59+00:00"
+    },
+    {
+      "derived_id": "sha256:a0398ca14edec7594c9476125d5e77fd108d7d91ea14004ca05810619f59bd0e",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-20703083.json",
+      "relative_path": "extractions/toll-20703083.json",
+      "sha256": "a0398ca14edec7594c9476125d5e77fd108d7d91ea14004ca05810619f59bd0e",
+      "size_bytes": 1065,
+      "sources": [
+        "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:59+00:00"
+    },
+    {
+      "derived_id": "sha256:4c49b740983ba470cc58c6cd00ee8407d907357365b7f7ab3c21c28c4a558c7a",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-18011706.json",
+      "relative_path": "extractions/toll-18011706.json",
+      "sha256": "4c49b740983ba470cc58c6cd00ee8407d907357365b7f7ab3c21c28c4a558c7a",
+      "size_bytes": 1065,
+      "sources": [
+        "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:15:59+00:00"
+    },
+    {
+      "derived_id": "sha256:189ce6815a3c0ab7fef423ab4260433244c904f3e9835e83d5fc74507e7c74d3",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-18196512.json",
+      "relative_path": "extractions/toll-18196512.json",
+      "sha256": "189ce6815a3c0ab7fef423ab4260433244c904f3e9835e83d5fc74507e7c74d3",
+      "size_bytes": 1065,
+      "sources": [
+        "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:00+00:00"
+    },
+    {
+      "derived_id": "sha256:4ff96e52a8e7bb8deb3ad9cd21729bb22233a74ea2c13cf427b2e1594788fdd0",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-18197206.json",
+      "relative_path": "extractions/toll-18197206.json",
+      "sha256": "4ff96e52a8e7bb8deb3ad9cd21729bb22233a74ea2c13cf427b2e1594788fdd0",
+      "size_bytes": 1065,
+      "sources": [
+        "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:00+00:00"
+    },
+    {
+      "derived_id": "sha256:5efe7c464da9cb95ff8da88d6ea9cc50fd51834d7cb9846e41856d769fbcca63",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-20514402.json",
+      "relative_path": "extractions/toll-20514402.json",
+      "sha256": "5efe7c464da9cb95ff8da88d6ea9cc50fd51834d7cb9846e41856d769fbcca63",
+      "size_bytes": 1063,
+      "sources": [
+        "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:00+00:00"
+    },
+    {
+      "derived_id": "sha256:2b194aa08850baa067693716462acea998f6b7ae41be75ad26be16cb0a7ffc1a",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-20519372.json",
+      "relative_path": "extractions/toll-20519372.json",
+      "sha256": "2b194aa08850baa067693716462acea998f6b7ae41be75ad26be16cb0a7ffc1a",
+      "size_bytes": 1062,
+      "sources": [
+        "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:00+00:00"
+    },
+    {
+      "derived_id": "sha256:81d55bb6f6c1715818d1adff2afa2d9a29da396f01863ed12e727979a2d7547f",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\toll-19977515.json",
+      "relative_path": "extractions/toll-19977515.json",
+      "sha256": "81d55bb6f6c1715818d1adff2afa2d9a29da396f01863ed12e727979a2d7547f",
+      "size_bytes": 1057,
+      "sources": [
+        "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:01+00:00"
+    },
+    {
+      "derived_id": "sha256:022067de8054d9a793ecf63586cc5d2b9c6bdc540e6b0ee4e4a480285bc235ff",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\oil-876369.json",
+      "relative_path": "extractions/oil-876369.json",
+      "sha256": "022067de8054d9a793ecf63586cc5d2b9c6bdc540e6b0ee4e4a480285bc235ff",
+      "size_bytes": 890,
+      "sources": [
+        "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:01+00:00"
+    },
+    {
+      "derived_id": "sha256:ca0679c4c3eb02697121018f7c9e263a2d7711f9556b7622d7d349e3a97507f5",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\oil-876368.json",
+      "relative_path": "extractions/oil-876368.json",
+      "sha256": "ca0679c4c3eb02697121018f7c9e263a2d7711f9556b7622d7d349e3a97507f5",
+      "size_bytes": 890,
+      "sources": [
+        "edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:01+00:00"
+    },
+    {
+      "derived_id": "sha256:e2aa2394fafd402e3ef17791ddb52a69785e9998e9961223a6dd8e73eb6c5fc5",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\oil-872798.json",
+      "relative_path": "extractions/oil-872798.json",
+      "sha256": "e2aa2394fafd402e3ef17791ddb52a69785e9998e9961223a6dd8e73eb6c5fc5",
+      "size_bytes": 890,
+      "sources": [
+        "6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:01+00:00"
+    },
+    {
+      "derived_id": "sha256:ed823358bb37bf676488d262309776fff13c860cf15416656e0864a0a4da4b52",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\oil-196652.json",
+      "relative_path": "extractions/oil-196652.json",
+      "sha256": "ed823358bb37bf676488d262309776fff13c860cf15416656e0864a0a4da4b52",
+      "size_bytes": 890,
+      "sources": [
+        "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:02+00:00"
+    },
+    {
+      "derived_id": "sha256:2a4e57e3226faf49e837e4b54dfdd10b27108461ae0e9367ff6286f52503a1ae",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\extractions\\oil-194735.json",
+      "relative_path": "extractions/oil-194735.json",
+      "sha256": "2a4e57e3226faf49e837e4b54dfdd10b27108461ae0e9367ff6286f52503a1ae",
+      "size_bytes": 890,
+      "sources": [
+        "3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da"
+      ],
+      "generated_by": "case08 build_plan (PyMuPDF text layer + dual-channel review)",
+      "generated_at": "2026-10-26T14:16:02+00:00"
+    },
+    {
+      "derived_id": "sha256:a79b9b73205c34c811669540c4a12e21728c5a6d2a609380d2f7469758c2b647",
+      "role": "run_evidence",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\materials-v2\\facts.json",
+      "relative_path": "facts.json",
+      "sha256": "a79b9b73205c34c811669540c4a12e21728c5a6d2a609380d2f7469758c2b647",
+      "size_bytes": 2525,
+      "sources": [
+        "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+        "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124",
+        "ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75",
+        "319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7",
+        "941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a",
+        "71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069",
+        "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df",
+        "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b",
+        "6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc",
+        "1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb",
+        "e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071",
+        "1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7",
+        "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+        "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb",
+        "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e",
+        "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1",
+        "a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4",
+        "d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8",
+        "881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8",
+        "b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14",
+        "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55",
+        "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937",
+        "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3",
+        "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3",
+        "8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d",
+        "c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f",
+        "b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b",
+        "f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8",
+        "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27",
+        "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753",
+        "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5",
+        "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae",
+        "d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba",
+        "dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce",
+        "29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81",
+        "4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289",
+        "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+        "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc",
+        "8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0",
+        "c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa",
+        "f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7",
+        "45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c",
+        "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a",
+        "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31",
+        "75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845",
+        "1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65",
+        "81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6",
+        "61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa",
+        "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c",
+        "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507",
+        "0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657",
+        "0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d",
+        "060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839",
+        "cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295",
+        "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2",
+        "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574",
+        "878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2",
+        "ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b",
+        "c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e",
+        "72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749",
+        "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188",
+        "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa",
+        "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+        "5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272",
+        "b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299",
+        "934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2",
+        "b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157",
+        "2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83",
+        "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc",
+        "edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74",
+        "6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b",
+        "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452",
+        "3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da"
+      ],
+      "generated_by": "case08 build_plan (deterministic Decimal recompute)",
+      "generated_at": "2026-10-26T14:16:52+00:00"
+    }
+  ]
+}

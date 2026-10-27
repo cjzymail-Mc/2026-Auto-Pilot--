@@ -1,0 +1,85 @@
+{
+ "stage": "wide-window full capture",
+ "date_from": "2025-01-01",
+ "date_to": "2026-12-31",
+ "pages": [
+  {
+   "page": 1,
+   "size": 20,
+   "evidence": "api-wide-page01-000--WorkOut-query-20-1.json",
+   "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1",
+   "rows": 20,
+   "filters": {
+    "CreatedAt": "1735660800,1798732799.999",
+    "AppliedAt": "1735660800,1798732799.999",
+    "CreatedPath": "/"
+   },
+   "sha256_file": "8c985ba02f22ca38db90cfa4f748f93eb1d449e6f68abadc90f105e0faa44353"
+  },
+  {
+   "page": 2,
+   "size": 20,
+   "evidence": "api-wide-page02-000--WorkOut-query-20-2.json",
+   "sha256": "3a513668e62fd1515e835e7ead46b7c75328338f593332e97202e9d1c2f2d07f",
+   "rows": 20,
+   "filters": {
+    "CreatedAt": "1735660800,1798732799.999",
+    "AppliedAt": "1735660800,1798732799.999",
+    "CreatedPath": "/"
+   },
+   "sha256_file": "ade3c864c4110874717e84cb9cbf64e44c0809f7d170e60323e40aaddf0a8158"
+  },
+  {
+   "page": 3,
+   "size": 20,
+   "evidence": "api-wide-page03-000--WorkOut-query-20-3.json",
+   "sha256": "c4772118c6e1fec2dab0de1ddf1a8e1ad11fcad883604abe70aee15c312d945f",
+   "rows": 20,
+   "filters": {
+    "CreatedAt": "1735660800,1798732799.999",
+    "AppliedAt": "1735660800,1798732799.999",
+    "CreatedPath": "/"
+   },
+   "sha256_file": "b2f76f32c24a479d90083ac89e5c4266c764f4c37e4cd6e9577fb5b4ed24d5f7"
+  },
+  {
+   "page": 4,
+   "size": 20,
+   "evidence": "api-wide-page04-000--WorkOut-query-20-4.json",
+   "sha256": "b67358e1b095116a454fb6c1e60dfebf680a674daac3f6b0badde8718a4e6e21",
+   "rows": 20,
+   "filters": {
+    "CreatedAt": "1735660800,1798732799.999",
+    "AppliedAt": "1735660800,1798732799.999",
+    "CreatedPath": "/"
+   },
+   "sha256_file": "e13bf7f07253c808658f98bea662adab688beb15845b22a6015ed06516ef9e29"
+  },
+  {
+   "page": 5,
+   "size": 20,
+   "evidence": "api-wide-page05-000--WorkOut-query-20-5.json",
+   "sha256": "94b5e546e81183e1f13cc8493110fa04e56e06c813fcccdad90940774d1bb541",
+   "rows": 16,
+   "filters": {
+    "CreatedAt": "1735660800,1798732799.999",
+    "AppliedAt": "1735660800,1798732799.999",
+    "CreatedPath": "/"
+   },
+   "sha256_file": "932ec57a82409d8619c6f01833eff5bb8b725103968e152d2c070e9549329fe9"
+  }
+ ],
+ "rows_total": 96,
+ "final_filters": {
+  "CreatedAt": "1735660800,1798732799.999",
+  "AppliedAt": "1735660800,1798732799.999",
+  "CreatedPath": "/"
+ },
+ "pages_captured": 5,
+ "hash_semantics": {
+  "added_at": "2026-10-26T16:15:09+08:00",
+  "sha256": "logical-json 口径：捕获记录紧凑 json.dumps(payload, ensure_ascii=False) 的 sha256（case03_probe._drain_capture 计算；与本页 evidence 落盘文件字节哈希不同属预期）",
+  "sha256_file": "文件字节口径：attempt_007/evidence/<evidence> 落盘文件的 sha256，可直接复算",
+  "root_cause": "run 内脚本 case03_probe.py:123-124 对紧凑串计哈希而落盘用 indent=1；共享探针库无此缺陷；防复发规范见 .claude/skills/bpm-fill-run/references/evidence-hash-semantics.md"
+ }
+}

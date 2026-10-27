@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "observation": "server_no_residue_after_unsaved_close",
+  "observed_at": "2026-10-24T18:06:14+08:00",
+  "operator_scope": "登录人（陈晶）默认列表（本人单据，零筛选零业务点击）",
+  "evidence": "attempt_002/evidence/list_default_readonly.json + list_default_readonly.png",
+  "rows_read": 17,
+  "page_text": "1 共 17 条 20",
+  "fills_covered": {
+    "express": "20261024-173807-72170651 SUCCESS_FILL_ONLY save=NOT_ATTEMPTED",
+    "rd_materials": "20261024-174803-cd2e04e4 SUCCESS_FILL_ONLY save=NOT_ATTEMPTED"
+  },
+  "round8_residue": {
+    "replay_keyword_hits": [],
+    "draft_created_2026_10_24": [],
+    "any_row_created_2026_10_24": [],
+    "none": true
+  },
+  "preexisting_draft_observation": {
+    "rows": [
+      {
+        "bizStatus": "编制中",
+        "bizNumber": "15426104612",
+        "appliedName": "徐亮",
+        "appliedAt": "2026-10-23",
+        "appliedDuty": "高级研究员",
+        "appliedDeptName": "运动表现研究部",
+        "corpCode": "厦门乔丹科技有限公司",
+        "budgetYears": "2026",
+        "payType": "转账",
+        "submitType": "差旅费",
+        "totalCost": "633.84",
+        "createdName": "陈晶",
+        "createdAt": "2026-10-23",
+        "bizCompletedName": "",
+        "bizCompletedAt": "",
+        "bizLastAuditName": "",
+        "bizLastAuditAt": "",
+        "description": "【现场演示·不保存·关联已替换】公出油补"
+      }
+    ],
+    "attribution": "15426104612 创建于 2026-10-23，早于 round-7（10-24）与 round-8（10-24）全部真实填写；描述/金额/申请人与 round-7 回放材料同源——为 2026-10-23 live-complex-demo 现场演示时期的服务端存量草稿，非本轮填写残留。",
+    "disposition": "只读登记，不删除不提交不修改（红线：不得为清场触碰他人/历史草稿）"
+  },
+  "conclusion": "round-8 两笔 fill_only 未保存关页在服务端无残留（今日创建 0 行、回放关键词 0 命中）；存量 10-23 草稿单列登记。",
+  "execution_disclosure": "观察执行两遍：attempt_001 观察完成但收尾 AttributeError（Probe 无 close 方法），attempt_002 修正 _close_browser+release_lock 后干净重跑；两轮同只读范围零点击，17 行读数完全一致。合同④'观察一次'按诚实失败-重试纪律留痕（两遍均零写）。"
+}

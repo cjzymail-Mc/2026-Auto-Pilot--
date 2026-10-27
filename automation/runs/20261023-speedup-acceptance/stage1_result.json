@@ -1,0 +1,319 @@
+{
+  "status": "ACCEPTED_AUTHORIZED_LIVE_FILL_TEST",
+  "requested_goal": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\2026-10-23 真实演示后报销填写提速方案.md",
+  "requested_goal_sha256": "f99d556e1860b0371d6a5763fdedd1ad8056e40aa93419f1a1bbe0fedc9a7de5",
+  "goal_tool_registration": "rejected_unfinished_prior_goal; prior state preserved; requested objective recorded in preparation evidence",
+  "real_fill_verified": true,
+  "new_business_material_pipeline_real_acceptance": false,
+  "real_save_verified": false,
+  "row_scale": {
+    "relations": 3,
+    "details": 2,
+    "costs": 6,
+    "banks": 1
+  },
+  "supported_relation_scope": "公出单、一对一关联明细",
+  "C0": {
+    "comparable_complete_ui": true,
+    "counts": {
+      "structured_row_written": 9,
+      "exact_picker_blocked": 0,
+      "inner_exc": 0
+    },
+    "definitions": {
+      "page_roundtrip": "top-frame navigation; API requests reported separately",
+      "model_intervention": "explicit model intervention events during the UI window; absence is not a global model-call count",
+      "uncovered": "time outside action timing intervals; no causal attribution"
+    },
+    "page_navigation": {
+      "count": 1,
+      "coverage": "observed goto_new_form timings only; other navigations not instrumented"
+    },
+    "executor_metrics": {
+      "model_control_interventions": 0,
+      "external_cell_commands": 0,
+      "basis": "single continuous entry invocation and no command dispatcher; global model calls, stdout polls and read-only diagnostics not instrumented"
+    },
+    "global_model_calls": null,
+    "external_diagnostic_commands": null,
+    "ui_seconds": 191.48,
+    "strict_pass": true,
+    "instrumented_union_seconds": 185.612,
+    "uncovered_seconds": 5.868,
+    "actions": {
+      "goto_new_form": {
+        "count": 1,
+        "union_seconds": 0.118
+      },
+      "screenshot": {
+        "count": 5,
+        "union_seconds": 0.576
+      },
+      "overlay_dump": {
+        "count": 1,
+        "union_seconds": 0.008
+      },
+      "dialog_element_handle": {
+        "count": 1,
+        "union_seconds": 0.012
+      },
+      "pick_candidates": {
+        "count": 1,
+        "union_seconds": 0.038
+      },
+      "initial_applicant_select": {
+        "count": 1,
+        "union_seconds": 6.253
+      },
+      "pick_option": {
+        "count": 14,
+        "union_seconds": 18.43
+      },
+      "cell_activate": {
+        "count": 102,
+        "union_seconds": 48.374
+      },
+      "cell_blur_readback": {
+        "count": 64,
+        "union_seconds": 3.424
+      },
+      "structured_cell": {
+        "count": 61,
+        "union_seconds": 148.191
+      },
+      "picker_open": {
+        "count": 8,
+        "union_seconds": 11.097
+      },
+      "picker_select_confirm": {
+        "count": 8,
+        "union_seconds": 11.758
+      },
+      "cell_input_write": {
+        "count": 46,
+        "union_seconds": 1.156
+      },
+      "table_row_fill": {
+        "count": 12,
+        "union_seconds": 173.484
+      },
+      "row_add": {
+        "count": 8,
+        "union_seconds": 10.556
+      },
+      "picker_query": {
+        "count": 3,
+        "union_seconds": 4.787
+      },
+      "section_fill": {
+        "count": 4,
+        "union_seconds": 174.088
+      },
+      "independent_readback_verify": {
+        "count": 1,
+        "union_seconds": 0.386
+      }
+    },
+    "target_360_seconds": true
+  },
+  "C1": {
+    "comparable_complete_ui": true,
+    "counts": {
+      "structured_row_written": 9,
+      "exact_picker_blocked": 0,
+      "inner_exc": 0
+    },
+    "definitions": {
+      "page_roundtrip": "top-frame navigation; API requests reported separately",
+      "model_intervention": "explicit model intervention events during the UI window; absence is not a global model-call count",
+      "uncovered": "time outside action timing intervals; no causal attribution"
+    },
+    "page_navigation": {
+      "count": 2,
+      "coverage": "top-frame navigation events"
+    },
+    "executor_metrics": {
+      "event": "ui_execution_metrics",
+      "network": {
+        "requests": 165,
+        "failed": 1
+      },
+      "model_control_interventions": 0,
+      "external_cell_commands": 0,
+      "definitions": "continuous executor; model calls and external read-only diagnostic shell commands are not automatically measured",
+      "ts": "2026-10-23T18:26:04"
+    },
+    "global_model_calls": null,
+    "external_diagnostic_commands": null,
+    "ui_seconds": 155.226,
+    "strict_pass": true,
+    "instrumented_union_seconds": 148.41,
+    "uncovered_seconds": 6.816,
+    "actions": {
+      "goto_new_form": {
+        "count": 1,
+        "union_seconds": 0.151
+      },
+      "screenshot": {
+        "count": 5,
+        "union_seconds": 0.593
+      },
+      "overlay_dump": {
+        "count": 1,
+        "union_seconds": 0.005
+      },
+      "dialog_element_handle": {
+        "count": 1,
+        "union_seconds": 0.027
+      },
+      "pick_candidates": {
+        "count": 1,
+        "union_seconds": 0.064
+      },
+      "initial_applicant_select": {
+        "count": 1,
+        "union_seconds": 6.273
+      },
+      "pick_option": {
+        "count": 14,
+        "union_seconds": 18.441
+      },
+      "table_schema_scan": {
+        "count": 23,
+        "union_seconds": 0.245
+      },
+      "cell_activate": {
+        "count": 56,
+        "union_seconds": 42.541
+      },
+      "cell_blur_readback": {
+        "count": 64,
+        "union_seconds": 3.261
+      },
+      "structured_cell": {
+        "count": 61,
+        "union_seconds": 115.304
+      },
+      "picker_open": {
+        "count": 8,
+        "union_seconds": 11.094
+      },
+      "picker_select_confirm": {
+        "count": 8,
+        "union_seconds": 11.918
+      },
+      "cell_input_write": {
+        "count": 46,
+        "union_seconds": 3.52
+      },
+      "table_row_fill": {
+        "count": 12,
+        "union_seconds": 136.344
+      },
+      "row_add": {
+        "count": 8,
+        "union_seconds": 10.536
+      },
+      "picker_query": {
+        "count": 3,
+        "union_seconds": 4.742
+      },
+      "section_fill": {
+        "count": 4,
+        "union_seconds": 136.939
+      },
+      "independent_readback_verify": {
+        "count": 1,
+        "union_seconds": 0.388
+      }
+    },
+    "target_360_seconds": true
+  },
+  "improvement_seconds": 36.25399999999999,
+  "improvement_percent": 18.933570085648626,
+  "offline_checks": [
+    {
+      "name": "probe-selftest",
+      "command": [
+        "-X",
+        "utf8",
+        "stage1_probe_selftest.py"
+      ],
+      "exit_code": 0,
+      "seconds": 4.4,
+      "log": "probe-selftest.log"
+    },
+    {
+      "name": "capability-tests",
+      "command": [
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_bpm_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 61.558,
+      "log": "capability-tests.log",
+      "test_count": 98
+    }
+  ],
+  "protected_sample": {
+    "biz_number": "15426104612",
+    "uuid": "8fb51b7920424c24b89cd2b058e0a226",
+    "read_only": true
+  },
+  "test_page_registry": [
+    {
+      "run": "20261023-speedup-C0controls01",
+      "task_id": "speedup-20261023-C0controls01",
+      "status": "unsaved_final_readback_then_normal_own_context_close",
+      "save_attempted": false
+    },
+    {
+      "run": "20261023-speedup-C1",
+      "task_id": "speedup-20261023-C1",
+      "status": "unsaved_and_closed_own_context",
+      "save_attempted": false,
+      "evidence": "attempt_001/evidence/test_page_close_inventory.json"
+    }
+  ],
+  "network_route_observation": {
+    "method": "read-only Find-NetRoute -RemoteIPAddress 192.168.34.10",
+    "interface": "WLAN",
+    "next_hop": "192.168.3.1",
+    "browser_proxy": "--no-proxy-server",
+    "settings_changed": false
+  },
+  "measurement_limits": [
+    "one live run per C0/C1; no P95 or universal travel claim",
+    "C0 API request count and global model call count were not instrumented",
+    "C1 recorded 165 requests / 1 failed request; failure reason not captured; strict form verification passed",
+    "C0 overlapped one isolated local Chromium microbenchmark; live results are observational, not a controlled causal estimate",
+    "C0/C1 reused confirmed demo inputs; material understanding and plan generation were not separately timed in those earlier preparations"
+  ],
+  "evidence_sha256": {
+    "automation/runs/20261023-speedup-C0controls01/execution_source_manifest.json": "c8e68c6dfe308bdb318b152ecb02b9655b24161d6a8b06258e0a87cf2260f9c2",
+    "automation/runs/20261023-speedup-C0controls01/input_plan_snapshot.json": "01c58ab619262cd8a7f91d4b2293f8bb28dd12596f1788603ec0bd97dd46aa1e",
+    "automation/runs/20261023-speedup-C0controls01/attempt_001/stage1_result.json": "7efa651e05313c482a8fcc7f34fd0c7f6df69cf62a6d5902adcb8a5c49440dca",
+    "automation/runs/20261023-speedup-C0controls01/attempt_001/evidence/independent_readback.json": "bca0e4754fb4870ece2cb2f46cd7b29b0ac7649ee9e62a1d9cbad76720c8a100",
+    "automation/runs/20261023-speedup-C0controls01/attempt_001/evidence/independent_verification.json": "6c7290cbd89f2949f8ac4db30d3b7a64ee0bb5ed61e079071e23dd521774585a",
+    "automation/runs/20261023-speedup-C0controls01/attempt_001/evidence/v1_final.png": "417fda3398f4904fa030632846e7f01858a78185e5ad1cf5014279710fb96d41",
+    "automation/runs/20261023-speedup-C1/execution_source_manifest.json": "c00d1a7ff5030a1235522d81a50edcd539c8fe8fa72fb8a7c2357ad746535413",
+    "automation/runs/20261023-speedup-C1/input_plan_snapshot.json": "152f139c0c87016f61cba9940b4bbd0800b0cd3db40a7df70643cf14a0faedea",
+    "automation/runs/20261023-speedup-C1/attempt_001/stage1_result.json": "30904290c8af5c18fbdc37c82b121fde6ea08fa5efd3afdc1953ebf6449487f6",
+    "automation/runs/20261023-speedup-C1/attempt_001/evidence/independent_readback.json": "e187337d574ced9ccbb67c4e13318c8a41f4ce012de0f60a6c195fd87e4bee96",
+    "automation/runs/20261023-speedup-C1/attempt_001/evidence/independent_verification.json": "36ab07074374942fa1c25cd20001fb90f15ba7705f94bbbbba042c219486212c",
+    "automation/runs/20261023-speedup-C1/attempt_001/evidence/v1_final.png": "dd6be4036620a2194700b5678bbacec4e0b15b2cc6677aa3b2d9ca848277c056",
+    "automation/offline-verify/20261023-speedup-final-build/build_result.json": "e3ffb9e7edb1932cdb5ec5575fed71d4f7a476f78af1446ce219c62742603941",
+    "automation/offline-verify/20261023-speedup-final-build/source_manifest.json": "4dea69d87d3d4e868e5db82607ff18e27a36beed9611d393169f78259ace7dd9",
+    "automation/runs/20261023-speedup-preparation/attempt_001/evidence/protected_saved_sample.json": "e292fca1992e9d20d88015ff205c38ae5e1069fb2a0e4a5026fcb298f2f7a229",
+    "automation/runs/20261023-speedup-preparation/attempt_001/evidence/system_field_semantics_replay.json": "47c1b83433c5be94dd1ee0290ed3c08a66be9db3982d24290bf4e8afec89122d"
+  },
+  "updated_at": "2026-10-23T10:30:00.090119+00:00"
+}

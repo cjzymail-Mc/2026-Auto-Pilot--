@@ -1,0 +1,112 @@
+[
+ {
+  "dir": "0825",
+  "toll_identity_count": 2,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "45.28",
+  "invoice_face_total": "45.28",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ },
+ {
+  "dir": "0904",
+  "toll_identity_count": 2,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "45.28",
+  "invoice_face_total": "45.28",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ },
+ {
+  "dir": "0906",
+  "toll_identity_count": 4,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "39.90",
+  "invoice_face_total": "39.90",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ },
+ {
+  "dir": "0917",
+  "toll_identity_count": 4,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "68.90",
+  "invoice_face_total": "68.90",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ },
+ {
+  "dir": "0928",
+  "toll_identity_count": 4,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "63.86",
+  "invoice_face_total": "63.86",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ },
+ {
+  "dir": "1028",
+  "toll_identity_count": 2,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "45.28",
+  "invoice_face_total": "45.28",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ },
+ {
+  "dir": "1112",
+  "toll_identity_count": 2,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "45.28",
+  "invoice_face_total": "45.28",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ },
+ {
+  "dir": "1124",
+  "toll_identity_count": 2,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "45.28",
+  "invoice_face_total": "45.28",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ },
+ {
+  "dir": "1204",
+  "toll_identity_count": 2,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "45.28",
+  "invoice_face_total": "45.28",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ },
+ {
+  "dir": "1210",
+  "toll_identity_count": 3,
+  "summary_file_count": 4,
+  "summary_number_count": 2,
+  "summary_transaction_total": "42.59",
+  "invoice_face_total": "42.59",
+  "totals_match": true,
+  "variant_totals_inconsistent": [],
+  "numbers_missing_from_summary": []
+ }
+]

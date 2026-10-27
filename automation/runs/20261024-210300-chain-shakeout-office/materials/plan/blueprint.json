@@ -1,0 +1,274 @@
+{
+  "document_type": "office_supplies",
+  "task_id": "chain-r10-office_supplies-15426101596",
+  "operator": "陈晶",
+  "template": {
+    "biz_number": "15426101596",
+    "captured_at": "2026-10-24T08:42:01.299543+00:00",
+    "sha256": "49b0cdfa312305a5ca31958627cbfb161d4df4c9b6ffe056c9b1b2fe8a9421cc",
+    "snapshot_path": "template_snapshot.json"
+  },
+  "materials": {
+    "manifest_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210300-chain-shakeout-office\\materials\\manifest.json"
+  },
+  "authorization": {
+    "mode": "fill_only",
+    "task_id": "chain-r10-office_supplies-15426101596",
+    "allow_submit": false,
+    "statement": "合成离线链复跑（round-10 bpm_chain）：synthetic/test_only/not_new_expenses；仅 validate-only 子进程，不填真实页面、不保存不提交。"
+  },
+  "not_applicable": [],
+  "amount_rules": {
+    "costs": "sum",
+    "cost_amount_semantics": "line_total"
+  },
+  "applicant": {
+    "name": {
+      "value": "陈晶",
+      "fact_id": "F-0001",
+      "locator": "/applicant/name"
+    },
+    "company": {
+      "value": "厦门乔丹科技有限公司",
+      "fact_id": "F-0001",
+      "locator": "/applicant/company"
+    },
+    "department": {
+      "value": "运动表现研究部",
+      "fact_id": "F-0001",
+      "locator": "/applicant/department"
+    }
+  },
+  "header": {
+    "corpCode": {
+      "value": "厦门乔丹科技有限公司",
+      "fact_id": "F-0002",
+      "locator": "/header/corpCode"
+    },
+    "bizOrign": {
+      "value": "乔丹科技",
+      "fact_id": "F-0002",
+      "locator": "/header/bizOrign"
+    },
+    "budgetYears": {
+      "value": "2026",
+      "fact_id": "F-0002",
+      "locator": "/header/budgetYears"
+    },
+    "payType": {
+      "value": "转账",
+      "fact_id": "F-0002",
+      "locator": "/header/payType"
+    },
+    "currencyType": {
+      "value": "人民币",
+      "fact_id": "F-0002",
+      "locator": "/header/currencyType"
+    },
+    "submitType": {
+      "value": "低值易耗品、办公用品采购",
+      "fact_id": "F-0002",
+      "locator": "/header/submitType"
+    },
+    "description": {
+      "value": "【合成测试材料·离线链验证·office_supplies r9】办公耗材季度申购",
+      "fact_id": "F-0002",
+      "locator": "/header/description"
+    }
+  },
+  "tables": {
+    "relations": [],
+    "details": [
+      {
+        "row_id": "d1",
+        "fields": {
+          "reimItem": {
+            "value": "02001",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/reimItem"
+          },
+          "digest": {
+            "value": "合成：办公耗材",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/digest"
+          },
+          "budgetDeptName": {
+            "value": "科技中心",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/budgetDeptName"
+          },
+          "budgetNo": {
+            "value": "15625120075",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/budgetNo"
+          },
+          "subjectName": {
+            "value": "办公费",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/subjectName"
+          },
+          "budgetItemName": {
+            "value": "年度预算项目",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/budgetItemName"
+          },
+          "budgetOwner": {
+            "value": "21",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/budgetOwner"
+          },
+          "cost": {
+            "value": "1234.56",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/cost"
+          }
+        }
+      }
+    ],
+    "costs": [
+      {
+        "row_id": "c1",
+        "fields": {
+          "project": {
+            "value": "other",
+            "fact_id": "F-0005",
+            "locator": "/tables/costs/0/fields/project"
+          },
+          "startDate": {
+            "value": "2026-01-01",
+            "fact_id": "F-0005",
+            "locator": "/tables/costs/0/fields/startDate"
+          },
+          "endDate": {
+            "value": "2026-03-31",
+            "fact_id": "F-0005",
+            "locator": "/tables/costs/0/fields/endDate"
+          },
+          "projectPlace": {
+            "value": "厦门",
+            "fact_id": "F-0005",
+            "locator": "/tables/costs/0/fields/projectPlace"
+          },
+          "count": {
+            "value": "3",
+            "fact_id": "F-0005",
+            "locator": "/tables/costs/0/fields/count"
+          },
+          "cost": {
+            "value": "1234.56",
+            "fact_id": "F-0005",
+            "locator": "/tables/costs/0/fields/cost"
+          },
+          "reason": {
+            "value": "合成：季度汇总行",
+            "fact_id": "F-0005",
+            "locator": "/tables/costs/0/fields/reason"
+          }
+        }
+      }
+    ],
+    "banks": [
+      {
+        "row_id": "b1",
+        "fields": {
+          "payee": {
+            "value": "收款人甲",
+            "fact_id": "F-0006",
+            "locator": "/tables/banks/0/fields/payee"
+          },
+          "account": {
+            "value": "6217000000000000001",
+            "fact_id": "F-0006",
+            "locator": "/tables/banks/0/fields/account"
+          },
+          "bank": {
+            "value": "中国银行股份有限公司厦门分行",
+            "fact_id": "F-0006",
+            "locator": "/tables/banks/0/fields/bank"
+          },
+          "bankCode": {
+            "value": "104393000011",
+            "fact_id": "F-0006",
+            "locator": "/tables/banks/0/fields/bankCode"
+          },
+          "cost": {
+            "value": "500.00",
+            "fact_id": "F-0006",
+            "locator": "/tables/banks/0/fields/cost"
+          }
+        }
+      },
+      {
+        "row_id": "b2",
+        "fields": {
+          "payee": {
+            "value": "收款人乙",
+            "fact_id": "F-0007",
+            "locator": "/tables/banks/1/fields/payee"
+          },
+          "account": {
+            "value": "6217000000000000002",
+            "fact_id": "F-0007",
+            "locator": "/tables/banks/1/fields/account"
+          },
+          "bank": {
+            "value": "中国银行股份有限公司厦门分行",
+            "fact_id": "F-0007",
+            "locator": "/tables/banks/1/fields/bank"
+          },
+          "bankCode": {
+            "value": "104393000011",
+            "fact_id": "F-0007",
+            "locator": "/tables/banks/1/fields/bankCode"
+          },
+          "cost": {
+            "value": "534.56",
+            "fact_id": "F-0007",
+            "locator": "/tables/banks/1/fields/cost"
+          }
+        }
+      },
+      {
+        "row_id": "b3",
+        "fields": {
+          "payee": {
+            "value": "收款人丙",
+            "fact_id": "F-0008",
+            "locator": "/tables/banks/2/fields/payee"
+          },
+          "account": {
+            "value": "6217000000000000003",
+            "fact_id": "F-0008",
+            "locator": "/tables/banks/2/fields/account"
+          },
+          "bank": {
+            "value": "中国银行股份有限公司厦门分行",
+            "fact_id": "F-0008",
+            "locator": "/tables/banks/2/fields/bank"
+          },
+          "bankCode": {
+            "value": "104393000011",
+            "fact_id": "F-0008",
+            "locator": "/tables/banks/2/fields/bankCode"
+          },
+          "cost": {
+            "value": "200.00",
+            "fact_id": "F-0008",
+            "locator": "/tables/banks/2/fields/cost"
+          }
+        }
+      }
+    ]
+  },
+  "total": {
+    "value": "1234.56",
+    "fact_id": "F-0003"
+  },
+  "table_applicability": {
+    "relations": {
+      "value": "合成离线链材料：02 类 plan 级非空 relations 待 bpm_plan 授权轮（本轮裁决①）；真实单实测申请书(34)关联见 config observed_relation_types",
+      "fact_id": "F-0009",
+      "locator": "/table_applicability/relations/reason"
+    }
+  }
+}

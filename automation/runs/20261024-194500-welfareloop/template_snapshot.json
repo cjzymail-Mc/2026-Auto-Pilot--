@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "representation": "derived_from_research_raw",
+  "document_type": "welfare_labor",
+  "biz_number": "15426071883",
+  "uuid": "030a11e82ac9406b87b9880020bc2014",
+  "captured_at": "2026-10-24T08:42:23.041563+00:00",
+  "header": {
+    "corpCode": "厦门乔丹科技有限公司",
+    "bizOrign": "QDTech",
+    "budgetYears": "2026",
+    "payType": "02",
+    "currencyType": "RMB",
+    "submitType": "04",
+    "description": "科技中心2026年第三季度团建费",
+    "totalCost": "5250.00"
+  },
+  "tables": {
+    "details": 1,
+    "costs": 0,
+    "relations": 1,
+    "banks": 1,
+    "products": 0,
+    "detailrels": 1
+  },
+  "source": {
+    "kind": "research_raw_derived",
+    "raw_path": "automation/runs/20261024-170000-fiveresearch/raw_15426071883_fulilabao.json"
+  }
+}

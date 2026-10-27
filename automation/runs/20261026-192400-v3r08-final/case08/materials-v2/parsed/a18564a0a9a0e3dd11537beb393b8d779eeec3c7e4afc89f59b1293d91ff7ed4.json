@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "source_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905通行费电子票据汇总单(票据).pdf",
+  "source_sha256": "a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4",
+  "status": "NEEDS_INPUT",
+  "cells": [],
+  "issues": [
+    {
+      "message": "PDF/image extraction requires reviewed structured JSON with original hash and page/region locators"
+    }
+  ]
+}

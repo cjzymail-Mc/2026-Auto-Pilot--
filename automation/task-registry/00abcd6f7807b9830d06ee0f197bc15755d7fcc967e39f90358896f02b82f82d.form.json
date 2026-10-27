@@ -1,0 +1,23 @@
+{
+  "task_id": "20261023-user-complex-history-demo-15426093015",
+  "plan_sha256": "cf1ee35a0d0ca5b7cb6ff55ed303d3be789be85aa36fe6734b9d09d3a8b997bc",
+  "operator": "陈晶",
+  "mode": "fill_only_historical_demonstration",
+  "state": "FORM_INTENT",
+  "run": "20261023-live-complex-demo",
+  "attempt": "attempt_002",
+  "authorized_revision02": {
+    "event": "USER_AUTHORIZED_DEMO_PLAN_REVISION",
+    "previous_plan_sha256": "cf1ee35a0d0ca5b7cb6ff55ed303d3be789be85aa36fe6734b9d09d3a8b997bc",
+    "new_plan_sha256": "c6b2e7f1a41e67f69acef8d419ad619993bf71a4e1713dd8577f2b394df9b8e3",
+    "task_id": "20261023-user-complex-history-demo-15426093015",
+    "numbers": [
+      "12026101976",
+      "12026070366",
+      "12026037675"
+    ],
+    "user_reply": "允许，仅用于本次演示",
+    "save_allowed": false,
+    "same_existing_form": true
+  }
+}

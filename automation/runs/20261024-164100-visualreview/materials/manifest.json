@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "originals_root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-164100-visualreview\\originals",
+  "derived_root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-164100-visualreview\\materials",
+  "files": [
+    {
+      "material_id": "sha256:85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-164100-visualreview\\originals\\synthetic_invoice_2p.pdf",
+      "relative_path": "synthetic_invoice_2p.pdf",
+      "sha256": "85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f",
+      "size_bytes": 3119,
+      "duplicate_paths": []
+    }
+  ],
+  "derived_files": [
+    {
+      "derived_id": "sha256:a9d61df7624450f5cd4231dc0f16f50d47c83642934461600183ead4a567aaaa",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-164100-visualreview\\materials\\parsed\\85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f.json",
+      "relative_path": "parsed/85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f.json",
+      "sha256": "a9d61df7624450f5cd4231dc0f16f50d47c83642934461600183ead4a567aaaa",
+      "size_bytes": 492,
+      "sources": [
+        "85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-24T08:34:24+00:00"
+    },
+    {
+      "derived_id": "sha256:9334a4749a901ba9899a20dd46edf6a3d6c82899690a40d9a5d386d81f13d63f",
+      "role": "reviewed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-164100-visualreview\\materials\\reviewed\\85ea642b8ed68827.json",
+      "relative_path": "reviewed/85ea642b8ed68827.json",
+      "sha256": "9334a4749a901ba9899a20dd46edf6a3d6c82899690a40d9a5d386d81f13d63f",
+      "size_bytes": 2992,
+      "sources": [
+        "85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f"
+      ],
+      "generated_by": "round7-B-agent+vision(4.5v)",
+      "generated_at": "2026-10-24T08:35:56+00:00"
+    },
+    {
+      "derived_id": "sha256:8cf55d7c3e47f47ebaab2a8de651d759d1ab3f497c4214ec04f11c5074bd7980",
+      "role": "run_evidence",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-164100-visualreview\\materials\\reviewed\\vision_crosscheck.json",
+      "relative_path": "reviewed/vision_crosscheck.json",
+      "sha256": "8cf55d7c3e47f47ebaab2a8de651d759d1ab3f497c4214ec04f11c5074bd7980",
+      "size_bytes": 1519,
+      "sources": [
+        "85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f"
+      ],
+      "generated_by": "round7-visualreview/agent_vision_crosscheck",
+      "generated_at": "2026-10-24T08:35:56+00:00"
+    }
+  ]
+}

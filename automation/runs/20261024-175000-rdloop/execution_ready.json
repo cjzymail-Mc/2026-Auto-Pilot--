@@ -1,0 +1,18 @@
+{
+  "status": "EXECUTION_READY",
+  "plan": {
+    "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-175000-rdloop\\fill_plan_r8.json",
+    "sha256": "dcf4f8953a75fb4ed9826f212bb1f87489e0f3ba023f34e1e90befccacbab4c0"
+  },
+  "operator": {
+    "name": "陈晶",
+    "source": "system_observation",
+    "basis": "automation/.local-session 会话记录 principal（auth_status=authenticated） level=header_and_subject"
+  },
+  "validate_only": {
+    "status": "PLAN_VALIDATED",
+    "browser_launched": false
+  },
+  "suggested_command": "python -X utf8 fill_once.py --fill-plan \"D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-175000-rdloop\\fill_plan_r8.json\" --expect-name \"陈晶\" --keep-open-minutes 45",
+  "browser_launched": false
+}

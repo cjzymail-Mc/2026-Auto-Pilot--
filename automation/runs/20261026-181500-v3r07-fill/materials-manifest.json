@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs",
+  "files": [
+    {
+      "material_id": "sha256:a6583a298da434eb50caa5d29362e0d1387135313ca24e5f3d15923ba1e1d3b3",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-172300-v3r06-template-plan\\case06-task-material.json",
+      "relative_path": "20261026-172300-v3r06-template-plan/case06-task-material.json",
+      "sha256": "a6583a298da434eb50caa5d29362e0d1387135313ca24e5f3d15923ba1e1d3b3",
+      "size_bytes": 29028,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:a899944ea27c16fb4b9e3b62738ceb2062581fa8df3cd8f64c567015456e79a3",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-131000-v3r03-case02\\case02-mapping.json",
+      "relative_path": "20261026-131000-v3r03-case02/case02-mapping.json",
+      "sha256": "a899944ea27c16fb4b9e3b62738ceb2062581fa8df3cd8f64c567015456e79a3",
+      "size_bytes": 18563,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:09c26a5ee5989f66471812095b2bb7a1c66eae7982b315c1c09508a6a6c60e35",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-131000-v3r03-case02\\case02-coverage.json",
+      "relative_path": "20261026-131000-v3r03-case02/case02-coverage.json",
+      "sha256": "09c26a5ee5989f66471812095b2bb7a1c66eae7982b315c1c09508a6a6c60e35",
+      "size_bytes": 5853,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:8d5581dec67c5a9c52b1a47c092466feea8604abc25b8d2b339a09c2ea9cf5cf",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-115500-v3r02-case01\\case01-facts.json",
+      "relative_path": "20261026-115500-v3r02-case01/case01-facts.json",
+      "sha256": "8d5581dec67c5a9c52b1a47c092466feea8604abc25b8d2b339a09c2ea9cf5cf",
+      "size_bytes": 333272,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:1da6e1e15f01b99fdb660fe0219cb41fd193e35beba21bd6e391d430ac4ad2aa",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-143340-v3r04-case03\\attempt_007\\evidence\\wide-rows-page01.json",
+      "relative_path": "20261026-143340-v3r04-case03/attempt_007/evidence/wide-rows-page01.json",
+      "sha256": "1da6e1e15f01b99fdb660fe0219cb41fd193e35beba21bd6e391d430ac4ad2aa",
+      "size_bytes": 4211,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:08767578dcb057c4be121c2049c4870389247fe6d421f42cfe96fc1770a061d2",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-181500-v3r07-fill\\case07-task-material.json",
+      "relative_path": "20261026-181500-v3r07-fill/case07-task-material.json",
+      "sha256": "08767578dcb057c4be121c2049c4870389247fe6d421f42cfe96fc1770a061d2",
+      "size_bytes": 2020,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:369a47938da2215e0cc11a495128e0a7f75f8ef3d2c8d0948607df972b3b0176",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-181500-v3r07-fill\\attempt_002\\evidence\\relation_enumeration.json",
+      "relative_path": "20261026-181500-v3r07-fill/attempt_002/evidence/relation_enumeration.json",
+      "sha256": "369a47938da2215e0cc11a495128e0a7f75f8ef3d2c8d0948607df972b3b0176",
+      "size_bytes": 3661,
+      "duplicate_paths": []
+    }
+  ]
+}

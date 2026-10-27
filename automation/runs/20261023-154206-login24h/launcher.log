@@ -1,0 +1,96 @@
+[15:42:06] preflight wininet: ['ProxyEnable    REG_DWORD    0x1', 'ProxyServer    REG_SZ    127.0.0.1:7897'] | socket443: True
+Traceback (most recent call last):
+  File "D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py", line 3138, in main
+    self._launch()
+  File "D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py", line 3027, in _launch
+    self._pw = sync_playwright().start()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\sync_api\_context_manager.py", line 84, in start
+    return self.__enter__()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\sync_api\_context_manager.py", line 77, in __enter__
+    dispatcher_fiber.switch()
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\sync_api\_context_manager.py", line 56, in greenlet_main
+    self._loop.run_until_complete(self._connection.run_as_sync())
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 685, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 303, in run_as_sync
+    await self.run()
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1742, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 399, in _make_subprocess_transport
+    transp = _WindowsSubprocessTransport(self, protocol, args, shell,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 873, in _start
+    self._proc = windows_utils.Popen(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_utils.py", line 136, in __init__
+    stdin_rh, stdin_wh = pipe(overlapped=(False, True), duplex=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_utils.py", line 63, in pipe
+    h2 = _winapi.CreateFile(
+         ^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] 拒绝访问。
+[15:42:07] FINISH FATAL:PermissionError(13, '拒绝访问。', None, 5, None) tech=0.0s login_wait=0.0s attempt=attempt_001
+Future exception was never retrieved
+future: <Future finished exception=PermissionError(13, '拒绝访问。', None, 5, None)>
+Traceback (most recent call last):
+  File "D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py", line 3138, in main
+    self._launch()
+  File "D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py", line 3027, in _launch
+    self._pw = sync_playwright().start()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\sync_api\_context_manager.py", line 84, in start
+    return self.__enter__()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\sync_api\_context_manager.py", line 77, in __enter__
+    dispatcher_fiber.switch()
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\sync_api\_context_manager.py", line 56, in greenlet_main
+    self._loop.run_until_complete(self._connection.run_as_sync())
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 685, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 303, in run_as_sync
+    await self.run()
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_connection.py", line 312, in run
+    await self._transport.connect()
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_transport.py", line 133, in connect
+    raise exc
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\subprocess.py", line 224, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1742, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 399, in _make_subprocess_transport
+    transp = _WindowsSubprocessTransport(self, protocol, args, shell,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_subprocess.py", line 36, in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 873, in _start
+    self._proc = windows_utils.Popen(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_utils.py", line 136, in __init__
+    stdin_rh, stdin_wh = pipe(overlapped=(False, True), duplex=True)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_utils.py", line 63, in pipe
+    h2 = _winapi.CreateFile(
+         ^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] 拒绝访问。

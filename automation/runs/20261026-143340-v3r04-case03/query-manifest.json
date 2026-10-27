@@ -1,0 +1,49 @@
+{
+ "stage": "targeted query 2025",
+ "pages": [
+  {
+   "page": 1,
+   "size": 20,
+   "evidence": "api-page01-001--WorkOut-query-20-1.json",
+   "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62",
+   "rows": 0
+  },
+  {
+   "page": 1,
+   "size": 20,
+   "evidence": "api-page01-002--WorkOut-query-20-1.json",
+   "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d",
+   "rows": 0
+  },
+  {
+   "page": 1,
+   "size": 20,
+   "evidence": "api-page01-003--WorkOut-query-20-1.json",
+   "sha256": "05bdc6a55ef461759e83da95825304fdfe6a865986a36af3cd27a54b0fb13c06",
+   "rows": 0
+  },
+  {
+   "page": 1,
+   "size": 20,
+   "evidence": "api-page01-004--WorkOut-query-20-1.json",
+   "sha256": "7276e940b9833d22d39b4bdc4cfd20b5e6c7d2d433c927ba2ec79e4edcd3ace7",
+   "rows": 9
+  },
+  {
+   "page": 1,
+   "size": 20,
+   "evidence": "api-page01-005--WorkOut-query-20-1.json",
+   "sha256": "f3abdfe62bbb58bae650eec5cf6d255e6ad4cdec6221df310b4b822a49f69df7",
+   "rows": 20
+  },
+  {
+   "page": 1,
+   "size": 20,
+   "evidence": "api-page01-006--WorkOut-query-20-1.json",
+   "sha256": "0ae4ed399b5ae667eb07f3b6800f80f2e8955f728680cedd5cf82f866cb558e5",
+   "rows": 9
+  }
+ ],
+ "rows_total": 9,
+ "pages_captured": 1
+}

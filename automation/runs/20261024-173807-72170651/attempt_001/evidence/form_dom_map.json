@@ -1,0 +1,411 @@
+{
+ "ready": {
+  "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+  "frame": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+  "dom_fields": 44,
+  "gc": false,
+  "spreads": 0
+ },
+ "dom_fields": [
+  {
+   "i": 0,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "搜索",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 1,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "bizStatus0",
+   "prev_text": "单据状态",
+   "row_text": "",
+   "value": "编制中"
+  },
+  {
+   "i": 2,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "bizNumber1",
+   "prev_text": "单据编号",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 3,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "appliedName2",
+   "prev_text": "",
+   "row_text": "",
+   "value": "陈晶"
+  },
+  {
+   "i": 4,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "appliedAt3",
+   "prev_text": "申请日期",
+   "row_text": "",
+   "value": "2026-10-24"
+  },
+  {
+   "i": 5,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "appliedDuty4",
+   "prev_text": "职位",
+   "row_text": "",
+   "value": "高级经理"
+  },
+  {
+   "i": 6,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "appliedBy5",
+   "prev_text": "工号",
+   "row_text": "",
+   "value": "116070053"
+  },
+  {
+   "i": 7,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "appliedDeptName6",
+   "prev_text": "申请部门",
+   "row_text": "",
+   "value": "运动表现研究部"
+  },
+  {
+   "i": 8,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "appliedPhone7",
+   "prev_text": "联系电话",
+   "row_text": "",
+   "value": "15980451184"
+  },
+  {
+   "i": 9,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "corpCode8",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 10,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "bizOrign9",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 11,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 12,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "payType11",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 13,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "currencyType12",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 14,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "submitType13",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 15,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "totalCost14",
+   "prev_text": "报销金额",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 16,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "upperCost15",
+   "prev_text": "大写金额",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 17,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "loanCost16",
+   "prev_text": "借款金额",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 18,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "quitCost17",
+   "prev_text": "应退金额",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 19,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "payCost18",
+   "prev_text": "应付金额",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 20,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "description19",
+   "prev_text": "备注",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 21,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "createdName20",
+   "prev_text": "制单人",
+   "row_text": "",
+   "value": "陈晶"
+  },
+  {
+   "i": 22,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "createdDeptName21",
+   "prev_text": "制单部门",
+   "row_text": "",
+   "value": "运动表现研究部"
+  },
+  {
+   "i": 23,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "createdAt22",
+   "prev_text": "制单日期",
+   "row_text": "",
+   "value": "2026-10-24"
+  },
+  {
+   "i": 24,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "bizCompletedName23",
+   "prev_text": "终审人",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 25,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "bizCompletedAt24",
+   "prev_text": "终审日期",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 26,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "bizLastAuditName25",
+   "prev_text": "业务终审人",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 27,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "bizLastAuditAt26",
+   "prev_text": "业务终审日期",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 28,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "20",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 29,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 30,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 31,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 32,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 33,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 34,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 35,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 36,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 37,
+   "tag": "INPUT",
+   "type": "text",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 38,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n发票文件的大小不得超过10MB，否则无法识别。\n\n序号",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 39,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n发票文件的大小不得超过10MB，否则无法识别。\n\n序号",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 40,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n发票文件的大小不得超过10MB，否则无法识别。\n\n序号",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 41,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n发票文件的大小不得超过10MB，否则无法识别。\n\n序号",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 42,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "附件\n发票文件的大小不得超过10MB，否则无法识别。\n\n序号",
+   "row_text": "",
+   "value": ""
+  },
+  {
+   "i": 43,
+   "tag": "INPUT",
+   "type": "file",
+   "name": "",
+   "prev_text": "",
+   "row_text": "",
+   "value": ""
+  }
+ ],
+ "spread": {
+  "gc": false,
+  "spreads": []
+ }
+}

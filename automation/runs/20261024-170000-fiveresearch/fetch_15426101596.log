@@ -1,0 +1,30 @@
+[16:39:53] preflight wininet: ['ProxyEnable    REG_DWORD    0x1', 'ProxyServer    REG_SZ    127.0.0.1:7897'] | socket443: True
+[16:40:10] entry classify=LOGGED_IN url=https://bpm.qiaodan.com/oa/home name_hits=1 logout_hits=0
+Traceback (most recent call last):
+  File "D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\bpm_template.py", line 419, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\bpm_template.py", line 343, in main
+    snapshot = live_template(args.template_number, args.expect_name, out.parent.name, args.login_wait,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\bpm_template.py", line 406, in live_template
+    p.save("template_snapshot.json", json.dumps(snapshot, ensure_ascii=False, indent=2))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "C:\Users\xy198\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Decimal is not JSON serializable

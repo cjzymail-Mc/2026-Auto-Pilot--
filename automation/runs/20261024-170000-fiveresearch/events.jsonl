@@ -1,0 +1,29 @@
+{"event": "profile_lock_acquired", "pid": 2780, "ts": "2026-10-24T16:39:53"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-24T16:39:53"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 592, "ts": "2026-10-24T16:40:06"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792831210133, "dur_ms": 374, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T16:40:10"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T16:40:11"}
+{"event": "template_cached_identity_lookup", "full_number": "15426101596", "reason": "exact number absent from current list scope", "ts": "2026-10-24T16:40:14"}
+{"event": "exact_template_read", "child_counts": {"details": 1, "costs": 1, "relations": 1, "banks": 3, "products": 0, "detailrels": 1}, "source": "observed_get", "header_names": ["accept", "authorization", "client-app", "content-type", "qd-language", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "user-agent"], "ts": "2026-10-24T16:40:14"}
+{"event": "timing", "action": "template_read", "t0_ms": 1792831211253, "dur_ms": 3496, "outcome": "ok", "exc": "", "full_number": "15426101596", "ts": "2026-10-24T16:40:14"}
+{"event": "template_read_end", "status": "NEEDS_INPUT", "ts": "2026-10-24T16:40:14"}
+{"event": "profile_lock_acquired", "pid": 19812, "ts": "2026-10-24T16:41:53"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-24T16:41:53"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 103, "ts": "2026-10-24T16:41:54"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792831317022, "dur_ms": 552, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T16:41:57"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T16:41:57"}
+{"event": "template_cached_identity_lookup", "full_number": "15426101596", "reason": "exact number absent from current list scope", "ts": "2026-10-24T16:42:01"}
+{"event": "exact_template_read", "child_counts": {"details": 1, "costs": 1, "relations": 1, "banks": 3, "products": 0, "detailrels": 1}, "source": "observed_get", "header_names": ["accept", "authorization", "client-app", "content-type", "qd-language", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "user-agent"], "ts": "2026-10-24T16:42:01"}
+{"event": "timing", "action": "template_read", "t0_ms": 1792831317813, "dur_ms": 3485, "outcome": "ok", "exc": "", "full_number": "15426101596", "ts": "2026-10-24T16:42:01"}
+{"event": "template_read_end", "status": "SUCCESS_TEMPLATE_READ_ONLY", "ts": "2026-10-24T16:42:01"}
+{"event": "profile_lock_acquired", "pid": 12832, "ts": "2026-10-24T16:42:15"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-24T16:42:15"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 18, "ts": "2026-10-24T16:42:16"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792831338633, "dur_ms": 535, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T16:42:19"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T16:42:19"}
+{"event": "template_cached_identity_lookup", "full_number": "15426071883", "reason": "exact number absent from current list scope", "ts": "2026-10-24T16:42:22"}
+{"event": "exact_template_read", "child_counts": {"details": 1, "costs": 0, "relations": 1, "banks": 1, "products": 0, "detailrels": 1}, "source": "observed_get", "header_names": ["accept", "authorization", "client-app", "content-type", "qd-language", "referer", "sec-ch-ua", "sec-ch-ua-mobile", "sec-ch-ua-platform", "user-agent"], "ts": "2026-10-24T16:42:23"}
+{"event": "timing", "action": "template_read", "t0_ms": 1792831339551, "dur_ms": 3491, "outcome": "ok", "exc": "", "full_number": "15426071883", "ts": "2026-10-24T16:42:23"}
+{"event": "template_read_end", "status": "SUCCESS_TEMPLATE_READ_ONLY", "ts": "2026-10-24T16:42:23"}
+{"event": "research_summary_written", "artifacts": ["research_dijiazhi_15426101596.md", "research_fulilabao_15426071883.md", "RESEARCH_SUMMARY.md"], "raw_fetch_cli_invocations": 3, "budget": 5, "fix": "bpm_template._json_default Decimal dump", "ts": "2026-10-24T08:47:34.362338+00:00"}
+{"ts": "2026-10-24T09:06:04.291179+00:00", "event": "research_evidence_pointer_corrected", "source": "ENHANCED_FINAL_P1-b", "fix": "express(15) 证据指针 15426094566(实测=11)→15426082926+15426083536(实测=15)，两工件第6节订正+勘误注", "new_sha256": {"research_dijiazhi_15426101596.md": "a1d889751968f1b6bccaf6c057be056cfd0f51b822a1aea876dbc1a7aba9156d", "research_fulilabao_15426071883.md": "08cb10275db4d8e7bdb97ebcfa5ff109f60e2dec206bb5cb9be9da94b2c14d18"}}

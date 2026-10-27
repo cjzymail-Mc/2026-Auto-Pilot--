@@ -1,0 +1,624 @@
+{
+ "stage": "B 副本回填（COM）",
+ "copy_path": "automation\\runs\\20261026-131000-v3r03-case02\\12月-自驾公出公里数统计表-已核对.xlsx",
+ "copy_sha256": "f4fa1d1c4e82beac75740256f590b13aff3eb57ae75c033f185a904ef46f1b15",
+ "src_sha_before": "2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83",
+ "src_sha_after": "2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83",
+ "changes": [
+  {
+   "row": 4,
+   "date": "2025-12-10",
+   "direction": "out",
+   "H": {
+    "cell": "H4",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-20514402",
+      "invoice_number": "20514402",
+      "amount": "22.64",
+      "rel": "1210/1210厦门-晋江发票.pdf",
+      "sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I4",
+    "old_formula": "",
+    "new_formula": "=G4+H4",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 5,
+   "date": "2025-12-10",
+   "direction": "return",
+   "H": {
+    "cell": "H5",
+    "old": null,
+    "new": "19.95",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-19977515",
+      "invoice_number": "19977515",
+      "amount": "4.42",
+      "rel": "1210/1210晋江-厦门1.pdf",
+      "sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168"
+     },
+     {
+      "identity": "toll:035002400112-20519372",
+      "invoice_number": "20519372",
+      "amount": "15.53",
+      "rel": "1210/1210晋江-厦门1 (2).pdf",
+      "sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I5",
+    "old_formula": "",
+    "new_formula": "=G5+H5",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 6,
+   "date": "2025-12-04",
+   "direction": "out",
+   "H": {
+    "cell": "H6",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-18196512",
+      "invoice_number": "18196512",
+      "amount": "22.64",
+      "rel": "1204/1204厦门到晋江发票.pdf",
+      "sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I6",
+    "old_formula": "",
+    "new_formula": "=G6+H6",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 7,
+   "date": "2025-12-04",
+   "direction": "return",
+   "H": {
+    "cell": "H7",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-18197206",
+      "invoice_number": "18197206",
+      "amount": "22.64",
+      "rel": "1204/1204晋江到厦门发票.pdf",
+      "sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I7",
+    "old_formula": "",
+    "new_formula": "=G7+H7",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 8,
+   "date": "2025-11-24",
+   "direction": "out",
+   "H": {
+    "cell": "H8",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-20703083",
+      "invoice_number": "20703083",
+      "amount": "22.64",
+      "rel": "1124/1124厦门到晋江发票.pdf",
+      "sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I8",
+    "old_formula": "",
+    "new_formula": "=G8+H8",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 9,
+   "date": "2025-11-24",
+   "direction": "return",
+   "H": {
+    "cell": "H9",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-18011706",
+      "invoice_number": "18011706",
+      "amount": "22.64",
+      "rel": "1124/1124晋江到厦门发票.pdf",
+      "sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I9",
+    "old_formula": "",
+    "new_formula": "=G9+H9",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 10,
+   "date": "2025-11-12",
+   "direction": "out",
+   "H": {
+    "cell": "H10",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-17950250",
+      "invoice_number": "17950250",
+      "amount": "22.64",
+      "rel": "1112/1112厦门到晋江发票.pdf",
+      "sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I10",
+    "old_formula": "",
+    "new_formula": "=G10+H10",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 11,
+   "date": "2025-11-12",
+   "direction": "return",
+   "H": {
+    "cell": "H11",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-17952458",
+      "invoice_number": "17952458",
+      "amount": "22.64",
+      "rel": "1112/1112晋江到厦门发票.pdf",
+      "sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I11",
+    "old_formula": "",
+    "new_formula": "=G11+H11",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 12,
+   "date": "2025-10-28",
+   "direction": "out",
+   "H": {
+    "cell": "H12",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-17793922",
+      "invoice_number": "17793922",
+      "amount": "22.64",
+      "rel": "1028/1028厦门到晋江发票.pdf",
+      "sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I12",
+    "old_formula": "",
+    "new_formula": "=G12+H12",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 13,
+   "date": "2025-10-28",
+   "direction": "return",
+   "H": {
+    "cell": "H13",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-17794993",
+      "invoice_number": "17794993",
+      "amount": "22.64",
+      "rel": "1028/1028晋江到厦门发票.pdf",
+      "sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I13",
+    "old_formula": "",
+    "new_formula": "=G13+H13",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 14,
+   "date": "2025-09-28",
+   "direction": "out",
+   "H": {
+    "cell": "H14",
+    "old": null,
+    "new": "31.93",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-16858364",
+      "invoice_number": "16858364",
+      "amount": "16.24",
+      "rel": "0928/0928厦门到晋江发票1.pdf",
+      "sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27"
+     },
+     {
+      "identity": "toll:035002400112-16422064",
+      "invoice_number": "16422064",
+      "amount": "15.69",
+      "rel": "0928/0928厦门到晋江发票2.pdf",
+      "sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I14",
+    "old_formula": "",
+    "new_formula": "=G14+H14",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 15,
+   "date": "2025-09-28",
+   "direction": "return",
+   "H": {
+    "cell": "H15",
+    "old": null,
+    "new": "31.93",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-16548299",
+      "invoice_number": "16548299",
+      "amount": "16.24",
+      "rel": "0928/0928晋江到厦门发票1.pdf",
+      "sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5"
+     },
+     {
+      "identity": "toll:035002400112-17727508",
+      "invoice_number": "17727508",
+      "amount": "15.69",
+      "rel": "0928/0928晋江到厦门发票2.pdf",
+      "sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I15",
+    "old_formula": "",
+    "new_formula": "=G15+H15",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 16,
+   "date": "2025-09-17",
+   "direction": "out",
+   "H": {
+    "cell": "H16",
+    "old": null,
+    "new": "31.93",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-16657870",
+      "invoice_number": "16657870",
+      "amount": "16.24",
+      "rel": "0917/0917厦门到晋江发票2.pdf",
+      "sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937"
+     },
+     {
+      "identity": "toll:035002400112-16227300",
+      "invoice_number": "16227300",
+      "amount": "15.69",
+      "rel": "0917/0917厦门到晋江发票1.pdf",
+      "sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I16",
+    "old_formula": "",
+    "new_formula": "=G16+H16",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 17,
+   "date": "2025-09-17",
+   "direction": "return",
+   "H": {
+    "cell": "H17",
+    "old": null,
+    "new": "36.97",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-16657942",
+      "invoice_number": "16657942",
+      "amount": "16.24",
+      "rel": "0917/0917晋江到厦门发票1.pdf",
+      "sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3"
+     },
+     {
+      "identity": "toll:035002400112-16227311",
+      "invoice_number": "16227311",
+      "amount": "20.73",
+      "rel": "0917/0917晋江到厦门发票2.pdf",
+      "sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I17",
+    "old_formula": "",
+    "new_formula": "=G17+H17",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 18,
+   "date": "2025-09-05",
+   "direction": "out",
+   "H": {
+    "cell": "H18",
+    "old": null,
+    "new": "19.95",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-15913017",
+      "invoice_number": "15913017",
+      "amount": "4.41",
+      "rel": "0906/0905厦门到晋江发票1.pdf",
+      "sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a"
+     },
+     {
+      "identity": "toll:035002400112-16108478",
+      "invoice_number": "16108478",
+      "amount": "15.54",
+      "rel": "0906/0905厦门到晋江发票2.pdf",
+      "sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I18",
+    "old_formula": "",
+    "new_formula": "=G18+H18",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 19,
+   "date": "2025-09-05",
+   "direction": "return",
+   "H": {
+    "cell": "H19",
+    "old": null,
+    "new": "19.95",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-15913011",
+      "invoice_number": "15913011",
+      "amount": "4.42",
+      "rel": "0906/0905晋江到厦门发票1.pdf",
+      "sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e"
+     },
+     {
+      "identity": "toll:035002400112-16366191",
+      "invoice_number": "16366191",
+      "amount": "15.53",
+      "rel": "0906/0905晋江到厦门发票2.pdf",
+      "sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I19",
+    "old_formula": "",
+    "new_formula": "=G19+H19",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 20,
+   "date": "2025-09-04",
+   "direction": "out",
+   "H": {
+    "cell": "H20",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-16104706",
+      "invoice_number": "16104706",
+      "amount": "22.64",
+      "rel": "0904/0904厦门到晋江发票.pdf",
+      "sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I20",
+    "old_formula": "",
+    "new_formula": "=G20+H20",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 21,
+   "date": "2025-09-04",
+   "direction": "return",
+   "H": {
+    "cell": "H21",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-16104709",
+      "invoice_number": "16104709",
+      "amount": "22.64",
+      "rel": "0904/0904晋江到厦门发票.pdf",
+      "sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I21",
+    "old_formula": "",
+    "new_formula": "=G21+H21",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 22,
+   "date": "2025-08-25",
+   "direction": "out",
+   "H": {
+    "cell": "H22",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-16304714",
+      "invoice_number": "16304714",
+      "amount": "22.64",
+      "rel": "0825/0825厦门到晋江发票.pdf",
+      "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I22",
+    "old_formula": "",
+    "new_formula": "=G22+H22",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  },
+  {
+   "row": 23,
+   "date": "2025-08-25",
+   "direction": "return",
+   "H": {
+    "cell": "H23",
+    "old": null,
+    "new": "22.64",
+    "invoices": [
+     {
+      "identity": "toll:035002400112-16166322",
+      "invoice_number": "16166322",
+      "amount": "22.64",
+      "rel": "0825/0825晋江到厦门发票.pdf",
+      "sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124"
+     }
+    ],
+    "derivation": "Σ(映射票面价税合计)；来源=CASE-01 facts（page/bbox/sha256 锚点）+ case02-mapping 行级裁定"
+   },
+   "I": {
+    "cell": "I23",
+    "old_formula": "",
+    "new_formula": "=G23+H23",
+    "derivation": "合计=补贴金额+过路费（表头设计语义；原行内无公式，补全见裁决②）"
+   },
+   "km_preserved": true
+  }
+ ],
+ "calc_after_write": {
+  "I24_total": "1924.9300000000005",
+  "I_rows": {
+   "4": "95.64",
+   "5": "92.95",
+   "6": "98.64",
+   "7": "98.64",
+   "8": "95.64",
+   "9": "95.64",
+   "10": "95.64",
+   "11": "95.64",
+   "12": "95.64",
+   "13": "95.64",
+   "14": "96.93",
+   "15": "98.93",
+   "16": "96.93",
+   "17": "103.97",
+   "18": "92.95",
+   "19": "92.95",
+   "20": "95.64",
+   "21": "95.64",
+   "22": "95.64",
+   "23": "95.64"
+  }
+ },
+ "untouched": "F/G/J 列、I24 公式、行3 表头、行4-23 结构均未改；仅 H4..H23 值 + I4..I23 公式"
+}

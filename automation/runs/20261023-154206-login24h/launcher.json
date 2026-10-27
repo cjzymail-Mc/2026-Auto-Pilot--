@@ -1,0 +1,10 @@
+{
+  "pid": 2816,
+  "run": "20261023-154206-login24h",
+  "ttl_hours": 24,
+  "keep_open_minutes": 1440,
+  "proxy_mode": "direct",
+  "attempt": "attempt_002",
+  "authenticated": true,
+  "finish_reason": "SUCCESS_LOGIN_ONLY"
+}

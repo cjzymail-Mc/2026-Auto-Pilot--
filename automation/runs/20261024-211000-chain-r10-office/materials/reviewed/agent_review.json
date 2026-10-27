@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "kind": "agent_extraction_review",
+  "reviewer": "bpm-chain-agent/round-10",
+  "material_sha256": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87",
+  "material_kind": "synthetic_offline_chain_fixture",
+  "extracted": {
+    "applicant": {
+      "name": "/applicant/name",
+      "company": "/applicant/company",
+      "department": "/applicant/department"
+    },
+    "header": {
+      "corpCode": "/header/corpCode",
+      "bizOrign": "/header/bizOrign",
+      "budgetYears": "/header/budgetYears",
+      "payType": "/header/payType",
+      "currencyType": "/header/currencyType",
+      "submitType": "/header/submitType",
+      "description": "/header/description",
+      "totalCost": "/header/totalCost"
+    },
+    "tables": {
+      "relations": [],
+      "details": [
+        "/tables/details/0/fields/reimItem",
+        "/tables/details/0/fields/digest",
+        "/tables/details/0/fields/budgetDeptName",
+        "/tables/details/0/fields/budgetNo",
+        "/tables/details/0/fields/subjectName",
+        "/tables/details/0/fields/budgetItemName",
+        "/tables/details/0/fields/budgetOwner",
+        "/tables/details/0/fields/cost"
+      ],
+      "costs": [
+        "/tables/costs/0/fields/project",
+        "/tables/costs/0/fields/startDate",
+        "/tables/costs/0/fields/endDate",
+        "/tables/costs/0/fields/projectPlace",
+        "/tables/costs/0/fields/count",
+        "/tables/costs/0/fields/cost",
+        "/tables/costs/0/fields/reason"
+      ],
+      "banks": [
+        "/tables/banks/0/fields/payee",
+        "/tables/banks/0/fields/account",
+        "/tables/banks/0/fields/bank",
+        "/tables/banks/0/fields/bankCode",
+        "/tables/banks/0/fields/cost",
+        "/tables/banks/1/fields/payee",
+        "/tables/banks/1/fields/account",
+        "/tables/banks/1/fields/bank",
+        "/tables/banks/1/fields/bankCode",
+        "/tables/banks/1/fields/cost",
+        "/tables/banks/2/fields/payee",
+        "/tables/banks/2/fields/account",
+        "/tables/banks/2/fields/bank",
+        "/tables/banks/2/fields/bankCode",
+        "/tables/banks/2/fields/cost"
+      ]
+    },
+    "authorization_semantics": [
+      "/test_only",
+      "/not_new_expenses",
+      "/no_invoice_rule",
+      "/table_applicability/relations/reason"
+    ]
+  },
+  "mechanical_crosscheck": {
+    "details_sum": "1234.56",
+    "costs_sum": "1234.56",
+    "banks_sum": "1234.56",
+    "header_totalCost": "1234.56"
+  },
+  "review_notes": [
+    "结构化 JSON 材料（非扫描件）：无 OCR 层，字段值由 JSON 指针直接定位。",
+    "test_only/demo_only/synthetic 与免票语义随件携带未删除。",
+    "bpm_chain 产品化复跑（round-10）：值与来源全部绑定本 run 材料原件。"
+  ]
+}

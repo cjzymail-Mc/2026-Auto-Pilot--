@@ -1,0 +1,371 @@
+{"event": "timing", "action": "plan_source_validation", "t0_ms": 1792760457313.6719, "dur_ms": 368.581298828125, "outcome": "ok"}
+{"event": "timing", "action": "entry_plan_validation_binding", "t0_ms": 1792760457291.6787, "dur_ms": 409.221923828125, "outcome": "ok", "plan_hash": "8e0dadcce84178eecc212b1147b0510d3b6ac85e544648078cb3ed58d18901e5", "source_manifest_sha256": "67811c21df9c6464bbd2165fd27636e994f521a5900f0ee31cbac558f4f5445a"}
+{"event": "profile_lock_acquired", "pid": 2192, "ts": "2026-10-23T21:00:58"}
+{"event": "probe_start", "run": "types-rd-complex-R2", "attempt": "attempt_001", "doc_id": null, "tech_budget": 2400.0, "login_wait_cap": 60.0, "wall_cap": 3000.0, "ts": "2026-10-23T21:00:58"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-23T21:00:58"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 88, "ts": "2026-10-23T21:00:59"}
+{"event": "timing", "action": "browser_session_start", "t0_ms": 1792760458294, "dur_ms": 901, "outcome": "ok", "exc": "", "ts": "2026-10-23T21:00:59"}
+{"event": "page_navigation", "epoch_ms": 1792760459465, "ts": "2026-10-23T21:00:59"}
+{"event": "page_navigation", "epoch_ms": 1792760460183, "ts": "2026-10-23T21:01:00"}
+{"event": "page_navigation", "epoch_ms": 1792760461015, "ts": "2026-10-23T21:01:01"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792760462089, "dur_ms": 408, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T21:01:02"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 24.0, "ts": "2026-10-23T21:01:03"}
+{"event": "structured_fill_start", "plan_hash": "8e0dadcce84178eecc212b1147b0510d3b6ac85e544648078cb3ed58d18901e5", "ts": "2026-10-23T21:01:03"}
+{"event": "UI_START", "epoch_ms": 1792760463458, "round": "rd-complex-R2-namepicker", "rows": {"relations": 0, "details": 4, "costs": 0, "banks": 4, "products": 18}, "network": "chromium --no-proxy-server; fresh test context", "cache": "cold context; session reused", "ts": "2026-10-23T21:01:03"}
+{"event": "fill_start", "plan": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\rd-complex-R2-namepicker\\fill_plan.json", "goal": null, "ts": "2026-10-23T21:01:03"}
+{"event": "page_navigation", "epoch_ms": 1792760463477, "ts": "2026-10-23T21:01:03"}
+{"event": "timing", "action": "goto_new_form", "t0_ms": 1792760463459, "dur_ms": 101, "outcome": "ok", "exc": "", "ts": "2026-10-23T21:01:03"}
+{"event": "page_navigation", "epoch_ms": 1792760463860, "ts": "2026-10-23T21:01:03"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792760467587, "dur_ms": 155, "outcome": "ok", "exc": "", "name": "fill_00_before.png", "ts": "2026-10-23T21:01:07"}
+{"event": "person_identities_locked", "applicant_employee_verified": false, "creator_unchanged": true, "ts": "2026-10-23T21:01:07"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792760468023, "dur_ms": 1574, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T21:01:09"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792760470927, "dur_ms": 1590, "outcome": "ok", "exc": "", "kind": "multiselect", "ts": "2026-10-23T21:01:12"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792760472534, "dur_ms": 1250, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T21:01:13"}
+{"event": "header_generated_default_bank_admitted", "pre_header_rows": 0, "after_header_rows": 1, "default_payee_matches_applicant": true, "amount_is_blank_or_zero": true, "ts": "2026-10-23T21:01:14"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792760474982, "dur_ms": 124, "outcome": "ok", "exc": "", "name": "v1_relations_after.png", "ts": "2026-10-23T21:01:15"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792760474928, "dur_ms": 178, "outcome": "ok", "exc": "", "section": "relations", "ts": "2026-10-23T21:01:15"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792760475576, "dur_ms": 115, "outcome": "ok", "exc": "", "name": "v1_costs_after.png", "ts": "2026-10-23T21:01:15"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792760475547, "dur_ms": 144, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-23T21:01:15"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760476084, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:16"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760476131, "dur_ms": 1315, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:17"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760477448, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:17"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760477534, "dur_ms": 1398, "outcome": "ok", "exc": "", "where": "products/0/archive", "ts": "2026-10-23T21:01:18"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760479136, "dur_ms": 1510, "outcome": "ok", "exc": "", "where": "products/0/archive", "ts": "2026-10-23T21:01:20"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760480646, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "products/0/archive", "ts": "2026-10-23T21:01:20"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760480699, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:20"}
+{"event": "cell_already_equal", "table": "products", "row": 0, "field": "description", "ts": "2026-10-23T21:01:20"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760476084, "dur_ms": 4730, "outcome": "ok", "exc": "", "section": "products", "row": 0, "ts": "2026-10-23T21:01:20"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760480837, "dur_ms": 1314, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:22"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760482152, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:22"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760482238, "dur_ms": 1377, "outcome": "ok", "exc": "", "where": "products/1/archive", "ts": "2026-10-23T21:01:23"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760483804, "dur_ms": 1521, "outcome": "ok", "exc": "", "where": "products/1/archive", "ts": "2026-10-23T21:01:25"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760485326, "dur_ms": 55, "outcome": "ok", "exc": "", "where": "products/1/archive", "ts": "2026-10-23T21:01:25"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760485381, "dur_ms": 13, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:25"}
+{"event": "cell_already_equal", "table": "products", "row": 1, "field": "description", "ts": "2026-10-23T21:01:25"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760480815, "dur_ms": 4691, "outcome": "ok", "exc": "", "section": "products", "row": 1, "ts": "2026-10-23T21:01:25"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760485533, "dur_ms": 1323, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:26"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760486856, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:26"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760486953, "dur_ms": 1399, "outcome": "ok", "exc": "", "where": "products/2/archive", "ts": "2026-10-23T21:01:28"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760488528, "dur_ms": 1499, "outcome": "ok", "exc": "", "where": "products/2/archive", "ts": "2026-10-23T21:01:30"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760490027, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "products/2/archive", "ts": "2026-10-23T21:01:30"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760490080, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:30"}
+{"event": "cell_already_equal", "table": "products", "row": 2, "field": "description", "ts": "2026-10-23T21:01:30"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760485507, "dur_ms": 4684, "outcome": "ok", "exc": "", "section": "products", "row": 2, "ts": "2026-10-23T21:01:30"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760490214, "dur_ms": 1309, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:31"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760491524, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:31"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760491614, "dur_ms": 1371, "outcome": "ok", "exc": "", "where": "products/3/archive", "ts": "2026-10-23T21:01:32"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760493202, "dur_ms": 1508, "outcome": "ok", "exc": "", "where": "products/3/archive", "ts": "2026-10-23T21:01:34"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760494710, "dur_ms": 44, "outcome": "ok", "exc": "", "where": "products/3/archive", "ts": "2026-10-23T21:01:34"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760494754, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:34"}
+{"event": "cell_already_equal", "table": "products", "row": 3, "field": "description", "ts": "2026-10-23T21:01:34"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760490191, "dur_ms": 4681, "outcome": "ok", "exc": "", "section": "products", "row": 3, "ts": "2026-10-23T21:01:34"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760494892, "dur_ms": 1338, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:36"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760496233, "dur_ms": 19, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:36"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760496358, "dur_ms": 1382, "outcome": "ok", "exc": "", "where": "products/4/archive", "ts": "2026-10-23T21:01:37"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760497906, "dur_ms": 1541, "outcome": "ok", "exc": "", "where": "products/4/archive", "ts": "2026-10-23T21:01:39"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760499447, "dur_ms": 102, "outcome": "ok", "exc": "", "where": "products/4/archive", "ts": "2026-10-23T21:01:39"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760499550, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:39"}
+{"event": "cell_already_equal", "table": "products", "row": 4, "field": "description", "ts": "2026-10-23T21:01:39"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760494873, "dur_ms": 4793, "outcome": "ok", "exc": "", "section": "products", "row": 4, "ts": "2026-10-23T21:01:39"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760499688, "dur_ms": 1338, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:41"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760501025, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:41"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760501111, "dur_ms": 1401, "outcome": "ok", "exc": "", "where": "products/5/archive", "ts": "2026-10-23T21:01:42"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760502704, "dur_ms": 1462, "outcome": "ok", "exc": "", "where": "products/5/archive", "ts": "2026-10-23T21:01:44"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760504167, "dur_ms": 46, "outcome": "ok", "exc": "", "where": "products/5/archive", "ts": "2026-10-23T21:01:44"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760504213, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:44"}
+{"event": "cell_already_equal", "table": "products", "row": 5, "field": "description", "ts": "2026-10-23T21:01:44"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760499667, "dur_ms": 4690, "outcome": "ok", "exc": "", "section": "products", "row": 5, "ts": "2026-10-23T21:01:44"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760504378, "dur_ms": 1322, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:45"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760505701, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:45"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760505791, "dur_ms": 1371, "outcome": "ok", "exc": "", "where": "products/6/archive", "ts": "2026-10-23T21:01:47"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760507340, "dur_ms": 1489, "outcome": "ok", "exc": "", "where": "products/6/archive", "ts": "2026-10-23T21:01:48"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760508832, "dur_ms": 81, "outcome": "ok", "exc": "", "where": "products/6/archive", "ts": "2026-10-23T21:01:48"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760508914, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:48"}
+{"event": "cell_already_equal", "table": "products", "row": 6, "field": "description", "ts": "2026-10-23T21:01:49"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760504357, "dur_ms": 4703, "outcome": "ok", "exc": "", "section": "products", "row": 6, "ts": "2026-10-23T21:01:49"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760509094, "dur_ms": 1325, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:50"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760510420, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:50"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760510518, "dur_ms": 1358, "outcome": "ok", "exc": "", "where": "products/7/archive", "ts": "2026-10-23T21:01:51"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760512033, "dur_ms": 1484, "outcome": "ok", "exc": "", "where": "products/7/archive", "ts": "2026-10-23T21:01:53"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760513517, "dur_ms": 46, "outcome": "ok", "exc": "", "where": "products/7/archive", "ts": "2026-10-23T21:01:53"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760513563, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:53"}
+{"event": "cell_already_equal", "table": "products", "row": 7, "field": "description", "ts": "2026-10-23T21:01:53"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760509060, "dur_ms": 4620, "outcome": "ok", "exc": "", "section": "products", "row": 7, "ts": "2026-10-23T21:01:53"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760513701, "dur_ms": 1361, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:55"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760515065, "dur_ms": 17, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:55"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760515162, "dur_ms": 1386, "outcome": "ok", "exc": "", "where": "products/8/archive", "ts": "2026-10-23T21:01:56"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760516781, "dur_ms": 1510, "outcome": "ok", "exc": "", "where": "products/8/archive", "ts": "2026-10-23T21:01:58"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760518292, "dur_ms": 60, "outcome": "ok", "exc": "", "where": "products/8/archive", "ts": "2026-10-23T21:01:58"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760518352, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:58"}
+{"event": "cell_already_equal", "table": "products", "row": 8, "field": "description", "ts": "2026-10-23T21:01:58"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760513681, "dur_ms": 4788, "outcome": "ok", "exc": "", "section": "products", "row": 8, "ts": "2026-10-23T21:01:58"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760518488, "dur_ms": 1317, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:01:59"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760519804, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:01:59"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760519900, "dur_ms": 1391, "outcome": "ok", "exc": "", "where": "products/9/archive", "ts": "2026-10-23T21:02:01"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760521497, "dur_ms": 1483, "outcome": "ok", "exc": "", "where": "products/9/archive", "ts": "2026-10-23T21:02:02"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760522980, "dur_ms": 55, "outcome": "ok", "exc": "", "where": "products/9/archive", "ts": "2026-10-23T21:02:03"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760523035, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:03"}
+{"event": "cell_already_equal", "table": "products", "row": 9, "field": "description", "ts": "2026-10-23T21:02:03"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760518469, "dur_ms": 4678, "outcome": "ok", "exc": "", "section": "products", "row": 9, "ts": "2026-10-23T21:02:03"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760523167, "dur_ms": 1322, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:02:04"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760524490, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:04"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760524595, "dur_ms": 1397, "outcome": "ok", "exc": "", "where": "products/10/archive", "ts": "2026-10-23T21:02:05"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760526172, "dur_ms": 1462, "outcome": "ok", "exc": "", "where": "products/10/archive", "ts": "2026-10-23T21:02:07"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760527634, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "products/10/archive", "ts": "2026-10-23T21:02:07"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760527686, "dur_ms": 11, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:07"}
+{"event": "cell_already_equal", "table": "products", "row": 10, "field": "description", "ts": "2026-10-23T21:02:07"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760523148, "dur_ms": 4650, "outcome": "ok", "exc": "", "section": "products", "row": 10, "ts": "2026-10-23T21:02:07"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760527818, "dur_ms": 1314, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:02:09"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760529132, "dur_ms": 11, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:09"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760529221, "dur_ms": 1388, "outcome": "ok", "exc": "", "where": "products/11/archive", "ts": "2026-10-23T21:02:10"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760530826, "dur_ms": 1509, "outcome": "ok", "exc": "", "where": "products/11/archive", "ts": "2026-10-23T21:02:12"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760532336, "dur_ms": 55, "outcome": "ok", "exc": "", "where": "products/11/archive", "ts": "2026-10-23T21:02:12"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760532392, "dur_ms": 11, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:12"}
+{"event": "cell_already_equal", "table": "products", "row": 11, "field": "description", "ts": "2026-10-23T21:02:12"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760527798, "dur_ms": 4732, "outcome": "ok", "exc": "", "section": "products", "row": 11, "ts": "2026-10-23T21:02:12"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760532558, "dur_ms": 1354, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:02:13"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760533915, "dur_ms": 18, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:13"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760534018, "dur_ms": 1379, "outcome": "ok", "exc": "", "where": "products/12/archive", "ts": "2026-10-23T21:02:15"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760535592, "dur_ms": 1503, "outcome": "ok", "exc": "", "where": "products/12/archive", "ts": "2026-10-23T21:02:17"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760537096, "dur_ms": 58, "outcome": "ok", "exc": "", "where": "products/12/archive", "ts": "2026-10-23T21:02:17"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760537155, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:17"}
+{"event": "cell_already_equal", "table": "products", "row": 12, "field": "description", "ts": "2026-10-23T21:02:17"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760532531, "dur_ms": 4739, "outcome": "ok", "exc": "", "section": "products", "row": 12, "ts": "2026-10-23T21:02:17"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760537289, "dur_ms": 1357, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:02:18"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760538647, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:18"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760538749, "dur_ms": 1387, "outcome": "ok", "exc": "", "where": "products/13/archive", "ts": "2026-10-23T21:02:20"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760540318, "dur_ms": 1511, "outcome": "ok", "exc": "", "where": "products/13/archive", "ts": "2026-10-23T21:02:21"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760541829, "dur_ms": 76, "outcome": "ok", "exc": "", "where": "products/13/archive", "ts": "2026-10-23T21:02:21"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760541905, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:21"}
+{"event": "cell_already_equal", "table": "products", "row": 13, "field": "description", "ts": "2026-10-23T21:02:22"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760537270, "dur_ms": 4788, "outcome": "ok", "exc": "", "section": "products", "row": 13, "ts": "2026-10-23T21:02:22"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760542079, "dur_ms": 1321, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:02:23"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760543402, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:23"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760543493, "dur_ms": 1405, "outcome": "ok", "exc": "", "where": "products/14/archive", "ts": "2026-10-23T21:02:24"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760545082, "dur_ms": 1483, "outcome": "ok", "exc": "", "where": "products/14/archive", "ts": "2026-10-23T21:02:26"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760546565, "dur_ms": 62, "outcome": "ok", "exc": "", "where": "products/14/archive", "ts": "2026-10-23T21:02:26"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760546628, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:26"}
+{"event": "cell_already_equal", "table": "products", "row": 14, "field": "description", "ts": "2026-10-23T21:02:26"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760542058, "dur_ms": 4698, "outcome": "ok", "exc": "", "section": "products", "row": 14, "ts": "2026-10-23T21:02:26"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760546786, "dur_ms": 1322, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:02:28"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760548108, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:28"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760548225, "dur_ms": 1386, "outcome": "ok", "exc": "", "where": "products/15/archive", "ts": "2026-10-23T21:02:29"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760549792, "dur_ms": 1477, "outcome": "ok", "exc": "", "where": "products/15/archive", "ts": "2026-10-23T21:02:31"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760551270, "dur_ms": 105, "outcome": "ok", "exc": "", "where": "products/15/archive", "ts": "2026-10-23T21:02:31"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760551375, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:31"}
+{"event": "cell_already_equal", "table": "products", "row": 15, "field": "description", "ts": "2026-10-23T21:02:31"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760546758, "dur_ms": 4757, "outcome": "ok", "exc": "", "section": "products", "row": 15, "ts": "2026-10-23T21:02:31"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760551546, "dur_ms": 1330, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:02:32"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760552878, "dur_ms": 11, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:32"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760552982, "dur_ms": 1380, "outcome": "ok", "exc": "", "where": "products/16/archive", "ts": "2026-10-23T21:02:34"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760554569, "dur_ms": 1516, "outcome": "ok", "exc": "", "where": "products/16/archive", "ts": "2026-10-23T21:02:36"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760556087, "dur_ms": 45, "outcome": "ok", "exc": "", "where": "products/16/archive", "ts": "2026-10-23T21:02:36"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760556133, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:36"}
+{"event": "cell_already_equal", "table": "products", "row": 16, "field": "description", "ts": "2026-10-23T21:02:36"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760551515, "dur_ms": 4732, "outcome": "ok", "exc": "", "section": "products", "row": 16, "ts": "2026-10-23T21:02:36"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760556268, "dur_ms": 1289, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:02:37"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760557557, "dur_ms": 26, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:37"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760557671, "dur_ms": 1413, "outcome": "ok", "exc": "", "where": "products/17/archive", "ts": "2026-10-23T21:02:39"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760559240, "dur_ms": 1561, "outcome": "ok", "exc": "", "where": "products/17/archive", "ts": "2026-10-23T21:02:40"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760560801, "dur_ms": 106, "outcome": "ok", "exc": "", "where": "products/17/archive", "ts": "2026-10-23T21:02:40"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760560907, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T21:02:40"}
+{"event": "cell_already_equal", "table": "products", "row": 17, "field": "description", "ts": "2026-10-23T21:02:41"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760556247, "dur_ms": 4774, "outcome": "ok", "exc": "", "section": "products", "row": 17, "ts": "2026-10-23T21:02:41"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792760561055, "dur_ms": 122, "outcome": "ok", "exc": "", "name": "v1_products_after.png", "ts": "2026-10-23T21:02:41"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792760476084, "dur_ms": 85093, "outcome": "ok", "exc": "", "section": "products", "ts": "2026-10-23T21:02:41"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760561638, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:02:41"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760561700, "dur_ms": 1419, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-23T21:02:43"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760563119, "dur_ms": 13, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:02:43"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792760563221, "dur_ms": 1163, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "ts": "2026-10-23T21:02:44"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760564428, "dur_ms": 57, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "ts": "2026-10-23T21:02:44"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760563180, "dur_ms": 1338, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "ts": "2026-10-23T21:02:44"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760564576, "dur_ms": 801, "outcome": "ok", "exc": "", "where": "details/0/digest", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:02:45"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760565449, "dur_ms": 90, "outcome": "ok", "exc": "", "where": "details/0/digest", "how": "mounted_native", "ts": "2026-10-23T21:02:45"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760565975, "dur_ms": 39, "outcome": "ok", "exc": "", "where": "details/0/digest", "ts": "2026-10-23T21:02:46"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760564566, "dur_ms": 1465, "outcome": "ok", "exc": "", "where": "details/0/digest", "ts": "2026-10-23T21:02:46"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760566059, "dur_ms": 759, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:02:46"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760566865, "dur_ms": 1425, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-23T21:02:48"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760568332, "dur_ms": 1471, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-23T21:02:49"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760569803, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-23T21:02:49"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760569857, "dur_ms": 14, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:02:49"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760566047, "dur_ms": 3856, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-23T21:02:49"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760569931, "dur_ms": 859, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:02:50"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760570848, "dur_ms": 1420, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-23T21:02:52"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760572360, "dur_ms": 1421, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-23T21:02:53"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760573782, "dur_ms": 92, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-23T21:02:53"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760573874, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:02:53"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760569919, "dur_ms": 4013, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-23T21:02:53"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760573964, "dur_ms": 814, "outcome": "ok", "exc": "", "where": "details/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:02:54"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760574833, "dur_ms": 109, "outcome": "ok", "exc": "", "where": "details/0/cost", "how": "mounted_native", "ts": "2026-10-23T21:02:54"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760575367, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "details/0/cost", "ts": "2026-10-23T21:02:55"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760573952, "dur_ms": 1492, "outcome": "ok", "exc": "", "where": "details/0/cost", "ts": "2026-10-23T21:02:55"}
+{"event": "structured_row_written", "table": "details", "row": 0, "row_id": "replay-details-1", "ts": "2026-10-23T21:02:55"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760561638, "dur_ms": 13806, "outcome": "ok", "exc": "", "section": "details", "row": 0, "ts": "2026-10-23T21:02:55"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760575468, "dur_ms": 1345, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-23T21:02:56"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760576815, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:02:56"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792760576917, "dur_ms": 1157, "outcome": "ok", "exc": "", "where": "details/1/reimItem", "ts": "2026-10-23T21:02:58"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760578129, "dur_ms": 47, "outcome": "ok", "exc": "", "where": "details/1/reimItem", "ts": "2026-10-23T21:02:58"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760576868, "dur_ms": 1330, "outcome": "ok", "exc": "", "where": "details/1/reimItem", "ts": "2026-10-23T21:02:58"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760578232, "dur_ms": 764, "outcome": "ok", "exc": "", "where": "details/1/digest", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:02:58"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760579044, "dur_ms": 120, "outcome": "ok", "exc": "", "where": "details/1/digest", "how": "mounted_native", "ts": "2026-10-23T21:02:59"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760579600, "dur_ms": 45, "outcome": "ok", "exc": "", "where": "details/1/digest", "ts": "2026-10-23T21:02:59"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760578219, "dur_ms": 1448, "outcome": "ok", "exc": "", "where": "details/1/digest", "ts": "2026-10-23T21:02:59"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760579703, "dur_ms": 743, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:00"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760580519, "dur_ms": 1478, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-23T21:03:01"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760582034, "dur_ms": 1512, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-23T21:03:03"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760583547, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-23T21:03:03"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760583611, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:03:03"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760579687, "dur_ms": 3967, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-23T21:03:03"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760583682, "dur_ms": 849, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:04"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760584619, "dur_ms": 1398, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-23T21:03:06"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760586132, "dur_ms": 1448, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-23T21:03:07"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760587580, "dur_ms": 76, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-23T21:03:07"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760587656, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:03:07"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760583671, "dur_ms": 4041, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-23T21:03:07"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760587742, "dur_ms": 797, "outcome": "ok", "exc": "", "where": "details/1/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:08"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760588597, "dur_ms": 133, "outcome": "ok", "exc": "", "where": "details/1/cost", "how": "mounted_native", "ts": "2026-10-23T21:03:08"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760589167, "dur_ms": 43, "outcome": "ok", "exc": "", "where": "details/1/cost", "ts": "2026-10-23T21:03:09"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760587730, "dur_ms": 1501, "outcome": "ok", "exc": "", "where": "details/1/cost", "ts": "2026-10-23T21:03:09"}
+{"event": "structured_row_written", "table": "details", "row": 1, "row_id": "replay-details-2", "ts": "2026-10-23T21:03:09"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760575444, "dur_ms": 13794, "outcome": "ok", "exc": "", "section": "details", "row": 1, "ts": "2026-10-23T21:03:09"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760589267, "dur_ms": 1338, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-23T21:03:10"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760590606, "dur_ms": 24, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:03:10"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792760590705, "dur_ms": 1211, "outcome": "ok", "exc": "", "where": "details/2/reimItem", "ts": "2026-10-23T21:03:11"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760591972, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "details/2/reimItem", "ts": "2026-10-23T21:03:12"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760590671, "dur_ms": 1369, "outcome": "ok", "exc": "", "where": "details/2/reimItem", "ts": "2026-10-23T21:03:12"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760592071, "dur_ms": 776, "outcome": "ok", "exc": "", "where": "details/2/digest", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:12"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760592904, "dur_ms": 114, "outcome": "ok", "exc": "", "where": "details/2/digest", "how": "mounted_native", "ts": "2026-10-23T21:03:13"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760593456, "dur_ms": 69, "outcome": "ok", "exc": "", "where": "details/2/digest", "ts": "2026-10-23T21:03:13"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760592059, "dur_ms": 1484, "outcome": "ok", "exc": "", "where": "details/2/digest", "ts": "2026-10-23T21:03:13"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760593576, "dur_ms": 781, "outcome": "ok", "exc": "", "where": "details/2/budgetNo", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:14"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760594401, "dur_ms": 1459, "outcome": "ok", "exc": "", "where": "details/2/budgetNo", "ts": "2026-10-23T21:03:15"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760595887, "dur_ms": 1464, "outcome": "ok", "exc": "", "where": "details/2/budgetNo", "ts": "2026-10-23T21:03:17"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760597352, "dur_ms": 65, "outcome": "ok", "exc": "", "where": "details/2/budgetNo", "ts": "2026-10-23T21:03:17"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760597417, "dur_ms": 22, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:03:17"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760593563, "dur_ms": 3925, "outcome": "ok", "exc": "", "where": "details/2/budgetNo", "ts": "2026-10-23T21:03:17"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760597517, "dur_ms": 805, "outcome": "ok", "exc": "", "where": "details/2/subjectName", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:18"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760598367, "dur_ms": 1441, "outcome": "ok", "exc": "", "where": "details/2/subjectName", "ts": "2026-10-23T21:03:19"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760599938, "dur_ms": 1512, "outcome": "ok", "exc": "", "where": "details/2/subjectName", "ts": "2026-10-23T21:03:21"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760601451, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "details/2/subjectName", "ts": "2026-10-23T21:03:21"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760601515, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:03:21"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760597506, "dur_ms": 4067, "outcome": "ok", "exc": "", "where": "details/2/subjectName", "ts": "2026-10-23T21:03:21"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760601618, "dur_ms": 860, "outcome": "ok", "exc": "", "where": "details/2/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:22"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760602525, "dur_ms": 121, "outcome": "ok", "exc": "", "where": "details/2/cost", "how": "mounted_native", "ts": "2026-10-23T21:03:22"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760603092, "dur_ms": 45, "outcome": "ok", "exc": "", "where": "details/2/cost", "ts": "2026-10-23T21:03:23"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760601607, "dur_ms": 1550, "outcome": "ok", "exc": "", "where": "details/2/cost", "ts": "2026-10-23T21:03:23"}
+{"event": "structured_row_written", "table": "details", "row": 2, "row_id": "replay-details-3", "ts": "2026-10-23T21:03:23"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760589242, "dur_ms": 13916, "outcome": "ok", "exc": "", "section": "details", "row": 2, "ts": "2026-10-23T21:03:23"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760603182, "dur_ms": 1362, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-23T21:03:24"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760604545, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:03:24"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792760604645, "dur_ms": 1218, "outcome": "ok", "exc": "", "where": "details/3/reimItem", "ts": "2026-10-23T21:03:25"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760605924, "dur_ms": 117, "outcome": "ok", "exc": "", "where": "details/3/reimItem", "ts": "2026-10-23T21:03:26"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760604595, "dur_ms": 1478, "outcome": "ok", "exc": "", "where": "details/3/reimItem", "ts": "2026-10-23T21:03:26"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760606103, "dur_ms": 784, "outcome": "ok", "exc": "", "where": "details/3/digest", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:26"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760606956, "dur_ms": 108, "outcome": "ok", "exc": "", "where": "details/3/digest", "how": "mounted_native", "ts": "2026-10-23T21:03:27"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760607505, "dur_ms": 40, "outcome": "ok", "exc": "", "where": "details/3/digest", "ts": "2026-10-23T21:03:27"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760606091, "dur_ms": 1473, "outcome": "ok", "exc": "", "where": "details/3/digest", "ts": "2026-10-23T21:03:27"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760607600, "dur_ms": 791, "outcome": "ok", "exc": "", "where": "details/3/budgetNo", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:28"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760608465, "dur_ms": 1431, "outcome": "ok", "exc": "", "where": "details/3/budgetNo", "ts": "2026-10-23T21:03:29"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760609925, "dur_ms": 1469, "outcome": "ok", "exc": "", "where": "details/3/budgetNo", "ts": "2026-10-23T21:03:31"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760611395, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "details/3/budgetNo", "ts": "2026-10-23T21:03:31"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760611445, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:03:31"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760607582, "dur_ms": 3908, "outcome": "ok", "exc": "", "where": "details/3/budgetNo", "ts": "2026-10-23T21:03:31"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760611538, "dur_ms": 838, "outcome": "ok", "exc": "", "where": "details/3/subjectName", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:32"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760612426, "dur_ms": 1378, "outcome": "ok", "exc": "", "where": "details/3/subjectName", "ts": "2026-10-23T21:03:33"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760613906, "dur_ms": 1452, "outcome": "ok", "exc": "", "where": "details/3/subjectName", "ts": "2026-10-23T21:03:35"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760615358, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "details/3/subjectName", "ts": "2026-10-23T21:03:35"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760615411, "dur_ms": 15, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-23T21:03:35"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760611525, "dur_ms": 3939, "outcome": "ok", "exc": "", "where": "details/3/subjectName", "ts": "2026-10-23T21:03:35"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760615496, "dur_ms": 831, "outcome": "ok", "exc": "", "where": "details/3/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:36"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760616372, "dur_ms": 93, "outcome": "ok", "exc": "", "where": "details/3/cost", "how": "mounted_native", "ts": "2026-10-23T21:03:36"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760616892, "dur_ms": 62, "outcome": "ok", "exc": "", "where": "details/3/cost", "ts": "2026-10-23T21:03:36"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760615482, "dur_ms": 1505, "outcome": "ok", "exc": "", "where": "details/3/cost", "ts": "2026-10-23T21:03:36"}
+{"event": "structured_row_written", "table": "details", "row": 3, "row_id": "replay-details-4", "ts": "2026-10-23T21:03:36"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760603158, "dur_ms": 13829, "outcome": "ok", "exc": "", "section": "details", "row": 3, "ts": "2026-10-23T21:03:36"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792760617016, "dur_ms": 103, "outcome": "ok", "exc": "", "name": "v1_details_after.png", "ts": "2026-10-23T21:03:37"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792760561638, "dur_ms": 55482, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-23T21:03:37"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760617492, "dur_ms": 15, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T21:03:37"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760617556, "dur_ms": 787, "outcome": "ok", "exc": "", "where": "banks/0/payee", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:38"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760618390, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "banks/0/payee", "how": "mounted_native", "ts": "2026-10-23T21:03:38"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760618895, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "banks/0/payee", "ts": "2026-10-23T21:03:38"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760617547, "dur_ms": 1417, "outcome": "ok", "exc": "", "where": "banks/0/payee", "ts": "2026-10-23T21:03:38"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760618990, "dur_ms": 766, "outcome": "ok", "exc": "", "where": "banks/0/account", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:39"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760619786, "dur_ms": 92, "outcome": "ok", "exc": "", "where": "banks/0/account", "how": "mounted_native", "ts": "2026-10-23T21:03:39"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760620306, "dur_ms": 38, "outcome": "ok", "exc": "", "where": "banks/0/account", "ts": "2026-10-23T21:03:40"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760618980, "dur_ms": 1379, "outcome": "ok", "exc": "", "where": "banks/0/account", "ts": "2026-10-23T21:03:40"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760620393, "dur_ms": 1304, "outcome": "ok", "exc": "", "where": "banks/0/branch", "ts": "2026-10-23T21:03:41"}
+{"event": "timing", "action": "picker_query", "t0_ms": 1792760621713, "dur_ms": 1605, "outcome": "ok", "exc": "", "where": "banks/0/branch", "ts": "2026-10-23T21:03:43"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760623353, "dur_ms": 1478, "outcome": "ok", "exc": "", "where": "banks/0/branch", "ts": "2026-10-23T21:03:44"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760624831, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T21:03:44"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760624908, "dur_ms": 749, "outcome": "ok", "exc": "", "where": "banks/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:45"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760625696, "dur_ms": 110, "outcome": "ok", "exc": "", "where": "banks/0/cost", "how": "mounted_native", "ts": "2026-10-23T21:03:45"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760626260, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "banks/0/cost", "ts": "2026-10-23T21:03:46"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760624898, "dur_ms": 1431, "outcome": "ok", "exc": "", "where": "banks/0/cost", "ts": "2026-10-23T21:03:46"}
+{"event": "structured_row_written", "table": "banks", "row": 0, "row_id": "replay-banks-1", "ts": "2026-10-23T21:03:46"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760617492, "dur_ms": 8837, "outcome": "ok", "exc": "", "section": "banks", "row": 0, "ts": "2026-10-23T21:03:46"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760626350, "dur_ms": 1312, "outcome": "ok", "exc": "", "section": "banks", "ts": "2026-10-23T21:03:47"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760627662, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T21:03:47"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760627763, "dur_ms": 91, "outcome": "ok", "exc": "", "where": "banks/1/payee", "how": "mounted_native", "ts": "2026-10-23T21:03:47"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760628280, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "banks/1/payee", "ts": "2026-10-23T21:03:48"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760627721, "dur_ms": 627, "outcome": "ok", "exc": "", "where": "banks/1/payee", "ts": "2026-10-23T21:03:48"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760628372, "dur_ms": 810, "outcome": "ok", "exc": "", "where": "banks/1/account", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:49"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760629235, "dur_ms": 110, "outcome": "ok", "exc": "", "where": "banks/1/account", "how": "mounted_native", "ts": "2026-10-23T21:03:49"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760629777, "dur_ms": 39, "outcome": "ok", "exc": "", "where": "banks/1/account", "ts": "2026-10-23T21:03:49"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760628362, "dur_ms": 1470, "outcome": "ok", "exc": "", "where": "banks/1/account", "ts": "2026-10-23T21:03:49"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760629849, "dur_ms": 1334, "outcome": "ok", "exc": "", "where": "banks/1/branch", "ts": "2026-10-23T21:03:51"}
+{"event": "timing", "action": "picker_query", "t0_ms": 1792760631205, "dur_ms": 1620, "outcome": "ok", "exc": "", "where": "banks/1/branch", "ts": "2026-10-23T21:03:52"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760632851, "dur_ms": 1463, "outcome": "ok", "exc": "", "where": "banks/1/branch", "ts": "2026-10-23T21:03:54"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760634314, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T21:03:54"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760634412, "dur_ms": 807, "outcome": "ok", "exc": "", "where": "banks/1/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:55"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760635282, "dur_ms": 93, "outcome": "ok", "exc": "", "where": "banks/1/cost", "how": "mounted_native", "ts": "2026-10-23T21:03:55"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760635804, "dur_ms": 40, "outcome": "ok", "exc": "", "where": "banks/1/cost", "ts": "2026-10-23T21:03:55"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760634402, "dur_ms": 1460, "outcome": "ok", "exc": "", "where": "banks/1/cost", "ts": "2026-10-23T21:03:55"}
+{"event": "structured_row_written", "table": "banks", "row": 1, "row_id": "replay-banks-2", "ts": "2026-10-23T21:03:55"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760626330, "dur_ms": 9533, "outcome": "ok", "exc": "", "section": "banks", "row": 1, "ts": "2026-10-23T21:03:55"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760635884, "dur_ms": 1384, "outcome": "ok", "exc": "", "section": "banks", "ts": "2026-10-23T21:03:57"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760637269, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T21:03:57"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760637356, "dur_ms": 114, "outcome": "ok", "exc": "", "where": "banks/2/payee", "how": "mounted_native", "ts": "2026-10-23T21:03:57"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760637909, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "banks/2/payee", "ts": "2026-10-23T21:03:57"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760637313, "dur_ms": 664, "outcome": "ok", "exc": "", "where": "banks/2/payee", "ts": "2026-10-23T21:03:57"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760638002, "dur_ms": 798, "outcome": "ok", "exc": "", "where": "banks/2/account", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:03:58"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760638831, "dur_ms": 91, "outcome": "ok", "exc": "", "where": "banks/2/account", "how": "mounted_native", "ts": "2026-10-23T21:03:58"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760639373, "dur_ms": 40, "outcome": "ok", "exc": "", "where": "banks/2/account", "ts": "2026-10-23T21:03:59"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760637993, "dur_ms": 1436, "outcome": "ok", "exc": "", "where": "banks/2/account", "ts": "2026-10-23T21:03:59"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760639449, "dur_ms": 1321, "outcome": "ok", "exc": "", "where": "banks/2/branch", "ts": "2026-10-23T21:04:00"}
+{"event": "timing", "action": "picker_query", "t0_ms": 1792760640791, "dur_ms": 1594, "outcome": "ok", "exc": "", "where": "banks/2/branch", "ts": "2026-10-23T21:04:02"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760642396, "dur_ms": 1523, "outcome": "ok", "exc": "", "where": "banks/2/branch", "ts": "2026-10-23T21:04:03"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760643919, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T21:04:03"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760644022, "dur_ms": 817, "outcome": "ok", "exc": "", "where": "banks/2/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:04:04"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760644878, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "banks/2/cost", "how": "mounted_native", "ts": "2026-10-23T21:04:04"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760645408, "dur_ms": 40, "outcome": "ok", "exc": "", "where": "banks/2/cost", "ts": "2026-10-23T21:04:05"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760644013, "dur_ms": 1452, "outcome": "ok", "exc": "", "where": "banks/2/cost", "ts": "2026-10-23T21:04:05"}
+{"event": "structured_row_written", "table": "banks", "row": 2, "row_id": "replay-banks-3", "ts": "2026-10-23T21:04:05"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760635863, "dur_ms": 9602, "outcome": "ok", "exc": "", "section": "banks", "row": 2, "ts": "2026-10-23T21:04:05"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792760645486, "dur_ms": 1315, "outcome": "ok", "exc": "", "section": "banks", "ts": "2026-10-23T21:04:06"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760646803, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T21:04:06"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760646888, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "banks/3/payee", "how": "mounted_native", "ts": "2026-10-23T21:04:06"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760647400, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "banks/3/payee", "ts": "2026-10-23T21:04:07"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760646846, "dur_ms": 621, "outcome": "ok", "exc": "", "where": "banks/3/payee", "ts": "2026-10-23T21:04:07"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760647491, "dur_ms": 755, "outcome": "ok", "exc": "", "where": "banks/3/account", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:04:08"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760648283, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "banks/3/account", "how": "mounted_native", "ts": "2026-10-23T21:04:08"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760648806, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "banks/3/account", "ts": "2026-10-23T21:04:08"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760647481, "dur_ms": 1396, "outcome": "ok", "exc": "", "where": "banks/3/account", "ts": "2026-10-23T21:04:08"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792760648896, "dur_ms": 1331, "outcome": "ok", "exc": "", "where": "banks/3/branch", "ts": "2026-10-23T21:04:10"}
+{"event": "timing", "action": "picker_query", "t0_ms": 1792760650263, "dur_ms": 1611, "outcome": "ok", "exc": "", "where": "banks/3/branch", "ts": "2026-10-23T21:04:11"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792760651886, "dur_ms": 1509, "outcome": "ok", "exc": "", "where": "banks/3/branch", "ts": "2026-10-23T21:04:13"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792760653395, "dur_ms": 53, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-23T21:04:13"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792760653519, "dur_ms": 754, "outcome": "ok", "exc": "", "where": "banks/3/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-23T21:04:14"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792760654328, "dur_ms": 110, "outcome": "ok", "exc": "", "where": "banks/3/cost", "how": "mounted_native", "ts": "2026-10-23T21:04:14"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792760654876, "dur_ms": 69, "outcome": "ok", "exc": "", "where": "banks/3/cost", "ts": "2026-10-23T21:04:14"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792760653509, "dur_ms": 1452, "outcome": "ok", "exc": "", "where": "banks/3/cost", "ts": "2026-10-23T21:04:14"}
+{"event": "structured_row_written", "table": "banks", "row": 3, "row_id": "replay-banks-4", "ts": "2026-10-23T21:04:14"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792760645465, "dur_ms": 9496, "outcome": "ok", "exc": "", "section": "banks", "row": 3, "ts": "2026-10-23T21:04:14"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792760655004, "dur_ms": 130, "outcome": "ok", "exc": "", "name": "v1_banks_after.png", "ts": "2026-10-23T21:04:15"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792760617492, "dur_ms": 37644, "outcome": "ok", "exc": "", "section": "banks", "ts": "2026-10-23T21:04:15"}
+{"event": "timing", "action": "independent_readback_verify", "t0_ms": 1792760655983, "dur_ms": 602, "outcome": "ok", "exc": "", "ts": "2026-10-23T21:04:16"}
+{"event": "READBACK_END", "epoch_ms": 1792760656586, "ok": true, "ts": "2026-10-23T21:04:16"}
+{"event": "ui_execution_metrics", "network": {"requests": 278, "failed": 1}, "model_control_interventions": 0, "external_cell_commands": 0, "definitions": "continuous executor; model calls and external read-only diagnostic shell commands are not automatically measured", "ts": "2026-10-23T21:04:16"}
+{"event": "timing", "action": "ui_execution", "t0_ms": 1792760463459, "dur_ms": 193128, "outcome": "ok", "exc": "", "ts": "2026-10-23T21:04:16"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792760656590, "dur_ms": 117, "outcome": "ok", "exc": "", "name": "v1_final.png", "ts": "2026-10-23T21:04:16"}
+{"event": "probe_end", "reason": "SUCCESS_FILL_ONLY", "tech_used_s": 197.3, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-23T21:04:16"}
+{"event": "own_test_page_close", "unsaved": true, "save_attempted": false, "ts": "2026-10-23T21:04:16"}

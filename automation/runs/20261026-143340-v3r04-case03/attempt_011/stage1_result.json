@@ -1,0 +1,325 @@
+{
+ "probe_version": "v2",
+ "run": "20261026-143340-v3r04-case03",
+ "attempt": "attempt_011",
+ "doc_id": null,
+ "expect_name": "陈晶",
+ "checks": {
+  "c1_entry_login": {
+   "status": "PASS",
+   "reason": "域名内页+账户名命中+导航成立（顶栏无显式退出钮，按放宽判据放行）",
+   "evidence": [
+    "attempt_011/evidence/entry.png"
+   ]
+  },
+  "c2_locate_target": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "NOT_RUN",
+   "reason": "未启用 --fill-plan（只读任务不新建/不填写）",
+   "evidence": []
+  }
+ },
+ "phases": {},
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 2592,
+  "classify": "LOGGED_IN",
+  "markers": {
+   "url": "https://bpm.qiaodan.com/oa/home",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 29,
+   "forms": 0,
+   "name_hits": 1,
+   "logout_hits": 0
+  },
+  "cookies_names": [
+   "ww_lang",
+   "wwopen.open.sid"
+  ],
+  "screenshot": "attempt_011/evidence/entry.png",
+  "html": "attempt_011/evidence/entry.html"
+ },
+ "case03_details_3d": {
+  "stage": "3d dual-channel details (observed GET + observed view route)",
+  "invalid_prior_evidence": {
+   "attempt": "attempt_010",
+   "files": "api-fallback-*.json",
+   "cause": "uuid substitution regex [0-9a-fA-F-]{36} never matched the real 32-hex-no-dash uuid; all 12 requests hit 3f260a65f3b748308e88e353ead9e9dc"
+  },
+  "docs": [
+   {
+    "bizNumber": "12025044500",
+    "uuid": "af88230a5c1f4bb69e0e586844a88029",
+    "appliedAt": "2025-04-22",
+    "bizStatus": 4,
+    "reimed": 2,
+    "api_file": "api-detail-12025044500.json",
+    "api_sha256": "10801e28839e525a573a0aa878c56247458f4b00ce93a53b5ffc1f84a7659f26",
+    "api_trip_rows": 4,
+    "ui_text_evidence": "detail3d-12025044500-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025044500.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/af88230a5c1f4bb69e0e586844a88029"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025073893",
+    "uuid": "3f260a65f3b748308e88e353ead9e9dc",
+    "appliedAt": "2025-07-16",
+    "bizStatus": 4,
+    "reimed": 2,
+    "api_file": "api-detail-12025073893.json",
+    "api_sha256": "1f398017dd5dd5d7cb5d1357583458aa7d324bb7fcbe1d5587d114ad1e641677",
+    "api_trip_rows": 2,
+    "ui_text_evidence": "detail3d-12025073893-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025073893.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/3f260a65f3b748308e88e353ead9e9dc"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025084223",
+    "uuid": "f051b11d8cb14b5c8f4bbe243bc77935",
+    "appliedAt": "2025-08-20",
+    "bizStatus": 4,
+    "reimed": 2,
+    "api_file": "api-detail-12025084223.json",
+    "api_sha256": "5e29c7d6ac9e637d1726c88507381c14dfce72c73fd0c6ae0ac1f1f3a45165a2",
+    "api_trip_rows": 2,
+    "ui_text_evidence": "detail3d-12025084223-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025084223.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/f051b11d8cb14b5c8f4bbe243bc77935"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025084529",
+    "uuid": "543f20fd3b2e4052ad1e462dab4e6b2f",
+    "appliedAt": "2025-08-22",
+    "bizStatus": 5,
+    "reimed": 0,
+    "api_file": "api-detail-12025084529.json",
+    "api_sha256": "52a861eee4d2c076877194554f09af29eff97feefbcf08f5fd3713f510cb532c",
+    "api_trip_rows": 1,
+    "ui_text_evidence": "detail3d-12025084529-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025084529.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/543f20fd3b2e4052ad1e462dab4e6b2f"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025085485",
+    "uuid": "f394a1f2624248878bbd16a1f824d0e5",
+    "appliedAt": "2025-08-26",
+    "bizStatus": 4,
+    "reimed": 0,
+    "api_file": "api-detail-12025085485.json",
+    "api_sha256": "f310017aad348aa0117c427a90bed753b3d10b90ae43028fbc0fe3560591cd92",
+    "api_trip_rows": 1,
+    "ui_text_evidence": "detail3d-12025085485-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025085485.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/f394a1f2624248878bbd16a1f824d0e5"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025092237",
+    "uuid": "5acc75eccb2d4f549014162f3d72a80e",
+    "appliedAt": "2025-09-09",
+    "bizStatus": 4,
+    "reimed": 0,
+    "api_file": "api-detail-12025092237.json",
+    "api_sha256": "795493a1b65fbcdbc020248628dd8d6d03aa3b40afbe627dcc33328ddf727a46",
+    "api_trip_rows": 1,
+    "ui_text_evidence": "detail3d-12025092237-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025092237.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/5acc75eccb2d4f549014162f3d72a80e"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025103469",
+    "uuid": "8c706ecc41264bca9a3882495ac1722c",
+    "appliedAt": "2025-10-20",
+    "bizStatus": 4,
+    "reimed": 2,
+    "api_file": "api-detail-12025103469.json",
+    "api_sha256": "19183a551b8ea5fb5b6d89c456d8a9a3e0a4bb5a7cfb80c36d4b3eb92b90f77f",
+    "api_trip_rows": 2,
+    "ui_text_evidence": "detail3d-12025103469-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025103469.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/8c706ecc41264bca9a3882495ac1722c"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025105858",
+    "uuid": "a27112a0a3b04532a4a091e22a92fd79",
+    "appliedAt": "2025-10-29",
+    "bizStatus": 4,
+    "reimed": 2,
+    "api_file": "api-detail-12025105858.json",
+    "api_sha256": "35274ffe8835ac69f600b3537987bb26c8975e74701360452354812ae64500a2",
+    "api_trip_rows": 2,
+    "ui_text_evidence": "detail3d-12025105858-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025105858.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/a27112a0a3b04532a4a091e22a92fd79"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025115547",
+    "uuid": "2d838495fe804231b7f7340f54dea597",
+    "appliedAt": "2025-11-25",
+    "bizStatus": 4,
+    "reimed": 0,
+    "api_file": "api-detail-12025115547.json",
+    "api_sha256": "32ebeceedd7050eaabbb5537dc3f08a54124cfa28d1788178db182e53a8e270e",
+    "api_trip_rows": 1,
+    "ui_text_evidence": "detail3d-12025115547-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025115547.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/2d838495fe804231b7f7340f54dea597"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025121473",
+    "uuid": "8fea90753f92415b9ff14c0d260dba65",
+    "appliedAt": "2025-12-05",
+    "bizStatus": 4,
+    "reimed": 0,
+    "api_file": "api-detail-12025121473.json",
+    "api_sha256": "e4327b88b05cc2f31c312ed099fa1ac7fb19dd56ddf2223af52968fa2392cbfa",
+    "api_trip_rows": 1,
+    "ui_text_evidence": "detail3d-12025121473-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025121473.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/8fea90753f92415b9ff14c0d260dba65"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12025127761",
+    "uuid": "d91a5345107049bc9bd36580bb64af7f",
+    "appliedAt": "2025-12-29",
+    "bizStatus": 4,
+    "reimed": 0,
+    "api_file": "api-detail-12025127761.json",
+    "api_sha256": "5f9f187a54294cff43482c54717cc53f431e66288cd7486c75cf24d0b52bd888",
+    "api_trip_rows": 1,
+    "ui_text_evidence": "detail3d-12025127761-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12025127761.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/d91a5345107049bc9bd36580bb64af7f"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12026075605",
+    "uuid": "5527f9e0517e4bcfa3aa3bb7fc01321a",
+    "appliedAt": "2026-07-24",
+    "bizStatus": 4,
+    "reimed": 0,
+    "api_file": "api-detail-12026075605.json",
+    "api_sha256": "729dcfe78ae13e061d90cc9b7a14be74fc196780cd39180a38fd57a4014d9b28",
+    "api_trip_rows": 1,
+    "ui_text_evidence": "detail3d-12026075605-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12026075605.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/5527f9e0517e4bcfa3aa3bb7fc01321a"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   },
+   {
+    "bizNumber": "12026096668",
+    "uuid": "ee5483774f3540b78a66ead6d30f22ae",
+    "appliedAt": "2026-09-23",
+    "bizStatus": 4,
+    "reimed": 2,
+    "api_file": "api-detail-12026096668.json",
+    "api_sha256": "19178ae7da523379c5fa8fc0fac840c068bffa3feebeaf1993993c2f73d06cae",
+    "api_trip_rows": 2,
+    "ui_text_evidence": "detail3d-12026096668-text.txt",
+    "ui_screenshot": "attempt_011/evidence/detail3d-12026096668.png",
+    "ui_api_paths": [
+     "/KindlyTips/query",
+     "/WorkOut/ee5483774f3540b78a66ead6d30f22ae"
+    ],
+    "ui_api_hit": true,
+    "status": "CAPTURED"
+   }
+  ],
+  "summary": {
+   "captured": 13,
+   "api_only": 0,
+   "failed": 0,
+   "total": 13
+  }
+ },
+ "finish_reason": "DETAILS_CAPTURED",
+ "tech_used_s": 57.6,
+ "login_wait_s": 0.0,
+ "wall_s": 58.9,
+ "budget_respected": true
+}

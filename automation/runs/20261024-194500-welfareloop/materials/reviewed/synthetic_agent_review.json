@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "kind": "agent_extraction_review",
+  "reviewer": "round9-B-agent",
+  "material_sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1",
+  "material_kind": "synthetic_offline_chain_fixture",
+  "synthetic_disclosure": "合成材料明示测试用；值证据在材料 value_evidence；不入业务 manifest",
+  "extracted": {
+    "applicant": {
+      "name": "/applicant/name",
+      "company": "/applicant/company",
+      "department": "/applicant/department"
+    },
+    "header": {
+      "corpCode": "/header/corpCode",
+      "bizOrign": "/header/bizOrign",
+      "budgetYears": "/header/budgetYears",
+      "payType": "/header/payType",
+      "currencyType": "/header/currencyType",
+      "submitType": "/header/submitType",
+      "description": "/header/description",
+      "totalCost": "/header/totalCost"
+    },
+    "tables": {
+      "relations": [],
+      "details": [
+        "/tables/details/0/fields/reimItem",
+        "/tables/details/0/fields/digest",
+        "/tables/details/0/fields/budgetDeptName",
+        "/tables/details/0/fields/budgetNo",
+        "/tables/details/0/fields/subjectName",
+        "/tables/details/0/fields/budgetItemName",
+        "/tables/details/0/fields/budgetOwner",
+        "/tables/details/0/fields/cost"
+      ],
+      "costs": [],
+      "banks": [
+        "/tables/banks/0/fields/payee",
+        "/tables/banks/0/fields/account",
+        "/tables/banks/0/fields/bank",
+        "/tables/banks/0/fields/bankCode",
+        "/tables/banks/0/fields/cost"
+      ]
+    },
+    "table_applicability": [
+      "/table_applicability/relations/reason",
+      "/table_applicability/costs/reason"
+    ]
+  },
+  "mechanical_crosscheck": {
+    "details_sum": "2345.67",
+    "banks_sum": "2345.67",
+    "header_totalCost": "2345.67",
+    "closure": "三方闭合（details=banks=totalCost；costs 空表）"
+  },
+  "review_notes": [
+    "模板快照为研究 raw 派生（uuid/biz_number/fetched_at 原值，header.submitType 保留实测码 02）。",
+    "plan 级 relations 保持空（裁决①：bpm_plan 非 travel 非空 relations 拒绝维持）。",
+    "文档级 invoice：config invoice_policy=document_level（声明级通道，裁决②）；生成器现行免票机制仍为行级 no_invoice 基础事实。"
+  ]
+}

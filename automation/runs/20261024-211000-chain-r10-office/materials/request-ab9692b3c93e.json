@@ -1,0 +1,10 @@
+{
+  "relation_refs": [],
+  "materials_dir": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\originals",
+  "statement": "低值易耗品、办公用品采购报销链复跑（bpm_chain round-10）：明细 1 行、结算 1 行、收款 3 行，合计 1234.56；validate-only 只填不存。",
+  "template_biz_number": "15426101596",
+  "declared_category": "低值易耗品、办公用品采购",
+  "schema_version": "1.0",
+  "source_semantics": "user_instruction",
+  "registered_at": "2026-10-24T12:55:15.150077+00:00"
+}

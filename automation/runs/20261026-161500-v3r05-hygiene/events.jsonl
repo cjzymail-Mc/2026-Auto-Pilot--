@@ -1,0 +1,19 @@
+{"ts": "2026-10-26T16:13:24+08:00", "event": "hygiene_start", "targets": ["wide-query-manifest.json", "candidates3e-manifest.json", "actual_trip_matches.json", "final-artifact-hashes.json", "CASE-03-report.md"]}
+{"ts": "2026-10-26T16:13:24+08:00", "event": "o1_done", "pages": 5}
+{"ts": "2026-10-26T16:13:24+08:00", "event": "o2_done"}
+{"ts": "2026-10-26T16:13:24+08:00", "event": "o3_done", "patched": 12}
+{"ts": "2026-10-26T16:13:24+08:00", "event": "report_applicant_column_added", "rows": 5}
+{"ts": "2026-10-26T16:15:09+08:00", "event": "hygiene_start", "targets": ["wide-query-manifest.json", "candidates3e-manifest.json", "actual_trip_matches.json", "final-artifact-hashes.json", "CASE-03-report.md"], "before_source": "round-4 handoff-input.json"}
+{"ts": "2026-10-26T16:15:09+08:00", "event": "o1_done", "pages": 5}
+{"ts": "2026-10-26T16:15:09+08:00", "event": "o2_done"}
+{"ts": "2026-10-26T16:15:09+08:00", "event": "o3_done", "patched": 12}
+{"ts": "2026-10-26T16:15:09+08:00", "event": "report_applicant_column_skipped", "reason": "already patched"}
+{"ts": "2026-10-26T16:15:09+08:00", "event": "originals_drift_check", "files": 73, "drift": []}
+{"ts": "2026-10-26T16:15:09+08:00", "event": "hygiene_artifacts_done", "changed": ["wide-query-manifest.json", "candidates3e-manifest.json", "actual_trip_matches.json", "final-artifact-hashes.json", "CASE-03-report.md"]}
+{"event": "repo_reference_added", "file": ".claude/skills/bpm-fill-run/references/evidence-hash-semantics.md", "purpose": "O1 根因防复发 + O2 双日期口径 + DOM 文本噪声未来口径", "ts": "2026-10-26T16:20:03+08:00"}
+{"event": "repo_test_docstring_fixed", "file": "tests/test_bpm_round10_sync.py", "basis": "progress.json errata[0]（多票断言实际在 test_bpm_extraction D18MatrixTests）", "ts": "2026-10-26T16:20:03+08:00"}
+{"event": "repo_build_pattern_widened", "file": "verify_bpm_build.py", "change": "test_bpm_*.py -> test_*.py", "effect": "capability 299->308 与全量 discover 等价", "ts": "2026-10-26T16:20:03+08:00"}
+{"event": "offline_verify", "run": "materials-v3r05-20261026-162500", "status": "OFFLINE_PASS", "selftest": "exit 0 / 4.4s", "capability": "308 tests / exit 0 / 118.3s", "ts": "2026-10-26T16:20:03+08:00"}
+{"event": "schema_baseline_established", "baseline": "fill-plan.schema.json.v3r05-baseline.bak", "sha256": "ba7b065f9b6696333d72adff31e6d5c87f218c3a938d474e1232343c6ca94fd9", "location": "automation/offline-verify/materials-v3r05-20261026-162500/", "ts": "2026-10-26T16:20:03+08:00"}
+{"ts": "2026-10-26T16:28:09+08:00", "event": "enhanced_final_audit_rate_limited", "error": "API 429 usage limit reached for 5 hour, reset 2026-10-26T18:44:07+08:00", "partial_progress": "修复脚本/events 自洽已核（子代理中断前结论）", "plan": "重置点后恢复同一 mc-expert 审计（上下文保留），不跳过不自审"}
+{"ts": "2026-10-26T17:08:08+08:00", "event": "enhanced_final_resumed_and_passed", "note": "429 截断后 16:49 恢复同一审计代理，18:07 完成；七项清单+八审计面全 PASS，VERDICT=GO，HASH_VALIDITY=VALID，UNVERIFIED_SCOPE=NONE", "findings": "P2-1 终态哈希随 finish 绑定（本事件后 events.jsonl 为终态）；P2-2 后续轮内联 before/after；P2-3 备忘 A 档口径含混不回改"}

@@ -1,0 +1,77 @@
+"""从 office 驱动派生 welfare 驱动（round-9；一次性转换脚本，留档可复跑）。"""
+from pathlib import Path
+
+src = Path("automation/runs/20261024-193500-officeloop/chain_driver.py").read_text(encoding="utf-8")
+d = src
+pairs = [
+    ('"""Round-9 officeloop：02 office_supplies 离线链首件（config→注册→合成材料→validate-only）。',
+     '"""Round-9 welfareloop：04 welfare_labor 离线链首件（config→注册→合成材料→validate-only）。'),
+    ('original = RUN / "originals/synthetic_office_r9.json"',
+     'original = RUN / "originals/synthetic_welfare_r9.json"'),
+    ('locator = "originals/synthetic_office_r9.json#{0}"',
+     'locator = "originals/synthetic_welfare_r9.json#{0}"'),
+    ('bindings={"originals/synthetic_office_r9.json": material_sha}',
+     'bindings={"originals/synthetic_welfare_r9.json": material_sha}'),
+    ('hashes = {"originals/synthetic_office_r9.json": material_sha}',
+     'hashes = {"originals/synthetic_welfare_r9.json": material_sha}'),
+    ('TEMPLATE_NUMBER = "15426101596"', 'TEMPLATE_NUMBER = "15426071883"'),
+    ('TASK_ID = "20261024-r9-officeloop-15426101596"', 'TASK_ID = "20261024-r9-welfareloop-15426071883"'),
+    ('for name in ("fill_plan_r9.json", "execution_ready.json"):',
+     'for name in ("fill_plan_r9.json", "execution_ready.json"):'),
+    ('check_template_type(snapshot, "office_supplies")', 'check_template_type(snapshot, "welfare_labor")'),
+    ('resolve_type("office_supplies")', 'resolve_type("welfare_labor")'),
+    ('template_basis="研究 raw 只读派生快照 raw_15426101596（uuid/biz_number 原值）"',
+     'template_basis="研究 raw 只读派生快照 raw_15426071883（uuid/biz_number 原值）"'),
+    ('generated_by="round9-officeloop/', 'generated_by="round9-welfareloop/'),
+    ('"statement": "低值易耗品、办公用品采购报销（合成离线链验证）：1 行明细+1 行费用说明+"\n                     "三名收款人分摊，合计 1234.56；synthetic/test_only，不填真实页面。",\n        "declared_category": "低值易耗品、办公用品采购",',
+     '"statement": "福利费、劳保用品报销（合成离线链验证）：1 行明细（跨部门预算）+费用说明空+"\n                     "单收款人，合计 2345.67；synthetic/test_only，不填真实页面。",\n        "declared_category": "福利费、劳保用品",'),
+    ('    details, costs, banks = (material["tables"][k] for k in ("details", "costs", "banks"))\n    detail_sum = sum((Decimal(r["fields"]["cost"]) for r in details), Decimal("0"))\n    cost_sum = sum((Decimal(r["fields"]["cost"]) for r in costs), Decimal("0"))\n    bank_sum = sum((Decimal(r["fields"]["cost"]) for r in banks), Decimal("0"))\n    total = Decimal(material["header"]["totalCost"])\n    assert detail_sum == cost_sum == bank_sum == total, (detail_sum, cost_sum, bank_sum, total)',
+     '    details, banks = material["tables"]["details"], material["tables"]["banks"]\n    detail_sum = sum((Decimal(r["fields"]["cost"]) for r in details), Decimal("0"))\n    bank_sum = sum((Decimal(r["fields"]["cost"]) for r in banks), Decimal("0"))\n    total = Decimal(material["header"]["totalCost"])\n    assert detail_sum == bank_sum == total, (detail_sum, bank_sum, total)'),
+    ('"mechanical_crosscheck": {\n            "details_sum": str(detail_sum), "costs_sum": str(cost_sum), "banks_sum": str(bank_sum),\n            "header_totalCost": str(total), "closure": "四向闭合（details=costs=banks=totalCost）",\n        },',
+     '"mechanical_crosscheck": {\n            "details_sum": str(detail_sum), "banks_sum": str(bank_sum),\n            "header_totalCost": str(total), "closure": "三方闭合（details=banks=totalCost；costs 空表）",\n        },'),
+    ('"table_applicability": ["/table_applicability/relations/reason"],',
+     '"table_applicability": ["/table_applicability/relations/reason",\n                                        "/table_applicability/costs/reason"],'),
+    ('"单头显示值（转账/人民币/低值易耗品、办公用品采购）"',
+     '"单头显示值（转账/人民币/福利费、劳保用品）"'),
+    ('derivation="details 1 行 cost 求和；与 costs 1 行/banks 3 行及合成 totalCost 四方闭合"',
+     'derivation="details 1 行 cost 求和；与 banks 1 行及合成 totalCost 三方闭合（costs 空表 not_applicable）"'),
+    ('    f_costs = [facts.add_expense(r["fields"]["cost"], source="material_extraction",\n                                 layer="detail", category=r["fields"]["project"],\n                                 date=r["fields"]["startDate"],\n                                 value_extra={k: r["fields"][k] for k in\n                                              ("project", "startDate", "endDate", "projectPlace",\n                                               "count", "reason")},\n                                 locator=locator.format("/tables/costs/{0}".format(i)),\n                                 input_hashes=hashes)\n               for i, r in enumerate(costs)]',
+     '    f_costs = []  # 04 类 costs 空表（材料 table_applicability.costs.reason）'),
+    ('    f_ta_relations = facts.add("scope", source="user_instruction",\n                               value={"reason": material["table_applicability"]["relations"]["reason"]},\n                               locator=locator.format("/table_applicability/relations/reason"),\n                               note="空关联表当次来源理由（合成材料原文；裁决①）")',
+     '    f_ta_relations = facts.add("scope", source="user_instruction",\n                               value={"reason": material["table_applicability"]["relations"]["reason"]},\n                               locator=locator.format("/table_applicability/relations/reason"),\n                               note="空关联表当次来源理由（合成材料原文；裁决①）")\n    f_ta_costs = facts.add("scope", source="user_instruction",\n                           value={"reason": material["table_applicability"]["costs"]["reason"]},\n                           locator=locator.format("/table_applicability/costs/reason"),\n                           note="空费用说明表当次来源理由（合成材料原文；04 类本类费用不落 costs）")'),
+    ('    f_basis = [facts.add_no_invoice_basis(fact, reason=waiver, source="user_instruction",\n                                          locator=locator.format("/no_invoice_rule"))\n               for fact in f_costs]',
+     '    f_basis = [facts.add_no_invoice_basis(fact, reason=waiver, source="user_instruction",\n                                          locator=locator.format("/no_invoice_rule"))\n               for fact in f_details]  # primary=details（costs not_applicable）'),
+    ('"template_value": "低值易耗品、办公用品采购(office_supplies)", "basis": "注册表+census 码 02（实测）"',
+     '"template_value": "福利费、劳保用品(welfare_labor)", "basis": "注册表+census 码 04（实测）"'),
+    ('"template_value": "relations/details/costs/banks 四表（relations 空）",\n         "basis": "office_supplies 注册结构+合成材料空表理由"',
+     '"template_value": "relations/details/costs/banks 四表（relations+costs 空）",\n         "basis": "welfare_labor 注册结构+合成材料空表理由"'),
+    ('"basis": "合成材料收款人（三名收款人分摊）"} for i in range(len(banks))',
+     '"basis": "合成材料收款人（单收款人）"} for i in range(len(banks))'),
+    ('{"group": "empty_tables", "field": "costs", "decision": "not_applicable",\n         "reason": "非空表：合成材料提供 1 行费用说明"},',
+     '{"group": "empty_tables", "field": "costs", "decision": "not_applicable",\n         "reason": material["table_applicability"]["costs"]["reason"]},'),
+    ('{"group": "empty_tables", "field": "banks", "decision": "not_applicable",\n         "reason": "非空表：合成材料提供 3 行收款信息"},',
+     '{"group": "empty_tables", "field": "banks", "decision": "not_applicable",\n         "reason": "非空表：合成材料提供 1 行收款信息"},'),
+    ('"document_type": "office_supplies", "task_id": TASK_ID, "operator": "陈晶",',
+     '"document_type": "welfare_labor", "task_id": TASK_ID, "operator": "陈晶",'),
+    ('"amount_rules": {"costs": "sum", "cost_amount_semantics": "line_total"},',
+     '"amount_rules": {"costs": "not_applicable",\n                         "costs_reason": material["table_applicability"]["costs"]["reason"],\n                         "cost_amount_semantics": "line_total"},'),
+    ('"costs": [{"row_id": r["row_id"],\n                       "fields": row_entries("costs", i, r, f_costs[i])}\n                      for i, r in enumerate(costs)],',
+     '"costs": [],'),
+    ('"table_applicability": {\n            "relations": {"value": material["table_applicability"]["relations"]["reason"],\n                          "fact_id": f_ta_relations,\n                          "locator": "/table_applicability/relations/reason"},\n        },',
+     '"table_applicability": {\n            "relations": {"value": material["table_applicability"]["relations"]["reason"],\n                          "fact_id": f_ta_relations,\n                          "locator": "/table_applicability/relations/reason"},\n            "costs": {"value": material["table_applicability"]["costs"]["reason"],\n                      "fact_id": f_ta_costs,\n                      "locator": "/table_applicability/costs/reason"},\n        },'),
+    ('"purpose": "02 office_supplies 离线链首件（round-9，零真实页面；合成材料 synthetic/test_only）"',
+     '"purpose": "04 welfare_labor 离线链首件（round-9，零真实页面；合成材料 synthetic/test_only）"'),
+    ('"authorization_path": "originals/synthetic_office_r9.json",',
+     '"authorization_path": "originals/synthetic_welfare_r9.json",'),
+    ('layer="summary", category=r["fields"]["reimItem"],',
+     'layer="detail", category=r["fields"]["reimItem"],  # 04 单层：details 即最细层（costs not_applicable，无汇总层）'),
+    ('evidence = {"name": "陈晶", "source": "user_policy",\n                "basis": "合成离线链（零浏览器）：操作人取登录默认形态用户策略值"}',
+     'evidence = {"name": "陈晶", "source": "user_policy",\n                "basis": "合成离线链（零浏览器）：操作人取登录默认形态用户策略值"}  # 同 office；welfare 复用'),
+]
+for old, new in pairs:
+    assert old in d, "MISSING: " + old[:70]
+    d = d.replace(old, new)
+for residue in ("officeloop", "synthetic_office", "低值易耗品", "office_supplies", "cost_sum"):
+    assert residue not in d, "RESIDUE: " + residue
+Path("automation/runs/20261024-194500-welfareloop/chain_driver.py").write_text(d, encoding="utf-8")
+print("welfare driver written,", len(d), "chars")

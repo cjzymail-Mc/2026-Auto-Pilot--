@@ -1,0 +1,14 @@
+{
+  "declared_category": "差旅费",
+  "relation_refs": [
+    "12026101976",
+    "12026070366",
+    "12026037675"
+  ],
+  "template_biz_number": "15426093015",
+  "materials_dir": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-155625-travelloop\\originals",
+  "statement": "公出油补报销（授权历史业务回放）：三张公出单关联、餐补与通行费明细、其它交通/伙食结算明细、收款徐亮，合计 633.84；本轮 fill_only 只填不存。",
+  "schema_version": "1.0",
+  "source_semantics": "user_instruction",
+  "registered_at": "2026-10-24T08:07:34.216180+00:00"
+}

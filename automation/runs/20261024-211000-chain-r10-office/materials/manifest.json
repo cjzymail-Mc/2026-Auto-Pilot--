@@ -1,0 +1,108 @@
+{
+  "schema_version": "2.0",
+  "originals_root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\originals",
+  "derived_root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\materials",
+  "files": [
+    {
+      "material_id": "sha256:e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\originals\\synthetic_office_r9.json",
+      "relative_path": "synthetic_office_r9.json",
+      "sha256": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87",
+      "size_bytes": 3463,
+      "duplicate_paths": []
+    }
+  ],
+  "derived_files": [
+    {
+      "derived_id": "sha256:88e18e60accbc7add235574837d5042db8987468c0dac0ac7725ae9813767f2f",
+      "role": "parsed_extraction",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\materials\\parsed\\e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87.json",
+      "relative_path": "parsed/e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87.json",
+      "sha256": "88e18e60accbc7add235574837d5042db8987468c0dac0ac7725ae9813767f2f",
+      "size_bytes": 363,
+      "sources": [
+        "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      ],
+      "generated_by": "bpm_materials.prepare_dual_materials",
+      "generated_at": "2026-10-24T12:55:15+00:00"
+    },
+    {
+      "derived_id": "sha256:1f678e0b5c52fc6864f58a4d26efa6c79a691f678379f88abebbef0a19a54f50",
+      "role": "user_request",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\materials\\request-ab9692b3c93e.json",
+      "relative_path": "request-ab9692b3c93e.json",
+      "sha256": "1f678e0b5c52fc6864f58a4d26efa6c79a691f678379f88abebbef0a19a54f50",
+      "size_bytes": 603,
+      "sources": [
+        "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      ],
+      "generated_by": "bpm_request.register_request",
+      "generated_at": "2026-10-24T12:55:15+00:00"
+    },
+    {
+      "derived_id": "sha256:a92d2c8d8b73fc178579fcdb97b65f9bbb3f3c3ab2e801ce646d4c7e15c61504",
+      "role": "run_evidence",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\materials\\reviewed\\agent_review.json",
+      "relative_path": "reviewed/agent_review.json",
+      "sha256": "a92d2c8d8b73fc178579fcdb97b65f9bbb3f3c3ab2e801ce646d4c7e15c61504",
+      "size_bytes": 2855,
+      "sources": [
+        "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      ],
+      "generated_by": "bpm_chain/agent_extraction_review",
+      "generated_at": "2026-10-24T12:55:15+00:00"
+    },
+    {
+      "derived_id": "sha256:71bafa8e2b8bd12e0a9674caf22e03a4eda18fa4019336b5f3e85729bb346e23",
+      "role": "run_evidence",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\materials\\facts\\factset.json",
+      "relative_path": "facts/factset.json",
+      "sha256": "71bafa8e2b8bd12e0a9674caf22e03a4eda18fa4019336b5f3e85729bb346e23",
+      "size_bytes": 7642,
+      "sources": [
+        "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      ],
+      "generated_by": "bpm_chain/FactSet",
+      "generated_at": "2026-10-24T12:55:15+00:00"
+    },
+    {
+      "derived_id": "sha256:d4cd446c67b0f0edccf63ae63d9ee195845e73c8e22419e8d5cbd03176e99d56",
+      "role": "run_evidence",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\materials\\facts\\reconciliation.json",
+      "relative_path": "facts/reconciliation.json",
+      "sha256": "d4cd446c67b0f0edccf63ae63d9ee195845e73c8e22419e8d5cbd03176e99d56",
+      "size_bytes": 2222,
+      "sources": [
+        "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      ],
+      "generated_by": "bpm_chain/reconcile",
+      "generated_at": "2026-10-24T12:55:15+00:00"
+    },
+    {
+      "derived_id": "sha256:7726c1ef784569a299b71ce97715ecea67994fa73fe4947414e6fa1bfd61efb1",
+      "role": "decision_matrix",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\materials\\decision-matrix-cd08af31e646.json",
+      "relative_path": "decision-matrix-cd08af31e646.json",
+      "sha256": "7726c1ef784569a299b71ce97715ecea67994fa73fe4947414e6fa1bfd61efb1",
+      "size_bytes": 5706,
+      "sources": [
+        "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      ],
+      "generated_by": "bpm_request.build_reuse_matrix",
+      "generated_at": "2026-10-24T12:55:15+00:00"
+    },
+    {
+      "derived_id": "sha256:b53d723378ff68c7634e4bbca1d760fc7b0fdec17f693205c91660067e58caee",
+      "role": "run_evidence",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-office\\materials\\plan\\blueprint.json",
+      "relative_path": "plan/blueprint.json",
+      "sha256": "b53d723378ff68c7634e4bbca1d760fc7b0fdec17f693205c91660067e58caee",
+      "size_bytes": 8404,
+      "sources": [
+        "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      ],
+      "generated_by": "bpm_chain/blueprint_assembly",
+      "generated_at": "2026-10-24T12:55:15+00:00"
+    }
+  ]
+}

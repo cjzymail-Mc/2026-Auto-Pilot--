@@ -1,0 +1,172 @@
+[
+  {
+    "id": "8fb51b7920424c24b89cd2b058e0a226",
+    "bizNumber": "15426104612",
+    "appliedName": "徐亮",
+    "createdName": "陈晶",
+    "description": "【现场演示·不保存·关联已替换】公出油补",
+    "totalCost": 633.84,
+    "bizStatus": 0,
+    "createdDate": null
+  },
+  {
+    "id": "92d41ffd042746e390f0a070118ca1d9",
+    "bizNumber": "15426095951",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": "公出晋江油补",
+    "totalCost": 251.4,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "f55ab9631c814f198a996d38c7b5c270",
+    "bizNumber": "15425123390",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": "公出晋江油补",
+    "totalCost": 258.6,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "91becbf93fc24511acbc558bcc36eb4d",
+    "bizNumber": "15425084773",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": "公出晋江油补",
+    "totalCost": 270.9,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "232FA823241540198A9544587CA94586",
+    "bizNumber": "CWBX2018060014",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 3068.29,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "0362734B25DF4A27B924349C26242A7D",
+    "bizNumber": "SCCWBX2017110011",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 11000.0,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "C79C441A10D642159223A1417962C628",
+    "bizNumber": "SCCWBX2017052665",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 600.0,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "E00EE0EAA1D3426CBFAF3D87CD3E3044",
+    "bizNumber": "SCCWBX2017052654",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 1350.0,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "0A373067EAC24FBDB71B21F09DC521CE",
+    "bizNumber": "SCCWBX2017042644",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 1018.5,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "DC046C7D2FDD4DFB8D0D52B837156D33",
+    "bizNumber": "SCCWBX2017042643",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 858.0,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "41170B47F5C84592A2BF60192D3C97A0",
+    "bizNumber": "SCCWBX2017032621",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 74.0,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "D5ED383DE4E249AB82E859C63417059F",
+    "bizNumber": "SCCWBX2017032609",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 6552.0,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "EAC00A73AC71478D8485722ED5C86DDC",
+    "bizNumber": "SCCWBX2017032598",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 50.0,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "AB9DD627B6204771B3F102E6E14829D6",
+    "bizNumber": "SCCWBX2016122554",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 3826.2,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "01A7A18C76324EC0B427D543F731A3E8",
+    "bizNumber": "SCCWBX2016112492",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 4208.5,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "8A6F0C3DD70D46EE92B10DDE6B7D807E",
+    "bizNumber": "SCCWBX2016112490",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 5937.0,
+    "bizStatus": 4,
+    "createdDate": null
+  },
+  {
+    "id": "B1A15C0161F943048D2922C3C1D7FD79",
+    "bizNumber": "SCCWBX2016082442",
+    "appliedName": "陈晶",
+    "createdName": "陈晶",
+    "description": null,
+    "totalCost": 2938.7,
+    "bizStatus": 4,
+    "createdDate": null
+  }
+]

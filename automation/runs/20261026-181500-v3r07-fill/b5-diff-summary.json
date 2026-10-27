@@ -1,0 +1,164 @@
+{
+  "report": "V3-R07 CASE-07 B5 新鲜 DOM 独立回读全量 diff（机器版）",
+  "generated_at": "2026-10-26T18:51:50+08:00",
+  "inputs": {
+    "plan_v11": {
+      "path": "automation\\runs\\20261026-181500-v3r07-fill\\fill-plan-v11.json",
+      "sha256": "6c9d1b6fd719124e30b3af0e5cba7fb9df783abc3ae6c7a65e763734ec721f7c"
+    },
+    "executed_input_snapshot": {
+      "path": "automation\\runs\\20261026-183000-v3r07-fill\\input_plan_snapshot.json",
+      "sha256": "6c9d1b6fd719124e30b3af0e5cba7fb9df783abc3ae6c7a65e763734ec721f7c",
+      "identical_to_plan_v11": true
+    },
+    "independent_readback": {
+      "path": "automation\\runs\\20261026-183000-v3r07-fill\\attempt_001\\evidence\\independent_readback.json",
+      "sha256": "868a920d1c0310b136bf15e73ca907250b884f251ddde7f0e3d966f110b5d3a7"
+    },
+    "independent_verification": {
+      "path": "automation\\runs\\20261026-183000-v3r07-fill\\attempt_001\\evidence\\independent_verification.json",
+      "sha256": "170cbdb5d182240c57e6efa482a8be244b3543a74c8b43d26a38e75bee23c1cc"
+    },
+    "stage1_result": {
+      "path": "automation\\runs\\20261026-183000-v3r07-fill\\attempt_001\\stage1_result.json",
+      "sha256": "6ef51f876152dd7a668c6b1ac1627abcc23abbbba9b6ee0784dc99ae0d86c7d2"
+    },
+    "events": {
+      "path": "automation\\runs\\20261026-183000-v3r07-fill\\events.jsonl",
+      "sha256": "d30ec412e4ce723fb6a8c4b97ffa5f6bdf1a46116de2c3f0cd245ef88ee89f95"
+    }
+  },
+  "execution_identity": {
+    "finish_reason": "SUCCESS_FILL_ONLY",
+    "task_status": "SUCCESS_FILL_ONLY",
+    "save_status": "NOT_ATTEMPTED",
+    "plan_hash": "8eea9c0562c19bba0293cb1289bd6ed72377b488c475141dc548bd0513815f85",
+    "task_id": "v3r07-case07-fill-20261026",
+    "expect_name": "陈晶"
+  },
+  "page_state": {
+    "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+    "is_new": true,
+    "operator": "陈晶",
+    "biz_number": "",
+    "uuid": "",
+    "status": "编制中"
+  },
+  "applicant": {
+    "name": "陈晶",
+    "company": "厦门乔丹科技有限公司",
+    "department": "运动表现研究部"
+  },
+  "counts": {
+    "relations": {
+      "expected": 1,
+      "actual": 1
+    },
+    "details": {
+      "expected": 2,
+      "actual": 2
+    },
+    "costs": {
+      "expected": 20,
+      "actual": 20
+    },
+    "banks": {
+      "expected": 1,
+      "actual": 1
+    }
+  },
+  "amounts_recomputed": {
+    "details": "1924.93",
+    "costs": "1924.93",
+    "banks": "1924.93",
+    "total": "1924.93",
+    "R_reimburse": "1924.93",
+    "four_way_equal_R": true
+  },
+  "full_diff": {
+    "verifier_ok": true,
+    "issues": [],
+    "extra": 0,
+    "duplicate": 0,
+    "missing": 0,
+    "note": "行数四表全等（counts）；全部计划值逐字段核对 issues=[]；额外/重复/缺失=0"
+  },
+  "completeness": {
+    "header": true,
+    "relations": true,
+    "details": true,
+    "costs": true,
+    "banks": true,
+    "detailrels": true
+  },
+  "placeholder_relation": {
+    "plan": {
+      "row_id": "case07-relations-1",
+      "fields": {
+        "bizTypeName": "公出单",
+        "bizNumber": "12024070132",
+        "nowCost": "1924.93",
+        "isLast": "是"
+      }
+    },
+    "readback_planned_fields": {
+      "bizTypeName": "公出单",
+      "bizNumber": "12024070132",
+      "nowCost": "1,924.93",
+      "isLast": "是"
+    },
+    "readback_system_brought_out_readonly": {
+      "bizCost": "0.00",
+      "totalReimedCost": "0.00",
+      "description": "陈晶(2024-06-24)"
+    },
+    "detailrels_projection": {
+      "bizTypeName": "公出单",
+      "bizNo": "12024070132",
+      "digest": "",
+      "bizDetailCost": "",
+      "bizDetailNum": "",
+      "usedCost": "",
+      "cost": "1,924.93",
+      "description": ""
+    },
+    "detailrels_projection_system_fields": {
+      "digest": "",
+      "bizDetailCost": "",
+      "bizDetailNum": "",
+      "usedCost": "",
+      "description": ""
+    },
+    "selection": {
+      "method": "random.Random(seed).randrange",
+      "seed": "6074a75771428d7e",
+      "seed_derivation": "sha256('20261026-180546-c1c5d877-case07')[:16]（team_run 派生，先验提交，先于枚举查看）",
+      "enumeration_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-181500-v3r07-fill\\attempt_002\\evidence\\relation_enumeration.json",
+      "enumeration_sha256": "369a47938da2215e0cc11a495128e0a7f75f8ef3d2c8d0948607df972b3b0176",
+      "enumeration_scope": "真实 relation dialog 默认首屏（未翻页、未检索、未选择）",
+      "total_available": 76,
+      "candidates_count": 20,
+      "exclusion": {
+        "excluded_number": "12026096668",
+        "hits_in_candidates": 0,
+        "policy": "命中则先移除再 randrange；本次不在列，无移除"
+      },
+      "chosen_index": 6
+    },
+    "zero_override_check": "占位带出字段 bizCost/totalReimedCost/description 及 detailrels 投影除 cost 外均为系统只读空白/带出值；costs 20 行与四向金额复算未受影响（amounts 全 1924.93==R），占位值零覆盖真实费用",
+    "separation": "与 actual_trip_matches（automation/runs/20261026-143340-v3r04-case03/，12 MATCHED/15 NO_MATCH）两套数据分开建模、核验、报告；占位选中对象仅为本案例 fill_only 测试占位，不冒充真实逐票对照结论，不改动模板旧单关联，不重新占用已用真实公出单 12026096668；绑定本案例及 fill_only。"
+  },
+  "zero_save_evidence": {
+    "save_class_clicks": 0,
+    "save_status": "NOT_ATTEMPTED",
+    "own_test_page_close": {
+      "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+      "is_new": true,
+      "operator": "陈晶",
+      "biz_number": "",
+      "uuid": "",
+      "status": "编制中"
+    },
+    "keep_open": "18:34:50→18:49:50 15min，期间零业务动作"
+  }
+}

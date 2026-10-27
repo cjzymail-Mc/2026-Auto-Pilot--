@@ -1,0 +1,12 @@
+[
+ {
+  "name": "reimItem",
+  "label": "",
+  "type": "dropdown",
+  "value": "培训费",
+  "readonly": false,
+  "visible": true,
+  "sel": "qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost:nth-of-type(3)>p-table:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined>tbody.ui-table-tbody:nth-of-type(1)>tr.ui-selectable-row.ui-state-highlight>td.field-col.prop-reimItem:nth-of-type(2)>p-celleditor>p-dropdown.ng-tns-c41-163.ui-inputwrapper-filled>div.ng-tns-c41-163.ui-dropdown",
+  "comp": "qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.showPrintCost:nth-of-type(3)>p-table:nth-of-type(1)>div.ui-table.ui-widget>div.ui-table-scrollable-wrapper.ng-star-inserted:nth-of-type(2)>div.ui-table-scrollable-view>div.ui-table-scrollable-body.ng-star-inserted:nth-of-type(2)>table.undefined>tbody.ui-table-tbody:nth-of-type(1)>tr.ui-selectable-row.ui-state-highlight>td.field-col.prop-reimItem:nth-of-type(2)>p-celleditor>p-dropdown.ng-tns-c41-163.ui-inputwrapper-filled>div.ng-tns-c41-163.ui-dropdown"
+ }
+]

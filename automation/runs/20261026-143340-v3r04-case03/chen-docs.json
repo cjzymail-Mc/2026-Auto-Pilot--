@@ -1,0 +1,145 @@
+[
+ {
+  "bizNumber": "12025044500",
+  "id": "af88230a5c1f4bb69e0e586844a88029",
+  "appliedAt": "2025-04-22",
+  "bizStatus": 4,
+  "bizReason": "鞋博会",
+  "place": "晋江",
+  "reimed": 2,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025073893",
+  "id": "3f260a65f3b748308e88e353ead9e9dc",
+  "appliedAt": "2025-07-16",
+  "bizStatus": 4,
+  "bizReason": "PB 6.0量产会议",
+  "place": "晋江",
+  "reimed": 2,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025084223",
+  "id": "f051b11d8cb14b5c8f4bbe243bc77935",
+  "appliedAt": "2025-08-20",
+  "bizStatus": 4,
+  "bizReason": "pb6.0量产前试做会",
+  "place": "晋江",
+  "reimed": 2,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025084529",
+  "id": "543f20fd3b2e4052ad1e462dab4e6b2f",
+  "appliedAt": "2025-08-22",
+  "bizStatus": 5,
+  "bizReason": "PB量产会议",
+  "place": "晋江",
+  "reimed": 0,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025085485",
+  "id": "f394a1f2624248878bbd16a1f824d0e5",
+  "appliedAt": "2025-08-26",
+  "bizStatus": 4,
+  "bizReason": "Plaid量产会议",
+  "place": "晋江",
+  "reimed": 0,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025092237",
+  "id": "5acc75eccb2d4f549014162f3d72a80e",
+  "appliedAt": "2025-09-09",
+  "bizStatus": 4,
+  "bizReason": "前往晋江工厂项目沟通",
+  "place": "晋江",
+  "reimed": 0,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025103469",
+  "id": "8c706ecc41264bca9a3882495ac1722c",
+  "appliedAt": "2025-10-20",
+  "bizStatus": 4,
+  "bizReason": "PB6.0量产跟进",
+  "place": "晋江",
+  "reimed": 2,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025105858",
+  "id": "a27112a0a3b04532a4a091e22a92fd79",
+  "appliedAt": "2025-10-29",
+  "bizStatus": 4,
+  "bizReason": "Plaid 试产会议",
+  "place": "晋江",
+  "reimed": 2,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025115547",
+  "id": "2d838495fe804231b7f7340f54dea597",
+  "appliedAt": "2025-11-25",
+  "bizStatus": 4,
+  "bizReason": "Plaid量产试做",
+  "place": "晋江",
+  "reimed": 0,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025121473",
+  "id": "8fea90753f92415b9ff14c0d260dba65",
+  "appliedAt": "2025-12-05",
+  "bizStatus": 4,
+  "bizReason": "陪同供应商参观晋江二厂",
+  "place": "晋江",
+  "reimed": 0,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12025127761",
+  "id": "d91a5345107049bc9bd36580bb64af7f",
+  "appliedAt": "2025-12-29",
+  "bizStatus": 4,
+  "bizReason": "年终总结 + 中心团建活动",
+  "place": "厦门市区",
+  "reimed": 0,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12026075605",
+  "id": "5527f9e0517e4bcfa3aa3bb7fc01321a",
+  "appliedAt": "2026-07-24",
+  "bizStatus": 4,
+  "bizReason": "量产会议",
+  "place": "晋江",
+  "reimed": 0,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ },
+ {
+  "bizNumber": "12026096668",
+  "id": "ee5483774f3540b78a66ead6d30f22ae",
+  "appliedAt": "2026-09-23",
+  "bizStatus": 4,
+  "bizReason": "儿童青鸟背包项目",
+  "place": "晋江",
+  "reimed": 2,
+  "inReimCost": 0.0,
+  "bizCost": 0.0
+ }
+]

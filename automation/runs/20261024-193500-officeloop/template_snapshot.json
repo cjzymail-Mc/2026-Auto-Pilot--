@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "representation": "derived_from_research_raw",
+  "document_type": "office_supplies",
+  "biz_number": "15426101596",
+  "uuid": "20a325a1c8bf441988a1ab69df60bfda",
+  "captured_at": "2026-10-24T08:42:01.299543+00:00",
+  "header": {
+    "corpCode": "1003",
+    "bizOrign": "QDTech",
+    "budgetYears": "2026",
+    "payType": "02",
+    "currencyType": "RMB",
+    "submitType": "02",
+    "description": "科技中心第三季度 AI工具申购申请报销",
+    "totalCost": "9974.76"
+  },
+  "tables": {
+    "details": 1,
+    "costs": 1,
+    "relations": 1,
+    "banks": 3,
+    "products": 0,
+    "detailrels": 1
+  },
+  "source": {
+    "kind": "research_raw_derived",
+    "raw_path": "automation/runs/20261024-170000-fiveresearch/raw_15426101596_dijiazhi.json"
+  }
+}

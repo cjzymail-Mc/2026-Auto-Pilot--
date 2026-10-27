@@ -1,0 +1,7 @@
+用户已明确按最新 feature01-细化报销skill/2026-10-27 报销单-自驾公出类技能固化施工合同-V1.md 施工。本窗口将作为新的、独立的 Claude-GLM A 主 session，不能冒用或接管旧 A/B。
+
+目前仅做 A 的启动准备：完整读 repo AGENTS.md、STATE.md、最新合同及 team-workflow skill，理解本轮 D01—D13 与合同第9节。可在会话内整理验收清单，但不要写根 criteria-input.json、team-task.md 或任何状态，不调用 join/review/archive，不启动业务浏览器，不改源码。
+
+旧 V3 原 B 正通过它自己的真实 --resume 主 session 核实并合法归档旧终态；仅在新 B 正常 init 后，这里才会收到明确的 /team-workflow review 启动指令。你不能把旧 DONE run 当成新任务加入，不周期轮询状态、不提前挂别的 run 的 wait、不另起控制循环。阅读准备完成后结束本 turn，等下一条正式 review 指令即可。
+
+后续正式 review 将由你自己绑定实际新基线哈希和 max-round=12，独立覆盖所有 D01—D13；B 阶段合格时按全局缺口继续派工，不把局部完成当总体完成。沿用现有双独立主 session、原生 Bash 后台 wait/通知、单 profile 执行者、只填不存及独立终审，不能改全局配置/helper。D12 冷启动生成方绝不能继承本会话、STATE/合同案例答案或旧事实/计划；D10/D12 共用同一登记任务的一次正式填写。当前仅准备，不宣布通过。

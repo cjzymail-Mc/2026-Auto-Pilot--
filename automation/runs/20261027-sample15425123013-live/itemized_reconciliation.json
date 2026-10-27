@@ -1,0 +1,635 @@
+{
+  "checked_at": "2026-10-27T02:28:02.948246+00:00",
+  "scope": "Read-only reconciliation from original mileage cells, unchanged verified ticket facts, latest trip mapping, and 10:02 live sample snapshot. Historical meal amounts and the new 30-yuan rule are kept separate.",
+  "source_hashes": {
+    "feature01-细化报销skill\\12月公出-发票\\12月-自驾公出公里数统计表.xlsx": "2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83",
+    "automation\\runs\\20261026-131000-v3r03-case02\\case02-mapping.json": "a899944ea27c16fb4b9e3b62738ceb2062581fa8df3cd8f64c567015456e79a3",
+    "automation\\runs\\20261027-092454-xuliang-trip-mapping\\trip-form-mapping.json": "dfe3421b8fd097ecbb2ab3f79d49c14712b9b3b4cb71e4ed974082c58390f41b",
+    "automation\\runs\\20261027-sample15425123013-live\\sample_snapshot.json": "1e90798890565660efb4d3e81ae64191a3843e337a66dd303aaddb84e8702d69",
+    "automation\\runs\\20261027-sample15425123013-live\\attempt_001\\evidence\\template_view_observation.json": "90e9de82ccdaa9f205b64f2b3cc447d75f994131066433a6944a8325ee31cd88"
+  },
+  "invoice_originals_hash_verified": [
+    {
+      "identity": "toll:035002400112-20514402",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1210\\1210厦门-晋江发票.pdf",
+      "sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-19977515",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1210\\1210晋江-厦门1.pdf",
+      "sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-20519372",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1210\\1210晋江-厦门1 (2).pdf",
+      "sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-18196512",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1204\\1204厦门到晋江发票.pdf",
+      "sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-18197206",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1204\\1204晋江到厦门发票.pdf",
+      "sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-20703083",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1124\\1124厦门到晋江发票.pdf",
+      "sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-18011706",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1124\\1124晋江到厦门发票.pdf",
+      "sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-17950250",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1112\\1112厦门到晋江发票.pdf",
+      "sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-17952458",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1112\\1112晋江到厦门发票.pdf",
+      "sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-17793922",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1028\\1028厦门到晋江发票.pdf",
+      "sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-17794993",
+      "source": "feature01-细化报销skill\\12月公出-发票\\1028\\1028晋江到厦门发票.pdf",
+      "sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16858364",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0928\\0928厦门到晋江发票1.pdf",
+      "sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16422064",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0928\\0928厦门到晋江发票2.pdf",
+      "sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16548299",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0928\\0928晋江到厦门发票1.pdf",
+      "sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-17727508",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0928\\0928晋江到厦门发票2.pdf",
+      "sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16657870",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0917\\0917厦门到晋江发票2.pdf",
+      "sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16227300",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0917\\0917厦门到晋江发票1.pdf",
+      "sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16657942",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0917\\0917晋江到厦门发票1.pdf",
+      "sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16227311",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0917\\0917晋江到厦门发票2.pdf",
+      "sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-15913017",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0906\\0905厦门到晋江发票1.pdf",
+      "sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16108478",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0906\\0905厦门到晋江发票2.pdf",
+      "sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-15913011",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0906\\0905晋江到厦门发票1.pdf",
+      "sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16366191",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0906\\0905晋江到厦门发票2.pdf",
+      "sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16104706",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0904\\0904厦门到晋江发票.pdf",
+      "sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16104709",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0904\\0904晋江到厦门发票.pdf",
+      "sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16304714",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0825\\0825厦门到晋江发票.pdf",
+      "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+      "unchanged": true
+    },
+    {
+      "identity": "toll:035002400112-16166322",
+      "source": "feature01-细化报销skill\\12月公出-发票\\0825\\0825晋江到厦门发票.pdf",
+      "sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124",
+      "unchanged": true
+    }
+  ],
+  "daily_rows": [
+    {
+      "date": "2025-08-25",
+      "form": "12025085486",
+      "km": "146",
+      "toll": "45.28",
+      "traffic_expected": "191.28",
+      "traffic_sample": "191.28",
+      "traffic_delta_sample_minus_expected": "0.00",
+      "historical_meal": "12.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        22,
+        23
+      ],
+      "sample_traffic_row_id": "template-costs-8",
+      "sample_meal_row_id": "template-costs-20",
+      "invoice_ids": [
+        "toll:035002400112-16304714",
+        "toll:035002400112-16166322"
+      ]
+    },
+    {
+      "date": "2025-09-04",
+      "form": "12025092018",
+      "km": "146",
+      "toll": "45.28",
+      "traffic_expected": "191.28",
+      "traffic_sample": "191.28",
+      "traffic_delta_sample_minus_expected": "0.00",
+      "historical_meal": "30.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        20,
+        21
+      ],
+      "sample_traffic_row_id": "template-costs-15",
+      "sample_meal_row_id": "template-costs-18",
+      "invoice_ids": [
+        "toll:035002400112-16104706",
+        "toll:035002400112-16104709"
+      ]
+    },
+    {
+      "date": "2025-09-05",
+      "form": "12025092018",
+      "km": "146",
+      "toll": "39.90",
+      "traffic_expected": "185.90",
+      "traffic_sample": "187.90",
+      "traffic_delta_sample_minus_expected": "2.00",
+      "historical_meal": "30.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        18,
+        19
+      ],
+      "sample_traffic_row_id": "template-costs-5",
+      "sample_meal_row_id": "template-costs-17",
+      "invoice_ids": [
+        "toll:035002400112-15913017",
+        "toll:035002400112-16108478",
+        "toll:035002400112-15913011",
+        "toll:035002400112-16366191"
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "form": "12025094906",
+      "km": "132",
+      "toll": "68.90",
+      "traffic_expected": "200.90",
+      "traffic_sample": "200.90",
+      "traffic_delta_sample_minus_expected": "0.00",
+      "historical_meal": "48.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        16,
+        17
+      ],
+      "sample_traffic_row_id": "template-costs-7",
+      "sample_meal_row_id": "template-costs-16",
+      "invoice_ids": [
+        "toll:035002400112-16657870",
+        "toll:035002400112-16227300",
+        "toll:035002400112-16657942",
+        "toll:035002400112-16227311"
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "form": "12025098708",
+      "km": "132",
+      "toll": "63.86",
+      "traffic_expected": "195.86",
+      "traffic_sample": "193.86",
+      "traffic_delta_sample_minus_expected": "-2.00",
+      "historical_meal": "36.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        14,
+        15
+      ],
+      "sample_traffic_row_id": "template-costs-11",
+      "sample_meal_row_id": "template-costs-3",
+      "invoice_ids": [
+        "toll:035002400112-16858364",
+        "toll:035002400112-16422064",
+        "toll:035002400112-16548299",
+        "toll:035002400112-17727508"
+      ]
+    },
+    {
+      "date": "2025-10-28",
+      "form": "12025105858",
+      "km": "146",
+      "toll": "45.28",
+      "traffic_expected": "191.28",
+      "traffic_sample": "191.28",
+      "traffic_delta_sample_minus_expected": "0.00",
+      "historical_meal": "24.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        12,
+        13
+      ],
+      "sample_traffic_row_id": "template-costs-2",
+      "sample_meal_row_id": "template-costs-6",
+      "invoice_ids": [
+        "toll:035002400112-17793922",
+        "toll:035002400112-17794993"
+      ]
+    },
+    {
+      "date": "2025-11-12",
+      "form": "12025112775",
+      "km": "146",
+      "toll": "45.28",
+      "traffic_expected": "191.28",
+      "traffic_sample": "191.28",
+      "traffic_delta_sample_minus_expected": "0.00",
+      "historical_meal": "30.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        10,
+        11
+      ],
+      "sample_traffic_row_id": "template-costs-12",
+      "sample_meal_row_id": "template-costs-4",
+      "invoice_ids": [
+        "toll:035002400112-17950250",
+        "toll:035002400112-17952458"
+      ]
+    },
+    {
+      "date": "2025-11-24",
+      "form": "12025115994",
+      "km": "146",
+      "toll": "45.28",
+      "traffic_expected": "191.28",
+      "traffic_sample": "191.28",
+      "traffic_delta_sample_minus_expected": "0.00",
+      "historical_meal": "12.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        8,
+        9
+      ],
+      "sample_traffic_row_id": "template-costs-1",
+      "sample_meal_row_id": "template-costs-19",
+      "invoice_ids": [
+        "toll:035002400112-20703083",
+        "toll:035002400112-18011706"
+      ]
+    },
+    {
+      "date": "2025-12-04",
+      "form": "12025121233",
+      "km": "152",
+      "toll": "45.28",
+      "traffic_expected": "197.28",
+      "traffic_sample": "197.28",
+      "traffic_delta_sample_minus_expected": "0.00",
+      "historical_meal": "12.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        6,
+        7
+      ],
+      "sample_traffic_row_id": "template-costs-10",
+      "sample_meal_row_id": "template-costs-13",
+      "invoice_ids": [
+        "toll:035002400112-18196512",
+        "toll:035002400112-18197206"
+      ]
+    },
+    {
+      "date": "2025-12-10",
+      "form": "12025123375",
+      "km": "146",
+      "toll": "42.59",
+      "traffic_expected": "188.59",
+      "traffic_sample": "188.59",
+      "traffic_delta_sample_minus_expected": "0.00",
+      "historical_meal": "18.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        4,
+        5
+      ],
+      "sample_traffic_row_id": "template-costs-14",
+      "sample_meal_row_id": "template-costs-9",
+      "invoice_ids": [
+        "toll:035002400112-20514402",
+        "toll:035002400112-19977515",
+        "toll:035002400112-20519372"
+      ]
+    }
+  ],
+  "form_rows": [
+    {
+      "form": "12025085486",
+      "dates": [
+        "2025-08-25"
+      ],
+      "traffic_from_original": "191.28",
+      "historical_meal": "12.00",
+      "expected_with_historical_meal": "203.28",
+      "sample_expenses_sum": "203.28",
+      "relation_actual": "203.28",
+      "relation_delta_actual_minus_original_based_expected": "0.00",
+      "relation_delta_actual_minus_sample_expenses": "0.00",
+      "expected_with_new_meal_rule": "221.28"
+    },
+    {
+      "form": "12025092018",
+      "dates": [
+        "2025-09-04",
+        "2025-09-05"
+      ],
+      "traffic_from_original": "377.18",
+      "historical_meal": "60.00",
+      "expected_with_historical_meal": "437.18",
+      "sample_expenses_sum": "439.18",
+      "relation_actual": "437.18",
+      "relation_delta_actual_minus_original_based_expected": "0.00",
+      "relation_delta_actual_minus_sample_expenses": "-2.00",
+      "expected_with_new_meal_rule": "437.18"
+    },
+    {
+      "form": "12025094906",
+      "dates": [
+        "2025-09-17"
+      ],
+      "traffic_from_original": "200.90",
+      "historical_meal": "48.00",
+      "expected_with_historical_meal": "248.90",
+      "sample_expenses_sum": "248.90",
+      "relation_actual": "248.90",
+      "relation_delta_actual_minus_original_based_expected": "0.00",
+      "relation_delta_actual_minus_sample_expenses": "0.00",
+      "expected_with_new_meal_rule": "230.90"
+    },
+    {
+      "form": "12025098708",
+      "dates": [
+        "2025-09-28"
+      ],
+      "traffic_from_original": "195.86",
+      "historical_meal": "36.00",
+      "expected_with_historical_meal": "231.86",
+      "sample_expenses_sum": "229.86",
+      "relation_actual": "235.86",
+      "relation_delta_actual_minus_original_based_expected": "4.00",
+      "relation_delta_actual_minus_sample_expenses": "6.00",
+      "expected_with_new_meal_rule": "225.86"
+    },
+    {
+      "form": "12025105858",
+      "dates": [
+        "2025-10-28"
+      ],
+      "traffic_from_original": "191.28",
+      "historical_meal": "24.00",
+      "expected_with_historical_meal": "215.28",
+      "sample_expenses_sum": "215.28",
+      "relation_actual": "215.28",
+      "relation_delta_actual_minus_original_based_expected": "0.00",
+      "relation_delta_actual_minus_sample_expenses": "0.00",
+      "expected_with_new_meal_rule": "221.28"
+    },
+    {
+      "form": "12025112775",
+      "dates": [
+        "2025-11-12"
+      ],
+      "traffic_from_original": "191.28",
+      "historical_meal": "30.00",
+      "expected_with_historical_meal": "221.28",
+      "sample_expenses_sum": "221.28",
+      "relation_actual": "221.28",
+      "relation_delta_actual_minus_original_based_expected": "0.00",
+      "relation_delta_actual_minus_sample_expenses": "0.00",
+      "expected_with_new_meal_rule": "221.28"
+    },
+    {
+      "form": "12025115994",
+      "dates": [
+        "2025-11-24"
+      ],
+      "traffic_from_original": "191.28",
+      "historical_meal": "12.00",
+      "expected_with_historical_meal": "203.28",
+      "sample_expenses_sum": "203.28",
+      "relation_actual": "203.28",
+      "relation_delta_actual_minus_original_based_expected": "0.00",
+      "relation_delta_actual_minus_sample_expenses": "0.00",
+      "expected_with_new_meal_rule": "221.28"
+    },
+    {
+      "form": "12025121233",
+      "dates": [
+        "2025-12-04"
+      ],
+      "traffic_from_original": "197.28",
+      "historical_meal": "12.00",
+      "expected_with_historical_meal": "209.28",
+      "sample_expenses_sum": "209.28",
+      "relation_actual": "209.28",
+      "relation_delta_actual_minus_original_based_expected": "0.00",
+      "relation_delta_actual_minus_sample_expenses": "0.00",
+      "expected_with_new_meal_rule": "227.28"
+    },
+    {
+      "form": "12025123375",
+      "dates": [
+        "2025-12-10"
+      ],
+      "traffic_from_original": "188.59",
+      "historical_meal": "18.00",
+      "expected_with_historical_meal": "206.59",
+      "sample_expenses_sum": "206.59",
+      "relation_actual": "196.59",
+      "relation_delta_actual_minus_original_based_expected": "-10.00",
+      "relation_delta_actual_minus_sample_expenses": "-10.00",
+      "expected_with_new_meal_rule": "218.59"
+    }
+  ],
+  "traffic_discrepancies": [
+    {
+      "date": "2025-09-05",
+      "form": "12025092018",
+      "km": "146",
+      "toll": "39.90",
+      "traffic_expected": "185.90",
+      "traffic_sample": "187.90",
+      "traffic_delta_sample_minus_expected": "2.00",
+      "historical_meal": "30.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        18,
+        19
+      ],
+      "sample_traffic_row_id": "template-costs-5",
+      "sample_meal_row_id": "template-costs-17",
+      "invoice_ids": [
+        "toll:035002400112-15913017",
+        "toll:035002400112-16108478",
+        "toll:035002400112-15913011",
+        "toll:035002400112-16366191"
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "form": "12025098708",
+      "km": "132",
+      "toll": "63.86",
+      "traffic_expected": "195.86",
+      "traffic_sample": "193.86",
+      "traffic_delta_sample_minus_expected": "-2.00",
+      "historical_meal": "36.00",
+      "new_meal_rule": "30.00",
+      "original_excel_rows": [
+        14,
+        15
+      ],
+      "sample_traffic_row_id": "template-costs-11",
+      "sample_meal_row_id": "template-costs-3",
+      "invoice_ids": [
+        "toll:035002400112-16858364",
+        "toll:035002400112-16422064",
+        "toll:035002400112-16548299",
+        "toll:035002400112-17727508"
+      ]
+    }
+  ],
+  "relation_discrepancies": [
+    {
+      "form": "12025098708",
+      "dates": [
+        "2025-09-28"
+      ],
+      "traffic_from_original": "195.86",
+      "historical_meal": "36.00",
+      "expected_with_historical_meal": "231.86",
+      "sample_expenses_sum": "229.86",
+      "relation_actual": "235.86",
+      "relation_delta_actual_minus_original_based_expected": "4.00",
+      "relation_delta_actual_minus_sample_expenses": "6.00",
+      "expected_with_new_meal_rule": "225.86"
+    },
+    {
+      "form": "12025123375",
+      "dates": [
+        "2025-12-10"
+      ],
+      "traffic_from_original": "188.59",
+      "historical_meal": "18.00",
+      "expected_with_historical_meal": "206.59",
+      "sample_expenses_sum": "206.59",
+      "relation_actual": "196.59",
+      "relation_delta_actual_minus_original_based_expected": "-10.00",
+      "relation_delta_actual_minus_sample_expenses": "-10.00",
+      "expected_with_new_meal_rule": "218.59"
+    }
+  ],
+  "date_findings": [
+    {
+      "row_id": "template-costs-1",
+      "sample_start": "2025-11-24",
+      "sample_end": "2025-12-24",
+      "verified_trip_date": "2025-11-24"
+    },
+    {
+      "row_id": "template-costs-4",
+      "sample_start": "2025-11-14",
+      "sample_end": "2025-11-14",
+      "verified_trip_date": "2025-11-12"
+    },
+    {
+      "row_id": "template-costs-12",
+      "sample_start": "2025-11-14",
+      "sample_end": "2025-11-14",
+      "verified_trip_date": "2025-11-12"
+    }
+  ],
+  "totals": {
+    "mileage": "1438.00",
+    "tolls": "486.93",
+    "traffic_expected": "1924.93",
+    "traffic_sample": "1924.93",
+    "historical_meals": "252.00",
+    "historical_total_expected": "2176.93",
+    "relation_actual": "2170.93",
+    "relation_difference": "-6.00",
+    "new_meals": "300.00",
+    "new_total": "2224.93"
+  },
+  "interpretation": "Two traffic-detail errors offset by 2 yuan. Using original mileage and verified tolls plus historical meals, two linked-form amounts differ by +4 and -10 yuan, net -6. Comparing only sample expense rows to linked rows would additionally flag the correctly allocated September 4-5 form, so raw-source reconciliation is required.",
+  "business_write_actions": 0
+}

@@ -1,0 +1,21 @@
+{
+  "fill_once.py": "7949634522581fc4cf109acb8e64619fb6a0b44a71b49a198f244e1cfeadbff3",
+  "stage1_browser_probe.py": "ab57208bbec2475b2fcee9d59a5df95f1fb06a5271a9333b047290d5b0657e61",
+  "stage1_probe_selftest.py": "fcffc7b097656ec0eded11d24798428cbb29db8ba27678844e3603bea97ae9e5",
+  "bpm_plan.py": "9fc62191532aa128ebd56db1ea19b5c287fc379715c3475286924f7ffc2e8a91",
+  "bpm_materials.py": "ff457819daf1a0f34f5a06b6141ef14bdd7561ecdb6f187bcec39e35d397aa77",
+  "bpm_template.py": "08170458dde33f8144eb2e67ac1b97bbb37d6788cf1ebaab4a747daf5ce7e38f",
+  "bpm_ui.py": "ed0052c76c15698db31a27c298bf982d12d808827e07d54263ca3b934238f44d",
+  "bpm_verify.py": "3d5d0b615a801c219f7016df5e662c671e53cb4ba92b84f82446641c85b12c06",
+  "bpm_save.py": "9ae04c04afb9fe0f2bf1fdbd09a2bd25461809f6c0a866f35d1d2383fb931be1",
+  "bpm_perf.py": "50e17828d22c9c195def4b4b52d16b5f01fae60c243a2473fba4d7bd781dc99c",
+  "verify_bpm_build.py": "6762bab2c1d60c26469dd9e762e1cb8304bef77948dd996a8267b0685d04e572",
+  "automation/fill-plan.schema.json": "e117f49e659d2cbe9cb53abd90c0dad71208dbe11d9863e56e41bcf7c70f5ab8",
+  "automation/task.schema.json": "11bcf06c85b49ad3971ec8520f67a044088cf7e971d89ef279c5124ed630f92a",
+  "automation/document-types/travel.json": "a0b3d56b04f87ecae1b4bd852c82cafd57521a1580ddc2c60f02e3b21b5c95a9",
+  "README.md": "b4f7291029d338f572b80c7848a3f74b01addec0e7138a5dee3ed8ed391bcf0a",
+  "AGENTS.md": "cd4963449d75c655170ebb3ecc7b92e1a7d4e7332e899bd724004364ce82e8fb",
+  ".claude/skills/bpm-fill-run/SKILL.md": "0add770e373fabcce6a17388458331822aa31ee05493db8c3be5d66dbb180b94",
+  ".claude/skills/bpm-fill-run/references/travel.md": "e4a7d367ccbd7e09ebbee0bd3857b230df416c49a78178c89bc9fbca368e4fb5",
+  ".claude/skills/bpm-fill-run/references/plan-contract.md": "bcb043c3f70accc09d8c2f8a80bc38b1922ae1f164d83fe58278a75784a89bdf"
+}

@@ -1,0 +1,27 @@
+{"event": "profile_lock_acquired", "pid": 5708, "ts": "2026-10-26T18:16:31"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-26T18:16:31"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 537, "ts": "2026-10-26T18:16:32"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793009795720, "dur_ms": 430, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-26T18:16:36"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-26T18:16:36"}
+{"event": "enum_click", "what": "新增", "ts": "2026-10-26T18:16:40"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793009802223, "dur_ms": 127, "outcome": "ok", "exc": "", "name": "enum_01_row_added.png", "ts": "2026-10-26T18:16:42"}
+{"event": "timing", "action": "relation_enumeration", "t0_ms": 1793009796399, "dur_ms": 7488, "outcome": "error", "exc": "RuntimeError", "ts": "2026-10-26T18:16:43"}
+{"event": "relation_enum_end", "status": "NEEDS_INPUT", "ts": "2026-10-26T18:16:43"}
+{"event": "profile_lock_acquired", "pid": 17176, "ts": "2026-10-26T18:22:02"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-26T18:22:02"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 327, "ts": "2026-10-26T18:22:03"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793010126496, "dur_ms": 361, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-26T18:22:06"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-26T18:22:06"}
+{"event": "enum_click", "what": "新增", "ts": "2026-10-26T18:22:11"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793010132812, "dur_ms": 139, "outcome": "ok", "exc": "", "name": "enum_01_row_added.png", "ts": "2026-10-26T18:22:12"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793010133784, "dur_ms": 82, "outcome": "ok", "exc": "", "name": "enum_02a_type_panel_open.png", "ts": "2026-10-26T18:22:13"}
+{"event": "enum_click", "what": "公出单", "ts": "2026-10-26T18:22:13"}
+{"event": "enum_click", "what": "选择表格数据", "ts": "2026-10-26T18:22:15"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793010138571, "dur_ms": 107, "outcome": "ok", "exc": "", "name": "enum_03_dialog_first_page.png", "ts": "2026-10-26T18:22:18"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793010140318, "dur_ms": 86, "outcome": "ok", "exc": "", "name": "enum_04_after_close.png", "ts": "2026-10-26T18:22:20"}
+{"event": "timing", "action": "relation_enumeration", "t0_ms": 1793010126999, "dur_ms": 13405, "outcome": "ok", "exc": "", "ts": "2026-10-26T18:22:20"}
+{"event": "relation_enumeration_done", "rows": 20, "selection_performed": false, "closed_by": "titlebar_close", "ts": "2026-10-26T18:22:20"}
+{"event": "relation_enum_end", "status": "SUCCESS_RELATION_ENUM_ONLY", "ts": "2026-10-26T18:22:20"}
+{"event": "variant_v11_built", "baseline_sha256": "0d5b22cd6f12058dd04567b3bb63b14ca1775cbd51690e324ece118a3a242fa8", "v11_sha256": "6c9d1b6fd719124e30b3af0e5cba7fb9df783abc3ae6c7a65e763734ec721f7c", "task_material_sha256": "08767578dcb057c4be121c2049c4870389247fe6d421f42cfe96fc1770a061d2", "manifest_sha256": "c45d6c4d5eadba3ba9e46ea4cd7effec179f8468a986055a5c89704ab4c0b78f", "seed": "6074a75771428d7e", "candidates": 20, "chosen_index": 6, "chosen_biz_number": "12024070132", "exclusion_hits": 0, "validate_issues": 0, "coverage_recheck_pass": true, "ts": "2026-10-26T18:26:51.150+08:00"}
+{"event": "preflight_readonly", "login_probe": "SUCCESS_LOGIN_ONLY@18:27:24", "identity": "陈晶/116070053", "identity_level": "header_and_subject", "auth_status": "authenticated", "effective_reuse_until": "2026-11-23T02:42:23+00:00", "registry_conflicts": "NONE", "journal_for_v11_task": "absent", "binding_chain": "v1.1 baseline sha256 0d5b22cd…==round-6 fill-plan; template 7c71bd42…; manifest/material hashes verified by validate_plan(verify_sources=True)", "coverage_gate": "F=2518.10>R=1924.93 recheck PASS (see variant_v11_built 18:26:51)", "ts": "2026-10-26T18:29:26.916+08:00"}
+{"event": "fill_completed_b4b5", "fill_run": "20261026-183000-v3r07-fill", "attempt": "attempt_001", "finish_reason": "SUCCESS_FILL_ONLY", "save_status": "NOT_ATTEMPTED", "counts": {"relations": 1, "details": 2, "costs": 20, "banks": 1}, "amounts_four_way": "1924.93==R", "verifier_ok": true, "placeholder": "12024070132(seed=6074a75771428d7e,idx=6/20)", "zero_save_class_clicks": 0, "b5_report": "B5-report.md+b5-diff-summary.json", "ts": "2026-10-26T18:52:18.821+08:00"}

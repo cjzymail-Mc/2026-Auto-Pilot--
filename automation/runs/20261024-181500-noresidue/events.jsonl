@@ -1,0 +1,16 @@
+{"event": "profile_lock_acquired", "pid": 13492, "ts": "2026-10-24T18:05:29"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 333, "ts": "2026-10-24T18:05:30"}
+{"event": "no_residue_observation_start", "mode": "readonly_zero_click", "ts": "2026-10-24T18:05:30"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792836333343, "dur_ms": 322, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T18:05:33"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T18:05:33"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792836336529, "dur_ms": 104, "outcome": "ok", "exc": "", "name": "list_default_readonly.png", "ts": "2026-10-24T18:05:36"}
+{"event": "no_residue_observation_done", "rows": 17, "keyword_hits": 0, "draft_rows": 1, "no_residue": false, "ts": "2026-10-24T18:05:36"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 13492, "ts": "2026-10-24T18:06:11"}
+{"event": "profile_lock_acquired", "pid": 20108, "ts": "2026-10-24T18:06:11"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 39, "ts": "2026-10-24T18:06:12"}
+{"event": "no_residue_observation_start", "mode": "readonly_zero_click", "ts": "2026-10-24T18:06:12"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792836374764, "dur_ms": 157, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T18:06:14"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T18:06:15"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792836377935, "dur_ms": 109, "outcome": "ok", "exc": "", "name": "list_default_readonly.png", "ts": "2026-10-24T18:06:18"}
+{"event": "no_residue_observation_done", "rows": 17, "keyword_hits": 0, "draft_rows": 1, "no_residue": false, "ts": "2026-10-24T18:06:18"}
+{"ts": "2026-10-24T18:07:42", "event": "no_residue_verdict_recomputed", "artifact": "no_residue_verdict_final.json", "sha256": "5937c5c4d6e4cf252936d66b27705f3a10aa5bb7ccff7142441cc9a1a1bb38a7", "round8_no_residue": true, "preexisting_draft": "15426104612 (2026-10-23, live-complex-demo 存量)", "attempts": "attempt_001 收尾异常已披露 / attempt_002 干净"}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261023-live-complex-demo\\demonstration_materials_revision02",
+  "files": [
+    {
+      "material_id": "sha256:a80c424a35dde194c0d885c71606c166aef6ff4a9a25de7e6996a164690d8bef",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261023-live-complex-demo\\demonstration_materials_revision02\\authorized_demo_revision02.json",
+      "relative_path": "authorized_demo_revision02.json",
+      "sha256": "a80c424a35dde194c0d885c71606c166aef6ff4a9a25de7e6996a164690d8bef",
+      "size_bytes": 5884,
+      "duplicate_paths": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "page": {
+    "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+    "is_new": true,
+    "operator": "陈晶",
+    "biz_number": "",
+    "uuid": "",
+    "status": "编制中"
+  },
+  "test_context": {
+    "purpose": "已授权复杂历史数据回放，验证真实控件和整单；不申报新费用、不保存",
+    "round": "express-complex-R2-defaultbank",
+    "authorization_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-extension\\live-test-authorization.json",
+    "authorization_sha256": "8950fd603ba9843d9d5c3627885ea72c122354162572e255a4e4468764f5195d"
+  },
+  "save_status": "NOT_ATTEMPTED",
+  "closing_own_test_context_only": true
+}

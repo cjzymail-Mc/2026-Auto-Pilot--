@@ -1,0 +1,14 @@
+{
+ "request_path": "/WorkOut/query/20/1",
+ "method": "POST",
+ "post_data": "{\"orders\":[],\"args\":[{\"propertyName\":\"CreatedPath\",\"queryType\":30,\"separator\":\",\",\"text\":\"/QD/ZQGF/MK33/MK3305/116070053\",\"assemblyName\":\"QiaoDan.OA.ViewModels\",\"className\":\"QiaoDan.OA.ViewModels.WorkOutViewModel\",\"relationProperty\":\"CreatedBy\"},{\"propertyName\":\"CreatedAt\",\"queryType\":10,\"separator\":\",\",\"text\":\"1790784000,\",\"assemblyName\":\"QiaoDan.OA.ViewModels\",\"className\":\"QiaoDan.OA.ViewModels.WorkOutViewModel\"},{\"propertyName\":\"AppliedAt\",\"queryType\":10,\"separator\":\",\",\"text\":\"1735660800,\",\"assemblyName\":\"QiaoDan.OA.ViewModels\",\"className\":\"QiaoDan.OA.ViewModels.WorkOutViewModel\"}],\"detailArgs\":[]}",
+ "body": {
+  "pageIndex": 1,
+  "totalPages": 0,
+  "totalCount": 0,
+  "count": 0,
+  "hasPreviousPage": false,
+  "hasNextPage": false,
+  "data": []
+ }
+}

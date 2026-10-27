@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "kind": "skill_round_snapshot",
+  "round": "9",
+  "snapshot_at": "2026-10-24T20:08:21+08:00",
+  "note": "round-9 轮末快照：references/full-chain.md 新增「events 与观察处置」节（mc-expert 三观察：分段标记/authorization 字样=只读观测头名/布尔分层命名；红线段零触碰，test_skill_docs 9/9 OK）",
+  "files": {
+    "SKILL.md": "b41e9e4e9dcc0dd2b263fe083b7f86784e1a8205d4b9b4a97263607590bf1109",
+    "references/express.md": "a141d64283b08d6bffea0e0473d346cd1f3f2a61c2d53c5af9e2f9edbd0f6481",
+    "references/full-chain.md": "072264d47c0a25cde4b8d5001d294d893db8289a9f9d842b8a722c0d5b3714e7",
+    "references/plan-contract.md": "0c708e50b07eb3fe82e9a7a2e284fd804d629f6c84035305eddb07e5dddaeb8f",
+    "references/rd-materials.md": "7f7f8fffa841501322c5ad13001303d05747e8b5586446274e58a07110b6b19f",
+    "references/travel.md": "96c5a2f47833bc4d184718f75a2c27cd1c573f0038833e91c450312be0202609"
+  }
+}

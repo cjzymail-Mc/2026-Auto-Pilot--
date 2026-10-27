@@ -1,0 +1,71 @@
+{
+  "task": "user_authorized_historical_demonstration",
+  "template_number": "15426093015",
+  "plan_fields_filled": true,
+  "strict_status": "READBACK_MISMATCH",
+  "strict_issues": [
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/0/bizDetailCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/0/bizDetailNum"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/0/usedCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/1/bizDetailCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/1/bizDetailNum"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/1/usedCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/2/bizDetailCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/2/bizDetailNum"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/2/usedCost"
+    }
+  ],
+  "readonly_empty_system_field_count": 9,
+  "row_counts": {
+    "relations": 3,
+    "details": 2,
+    "costs": 6,
+    "banks": 1
+  },
+  "header_total": "633.84",
+  "table_totals": {
+    "costs": "633.84",
+    "details": "633.84",
+    "banks": "633.84"
+  },
+  "applicant": "徐亮",
+  "creator": "陈晶",
+  "creator_unchanged": true,
+  "explicit_demo_associations": [
+    "12026101976",
+    "12026070366",
+    "12026037675"
+  ],
+  "save_attempted": false,
+  "submit_attempted": false,
+  "human_review_page_open": true,
+  "retention_hours": 24,
+  "executor": "task-local adapters for observed live editors; not evidence that unmodified v1 executor supports all real branches",
+  "current_evidence": "attempt_002/evidence/independent_readback.json"
+}

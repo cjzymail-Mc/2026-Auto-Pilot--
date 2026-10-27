@@ -1,0 +1,71 @@
+{
+  "original_snapshot_sha256": "5c4aa981f866de2ba064979cd3c9fc52f29acee857c95bb0649106afc2eb8263",
+  "metadata_sha256": "68c9cef74c73803ac6830943949f541c67cf55ef8e8486c0ad20b8a62c35acb3",
+  "rule_evidence": "protected_saved_sample.json",
+  "original_result_preserved": true,
+  "replay_verification": {
+    "ok": true,
+    "issues": [],
+    "plan_hash": "c6b2e7f1a41e67f69acef8d419ad619993bf71a4e1713dd8577f2b394df9b8e3",
+    "snapshot_hash": "c3c1374b5c25d91ffb31f99d3eec7cad72012ceec5cedd1f57bc0038b655dac8",
+    "counts": {
+      "relations": {
+        "expected": 3,
+        "actual": 3
+      },
+      "details": {
+        "expected": 2,
+        "actual": 2
+      },
+      "costs": {
+        "expected": 6,
+        "actual": 6
+      },
+      "banks": {
+        "expected": 1,
+        "actual": 1
+      }
+    },
+    "amounts": {
+      "details": "633.84",
+      "banks": "633.84",
+      "costs": "633.84",
+      "total": "633.84"
+    }
+  },
+  "empty_detailrels_negative": {
+    "ok": false,
+    "issues": [
+      {
+        "code": "PROJECTION_ROW_COUNT_MISMATCH",
+        "path": "/extra_tables/detailrels"
+      }
+    ],
+    "plan_hash": "c6b2e7f1a41e67f69acef8d419ad619993bf71a4e1713dd8577f2b394df9b8e3",
+    "snapshot_hash": "6f29e13e114fcace94f1bc13d407c5794f051c558aa06d90f0d560472aad7b52",
+    "counts": {
+      "relations": {
+        "expected": 3,
+        "actual": 3
+      },
+      "details": {
+        "expected": 2,
+        "actual": 2
+      },
+      "costs": {
+        "expected": 6,
+        "actual": 6
+      },
+      "banks": {
+        "expected": 1,
+        "actual": 1
+      }
+    },
+    "amounts": {
+      "details": "633.84",
+      "banks": "633.84",
+      "costs": "633.84",
+      "total": "633.84"
+    }
+  }
+}

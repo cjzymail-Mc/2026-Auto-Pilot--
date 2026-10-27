@@ -1,0 +1,39 @@
+{
+  "relations": [
+    {
+      "fields": {
+        "bizTypeName": "公出单",
+        "bizNumber": "12026101976",
+        "bizCost": "0.00",
+        "totalReimedCost": "0.00",
+        "nowCost": "215.28",
+        "isLast": "否",
+        "description": "徐亮(2026-10-14)"
+      }
+    },
+    {
+      "fields": {
+        "bizTypeName": "公出单",
+        "bizNumber": "12026070366",
+        "bizCost": "0.00",
+        "totalReimedCost": "0.00",
+        "nowCost": "215.28",
+        "isLast": "否",
+        "description": "徐亮(2026-07-02)"
+      }
+    },
+    {
+      "fields": {
+        "bizTypeName": "公出单",
+        "bizNumber": "12026037675",
+        "bizCost": "0.00",
+        "totalReimedCost": "0.00",
+        "nowCost": "0.00",
+        "isLast": "否",
+        "description": "徐亮(2026-03-30)"
+      }
+    }
+  ],
+  "dialog": null,
+  "overlay": []
+}

@@ -1,0 +1,81 @@
+........usage: python.exe -m unittest [-h] [--run RUN] [--doc-id DOC_ID]
+                              [--legacy-regression]
+                              [--resume-attempt RESUME_ATTEMPT] --expect-name
+                              EXPECT_NAME [--tech-budget TECH_BUDGET]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--interactive-pick] [--pick-wait PICK_WAIT]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--login-only | --fill-plan FILL_PLAN]
+python.exe -m unittest: error: run id 必须为仓库 runs 下的简单名称（1–100 个字母、数字、下划线或连字符）
+usage: python.exe -m unittest [-h] [--run RUN] [--doc-id DOC_ID]
+                              [--legacy-regression]
+                              [--resume-attempt RESUME_ATTEMPT] --expect-name
+                              EXPECT_NAME [--tech-budget TECH_BUDGET]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--interactive-pick] [--pick-wait PICK_WAIT]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--login-only | --fill-plan FILL_PLAN]
+python.exe -m unittest: error: wall_cap 必须是有限的非负数（执行预算/墙钟须大于零）
+usage: python.exe -m unittest [-h] [--run RUN] [--doc-id DOC_ID]
+                              [--legacy-regression]
+                              [--resume-attempt RESUME_ATTEMPT] --expect-name
+                              EXPECT_NAME [--tech-budget TECH_BUDGET]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--interactive-pick] [--pick-wait PICK_WAIT]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--login-only | --fill-plan FILL_PLAN]
+python.exe -m unittest: error: keep_open_minutes 必须是有限的非负数（执行预算/墙钟须大于零）
+.....................................................................................................usage: python.exe -m unittest [-h] (--task TASK | --fill-plan FILL_PLAN)
+                              [--expect-name EXPECT_NAME] [--run RUN]
+                              [--resume-run RESUME_RUN]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--validate-only] [--legacy-regression]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--tech-budget TECH_BUDGET]
+python.exe -m unittest: error: one of the arguments --task --fill-plan is required
+........................................................................................usage: python.exe -m unittest [-h] (--census CENSUS | --live)
+                              --template-number TEMPLATE_NUMBER --output
+                              OUTPUT [--expect-name EXPECT_NAME]
+                              [--research-raw] [--lookup-list LOOKUP_LIST]
+                              [--observe-view] [--login-wait LOGIN_WAIT]
+python.exe -m unittest: error: output must be a new file beneath automation/runs
+.usage: python.exe -m unittest [-h] (--census CENSUS | --live)
+                              --template-number TEMPLATE_NUMBER --output
+                              OUTPUT [--expect-name EXPECT_NAME]
+                              [--research-raw] [--lookup-list LOOKUP_LIST]
+                              [--observe-view] [--login-wait LOGIN_WAIT]
+python.exe -m unittest: error: output must be a new file beneath automation/runs
+.............ssss.............{"status": "NEEDS_INPUT", "issues": [{"path": "/tables/details", "code": "AMOUNT_MISMATCH", "message": "amount sum differs from totalCost"}, {"path": "/tables/banks", "code": "AMOUNT_MISMATCH", "message": "amount sum differs from totalCost"}, {"path": "/tables/costs", "code": "AMOUNT_MISMATCH", "message": "amount sum differs from totalCost"}, {"path": "/header/totalCost", "code": "SOURCE_INVALID", "message": "located value differs from planned value"}], "browser_launched": false}
+{"status": "NEEDS_INPUT", "issues": [{"path": "/table_applicability", "code": "INVALID_PLAN", "message": "each empty table requires exactly one sourced not-applicable reason"}, {"path": "/tables/details/0/fields", "code": "INVALID_PLAN", "message": "exact configured columns required"}, {"path": "/template", "code": "SOURCE_INVALID", "message": "new-type template requires explicit category identity"}, {"path": "/header/submitType", "code": "SOURCE_INVALID", "message": "located value differs from planned value"}], "browser_launched": false}
+{"status": "NEEDS_INPUT", "issues": [{"path": "/tables", "code": "INVALID_PLAN", "message": "exact configured business table set required"}, {"path": "/tables/costs", "code": "INVALID_PLAN", "message": "archive material scope requires a separate empty costs table"}, {"path": "/table_applicability", "code": "INVALID_PLAN", "message": "each empty table requires exactly one sourced not-applicable reason"}, {"path": "/tables/details/0/fields", "code": "INVALID_PLAN", "message": "exact configured columns required"}, {"path": "/tables/products", "code": "INVALID_PLAN", "message": "row array required"}, {"path": "/amount_rules", "code": "INVALID_PLAN", "message": "archive prices require explicit line_total sum semantics"}, {"path": "/template", "code": "SOURCE_INVALID", "message": "new-type template requires explicit category identity"}, {"path": "/materials", "code": "INVOICE_RECONCILIATION_INVALID", "message": "no-invoice reason must target unique, unallocated primary expense row"}, {"path": "/header/submitType", "code": "SOURCE_INVALID", "message": "located value differs from planned value"}], "browser_launched": false}
+[10:41:27] PROGRESS relations: 1 rows complete
+[10:41:36] PROGRESS costs: 4 rows complete
+[10:41:40] PROGRESS details: 3 rows complete
+[10:41:45] PROGRESS banks: 3 rows complete
+........[10:41:55] PROGRESS relations: 1 rows complete
+[10:41:55] PROGRESS costs: 0 rows complete
+[10:41:55] PROGRESS details: 1 rows complete
+[10:41:55] PROGRESS banks: 1 rows complete
+.[10:41:57] PROGRESS relations: 0 rows complete
+[10:41:57] PROGRESS costs: 3 rows complete
+[10:41:57] PROGRESS details: 1 rows complete
+[10:41:58] PROGRESS banks: 1 rows complete
+.D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py:1019: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\xy198\\AppData\\Local\\Temp\\tmp06qr4alu\\attempt_001\\evidence\\new_form_after_header.json' mode='w' encoding='utf-8'>
+  io.open(p, "w", encoding="utf-8", newline="\n").write(text)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py:1019: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\xy198\\AppData\\Local\\Temp\\tmp7281lv6p\\attempt_001\\evidence\\template_view_observation.json' mode='w' encoding='utf-8'>
+  io.open(p, "w", encoding="utf-8", newline="\n").write(text)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.......D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py:1019: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\xy198\\AppData\\Local\\Temp\\tmpu3yrgb7n\\attempt_001\\evidence\\product_add_controls.json' mode='w' encoding='utf-8'>
+  io.open(p, "w", encoding="utf-8", newline="\n").write(text)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+.[10:42:07] PROGRESS relations: 0 rows complete
+[10:42:07] PROGRESS costs: 0 rows complete
+[10:42:21] PROGRESS products: 3 rows complete
+[10:42:21] PROGRESS details: 1 rows complete
+[10:42:22] PROGRESS banks: 1 rows complete
+...................................
+----------------------------------------------------------------------
+Ran 282 tests in 111.090s
+
+OK (skipped=4)

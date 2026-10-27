@@ -1,0 +1,16 @@
+{"event": "timing", "action": "plan_source_validation", "t0_ms": 1792829527572.437, "dur_ms": 200.833984375, "outcome": "ok"}
+{"event": "timing", "action": "entry_plan_validation_binding", "t0_ms": 1792829527563.4375, "dur_ms": 236.833251953125, "outcome": "ok", "plan_hash": "e917a10d68e5b95a8f5e5212ab58db2b2b68ea9c5e0e4dc601ee4c2efcd30c48", "source_manifest_sha256": "79e84f61fd67c8cee39fa2a56bf080ee61f5e52108e94a86fe9fab89afa8233b"}
+{"event": "profile_lock_acquired", "pid": 16572, "ts": "2026-10-24T16:12:08"}
+{"event": "probe_start", "run": "20261024-161207-a630166f", "attempt": "attempt_001", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-24T16:12:08"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-24T16:12:08"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 700, "ts": "2026-10-24T16:12:09"}
+{"event": "timing", "action": "browser_session_start", "t0_ms": 1792829528203, "dur_ms": 952, "outcome": "ok", "exc": "", "ts": "2026-10-24T16:12:09"}
+{"event": "page_navigation", "epoch_ms": 1792829529398, "ts": "2026-10-24T16:12:09"}
+{"event": "page_navigation", "epoch_ms": 1792829529921, "ts": "2026-10-24T16:12:09"}
+{"event": "page_navigation", "epoch_ms": 1792829530822, "ts": "2026-10-24T16:12:10"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792829531888, "dur_ms": 386, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T16:12:12"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T16:12:12"}
+{"event": "probe_end", "reason": "NEEDS_INPUT", "tech_used_s": 3.8, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-24T16:12:13"}
+{"event": "keep_open_start", "minutes": 5.0, "task_status": "NEEDS_INPUT", "ts": "2026-10-24T16:12:13"}
+{"event": "keep_open_end", "task_status": "NEEDS_INPUT", "ts": "2026-10-24T16:17:13"}
+{"event": "own_test_page_close", "unsaved": false, "save_attempted": false, "ts": "2026-10-24T16:17:13"}

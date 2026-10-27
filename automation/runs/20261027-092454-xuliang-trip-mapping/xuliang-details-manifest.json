@@ -1,0 +1,83 @@
+{
+ "stage": "xuliang candidate details",
+ "targets": [
+  {
+   "bizNumber": "12025085486",
+   "uuid": "2105b4d8415f4667ba07750d0428f333",
+   "trip_date": "2025-08-25",
+   "census_desc": "徐亮0825",
+   "status": "CAPTURED",
+   "http_status": 200,
+   "api_file": "api-xuliang-12025085486.json",
+   "api_sha256": "2d4dfe751b4a03e6705a93d0129f5a81d3669eb594d2bdff383d1e2f44ef805d",
+   "doc_appliedName": "徐亮",
+   "doc_createdName": "徐亮",
+   "doc_bizReason": "plaid3.0量产会议",
+   "doc_place": "晋江",
+   "doc_reimed": 2,
+   "rows": [
+    {
+     "appliedName": "徐亮",
+     "factStart": "2025-08-25T13:30",
+     "factEnd": "2025-08-25T18:00",
+     "natureStart": "2025-08-25",
+     "natureEnd": "2025-08-25"
+    }
+   ],
+   "xuliang_in_rows": true,
+   "covers_trip_date": true
+  },
+  {
+   "bizNumber": "12025112775",
+   "uuid": "6a636d318de64efaa9026dbee8b85440",
+   "trip_date": "2025-11-12",
+   "census_desc": "徐亮1114",
+   "status": "CAPTURED",
+   "http_status": 200,
+   "api_file": "api-xuliang-12025112775.json",
+   "api_sha256": "ed5d469d54e86882211bad34e52a915cc0c82af7ee5796af1bac38d97b992e14",
+   "doc_appliedName": "徐亮",
+   "doc_createdName": "徐亮",
+   "doc_bizReason": "plaid3.0标准制定",
+   "doc_place": "晋江",
+   "doc_reimed": 2,
+   "rows": [
+    {
+     "appliedName": "徐亮",
+     "factStart": "2025-11-12T08:30",
+     "factEnd": "2025-11-12T17:30",
+     "natureStart": "2025-11-12",
+     "natureEnd": "2025-11-12"
+    }
+   ],
+   "xuliang_in_rows": true,
+   "covers_trip_date": true
+  },
+  {
+   "bizNumber": "12025121233",
+   "uuid": "be228bd423fa4c7db8f5cfe3d7da676b",
+   "trip_date": "2025-12-04",
+   "census_desc": "徐亮1204",
+   "status": "CAPTURED",
+   "http_status": 200,
+   "api_file": "api-xuliang-12025121233.json",
+   "api_sha256": "95bf03ad8b3c255e40a745e9c5fa0b40bf948a8b1ac19e0d6fd216f200022a62",
+   "doc_appliedName": "徐亮",
+   "doc_createdName": "徐亮",
+   "doc_bizReason": "带客户参观工厂",
+   "doc_place": "晋江",
+   "doc_reimed": 2,
+   "rows": [
+    {
+     "appliedName": "徐亮",
+     "factStart": "2025-12-04T08:30",
+     "factEnd": "2025-12-04T17:30",
+     "natureStart": "2025-12-04",
+     "natureEnd": "2025-12-04"
+    }
+   ],
+   "xuliang_in_rows": true,
+   "covers_trip_date": true
+  }
+ ]
+}

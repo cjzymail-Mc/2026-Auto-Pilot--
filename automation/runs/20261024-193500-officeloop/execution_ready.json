@@ -1,0 +1,19 @@
+{
+  "status": "EXECUTION_READY",
+  "plan": {
+    "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-193500-officeloop\\fill_plan_r9.json",
+    "plan_hash": "d426d31c99372fc517438f98e861d281f94f731e200f199ca0c4e724afadda61",
+    "sha256": "d426d31c99372fc517438f98e861d281f94f731e200f199ca0c4e724afadda61"
+  },
+  "operator": {
+    "name": "陈晶",
+    "source": "user_policy",
+    "basis": "合成离线链（零浏览器）：操作人取登录默认形态用户策略值"
+  },
+  "validate_only": {
+    "status": "PLAN_VALIDATED",
+    "browser_launched": false
+  },
+  "suggested_command": "python -X utf8 fill_once.py --fill-plan \"D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-193500-officeloop\\fill_plan_r9.json\" --expect-name \"陈晶\" --keep-open-minutes 45",
+  "browser_launched": false
+}

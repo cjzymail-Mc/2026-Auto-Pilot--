@@ -1,0 +1,151 @@
+{
+  "schema": "v3-final-manifest-1.0",
+  "generated_at": "2026-10-26T22:52:55+08:00",
+  "case": "真实公出案例独立解析与 OA 填写（BPM-MATERIALS-20261026-V3）fill_only 考核",
+  "sections": {
+    "1_原件与解析": [
+      {
+        "path": "automation/runs/20261026-100322-v3r00-inventory/case-file-manifest.json",
+        "sha256": "a18aa1f038493f956eec3c00b925347fef25f3797c2c7238ce80729aa7f1f672",
+        "note": "73 原件清单+分组+sha256（第 8 轮零漂移基线）"
+      },
+      {
+        "path": "automation/runs/20261026-115500-v3r02-case01/case01-facts.json",
+        "sha256": "8d5581dec67c5a9c52b1a47c092466feea8604abc25b8d2b339a09c2ea9cf5cf",
+        "note": "CASE-01 事实层：52 唯一身份（27 通行费+5 油票+20 汇总单×2）、逐票票面+锚点"
+      },
+      {
+        "path": "automation/runs/20261026-115500-v3r02-case01/CASE-01-report.md",
+        "sha256": "3ff24c3deb285c597ad73420b7f8034d8697eb7b29893c918a3c5b6b16599221",
+        "note": "机器+人工双报告、交叉核验全绿、期间链"
+      }
+    ],
+    "2_工作簿副本与重算": [
+      {
+        "path": "automation/runs/20261026-131000-v3r03-case02/case02-mapping.json",
+        "sha256": "a899944ea27c16fb4b9e3b62738ceb2062581fa8df3cd8f64c567015456e79a3",
+        "note": "20 行↔27 票逐票映射（cell 级变更清单）"
+      },
+      {
+        "path": "automation/runs/20261026-131000-v3r03-case02/case02-coverage.json",
+        "sha256": "09c26a5ee5989f66471812095b2bb7a1c66eae7982b315c1c09508a6a6c60e35",
+        "note": "覆盖模型 fuel_pool_strict_surplus：K/M/T/R/O/F/margin/严格门槛"
+      }
+    ],
+    "3_逐票公出单对照": [
+      {
+        "path": "automation/runs/20261026-143340-v3r04-case03/actual_trip_matches.json",
+        "sha256": "7da036aabed9b56c13a5801ad521f1d7c9e8db3583a5dc0e3c5aa8c538cec687",
+        "note": "27 票逐票裁定：12 MATCHED Σ221.02 / 15 NO_MATCH Σ265.91（含查询/详情证据引用）"
+      }
+    ],
+    "4_模板与计划": [
+      {
+        "path": "automation/runs/20261026-172300-v3r06-template-plan/template_snapshot.json",
+        "sha256": "7c71bd42b9730635adb24c7c0d410895605b2ccaa2ca6ff1cf75a94a06b0567a",
+        "note": "模板 15426095951 快照（travel 兼容；三员=陈晶/116070053）"
+      },
+      {
+        "path": "automation/runs/20261026-172300-v3r06-template-plan/field-reuse-matrix.md",
+        "sha256": "8c669cac5c0eca5e0b5b153e1a6eca1b1490a7a24527005a141e349545a4f1a4",
+        "note": "复用边界：template 14 仅身份/预算/收款；本次值零旧单推导"
+      },
+      {
+        "path": "automation/runs/20261026-172300-v3r06-template-plan/fill-plan.json",
+        "sha256": "0d5b22cd6f12058dd04567b3bb63b14ca1775cbd51690e324ece118a3a242fa8",
+        "note": "可执行计划 v1.0：details 2+costs 20+banks 1 三向闭合 1924.93；validate-only PLAN_VALIDATED"
+      }
+    ],
+    "5_受限测试关联与执行变体": [
+      {
+        "path": "automation/runs/20261026-181500-v3r07-fill/attempt_002/evidence/relation_enumeration.json",
+        "sha256": "369a47938da2215e0cc11a495128e0a7f75f8ef3d2c8d0948607df972b3b0176",
+        "note": "真实关联弹窗首屏枚举（20/76，零选择零副作用）"
+      },
+      {
+        "path": "automation/runs/20261026-181500-v3r07-fill/fill-plan-v11.json",
+        "sha256": "6c9d1b6fd719124e30b3af0e5cba7fb9df783abc3ae6c7a65e763734ec721f7c",
+        "note": "执行变体 v1.1：占位意图块 oa_test_relations（种子先验 6074a757…→12024070132）"
+      },
+      {
+        "path": "automation/runs/20261026-181500-v3r07-fill/variant-diff.json",
+        "sha256": "0c6aa2250020bcd4a4928defe30b2c7088dbcf4355ef631ef3c23de3ac3755ef",
+        "note": "v1.1↔v1.0 零偏离断言（差异全落声明簇）+随机占位单独列表"
+      }
+    ],
+    "6_真实执行与独立核验": [
+      {
+        "path": "automation/runs/20261026-183000-v3r07-fill/attempt_001/stage1_result.json",
+        "sha256": "6ef51f876152dd7a668c6b1ac1627abcc23abbbba9b6ee0784dc99ae0d86c7d2",
+        "note": "SUCCESS_FILL_ONLY；save_status=NOT_ATTEMPTED；tech 309.5s"
+      },
+      {
+        "path": "automation/runs/20261026-183000-v3r07-fill/attempt_001/evidence/independent_readback.json",
+        "sha256": "868a920d1c0310b136bf15e73ca907250b884f251ddde7f0e3d966f110b5d3a7",
+        "note": "独立 DOM 全量回读（四表行数组+金额+身份）"
+      },
+      {
+        "path": "automation/runs/20261026-183000-v3r07-fill/attempt_001/evidence/independent_verification.json",
+        "sha256": "170cbdb5d182240c57e6efa482a8be244b3543a74c8b43d26a38e75bee23c1cc",
+        "note": "全量 diff：ok=true、行数全等、金额四向 1924.93==R"
+      },
+      {
+        "path": "automation/runs/20261026-183000-v3r07-fill/attempt_001/evidence/v1_final.png",
+        "sha256": "f2705d97790c28fa42b27128cd60fd60391853ef74c1426292449d4904de18a2",
+        "note": "终局整页截图"
+      },
+      {
+        "path": "automation/runs/20261026-183000-v3r07-fill/attempt_001/evidence/test_page_close_inventory.json",
+        "sha256": "9b85018210b770115920486051fd163409212ee070af688302062e904ab0a612",
+        "note": "未保存页盘点：编制中/无单号/无 UUID/干净关闭"
+      },
+      {
+        "path": "automation/runs/20261026-181500-v3r07-fill/B5-report.md",
+        "sha256": "579151b67f3f1a7a01aca43ebe688d11df60e6687ba1a67414e54db831a431e7",
+        "note": "B5 独立回读 diff 报告（可读版+机器版 b5-diff-summary.json）"
+      }
+    ],
+    "7_独立复核与新session验收": [
+      {
+        "path": "automation/runs/20261026-192400-v3r08-final/B6-report.md",
+        "sha256": "12fb3a90e486c95afe8b963d11e1b4210dc53520a4504e227e5a85805a85b380",
+        "note": "B6 全链独立复核报告（另一 agent 从原件到 DOM 重算，差异表）"
+      },
+      {
+        "path": "automation/runs/20261026-192400-v3r08-final/case08-input-manifest.md",
+        "sha256": "482cabde6a77302cdb6b25e118bb159ae7b8737b151ef5e5aafc6f2d62788e5b",
+        "note": "CASE-08 输入白名单（启动前落盘可审计）"
+      },
+      {
+        "path": "automation/runs/20261026-192400-v3r08-final/CASE-08-report.md",
+        "sha256": "b24af05e49b8a1f1a9e436ef5233b60d370f47406d60106d8f562348a06414b5",
+        "note": "CASE-08 新 session 验收结论（含其自有 v1.0+validate-only+比对）"
+      }
+    ],
+    "8_终局与交付": [
+      {
+        "path": "automation/template-materials-program/progress.json",
+        "sha256": "0e43c77dcd9259bdf85a1abcb5894b69eff525666f09a5134922c0d002c16a24",
+        "note": "全链台账含 V3-R07 条目 + V3-R08 B7 终局标记（fill_only 完成/页面状态交接）"
+      },
+      {
+        "path": "automation/runs/20261026-192400-v3r08-final/用户报告.md",
+        "sha256": "47646621c0e174acaae5d281c8aca4b292bdbc04a6a23232476570a514712a4a",
+        "note": "用户可读报告（不宣称重新报销成功）"
+      },
+      {
+        "path": "handoff-input.json",
+        "sha256": "b7cacf0c719ae2abb45706d2577d3049cec77bbaa99a47819a4a4c1fa3a663de",
+        "note": "本轮交接（round-8 实际哈希）"
+      }
+    ]
+  },
+  "counts": {
+    "items": 24
+  },
+  "notes": [
+    "A 逐项抽验以 path+sha256 为准；内容要点为索引非替代",
+    "每轮交接以 helper 状态 history（round 1–8 review_sha256）+ 各轮 run 目录 events 为准",
+    "凭证原值不在任何交付物中；automation/.pw-profile 与 .local-session 不入 Git"
+  ]
+}

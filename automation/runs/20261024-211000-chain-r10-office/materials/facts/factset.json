@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "business_ref": "chain-r10-office_supplies-15426101596",
+  "bindings": {
+    "originals/synthetic_office_r9.json": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+  },
+  "generated_at": "2026-10-24T12:55:15.165077+00:00",
+  "facts": [
+    {
+      "fact_id": "F-0001",
+      "kind": "business_identity",
+      "source": "material_extraction",
+      "source_label": "原件（提取/复核工件）",
+      "value": {
+        "name": "陈晶",
+        "company": "厦门乔丹科技有限公司",
+        "department": "运动表现研究部"
+      },
+      "locator": "originals/synthetic_office_r9.json#/applicant",
+      "derivation": null,
+      "input_hashes": {
+        "originals/synthetic_office_r9.json": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      },
+      "note": "材料申请人（本次值，非模板历史）",
+      "created_at": "2026-10-24T12:55:15.164210+00:00"
+    },
+    {
+      "fact_id": "F-0002",
+      "kind": "scope",
+      "source": "material_extraction",
+      "source_label": "原件（提取/复核工件）",
+      "value": {
+        "corpCode": "厦门乔丹科技有限公司",
+        "bizOrign": "乔丹科技",
+        "budgetYears": "2026",
+        "payType": "转账",
+        "currencyType": "人民币",
+        "submitType": "低值易耗品、办公用品采购",
+        "description": "【合成测试材料·离线链验证·office_supplies r9】办公耗材季度申购"
+      },
+      "locator": "originals/synthetic_office_r9.json#/header",
+      "derivation": null,
+      "input_hashes": {
+        "originals/synthetic_office_r9.json": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      },
+      "note": "单头显示值（金额语义与类别码以材料为源）",
+      "created_at": "2026-10-24T12:55:15.165077+00:00"
+    },
+    {
+      "fact_id": "F-0003",
+      "kind": "total",
+      "source": "deterministic_computation",
+      "source_label": "确定性计算",
+      "value": {
+        "amount": "1234.56"
+      },
+      "locator": "derived:total#details-cost-sum",
+      "derivation": "明细求和；与费用/收款各层合计及材料 totalCost 闭合",
+      "input_hashes": {},
+      "note": null,
+      "created_at": "2026-10-24T12:55:15.165077+00:00"
+    },
+    {
+      "fact_id": "F-0004",
+      "kind": "expense",
+      "source": "material_extraction",
+      "source_label": "原件（提取/复核工件）",
+      "value": {
+        "amount": "1234.56",
+        "layer": "summary",
+        "category": "02001",
+        "reimItem": "02001",
+        "digest": "合成：办公耗材",
+        "budgetDeptName": "科技中心",
+        "budgetNo": "15625120075",
+        "subjectName": "办公费",
+        "budgetItemName": "年度预算项目",
+        "budgetOwner": "21"
+      },
+      "locator": "originals/synthetic_office_r9.json#/tables/details/0",
+      "derivation": null,
+      "input_hashes": {
+        "originals/synthetic_office_r9.json": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      },
+      "note": null,
+      "created_at": "2026-10-24T12:55:15.165077+00:00"
+    },
+    {
+      "fact_id": "F-0005",
+      "kind": "expense",
+      "source": "material_extraction",
+      "source_label": "原件（提取/复核工件）",
+      "value": {
+        "amount": "1234.56",
+        "layer": "detail",
+        "category": "other",
+        "date": "2026-01-01",
+        "project": "other",
+        "startDate": "2026-01-01",
+        "endDate": "2026-03-31",
+        "projectPlace": "厦门",
+        "count": "3",
+        "reason": "合成：季度汇总行"
+      },
+      "locator": "originals/synthetic_office_r9.json#/tables/costs/0",
+      "derivation": null,
+      "input_hashes": {
+        "originals/synthetic_office_r9.json": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      },
+      "note": null,
+      "created_at": "2026-10-24T12:55:15.165077+00:00"
+    },
+    {
+      "fact_id": "F-0006",
+      "kind": "payee_group",
+      "source": "material_extraction",
+      "source_label": "原件（提取/复核工件）",
+      "value": {
+        "name": "收款人甲",
+        "account": "6217000000000000001",
+        "branch": "中国银行股份有限公司厦门分行",
+        "interbank": "104393000011",
+        "amount": "500.00"
+      },
+      "locator": "originals/synthetic_office_r9.json#/tables/banks/0",
+      "derivation": null,
+      "input_hashes": {
+        "originals/synthetic_office_r9.json": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      },
+      "note": null,
+      "created_at": "2026-10-24T12:55:15.165077+00:00"
+    },
+    {
+      "fact_id": "F-0007",
+      "kind": "payee_group",
+      "source": "material_extraction",
+      "source_label": "原件（提取/复核工件）",
+      "value": {
+        "name": "收款人乙",
+        "account": "6217000000000000002",
+        "branch": "中国银行股份有限公司厦门分行",
+        "interbank": "104393000011",
+        "amount": "534.56"
+      },
+      "locator": "originals/synthetic_office_r9.json#/tables/banks/1",
+      "derivation": null,
+      "input_hashes": {
+        "originals/synthetic_office_r9.json": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      },
+      "note": null,
+      "created_at": "2026-10-24T12:55:15.165077+00:00"
+    },
+    {
+      "fact_id": "F-0008",
+      "kind": "payee_group",
+      "source": "material_extraction",
+      "source_label": "原件（提取/复核工件）",
+      "value": {
+        "name": "收款人丙",
+        "account": "6217000000000000003",
+        "branch": "中国银行股份有限公司厦门分行",
+        "interbank": "104393000011",
+        "amount": "200.00"
+      },
+      "locator": "originals/synthetic_office_r9.json#/tables/banks/2",
+      "derivation": null,
+      "input_hashes": {
+        "originals/synthetic_office_r9.json": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87"
+      },
+      "note": null,
+      "created_at": "2026-10-24T12:55:15.165077+00:00"
+    },
+    {
+      "fact_id": "F-0009",
+      "kind": "scope",
+      "source": "user_instruction",
+      "source_label": "用户明确指令",
+      "value": {
+        "reason": "合成离线链材料：02 类 plan 级非空 relations 待 bpm_plan 授权轮（本轮裁决①）；真实单实测申请书(34)关联见 config observed_relation_types"
+      },
+      "locator": "originals/synthetic_office_r9.json#/table_applicability/relations/reason",
+      "derivation": null,
+      "input_hashes": {},
+      "note": "空表当次来源理由（材料原文；P2-4：语义为材料路径）",
+      "created_at": "2026-10-24T12:55:15.165077+00:00"
+    },
+    {
+      "fact_id": "F-0010",
+      "kind": "no_invoice_basis",
+      "source": "user_instruction",
+      "source_label": "用户明确指令",
+      "value": {
+        "expense_ref": "F-0005",
+        "reason": "合成离线链测试材料免票声明：test_only/not_new_expenses，不申报真实费用；02 类文档级 invoice=false（config invoice_policy 声明，研究实测），本字段为生成器现行免票机制载体"
+      },
+      "locator": "originals/synthetic_office_r9.json#/no_invoice_rule",
+      "derivation": null,
+      "input_hashes": {},
+      "note": null,
+      "created_at": "2026-10-24T12:55:15.165077+00:00"
+    }
+  ]
+}

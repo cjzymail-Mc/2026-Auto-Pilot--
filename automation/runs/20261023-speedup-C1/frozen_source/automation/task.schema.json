@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BPM task intake (preparation only)",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "task_id", "document_type", "operator", "template_biz_number", "materials_dir", "statement", "authorization"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "task_id": {"type": "string", "minLength": 1},
+    "document_type": {"const": "travel"},
+    "operator": {"type": "string", "minLength": 1},
+    "template_biz_number": {"type": "string", "pattern": "^[0-9]+$"},
+    "template_snapshot_path": {"type": "string", "minLength": 1},
+    "materials_dir": {"type": "string", "minLength": 1},
+    "statement": {"type": "string", "minLength": 1},
+    "authorization": {"type": "object", "additionalProperties": false,
+      "required": ["mode", "task_id", "statement", "allow_submit"],
+      "properties": {"mode": {"enum": ["fill_only", "save_draft"]}, "task_id": {"type": "string", "minLength": 1}, "statement": {"type": "string", "minLength": 1}, "allow_submit": {"const": false}}}
+  }
+}

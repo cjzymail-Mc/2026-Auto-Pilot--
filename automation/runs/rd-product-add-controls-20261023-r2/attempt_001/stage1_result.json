@@ -1,0 +1,75 @@
+{
+ "probe_version": "v2",
+ "run": "rd-product-add-controls-20261023-r2",
+ "attempt": "attempt_001",
+ "doc_id": "",
+ "expect_name": "陈晶",
+ "checks": {
+  "c1_entry_login": {
+   "status": "PASS",
+   "reason": "域名内页+账户名命中+导航成立（顶栏无显式退出钮，按放宽判据放行）",
+   "evidence": [
+    "attempt_001/evidence/entry.png"
+   ]
+  },
+  "c2_locate_target": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "NOT_RUN",
+   "reason": "未启用 --fill-plan（只读任务不新建/不填写）",
+   "evidence": []
+  }
+ },
+ "phases": {},
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 2550,
+  "classify": "LOGGED_IN",
+  "markers": {
+   "url": "https://bpm.qiaodan.com/oa/home",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 29,
+   "forms": 0,
+   "name_hits": 1,
+   "logout_hits": 0
+  },
+  "cookies_names": [
+   "ww_lang",
+   "wwopen.open.sid"
+  ],
+  "screenshot": "attempt_001/evidence/entry.png",
+  "html": "attempt_001/evidence/entry.html"
+ },
+ "finish_reason": "SUCCESS_DEFAULTS_OBSERVED",
+ "tech_used_s": 12.1,
+ "login_wait_s": 0.0,
+ "wall_s": 13.5,
+ "budget_respected": true
+}

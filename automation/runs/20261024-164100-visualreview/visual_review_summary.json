@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "kind": "visual_review_run",
+  "run": "20261024-164100-visualreview",
+  "material": "originals/synthetic_invoice_2p.pdf",
+  "material_sha256": "85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f",
+  "pipeline": "bpm_extraction.render_to_files(全页渲染 dpi=150) → agent 视觉逐页读取（4.5v）→ review_pass(verify=agent-visual)",
+  "barstub": "未使用（仅管线测试引擎；本流程无 OCR 引擎层）",
+  "reviewed_extraction": "materials/reviewed/",
+  "vision_crosscheck": "materials/reviewed/vision_crosscheck.json",
+  "gap": "REAL_TRAVEL_INVOICE_ORIGINALS_ABSENT（真实发票原件不存在，已登记）"
+}

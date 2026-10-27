@@ -1,0 +1,775 @@
+{"event": "timing", "action": "plan_source_validation", "t0_ms": 1793058171301.4436, "dur_ms": 453.179931640625, "outcome": "ok"}
+{"event": "timing", "action": "entry_plan_validation_binding", "t0_ms": 1793058171294.4148, "dur_ms": 517.922607421875, "outcome": "ok", "plan_hash": "659f8954c1cf12e291abea5000d1a834440c3c4221ee1abfc152c2b4b20b3c52", "source_manifest_sha256": "1a78cd579438c16e3ed78aaf159a178161a6adbf34232aefcd5599ee62124622"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 20176, "ts": "2026-10-27T07:42:52"}
+{"event": "profile_lock_acquired", "pid": 17180, "ts": "2026-10-27T07:42:52"}
+{"event": "probe_start", "run": "20261027-074251-9d71443f", "attempt": "attempt_001", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-27T07:42:52"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-27T07:42:52"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 233, "ts": "2026-10-27T07:42:53"}
+{"event": "timing", "action": "browser_session_start", "t0_ms": 1793058172511, "dur_ms": 1023, "outcome": "ok", "exc": "", "ts": "2026-10-27T07:42:53"}
+{"event": "page_navigation", "epoch_ms": 1793058173795, "ts": "2026-10-27T07:42:53"}
+{"event": "page_navigation", "epoch_ms": 1793058174339, "ts": "2026-10-27T07:42:54"}
+{"event": "page_navigation", "epoch_ms": 1793058175124, "ts": "2026-10-27T07:42:55"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793058176676, "dur_ms": 519, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-27T07:42:57"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-27T07:42:57"}
+{"event": "structured_fill_start", "plan_hash": "659f8954c1cf12e291abea5000d1a834440c3c4221ee1abfc152c2b4b20b3c52", "ts": "2026-10-27T07:42:57"}
+{"event": "UI_START", "epoch_ms": 1793058177857, "round": "user-review-20261027", "rows": {"details": 2, "costs": 20, "banks": 1, "relations": 1}, "network": "chromium --no-proxy-server; fresh test context", "cache": "cold context; session reused", "ts": "2026-10-27T07:42:57"}
+{"event": "fill_start", "plan": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-181500-v3r07-fill\\fill-plan-v12-user-review.json", "goal": null, "ts": "2026-10-27T07:42:57"}
+{"event": "page_navigation", "epoch_ms": 1793058177891, "ts": "2026-10-27T07:42:57"}
+{"event": "timing", "action": "goto_new_form", "t0_ms": 1793058177859, "dur_ms": 108, "outcome": "ok", "exc": "", "ts": "2026-10-27T07:42:57"}
+{"event": "page_navigation", "epoch_ms": 1793058178248, "ts": "2026-10-27T07:42:58"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793058181994, "dur_ms": 197, "outcome": "ok", "exc": "", "name": "fill_00_before.png", "ts": "2026-10-27T07:43:02"}
+{"event": "person_identities_locked", "applicant_employee_verified": false, "creator_unchanged": true, "ts": "2026-10-27T07:43:02"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058182395, "dur_ms": 1587, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-27T07:43:03"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058185305, "dur_ms": 1597, "outcome": "ok", "exc": "", "kind": "multiselect", "ts": "2026-10-27T07:43:06"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058186920, "dur_ms": 1341, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-27T07:43:08"}
+{"event": "header_generated_default_bank_admitted", "pre_header_rows": 0, "after_header_rows": 1, "default_payee_matches_applicant": true, "amount_is_blank_or_zero": true, "ts": "2026-10-27T07:43:08"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058189588, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-27T07:43:09"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058189647, "dur_ms": 1340, "outcome": "ok", "exc": "", "section": "relations", "ts": "2026-10-27T07:43:10"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058190988, "dur_ms": 12, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-27T07:43:11"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058191081, "dur_ms": 1272, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "ts": "2026-10-27T07:43:12"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058192367, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "ts": "2026-10-27T07:43:12"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058191050, "dur_ms": 1367, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "ts": "2026-10-27T07:43:12"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058192440, "dur_ms": 771, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:13"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1793058193258, "dur_ms": 1346, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-27T07:43:14"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1793058194739, "dur_ms": 1491, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-27T07:43:16"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058196230, "dur_ms": 77, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-27T07:43:16"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058196307, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-27T07:43:16"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058192431, "dur_ms": 3915, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-27T07:43:16"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058196345, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "bizNo", "ts": "2026-10-27T07:43:16"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058196398, "dur_ms": 780, "outcome": "ok", "exc": "", "where": "detailrels/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:17"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058197231, "dur_ms": 98, "outcome": "ok", "exc": "", "where": "detailrels/0/cost", "how": "mounted_native", "ts": "2026-10-27T07:43:17"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058197759, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "detailrels/0/cost", "ts": "2026-10-27T07:43:17"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058197835, "dur_ms": 806, "outcome": "ok", "exc": "", "where": "relations/0/isLast", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:18"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058198676, "dur_ms": 1184, "outcome": "ok", "exc": "", "where": "relations/0/isLast", "ts": "2026-10-27T07:43:19"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058199909, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "relations/0/isLast", "ts": "2026-10-27T07:43:19"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058197825, "dur_ms": 2136, "outcome": "ok", "exc": "", "where": "relations/0/isLast", "ts": "2026-10-27T07:43:19"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058189588, "dur_ms": 10373, "outcome": "ok", "exc": "", "section": "relations", "row": 0, "ts": "2026-10-27T07:43:19"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793058200017, "dur_ms": 90, "outcome": "ok", "exc": "", "name": "v1_relations_after.png", "ts": "2026-10-27T07:43:20"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1793058189588, "dur_ms": 10520, "outcome": "ok", "exc": "", "section": "relations", "ts": "2026-10-27T07:43:20"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058200673, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:43:20"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058200715, "dur_ms": 1323, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:43:22"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058202039, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:43:22"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058202126, "dur_ms": 1252, "outcome": "ok", "exc": "", "where": "costs/0/project", "ts": "2026-10-27T07:43:23"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058203428, "dur_ms": 40, "outcome": "ok", "exc": "", "where": "costs/0/project", "ts": "2026-10-27T07:43:23"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058202097, "dur_ms": 1393, "outcome": "ok", "exc": "", "where": "costs/0/project", "ts": "2026-10-27T07:43:23"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058203532, "dur_ms": 753, "outcome": "ok", "exc": "", "where": "costs/0/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:24"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058204321, "dur_ms": 57, "outcome": "ok", "exc": "", "where": "costs/0/startDate", "how": "mounted_native", "ts": "2026-10-27T07:43:24"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058205368, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/0/startDate", "ts": "2026-10-27T07:43:25"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058203522, "dur_ms": 1916, "outcome": "ok", "exc": "", "where": "costs/0/startDate", "ts": "2026-10-27T07:43:25"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058205486, "dur_ms": 750, "outcome": "ok", "exc": "", "where": "costs/0/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:26"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058206287, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/0/endDate", "how": "mounted_native", "ts": "2026-10-27T07:43:26"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058207352, "dur_ms": 77, "outcome": "ok", "exc": "", "where": "costs/0/endDate", "ts": "2026-10-27T07:43:27"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058205476, "dur_ms": 1968, "outcome": "ok", "exc": "", "where": "costs/0/endDate", "ts": "2026-10-27T07:43:27"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058207467, "dur_ms": 738, "outcome": "ok", "exc": "", "where": "costs/0/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:28"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058208242, "dur_ms": 68, "outcome": "ok", "exc": "", "where": "costs/0/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:43:28"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058208754, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/0/projectPlace", "ts": "2026-10-27T07:43:28"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058207458, "dur_ms": 1342, "outcome": "ok", "exc": "", "where": "costs/0/projectPlace", "ts": "2026-10-27T07:43:28"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058208825, "dur_ms": 728, "outcome": "ok", "exc": "", "where": "costs/0/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:29"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058209588, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/0/count", "how": "mounted_native", "ts": "2026-10-27T07:43:29"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058210072, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/0/count", "ts": "2026-10-27T07:43:30"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058208816, "dur_ms": 1302, "outcome": "ok", "exc": "", "where": "costs/0/count", "ts": "2026-10-27T07:43:30"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058210141, "dur_ms": 778, "outcome": "ok", "exc": "", "where": "costs/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:30"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058210967, "dur_ms": 71, "outcome": "ok", "exc": "", "where": "costs/0/cost", "how": "mounted_native", "ts": "2026-10-27T07:43:31"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058211463, "dur_ms": 46, "outcome": "ok", "exc": "", "where": "costs/0/cost", "ts": "2026-10-27T07:43:31"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058210132, "dur_ms": 1392, "outcome": "ok", "exc": "", "where": "costs/0/cost", "ts": "2026-10-27T07:43:31"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058211553, "dur_ms": 765, "outcome": "ok", "exc": "", "where": "costs/0/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:32"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058212369, "dur_ms": 87, "outcome": "ok", "exc": "", "where": "costs/0/reason", "how": "mounted_native", "ts": "2026-10-27T07:43:32"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058212889, "dur_ms": 47, "outcome": "ok", "exc": "", "where": "costs/0/reason", "ts": "2026-10-27T07:43:32"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058211541, "dur_ms": 1412, "outcome": "ok", "exc": "", "where": "costs/0/reason", "ts": "2026-10-27T07:43:32"}
+{"event": "structured_row_written", "table": "costs", "row": 0, "row_id": "case06-costs-04", "ts": "2026-10-27T07:43:32"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058200673, "dur_ms": 12280, "outcome": "ok", "exc": "", "section": "costs", "row": 0, "ts": "2026-10-27T07:43:32"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058212972, "dur_ms": 1317, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:43:34"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058214290, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:43:34"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058214373, "dur_ms": 1198, "outcome": "ok", "exc": "", "where": "costs/1/project", "ts": "2026-10-27T07:43:35"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058215605, "dur_ms": 48, "outcome": "ok", "exc": "", "where": "costs/1/project", "ts": "2026-10-27T07:43:35"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058214345, "dur_ms": 1325, "outcome": "ok", "exc": "", "where": "costs/1/project", "ts": "2026-10-27T07:43:35"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058215697, "dur_ms": 754, "outcome": "ok", "exc": "", "where": "costs/1/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:36"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058216488, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/1/startDate", "how": "mounted_native", "ts": "2026-10-27T07:43:36"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058217532, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/1/startDate", "ts": "2026-10-27T07:43:37"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058215687, "dur_ms": 1922, "outcome": "ok", "exc": "", "where": "costs/1/startDate", "ts": "2026-10-27T07:43:37"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058217633, "dur_ms": 791, "outcome": "ok", "exc": "", "where": "costs/1/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:38"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058218478, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/1/endDate", "how": "mounted_native", "ts": "2026-10-27T07:43:38"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058219525, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/1/endDate", "ts": "2026-10-27T07:43:39"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058217624, "dur_ms": 1979, "outcome": "ok", "exc": "", "where": "costs/1/endDate", "ts": "2026-10-27T07:43:39"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058219629, "dur_ms": 777, "outcome": "ok", "exc": "", "where": "costs/1/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:40"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058220457, "dur_ms": 68, "outcome": "ok", "exc": "", "where": "costs/1/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:43:40"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058220953, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/1/projectPlace", "ts": "2026-10-27T07:43:41"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058219619, "dur_ms": 1412, "outcome": "ok", "exc": "", "where": "costs/1/projectPlace", "ts": "2026-10-27T07:43:41"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058221056, "dur_ms": 708, "outcome": "ok", "exc": "", "where": "costs/1/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:41"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058221817, "dur_ms": 64, "outcome": "ok", "exc": "", "where": "costs/1/count", "how": "mounted_native", "ts": "2026-10-27T07:43:41"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058222331, "dur_ms": 46, "outcome": "ok", "exc": "", "where": "costs/1/count", "ts": "2026-10-27T07:43:42"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058221047, "dur_ms": 1362, "outcome": "ok", "exc": "", "where": "costs/1/count", "ts": "2026-10-27T07:43:42"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058222432, "dur_ms": 750, "outcome": "ok", "exc": "", "where": "costs/1/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:43"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058223217, "dur_ms": 77, "outcome": "ok", "exc": "", "where": "costs/1/cost", "how": "mounted_native", "ts": "2026-10-27T07:43:43"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058223717, "dur_ms": 31, "outcome": "ok", "exc": "", "where": "costs/1/cost", "ts": "2026-10-27T07:43:43"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058222423, "dur_ms": 1339, "outcome": "ok", "exc": "", "where": "costs/1/cost", "ts": "2026-10-27T07:43:43"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058223786, "dur_ms": 755, "outcome": "ok", "exc": "", "where": "costs/1/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:44"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058224588, "dur_ms": 77, "outcome": "ok", "exc": "", "where": "costs/1/reason", "how": "mounted_native", "ts": "2026-10-27T07:43:44"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058225116, "dur_ms": 31, "outcome": "ok", "exc": "", "where": "costs/1/reason", "ts": "2026-10-27T07:43:45"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058223777, "dur_ms": 1384, "outcome": "ok", "exc": "", "where": "costs/1/reason", "ts": "2026-10-27T07:43:45"}
+{"event": "structured_row_written", "table": "costs", "row": 1, "row_id": "case06-costs-05", "ts": "2026-10-27T07:43:45"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058212954, "dur_ms": 12208, "outcome": "ok", "exc": "", "section": "costs", "row": 1, "ts": "2026-10-27T07:43:45"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058225181, "dur_ms": 1329, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:43:46"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058226510, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:43:46"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058226580, "dur_ms": 1213, "outcome": "ok", "exc": "", "where": "costs/2/project", "ts": "2026-10-27T07:43:47"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058227827, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/2/project", "ts": "2026-10-27T07:43:47"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058226553, "dur_ms": 1340, "outcome": "ok", "exc": "", "where": "costs/2/project", "ts": "2026-10-27T07:43:47"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058227918, "dur_ms": 745, "outcome": "ok", "exc": "", "where": "costs/2/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:48"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058228714, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/2/startDate", "how": "mounted_native", "ts": "2026-10-27T07:43:48"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058229761, "dur_ms": 61, "outcome": "ok", "exc": "", "where": "costs/2/startDate", "ts": "2026-10-27T07:43:49"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058227909, "dur_ms": 1936, "outcome": "ok", "exc": "", "where": "costs/2/startDate", "ts": "2026-10-27T07:43:49"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058229873, "dur_ms": 755, "outcome": "ok", "exc": "", "where": "costs/2/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:50"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058230679, "dur_ms": 64, "outcome": "ok", "exc": "", "where": "costs/2/endDate", "how": "mounted_native", "ts": "2026-10-27T07:43:50"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058231735, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/2/endDate", "ts": "2026-10-27T07:43:51"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058229863, "dur_ms": 1952, "outcome": "ok", "exc": "", "where": "costs/2/endDate", "ts": "2026-10-27T07:43:51"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058231845, "dur_ms": 755, "outcome": "ok", "exc": "", "where": "costs/2/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:52"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058232638, "dur_ms": 81, "outcome": "ok", "exc": "", "where": "costs/2/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:43:52"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058233166, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/2/projectPlace", "ts": "2026-10-27T07:43:53"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058231833, "dur_ms": 1382, "outcome": "ok", "exc": "", "where": "costs/2/projectPlace", "ts": "2026-10-27T07:43:53"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058233242, "dur_ms": 717, "outcome": "ok", "exc": "", "where": "costs/2/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:53"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058234010, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/2/count", "how": "mounted_native", "ts": "2026-10-27T07:43:54"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058234517, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/2/count", "ts": "2026-10-27T07:43:54"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058233232, "dur_ms": 1334, "outcome": "ok", "exc": "", "where": "costs/2/count", "ts": "2026-10-27T07:43:54"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058234591, "dur_ms": 753, "outcome": "ok", "exc": "", "where": "costs/2/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:55"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058235381, "dur_ms": 57, "outcome": "ok", "exc": "", "where": "costs/2/cost", "how": "mounted_native", "ts": "2026-10-27T07:43:55"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058235886, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/2/cost", "ts": "2026-10-27T07:43:55"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058234582, "dur_ms": 1383, "outcome": "ok", "exc": "", "where": "costs/2/cost", "ts": "2026-10-27T07:43:55"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058235988, "dur_ms": 716, "outcome": "ok", "exc": "", "where": "costs/2/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:43:56"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058236759, "dur_ms": 60, "outcome": "ok", "exc": "", "where": "costs/2/reason", "how": "mounted_native", "ts": "2026-10-27T07:43:56"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058237254, "dur_ms": 46, "outcome": "ok", "exc": "", "where": "costs/2/reason", "ts": "2026-10-27T07:43:57"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058235979, "dur_ms": 1336, "outcome": "ok", "exc": "", "where": "costs/2/reason", "ts": "2026-10-27T07:43:57"}
+{"event": "structured_row_written", "table": "costs", "row": 2, "row_id": "case06-costs-06", "ts": "2026-10-27T07:43:57"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058225162, "dur_ms": 12153, "outcome": "ok", "exc": "", "section": "costs", "row": 2, "ts": "2026-10-27T07:43:57"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058237336, "dur_ms": 1297, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:43:58"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058238633, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:43:58"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058238720, "dur_ms": 1215, "outcome": "ok", "exc": "", "where": "costs/3/project", "ts": "2026-10-27T07:43:59"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058239980, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/3/project", "ts": "2026-10-27T07:44:00"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058238676, "dur_ms": 1359, "outcome": "ok", "exc": "", "where": "costs/3/project", "ts": "2026-10-27T07:44:00"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058240062, "dur_ms": 750, "outcome": "ok", "exc": "", "where": "costs/3/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:00"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058240847, "dur_ms": 78, "outcome": "ok", "exc": "", "where": "costs/3/startDate", "how": "mounted_native", "ts": "2026-10-27T07:44:00"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058241928, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "costs/3/startDate", "ts": "2026-10-27T07:44:01"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058240052, "dur_ms": 1968, "outcome": "ok", "exc": "", "where": "costs/3/startDate", "ts": "2026-10-27T07:44:02"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058242048, "dur_ms": 813, "outcome": "ok", "exc": "", "where": "costs/3/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:02"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058242898, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/3/endDate", "how": "mounted_native", "ts": "2026-10-27T07:44:02"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058243949, "dur_ms": 81, "outcome": "ok", "exc": "", "where": "costs/3/endDate", "ts": "2026-10-27T07:44:04"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058242039, "dur_ms": 2009, "outcome": "ok", "exc": "", "where": "costs/3/endDate", "ts": "2026-10-27T07:44:04"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058244076, "dur_ms": 724, "outcome": "ok", "exc": "", "where": "costs/3/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:04"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058244835, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/3/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:44:04"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058245335, "dur_ms": 30, "outcome": "ok", "exc": "", "where": "costs/3/projectPlace", "ts": "2026-10-27T07:44:05"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058244065, "dur_ms": 1315, "outcome": "ok", "exc": "", "where": "costs/3/projectPlace", "ts": "2026-10-27T07:44:05"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058245404, "dur_ms": 728, "outcome": "ok", "exc": "", "where": "costs/3/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:06"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058246184, "dur_ms": 61, "outcome": "ok", "exc": "", "where": "costs/3/count", "how": "mounted_native", "ts": "2026-10-27T07:44:06"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058246671, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/3/count", "ts": "2026-10-27T07:44:06"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058245396, "dur_ms": 1335, "outcome": "ok", "exc": "", "where": "costs/3/count", "ts": "2026-10-27T07:44:06"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058246764, "dur_ms": 749, "outcome": "ok", "exc": "", "where": "costs/3/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:07"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058247575, "dur_ms": 58, "outcome": "ok", "exc": "", "where": "costs/3/cost", "how": "mounted_native", "ts": "2026-10-27T07:44:07"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058248059, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/3/cost", "ts": "2026-10-27T07:44:08"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058246750, "dur_ms": 1356, "outcome": "ok", "exc": "", "where": "costs/3/cost", "ts": "2026-10-27T07:44:08"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058248129, "dur_ms": 754, "outcome": "ok", "exc": "", "where": "costs/3/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:08"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058248920, "dur_ms": 58, "outcome": "ok", "exc": "", "where": "costs/3/reason", "how": "mounted_native", "ts": "2026-10-27T07:44:08"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058249412, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/3/reason", "ts": "2026-10-27T07:44:09"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058248120, "dur_ms": 1340, "outcome": "ok", "exc": "", "where": "costs/3/reason", "ts": "2026-10-27T07:44:09"}
+{"event": "structured_row_written", "table": "costs", "row": 3, "row_id": "case06-costs-07", "ts": "2026-10-27T07:44:09"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058237316, "dur_ms": 12144, "outcome": "ok", "exc": "", "section": "costs", "row": 3, "ts": "2026-10-27T07:44:09"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058249479, "dur_ms": 1314, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:44:10"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058250793, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:44:10"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058250862, "dur_ms": 1215, "outcome": "ok", "exc": "", "where": "costs/4/project", "ts": "2026-10-27T07:44:12"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058252124, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/4/project", "ts": "2026-10-27T07:44:12"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058250836, "dur_ms": 1338, "outcome": "ok", "exc": "", "where": "costs/4/project", "ts": "2026-10-27T07:44:12"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058252197, "dur_ms": 722, "outcome": "ok", "exc": "", "where": "costs/4/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:12"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058252955, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/4/startDate", "how": "mounted_native", "ts": "2026-10-27T07:44:13"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058253997, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/4/startDate", "ts": "2026-10-27T07:44:14"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058252188, "dur_ms": 1881, "outcome": "ok", "exc": "", "where": "costs/4/startDate", "ts": "2026-10-27T07:44:14"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058254107, "dur_ms": 730, "outcome": "ok", "exc": "", "where": "costs/4/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:14"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058254874, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/4/endDate", "how": "mounted_native", "ts": "2026-10-27T07:44:14"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058255948, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/4/endDate", "ts": "2026-10-27T07:44:15"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058254098, "dur_ms": 1919, "outcome": "ok", "exc": "", "where": "costs/4/endDate", "ts": "2026-10-27T07:44:16"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058256042, "dur_ms": 746, "outcome": "ok", "exc": "", "where": "costs/4/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:16"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058256825, "dur_ms": 59, "outcome": "ok", "exc": "", "where": "costs/4/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:44:16"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058257308, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/4/projectPlace", "ts": "2026-10-27T07:44:17"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058256033, "dur_ms": 1322, "outcome": "ok", "exc": "", "where": "costs/4/projectPlace", "ts": "2026-10-27T07:44:17"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058257378, "dur_ms": 743, "outcome": "ok", "exc": "", "where": "costs/4/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:18"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058258175, "dur_ms": 60, "outcome": "ok", "exc": "", "where": "costs/4/count", "how": "mounted_native", "ts": "2026-10-27T07:44:18"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058258672, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/4/count", "ts": "2026-10-27T07:44:18"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058257369, "dur_ms": 1369, "outcome": "ok", "exc": "", "where": "costs/4/count", "ts": "2026-10-27T07:44:18"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058258762, "dur_ms": 750, "outcome": "ok", "exc": "", "where": "costs/4/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:19"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058259562, "dur_ms": 59, "outcome": "ok", "exc": "", "where": "costs/4/cost", "how": "mounted_native", "ts": "2026-10-27T07:44:19"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058260043, "dur_ms": 45, "outcome": "ok", "exc": "", "where": "costs/4/cost", "ts": "2026-10-27T07:44:20"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058258753, "dur_ms": 1350, "outcome": "ok", "exc": "", "where": "costs/4/cost", "ts": "2026-10-27T07:44:20"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058260144, "dur_ms": 745, "outcome": "ok", "exc": "", "where": "costs/4/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:20"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058260926, "dur_ms": 58, "outcome": "ok", "exc": "", "where": "costs/4/reason", "how": "mounted_native", "ts": "2026-10-27T07:44:20"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058261409, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/4/reason", "ts": "2026-10-27T07:44:21"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058260135, "dur_ms": 1345, "outcome": "ok", "exc": "", "where": "costs/4/reason", "ts": "2026-10-27T07:44:21"}
+{"event": "structured_row_written", "table": "costs", "row": 4, "row_id": "case06-costs-08", "ts": "2026-10-27T07:44:21"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058249460, "dur_ms": 12021, "outcome": "ok", "exc": "", "section": "costs", "row": 4, "ts": "2026-10-27T07:44:21"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058261503, "dur_ms": 1305, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:44:22"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058262808, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:44:22"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058262890, "dur_ms": 1209, "outcome": "ok", "exc": "", "where": "costs/5/project", "ts": "2026-10-27T07:44:24"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058264160, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/5/project", "ts": "2026-10-27T07:44:24"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058262861, "dur_ms": 1365, "outcome": "ok", "exc": "", "where": "costs/5/project", "ts": "2026-10-27T07:44:24"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058264254, "dur_ms": 721, "outcome": "ok", "exc": "", "where": "costs/5/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:24"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058265012, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/5/startDate", "how": "mounted_native", "ts": "2026-10-27T07:44:25"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058266059, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/5/startDate", "ts": "2026-10-27T07:44:26"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058264244, "dur_ms": 1887, "outcome": "ok", "exc": "", "where": "costs/5/startDate", "ts": "2026-10-27T07:44:26"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058266172, "dur_ms": 759, "outcome": "ok", "exc": "", "where": "costs/5/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:26"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058266967, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/5/endDate", "how": "mounted_native", "ts": "2026-10-27T07:44:27"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058268028, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/5/endDate", "ts": "2026-10-27T07:44:28"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058266163, "dur_ms": 1935, "outcome": "ok", "exc": "", "where": "costs/5/endDate", "ts": "2026-10-27T07:44:28"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058268126, "dur_ms": 748, "outcome": "ok", "exc": "", "where": "costs/5/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:28"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058268941, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/5/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:44:29"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058269427, "dur_ms": 47, "outcome": "ok", "exc": "", "where": "costs/5/projectPlace", "ts": "2026-10-27T07:44:29"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058268116, "dur_ms": 1374, "outcome": "ok", "exc": "", "where": "costs/5/projectPlace", "ts": "2026-10-27T07:44:29"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058269514, "dur_ms": 757, "outcome": "ok", "exc": "", "where": "costs/5/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:30"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058270308, "dur_ms": 77, "outcome": "ok", "exc": "", "where": "costs/5/count", "how": "mounted_native", "ts": "2026-10-27T07:44:30"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058270820, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/5/count", "ts": "2026-10-27T07:44:30"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058269505, "dur_ms": 1364, "outcome": "ok", "exc": "", "where": "costs/5/count", "ts": "2026-10-27T07:44:30"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058270899, "dur_ms": 729, "outcome": "ok", "exc": "", "where": "costs/5/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:31"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058271705, "dur_ms": 78, "outcome": "ok", "exc": "", "where": "costs/5/cost", "how": "mounted_native", "ts": "2026-10-27T07:44:31"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058272212, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/5/cost", "ts": "2026-10-27T07:44:32"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058270888, "dur_ms": 1373, "outcome": "ok", "exc": "", "where": "costs/5/cost", "ts": "2026-10-27T07:44:32"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058272284, "dur_ms": 713, "outcome": "ok", "exc": "", "where": "costs/5/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:32"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058273035, "dur_ms": 91, "outcome": "ok", "exc": "", "where": "costs/5/reason", "how": "mounted_native", "ts": "2026-10-27T07:44:33"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058273565, "dur_ms": 48, "outcome": "ok", "exc": "", "where": "costs/5/reason", "ts": "2026-10-27T07:44:33"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058272275, "dur_ms": 1353, "outcome": "ok", "exc": "", "where": "costs/5/reason", "ts": "2026-10-27T07:44:33"}
+{"event": "structured_row_written", "table": "costs", "row": 5, "row_id": "case06-costs-09", "ts": "2026-10-27T07:44:33"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058261481, "dur_ms": 12148, "outcome": "ok", "exc": "", "section": "costs", "row": 5, "ts": "2026-10-27T07:44:33"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058273648, "dur_ms": 1289, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:44:34"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058274938, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:44:34"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058275011, "dur_ms": 1177, "outcome": "ok", "exc": "", "where": "costs/6/project", "ts": "2026-10-27T07:44:36"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058276221, "dur_ms": 68, "outcome": "ok", "exc": "", "where": "costs/6/project", "ts": "2026-10-27T07:44:36"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058274981, "dur_ms": 1348, "outcome": "ok", "exc": "", "where": "costs/6/project", "ts": "2026-10-27T07:44:36"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058276357, "dur_ms": 742, "outcome": "ok", "exc": "", "where": "costs/6/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:37"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058277137, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/6/startDate", "how": "mounted_native", "ts": "2026-10-27T07:44:37"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058278194, "dur_ms": 86, "outcome": "ok", "exc": "", "where": "costs/6/startDate", "ts": "2026-10-27T07:44:38"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058276347, "dur_ms": 1967, "outcome": "ok", "exc": "", "where": "costs/6/startDate", "ts": "2026-10-27T07:44:38"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058278353, "dur_ms": 748, "outcome": "ok", "exc": "", "where": "costs/6/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:39"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058279153, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/6/endDate", "how": "mounted_native", "ts": "2026-10-27T07:44:39"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058280233, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/6/endDate", "ts": "2026-10-27T07:44:40"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058278328, "dur_ms": 1976, "outcome": "ok", "exc": "", "where": "costs/6/endDate", "ts": "2026-10-27T07:44:40"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058280328, "dur_ms": 728, "outcome": "ok", "exc": "", "where": "costs/6/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:41"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058281108, "dur_ms": 61, "outcome": "ok", "exc": "", "where": "costs/6/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:44:41"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058281593, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/6/projectPlace", "ts": "2026-10-27T07:44:41"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058280319, "dur_ms": 1324, "outcome": "ok", "exc": "", "where": "costs/6/projectPlace", "ts": "2026-10-27T07:44:41"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058281666, "dur_ms": 709, "outcome": "ok", "exc": "", "where": "costs/6/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:42"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058282453, "dur_ms": 78, "outcome": "ok", "exc": "", "where": "costs/6/count", "how": "mounted_native", "ts": "2026-10-27T07:44:42"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058282955, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/6/count", "ts": "2026-10-27T07:44:42"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058281657, "dur_ms": 1363, "outcome": "ok", "exc": "", "where": "costs/6/count", "ts": "2026-10-27T07:44:43"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058283049, "dur_ms": 737, "outcome": "ok", "exc": "", "where": "costs/6/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:43"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058283838, "dur_ms": 74, "outcome": "ok", "exc": "", "where": "costs/6/cost", "how": "mounted_native", "ts": "2026-10-27T07:44:43"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058284338, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/6/cost", "ts": "2026-10-27T07:44:44"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058283035, "dur_ms": 1348, "outcome": "ok", "exc": "", "where": "costs/6/cost", "ts": "2026-10-27T07:44:44"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058284408, "dur_ms": 739, "outcome": "ok", "exc": "", "where": "costs/6/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:45"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058285186, "dur_ms": 102, "outcome": "ok", "exc": "", "where": "costs/6/reason", "how": "mounted_native", "ts": "2026-10-27T07:44:45"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058285715, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "costs/6/reason", "ts": "2026-10-27T07:44:45"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058284398, "dur_ms": 1368, "outcome": "ok", "exc": "", "where": "costs/6/reason", "ts": "2026-10-27T07:44:45"}
+{"event": "structured_row_written", "table": "costs", "row": 6, "row_id": "case06-costs-10", "ts": "2026-10-27T07:44:45"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058273629, "dur_ms": 12137, "outcome": "ok", "exc": "", "section": "costs", "row": 6, "ts": "2026-10-27T07:44:45"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058285803, "dur_ms": 1305, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:44:47"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058287109, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:44:47"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058287183, "dur_ms": 1258, "outcome": "ok", "exc": "", "where": "costs/7/project", "ts": "2026-10-27T07:44:48"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058288489, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/7/project", "ts": "2026-10-27T07:44:48"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058287156, "dur_ms": 1384, "outcome": "ok", "exc": "", "where": "costs/7/project", "ts": "2026-10-27T07:44:48"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058288565, "dur_ms": 756, "outcome": "ok", "exc": "", "where": "costs/7/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:49"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058289372, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/7/startDate", "how": "mounted_native", "ts": "2026-10-27T07:44:49"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058290423, "dur_ms": 74, "outcome": "ok", "exc": "", "where": "costs/7/startDate", "ts": "2026-10-27T07:44:50"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058288555, "dur_ms": 1956, "outcome": "ok", "exc": "", "where": "costs/7/startDate", "ts": "2026-10-27T07:44:50"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058290536, "dur_ms": 775, "outcome": "ok", "exc": "", "where": "costs/7/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:51"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058291349, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/7/endDate", "how": "mounted_native", "ts": "2026-10-27T07:44:51"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058292438, "dur_ms": 72, "outcome": "ok", "exc": "", "where": "costs/7/endDate", "ts": "2026-10-27T07:44:52"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058290527, "dur_ms": 1998, "outcome": "ok", "exc": "", "where": "costs/7/endDate", "ts": "2026-10-27T07:44:52"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058292550, "dur_ms": 728, "outcome": "ok", "exc": "", "where": "costs/7/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:53"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058293316, "dur_ms": 67, "outcome": "ok", "exc": "", "where": "costs/7/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:44:53"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058293813, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/7/projectPlace", "ts": "2026-10-27T07:44:53"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058292540, "dur_ms": 1324, "outcome": "ok", "exc": "", "where": "costs/7/projectPlace", "ts": "2026-10-27T07:44:53"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058293891, "dur_ms": 745, "outcome": "ok", "exc": "", "where": "costs/7/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:54"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058294689, "dur_ms": 75, "outcome": "ok", "exc": "", "where": "costs/7/count", "how": "mounted_native", "ts": "2026-10-27T07:44:54"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058295202, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "costs/7/count", "ts": "2026-10-27T07:44:55"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058293880, "dur_ms": 1392, "outcome": "ok", "exc": "", "where": "costs/7/count", "ts": "2026-10-27T07:44:55"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058295297, "dur_ms": 734, "outcome": "ok", "exc": "", "where": "costs/7/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:56"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058296068, "dur_ms": 62, "outcome": "ok", "exc": "", "where": "costs/7/cost", "how": "mounted_native", "ts": "2026-10-27T07:44:56"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058296555, "dur_ms": 47, "outcome": "ok", "exc": "", "where": "costs/7/cost", "ts": "2026-10-27T07:44:56"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058295287, "dur_ms": 1330, "outcome": "ok", "exc": "", "where": "costs/7/cost", "ts": "2026-10-27T07:44:56"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058296642, "dur_ms": 729, "outcome": "ok", "exc": "", "where": "costs/7/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:44:57"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058297409, "dur_ms": 76, "outcome": "ok", "exc": "", "where": "costs/7/reason", "how": "mounted_native", "ts": "2026-10-27T07:44:57"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058297924, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/7/reason", "ts": "2026-10-27T07:44:57"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058296633, "dur_ms": 1340, "outcome": "ok", "exc": "", "where": "costs/7/reason", "ts": "2026-10-27T07:44:57"}
+{"event": "structured_row_written", "table": "costs", "row": 7, "row_id": "case06-costs-11", "ts": "2026-10-27T07:44:57"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058285767, "dur_ms": 12205, "outcome": "ok", "exc": "", "section": "costs", "row": 7, "ts": "2026-10-27T07:44:57"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058297993, "dur_ms": 1302, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:44:59"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058299297, "dur_ms": 17, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:44:59"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058299375, "dur_ms": 1261, "outcome": "ok", "exc": "", "where": "costs/8/project", "ts": "2026-10-27T07:45:00"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058300669, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/8/project", "ts": "2026-10-27T07:45:00"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058299347, "dur_ms": 1389, "outcome": "ok", "exc": "", "where": "costs/8/project", "ts": "2026-10-27T07:45:00"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058300762, "dur_ms": 726, "outcome": "ok", "exc": "", "where": "costs/8/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:01"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058301542, "dur_ms": 113, "outcome": "ok", "exc": "", "where": "costs/8/startDate", "how": "mounted_native", "ts": "2026-10-27T07:45:01"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058302646, "dur_ms": 88, "outcome": "ok", "exc": "", "where": "costs/8/startDate", "ts": "2026-10-27T07:45:02"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058300752, "dur_ms": 1997, "outcome": "ok", "exc": "", "where": "costs/8/startDate", "ts": "2026-10-27T07:45:02"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058302774, "dur_ms": 763, "outcome": "ok", "exc": "", "where": "costs/8/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:03"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058303577, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/8/endDate", "how": "mounted_native", "ts": "2026-10-27T07:45:03"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058304639, "dur_ms": 90, "outcome": "ok", "exc": "", "where": "costs/8/endDate", "ts": "2026-10-27T07:45:04"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058302765, "dur_ms": 1980, "outcome": "ok", "exc": "", "where": "costs/8/endDate", "ts": "2026-10-27T07:45:04"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058304771, "dur_ms": 773, "outcome": "ok", "exc": "", "where": "costs/8/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:05"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058305597, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/8/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:45:05"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058306084, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/8/projectPlace", "ts": "2026-10-27T07:45:06"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058304762, "dur_ms": 1370, "outcome": "ok", "exc": "", "where": "costs/8/projectPlace", "ts": "2026-10-27T07:45:06"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058306156, "dur_ms": 735, "outcome": "ok", "exc": "", "where": "costs/8/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:06"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058306945, "dur_ms": 61, "outcome": "ok", "exc": "", "where": "costs/8/count", "how": "mounted_native", "ts": "2026-10-27T07:45:07"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058307432, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/8/count", "ts": "2026-10-27T07:45:07"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058306146, "dur_ms": 1332, "outcome": "ok", "exc": "", "where": "costs/8/count", "ts": "2026-10-27T07:45:07"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058307503, "dur_ms": 736, "outcome": "ok", "exc": "", "where": "costs/8/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:08"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058308276, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/8/cost", "how": "mounted_native", "ts": "2026-10-27T07:45:08"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058308771, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/8/cost", "ts": "2026-10-27T07:45:08"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058307493, "dur_ms": 1344, "outcome": "ok", "exc": "", "where": "costs/8/cost", "ts": "2026-10-27T07:45:08"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058308862, "dur_ms": 723, "outcome": "ok", "exc": "", "where": "costs/8/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:09"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058309637, "dur_ms": 93, "outcome": "ok", "exc": "", "where": "costs/8/reason", "how": "mounted_native", "ts": "2026-10-27T07:45:09"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058310167, "dur_ms": 48, "outcome": "ok", "exc": "", "where": "costs/8/reason", "ts": "2026-10-27T07:45:10"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058308852, "dur_ms": 1378, "outcome": "ok", "exc": "", "where": "costs/8/reason", "ts": "2026-10-27T07:45:10"}
+{"event": "structured_row_written", "table": "costs", "row": 8, "row_id": "case06-costs-12", "ts": "2026-10-27T07:45:10"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058297973, "dur_ms": 12258, "outcome": "ok", "exc": "", "section": "costs", "row": 8, "ts": "2026-10-27T07:45:10"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058310251, "dur_ms": 1362, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:45:11"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058311613, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:45:11"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058311702, "dur_ms": 1206, "outcome": "ok", "exc": "", "where": "costs/9/project", "ts": "2026-10-27T07:45:12"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058312941, "dur_ms": 65, "outcome": "ok", "exc": "", "where": "costs/9/project", "ts": "2026-10-27T07:45:13"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058311658, "dur_ms": 1366, "outcome": "ok", "exc": "", "where": "costs/9/project", "ts": "2026-10-27T07:45:13"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058313049, "dur_ms": 781, "outcome": "ok", "exc": "", "where": "costs/9/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:13"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058313881, "dur_ms": 67, "outcome": "ok", "exc": "", "where": "costs/9/startDate", "how": "mounted_native", "ts": "2026-10-27T07:45:13"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058314961, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/9/startDate", "ts": "2026-10-27T07:45:15"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058313039, "dur_ms": 1998, "outcome": "ok", "exc": "", "where": "costs/9/startDate", "ts": "2026-10-27T07:45:15"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058315062, "dur_ms": 741, "outcome": "ok", "exc": "", "where": "costs/9/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:15"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058315844, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/9/endDate", "how": "mounted_native", "ts": "2026-10-27T07:45:15"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058316903, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/9/endDate", "ts": "2026-10-27T07:45:16"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058315053, "dur_ms": 1926, "outcome": "ok", "exc": "", "where": "costs/9/endDate", "ts": "2026-10-27T07:45:16"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058317003, "dur_ms": 725, "outcome": "ok", "exc": "", "where": "costs/9/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:17"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058317766, "dur_ms": 92, "outcome": "ok", "exc": "", "where": "costs/9/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:45:17"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058318283, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/9/projectPlace", "ts": "2026-10-27T07:45:18"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058316993, "dur_ms": 1353, "outcome": "ok", "exc": "", "where": "costs/9/projectPlace", "ts": "2026-10-27T07:45:18"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058318371, "dur_ms": 720, "outcome": "ok", "exc": "", "where": "costs/9/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:19"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058319130, "dur_ms": 78, "outcome": "ok", "exc": "", "where": "costs/9/count", "how": "mounted_native", "ts": "2026-10-27T07:45:19"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058319628, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/9/count", "ts": "2026-10-27T07:45:19"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058318361, "dur_ms": 1314, "outcome": "ok", "exc": "", "where": "costs/9/count", "ts": "2026-10-27T07:45:19"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058319700, "dur_ms": 726, "outcome": "ok", "exc": "", "where": "costs/9/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:20"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058320479, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/9/cost", "how": "mounted_native", "ts": "2026-10-27T07:45:20"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058320978, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/9/cost", "ts": "2026-10-27T07:45:21"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058319691, "dur_ms": 1351, "outcome": "ok", "exc": "", "where": "costs/9/cost", "ts": "2026-10-27T07:45:21"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058321067, "dur_ms": 741, "outcome": "ok", "exc": "", "where": "costs/9/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:21"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058321859, "dur_ms": 93, "outcome": "ok", "exc": "", "where": "costs/9/reason", "how": "mounted_native", "ts": "2026-10-27T07:45:21"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058322375, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/9/reason", "ts": "2026-10-27T07:45:22"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058321057, "dur_ms": 1366, "outcome": "ok", "exc": "", "where": "costs/9/reason", "ts": "2026-10-27T07:45:22"}
+{"event": "structured_row_written", "table": "costs", "row": 9, "row_id": "case06-costs-13", "ts": "2026-10-27T07:45:22"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058310231, "dur_ms": 12192, "outcome": "ok", "exc": "", "section": "costs", "row": 9, "ts": "2026-10-27T07:45:22"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058322444, "dur_ms": 1307, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:45:23"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058323751, "dur_ms": 23, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:45:23"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058323853, "dur_ms": 1199, "outcome": "ok", "exc": "", "where": "costs/10/project", "ts": "2026-10-27T07:45:25"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058325085, "dur_ms": 40, "outcome": "ok", "exc": "", "where": "costs/10/project", "ts": "2026-10-27T07:45:25"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058323823, "dur_ms": 1318, "outcome": "ok", "exc": "", "where": "costs/10/project", "ts": "2026-10-27T07:45:25"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058325165, "dur_ms": 734, "outcome": "ok", "exc": "", "where": "costs/10/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:25"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058325941, "dur_ms": 86, "outcome": "ok", "exc": "", "where": "costs/10/startDate", "how": "mounted_native", "ts": "2026-10-27T07:45:26"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058327039, "dur_ms": 103, "outcome": "ok", "exc": "", "where": "costs/10/startDate", "ts": "2026-10-27T07:45:27"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058325156, "dur_ms": 2001, "outcome": "ok", "exc": "", "where": "costs/10/startDate", "ts": "2026-10-27T07:45:27"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058327183, "dur_ms": 735, "outcome": "ok", "exc": "", "where": "costs/10/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:27"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058327988, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/10/endDate", "how": "mounted_native", "ts": "2026-10-27T07:45:28"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058329050, "dur_ms": 74, "outcome": "ok", "exc": "", "where": "costs/10/endDate", "ts": "2026-10-27T07:45:29"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058327174, "dur_ms": 1966, "outcome": "ok", "exc": "", "where": "costs/10/endDate", "ts": "2026-10-27T07:45:29"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058329166, "dur_ms": 728, "outcome": "ok", "exc": "", "where": "costs/10/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:29"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058329933, "dur_ms": 142, "outcome": "ok", "exc": "", "where": "costs/10/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:45:30"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058330510, "dur_ms": 48, "outcome": "ok", "exc": "", "where": "costs/10/projectPlace", "ts": "2026-10-27T07:45:30"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058329155, "dur_ms": 1419, "outcome": "ok", "exc": "", "where": "costs/10/projectPlace", "ts": "2026-10-27T07:45:30"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058330600, "dur_ms": 733, "outcome": "ok", "exc": "", "where": "costs/10/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:31"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058331372, "dur_ms": 79, "outcome": "ok", "exc": "", "where": "costs/10/count", "how": "mounted_native", "ts": "2026-10-27T07:45:31"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058331884, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/10/count", "ts": "2026-10-27T07:45:31"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058330590, "dur_ms": 1373, "outcome": "ok", "exc": "", "where": "costs/10/count", "ts": "2026-10-27T07:45:31"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058332007, "dur_ms": 730, "outcome": "ok", "exc": "", "where": "costs/10/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:32"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058332775, "dur_ms": 64, "outcome": "ok", "exc": "", "where": "costs/10/cost", "how": "mounted_native", "ts": "2026-10-27T07:45:32"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058333272, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/10/cost", "ts": "2026-10-27T07:45:33"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058331995, "dur_ms": 1355, "outcome": "ok", "exc": "", "where": "costs/10/cost", "ts": "2026-10-27T07:45:33"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058333376, "dur_ms": 755, "outcome": "ok", "exc": "", "where": "costs/10/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:34"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058334170, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/10/reason", "how": "mounted_native", "ts": "2026-10-27T07:45:34"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058334670, "dur_ms": 31, "outcome": "ok", "exc": "", "where": "costs/10/reason", "ts": "2026-10-27T07:45:34"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058333367, "dur_ms": 1350, "outcome": "ok", "exc": "", "where": "costs/10/reason", "ts": "2026-10-27T07:45:34"}
+{"event": "structured_row_written", "table": "costs", "row": 10, "row_id": "case06-costs-14", "ts": "2026-10-27T07:45:34"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058322424, "dur_ms": 12293, "outcome": "ok", "exc": "", "section": "costs", "row": 10, "ts": "2026-10-27T07:45:34"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058334738, "dur_ms": 1333, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:45:36"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058336072, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:45:36"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058336146, "dur_ms": 1221, "outcome": "ok", "exc": "", "where": "costs/11/project", "ts": "2026-10-27T07:45:37"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058337400, "dur_ms": 59, "outcome": "ok", "exc": "", "where": "costs/11/project", "ts": "2026-10-27T07:45:37"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058336116, "dur_ms": 1360, "outcome": "ok", "exc": "", "where": "costs/11/project", "ts": "2026-10-27T07:45:37"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058337518, "dur_ms": 761, "outcome": "ok", "exc": "", "where": "costs/11/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:38"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058338318, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/11/startDate", "how": "mounted_native", "ts": "2026-10-27T07:45:38"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058339372, "dur_ms": 55, "outcome": "ok", "exc": "", "where": "costs/11/startDate", "ts": "2026-10-27T07:45:39"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058337492, "dur_ms": 1958, "outcome": "ok", "exc": "", "where": "costs/11/startDate", "ts": "2026-10-27T07:45:39"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058339477, "dur_ms": 783, "outcome": "ok", "exc": "", "where": "costs/11/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:40"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058340301, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/11/endDate", "how": "mounted_native", "ts": "2026-10-27T07:45:40"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058341393, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/11/endDate", "ts": "2026-10-27T07:45:41"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058339467, "dur_ms": 2010, "outcome": "ok", "exc": "", "where": "costs/11/endDate", "ts": "2026-10-27T07:45:41"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058341548, "dur_ms": 763, "outcome": "ok", "exc": "", "where": "costs/11/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:42"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058342349, "dur_ms": 69, "outcome": "ok", "exc": "", "where": "costs/11/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:45:42"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058342879, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/11/projectPlace", "ts": "2026-10-27T07:45:42"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058341529, "dur_ms": 1400, "outcome": "ok", "exc": "", "where": "costs/11/projectPlace", "ts": "2026-10-27T07:45:42"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058342954, "dur_ms": 720, "outcome": "ok", "exc": "", "where": "costs/11/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:43"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058343715, "dur_ms": 66, "outcome": "ok", "exc": "", "where": "costs/11/count", "how": "mounted_native", "ts": "2026-10-27T07:45:43"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058344229, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/11/count", "ts": "2026-10-27T07:45:44"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058342944, "dur_ms": 1333, "outcome": "ok", "exc": "", "where": "costs/11/count", "ts": "2026-10-27T07:45:44"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058344318, "dur_ms": 736, "outcome": "ok", "exc": "", "where": "costs/11/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:45"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058345094, "dur_ms": 79, "outcome": "ok", "exc": "", "where": "costs/11/cost", "how": "mounted_native", "ts": "2026-10-27T07:45:45"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058345607, "dur_ms": 32, "outcome": "ok", "exc": "", "where": "costs/11/cost", "ts": "2026-10-27T07:45:45"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058344308, "dur_ms": 1347, "outcome": "ok", "exc": "", "where": "costs/11/cost", "ts": "2026-10-27T07:45:45"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058345680, "dur_ms": 739, "outcome": "ok", "exc": "", "where": "costs/11/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:46"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058346459, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/11/reason", "how": "mounted_native", "ts": "2026-10-27T07:45:46"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058346971, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/11/reason", "ts": "2026-10-27T07:45:47"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058345670, "dur_ms": 1365, "outcome": "ok", "exc": "", "where": "costs/11/reason", "ts": "2026-10-27T07:45:47"}
+{"event": "structured_row_written", "table": "costs", "row": 11, "row_id": "case06-costs-15", "ts": "2026-10-27T07:45:47"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058334718, "dur_ms": 12319, "outcome": "ok", "exc": "", "section": "costs", "row": 11, "ts": "2026-10-27T07:45:47"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058347058, "dur_ms": 1334, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:45:48"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058348392, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:45:48"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058348468, "dur_ms": 1242, "outcome": "ok", "exc": "", "where": "costs/12/project", "ts": "2026-10-27T07:45:49"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058349763, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/12/project", "ts": "2026-10-27T07:45:49"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058348437, "dur_ms": 1394, "outcome": "ok", "exc": "", "where": "costs/12/project", "ts": "2026-10-27T07:45:49"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058349857, "dur_ms": 761, "outcome": "ok", "exc": "", "where": "costs/12/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:50"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058350687, "dur_ms": 69, "outcome": "ok", "exc": "", "where": "costs/12/startDate", "how": "mounted_native", "ts": "2026-10-27T07:45:50"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058351765, "dur_ms": 55, "outcome": "ok", "exc": "", "where": "costs/12/startDate", "ts": "2026-10-27T07:45:51"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058349847, "dur_ms": 1994, "outcome": "ok", "exc": "", "where": "costs/12/startDate", "ts": "2026-10-27T07:45:51"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058351867, "dur_ms": 790, "outcome": "ok", "exc": "", "where": "costs/12/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:52"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058352696, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/12/endDate", "how": "mounted_native", "ts": "2026-10-27T07:45:52"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058353759, "dur_ms": 90, "outcome": "ok", "exc": "", "where": "costs/12/endDate", "ts": "2026-10-27T07:45:53"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058351857, "dur_ms": 2012, "outcome": "ok", "exc": "", "where": "costs/12/endDate", "ts": "2026-10-27T07:45:53"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058353909, "dur_ms": 759, "outcome": "ok", "exc": "", "where": "costs/12/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:54"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058354709, "dur_ms": 60, "outcome": "ok", "exc": "", "where": "costs/12/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:45:54"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058355206, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/12/projectPlace", "ts": "2026-10-27T07:45:55"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058353899, "dur_ms": 1355, "outcome": "ok", "exc": "", "where": "costs/12/projectPlace", "ts": "2026-10-27T07:45:55"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058355281, "dur_ms": 752, "outcome": "ok", "exc": "", "where": "costs/12/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:56"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058356085, "dur_ms": 65, "outcome": "ok", "exc": "", "where": "costs/12/count", "how": "mounted_native", "ts": "2026-10-27T07:45:56"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058356587, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/12/count", "ts": "2026-10-27T07:45:56"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058355270, "dur_ms": 1369, "outcome": "ok", "exc": "", "where": "costs/12/count", "ts": "2026-10-27T07:45:56"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058356664, "dur_ms": 732, "outcome": "ok", "exc": "", "where": "costs/12/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:57"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058357436, "dur_ms": 67, "outcome": "ok", "exc": "", "where": "costs/12/cost", "how": "mounted_native", "ts": "2026-10-27T07:45:57"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058357947, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "costs/12/cost", "ts": "2026-10-27T07:45:57"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058356654, "dur_ms": 1360, "outcome": "ok", "exc": "", "where": "costs/12/cost", "ts": "2026-10-27T07:45:58"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058358041, "dur_ms": 747, "outcome": "ok", "exc": "", "where": "costs/12/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:45:58"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058358830, "dur_ms": 79, "outcome": "ok", "exc": "", "where": "costs/12/reason", "how": "mounted_native", "ts": "2026-10-27T07:45:58"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058359339, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/12/reason", "ts": "2026-10-27T07:45:59"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058358031, "dur_ms": 1374, "outcome": "ok", "exc": "", "where": "costs/12/reason", "ts": "2026-10-27T07:45:59"}
+{"event": "structured_row_written", "table": "costs", "row": 12, "row_id": "case06-costs-16", "ts": "2026-10-27T07:45:59"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058347037, "dur_ms": 12368, "outcome": "ok", "exc": "", "section": "costs", "row": 12, "ts": "2026-10-27T07:45:59"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058359428, "dur_ms": 1294, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:46:00"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058360722, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:46:00"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058360799, "dur_ms": 1218, "outcome": "ok", "exc": "", "where": "costs/13/project", "ts": "2026-10-27T07:46:02"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058362082, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "costs/13/project", "ts": "2026-10-27T07:46:02"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058360769, "dur_ms": 1365, "outcome": "ok", "exc": "", "where": "costs/13/project", "ts": "2026-10-27T07:46:02"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058362160, "dur_ms": 768, "outcome": "ok", "exc": "", "where": "costs/13/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:02"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058362984, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/13/startDate", "how": "mounted_native", "ts": "2026-10-27T07:46:03"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058364040, "dur_ms": 61, "outcome": "ok", "exc": "", "where": "costs/13/startDate", "ts": "2026-10-27T07:46:04"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058362149, "dur_ms": 1973, "outcome": "ok", "exc": "", "where": "costs/13/startDate", "ts": "2026-10-27T07:46:04"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058364147, "dur_ms": 764, "outcome": "ok", "exc": "", "where": "costs/13/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:04"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058364969, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/13/endDate", "how": "mounted_native", "ts": "2026-10-27T07:46:05"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058366027, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/13/endDate", "ts": "2026-10-27T07:46:06"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058364137, "dur_ms": 1964, "outcome": "ok", "exc": "", "where": "costs/13/endDate", "ts": "2026-10-27T07:46:06"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058366130, "dur_ms": 750, "outcome": "ok", "exc": "", "where": "costs/13/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:06"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058366919, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/13/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:46:06"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058367419, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/13/projectPlace", "ts": "2026-10-27T07:46:07"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058366119, "dur_ms": 1349, "outcome": "ok", "exc": "", "where": "costs/13/projectPlace", "ts": "2026-10-27T07:46:07"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058367493, "dur_ms": 749, "outcome": "ok", "exc": "", "where": "costs/13/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:08"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058368283, "dur_ms": 61, "outcome": "ok", "exc": "", "where": "costs/13/count", "how": "mounted_native", "ts": "2026-10-27T07:46:08"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058368783, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/13/count", "ts": "2026-10-27T07:46:08"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058367482, "dur_ms": 1367, "outcome": "ok", "exc": "", "where": "costs/13/count", "ts": "2026-10-27T07:46:08"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058368875, "dur_ms": 763, "outcome": "ok", "exc": "", "where": "costs/13/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:09"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058369678, "dur_ms": 61, "outcome": "ok", "exc": "", "where": "costs/13/cost", "how": "mounted_native", "ts": "2026-10-27T07:46:09"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058370174, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/13/cost", "ts": "2026-10-27T07:46:10"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058368864, "dur_ms": 1360, "outcome": "ok", "exc": "", "where": "costs/13/cost", "ts": "2026-10-27T07:46:10"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058370249, "dur_ms": 720, "outcome": "ok", "exc": "", "where": "costs/13/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:10"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058371010, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/13/reason", "how": "mounted_native", "ts": "2026-10-27T07:46:11"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058371498, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/13/reason", "ts": "2026-10-27T07:46:11"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058370239, "dur_ms": 1309, "outcome": "ok", "exc": "", "where": "costs/13/reason", "ts": "2026-10-27T07:46:11"}
+{"event": "structured_row_written", "table": "costs", "row": 13, "row_id": "case06-costs-17", "ts": "2026-10-27T07:46:11"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058359406, "dur_ms": 12142, "outcome": "ok", "exc": "", "section": "costs", "row": 13, "ts": "2026-10-27T07:46:11"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058371572, "dur_ms": 1326, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:46:12"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058372898, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:46:12"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058372993, "dur_ms": 1216, "outcome": "ok", "exc": "", "where": "costs/14/project", "ts": "2026-10-27T07:46:14"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058374258, "dur_ms": 37, "outcome": "ok", "exc": "", "where": "costs/14/project", "ts": "2026-10-27T07:46:14"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058372961, "dur_ms": 1350, "outcome": "ok", "exc": "", "where": "costs/14/project", "ts": "2026-10-27T07:46:14"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058374337, "dur_ms": 736, "outcome": "ok", "exc": "", "where": "costs/14/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:15"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058375140, "dur_ms": 59, "outcome": "ok", "exc": "", "where": "costs/14/startDate", "how": "mounted_native", "ts": "2026-10-27T07:46:15"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058376206, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "costs/14/startDate", "ts": "2026-10-27T07:46:16"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058374326, "dur_ms": 1972, "outcome": "ok", "exc": "", "where": "costs/14/startDate", "ts": "2026-10-27T07:46:16"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058376326, "dur_ms": 779, "outcome": "ok", "exc": "", "where": "costs/14/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:17"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058377148, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/14/endDate", "how": "mounted_native", "ts": "2026-10-27T07:46:17"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058378222, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/14/endDate", "ts": "2026-10-27T07:46:18"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058376315, "dur_ms": 1985, "outcome": "ok", "exc": "", "where": "costs/14/endDate", "ts": "2026-10-27T07:46:18"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058378326, "dur_ms": 739, "outcome": "ok", "exc": "", "where": "costs/14/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:19"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058379108, "dur_ms": 79, "outcome": "ok", "exc": "", "where": "costs/14/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:46:19"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058379630, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "costs/14/projectPlace", "ts": "2026-10-27T07:46:19"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058378316, "dur_ms": 1365, "outcome": "ok", "exc": "", "where": "costs/14/projectPlace", "ts": "2026-10-27T07:46:19"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058379706, "dur_ms": 720, "outcome": "ok", "exc": "", "where": "costs/14/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:20"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058380463, "dur_ms": 61, "outcome": "ok", "exc": "", "where": "costs/14/count", "how": "mounted_native", "ts": "2026-10-27T07:46:20"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058380948, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/14/count", "ts": "2026-10-27T07:46:20"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058379696, "dur_ms": 1307, "outcome": "ok", "exc": "", "where": "costs/14/count", "ts": "2026-10-27T07:46:21"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058381030, "dur_ms": 743, "outcome": "ok", "exc": "", "where": "costs/14/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:21"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058381813, "dur_ms": 81, "outcome": "ok", "exc": "", "where": "costs/14/cost", "how": "mounted_native", "ts": "2026-10-27T07:46:21"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058382344, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/14/cost", "ts": "2026-10-27T07:46:22"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058381018, "dur_ms": 1380, "outcome": "ok", "exc": "", "where": "costs/14/cost", "ts": "2026-10-27T07:46:22"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058382424, "dur_ms": 748, "outcome": "ok", "exc": "", "where": "costs/14/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:23"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058383213, "dur_ms": 66, "outcome": "ok", "exc": "", "where": "costs/14/reason", "how": "mounted_native", "ts": "2026-10-27T07:46:23"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058383709, "dur_ms": 33, "outcome": "ok", "exc": "", "where": "costs/14/reason", "ts": "2026-10-27T07:46:23"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058382414, "dur_ms": 1344, "outcome": "ok", "exc": "", "where": "costs/14/reason", "ts": "2026-10-27T07:46:23"}
+{"event": "structured_row_written", "table": "costs", "row": 14, "row_id": "case06-costs-18", "ts": "2026-10-27T07:46:23"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058371549, "dur_ms": 12209, "outcome": "ok", "exc": "", "section": "costs", "row": 14, "ts": "2026-10-27T07:46:23"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058383782, "dur_ms": 1327, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:46:25"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058385109, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:46:25"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058385203, "dur_ms": 1183, "outcome": "ok", "exc": "", "where": "costs/15/project", "ts": "2026-10-27T07:46:26"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058386422, "dur_ms": 51, "outcome": "ok", "exc": "", "where": "costs/15/project", "ts": "2026-10-27T07:46:26"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058385156, "dur_ms": 1347, "outcome": "ok", "exc": "", "where": "costs/15/project", "ts": "2026-10-27T07:46:26"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058386530, "dur_ms": 746, "outcome": "ok", "exc": "", "where": "costs/15/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:27"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058387316, "dur_ms": 96, "outcome": "ok", "exc": "", "where": "costs/15/startDate", "how": "mounted_native", "ts": "2026-10-27T07:46:27"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058388420, "dur_ms": 99, "outcome": "ok", "exc": "", "where": "costs/15/startDate", "ts": "2026-10-27T07:46:28"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058386518, "dur_ms": 2020, "outcome": "ok", "exc": "", "where": "costs/15/startDate", "ts": "2026-10-27T07:46:28"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058388565, "dur_ms": 777, "outcome": "ok", "exc": "", "where": "costs/15/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:29"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058389381, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "costs/15/endDate", "how": "mounted_native", "ts": "2026-10-27T07:46:29"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058390438, "dur_ms": 72, "outcome": "ok", "exc": "", "where": "costs/15/endDate", "ts": "2026-10-27T07:46:30"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058388554, "dur_ms": 1975, "outcome": "ok", "exc": "", "where": "costs/15/endDate", "ts": "2026-10-27T07:46:30"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058390556, "dur_ms": 751, "outcome": "ok", "exc": "", "where": "costs/15/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:31"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058391348, "dur_ms": 81, "outcome": "ok", "exc": "", "where": "costs/15/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:46:31"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058391856, "dur_ms": 38, "outcome": "ok", "exc": "", "where": "costs/15/projectPlace", "ts": "2026-10-27T07:46:31"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058390546, "dur_ms": 1365, "outcome": "ok", "exc": "", "where": "costs/15/projectPlace", "ts": "2026-10-27T07:46:31"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058391938, "dur_ms": 724, "outcome": "ok", "exc": "", "where": "costs/15/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:32"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058392719, "dur_ms": 111, "outcome": "ok", "exc": "", "where": "costs/15/count", "how": "mounted_native", "ts": "2026-10-27T07:46:32"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058393265, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "costs/15/count", "ts": "2026-10-27T07:46:33"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058391926, "dur_ms": 1392, "outcome": "ok", "exc": "", "where": "costs/15/count", "ts": "2026-10-27T07:46:33"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058393346, "dur_ms": 732, "outcome": "ok", "exc": "", "where": "costs/15/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:34"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058394119, "dur_ms": 69, "outcome": "ok", "exc": "", "where": "costs/15/cost", "how": "mounted_native", "ts": "2026-10-27T07:46:34"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058394618, "dur_ms": 52, "outcome": "ok", "exc": "", "where": "costs/15/cost", "ts": "2026-10-27T07:46:34"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058393335, "dur_ms": 1368, "outcome": "ok", "exc": "", "where": "costs/15/cost", "ts": "2026-10-27T07:46:34"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058394747, "dur_ms": 744, "outcome": "ok", "exc": "", "where": "costs/15/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:35"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058395533, "dur_ms": 82, "outcome": "ok", "exc": "", "where": "costs/15/reason", "how": "mounted_native", "ts": "2026-10-27T07:46:35"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058396043, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/15/reason", "ts": "2026-10-27T07:46:36"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058394736, "dur_ms": 1356, "outcome": "ok", "exc": "", "where": "costs/15/reason", "ts": "2026-10-27T07:46:36"}
+{"event": "structured_row_written", "table": "costs", "row": 15, "row_id": "case06-costs-19", "ts": "2026-10-27T07:46:36"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058383759, "dur_ms": 12334, "outcome": "ok", "exc": "", "section": "costs", "row": 15, "ts": "2026-10-27T07:46:36"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058396116, "dur_ms": 1317, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:46:37"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058397433, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:46:37"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058397529, "dur_ms": 1202, "outcome": "ok", "exc": "", "where": "costs/16/project", "ts": "2026-10-27T07:46:38"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058398780, "dur_ms": 39, "outcome": "ok", "exc": "", "where": "costs/16/project", "ts": "2026-10-27T07:46:38"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058397482, "dur_ms": 1355, "outcome": "ok", "exc": "", "where": "costs/16/project", "ts": "2026-10-27T07:46:38"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058398864, "dur_ms": 748, "outcome": "ok", "exc": "", "where": "costs/16/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:39"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058399652, "dur_ms": 57, "outcome": "ok", "exc": "", "where": "costs/16/startDate", "how": "mounted_native", "ts": "2026-10-27T07:46:39"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058400696, "dur_ms": 55, "outcome": "ok", "exc": "", "where": "costs/16/startDate", "ts": "2026-10-27T07:46:40"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058398853, "dur_ms": 1921, "outcome": "ok", "exc": "", "where": "costs/16/startDate", "ts": "2026-10-27T07:46:40"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058400802, "dur_ms": 785, "outcome": "ok", "exc": "", "where": "costs/16/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:41"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058401630, "dur_ms": 54, "outcome": "ok", "exc": "", "where": "costs/16/endDate", "how": "mounted_native", "ts": "2026-10-27T07:46:41"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058402701, "dur_ms": 57, "outcome": "ok", "exc": "", "where": "costs/16/endDate", "ts": "2026-10-27T07:46:42"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058400791, "dur_ms": 1988, "outcome": "ok", "exc": "", "where": "costs/16/endDate", "ts": "2026-10-27T07:46:42"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058402807, "dur_ms": 728, "outcome": "ok", "exc": "", "where": "costs/16/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:43"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058403579, "dur_ms": 67, "outcome": "ok", "exc": "", "where": "costs/16/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:46:43"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058404085, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "costs/16/projectPlace", "ts": "2026-10-27T07:46:44"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058402796, "dur_ms": 1371, "outcome": "ok", "exc": "", "where": "costs/16/projectPlace", "ts": "2026-10-27T07:46:44"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058404198, "dur_ms": 735, "outcome": "ok", "exc": "", "where": "costs/16/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:44"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058404974, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "costs/16/count", "how": "mounted_native", "ts": "2026-10-27T07:46:45"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058405498, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "costs/16/count", "ts": "2026-10-27T07:46:45"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058404187, "dur_ms": 1362, "outcome": "ok", "exc": "", "where": "costs/16/count", "ts": "2026-10-27T07:46:45"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058405576, "dur_ms": 761, "outcome": "ok", "exc": "", "where": "costs/16/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:46"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058406380, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "costs/16/cost", "how": "mounted_native", "ts": "2026-10-27T07:46:46"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058406903, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/16/cost", "ts": "2026-10-27T07:46:46"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058405565, "dur_ms": 1404, "outcome": "ok", "exc": "", "where": "costs/16/cost", "ts": "2026-10-27T07:46:46"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058406996, "dur_ms": 746, "outcome": "ok", "exc": "", "where": "costs/16/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:47"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058407782, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/16/reason", "how": "mounted_native", "ts": "2026-10-27T07:46:47"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058408275, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/16/reason", "ts": "2026-10-27T07:46:48"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058406985, "dur_ms": 1341, "outcome": "ok", "exc": "", "where": "costs/16/reason", "ts": "2026-10-27T07:46:48"}
+{"event": "structured_row_written", "table": "costs", "row": 16, "row_id": "case06-costs-20", "ts": "2026-10-27T07:46:48"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058396094, "dur_ms": 12233, "outcome": "ok", "exc": "", "section": "costs", "row": 16, "ts": "2026-10-27T07:46:48"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058408350, "dur_ms": 1321, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:46:49"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058409671, "dur_ms": 17, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:46:49"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058409781, "dur_ms": 1206, "outcome": "ok", "exc": "", "where": "costs/17/project", "ts": "2026-10-27T07:46:50"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058411038, "dur_ms": 53, "outcome": "ok", "exc": "", "where": "costs/17/project", "ts": "2026-10-27T07:46:51"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058409748, "dur_ms": 1360, "outcome": "ok", "exc": "", "where": "costs/17/project", "ts": "2026-10-27T07:46:51"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058411135, "dur_ms": 762, "outcome": "ok", "exc": "", "where": "costs/17/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:51"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058411952, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/17/startDate", "how": "mounted_native", "ts": "2026-10-27T07:46:52"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058413020, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "costs/17/startDate", "ts": "2026-10-27T07:46:53"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058411124, "dur_ms": 1981, "outcome": "ok", "exc": "", "where": "costs/17/startDate", "ts": "2026-10-27T07:46:53"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058413132, "dur_ms": 756, "outcome": "ok", "exc": "", "where": "costs/17/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:53"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058413929, "dur_ms": 75, "outcome": "ok", "exc": "", "where": "costs/17/endDate", "how": "mounted_native", "ts": "2026-10-27T07:46:54"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058415020, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/17/endDate", "ts": "2026-10-27T07:46:55"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058413121, "dur_ms": 1980, "outcome": "ok", "exc": "", "where": "costs/17/endDate", "ts": "2026-10-27T07:46:55"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058415129, "dur_ms": 763, "outcome": "ok", "exc": "", "where": "costs/17/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:55"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058415950, "dur_ms": 96, "outcome": "ok", "exc": "", "where": "costs/17/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:46:56"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058416480, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/17/projectPlace", "ts": "2026-10-27T07:46:56"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058415119, "dur_ms": 1413, "outcome": "ok", "exc": "", "where": "costs/17/projectPlace", "ts": "2026-10-27T07:46:56"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058416562, "dur_ms": 727, "outcome": "ok", "exc": "", "where": "costs/17/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:57"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058417332, "dur_ms": 68, "outcome": "ok", "exc": "", "where": "costs/17/count", "how": "mounted_native", "ts": "2026-10-27T07:46:57"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058417830, "dur_ms": 34, "outcome": "ok", "exc": "", "where": "costs/17/count", "ts": "2026-10-27T07:46:57"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058416551, "dur_ms": 1330, "outcome": "ok", "exc": "", "where": "costs/17/count", "ts": "2026-10-27T07:46:57"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058417908, "dur_ms": 729, "outcome": "ok", "exc": "", "where": "costs/17/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:46:58"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058418695, "dur_ms": 69, "outcome": "ok", "exc": "", "where": "costs/17/cost", "how": "mounted_native", "ts": "2026-10-27T07:46:58"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058419188, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "costs/17/cost", "ts": "2026-10-27T07:46:59"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058417896, "dur_ms": 1356, "outcome": "ok", "exc": "", "where": "costs/17/cost", "ts": "2026-10-27T07:46:59"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058419279, "dur_ms": 747, "outcome": "ok", "exc": "", "where": "costs/17/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:00"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058420067, "dur_ms": 83, "outcome": "ok", "exc": "", "where": "costs/17/reason", "how": "mounted_native", "ts": "2026-10-27T07:47:00"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058420577, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/17/reason", "ts": "2026-10-27T07:47:00"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058419269, "dur_ms": 1361, "outcome": "ok", "exc": "", "where": "costs/17/reason", "ts": "2026-10-27T07:47:00"}
+{"event": "structured_row_written", "table": "costs", "row": 17, "row_id": "case06-costs-21", "ts": "2026-10-27T07:47:00"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058408327, "dur_ms": 12304, "outcome": "ok", "exc": "", "section": "costs", "row": 17, "ts": "2026-10-27T07:47:00"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058420653, "dur_ms": 1344, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:47:01"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058421998, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:47:02"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058422079, "dur_ms": 1205, "outcome": "ok", "exc": "", "where": "costs/18/project", "ts": "2026-10-27T07:47:03"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058423320, "dur_ms": 40, "outcome": "ok", "exc": "", "where": "costs/18/project", "ts": "2026-10-27T07:47:03"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058422046, "dur_ms": 1333, "outcome": "ok", "exc": "", "where": "costs/18/project", "ts": "2026-10-27T07:47:03"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058423408, "dur_ms": 771, "outcome": "ok", "exc": "", "where": "costs/18/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:04"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058424234, "dur_ms": 70, "outcome": "ok", "exc": "", "where": "costs/18/startDate", "how": "mounted_native", "ts": "2026-10-27T07:47:04"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058425304, "dur_ms": 98, "outcome": "ok", "exc": "", "where": "costs/18/startDate", "ts": "2026-10-27T07:47:05"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058423396, "dur_ms": 2022, "outcome": "ok", "exc": "", "where": "costs/18/startDate", "ts": "2026-10-27T07:47:05"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058425445, "dur_ms": 746, "outcome": "ok", "exc": "", "where": "costs/18/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:06"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058426234, "dur_ms": 55, "outcome": "ok", "exc": "", "where": "costs/18/endDate", "how": "mounted_native", "ts": "2026-10-27T07:47:06"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058427304, "dur_ms": 93, "outcome": "ok", "exc": "", "where": "costs/18/endDate", "ts": "2026-10-27T07:47:07"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058425434, "dur_ms": 1995, "outcome": "ok", "exc": "", "where": "costs/18/endDate", "ts": "2026-10-27T07:47:07"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058427456, "dur_ms": 734, "outcome": "ok", "exc": "", "where": "costs/18/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:08"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058428232, "dur_ms": 81, "outcome": "ok", "exc": "", "where": "costs/18/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:47:08"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058428740, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/18/projectPlace", "ts": "2026-10-27T07:47:08"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058427445, "dur_ms": 1348, "outcome": "ok", "exc": "", "where": "costs/18/projectPlace", "ts": "2026-10-27T07:47:08"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058428821, "dur_ms": 758, "outcome": "ok", "exc": "", "where": "costs/18/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:09"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058429620, "dur_ms": 81, "outcome": "ok", "exc": "", "where": "costs/18/count", "how": "mounted_native", "ts": "2026-10-27T07:47:09"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058430151, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "costs/18/count", "ts": "2026-10-27T07:47:10"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058428809, "dur_ms": 1394, "outcome": "ok", "exc": "", "where": "costs/18/count", "ts": "2026-10-27T07:47:10"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058430230, "dur_ms": 756, "outcome": "ok", "exc": "", "where": "costs/18/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:10"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058431030, "dur_ms": 69, "outcome": "ok", "exc": "", "where": "costs/18/cost", "how": "mounted_native", "ts": "2026-10-27T07:47:11"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058431534, "dur_ms": 37, "outcome": "ok", "exc": "", "where": "costs/18/cost", "ts": "2026-10-27T07:47:11"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058430220, "dur_ms": 1369, "outcome": "ok", "exc": "", "where": "costs/18/cost", "ts": "2026-10-27T07:47:11"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058431620, "dur_ms": 739, "outcome": "ok", "exc": "", "where": "costs/18/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:12"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058432416, "dur_ms": 72, "outcome": "ok", "exc": "", "where": "costs/18/reason", "how": "mounted_native", "ts": "2026-10-27T07:47:12"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058432913, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/18/reason", "ts": "2026-10-27T07:47:12"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058431608, "dur_ms": 1358, "outcome": "ok", "exc": "", "where": "costs/18/reason", "ts": "2026-10-27T07:47:12"}
+{"event": "structured_row_written", "table": "costs", "row": 18, "row_id": "case06-costs-22", "ts": "2026-10-27T07:47:12"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058420631, "dur_ms": 12336, "outcome": "ok", "exc": "", "section": "costs", "row": 18, "ts": "2026-10-27T07:47:12"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058432990, "dur_ms": 1322, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:47:14"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058434313, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "project", "ts": "2026-10-27T07:47:14"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058434409, "dur_ms": 1213, "outcome": "ok", "exc": "", "where": "costs/19/project", "ts": "2026-10-27T07:47:15"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058435674, "dur_ms": 39, "outcome": "ok", "exc": "", "where": "costs/19/project", "ts": "2026-10-27T07:47:15"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058434364, "dur_ms": 1380, "outcome": "ok", "exc": "", "where": "costs/19/project", "ts": "2026-10-27T07:47:15"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058435773, "dur_ms": 758, "outcome": "ok", "exc": "", "where": "costs/19/startDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:16"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058436571, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/19/startDate", "how": "mounted_native", "ts": "2026-10-27T07:47:16"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058437615, "dur_ms": 82, "outcome": "ok", "exc": "", "where": "costs/19/startDate", "ts": "2026-10-27T07:47:17"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058435760, "dur_ms": 1953, "outcome": "ok", "exc": "", "where": "costs/19/startDate", "ts": "2026-10-27T07:47:17"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058437742, "dur_ms": 762, "outcome": "ok", "exc": "", "where": "costs/19/endDate", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:18"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058438546, "dur_ms": 56, "outcome": "ok", "exc": "", "where": "costs/19/endDate", "how": "mounted_native", "ts": "2026-10-27T07:47:18"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058439604, "dur_ms": 57, "outcome": "ok", "exc": "", "where": "costs/19/endDate", "ts": "2026-10-27T07:47:19"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058437730, "dur_ms": 1954, "outcome": "ok", "exc": "", "where": "costs/19/endDate", "ts": "2026-10-27T07:47:19"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058439714, "dur_ms": 767, "outcome": "ok", "exc": "", "where": "costs/19/projectPlace", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:20"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058440521, "dur_ms": 98, "outcome": "ok", "exc": "", "where": "costs/19/projectPlace", "how": "mounted_native", "ts": "2026-10-27T07:47:20"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058441052, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/19/projectPlace", "ts": "2026-10-27T07:47:21"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058439702, "dur_ms": 1403, "outcome": "ok", "exc": "", "where": "costs/19/projectPlace", "ts": "2026-10-27T07:47:21"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058441133, "dur_ms": 773, "outcome": "ok", "exc": "", "where": "costs/19/count", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:21"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058441948, "dur_ms": 83, "outcome": "ok", "exc": "", "where": "costs/19/count", "how": "mounted_native", "ts": "2026-10-27T07:47:22"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058442461, "dur_ms": 67, "outcome": "ok", "exc": "", "where": "costs/19/count", "ts": "2026-10-27T07:47:22"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058441122, "dur_ms": 1439, "outcome": "ok", "exc": "", "where": "costs/19/count", "ts": "2026-10-27T07:47:22"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058442588, "dur_ms": 746, "outcome": "ok", "exc": "", "where": "costs/19/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:23"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058443390, "dur_ms": 84, "outcome": "ok", "exc": "", "where": "costs/19/cost", "how": "mounted_native", "ts": "2026-10-27T07:47:23"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058443901, "dur_ms": 37, "outcome": "ok", "exc": "", "where": "costs/19/cost", "ts": "2026-10-27T07:47:23"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058442578, "dur_ms": 1392, "outcome": "ok", "exc": "", "where": "costs/19/cost", "ts": "2026-10-27T07:47:23"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058444000, "dur_ms": 760, "outcome": "ok", "exc": "", "where": "costs/19/reason", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:24"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058444802, "dur_ms": 65, "outcome": "ok", "exc": "", "where": "costs/19/reason", "how": "mounted_native", "ts": "2026-10-27T07:47:24"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058445303, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "costs/19/reason", "ts": "2026-10-27T07:47:25"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058443988, "dur_ms": 1366, "outcome": "ok", "exc": "", "where": "costs/19/reason", "ts": "2026-10-27T07:47:25"}
+{"event": "structured_row_written", "table": "costs", "row": 19, "row_id": "case06-costs-23", "ts": "2026-10-27T07:47:25"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058432967, "dur_ms": 12388, "outcome": "ok", "exc": "", "section": "costs", "row": 19, "ts": "2026-10-27T07:47:25"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793058445382, "dur_ms": 123, "outcome": "ok", "exc": "", "name": "v1_costs_after.png", "ts": "2026-10-27T07:47:25"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1793058200673, "dur_ms": 244831, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-27T07:47:25"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058446044, "dur_ms": 23, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-27T07:47:26"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058446103, "dur_ms": 1353, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-27T07:47:27"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058447456, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-27T07:47:27"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058447553, "dur_ms": 1245, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "ts": "2026-10-27T07:47:28"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058448833, "dur_ms": 39, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "ts": "2026-10-27T07:47:28"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058447519, "dur_ms": 1367, "outcome": "ok", "exc": "", "where": "details/0/reimItem", "ts": "2026-10-27T07:47:28"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058448914, "dur_ms": 731, "outcome": "ok", "exc": "", "where": "details/0/digest", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:29"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058449685, "dur_ms": 128, "outcome": "ok", "exc": "", "where": "details/0/digest", "how": "mounted_native", "ts": "2026-10-27T07:47:29"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058450247, "dur_ms": 36, "outcome": "ok", "exc": "", "where": "details/0/digest", "ts": "2026-10-27T07:47:30"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058448903, "dur_ms": 1397, "outcome": "ok", "exc": "", "where": "details/0/digest", "ts": "2026-10-27T07:47:30"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058450326, "dur_ms": 734, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:31"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1793058451102, "dur_ms": 1410, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-27T07:47:32"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1793058452555, "dur_ms": 1427, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-27T07:47:33"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058453982, "dur_ms": 49, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-27T07:47:34"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058454031, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-27T07:47:34"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058450316, "dur_ms": 3756, "outcome": "ok", "exc": "", "where": "details/0/budgetNo", "ts": "2026-10-27T07:47:34"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058454099, "dur_ms": 768, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:34"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1793058454921, "dur_ms": 1360, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-27T07:47:36"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1793058456374, "dur_ms": 1443, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-27T07:47:37"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058457817, "dur_ms": 95, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-27T07:47:37"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058457914, "dur_ms": 24, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-27T07:47:37"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058454088, "dur_ms": 3913, "outcome": "ok", "exc": "", "where": "details/0/subjectName", "ts": "2026-10-27T07:47:38"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058458034, "dur_ms": 734, "outcome": "ok", "exc": "", "where": "details/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:38"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058458809, "dur_ms": 94, "outcome": "ok", "exc": "", "where": "details/0/cost", "how": "mounted_native", "ts": "2026-10-27T07:47:38"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058459334, "dur_ms": 40, "outcome": "ok", "exc": "", "where": "details/0/cost", "ts": "2026-10-27T07:47:39"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058458019, "dur_ms": 1389, "outcome": "ok", "exc": "", "where": "details/0/cost", "ts": "2026-10-27T07:47:39"}
+{"event": "structured_row_written", "table": "details", "row": 0, "row_id": "case06-details-1", "ts": "2026-10-27T07:47:39"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058446044, "dur_ms": 13365, "outcome": "ok", "exc": "", "section": "details", "row": 0, "ts": "2026-10-27T07:47:39"}
+{"event": "timing", "action": "row_add", "t0_ms": 1793058459434, "dur_ms": 1336, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-27T07:47:40"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058460770, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-27T07:47:40"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1793058460870, "dur_ms": 1292, "outcome": "ok", "exc": "", "where": "details/1/reimItem", "ts": "2026-10-27T07:47:42"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058462217, "dur_ms": 41, "outcome": "ok", "exc": "", "where": "details/1/reimItem", "ts": "2026-10-27T07:47:42"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058460821, "dur_ms": 1471, "outcome": "ok", "exc": "", "where": "details/1/reimItem", "ts": "2026-10-27T07:47:42"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058462319, "dur_ms": 814, "outcome": "ok", "exc": "", "where": "details/1/digest", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:43"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058463174, "dur_ms": 70, "outcome": "ok", "exc": "", "where": "details/1/digest", "how": "mounted_native", "ts": "2026-10-27T07:47:43"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058463687, "dur_ms": 82, "outcome": "ok", "exc": "", "where": "details/1/digest", "ts": "2026-10-27T07:47:43"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058462308, "dur_ms": 1479, "outcome": "ok", "exc": "", "where": "details/1/digest", "ts": "2026-10-27T07:47:43"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058463818, "dur_ms": 781, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:44"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1793058464681, "dur_ms": 1403, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-27T07:47:46"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1793058466129, "dur_ms": 1444, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-27T07:47:47"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058467573, "dur_ms": 46, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-27T07:47:47"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058467619, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-27T07:47:47"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058463806, "dur_ms": 3866, "outcome": "ok", "exc": "", "where": "details/1/budgetNo", "ts": "2026-10-27T07:47:47"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058467700, "dur_ms": 757, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:48"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1793058468513, "dur_ms": 1377, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-27T07:47:49"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1793058469992, "dur_ms": 1435, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-27T07:47:51"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058471427, "dur_ms": 63, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-27T07:47:51"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058471490, "dur_ms": 12, "outcome": "ok", "exc": "", "prop": "reimItem", "ts": "2026-10-27T07:47:51"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058467689, "dur_ms": 3900, "outcome": "ok", "exc": "", "where": "details/1/subjectName", "ts": "2026-10-27T07:47:51"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058471617, "dur_ms": 728, "outcome": "ok", "exc": "", "where": "details/1/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:52"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058472392, "dur_ms": 112, "outcome": "ok", "exc": "", "where": "details/1/cost", "how": "mounted_native", "ts": "2026-10-27T07:47:52"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058472941, "dur_ms": 68, "outcome": "ok", "exc": "", "where": "details/1/cost", "ts": "2026-10-27T07:47:53"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058471605, "dur_ms": 1422, "outcome": "ok", "exc": "", "where": "details/1/cost", "ts": "2026-10-27T07:47:53"}
+{"event": "structured_row_written", "table": "details", "row": 1, "row_id": "case06-details-2", "ts": "2026-10-27T07:47:53"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058459410, "dur_ms": 13618, "outcome": "ok", "exc": "", "section": "details", "row": 1, "ts": "2026-10-27T07:47:53"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793058473055, "dur_ms": 159, "outcome": "ok", "exc": "", "name": "v1_details_after.png", "ts": "2026-10-27T07:47:53"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1793058446044, "dur_ms": 27171, "outcome": "ok", "exc": "", "section": "details", "ts": "2026-10-27T07:47:53"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058473788, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-27T07:47:53"}
+{"event": "cell_already_equal", "table": "banks", "row": 0, "field": "payee", "ts": "2026-10-27T07:47:53"}
+{"event": "cell_already_equal", "table": "banks", "row": 0, "field": "account", "ts": "2026-10-27T07:47:53"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1793058473877, "dur_ms": 1323, "outcome": "ok", "exc": "", "where": "banks/0/branch", "ts": "2026-10-27T07:47:55"}
+{"event": "timing", "action": "picker_query", "t0_ms": 1793058475218, "dur_ms": 1596, "outcome": "ok", "exc": "", "where": "banks/0/branch", "ts": "2026-10-27T07:47:56"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1793058476826, "dur_ms": 1483, "outcome": "ok", "exc": "", "where": "banks/0/branch", "ts": "2026-10-27T07:47:58"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1793058478309, "dur_ms": 12, "outcome": "ok", "exc": "", "prop": "payee", "ts": "2026-10-27T07:47:58"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1793058478425, "dur_ms": 745, "outcome": "ok", "exc": "", "where": "banks/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-27T07:47:59"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1793058479207, "dur_ms": 85, "outcome": "ok", "exc": "", "where": "banks/0/cost", "how": "mounted_native", "ts": "2026-10-27T07:47:59"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1793058479723, "dur_ms": 35, "outcome": "ok", "exc": "", "where": "banks/0/cost", "ts": "2026-10-27T07:47:59"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1793058478415, "dur_ms": 1358, "outcome": "ok", "exc": "", "where": "banks/0/cost", "ts": "2026-10-27T07:47:59"}
+{"event": "structured_row_written", "table": "banks", "row": 0, "row_id": "case06-banks-1", "ts": "2026-10-27T07:47:59"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1793058473788, "dur_ms": 5986, "outcome": "ok", "exc": "", "section": "banks", "row": 0, "ts": "2026-10-27T07:47:59"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793058479801, "dur_ms": 129, "outcome": "ok", "exc": "", "name": "v1_banks_after.png", "ts": "2026-10-27T07:47:59"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1793058473788, "dur_ms": 6143, "outcome": "ok", "exc": "", "section": "banks", "ts": "2026-10-27T07:47:59"}
+{"event": "timing", "action": "independent_readback_verify", "t0_ms": 1793058480799, "dur_ms": 611, "outcome": "ok", "exc": "", "ts": "2026-10-27T07:48:01"}
+{"event": "READBACK_END", "epoch_ms": 1793058481409, "ok": true, "ts": "2026-10-27T07:48:01"}
+{"event": "ui_execution_metrics", "network": {"requests": 162, "failed": 1}, "model_control_interventions": 0, "external_cell_commands": 0, "definitions": "continuous executor; model calls and external read-only diagnostic shell commands are not automatically measured", "ts": "2026-10-27T07:48:01"}
+{"event": "timing", "action": "ui_execution", "t0_ms": 1793058177858, "dur_ms": 303553, "outcome": "ok", "exc": "", "ts": "2026-10-27T07:48:01"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1793058481415, "dur_ms": 131, "outcome": "ok", "exc": "", "name": "v1_final.png", "ts": "2026-10-27T07:48:01"}
+{"event": "probe_end", "reason": "SUCCESS_FILL_ONLY", "tech_used_s": 307.8, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-27T07:48:01"}
+{"event": "keep_open_start", "minutes": 1440.0, "task_status": "SUCCESS_FILL_ONLY", "ts": "2026-10-27T07:48:01"}
+{"event": "page_navigation", "epoch_ms": 1793060942789, "ts": "2026-10-27T08:29:02"}
+{"event": "page_navigation", "epoch_ms": 1793060944714, "ts": "2026-10-27T08:29:04"}
+{"event": "page_navigation", "epoch_ms": 1793060954687, "ts": "2026-10-27T08:29:14"}
+{"event": "page_navigation", "epoch_ms": 1793060956185, "ts": "2026-10-27T08:29:16"}
+{"event": "page_navigation", "epoch_ms": 1793060958114, "ts": "2026-10-27T08:29:18"}
+{"event": "page_navigation", "epoch_ms": 1793060971361, "ts": "2026-10-27T08:29:31"}
+{"event": "page_navigation", "epoch_ms": 1793061023747, "ts": "2026-10-27T08:30:23"}
+{"event": "page_navigation", "epoch_ms": 1793061055065, "ts": "2026-10-27T08:30:55"}
+{"event": "page_navigation", "epoch_ms": 1793061079031, "ts": "2026-10-27T08:31:19"}
+{"event": "page_navigation", "epoch_ms": 1793061085880, "ts": "2026-10-27T08:31:25"}
+{"event": "page_navigation", "epoch_ms": 1793061099769, "ts": "2026-10-27T08:31:39"}
+{"event": "page_navigation", "epoch_ms": 1793061124163, "ts": "2026-10-27T08:32:04"}
+{"event": "page_navigation", "epoch_ms": 1793061125206, "ts": "2026-10-27T08:32:05"}
+{"event": "page_navigation", "epoch_ms": 1793061167165, "ts": "2026-10-27T08:32:47"}
+{"event": "page_navigation", "epoch_ms": 1793061169436, "ts": "2026-10-27T08:32:49"}
+{"event": "page_navigation", "epoch_ms": 1793061861095, "ts": "2026-10-27T08:44:21"}
+{"event": "page_navigation", "epoch_ms": 1793062028392, "ts": "2026-10-27T08:47:08"}
+{"event": "page_navigation", "epoch_ms": 1793062745412, "ts": "2026-10-27T08:59:05"}
+{"event": "page_navigation", "epoch_ms": 1793062754184, "ts": "2026-10-27T08:59:14"}
+{"event": "page_navigation", "epoch_ms": 1793064680578, "ts": "2026-10-27T09:31:20"}
+{"event": "page_navigation", "epoch_ms": 1793064699800, "ts": "2026-10-27T09:31:39"}
+{"event": "page_navigation", "epoch_ms": 1793064721048, "ts": "2026-10-27T09:32:01"}
+{"event": "page_navigation", "epoch_ms": 1793064790325, "ts": "2026-10-27T09:33:10"}
+{"event": "page_navigation", "epoch_ms": 1793065304867, "ts": "2026-10-27T09:41:44"}
+{"event": "page_navigation", "epoch_ms": 1793065309932, "ts": "2026-10-27T09:41:49"}

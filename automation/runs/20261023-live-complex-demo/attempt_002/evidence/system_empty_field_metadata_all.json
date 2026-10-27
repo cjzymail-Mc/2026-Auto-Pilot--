@@ -1,0 +1,56 @@
+[
+  {
+    "row": 0,
+    "field": "bizDetailCost",
+    "readonly": true,
+    "visibleText": ""
+  },
+  {
+    "row": 0,
+    "field": "bizDetailNum",
+    "readonly": true,
+    "visibleText": ""
+  },
+  {
+    "row": 0,
+    "field": "usedCost",
+    "readonly": true,
+    "visibleText": ""
+  },
+  {
+    "row": 1,
+    "field": "bizDetailCost",
+    "readonly": true,
+    "visibleText": ""
+  },
+  {
+    "row": 1,
+    "field": "bizDetailNum",
+    "readonly": true,
+    "visibleText": ""
+  },
+  {
+    "row": 1,
+    "field": "usedCost",
+    "readonly": true,
+    "visibleText": ""
+  },
+  {
+    "row": 2,
+    "field": "bizDetailCost",
+    "readonly": true,
+    "visibleText": ""
+  },
+  {
+    "row": 2,
+    "field": "bizDetailNum",
+    "readonly": true,
+    "visibleText": ""
+  },
+  {
+    "row": 2,
+    "field": "usedCost",
+    "readonly": true,
+    "visibleText": ""
+  }
+]

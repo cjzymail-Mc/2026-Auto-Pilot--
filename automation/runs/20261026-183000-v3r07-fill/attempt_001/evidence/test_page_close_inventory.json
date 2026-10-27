@@ -1,0 +1,18 @@
+{
+  "page": {
+    "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+    "is_new": true,
+    "operator": "陈晶",
+    "biz_number": "",
+    "uuid": "",
+    "status": "编制中"
+  },
+  "test_context": {
+    "purpose": "V3-R07 CASE-07 正式入口真实填写（fill_only）+ 受限随机测试占位关联；覆盖门槛 F>R 已复验（见本 run events）",
+    "round": "7",
+    "authorization_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\2026-10-26 真实公出案例独立解析与OA填写施工合同-冻结V3.md",
+    "authorization_sha256": "d437988d7b2f29b7c8dd79cc1e8892f23e4ba2567a8932925cac36f5c977ef0d"
+  },
+  "save_status": "NOT_ATTEMPTED",
+  "closing_own_test_context_only": true
+}

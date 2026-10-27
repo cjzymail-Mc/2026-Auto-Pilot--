@@ -1,0 +1,37 @@
+{
+  "task_id": "20261024-r7-travelloop-15426093015",
+  "plan_hash": "e917a10d68e5b95a8f5e5212ab58db2b2b68ea9c5e0e4dc601ee4c2efcd30c48",
+  "run": "20261024-163009-3250e7d0",
+  "attempt": "attempt_001",
+  "state": "FORM_INTENT",
+  "superseded_intents": [
+    {
+      "event": "PLAN_REVISION_ZERO_WRITE_SUPERSEDE",
+      "run": "20261024-160024-8502f91d",
+      "attempt": "attempt_001",
+      "plan_hash": "5a47c96b5b9ec2a1b8d9ff24977b7b77ac13705e328edb198acdafd996859daf",
+      "new_run": "20261024-162157-04150c78",
+      "new_attempt": "attempt_001",
+      "new_plan_hash": "e917a10d68e5b95a8f5e5212ab58db2b2b68ea9c5e0e4dc601ee4c2efcd30c48",
+      "evidence": "原 attempt 终局快照四表全空（页面零写入，已随 keep-open 关闭）",
+      "superseded_at": "2026-10-24T08:22:02+00:00"
+    },
+    {
+      "event": "DEAD_INTENT_REBUILD_SUPERSEDE",
+      "run": "20261024-162157-04150c78",
+      "attempt": "attempt_001",
+      "plan_hash": "e917a10d68e5b95a8f5e5212ab58db2b2b68ea9c5e0e4dc601ee4c2efcd30c48",
+      "new_run": "20261024-163009-3250e7d0",
+      "new_attempt": "attempt_001",
+      "new_plan_hash": "e917a10d68e5b95a8f5e5212ab58db2b2b68ea9c5e0e4dc601ee4c2efcd30c48",
+      "evidence": "原 attempt 已写入但 save_status=NOT_ATTEMPTED（未保存表单关闭后服务端无残留，行数记入 lost_page_rows；重建不产生重复单据）",
+      "lost_page_rows": {
+        "relations": 2,
+        "details": 1,
+        "costs": 1,
+        "banks": 1
+      },
+      "superseded_at": "2026-10-24T08:30:15+00:00"
+    }
+  ]
+}

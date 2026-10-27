@@ -1,0 +1,231 @@
+{
+ "stage": "view via number+date query",
+ "docs": [
+  {
+   "bizNumber": "12025044500",
+   "uuid": "af88230a5c1f4bb69e0e586844a88029",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12025073893",
+   "uuid": "3f260a65f3b748308e88e353ead9e9dc",
+   "appliedAt": "2025-07-16",
+   "view_url": "https://bpm.qiaodan.com/oa/workout?type=view&id=3f260a65f3b748308e88e353ead9e9dc",
+   "text_evidence": "detail-12025073893-text.txt",
+   "screenshot": "attempt_010/evidence/detail-12025073893.png",
+   "api": [
+    {
+     "path": "/KindlyTips/query",
+     "file": "api-v3c-12025073893-000--KindlyTips-query.json",
+     "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+    },
+    {
+     "path": "/WorkOut/query/20/1",
+     "file": "api-v3c-12025073893-001--WorkOut-query-20-1.json",
+     "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+    },
+    {
+     "path": "/WorkOut/query/20/1",
+     "file": "api-v3c-12025073893-002--WorkOut-query-20-1.json",
+     "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+    },
+    {
+     "path": "/WorkOut/query/20/1",
+     "file": "api-v3c-12025073893-003--WorkOut-query-20-1.json",
+     "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+    },
+    {
+     "path": "/WorkOut/query/20/1",
+     "file": "api-v3c-12025073893-004--WorkOut-query-20-1.json",
+     "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+    },
+    {
+     "path": "/WorkOut/query/20/1",
+     "file": "api-v3c-12025073893-005--WorkOut-query-20-1.json",
+     "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+    },
+    {
+     "path": "/WorkOut/query/20/1",
+     "file": "api-v3c-12025073893-006--WorkOut-query-20-1.json",
+     "sha256": "71c34c6bb177a3f2ec10cd06e3d04fa0b29ef35b0bc6194b3982d3b9b16eb832"
+    },
+    {
+     "path": "/WorkOut/query/20/1",
+     "file": "api-v3c-12025073893-007--WorkOut-query-20-1.json",
+     "sha256": "e578ba00082c7ca5840efd0a54490ea466896e08af75199f27bcf32b2c0f6524"
+    },
+    {
+     "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+     "file": "api-v3c-12025073893-008--WorkOut-3f260a65f3b748308e88e353ead9e9dc.json",
+     "sha256": "6f3489616312e1361793f19dd2e3c321ebf5b5f3b1273aa1349f74eea8e7a86f"
+    }
+   ]
+  },
+  {
+   "bizNumber": "12025084223",
+   "uuid": "f051b11d8cb14b5c8f4bbe243bc77935",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12025084529",
+   "uuid": "543f20fd3b2e4052ad1e462dab4e6b2f",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12025085485",
+   "uuid": "f394a1f2624248878bbd16a1f824d0e5",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12025092237",
+   "uuid": "5acc75eccb2d4f549014162f3d72a80e",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12025103469",
+   "uuid": "8c706ecc41264bca9a3882495ac1722c",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12025105858",
+   "uuid": "a27112a0a3b04532a4a091e22a92fd79",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12025115547",
+   "uuid": "2d838495fe804231b7f7340f54dea597",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12025121473",
+   "uuid": "8fea90753f92415b9ff14c0d260dba65",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12025127761",
+   "uuid": "d91a5345107049bc9bd36580bb64af7f",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12026075605",
+   "uuid": "5527f9e0517e4bcfa3aa3bb7fc01321a",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  },
+  {
+   "bizNumber": "12026096668",
+   "uuid": "ee5483774f3540b78a66ead6d30f22ae",
+   "status": "OPEN_FAILED",
+   "note": "ROW_NOT_FOUND"
+  }
+ ],
+ "api_fallback": [
+  {
+   "bizNumber": "12025044500",
+   "uuid": "af88230a5c1f4bb69e0e586844a88029",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025044500.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12025084223",
+   "uuid": "f051b11d8cb14b5c8f4bbe243bc77935",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025084223.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12025084529",
+   "uuid": "543f20fd3b2e4052ad1e462dab4e6b2f",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025084529.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12025085485",
+   "uuid": "f394a1f2624248878bbd16a1f824d0e5",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025085485.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12025092237",
+   "uuid": "5acc75eccb2d4f549014162f3d72a80e",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025092237.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12025103469",
+   "uuid": "8c706ecc41264bca9a3882495ac1722c",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025103469.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12025105858",
+   "uuid": "a27112a0a3b04532a4a091e22a92fd79",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025105858.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12025115547",
+   "uuid": "2d838495fe804231b7f7340f54dea597",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025115547.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12025121473",
+   "uuid": "8fea90753f92415b9ff14c0d260dba65",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025121473.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12025127761",
+   "uuid": "d91a5345107049bc9bd36580bb64af7f",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12025127761.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12026075605",
+   "uuid": "5527f9e0517e4bcfa3aa3bb7fc01321a",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12026075605.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  },
+  {
+   "bizNumber": "12026096668",
+   "uuid": "ee5483774f3540b78a66ead6d30f22ae",
+   "path": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc",
+   "http_status": 200,
+   "file": "api-fallback-12026096668.json",
+   "sha256": "2e638bf5f7e25a626f9a321c1593e58c6cda68170e0758fa6b0ca122637c3786"
+  }
+ ],
+ "detail_endpoint": "/WorkOut/3f260a65f3b748308e88e353ead9e9dc"
+}

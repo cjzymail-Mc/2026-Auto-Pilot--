@@ -1,0 +1,75 @@
+{
+  "purpose": "V3-R00 冻结产物哈希清单（关键门审查后修订版 v2：含 P2 修复——全量测试日志/废弃登记/活页结论/行号勘误/时间戳；ENHANCED_FINAL 审计与 handoff 绑定；team-progress.md/handoff-input.json 为过程态不入列）",
+  "contract": "ctr-08d9de84",
+  "team_run": "20261026-095208-a68a0869",
+  "workflow_run": "d91601924848489f84e317e68582de26",
+  "revision": 2,
+  "generated_at": "2026-10-26T10:45:00+08:00",
+  "artifacts": [
+    {
+      "path": "automation/runs/20261026-100322-v3r00-inventory/R00-report.md",
+      "sha256": "1823b4f432ac1924cbfdd4d96b9152baefbee76971273ebb1da66f504c7ca84a",
+      "bytes": 13976
+    },
+    {
+      "path": "automation/runs/20261026-100322-v3r00-inventory/case-file-manifest.json",
+      "sha256": "a18aa1f038493f956eec3c00b925347fef25f3797c2c7238ce80729aa7f1f672",
+      "bytes": 14026
+    },
+    {
+      "path": "automation/runs/20261026-100322-v3r00-inventory/case-model-deltas.json",
+      "sha256": "69a51b1b0d086ee83db8e79d258e2d6d097b6beddaf34709cea9ed26ea7b1782",
+      "bytes": 6075
+    },
+    {
+      "path": "automation/runs/20261026-100322-v3r00-inventory/excel-structure/inspect_excel_report.json",
+      "sha256": "d6079e78a69b2e7ca6fd2e74a6afc020e47f814a6f346eeb987967424258750b",
+      "bytes": 20563
+    },
+    {
+      "path": "automation/runs/20261026-100322-v3r00-inventory/excel-structure/inspect_excel_report.md",
+      "sha256": "3090664160c7643951c36c394c354041ca5857915f8492ac8df148d3284b2fba",
+      "bytes": 4880
+    },
+    {
+      "path": "automation/runs/20261026-100322-v3r00-inventory/v3r00_case_manifest.py",
+      "sha256": "9ff98a8546ff088948026d1cddd627e5b168cded26105450e6a97c3b3dd44398",
+      "bytes": 1541
+    },
+    {
+      "path": "automation/runs/20261026-100322-v3r00-inventory/full-unittest-discover-20261026.log",
+      "sha256": "0c7e5cefacf19cd24ac0ff57ea792faa38af4a81d2cc186641d5588c15708c6d",
+      "bytes": 8102
+    },
+    {
+      "path": "automation/runs/20261026-100537-login60/attempt_001/stage1_result.json",
+      "sha256": "32677c4f8d27151f627e8f935af6987de852c0a08512a253ca82c6e96e363a71",
+      "bytes": 1270
+    },
+    {
+      "path": "automation/offline-verify/materials-v3r00-20261026-101500/build_result.json",
+      "sha256": "caba6549ccbea74a6b85a45aceaa4c3a7caff3b6fb4d36a13a53b7a1d072cf36",
+      "bytes": 973
+    },
+    {
+      "path": "automation/offline-verify/materials-v3r00-20261026-101500/source_manifest.json",
+      "sha256": "4c913ceb5ae14b34395ab89e8fbff659a1900a58d67d10185a535781e87a2c9a",
+      "bytes": 6080
+    },
+    {
+      "path": "automation/template-materials-program/progress.json",
+      "sha256": "862a4129f24baf53471e55174a44805362bb44a61cd36499a51206ce24eb8d21",
+      "bytes": 29305
+    },
+    {
+      "path": "automation/template-materials-program/notes.md",
+      "sha256": "e8f99744a48b9d220041413765aed5cf7fd206ce7eb67859ba95134d4589a3b7",
+      "bytes": 27689
+    },
+    {
+      "path": "team-task.md",
+      "sha256": "50e7792796731aff3be62d7754adfd1eeb4413d33e230aa0bc0f677a1a329e07",
+      "bytes": 14399
+    }
+  ]
+}

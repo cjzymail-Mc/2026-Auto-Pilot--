@@ -1,0 +1,36 @@
+{
+  "observation": "server_no_residue_after_unsaved_close",
+  "operator_scope": "登录人默认列表（本人单据，零筛选零点击）",
+  "rows_read": 17,
+  "page_text": "1 共 17 条 20",
+  "replay_keyword_hits": [],
+  "draft_status_rows": [
+    {
+      "bizStatus": "编制中",
+      "bizNumber": "15426104612",
+      "appliedName": "徐亮",
+      "appliedAt": "2026-10-23",
+      "appliedDuty": "高级研究员",
+      "appliedDeptName": "运动表现研究部",
+      "corpCode": "厦门乔丹科技有限公司",
+      "budgetYears": "2026",
+      "payType": "转账",
+      "submitType": "差旅费",
+      "totalCost": "633.84",
+      "createdName": "陈晶",
+      "createdAt": "2026-10-23",
+      "bizCompletedName": "",
+      "bizCompletedAt": "",
+      "bizLastAuditName": "",
+      "bizLastAuditAt": "",
+      "description": "【现场演示·不保存·关联已替换】公出油补"
+    }
+  ],
+  "created_today_rows": [],
+  "fill_runs_covered": [
+    "20261024-173807-72170651",
+    "20261024-174803-cd2e04e4"
+  ],
+  "no_residue": false,
+  "note": "无回放关键词命中且无编制中行 → 两次未保存关页在服务端无残留单据"
+}

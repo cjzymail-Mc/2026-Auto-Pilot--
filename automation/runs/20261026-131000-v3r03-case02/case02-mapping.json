@@ -1,0 +1,664 @@
+{
+ "stage": "A 范围裁定（Excel 行 ↔ 唯一通行费票据）",
+ "rule": "主键=票面 travel_date + 行方向；组内两汇总单按站点方向分去/返；每票恰一次行内分配",
+ "rate_per_km": "1.00",
+ "km_rule_source": "V3 §4.1 用户公里规则 1 元/公里（本案例冻结实测口径）；表头电车 0.15 档与孰低原则=冲突记录，不改值（本表全部按 1 元/公里补贴列实测值）",
+ "rows": [
+  {
+   "row": 4,
+   "date": "2025-12-10",
+   "direction": "out",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520251200181224",
+    "summary_number": "3520251200181224",
+    "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-20514402",
+     "invoice_number": "20514402",
+     "amount": "22.64",
+     "rel": "1210/1210厦门-晋江发票.pdf",
+     "sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 5,
+   "date": "2025-12-10",
+   "direction": "return",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520251200189737",
+    "summary_number": "3520251200189737",
+    "station_pair": "闽·福建晋江南站 至 闽·福建翔安站",
+    "declared_total": "19.95"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-19977515",
+     "invoice_number": "19977515",
+     "amount": "4.42",
+     "rel": "1210/1210晋江-厦门1.pdf",
+     "sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168"
+    },
+    {
+     "identity": "toll:035002400112-20519372",
+     "invoice_number": "20519372",
+     "amount": "15.53",
+     "rel": "1210/1210晋江-厦门1 (2).pdf",
+     "sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa"
+    }
+   ],
+   "row_toll_total": "19.95",
+   "note": null
+  },
+  {
+   "row": 6,
+   "date": "2025-12-04",
+   "direction": "out",
+   "km": "76",
+   "subsidy": "76",
+   "trip": {
+    "identity": "summary:3520251200079962",
+    "summary_number": "3520251200079962",
+    "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-18196512",
+     "invoice_number": "18196512",
+     "amount": "22.64",
+     "rel": "1204/1204厦门到晋江发票.pdf",
+     "sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 7,
+   "date": "2025-12-04",
+   "direction": "return",
+   "km": "76",
+   "subsidy": "76",
+   "trip": {
+    "identity": "summary:3520251200082809",
+    "summary_number": "3520251200082809",
+    "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-18197206",
+     "invoice_number": "18197206",
+     "amount": "22.64",
+     "rel": "1204/1204晋江到厦门发票.pdf",
+     "sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 8,
+   "date": "2025-11-24",
+   "direction": "out",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520251100356544",
+    "summary_number": "3520251100356544",
+    "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-20703083",
+     "invoice_number": "20703083",
+     "amount": "22.64",
+     "rel": "1124/1124厦门到晋江发票.pdf",
+     "sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 9,
+   "date": "2025-11-24",
+   "direction": "return",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520251100359670",
+    "summary_number": "3520251100359670",
+    "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-18011706",
+     "invoice_number": "18011706",
+     "amount": "22.64",
+     "rel": "1124/1124晋江到厦门发票.pdf",
+     "sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 10,
+   "date": "2025-11-12",
+   "direction": "out",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520251100189937",
+    "summary_number": "3520251100189937",
+    "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-17950250",
+     "invoice_number": "17950250",
+     "amount": "22.64",
+     "rel": "1112/1112厦门到晋江发票.pdf",
+     "sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 11,
+   "date": "2025-11-12",
+   "direction": "return",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520251100197026",
+    "summary_number": "3520251100197026",
+    "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-17952458",
+     "invoice_number": "17952458",
+     "amount": "22.64",
+     "rel": "1112/1112晋江到厦门发票.pdf",
+     "sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 12,
+   "date": "2025-10-28",
+   "direction": "out",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520251000349301",
+    "summary_number": "3520251000349301",
+    "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-17793922",
+     "invoice_number": "17793922",
+     "amount": "22.64",
+     "rel": "1028/1028厦门到晋江发票.pdf",
+     "sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 13,
+   "date": "2025-10-28",
+   "direction": "return",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520251000353752",
+    "summary_number": "3520251000353752",
+    "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-17794993",
+     "invoice_number": "17794993",
+     "amount": "22.64",
+     "rel": "1028/1028晋江到厦门发票.pdf",
+     "sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 14,
+   "date": "2025-09-28",
+   "direction": "out",
+   "km": "65",
+   "subsidy": "65",
+   "trip": {
+    "identity": "summary:3520250900432758",
+    "summary_number": "3520250900432758",
+    "station_pair": "闽·福建翔安站 至 闽·福建石狮北石湖站",
+    "declared_total": "31.93"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-16858364",
+     "invoice_number": "16858364",
+     "amount": "16.24",
+     "rel": "0928/0928厦门到晋江发票1.pdf",
+     "sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27"
+    },
+    {
+     "identity": "toll:035002400112-16422064",
+     "invoice_number": "16422064",
+     "amount": "15.69",
+     "rel": "0928/0928厦门到晋江发票2.pdf",
+     "sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753"
+    }
+   ],
+   "row_toll_total": "31.93",
+   "note": null
+  },
+  {
+   "row": 15,
+   "date": "2025-09-28",
+   "direction": "return",
+   "km": "67",
+   "subsidy": "67",
+   "trip": {
+    "identity": "summary:3520250900432800",
+    "summary_number": "3520250900432800",
+    "station_pair": "闽·福建石狮北石湖站 至 闽·福建翔安站",
+    "declared_total": "31.93"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-16548299",
+     "invoice_number": "16548299",
+     "amount": "16.24",
+     "rel": "0928/0928晋江到厦门发票1.pdf",
+     "sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5"
+    },
+    {
+     "identity": "toll:035002400112-17727508",
+     "invoice_number": "17727508",
+     "amount": "15.69",
+     "rel": "0928/0928晋江到厦门发票2.pdf",
+     "sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae"
+    }
+   ],
+   "row_toll_total": "31.93",
+   "note": null
+  },
+  {
+   "row": 16,
+   "date": "2025-09-17",
+   "direction": "out",
+   "km": "65",
+   "subsidy": "65",
+   "trip": {
+    "identity": "summary:3520250900282520",
+    "summary_number": "3520250900282520",
+    "station_pair": "闽·福建翔安站 至 闽·福建石狮北石湖站",
+    "declared_total": "31.93"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-16657870",
+     "invoice_number": "16657870",
+     "amount": "16.24",
+     "rel": "0917/0917厦门到晋江发票2.pdf",
+     "sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937"
+    },
+    {
+     "identity": "toll:035002400112-16227300",
+     "invoice_number": "16227300",
+     "amount": "15.69",
+     "rel": "0917/0917厦门到晋江发票1.pdf",
+     "sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55"
+    }
+   ],
+   "row_toll_total": "31.93",
+   "note": null
+  },
+  {
+   "row": 17,
+   "date": "2025-09-17",
+   "direction": "return",
+   "km": "67",
+   "subsidy": "67",
+   "trip": {
+    "identity": "summary:3520250900282612",
+    "summary_number": "3520250900282612",
+    "station_pair": "闽·福建石狮北石湖站 至 闽·福建同安站",
+    "declared_total": "36.97"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-16657942",
+     "invoice_number": "16657942",
+     "amount": "16.24",
+     "rel": "0917/0917晋江到厦门发票1.pdf",
+     "sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3"
+    },
+    {
+     "identity": "toll:035002400112-16227311",
+     "invoice_number": "16227311",
+     "amount": "20.73",
+     "rel": "0917/0917晋江到厦门发票2.pdf",
+     "sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3"
+    }
+   ],
+   "row_toll_total": "36.97",
+   "note": "票面终点 同安站 vs 行目的地 厦门总部（站点↔地址两套词汇，按日期+方向映射，差异登记）"
+  },
+  {
+   "row": 18,
+   "date": "2025-09-05",
+   "direction": "out",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520250900105488",
+    "summary_number": "3520250900105488",
+    "station_pair": "闽·福建翔安站 至 闽·福建晋江南站",
+    "declared_total": "19.95"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-15913017",
+     "invoice_number": "15913017",
+     "amount": "4.41",
+     "rel": "0906/0905厦门到晋江发票1.pdf",
+     "sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a"
+    },
+    {
+     "identity": "toll:035002400112-16108478",
+     "invoice_number": "16108478",
+     "amount": "15.54",
+     "rel": "0906/0905厦门到晋江发票2.pdf",
+     "sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb"
+    }
+   ],
+   "row_toll_total": "19.95",
+   "note": null
+  },
+  {
+   "row": 19,
+   "date": "2025-09-05",
+   "direction": "return",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520250900105478",
+    "summary_number": "3520250900105478",
+    "station_pair": "闽·福建晋江南站 至 闽·福建翔安站",
+    "declared_total": "19.95"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-15913011",
+     "invoice_number": "15913011",
+     "amount": "4.42",
+     "rel": "0906/0905晋江到厦门发票1.pdf",
+     "sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e"
+    },
+    {
+     "identity": "toll:035002400112-16366191",
+     "invoice_number": "16366191",
+     "amount": "15.53",
+     "rel": "0906/0905晋江到厦门发票2.pdf",
+     "sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1"
+    }
+   ],
+   "row_toll_total": "19.95",
+   "note": null
+  },
+  {
+   "row": 20,
+   "date": "2025-09-04",
+   "direction": "out",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520250900092215",
+    "summary_number": "3520250900092215",
+    "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-16104706",
+     "invoice_number": "16104706",
+     "amount": "22.64",
+     "rel": "0904/0904厦门到晋江发票.pdf",
+     "sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 21,
+   "date": "2025-09-04",
+   "direction": "return",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520250900092251",
+    "summary_number": "3520250900092251",
+    "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-16104709",
+     "invoice_number": "16104709",
+     "amount": "22.64",
+     "rel": "0904/0904晋江到厦门发票.pdf",
+     "sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 22,
+   "date": "2025-08-25",
+   "direction": "out",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520250800404681",
+    "summary_number": "3520250800404681",
+    "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-16304714",
+     "invoice_number": "16304714",
+     "amount": "22.64",
+     "rel": "0825/0825厦门到晋江发票.pdf",
+     "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  },
+  {
+   "row": 23,
+   "date": "2025-08-25",
+   "direction": "return",
+   "km": "73",
+   "subsidy": "73",
+   "trip": {
+    "identity": "summary:3520250800404618",
+    "summary_number": "3520250800404618",
+    "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+    "declared_total": "22.64"
+   },
+   "invoices": [
+    {
+     "identity": "toll:035002400112-16166322",
+     "invoice_number": "16166322",
+     "amount": "22.64",
+     "rel": "0825/0825晋江到厦门发票.pdf",
+     "sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124"
+    }
+   ],
+   "row_toll_total": "22.64",
+   "note": null
+  }
+ ],
+ "invoice_allocation_index": {
+  "toll:035002400112-20514402": {
+   "row": 4,
+   "summary": "summary:3520251200181224"
+  },
+  "toll:035002400112-19977515": {
+   "row": 5,
+   "summary": "summary:3520251200189737"
+  },
+  "toll:035002400112-20519372": {
+   "row": 5,
+   "summary": "summary:3520251200189737"
+  },
+  "toll:035002400112-18196512": {
+   "row": 6,
+   "summary": "summary:3520251200079962"
+  },
+  "toll:035002400112-18197206": {
+   "row": 7,
+   "summary": "summary:3520251200082809"
+  },
+  "toll:035002400112-20703083": {
+   "row": 8,
+   "summary": "summary:3520251100356544"
+  },
+  "toll:035002400112-18011706": {
+   "row": 9,
+   "summary": "summary:3520251100359670"
+  },
+  "toll:035002400112-17950250": {
+   "row": 10,
+   "summary": "summary:3520251100189937"
+  },
+  "toll:035002400112-17952458": {
+   "row": 11,
+   "summary": "summary:3520251100197026"
+  },
+  "toll:035002400112-17793922": {
+   "row": 12,
+   "summary": "summary:3520251000349301"
+  },
+  "toll:035002400112-17794993": {
+   "row": 13,
+   "summary": "summary:3520251000353752"
+  },
+  "toll:035002400112-16858364": {
+   "row": 14,
+   "summary": "summary:3520250900432758"
+  },
+  "toll:035002400112-16422064": {
+   "row": 14,
+   "summary": "summary:3520250900432758"
+  },
+  "toll:035002400112-16548299": {
+   "row": 15,
+   "summary": "summary:3520250900432800"
+  },
+  "toll:035002400112-17727508": {
+   "row": 15,
+   "summary": "summary:3520250900432800"
+  },
+  "toll:035002400112-16657870": {
+   "row": 16,
+   "summary": "summary:3520250900282520"
+  },
+  "toll:035002400112-16227300": {
+   "row": 16,
+   "summary": "summary:3520250900282520"
+  },
+  "toll:035002400112-16657942": {
+   "row": 17,
+   "summary": "summary:3520250900282612"
+  },
+  "toll:035002400112-16227311": {
+   "row": 17,
+   "summary": "summary:3520250900282612"
+  },
+  "toll:035002400112-15913017": {
+   "row": 18,
+   "summary": "summary:3520250900105488"
+  },
+  "toll:035002400112-16108478": {
+   "row": 18,
+   "summary": "summary:3520250900105488"
+  },
+  "toll:035002400112-15913011": {
+   "row": 19,
+   "summary": "summary:3520250900105478"
+  },
+  "toll:035002400112-16366191": {
+   "row": 19,
+   "summary": "summary:3520250900105478"
+  },
+  "toll:035002400112-16104706": {
+   "row": 20,
+   "summary": "summary:3520250900092215"
+  },
+  "toll:035002400112-16104709": {
+   "row": 21,
+   "summary": "summary:3520250900092251"
+  },
+  "toll:035002400112-16304714": {
+   "row": 22,
+   "summary": "summary:3520250800404681"
+  },
+  "toll:035002400112-16166322": {
+   "row": 23,
+   "summary": "summary:3520250800404618"
+  }
+ },
+ "gaps": [],
+ "closure": {
+  "toll_identities_total": 27,
+  "allocated": 27,
+  "unallocated": [],
+  "rows_mapped": 20,
+  "rows_total": 20,
+  "row_totals_equal_summary_declared": true
+ },
+ "observed": {
+  "K_km": "1438",
+  "M_subsidy_expected": "1438.00",
+  "T_toll": "486.93",
+  "R_reimburse_expected": "1924.93"
+ },
+ "pre_hash_files": 73,
+ "pre_hash_drift": []
+}

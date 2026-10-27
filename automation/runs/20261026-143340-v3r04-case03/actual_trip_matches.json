@@ -1,0 +1,1377 @@
+{
+ "schema": "case03-actual-trip-matches/1.0",
+ "generated_at": "2026-10-26T15:23:21+08:00",
+ "run": "20261026-143340-v3r04-case03",
+ "scope_note": "本轮 fill_only 只读查证：未在 OA 关联表选择任何单据（零写入、零占位）；本表仅为 27 张通行费 ↔ 真实公出单 的逐票对照，与任何占位关联语义严格分离。attempt_010 的 api-fallback-*.json 因 uuid 替换缺陷全部无效，以 attempt_011/012 双通道证据为准。",
+ "operator": {
+  "name": "陈晶",
+  "user_id": "116070053",
+  "identity_source": "bpm_login.py 只读探查（本轮 P1）"
+ },
+ "query_evidence": {
+  "module": "公出单 https://bpm.qiaodan.com/oa/workouts",
+  "wide_window": "申请日期+制单日期 2025-01-01..2026-12-31，制单人=全组织（CreatedPath='/' 每页核实）",
+  "org_wide_docs": 96,
+  "own_applicant_docs": 13,
+  "own_detail_rows": 21,
+  "gap_day_candidates_checked": 8
+ },
+ "summary": {
+  "total_invoices": 27,
+  "matched": 12,
+  "no_match": 15,
+  "matched_sum": "221.02",
+  "no_match_sum": "265.91",
+  "matched_days": [
+   "2025-08-25",
+   "2025-09-05",
+   "2025-10-28",
+   "2025-11-12",
+   "2025-12-04"
+  ],
+  "no_match_days": [
+   "2025-09-04",
+   "2025-09-17",
+   "2025-09-28",
+   "2025-11-24",
+   "2025-12-10"
+  ],
+  "per_doc_ticket_counts": {
+   "12025085485": {
+    "tickets": 2,
+    "sum": "45.28",
+    "excel_rows": [
+     22,
+     23
+    ],
+    "reimed": 0
+   },
+   "12025092237": {
+    "tickets": 4,
+    "sum": "39.90",
+    "excel_rows": [
+     18,
+     18,
+     19,
+     19
+    ],
+    "reimed": 0
+   },
+   "12025105858": {
+    "tickets": 2,
+    "sum": "45.28",
+    "excel_rows": [
+     12,
+     13
+    ],
+    "reimed": 2
+   },
+   "12025115547": {
+    "tickets": 2,
+    "sum": "45.28",
+    "excel_rows": [
+     10,
+     11
+    ],
+    "reimed": 0
+   },
+   "12025121473": {
+    "tickets": 2,
+    "sum": "45.28",
+    "excel_rows": [
+     6,
+     7
+    ],
+    "reimed": 0
+   }
+  }
+ },
+ "completeness_checks": {
+  "invoice_set_27_identity": {
+   "upstream": 27,
+   "mapping": 27,
+   "this_report": 27,
+   "equal": true
+  },
+  "total_amount": {
+   "expected": "486.93",
+   "recomputed": "486.93",
+   "equal": true
+  },
+  "excel_rows": {
+   "mapping_rows": 20,
+   "distinct_rows_used": 20,
+   "equal": true
+  },
+  "per_day_counts": {
+   "2025-08-25": 2,
+   "2025-09-04": 2,
+   "2025-09-05": 4,
+   "2025-09-17": 4,
+   "2025-09-28": 4,
+   "2025-10-28": 2,
+   "2025-11-12": 2,
+   "2025-11-24": 2,
+   "2025-12-04": 2,
+   "2025-12-10": 3
+  },
+  "per_day_sums": {
+   "2025-08-25": "45.28",
+   "2025-09-04": "45.28",
+   "2025-09-05": "39.90",
+   "2025-09-17": "68.90",
+   "2025-09-28": "63.86",
+   "2025-10-28": "45.28",
+   "2025-11-12": "45.28",
+   "2025-11-24": "45.28",
+   "2025-12-04": "45.28",
+   "2025-12-10": "42.59"
+  },
+  "allocation_exactly_once": true
+ },
+ "invoices": [
+  {
+   "identity": "toll:035002400112-16304714",
+   "invoice_number": "16304714",
+   "amount": "22.64",
+   "rel": "0825/0825厦门到晋江发票.pdf",
+   "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+   "excel_row": 22,
+   "travel_date": "2025-08-25",
+   "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+   "summary_number": "3520250800404681",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025085485",
+    "uuid": "f394a1f2624248878bbd16a1f824d0e5",
+    "appliedAt": "2025-08-26",
+    "place": "晋江",
+    "bizReason": "Plaid量产会议",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-08-25",
+     "factEnd": "2025-08-25"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025085485.json",
+     "api_sha256": "f310017aad348aa0117c427a90bed753b3d10b90ae43028fbc0fe3560591cd92",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025085485.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025085485-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025085485 明细行（陈晶，2025-08-25~2025-08-25，地点晋江）与通行日 2025-08-25 同日覆盖；站点走向（闽·福建翔安站 至 闽·福建池店站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-16166322",
+   "invoice_number": "16166322",
+   "amount": "22.64",
+   "rel": "0825/0825晋江到厦门发票.pdf",
+   "sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124",
+   "excel_row": 23,
+   "travel_date": "2025-08-25",
+   "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+   "summary_number": "3520250800404618",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025085485",
+    "uuid": "f394a1f2624248878bbd16a1f824d0e5",
+    "appliedAt": "2025-08-26",
+    "place": "晋江",
+    "bizReason": "Plaid量产会议",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-08-25",
+     "factEnd": "2025-08-25"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025085485.json",
+     "api_sha256": "f310017aad348aa0117c427a90bed753b3d10b90ae43028fbc0fe3560591cd92",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025085485.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025085485-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025085485 明细行（陈晶，2025-08-25~2025-08-25，地点晋江）与通行日 2025-08-25 同日覆盖；站点走向（闽·福建池店站 至 闽·福建翔安站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-16104706",
+   "invoice_number": "16104706",
+   "amount": "22.64",
+   "rel": "0904/0904厦门到晋江发票.pdf",
+   "sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df",
+   "excel_row": 20,
+   "travel_date": "2025-09-04",
+   "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+   "summary_number": "3520250900092215",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025091498",
+      "uuid": "673e1743f72b4e4b8a6def58ca3e5955",
+      "applicant": "阮果清",
+      "place": "晋江工厂公出",
+      "bizReason": "晋江工厂公出",
+      "reimed": 0,
+      "covers_day": false,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "阮果清",
+        "factStart": "2025-09-05T13:30",
+        "factEnd": "2025-09-05T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025091498.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     },
+     {
+      "bizNumber": "12025092018",
+      "uuid": "94f8f9da76dc4046940a6294864c6739",
+      "applicant": "徐亮",
+      "place": "晋江",
+      "bizReason": "会议",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-04T08:30",
+        "factEnd": "2025-09-04T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-05T08:30",
+        "factEnd": "2025-09-05T13:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025092018.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-04 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-16104709",
+   "invoice_number": "16104709",
+   "amount": "22.64",
+   "rel": "0904/0904晋江到厦门发票.pdf",
+   "sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b",
+   "excel_row": 21,
+   "travel_date": "2025-09-04",
+   "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+   "summary_number": "3520250900092251",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025091498",
+      "uuid": "673e1743f72b4e4b8a6def58ca3e5955",
+      "applicant": "阮果清",
+      "place": "晋江工厂公出",
+      "bizReason": "晋江工厂公出",
+      "reimed": 0,
+      "covers_day": false,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "阮果清",
+        "factStart": "2025-09-05T13:30",
+        "factEnd": "2025-09-05T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025091498.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     },
+     {
+      "bizNumber": "12025092018",
+      "uuid": "94f8f9da76dc4046940a6294864c6739",
+      "applicant": "徐亮",
+      "place": "晋江",
+      "bizReason": "会议",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-04T08:30",
+        "factEnd": "2025-09-04T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-05T08:30",
+        "factEnd": "2025-09-05T13:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025092018.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-04 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-15913017",
+   "invoice_number": "15913017",
+   "amount": "4.41",
+   "rel": "0906/0905厦门到晋江发票1.pdf",
+   "sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+   "excel_row": 18,
+   "travel_date": "2025-09-05",
+   "station_pair": "闽·福建翔安站 至 闽·福建晋江南站",
+   "summary_number": "3520250900105488",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025092237",
+    "uuid": "5acc75eccb2d4f549014162f3d72a80e",
+    "appliedAt": "2025-09-09",
+    "place": "晋江",
+    "bizReason": "前往晋江工厂项目沟通",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-09-05",
+     "factEnd": "2025-09-05"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025092237.json",
+     "api_sha256": "795493a1b65fbcdbc020248628dd8d6d03aa3b40afbe627dcc33328ddf727a46",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025092237.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025092237-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025092237 明细行（陈晶，2025-09-05~2025-09-05，地点晋江）与通行日 2025-09-05 同日覆盖；站点走向（闽·福建翔安站 至 闽·福建晋江南站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-16108478",
+   "invoice_number": "16108478",
+   "amount": "15.54",
+   "rel": "0906/0905厦门到晋江发票2.pdf",
+   "sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb",
+   "excel_row": 18,
+   "travel_date": "2025-09-05",
+   "station_pair": "闽·福建翔安站 至 闽·福建晋江南站",
+   "summary_number": "3520250900105488",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025092237",
+    "uuid": "5acc75eccb2d4f549014162f3d72a80e",
+    "appliedAt": "2025-09-09",
+    "place": "晋江",
+    "bizReason": "前往晋江工厂项目沟通",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-09-05",
+     "factEnd": "2025-09-05"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025092237.json",
+     "api_sha256": "795493a1b65fbcdbc020248628dd8d6d03aa3b40afbe627dcc33328ddf727a46",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025092237.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025092237-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025092237 明细行（陈晶，2025-09-05~2025-09-05，地点晋江）与通行日 2025-09-05 同日覆盖；站点走向（闽·福建翔安站 至 闽·福建晋江南站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-15913011",
+   "invoice_number": "15913011",
+   "amount": "4.42",
+   "rel": "0906/0905晋江到厦门发票1.pdf",
+   "sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e",
+   "excel_row": 19,
+   "travel_date": "2025-09-05",
+   "station_pair": "闽·福建晋江南站 至 闽·福建翔安站",
+   "summary_number": "3520250900105478",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025092237",
+    "uuid": "5acc75eccb2d4f549014162f3d72a80e",
+    "appliedAt": "2025-09-09",
+    "place": "晋江",
+    "bizReason": "前往晋江工厂项目沟通",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-09-05",
+     "factEnd": "2025-09-05"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025092237.json",
+     "api_sha256": "795493a1b65fbcdbc020248628dd8d6d03aa3b40afbe627dcc33328ddf727a46",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025092237.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025092237-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025092237 明细行（陈晶，2025-09-05~2025-09-05，地点晋江）与通行日 2025-09-05 同日覆盖；站点走向（闽·福建晋江南站 至 闽·福建翔安站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-16366191",
+   "invoice_number": "16366191",
+   "amount": "15.53",
+   "rel": "0906/0905晋江到厦门发票2.pdf",
+   "sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1",
+   "excel_row": 19,
+   "travel_date": "2025-09-05",
+   "station_pair": "闽·福建晋江南站 至 闽·福建翔安站",
+   "summary_number": "3520250900105478",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025092237",
+    "uuid": "5acc75eccb2d4f549014162f3d72a80e",
+    "appliedAt": "2025-09-09",
+    "place": "晋江",
+    "bizReason": "前往晋江工厂项目沟通",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-09-05",
+     "factEnd": "2025-09-05"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025092237.json",
+     "api_sha256": "795493a1b65fbcdbc020248628dd8d6d03aa3b40afbe627dcc33328ddf727a46",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025092237.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025092237-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025092237 明细行（陈晶，2025-09-05~2025-09-05，地点晋江）与通行日 2025-09-05 同日覆盖；站点走向（闽·福建晋江南站 至 闽·福建翔安站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-16657870",
+   "invoice_number": "16657870",
+   "amount": "16.24",
+   "rel": "0917/0917厦门到晋江发票2.pdf",
+   "sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937",
+   "excel_row": 16,
+   "travel_date": "2025-09-17",
+   "station_pair": "闽·福建翔安站 至 闽·福建石狮北石湖站",
+   "summary_number": "3520250900282520",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025094906",
+      "uuid": "d9186d5d1f8147209db9902e262be113",
+      "applicant": "张宇昂",
+      "place": "泉州石狮",
+      "bizReason": "厂家走访",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-17T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-17T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025094906.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     },
+     {
+      "bizNumber": "12025095297",
+      "uuid": "6e46825db34d41768aa57284d1b3f190",
+      "applicant": "张宇昂",
+      "place": "晋江",
+      "bizReason": "pb6.0量产跟进",
+      "reimed": 0,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-18T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025095297.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-17 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-16227300",
+   "invoice_number": "16227300",
+   "amount": "15.69",
+   "rel": "0917/0917厦门到晋江发票1.pdf",
+   "sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55",
+   "excel_row": 16,
+   "travel_date": "2025-09-17",
+   "station_pair": "闽·福建翔安站 至 闽·福建石狮北石湖站",
+   "summary_number": "3520250900282520",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025094906",
+      "uuid": "d9186d5d1f8147209db9902e262be113",
+      "applicant": "张宇昂",
+      "place": "泉州石狮",
+      "bizReason": "厂家走访",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-17T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-17T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025094906.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     },
+     {
+      "bizNumber": "12025095297",
+      "uuid": "6e46825db34d41768aa57284d1b3f190",
+      "applicant": "张宇昂",
+      "place": "晋江",
+      "bizReason": "pb6.0量产跟进",
+      "reimed": 0,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-18T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025095297.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-17 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-16657942",
+   "invoice_number": "16657942",
+   "amount": "16.24",
+   "rel": "0917/0917晋江到厦门发票1.pdf",
+   "sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3",
+   "excel_row": 17,
+   "travel_date": "2025-09-17",
+   "station_pair": "闽·福建石狮北石湖站 至 闽·福建同安站",
+   "summary_number": "3520250900282612",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025094906",
+      "uuid": "d9186d5d1f8147209db9902e262be113",
+      "applicant": "张宇昂",
+      "place": "泉州石狮",
+      "bizReason": "厂家走访",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-17T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-17T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025094906.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     },
+     {
+      "bizNumber": "12025095297",
+      "uuid": "6e46825db34d41768aa57284d1b3f190",
+      "applicant": "张宇昂",
+      "place": "晋江",
+      "bizReason": "pb6.0量产跟进",
+      "reimed": 0,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-18T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025095297.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-17 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-16227311",
+   "invoice_number": "16227311",
+   "amount": "20.73",
+   "rel": "0917/0917晋江到厦门发票2.pdf",
+   "sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3",
+   "excel_row": 17,
+   "travel_date": "2025-09-17",
+   "station_pair": "闽·福建石狮北石湖站 至 闽·福建同安站",
+   "summary_number": "3520250900282612",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025094906",
+      "uuid": "d9186d5d1f8147209db9902e262be113",
+      "applicant": "张宇昂",
+      "place": "泉州石狮",
+      "bizReason": "厂家走访",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-17T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-17T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025094906.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     },
+     {
+      "bizNumber": "12025095297",
+      "uuid": "6e46825db34d41768aa57284d1b3f190",
+      "applicant": "张宇昂",
+      "place": "晋江",
+      "bizReason": "pb6.0量产跟进",
+      "reimed": 0,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-17T08:30",
+        "factEnd": "2025-09-18T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025095297.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-17 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-16858364",
+   "invoice_number": "16858364",
+   "amount": "16.24",
+   "rel": "0928/0928厦门到晋江发票1.pdf",
+   "sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27",
+   "excel_row": 14,
+   "travel_date": "2025-09-28",
+   "station_pair": "闽·福建翔安站 至 闽·福建石狮北石湖站",
+   "summary_number": "3520250900432758",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025098708",
+      "uuid": "fbf995fe72db4b14a46a00735852bd36",
+      "applicant": "张宇昂",
+      "place": "泉州",
+      "bizReason": "供应商走访（通达）",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-28T08:30",
+        "factEnd": "2025-09-28T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-28T08:30",
+        "factEnd": "2025-09-28T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025098708.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-28 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-16422064",
+   "invoice_number": "16422064",
+   "amount": "15.69",
+   "rel": "0928/0928厦门到晋江发票2.pdf",
+   "sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753",
+   "excel_row": 14,
+   "travel_date": "2025-09-28",
+   "station_pair": "闽·福建翔安站 至 闽·福建石狮北石湖站",
+   "summary_number": "3520250900432758",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025098708",
+      "uuid": "fbf995fe72db4b14a46a00735852bd36",
+      "applicant": "张宇昂",
+      "place": "泉州",
+      "bizReason": "供应商走访（通达）",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-28T08:30",
+        "factEnd": "2025-09-28T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-28T08:30",
+        "factEnd": "2025-09-28T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025098708.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-28 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-16548299",
+   "invoice_number": "16548299",
+   "amount": "16.24",
+   "rel": "0928/0928晋江到厦门发票1.pdf",
+   "sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5",
+   "excel_row": 15,
+   "travel_date": "2025-09-28",
+   "station_pair": "闽·福建石狮北石湖站 至 闽·福建翔安站",
+   "summary_number": "3520250900432800",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025098708",
+      "uuid": "fbf995fe72db4b14a46a00735852bd36",
+      "applicant": "张宇昂",
+      "place": "泉州",
+      "bizReason": "供应商走访（通达）",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-28T08:30",
+        "factEnd": "2025-09-28T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-28T08:30",
+        "factEnd": "2025-09-28T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025098708.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-28 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-17727508",
+   "invoice_number": "17727508",
+   "amount": "15.69",
+   "rel": "0928/0928晋江到厦门发票2.pdf",
+   "sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae",
+   "excel_row": 15,
+   "travel_date": "2025-09-28",
+   "station_pair": "闽·福建石狮北石湖站 至 闽·福建翔安站",
+   "summary_number": "3520250900432800",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025098708",
+      "uuid": "fbf995fe72db4b14a46a00735852bd36",
+      "applicant": "张宇昂",
+      "place": "泉州",
+      "bizReason": "供应商走访（通达）",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "张宇昂",
+        "factStart": "2025-09-28T08:30",
+        "factEnd": "2025-09-28T18:00"
+       },
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-09-28T08:30",
+        "factEnd": "2025-09-28T18:00"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025098708.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-09-28 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-17793922",
+   "invoice_number": "17793922",
+   "amount": "22.64",
+   "rel": "1028/1028厦门到晋江发票.pdf",
+   "sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+   "excel_row": 12,
+   "travel_date": "2025-10-28",
+   "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+   "summary_number": "3520251000349301",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025105858",
+    "uuid": "a27112a0a3b04532a4a091e22a92fd79",
+    "appliedAt": "2025-10-29",
+    "place": "晋江",
+    "bizReason": "Plaid 试产会议",
+    "bizStatus": 4,
+    "reimed": 2,
+    "chen_trip": {
+     "factStart": "2025-10-28",
+     "factEnd": "2025-10-28"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025105858.json",
+     "api_sha256": "35274ffe8835ac69f600b3537987bb26c8975e74701360452354812ae64500a2",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025105858.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025105858-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025105858 明细行（陈晶，2025-10-28~2025-10-28，地点晋江）与通行日 2025-10-28 同日覆盖；站点走向（闽·福建翔安站 至 闽·福建池店站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-17794993",
+   "invoice_number": "17794993",
+   "amount": "22.64",
+   "rel": "1028/1028晋江到厦门发票.pdf",
+   "sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc",
+   "excel_row": 13,
+   "travel_date": "2025-10-28",
+   "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+   "summary_number": "3520251000353752",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025105858",
+    "uuid": "a27112a0a3b04532a4a091e22a92fd79",
+    "appliedAt": "2025-10-29",
+    "place": "晋江",
+    "bizReason": "Plaid 试产会议",
+    "bizStatus": 4,
+    "reimed": 2,
+    "chen_trip": {
+     "factStart": "2025-10-28",
+     "factEnd": "2025-10-28"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025105858.json",
+     "api_sha256": "35274ffe8835ac69f600b3537987bb26c8975e74701360452354812ae64500a2",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025105858.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025105858-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025105858 明细行（陈晶，2025-10-28~2025-10-28，地点晋江）与通行日 2025-10-28 同日覆盖；站点走向（闽·福建池店站 至 闽·福建翔安站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-17950250",
+   "invoice_number": "17950250",
+   "amount": "22.64",
+   "rel": "1112/1112厦门到晋江发票.pdf",
+   "sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a",
+   "excel_row": 10,
+   "travel_date": "2025-11-12",
+   "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+   "summary_number": "3520251100189937",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025115547",
+    "uuid": "2d838495fe804231b7f7340f54dea597",
+    "appliedAt": "2025-11-25",
+    "place": "晋江",
+    "bizReason": "Plaid量产试做",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-11-12",
+     "factEnd": "2025-11-12"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025115547.json",
+     "api_sha256": "32ebeceedd7050eaabbb5537dc3f08a54124cfa28d1788178db182e53a8e270e",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025115547.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025115547-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025115547 明细行（陈晶，2025-11-12~2025-11-12，地点晋江）与通行日 2025-11-12 同日覆盖；站点走向（闽·福建翔安站 至 闽·福建池店站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-17952458",
+   "invoice_number": "17952458",
+   "amount": "22.64",
+   "rel": "1112/1112晋江到厦门发票.pdf",
+   "sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31",
+   "excel_row": 11,
+   "travel_date": "2025-11-12",
+   "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+   "summary_number": "3520251100197026",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025115547",
+    "uuid": "2d838495fe804231b7f7340f54dea597",
+    "appliedAt": "2025-11-25",
+    "place": "晋江",
+    "bizReason": "Plaid量产试做",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-11-12",
+     "factEnd": "2025-11-12"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025115547.json",
+     "api_sha256": "32ebeceedd7050eaabbb5537dc3f08a54124cfa28d1788178db182e53a8e270e",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025115547.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025115547-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025115547 明细行（陈晶，2025-11-12~2025-11-12，地点晋江）与通行日 2025-11-12 同日覆盖；站点走向（闽·福建池店站 至 闽·福建翔安站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-20703083",
+   "invoice_number": "20703083",
+   "amount": "22.64",
+   "rel": "1124/1124厦门到晋江发票.pdf",
+   "sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c",
+   "excel_row": 8,
+   "travel_date": "2025-11-24",
+   "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+   "summary_number": "3520251100356544",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025115994",
+      "uuid": "9de4366410e14b26be9790b2b5c8b88b",
+      "applicant": "徐亮",
+      "place": "晋江",
+      "bizReason": "plaid3量产试做",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-11-24T08:30",
+        "factEnd": "2025-11-24T17:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025115994.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-11-24 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-18011706",
+   "invoice_number": "18011706",
+   "amount": "22.64",
+   "rel": "1124/1124晋江到厦门发票.pdf",
+   "sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507",
+   "excel_row": 9,
+   "travel_date": "2025-11-24",
+   "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+   "summary_number": "3520251100359670",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025115994",
+      "uuid": "9de4366410e14b26be9790b2b5c8b88b",
+      "applicant": "徐亮",
+      "place": "晋江",
+      "bizReason": "plaid3量产试做",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-11-24T08:30",
+        "factEnd": "2025-11-24T17:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025115994.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-11-24 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-18196512",
+   "invoice_number": "18196512",
+   "amount": "22.64",
+   "rel": "1204/1204厦门到晋江发票.pdf",
+   "sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2",
+   "excel_row": 6,
+   "travel_date": "2025-12-04",
+   "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+   "summary_number": "3520251200079962",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025121473",
+    "uuid": "8fea90753f92415b9ff14c0d260dba65",
+    "appliedAt": "2025-12-05",
+    "place": "晋江",
+    "bizReason": "陪同供应商参观晋江二厂",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-12-04",
+     "factEnd": "2025-12-04"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025121473.json",
+     "api_sha256": "e4327b88b05cc2f31c312ed099fa1ac7fb19dd56ddf2223af52968fa2392cbfa",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025121473.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025121473-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025121473 明细行（陈晶，2025-12-04~2025-12-04，地点晋江）与通行日 2025-12-04 同日覆盖；站点走向（闽·福建翔安站 至 闽·福建池店站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-18197206",
+   "invoice_number": "18197206",
+   "amount": "22.64",
+   "rel": "1204/1204晋江到厦门发票.pdf",
+   "sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574",
+   "excel_row": 7,
+   "travel_date": "2025-12-04",
+   "station_pair": "闽·福建池店站 至 闽·福建翔安站",
+   "summary_number": "3520251200082809",
+   "plate": "闽D263GG",
+   "result": "MATCHED",
+   "matched_doc": {
+    "bizNumber": "12025121473",
+    "uuid": "8fea90753f92415b9ff14c0d260dba65",
+    "appliedAt": "2025-12-05",
+    "place": "晋江",
+    "bizReason": "陪同供应商参观晋江二厂",
+    "bizStatus": 4,
+    "reimed": 0,
+    "chen_trip": {
+     "factStart": "2025-12-04",
+     "factEnd": "2025-12-04"
+    },
+    "evidence": {
+     "api_file": "attempt_011/evidence/api-detail-12025121473.json",
+     "api_sha256": "e4327b88b05cc2f31c312ed099fa1ac7fb19dd56ddf2223af52968fa2392cbfa",
+     "ui_screenshot": "attempt_011/evidence/detail3d-12025121473.png",
+     "ui_text": "attempt_011/evidence/detail3d-12025121473-text.txt"
+    },
+    "applicant": "陈晶",
+    "applicant_user_id": "116070053"
+   },
+   "match_basis": "公出单 12025121473 明细行（陈晶，2025-12-04~2025-12-04，地点晋江）与通行日 2025-12-04 同日覆盖；站点走向（闽·福建池店站 至 闽·福建翔安站）与 厦门↔晋江 往返一致"
+  },
+  {
+   "identity": "toll:035002400112-20514402",
+   "invoice_number": "20514402",
+   "amount": "22.64",
+   "rel": "1210/1210厦门-晋江发票.pdf",
+   "sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188",
+   "excel_row": 4,
+   "travel_date": "2025-12-10",
+   "station_pair": "闽·福建翔安站 至 闽·福建池店站",
+   "summary_number": "3520251200181224",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025122974",
+      "uuid": "522cecce78ea4f2dbbee656c7cf99772",
+      "applicant": "阮果清",
+      "place": "晋江工厂",
+      "bizReason": "晋江工厂公出",
+      "reimed": 0,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "阮果清",
+        "factStart": "2025-12-10T13:00",
+        "factEnd": "2025-12-10T17:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025122974.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     },
+     {
+      "bizNumber": "12025123375",
+      "uuid": "429045c57c744a16913a93304f658f41",
+      "applicant": "徐亮",
+      "place": "晋江",
+      "bizReason": "项目跟进",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-12-10T08:30",
+        "factEnd": "2025-12-10T17:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025123375.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-12-10 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-19977515",
+   "invoice_number": "19977515",
+   "amount": "4.42",
+   "rel": "1210/1210晋江-厦门1.pdf",
+   "sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+   "excel_row": 5,
+   "travel_date": "2025-12-10",
+   "station_pair": "闽·福建晋江南站 至 闽·福建翔安站",
+   "summary_number": "3520251200189737",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025122974",
+      "uuid": "522cecce78ea4f2dbbee656c7cf99772",
+      "applicant": "阮果清",
+      "place": "晋江工厂",
+      "bizReason": "晋江工厂公出",
+      "reimed": 0,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "阮果清",
+        "factStart": "2025-12-10T13:00",
+        "factEnd": "2025-12-10T17:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025122974.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     },
+     {
+      "bizNumber": "12025123375",
+      "uuid": "429045c57c744a16913a93304f658f41",
+      "applicant": "徐亮",
+      "place": "晋江",
+      "bizReason": "项目跟进",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-12-10T08:30",
+        "factEnd": "2025-12-10T17:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025123375.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-12-10 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  },
+  {
+   "identity": "toll:035002400112-20519372",
+   "invoice_number": "20519372",
+   "amount": "15.53",
+   "rel": "1210/1210晋江-厦门1 (2).pdf",
+   "sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa",
+   "excel_row": 5,
+   "travel_date": "2025-12-10",
+   "station_pair": "闽·福建晋江南站 至 闽·福建翔安站",
+   "summary_number": "3520251200189737",
+   "plate": "闽D263GG",
+   "result": "NO_MATCH",
+   "exclusion": {
+    "own_docs_scanned": 13,
+    "own_docs_covering_day": 0,
+    "colleague_docs_same_window": [
+     {
+      "bizNumber": "12025122974",
+      "uuid": "522cecce78ea4f2dbbee656c7cf99772",
+      "applicant": "阮果清",
+      "place": "晋江工厂",
+      "bizReason": "晋江工厂公出",
+      "reimed": 0,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "阮果清",
+        "factStart": "2025-12-10T13:00",
+        "factEnd": "2025-12-10T17:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025122974.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     },
+     {
+      "bizNumber": "12025123375",
+      "uuid": "429045c57c744a16913a93304f658f41",
+      "applicant": "徐亮",
+      "place": "晋江",
+      "bizReason": "项目跟进",
+      "reimed": 2,
+      "covers_day": true,
+      "chen_in_traveler_rows": false,
+      "traveler_rows": [
+       {
+        "appliedName": "徐亮",
+        "factStart": "2025-12-10T08:30",
+        "factEnd": "2025-12-10T17:30"
+       }
+      ],
+      "evidence_file": "attempt_012/evidence/api-cand-12025123375.json",
+      "exclusion_basis": "同日/近窗同事单据，行级公出人员不含陈晶"
+     }
+    ],
+    "conclusion": "通行日 2025-12-10 无陈晶为公出人员的任何公出单（13 张本人单全查，全组织宽窗 96 单内同窗候选已核行级人员均不含陈晶）；如实报缺，不虚构对应"
+   }
+  }
+ ],
+ "date_field_semantics": {
+  "added_at": "2026-10-26T16:15:09+08:00",
+  "matched_doc.chen_trip": "factStartTime/factEndTime 实际公出时间口径（attempt_011 api-detail 原始字段）",
+  "exclusion.colleague_docs_same_window[].traveler_rows": "factNatureStartDate/factNatureEndDate 自然区间口径（candidates3e-manifest 同源）",
+  "equivalence": "12 张 MATCHED 票上两口径等价（本人单均为单日行程，A round-4 验收已核）；分歧示例见 candidates3e-manifest.date_field_semantics.divergence_example"
+ },
+ "revision_note": {
+  "added_at": "2026-10-26T16:15:09+08:00",
+  "round": "V3-R05",
+  "contract": "ctr-82e59a70",
+  "changes": [
+   "matched_doc 增 applicant/applicant_user_id（逐单回读 api-detail 原始 body）",
+   "matched_doc.evidence.ui_text 由裸文件名等价替换为 run 相对路径（attempt_011/evidence/ 前缀）",
+   "新增顶层 date_field_semantics"
+  ],
+  "immutable": "其余键值含 15 条 NO_MATCH 排除块、completeness_checks、scope_note 均未改动"
+ }
+}

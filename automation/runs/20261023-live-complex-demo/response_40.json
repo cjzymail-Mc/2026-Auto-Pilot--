@@ -1,0 +1,48 @@
+{
+  "status": "READBACK_MISMATCH",
+  "rows": {
+    "relations": 3,
+    "details": 2,
+    "costs": 6,
+    "banks": 1
+  },
+  "creator": "陈晶",
+  "issues": [
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/0/bizDetailCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/0/bizDetailNum"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/0/usedCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/1/bizDetailCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/1/bizDetailNum"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/1/usedCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/2/bizDetailCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/2/bizDetailNum"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/2/usedCost"
+    }
+  ]
+}

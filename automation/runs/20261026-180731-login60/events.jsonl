@@ -1,0 +1,7 @@
+{"event": "profile_lock_acquired", "pid": 11368, "ts": "2026-10-26T18:07:31"}
+{"event": "probe_start", "run": "20261026-180731-login60", "attempt": "attempt_001", "doc_id": null, "tech_budget": 1800, "login_wait_cap": 900, "wall_cap": 1200, "ts": "2026-10-26T18:07:31"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-26T18:07:31"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 2721, "ts": "2026-10-26T18:07:32"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-26T18:07:35"}
+{"event": "login_only_complete", "authenticated": true, "ttl_hours": 1440.0, "proxy_mode": "direct", "ts": "2026-10-26T18:07:35"}
+{"event": "probe_end", "reason": "SUCCESS_LOGIN_ONLY", "tech_used_s": 0.0, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-26T18:07:35"}

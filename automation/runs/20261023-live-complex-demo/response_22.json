@@ -1,0 +1,60 @@
+{
+  "upper": "<td _ngcontent-fke-c24=\"\" class=\"field-col prop-nowCost money-split readonly ng-star-inserted\" title=\"\"><!----><p-celleditor _ngcontent-fke-c24=\"\"><!----><!----><!----><!----><!----><!----><!----><!----><!----><span _ngcontent-fke-c24=\"\" class=\"ng-star-inserted\">0.00</span><!----><!----><!----><!----><!----><!----><!----></p-celleditor></td>",
+  "lower_rows": [
+    {
+      "fields": {
+        "bizTypeName": "公出单",
+        "bizNo": "12026101976",
+        "digest": "",
+        "bizDetailCost": "",
+        "bizDetailNum": "",
+        "usedCost": "",
+        "cost": "",
+        "description": ""
+      }
+    }
+  ],
+  "headers": [
+    {
+      "text": "",
+      "prop": ""
+    },
+    {
+      "text": "序号",
+      "prop": ""
+    },
+    {
+      "text": "单据类型",
+      "prop": "bizTypeName"
+    },
+    {
+      "text": "单据号",
+      "prop": "bizNo"
+    },
+    {
+      "text": "摘要",
+      "prop": "digest"
+    },
+    {
+      "text": "金额",
+      "prop": "bizDetailCost"
+    },
+    {
+      "text": "数量",
+      "prop": "bizDetailNum"
+    },
+    {
+      "text": "已报销(含审批中)",
+      "prop": "usedCost"
+    },
+    {
+      "text": "本次报销",
+      "prop": "cost"
+    },
+    {
+      "text": "备注",
+      "prop": "description"
+    }
+  ],
+  "lower": "<td _ngcontent-fke-c24=\"\" class=\"field-col prop-cost money-split ui-editable-column ng-star-inserted ui-editing-cell\" title=\"\"><!----><p-celleditor _ngcontent-fke-c24=\"\"><!----><!----><!----><!----><!----><!----><!----><input _ngcontent-fke-c24=\"\" pinputtext=\"\" type=\"number\" placeholder=\"\" min=\"0\" step=\"1\" class=\"ng-untouched ng-pristine ng-valid ui-inputtext ui-corner-all ui-state-default ui-widget ng-star-inserted\"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></p-celleditor></td>"
+}

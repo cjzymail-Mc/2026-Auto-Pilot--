@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "blocked": false,
+  "checks": [
+    {
+      "name": "invoice_face_consistency",
+      "status": "pass",
+      "details": [
+        {
+          "invoices": 0
+        }
+      ]
+    },
+    {
+      "name": "invoice_allocation_closure",
+      "status": "pass",
+      "details": [
+        {
+          "invoices": 0,
+          "allocations": 0
+        }
+      ]
+    },
+    {
+      "name": "expense_allocation_coverage",
+      "status": "pass",
+      "details": [
+        {
+          "detail_expenses": 1,
+          "no_invoice_bases": 1
+        }
+      ]
+    },
+    {
+      "name": "summary_detail_consistency",
+      "status": "pass",
+      "details": [
+        {
+          "summary_layer": "absent"
+        }
+      ]
+    },
+    {
+      "name": "total_closure",
+      "status": "pass",
+      "details": [
+        {
+          "total": "2345.67",
+          "bank_sum": "2345.67"
+        }
+      ]
+    },
+    {
+      "name": "applicability_closure",
+      "status": "pass",
+      "details": [
+        {
+          "applicability_facts": 0,
+          "categories": {
+            "04003": "2345.67"
+          }
+        }
+      ]
+    },
+    {
+      "name": "scope_consistency",
+      "status": "pass",
+      "details": [
+        {
+          "scope_facts": 3
+        }
+      ]
+    },
+    {
+      "name": "payee_identity",
+      "status": "pass",
+      "details": [
+        {
+          "payees": 1
+        }
+      ]
+    },
+    {
+      "name": "boundary_unknown_materials",
+      "status": "pass",
+      "details": [
+        {
+          "pending_materials": 0
+        }
+      ]
+    },
+    {
+      "name": "same_amount_not_forbidden",
+      "status": "pass",
+      "details": [
+        {
+          "duplicated_amounts": [],
+          "note": "同金额本身不禁报，闭合与依据另行核对"
+        }
+      ]
+    },
+    {
+      "name": "cross_task_invoice_hints",
+      "status": "info",
+      "details": [
+        {
+          "hints": 0
+        }
+      ]
+    }
+  ],
+  "hints": [],
+  "notes": [],
+  "generated_at": "2026-10-24T12:55:18.149597+00:00"
+}

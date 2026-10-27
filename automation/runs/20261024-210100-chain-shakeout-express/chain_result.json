@@ -1,0 +1,30 @@
+{
+  "status": "CHAIN_COMPLETE",
+  "chain_tool": "bpm_chain",
+  "family": "dual_layer",
+  "document_type": "express",
+  "run": "20261024-210100-chain-shakeout-express",
+  "segment": 1,
+  "round": "10",
+  "synthetic": false,
+  "plan": {
+    "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210100-chain-shakeout-express\\fill_plan.json",
+    "sha256": "3ac2a83d8cd7a33d121ddcc5accbaa768b48b8e2432bf87f01732aeb23b164a4",
+    "plan_hash": "c54d8540c630312b7bc9679ae8f58d9d3a191f10a36deadc3304299119b524e0"
+  },
+  "operator": {
+    "name": "陈晶",
+    "source": "system_observation",
+    "basis": "automation/.local-session 会话记录 principal（auth_status=authenticated） level=header_and_subject",
+    "measured": true,
+    "operator_note": "P2-3：--expect-name 已注入会话记录实测值（source=system_observation）"
+  },
+  "kind_user_guard": {
+    "synthetic": false,
+    "user_kind_sources": null
+  },
+  "test_context_semantics": "P2-4 自主裁决①：authorization_path=授权/材料工件路径；完整改名待 bpm_plan 授权轮",
+  "events": "events.jsonl",
+  "validate_only": true,
+  "browser_launched": false
+}

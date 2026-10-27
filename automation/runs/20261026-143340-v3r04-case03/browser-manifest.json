@@ -1,0 +1,22 @@
+{
+ "run": "20261026-143340-v3r04-case03",
+ "stage": "browser read-only",
+ "evidence": [
+  {
+   "file": "api-list-entry-000--affiche-HomeQueryByOption.json",
+   "path": "/affiche/HomeQueryByOption",
+   "sha256": "1784c45d12aa04497683063267463310d585b351d1c070f11bf43a55c28e8f3b"
+  },
+  {
+   "file": "api-list-entry-001--KindlyTips-query.json",
+   "path": "/KindlyTips/query",
+   "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+  },
+  {
+   "file": "api-list-entry-002--WorkOut-query-20-1.json",
+   "path": "/WorkOut/query/20/1",
+   "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+  }
+ ],
+ "trip_module_url": "https://bpm.qiaodan.com/oa/workouts"
+}

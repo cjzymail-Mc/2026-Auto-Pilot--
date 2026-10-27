@@ -1,0 +1,35 @@
+{
+  "status": "NEEDS_INPUT",
+  "stage": "MATERIALS_READY",
+  "task_id": "v3r08-case08-15426095951",
+  "run": "20261026-193100-0527f5dc",
+  "template": {
+    "biz_number": "15426095951",
+    "snapshot_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-192400-v3r08-final\\case08\\template_snapshot.json",
+    "sha256": "be71cb9294bf211e11048063e3ef6679ee8e06694fd1a2e00dbeec60541e0bb6"
+  },
+  "document_type": "travel",
+  "config_sha256": "4e9a5cc3c55d5a90b3878960b43a5231edcf21c2c111ed57c7bb4de2ed56844c",
+  "materials": {
+    "manifest_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-193100-0527f5dc\\materials\\manifest.json",
+    "manifest_sha256": "c6371d80df03300e37552b7c98cf41be6d9ba41abd3a67c8018ace7c00aaad46"
+  },
+  "gaps": [
+    {
+      "path": "/fill_plan",
+      "code": "NEEDS_INPUT",
+      "message": "Review materials and generate sourced v1.0 plan; never infer costs, dates or invoice facts from history."
+    }
+  ],
+  "structured_gaps": [
+    {
+      "file": "task.json",
+      "locator": "/fill_plan",
+      "region": null,
+      "candidates": [],
+      "reason": "Review materials and generate sourced v1.0 plan; never infer costs, dates or invoice facts from history.",
+      "affected_rows": []
+    }
+  ],
+  "browser_launched": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "EXECUTION_READY",
+  "plan": {
+    "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-welfare\\fill_plan.json",
+    "plan_hash": "6ed94f63fa1f05fa8ff0c50e5fe0fe7e28ec31d4f8597f15adc3a4f8500d7f80",
+    "sha256": "6ed94f63fa1f05fa8ff0c50e5fe0fe7e28ec31d4f8597f15adc3a4f8500d7f80"
+  },
+  "operator": {
+    "name": "陈晶",
+    "source": "system_observation",
+    "basis": "automation/.local-session 会话记录 principal（auth_status=authenticated） level=header_and_subject"
+  },
+  "validate_only": {
+    "status": "PLAN_VALIDATED",
+    "browser_launched": false
+  },
+  "suggested_command": "python -X utf8 fill_once.py --fill-plan \"D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-welfare\\fill_plan.json\" --expect-name \"陈晶\" --keep-open-minutes 45",
+  "browser_launched": false
+}

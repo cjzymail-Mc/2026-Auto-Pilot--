@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "reviewed": true,
+  "reviewed_by": "CASE-08-acceptance-agent",
+  "original_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028厦门到晋江发票.pdf",
+  "original_sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+  "records": [
+    {
+      "record_id": "toll-17793922",
+      "fields": {
+        "invoice_number": {
+          "value": "17793922",
+          "locator": "page:1/text-layer:发票尾块“发票号码”数值行"
+        },
+        "invoice_code": {
+          "value": "035002400112",
+          "locator": "page:1/text-layer:发票尾块“发票代码”数值行(12位)"
+        },
+        "issue_date": {
+          "value": "2025年10月28日",
+          "locator": "page:1/text-layer:发票尾块开票日期行"
+        },
+        "amount": {
+          "value": "22.64",
+          "locator": "page:1/text-layer:价税合计（小写）行"
+        }
+      }
+    }
+  ]
+}

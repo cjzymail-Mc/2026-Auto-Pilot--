@@ -1,0 +1,415 @@
+{
+  "fields": [
+    {
+      "name": "",
+      "label": "",
+      "type": "text",
+      "value": "",
+      "readonly": false,
+      "visible": true,
+      "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-sidebar:nth-of-type(2)>qd-page-menu>div.menu-scroll>div.search-box:nth-of-type(1)>p-autocomplete.ng-tns-c14-2.ng-untouched:nth-of-type(1)>span.ng-tns-c14-2.ui-autocomplete>input.ng-tns-c14-2.ui-inputtext",
+      "comp": ""
+    },
+    {
+      "name": "bizStatus0",
+      "label": "单据状态",
+      "type": "text",
+      "value": "编制中",
+      "readonly": true,
+      "visible": true,
+      "sel": "#bizStatus0",
+      "comp": ""
+    },
+    {
+      "name": "bizNumber1",
+      "label": "单据编号",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#bizNumber1",
+      "comp": ""
+    },
+    {
+      "name": "appliedName2",
+      "label": "申请人",
+      "type": "text",
+      "value": "陈晶",
+      "readonly": true,
+      "visible": true,
+      "sel": "#appliedName2",
+      "comp": ""
+    },
+    {
+      "name": "appliedAt3",
+      "label": "申请日期",
+      "type": "text",
+      "value": "2026-10-23",
+      "readonly": true,
+      "visible": true,
+      "sel": "#appliedAt3",
+      "comp": ""
+    },
+    {
+      "name": "appliedDuty4",
+      "label": "职位",
+      "type": "text",
+      "value": "高级经理",
+      "readonly": true,
+      "visible": true,
+      "sel": "#appliedDuty4",
+      "comp": ""
+    },
+    {
+      "name": "appliedBy5",
+      "label": "工号",
+      "type": "text",
+      "value": "116070053",
+      "readonly": true,
+      "visible": true,
+      "sel": "#appliedBy5",
+      "comp": ""
+    },
+    {
+      "name": "appliedDeptName6",
+      "label": "申请部门",
+      "type": "text",
+      "value": "运动表现研究部",
+      "readonly": true,
+      "visible": true,
+      "sel": "#appliedDeptName6",
+      "comp": ""
+    },
+    {
+      "name": "appliedPhone7",
+      "label": "联系电话",
+      "type": "text",
+      "value": "15980451184",
+      "readonly": false,
+      "visible": true,
+      "sel": "#appliedPhone7",
+      "comp": ""
+    },
+    {
+      "name": "totalCost14",
+      "label": "报销金额",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#totalCost14",
+      "comp": ""
+    },
+    {
+      "name": "upperCost15",
+      "label": "大写金额",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#upperCost15",
+      "comp": ""
+    },
+    {
+      "name": "loanCost16",
+      "label": "借款金额",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#loanCost16",
+      "comp": ""
+    },
+    {
+      "name": "quitCost17",
+      "label": "应退金额",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#quitCost17",
+      "comp": ""
+    },
+    {
+      "name": "payCost18",
+      "label": "应付金额",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#payCost18",
+      "comp": ""
+    },
+    {
+      "name": "description19",
+      "label": "备注",
+      "type": "text",
+      "value": "",
+      "readonly": false,
+      "visible": true,
+      "sel": "#description19",
+      "comp": ""
+    },
+    {
+      "name": "createdName20",
+      "label": "制单人",
+      "type": "text",
+      "value": "陈晶",
+      "readonly": true,
+      "visible": true,
+      "sel": "#createdName20",
+      "comp": ""
+    },
+    {
+      "name": "createdDeptName21",
+      "label": "制单部门",
+      "type": "text",
+      "value": "运动表现研究部",
+      "readonly": true,
+      "visible": true,
+      "sel": "#createdDeptName21",
+      "comp": ""
+    },
+    {
+      "name": "createdAt22",
+      "label": "制单日期",
+      "type": "text",
+      "value": "2026-10-23",
+      "readonly": true,
+      "visible": true,
+      "sel": "#createdAt22",
+      "comp": ""
+    },
+    {
+      "name": "bizCompletedName23",
+      "label": "终审人",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#bizCompletedName23",
+      "comp": ""
+    },
+    {
+      "name": "bizCompletedAt24",
+      "label": "终审日期",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#bizCompletedAt24",
+      "comp": ""
+    },
+    {
+      "name": "bizLastAuditName25",
+      "label": "业务终审人",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#bizLastAuditName25",
+      "comp": ""
+    },
+    {
+      "name": "bizLastAuditAt26",
+      "label": "业务终审日期",
+      "type": "text",
+      "value": "",
+      "readonly": true,
+      "visible": true,
+      "sel": "#bizLastAuditAt26",
+      "comp": ""
+    },
+    {
+      "name": "",
+      "label": "",
+      "type": "text",
+      "value": "",
+      "readonly": false,
+      "visible": true,
+      "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>div.ui-inputgroup.search:nth-of-type(1)>input.ng-untouched.ng-pristine:nth-of-type(1)",
+      "comp": ""
+    },
+    {
+      "name": "corpCode",
+      "label": "公司",
+      "type": "dropdown",
+      "value": "厦门乔丹科技有限公司",
+      "readonly": false,
+      "visible": true,
+      "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.print-hidden.col-xl-3:nth-of-type(9)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-135.ui-dropdown",
+      "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.print-hidden.col-xl-3:nth-of-type(9)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-135.ui-dropdown"
+    },
+    {
+      "name": "bizOrign",
+      "label": "流程归属",
+      "type": "dropdown",
+      "value": "乔丹科技",
+      "readonly": false,
+      "visible": true,
+      "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.print-hidden.col-xl-3:nth-of-type(10)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-137.ui-dropdown",
+      "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.print-hidden.col-xl-3:nth-of-type(10)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-137.ui-dropdown"
+    },
+    {
+      "name": "budgetYears",
+      "label": "预算年度",
+      "type": "multiselect",
+      "value": "",
+      "readonly": false,
+      "visible": true,
+      "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.hidden-lz.col-xl-3:nth-of-type(11)>div.row.dfc-container:nth-of-type(1)>p-multiselect.col.col-md:nth-of-type(1)>div.ng-tns-c36-139.ui-multiselect",
+      "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.hidden-lz.col-xl-3:nth-of-type(11)>div.row.dfc-container:nth-of-type(1)>p-multiselect.col.col-md:nth-of-type(1)>div.ng-tns-c36-139.ui-multiselect"
+    },
+    {
+      "name": "payType",
+      "label": "报销方式",
+      "type": "dropdown",
+      "value": "",
+      "readonly": false,
+      "visible": true,
+      "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.col-xl-3.col-lg-4:nth-of-type(12)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-141.ui-dropdown",
+      "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.col-xl-3.col-lg-4:nth-of-type(12)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-141.ui-dropdown"
+    },
+    {
+      "name": "currencyType",
+      "label": "币种",
+      "type": "dropdown",
+      "value": "人民币",
+      "readonly": false,
+      "visible": true,
+      "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.bg-warning.text-danger:nth-of-type(13)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-143.ui-dropdown",
+      "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.bg-warning.text-danger:nth-of-type(13)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-143.ui-dropdown"
+    },
+    {
+      "name": "submitType",
+      "label": "报销类别",
+      "type": "dropdown",
+      "value": "",
+      "readonly": false,
+      "visible": true,
+      "sel": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.hidden-lz.col-xl-3:nth-of-type(14)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-145.ui-dropdown",
+      "comp": "div.form-controls.row:nth-of-type(1)>qd-dynamic-form-control.hidden-lz.col-xl-3:nth-of-type(14)>div.row.dfc-container:nth-of-type(1)>p-dropdown.col.col-md:nth-of-type(1)>div.ng-tns-c41-145.ui-dropdown"
+    },
+    {
+      "name": "",
+      "label": "",
+      "type": "dropdown",
+      "value": "20",
+      "readonly": false,
+      "visible": true,
+      "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.print-hidden:nth-of-type(2)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>p-paginator.ng-star-inserted:nth-of-type(1)>div.ui-paginator-bottom.ui-paginator>div.ui-paginator-right-content.ng-star-inserted:nth-of-type(2)>p-dropdown.ng-tns-c41-119.ui-inputwrapper-filled:nth-of-type(1)>div.ng-tns-c41-119.ui-dropdown",
+      "comp": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>qd-root:nth-of-type(1)>ng-component.ng-star-inserted:nth-of-type(1)>qd-page-container.center:nth-of-type(1)>div.layout-wrapper:nth-of-type(1)>div.layout-content:nth-of-type(3)>qd-tab-control>p-tabview.p-tab-view.ng-star-inserted>div.ui-tabview.ui-widget>div.ui-tabview-panels:nth-of-type(1)>p-tabpanel.ng-star-inserted:nth-of-type(2)>div.ui-tabview-panel.ui-widget-content>qd-tab-content.p-tab-planel>qd-reimburse-detail.ng-star-inserted>qd-dynamic-table.print-hidden:nth-of-type(2)>p-table.empty:nth-of-type(1)>div.ui-table.ui-widget>p-paginator.ng-star-inserted:nth-of-type(1)>div.ui-paginator-bottom.ui-paginator>div.ui-paginator-right-content.ng-star-inserted:nth-of-type(2)>p-dropdown.ng-tns-c41-119.ui-inputwrapper-filled:nth-of-type(1)>div.ng-tns-c41-119.ui-dropdown"
+    }
+  ],
+  "candidates": [
+    {
+      "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation",
+      "cls": "ng-trigger ng-trigger-animation ng-tns-c17-128 org-select-dialog ui-dialog ui-widget ui-widget-conte",
+      "title": "组织架构",
+      "inputs": 1,
+      "input_sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>div.ui-inputgroup.search:nth-of-type(1)>input.ng-untouched.ng-pristine:nth-of-type(1)",
+      "rows": 12,
+      "row_list": [
+        {
+          "text": "中乔集团中乔股份科技中心阮果清高级总监3D工程一部运动表现研究部陈晶高级经理跑步组篮球组创新组底材创新部研发管理部3D工程二部",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission"
+        },
+        {
+          "text": "中乔股份科技中心阮果清高级总监3D工程一部运动表现研究部陈晶高级经理跑步组篮球组创新组底材创新部研发管理部3D工程二部",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission"
+        },
+        {
+          "text": "科技中心阮果清高级总监3D工程一部运动表现研究部陈晶高级经理跑步组篮球组创新组底材创新部研发管理部3D工程二部",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted"
+        },
+        {
+          "text": "阮果清高级总监",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(1)>li.ui-treenode.ui-treenode-leaf"
+        },
+        {
+          "text": "3D工程一部",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(2)>li.ui-treenode.ng-star-inserted"
+        },
+        {
+          "text": "运动表现研究部陈晶高级经理跑步组篮球组创新组",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(3)>li.ui-treenode.ng-star-inserted"
+        },
+        {
+          "text": "陈晶高级经理",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(3)>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(1)>li.ui-treenode.locate-node"
+        },
+        {
+          "text": "跑步组",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(3)>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(2)>li.ui-treenode.ng-star-inserted"
+        },
+        {
+          "text": "篮球组",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(3)>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(3)>li.ui-treenode.ng-star-inserted"
+        },
+        {
+          "text": "创新组",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(3)>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(4)>li.ui-treenode.ng-star-inserted"
+        },
+        {
+          "text": "底材创新部",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(4)>li.ui-treenode.ng-star-inserted"
+        },
+        {
+          "text": "研发管理部",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>p-tree.ng-star-inserted:nth-of-type(1)>div.ng-star-inserted.ui-tree>div.ui-tree-wrapper.ng-star-inserted>ul.ui-tree-container.ng-star-inserted>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.no-permission>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted>li.ui-treenode.ng-star-inserted>ul.ui-treenode-children.ng-star-inserted:nth-of-type(1)>p-treenode.ng-star-inserted:nth-of-type(5)>li.ui-treenode.ng-star-inserted"
+        }
+      ],
+      "buttons": [
+        {
+          "text": "定位",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>div.ui-inputgroup.search:nth-of-type(1)>button.ui-button.ui-widget:nth-of-type(2)",
+          "disabled": false
+        },
+        {
+          "text": "确定",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ui-dialog-footer.ui-widget-content:nth-of-type(3)>p-footer>div.footer-content>div.footer-btns:nth-of-type(2)>button.ui-button.ui-widget:nth-of-type(1)",
+          "disabled": false
+        },
+        {
+          "text": "取消",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ui-dialog-footer.ui-widget-content:nth-of-type(3)>p-footer>div.footer-content>div.footer-btns:nth-of-type(2)>button.ui-button.ui-widget:nth-of-type(2)",
+          "disabled": false
+        },
+        {
+          "text": "",
+          "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>div.ui-inputgroup.search:nth-of-type(1)>button.ui-button.ui-widget:nth-of-type(1)",
+          "disabled": true
+        }
+      ],
+      "tables": 0
+    }
+  ],
+  "dialog": {
+    "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation",
+    "title": "组织架构",
+    "buttons": [
+      {
+        "text": "",
+        "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>div.ui-inputgroup.search:nth-of-type(1)>button.ui-button.ui-widget:nth-of-type(1)",
+        "disabled": true
+      },
+      {
+        "text": "定位",
+        "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ng-tns-c17-128.ui-dialog-content:nth-of-type(2)>div.ui-inputgroup.search:nth-of-type(1)>button.ui-button.ui-widget:nth-of-type(2)",
+        "disabled": false
+      },
+      {
+        "text": "确定",
+        "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ui-dialog-footer.ui-widget-content:nth-of-type(3)>p-footer>div.footer-content>div.footer-btns:nth-of-type(2)>button.ui-button.ui-widget:nth-of-type(1)",
+        "disabled": false
+      },
+      {
+        "text": "取消",
+        "sel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.ng-tns-c17-128.ui-dialog-mask:nth-of-type(1)>div.ng-trigger.ng-trigger-animation>div.ui-dialog-footer.ui-widget-content:nth-of-type(3)>p-footer>div.footer-content>div.footer-btns:nth-of-type(2)>button.ui-button.ui-widget:nth-of-type(2)",
+        "disabled": false
+      }
+    ],
+    "tables": 0
+  },
+  "overlay": []
+}

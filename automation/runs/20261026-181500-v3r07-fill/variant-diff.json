@@ -1,0 +1,44 @@
+{
+  "variant": "v1.1",
+  "baseline": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-172300-v3r06-template-plan\\fill-plan.json",
+  "baseline_sha256": "0d5b22cd6f12058dd04567b3bb63b14ca1775cbd51690e324ece118a3a242fa8",
+  "generated_at": "2026-10-26T18:26:51+08:00",
+  "allowed_change_clusters": [
+    "/task_id",
+    "/authorization",
+    "/test_context",
+    "/not_applicable/0",
+    "/tables/relations",
+    "/oa_test_relations",
+    "/sources//tables/relations/",
+    "/materials/manifest_path",
+    "/materials/manifest_sha256"
+  ],
+  "zero_drift_outside_clusters": true,
+  "relations_placeholder": {
+    "row": {
+      "row_id": "case07-relations-1",
+      "fields": {
+        "bizTypeName": "公出单",
+        "bizNumber": "12024070132",
+        "nowCost": "1924.93",
+        "isLast": "是"
+      }
+    },
+    "chosen_index": 6,
+    "seed": "6074a75771428d7e",
+    "candidates_count": 20,
+    "exclusion_hits": 0
+  },
+  "task_material": {
+    "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-181500-v3r07-fill\\case07-task-material.json",
+    "sha256": "08767578dcb057c4be121c2049c4870389247fe6d421f42cfe96fc1770a061d2"
+  },
+  "manifest": {
+    "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-181500-v3r07-fill\\materials-manifest.json",
+    "sha256": "c45d6c4d5eadba3ba9e46ea4cd7effec179f8468a986055a5c89704ab4c0b78f",
+    "files": 7
+  },
+  "v11_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-181500-v3r07-fill\\fill-plan-v11.json",
+  "v11_sha256": "6c9d1b6fd719124e30b3af0e5cba7fb9df783abc3ae6c7a65e763734ec721f7c"
+}

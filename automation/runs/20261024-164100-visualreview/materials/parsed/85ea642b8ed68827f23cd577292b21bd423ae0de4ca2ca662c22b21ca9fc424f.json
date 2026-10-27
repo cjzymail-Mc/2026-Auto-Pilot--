@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "source_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-164100-visualreview\\originals\\synthetic_invoice_2p.pdf",
+  "source_sha256": "85ea642b8ed68827f23cd577292b21bd423ae0de4ca2ca662c22b21ca9fc424f",
+  "status": "NEEDS_INPUT",
+  "cells": [],
+  "issues": [
+    {
+      "message": "PDF/image extraction requires reviewed structured JSON with original hash and page/region locators"
+    }
+  ]
+}

@@ -1,0 +1,885 @@
+{
+ "status": "OBSERVED",
+ "run": "20261024-213500-type0204-observe",
+ "operator": "陈晶",
+ "targets": [
+  {
+   "document_type": "office_supplies",
+   "category_label": "低值易耗品、办公用品采购",
+   "header_editors_before": [
+    {
+     "name": "",
+     "type": "text",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "bizStatus0",
+     "type": "text",
+     "readonly": true,
+     "value": "编制***"
+    },
+    {
+     "name": "bizNumber1",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "appliedName2",
+     "type": "text",
+     "readonly": true,
+     "value": "陈晶"
+    },
+    {
+     "name": "appliedAt3",
+     "type": "text",
+     "readonly": true,
+     "value": "20***"
+    },
+    {
+     "name": "appliedDuty4",
+     "type": "text",
+     "readonly": true,
+     "value": "高级***"
+    },
+    {
+     "name": "appliedBy5",
+     "type": "text",
+     "readonly": true,
+     "value": "11***"
+    },
+    {
+     "name": "appliedDeptName6",
+     "type": "text",
+     "readonly": true,
+     "value": "运动***"
+    },
+    {
+     "name": "appliedPhone7",
+     "type": "text",
+     "readonly": false,
+     "value": "15***"
+    },
+    {
+     "name": "totalCost14",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "upperCost15",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "loanCost16",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "quitCost17",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "payCost18",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "description19",
+     "type": "text",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "createdName20",
+     "type": "text",
+     "readonly": true,
+     "value": "陈晶"
+    },
+    {
+     "name": "createdDeptName21",
+     "type": "text",
+     "readonly": true,
+     "value": "运动***"
+    },
+    {
+     "name": "createdAt22",
+     "type": "text",
+     "readonly": true,
+     "value": "20***"
+    },
+    {
+     "name": "bizCompletedName23",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "bizCompletedAt24",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "bizLastAuditName25",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "bizLastAuditAt26",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "corpCode",
+     "type": "dropdown",
+     "readonly": false,
+     "value": "厦门***"
+    },
+    {
+     "name": "bizOrign",
+     "type": "dropdown",
+     "readonly": false,
+     "value": "乔丹***"
+    },
+    {
+     "name": "budgetYears",
+     "type": "multiselect",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "payType",
+     "type": "dropdown",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "currencyType",
+     "type": "dropdown",
+     "readonly": false,
+     "value": "人民***"
+    },
+    {
+     "name": "submitType",
+     "type": "dropdown",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "dropdown",
+     "readonly": false,
+     "value": "20"
+    }
+   ],
+   "submit_type_options": [
+    "",
+    "其他费用",
+    "低值易耗品、办公用品采购",
+    "促销活动费（广告物料印刷品支持等）",
+    "福利费、劳保用品",
+    "业务招待费",
+    "各项会议支出",
+    "商品存货相关费用",
+    "差旅费",
+    "广宣费",
+    "固定资产、无形资产开支",
+    "工资、绩效",
+    "研发材料费",
+    "车辆费用",
+    "猎头费",
+    "心胜战略项目",
+    "快递费",
+    "报刊杂志费",
+    "质检费",
+    "食堂支出",
+    "咨询服务费",
+    "租金、水电费",
+    "人力资源费",
+    "机票",
+    "维修费",
+    "社保、公积金",
+    "工会经费",
+    "设计费用",
+    "通讯费",
+    "商标费",
+    "专利费",
+    "法律事务费",
+    "选样、圈样、订货会费用",
+    "培训费",
+    "装修费",
+    "维权打假",
+    "对外捐赠",
+    "货款（货品、器架物料、货架等）"
+   ],
+   "category_picked": "低值易耗品、办公用品采购",
+   "tables_after_category": [
+    {
+     "title": "关联单据",
+     "props": [
+      "",
+      "bizTypeName",
+      "bizNumber",
+      "bizCost",
+      "totalReimedCost",
+      "nowCost",
+      "isLast",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "关联单据明细",
+     "props": [
+      "",
+      "",
+      "bizTypeName",
+      "bizNo",
+      "digest",
+      "bizDetailCost",
+      "bizDetailNum",
+      "usedCost",
+      "cost",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": false,
+     "has_pick": false
+    },
+    {
+     "title": "报销明细",
+     "props": [
+      "",
+      "reimItem",
+      "digest",
+      "budgetDeptName",
+      "budgetNo",
+      "budgetOwner",
+      "subjectName",
+      "budgetItemName",
+      "subjectTotalCost",
+      "subjectSurplus",
+      "cost",
+      "quarterlyMeet",
+      "occupyRelationNo",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "费用说明",
+     "props": [
+      "",
+      "project",
+      "startDate",
+      "endDate",
+      "projectPlace",
+      "count",
+      "cost",
+      "reason"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "银行信息",
+     "props": [
+      "",
+      "payee",
+      "account",
+      "bank",
+      "bankCode",
+      "cost",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "确认人",
+     "props": [
+      "",
+      "name",
+      "orgName",
+      "jobTitle",
+      "isSigned",
+      "signedAt",
+      "signComment",
+      "sentAt",
+      "fromUserName",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "审批记录",
+     "props": [
+      "",
+      "toUserName",
+      "toUserOrgName",
+      "toUserDutyName",
+      "readAt",
+      "approvedAt",
+      "approvedString",
+      "comment"
+     ],
+     "rows": 0,
+     "has_add": false,
+     "has_pick": false
+    },
+    {
+     "title": "附件",
+     "props": [
+      "",
+      "icon",
+      "status",
+      "type",
+      "isEncrypted",
+      "fileName",
+      "size",
+      "createdName",
+      "createdAt",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": false,
+     "has_pick": false
+    }
+   ],
+   "picker_reimItem": {
+    "option_count": 5,
+    "options": [
+     "",
+     "培训费",
+     "业务招待费",
+     "其他",
+     "办公费"
+    ],
+    "prefix_hits": []
+   },
+   "picker_budgetNo": {
+    "status": "NOT_PRESENT"
+   },
+   "picker_subjectName": {
+    "status": "NOT_PRESENT"
+   },
+   "details_row_screenshot": "attempt_001/evidence/details_row_02.png",
+   "details_row_values": [
+    {
+     "name": "",
+     "value": ""
+    },
+    {
+     "name": "reimItem",
+     "value": ""
+    }
+   ],
+   "relation_type_options": [
+    "",
+    "项目立项单",
+    "福利申请单",
+    "物品申购单",
+    "工伤事故申报",
+    "申请书",
+    "印制名片单",
+    "资产验收单",
+    "礼赠申请单",
+    "出差单",
+    "资产维修单",
+    "公出单",
+    "用车申请",
+    "爱心基金申请",
+    "物品维修单",
+    "促销活动申请",
+    "公务接待单",
+    "培训申请单",
+    "资产申购单",
+    "借款单",
+    "票务申请",
+    "商务订房单"
+   ],
+   "relation_expected_word_present": true,
+   "detailrels_table": [
+    {
+     "title": "关联单据明细",
+     "props": [
+      "",
+      "",
+      "bizTypeName",
+      "bizNo",
+      "digest",
+      "bizDetailCost",
+      "bizDetailNum",
+      "usedCost",
+      "cost",
+      "description"
+     ],
+     "rows": 0
+    }
+   ],
+   "screenshots": [
+    "attempt_001/evidence/form_before_02.png",
+    "attempt_001/evidence/category_set_02.png"
+   ],
+   "page_url": "ht***"
+  },
+  {
+   "document_type": "welfare_labor",
+   "category_label": "福利费、劳保用品",
+   "header_editors_before": [
+    {
+     "name": "",
+     "type": "text",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "bizStatus0",
+     "type": "text",
+     "readonly": true,
+     "value": "编制***"
+    },
+    {
+     "name": "bizNumber1",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "appliedName2",
+     "type": "text",
+     "readonly": true,
+     "value": "陈晶"
+    },
+    {
+     "name": "appliedAt3",
+     "type": "text",
+     "readonly": true,
+     "value": "20***"
+    },
+    {
+     "name": "appliedDuty4",
+     "type": "text",
+     "readonly": true,
+     "value": "高级***"
+    },
+    {
+     "name": "appliedBy5",
+     "type": "text",
+     "readonly": true,
+     "value": "11***"
+    },
+    {
+     "name": "appliedDeptName6",
+     "type": "text",
+     "readonly": true,
+     "value": "运动***"
+    },
+    {
+     "name": "appliedPhone7",
+     "type": "text",
+     "readonly": false,
+     "value": "15***"
+    },
+    {
+     "name": "totalCost14",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "upperCost15",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "loanCost16",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "quitCost17",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "payCost18",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "description19",
+     "type": "text",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "createdName20",
+     "type": "text",
+     "readonly": true,
+     "value": "陈晶"
+    },
+    {
+     "name": "createdDeptName21",
+     "type": "text",
+     "readonly": true,
+     "value": "运动***"
+    },
+    {
+     "name": "createdAt22",
+     "type": "text",
+     "readonly": true,
+     "value": "20***"
+    },
+    {
+     "name": "bizCompletedName23",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "bizCompletedAt24",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "bizLastAuditName25",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "bizLastAuditAt26",
+     "type": "text",
+     "readonly": true,
+     "value": ""
+    },
+    {
+     "name": "corpCode",
+     "type": "dropdown",
+     "readonly": false,
+     "value": "厦门***"
+    },
+    {
+     "name": "bizOrign",
+     "type": "dropdown",
+     "readonly": false,
+     "value": "乔丹***"
+    },
+    {
+     "name": "budgetYears",
+     "type": "multiselect",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "payType",
+     "type": "dropdown",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "currencyType",
+     "type": "dropdown",
+     "readonly": false,
+     "value": "人民***"
+    },
+    {
+     "name": "submitType",
+     "type": "dropdown",
+     "readonly": false,
+     "value": ""
+    },
+    {
+     "name": "",
+     "type": "dropdown",
+     "readonly": false,
+     "value": "20"
+    }
+   ],
+   "submit_type_options": [
+    "",
+    "其他费用",
+    "低值易耗品、办公用品采购",
+    "促销活动费（广告物料印刷品支持等）",
+    "福利费、劳保用品",
+    "业务招待费",
+    "各项会议支出",
+    "商品存货相关费用",
+    "差旅费",
+    "广宣费",
+    "固定资产、无形资产开支",
+    "工资、绩效",
+    "研发材料费",
+    "车辆费用",
+    "猎头费",
+    "心胜战略项目",
+    "快递费",
+    "报刊杂志费",
+    "质检费",
+    "食堂支出",
+    "咨询服务费",
+    "租金、水电费",
+    "人力资源费",
+    "机票",
+    "维修费",
+    "社保、公积金",
+    "工会经费",
+    "设计费用",
+    "通讯费",
+    "商标费",
+    "专利费",
+    "法律事务费",
+    "选样、圈样、订货会费用",
+    "培训费",
+    "装修费",
+    "维权打假",
+    "对外捐赠",
+    "货款（货品、器架物料、货架等）"
+   ],
+   "category_picked": "福利费、劳保用品",
+   "tables_after_category": [
+    {
+     "title": "关联单据",
+     "props": [
+      "",
+      "bizTypeName",
+      "bizNumber",
+      "bizCost",
+      "totalReimedCost",
+      "nowCost",
+      "isLast",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "关联单据明细",
+     "props": [
+      "",
+      "",
+      "bizTypeName",
+      "bizNo",
+      "digest",
+      "bizDetailCost",
+      "bizDetailNum",
+      "usedCost",
+      "cost",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": false,
+     "has_pick": false
+    },
+    {
+     "title": "报销明细",
+     "props": [
+      "",
+      "reimItem",
+      "digest",
+      "budgetDeptName",
+      "budgetNo",
+      "budgetOwner",
+      "subjectName",
+      "budgetItemName",
+      "subjectTotalCost",
+      "subjectSurplus",
+      "cost",
+      "quarterlyMeet",
+      "occupyRelationNo",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "费用说明",
+     "props": [
+      "",
+      "project",
+      "startDate",
+      "endDate",
+      "projectPlace",
+      "count",
+      "cost",
+      "reason"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "银行信息",
+     "props": [
+      "",
+      "payee",
+      "account",
+      "bank",
+      "bankCode",
+      "cost",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "确认人",
+     "props": [
+      "",
+      "name",
+      "orgName",
+      "jobTitle",
+      "isSigned",
+      "signedAt",
+      "signComment",
+      "sentAt",
+      "fromUserName",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": true,
+     "has_pick": false
+    },
+    {
+     "title": "审批记录",
+     "props": [
+      "",
+      "toUserName",
+      "toUserOrgName",
+      "toUserDutyName",
+      "readAt",
+      "approvedAt",
+      "approvedString",
+      "comment"
+     ],
+     "rows": 0,
+     "has_add": false,
+     "has_pick": false
+    },
+    {
+     "title": "附件",
+     "props": [
+      "",
+      "icon",
+      "status",
+      "type",
+      "isEncrypted",
+      "fileName",
+      "size",
+      "createdName",
+      "createdAt",
+      "description"
+     ],
+     "rows": 0,
+     "has_add": false,
+     "has_pick": false
+    }
+   ],
+   "picker_reimItem": {
+    "option_count": 6,
+    "options": [
+     "",
+     "宿舍费用",
+     "食堂费用",
+     "住房补贴",
+     "团建费",
+     "员工福利"
+    ],
+    "prefix_hits": []
+   },
+   "picker_budgetNo": {
+    "status": "NOT_PRESENT"
+   },
+   "picker_subjectName": {
+    "status": "NOT_PRESENT"
+   },
+   "details_row_screenshot": "attempt_001/evidence/details_row_04.png",
+   "details_row_values": [
+    {
+     "name": "",
+     "value": ""
+    },
+    {
+     "name": "reimItem",
+     "value": ""
+    }
+   ],
+   "relation_type_options": [
+    "",
+    "项目立项单",
+    "福利申请单",
+    "物品申购单",
+    "工伤事故申报",
+    "申请书",
+    "印制名片单",
+    "资产验收单",
+    "礼赠申请单",
+    "出差单",
+    "资产维修单",
+    "公出单",
+    "用车申请",
+    "爱心基金申请",
+    "物品维修单",
+    "促销活动申请",
+    "公务接待单",
+    "培训申请单",
+    "资产申购单",
+    "借款单",
+    "票务申请",
+    "商务订房单"
+   ],
+   "relation_expected_word_present": true,
+   "detailrels_table": [
+    {
+     "title": "关联单据明细",
+     "props": [
+      "",
+      "",
+      "bizTypeName",
+      "bizNo",
+      "digest",
+      "bizDetailCost",
+      "bizDetailNum",
+      "usedCost",
+      "cost",
+      "description"
+     ],
+     "rows": 0
+    }
+   ],
+   "screenshots": [
+    "attempt_001/evidence/form_before_04.png",
+    "attempt_001/evidence/category_set_04.png"
+   ],
+   "page_url": "ht***"
+  }
+ ],
+ "discipline": "只读控件观察；零业务行写入；零保存；页弃置"
+}

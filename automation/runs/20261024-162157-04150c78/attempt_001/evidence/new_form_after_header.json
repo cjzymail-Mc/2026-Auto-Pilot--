@@ -1,0 +1,227 @@
+{
+  "page": {
+    "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+    "is_new": true,
+    "operator": "陈晶",
+    "biz_number": "",
+    "uuid": "",
+    "status": "编制中"
+  },
+  "applicant": {
+    "name": "徐亮",
+    "company": "厦门乔丹科技有限公司",
+    "department": "运动表现研究部"
+  },
+  "header": {
+    "bizStatus": "编制中",
+    "bizNumber": "",
+    "appliedName": "徐亮",
+    "appliedAt": "2026-10-24",
+    "appliedDuty": "高级研究员",
+    "appliedBy": "117070006",
+    "appliedDeptName": "运动表现研究部",
+    "appliedPhone": "17605078513",
+    "totalCost": "",
+    "upperCost": "",
+    "loanCost": "",
+    "quitCost": "",
+    "payCost": "",
+    "description": "【现场演示·不保存·关联已替换】公出油补",
+    "createdName": "陈晶",
+    "createdDeptName": "运动表现研究部",
+    "createdAt": "2026-10-24",
+    "bizCompletedName": "",
+    "bizCompletedAt": "",
+    "bizLastAuditName": "",
+    "bizLastAuditAt": "",
+    "corpCode": "厦门乔丹科技有限公司",
+    "bizOrign": "乔丹科技",
+    "budgetYears": "2026",
+    "payType": "转账",
+    "currencyType": "人民币",
+    "submitType": "差旅费"
+  },
+  "tables": {
+    "relations": [
+      {
+        "fields": {
+          "bizTypeName": "",
+          "bizNumber": "",
+          "bizCost": "",
+          "totalReimedCost": "",
+          "nowCost": "",
+          "isLast": "",
+          "description": ""
+        },
+        "field_metadata": {
+          "bizTypeName": {
+            "readonly": false
+          },
+          "bizNumber": {
+            "readonly": false
+          },
+          "bizCost": {
+            "readonly": true
+          },
+          "totalReimedCost": {
+            "readonly": true
+          },
+          "nowCost": {
+            "readonly": true
+          },
+          "isLast": {
+            "readonly": false
+          },
+          "description": {
+            "readonly": false
+          }
+        }
+      }
+    ],
+    "details": [
+      {
+        "fields": {
+          "reimItem": "",
+          "digest": "",
+          "budgetDeptName": "",
+          "budgetNo": "",
+          "budgetOwner": "",
+          "subjectName": "",
+          "budgetItemName": "",
+          "subjectTotalCost": "0.00",
+          "subjectSurplus": "0.00",
+          "cost": "",
+          "quarterlyMeet": "",
+          "occupyRelationNo": "",
+          "description": ""
+        },
+        "field_metadata": {
+          "reimItem": {
+            "readonly": false
+          },
+          "digest": {
+            "readonly": false
+          },
+          "budgetDeptName": {
+            "readonly": true
+          },
+          "budgetNo": {
+            "readonly": false
+          },
+          "budgetOwner": {
+            "readonly": true
+          },
+          "subjectName": {
+            "readonly": false
+          },
+          "budgetItemName": {
+            "readonly": true
+          },
+          "subjectTotalCost": {
+            "readonly": true
+          },
+          "subjectSurplus": {
+            "readonly": true
+          },
+          "cost": {
+            "readonly": false
+          },
+          "quarterlyMeet": {
+            "readonly": false
+          },
+          "occupyRelationNo": {
+            "readonly": true
+          },
+          "description": {
+            "readonly": false
+          }
+        }
+      }
+    ],
+    "costs": [
+      {
+        "fields": {
+          "project": "",
+          "startDate": "",
+          "endDate": "",
+          "projectPlace": "",
+          "count": "",
+          "cost": "",
+          "reason": ""
+        },
+        "field_metadata": {
+          "project": {
+            "readonly": false
+          },
+          "startDate": {
+            "readonly": false
+          },
+          "endDate": {
+            "readonly": false
+          },
+          "projectPlace": {
+            "readonly": false
+          },
+          "count": {
+            "readonly": false
+          },
+          "cost": {
+            "readonly": false
+          },
+          "reason": {
+            "readonly": false
+          }
+        }
+      }
+    ],
+    "banks": [
+      {
+        "fields": {
+          "payee": "",
+          "account": "",
+          "bank": "",
+          "bankCode": "",
+          "cost": "",
+          "description": ""
+        },
+        "field_metadata": {
+          "payee": {
+            "readonly": false
+          },
+          "account": {
+            "readonly": false
+          },
+          "bank": {
+            "readonly": true
+          },
+          "bankCode": {
+            "readonly": true
+          },
+          "cost": {
+            "readonly": false
+          },
+          "description": {
+            "readonly": false
+          }
+        }
+      }
+    ]
+  },
+  "completeness": {
+    "header": true,
+    "relations": true,
+    "details": true,
+    "costs": true,
+    "banks": true,
+    "detailrels": true
+  },
+  "extra_tables": {
+    "detailrels": [],
+    "unmodeled:附件": []
+  },
+  "validation": {
+    "invalid_fields": [],
+    "pending": false
+  },
+  "observed_at": "2026-10-24T08:22:20.405928+00:00"
+}

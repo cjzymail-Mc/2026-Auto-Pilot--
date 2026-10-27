@@ -1,0 +1,10 @@
+{
+  "relation_refs": [],
+  "statement": "快递费报销（授权历史回放）：样品寄送 8 笔结算明细、邮寄费预算明细 1 行、四名收款人分摊，合计 347.50；本轮 fill_only 只填不存。",
+  "materials_dir": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-174500-expressloop\\originals",
+  "declared_category": "快递费",
+  "template_biz_number": "15426094780",
+  "schema_version": "1.0",
+  "source_semantics": "user_instruction",
+  "registered_at": "2026-10-24T09:37:53.807276+00:00"
+}

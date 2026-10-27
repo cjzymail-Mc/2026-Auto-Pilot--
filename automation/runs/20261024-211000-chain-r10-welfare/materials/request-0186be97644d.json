@@ -1,0 +1,10 @@
+{
+  "statement": "福利费、劳保用品报销链复跑（bpm_chain round-10）：明细 1 行、结算 0 行、收款 1 行，合计 2345.67；validate-only 只填不存。",
+  "declared_category": "福利费、劳保用品",
+  "template_biz_number": "15426071883",
+  "materials_dir": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-welfare\\originals",
+  "relation_refs": [],
+  "schema_version": "1.0",
+  "source_semantics": "user_instruction",
+  "registered_at": "2026-10-24T12:55:18.126596+00:00"
+}

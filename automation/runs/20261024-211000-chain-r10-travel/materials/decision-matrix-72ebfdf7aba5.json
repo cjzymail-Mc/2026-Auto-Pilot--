@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "document_type": "travel",
+  "snapshot": {
+    "biz_number": "15426093015",
+    "uuid": "05743d0195234d739afb4f86e3b5649b",
+    "source": {
+      "kind": "cached",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261023-142146-travelcensus\\travel_census.json",
+      "sha256": "59c992c659a7f788868a94220307373a87227e1e25128be40cfd640e38c743ff"
+    }
+  },
+  "user_policy": {},
+  "rows": [
+    {
+      "group": "form_identity",
+      "field": "document_type",
+      "decision": "identify",
+      "template_value": "差旅费(travel)",
+      "basis": "模板快照类别与请求声明一致"
+    },
+    {
+      "group": "form_identity",
+      "field": "form_structure",
+      "decision": "identify",
+      "template_value": "relations/details/costs/banks 四表",
+      "basis": "封闭注册结构+材料空表理由"
+    },
+    {
+      "group": "current_person",
+      "field": "name",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0001",
+      "fact_source": "material_extraction",
+      "locator": "/applicant/name"
+    },
+    {
+      "group": "current_person",
+      "field": "company",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0001",
+      "fact_source": "material_extraction",
+      "locator": "/applicant/company"
+    },
+    {
+      "group": "current_person",
+      "field": "department",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0001",
+      "fact_source": "material_extraction",
+      "locator": "/applicant/department"
+    },
+    {
+      "group": "current_business",
+      "field": "description",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0002",
+      "fact_source": "material_extraction",
+      "locator": "/header/description"
+    },
+    {
+      "group": "stable_context",
+      "field": "corpCode",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0002",
+      "fact_source": "material_extraction",
+      "locator": "/header/corpCode"
+    },
+    {
+      "group": "stable_context",
+      "field": "bizOrign",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0002",
+      "fact_source": "material_extraction",
+      "locator": "/header/bizOrign"
+    },
+    {
+      "group": "stable_context",
+      "field": "budgetYears",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0002",
+      "fact_source": "material_extraction",
+      "locator": "/header/budgetYears"
+    },
+    {
+      "group": "stable_context",
+      "field": "payType",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0002",
+      "fact_source": "material_extraction",
+      "locator": "/header/payType"
+    },
+    {
+      "group": "stable_context",
+      "field": "currencyType",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0002",
+      "fact_source": "material_extraction",
+      "locator": "/header/currencyType"
+    },
+    {
+      "group": "stable_context",
+      "field": "submitType",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0002",
+      "fact_source": "material_extraction",
+      "locator": "/header/submitType"
+    },
+    {
+      "group": "stable_context",
+      "field": "description",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0002",
+      "fact_source": "material_extraction",
+      "locator": "/header/description"
+    },
+    {
+      "group": "proven_references",
+      "field": "relations[0].bizNumber",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0004",
+      "fact_source": "material_extraction",
+      "basis": "回放材料关联单（授权 numbers 以材料为源）",
+      "locator": "/tables/relations/0/fields/bizNumber"
+    },
+    {
+      "group": "proven_references",
+      "field": "relations[1].bizNumber",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0005",
+      "fact_source": "material_extraction",
+      "basis": "回放材料关联单（授权 numbers 以材料为源）",
+      "locator": "/tables/relations/1/fields/bizNumber"
+    },
+    {
+      "group": "proven_references",
+      "field": "relations[2].bizNumber",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0006",
+      "fact_source": "material_extraction",
+      "basis": "回放材料关联单（授权 numbers 以材料为源）",
+      "locator": "/tables/relations/2/fields/bizNumber"
+    },
+    {
+      "group": "proven_references",
+      "field": "banks[0].payee",
+      "decision": "replace",
+      "template_value": null,
+      "fact_id": "F-0015",
+      "fact_source": "material_extraction",
+      "basis": "材料收款人（材料证明属于本次回放/合成件）",
+      "locator": "/tables/banks/0/fields/payee"
+    },
+    {
+      "group": "empty_tables",
+      "field": "relations",
+      "decision": "not_applicable",
+      "template_value": null,
+      "reason": "非空表：本次材料提供 3 行关联单"
+    },
+    {
+      "group": "empty_tables",
+      "field": "details",
+      "decision": "not_applicable",
+      "template_value": null,
+      "reason": "非空表：本次材料提供 2 行报销明细"
+    },
+    {
+      "group": "empty_tables",
+      "field": "costs",
+      "decision": "not_applicable",
+      "template_value": null,
+      "reason": "非空表：本次材料提供 6 行结算明细"
+    },
+    {
+      "group": "empty_tables",
+      "field": "banks",
+      "decision": "not_applicable",
+      "template_value": null,
+      "reason": "非空表：本次材料提供 1 行收款信息"
+    }
+  ],
+  "generated_at": "2026-10-24T12:55:02.320117+00:00"
+}

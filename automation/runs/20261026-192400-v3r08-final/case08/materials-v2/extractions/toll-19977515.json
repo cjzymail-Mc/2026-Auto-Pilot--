@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "reviewed": true,
+  "reviewed_by": "CASE-08-acceptance-agent",
+  "original_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210晋江-厦门1.pdf",
+  "original_sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+  "records": [
+    {
+      "record_id": "toll-19977515",
+      "fields": {
+        "invoice_number": {
+          "value": "19977515",
+          "locator": "page:1/text-layer:发票尾块“发票号码”数值行"
+        },
+        "invoice_code": {
+          "value": "035002400112",
+          "locator": "page:1/text-layer:发票尾块“发票代码”数值行(12位)"
+        },
+        "issue_date": {
+          "value": "2025年12月10日",
+          "locator": "page:1/text-layer:发票尾块开票日期行"
+        },
+        "amount": {
+          "value": "4.42",
+          "locator": "page:1/text-layer:价税合计（小写）行"
+        }
+      }
+    }
+  ]
+}

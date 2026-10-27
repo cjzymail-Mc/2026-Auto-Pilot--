@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "kind": "system_observation_extract",
+  "observed_run": "20261024-160024-8502f91d",
+  "source_evidence": "attempt_001/evidence/blocked_readback.json",
+  "source_evidence_sha256": "e19eb3dc5cc2ab49c83a7dcdabd1641f1226b89b64e644d222268df2d30ee1fa",
+  "createdName": "陈晶",
+  "createdDeptName": "运动表现研究部",
+  "page": {
+    "is_new": true,
+    "operator": "陈晶",
+    "url": "https://bpm.qiaodan.com/oa/reimburse?type=new"
+  },
+  "observed_at": "2026-10-24T16:00:34+08:00"
+}

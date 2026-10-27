@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-27T03:26:24.438557+00:00",
+  "purpose": "real_native_session_startup_and_new_user_policy_handoff",
+  "new_workflow": {
+    "run": "242ccba1c43343f687aa1db0ae014f5b",
+    "phase": "B_RUNNING",
+    "round": 1,
+    "seq": 4,
+    "sessions": {
+      "B": "c05e555a-0c54-4418-96a2-d92a751dfbc9",
+      "A": "9acdfc57-4f2d-476f-bc24-b23bedb77a24"
+    },
+    "max_round": 12,
+    "baseline_sha256": "4ac8adbe15fc6a90f834ddfa355b5c9a929d4f5ca7904ee467931335ecbf2049"
+  },
+  "baseline": {
+    "path": "feature01-细化报销skill\\2026-10-27 报销单-自驾公出类技能固化施工合同-V1.md",
+    "sha256": "4ac8adbe15fc6a90f834ddfa355b5c9a929d4f5ca7904ee467931335ecbf2049"
+  },
+  "latest_user_addendum": {
+    "path": "feature01-细化报销skill\\2026-10-27 自驾公出施工增补-真实任务自动保存草稿.md",
+    "sha256": "b1bca85d29fddd859c92e77a9c56ea916239ac574b78a3249ae0f5164c19f2be",
+    "read_only_independent_review": "no_substantive_conflict_found",
+    "delivered_to": "new_A_session_queued_native_user_message",
+    "historical_placeholder_case_stays_fill_only": true
+  },
+  "old_workflow": {
+    "run": "d91601924848489f84e317e68582de26",
+    "normal_archive_by_real_resumed_original_B": true,
+    "original_B_native_background_notification_probe_task": "b4xk6bhos",
+    "state_final_path": "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\state-final.json",
+    "state_final_sha256": "35bce91b185b6ef1fc95febdb066df96b78b43c41d114e58817ce50999b64e7f",
+    "final_task_path": "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\final\\team-task.md",
+    "final_task_sha256": "ea4ab277ae2e7024178349beec098b2272a76169cc500246ec0d7ce421f854d0",
+    "archived_root_task_cleared_only_after_byte_equality": true,
+    "original_A_process_untouched": true
+  },
+  "startup_business_form_writes": 0,
+  "startup_tests_run": 0,
+  "business_implementation_and_acceptance": "in_progress_by_bound_native_A_B",
+  "notes": "This is a startup snapshot, not current liveness or business acceptance. No credential or personal session metadata was copied."
+}

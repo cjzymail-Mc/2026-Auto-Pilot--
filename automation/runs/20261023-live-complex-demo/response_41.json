@@ -1,0 +1,21 @@
+{
+  "presented": true,
+  "empty_field_metadata": {
+    "bizDetailCost": {
+      "classes": "field-col prop-bizDetailCost money-split readonly ng-star-inserted",
+      "visibleText": "",
+      "readonly": true
+    },
+    "bizDetailNum": {
+      "classes": "field-col prop-bizDetailNum readonly ng-star-inserted",
+      "visibleText": "",
+      "readonly": true
+    },
+    "usedCost": {
+      "classes": "field-col prop-usedCost money-split readonly ng-star-inserted",
+      "visibleText": "",
+      "readonly": true
+    }
+  },
+  "browser_remains_open": true
+}

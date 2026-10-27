@@ -1,0 +1,7 @@
+{"event": "profile_lock_acquired", "pid": 3044, "ts": "2026-10-23T20:41:41"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-23T20:41:41"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 2466, "ts": "2026-10-23T20:41:42"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792759304934, "dur_ms": 664, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T20:41:45"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 24.0, "ts": "2026-10-23T20:41:45"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792759308345, "dur_ms": 179, "outcome": "ok", "exc": "", "name": "default_personnel.png", "ts": "2026-10-23T20:41:48"}
+{"event": "authorized_blank_test_observed", "fields_written": 0, "save_clicks": 0, "ts": "2026-10-23T20:41:48"}

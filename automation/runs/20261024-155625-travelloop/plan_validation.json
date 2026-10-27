@@ -1,0 +1,126 @@
+{
+  "status": "PLAN_VALIDATED",
+  "issues": [],
+  "plan_sha256": "0cd152a5b517a2750dc82ce90369c3cc8b9da8a549fbad07a999d167e9a97f33",
+  "sources": 87,
+  "reconciliation": {
+    "schema_version": "1.0",
+    "blocked": false,
+    "checks": [
+      {
+        "name": "invoice_face_consistency",
+        "status": "pass",
+        "details": [
+          {
+            "invoices": 0
+          }
+        ]
+      },
+      {
+        "name": "invoice_allocation_closure",
+        "status": "pass",
+        "details": [
+          {
+            "invoices": 0,
+            "allocations": 0
+          }
+        ]
+      },
+      {
+        "name": "expense_allocation_coverage",
+        "status": "pass",
+        "details": [
+          {
+            "detail_expenses": 6,
+            "no_invoice_bases": 6
+          }
+        ]
+      },
+      {
+        "name": "summary_detail_consistency",
+        "status": "pass",
+        "details": [
+          {
+            "detail_sum": "633.84",
+            "summary_sum": "633.84"
+          }
+        ]
+      },
+      {
+        "name": "total_closure",
+        "status": "pass",
+        "details": [
+          {
+            "total": "633.84",
+            "bank_sum": "633.84"
+          }
+        ]
+      },
+      {
+        "name": "applicability_closure",
+        "status": "pass",
+        "details": [
+          {
+            "applicability_facts": 0,
+            "categories": {
+              "其它交通": "573.84",
+              "伙食": "60.00"
+            }
+          }
+        ]
+      },
+      {
+        "name": "scope_consistency",
+        "status": "pass",
+        "details": [
+          {
+            "scope_facts": 1
+          }
+        ]
+      },
+      {
+        "name": "payee_identity",
+        "status": "pass",
+        "details": [
+          {
+            "payees": 1
+          }
+        ]
+      },
+      {
+        "name": "boundary_unknown_materials",
+        "status": "pass",
+        "details": [
+          {
+            "pending_materials": 0
+          }
+        ]
+      },
+      {
+        "name": "same_amount_not_forbidden",
+        "status": "pass",
+        "details": [
+          {
+            "duplicated_amounts": [
+              "191.28",
+              "24.00"
+            ],
+            "note": "同金额本身不禁报，闭合与依据另行核对"
+          }
+        ]
+      },
+      {
+        "name": "cross_task_invoice_hints",
+        "status": "info",
+        "details": [
+          {
+            "hints": 0
+          }
+        ]
+      }
+    ],
+    "hints": [],
+    "notes": [],
+    "generated_at": "2026-10-24T08:07:34.566374+00:00"
+  }
+}

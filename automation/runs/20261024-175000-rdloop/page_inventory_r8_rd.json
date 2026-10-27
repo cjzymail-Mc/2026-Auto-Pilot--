@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "kind": "page_inventory_fill_only",
+  "task_id": "20261024-r8-rdloop-15426104120",
+  "run": "20261024-174803-cd2e04e4",
+  "attempt": "attempt_001",
+  "generated_at": "2026-10-24T17:58:06+08:00",
+  "identity": {
+    "operator": "陈晶",
+    "applicant": {
+      "name": "陈晶",
+      "company": "厦门乔丹科技有限公司",
+      "department": "运动表现研究部"
+    },
+    "applicant_employee_id": "116070053",
+    "applicant_employee_id_source": "页面登录默认（preserve_system_defaults，agent 未选择；区别 round-7 徐亮 picker）",
+    "page_status": "编制中",
+    "is_new_form": true,
+    "biz_number": "(未保存，无单号)"
+  },
+  "content": {
+    "row_counts": {
+      "relations": 0,
+      "details": 4,
+      "costs": 0,
+      "banks": 4,
+      "products": 18
+    },
+    "expected_counts": {
+      "relations": 0,
+      "details": 4,
+      "costs": 0,
+      "banks": 4,
+      "products": 18
+    },
+    "amounts": {
+      "details": "9935.16",
+      "banks": "9935.16",
+      "products": "9935.16",
+      "total": "9935.16"
+    },
+    "costs_empty_reason": "rd 范围=费用说明为空（材料 table_applicability 原文；costs 表 0 行）",
+    "products_summary": {
+      "rows": 18,
+      "codes_sample": [
+        "26103142",
+        "26103141",
+        "26103140"
+      ],
+      "first_row": {
+        "code": "26103142",
+        "name": "昂跑Cloudzone",
+        "purchaser": "张宇昂",
+        "price": "1089.9"
+      }
+    },
+    "header": {
+      "corpCode": "厦门乔丹科技有限公司",
+      "bizOrign": "乔丹科技",
+      "payType": "转账",
+      "currencyType": "人民币",
+      "submitType": "研发材料费",
+      "budgetYears": "2026",
+      "description": "【历史回放测试·不保存·rd-complex-R2-namepicker】科技中心26年9月科技中心外购样品报销",
+      "totalCost": "9,935.16"
+    }
+  },
+  "verification": {
+    "ok": true,
+    "plan_hash": "dcf4f8953a75fb4ed9826f212bb1f87489e0f3ba023f34e1e90befccacbab4c0",
+    "snapshot_sha256_of_readback": "586f88b91f879353d2250889096a0b7ca234f1f744ffcf2d1e9c67b79dc13feb",
+    "independent_readback": "attempt_001/evidence/independent_readback.json",
+    "independent_verification": "attempt_001/evidence/independent_verification.json",
+    "products_archive_discipline": "18 行均按现有档案完整编号选入并回读核对 name/purchaser/price/description；未新造档案"
+  },
+  "disposition": {
+    "save_attempted": false,
+    "save_status": "NOT_ATTEMPTED",
+    "mode": "fill_only",
+    "keep_open_minutes": 5,
+    "end_state": "页面随 keep-open 自动关闭；未保存、未提交、未产生服务端单据",
+    "screenshots": [
+      "attempt_001/evidence/v1_final.png",
+      "attempt_001/evidence/fill_00_before.png",
+      "attempt_001/evidence/v1_details_after.png",
+      "attempt_001/evidence/v1_products_after.png",
+      "attempt_001/evidence/v1_banks_after.png"
+    ],
+    "v1_final_sha256": "074b2736e47223557f43001add46820c4aa81d19d9f241a127831ad1b72239e6"
+  },
+  "history": {
+    "v1": "20261024-174803-cd2e04e4 SUCCESS_FILL_ONLY（首次即成功，无失败-恢复轮次）"
+  }
+}

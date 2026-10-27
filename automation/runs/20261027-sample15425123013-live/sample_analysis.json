@@ -1,0 +1,72 @@
+{
+  "verified_at": "2026-10-27T02:04:56.007964+00:00",
+  "mode": "READ_ONLY",
+  "sample_number": "15425123013",
+  "source_kind": "live",
+  "source_files": {
+    "automation\\runs\\20261027-sample15425123013-live\\sample_snapshot.json": "1e90798890565660efb4d3e81ae64191a3843e337a66dd303aaddb84e8702d69",
+    "automation\\runs\\20261027-sample15425123013-live\\attempt_001\\evidence\\template_view_observation.json": "90e9de82ccdaa9f205b64f2b3cc447d75f994131066433a6944a8325ee31cd88"
+  },
+  "table_counts": {
+    "关联单据": 9,
+    "关联单据明细": 9,
+    "报销明细": 2,
+    "费用说明": 20,
+    "银行信息": 1,
+    "附件": 74
+  },
+  "reconciliation": {
+    "header": "2176.93",
+    "details": "2176.93",
+    "costs": "2176.93",
+    "traffic": "1924.93",
+    "historical_meals": "252.00",
+    "banks": "2176.93",
+    "relations": "2170.93",
+    "detailrels": "2170.93",
+    "relation_shortfall": "6.00"
+  },
+  "dom_api_counts_and_totals_consistent": true,
+  "latest_user_rule": {
+    "text": "餐补统一按【制单人-30元/天】填写",
+    "basis": "creator_only_per_verified_trip_day",
+    "historical_sample_meal_values_reusable": false
+  },
+  "illustration_for_verified_10_trip_days": {
+    "days": 10,
+    "meals": "300.00",
+    "traffic_plus_meals": "2224.93",
+    "status": "CALCULATION_ONLY_NO_PLAN_OR_OA_WRITES",
+    "coverage_must_be_rechecked_for_new_total": true
+  },
+  "sample_anomalies": [
+    {
+      "kind": "relation_allocation_total",
+      "actual": "2170.93",
+      "header": "2176.93",
+      "difference": "6.00"
+    },
+    {
+      "kind": "historical_date_range",
+      "start": "2025-11-24",
+      "end": "2025-12-24",
+      "rule": "Rebuild from actual trip facts; do not copy historical range."
+    },
+    {
+      "kind": "historical_date_label",
+      "sample_expense_date": "2025-11-14",
+      "verified_trip_date": "2025-11-12",
+      "rule": "Use verified WorkOut fact rows, not the historical label or sample expense date."
+    }
+  ],
+  "workflow_additions": [
+    "Traffic and meals are separate reimbursement detail categories; each actual trip day has separate traffic and meal explanation entries.",
+    "Traffic equals preserved mileage times 1 yuan plus deduplicated actual tolls.",
+    "Meals apply to the current form creator only at 30 yuan per actual verified day.",
+    "Allocate each linked form across its actual trip days and reconcile relations, detailrels, details, costs, bank and header totals.",
+    "Validate current applicant/creator/payee and current applicable budget rather than adopting another operator or expired template settings.",
+    "Keep an attachment inventory for mileage workbook, fuel invoices, toll invoices and corroborating summaries; this read-only task performs no upload."
+  ],
+  "business_write_actions": 0,
+  "save_actions": 0
+}

@@ -1,0 +1,179 @@
+{
+  "document_type": "welfare_labor",
+  "task_id": "chain-r10-welfare_labor-15426071883",
+  "operator": "陈晶",
+  "template": {
+    "biz_number": "15426071883",
+    "captured_at": "2026-10-24T08:42:23.041563+00:00",
+    "sha256": "8208a9ed89e504b23a942cb8f2f200cb2df0d00a9ef0ad5d1306d3d31272b177",
+    "snapshot_path": "template_snapshot.json"
+  },
+  "materials": {
+    "manifest_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\materials\\manifest.json"
+  },
+  "authorization": {
+    "mode": "fill_only",
+    "task_id": "chain-r10-welfare_labor-15426071883",
+    "allow_submit": false,
+    "statement": "合成离线链复跑（round-10 bpm_chain）：synthetic/test_only/not_new_expenses；仅 validate-only 子进程，不填真实页面、不保存不提交。"
+  },
+  "not_applicable": [],
+  "amount_rules": {
+    "costs": "not_applicable",
+    "costs_reason": "合成离线链材料：04 类本类费用不落 costs（研究样本 15426071883 costs=0 行；config costs_applicability 依据）",
+    "cost_amount_semantics": "line_total"
+  },
+  "applicant": {
+    "name": {
+      "value": "陈晶",
+      "fact_id": "F-0001",
+      "locator": "/applicant/name"
+    },
+    "company": {
+      "value": "厦门乔丹科技有限公司",
+      "fact_id": "F-0001",
+      "locator": "/applicant/company"
+    },
+    "department": {
+      "value": "运动表现研究部",
+      "fact_id": "F-0001",
+      "locator": "/applicant/department"
+    }
+  },
+  "header": {
+    "corpCode": {
+      "value": "厦门乔丹科技有限公司",
+      "fact_id": "F-0002",
+      "locator": "/header/corpCode"
+    },
+    "bizOrign": {
+      "value": "乔丹科技",
+      "fact_id": "F-0002",
+      "locator": "/header/bizOrign"
+    },
+    "budgetYears": {
+      "value": "2026",
+      "fact_id": "F-0002",
+      "locator": "/header/budgetYears"
+    },
+    "payType": {
+      "value": "转账",
+      "fact_id": "F-0002",
+      "locator": "/header/payType"
+    },
+    "currencyType": {
+      "value": "人民币",
+      "fact_id": "F-0002",
+      "locator": "/header/currencyType"
+    },
+    "submitType": {
+      "value": "福利费、劳保用品",
+      "fact_id": "F-0002",
+      "locator": "/header/submitType"
+    },
+    "description": {
+      "value": "【合成测试材料·离线链验证·welfare_labor r9】部门团建费用",
+      "fact_id": "F-0002",
+      "locator": "/header/description"
+    }
+  },
+  "tables": {
+    "relations": [],
+    "details": [
+      {
+        "row_id": "d1",
+        "fields": {
+          "reimItem": {
+            "value": "04003",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/reimItem"
+          },
+          "digest": {
+            "value": "合成：部门团建",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/digest"
+          },
+          "budgetDeptName": {
+            "value": "集团人力行政中心",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/budgetDeptName"
+          },
+          "budgetNo": {
+            "value": "15626010048",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/budgetNo"
+          },
+          "subjectName": {
+            "value": "职工薪酬-福利费-团建费",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/subjectName"
+          },
+          "budgetItemName": {
+            "value": "员工福利费-部门团建费",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/budgetItemName"
+          },
+          "budgetOwner": {
+            "value": "21",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/budgetOwner"
+          },
+          "cost": {
+            "value": "2345.67",
+            "fact_id": "F-0004",
+            "locator": "/tables/details/0/fields/cost"
+          }
+        }
+      }
+    ],
+    "costs": [],
+    "banks": [
+      {
+        "row_id": "b1",
+        "fields": {
+          "payee": {
+            "value": "收款人丁",
+            "fact_id": "F-0005",
+            "locator": "/tables/banks/0/fields/payee"
+          },
+          "account": {
+            "value": "6217000000000000011",
+            "fact_id": "F-0005",
+            "locator": "/tables/banks/0/fields/account"
+          },
+          "bank": {
+            "value": "中国银行股份有限公司厦门分行",
+            "fact_id": "F-0005",
+            "locator": "/tables/banks/0/fields/bank"
+          },
+          "bankCode": {
+            "value": "104393000011",
+            "fact_id": "F-0005",
+            "locator": "/tables/banks/0/fields/bankCode"
+          },
+          "cost": {
+            "value": "2345.67",
+            "fact_id": "F-0005",
+            "locator": "/tables/banks/0/fields/cost"
+          }
+        }
+      }
+    ]
+  },
+  "total": {
+    "value": "2345.67",
+    "fact_id": "F-0003"
+  },
+  "table_applicability": {
+    "relations": {
+      "value": "合成离线链材料：04 类 plan 级非空 relations 待 bpm_plan 授权轮（本轮裁决①）；真实单实测福利申请单(74)关联见 config observed_relation_types",
+      "fact_id": "F-0006",
+      "locator": "/table_applicability/relations/reason"
+    },
+    "costs": {
+      "value": "合成离线链材料：04 类本类费用不落 costs（研究样本 15426071883 costs=0 行；config costs_applicability 依据）",
+      "fact_id": "F-0007",
+      "locator": "/table_applicability/costs/reason"
+    }
+  }
+}

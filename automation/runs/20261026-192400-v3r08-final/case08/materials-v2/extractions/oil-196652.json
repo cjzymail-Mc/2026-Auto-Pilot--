@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "reviewed": true,
+  "reviewed_by": "CASE-08-acceptance-agent",
+  "original_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票4.pdf",
+  "original_sha256": "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452",
+  "records": [
+    {
+      "record_id": "oil-196652",
+      "fields": {
+        "invoice_number": {
+          "value": "25357000000191196652",
+          "locator": "page:1/text-layer:“发票号码：”行(数电20位)"
+        },
+        "issue_date": {
+          "value": "2025年12月12日",
+          "locator": "page:1/text-layer:“开票日期：”行"
+        },
+        "amount": {
+          "value": "433.16",
+          "locator": "page:1/text-layer:价税合计（小写）行"
+        }
+      }
+    }
+  ]
+}

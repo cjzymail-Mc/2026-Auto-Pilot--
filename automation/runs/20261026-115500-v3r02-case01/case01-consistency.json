@@ -1,0 +1,811 @@
+{
+ "stage": "C 大写↔小写一致性核验（票面内部，不含范围裁定）",
+ "cn_small_checks": 72,
+ "cn_small_matches": 72,
+ "ex_tax_close_checks": 25,
+ "ex_tax_close_matches": 25,
+ "mismatches": [],
+ "checks": [
+  {
+   "rel": "0825/0825厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0825/0825厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0825/0825晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0825/0825晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0825/0825通行费电子票据汇总单(票据).pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0825/0825通行费电子票据汇总单(票据)2.pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0825/0825通行费电子票据汇总单(行程).pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0825/0825通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0904/0904厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0904/0904厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0904/0904晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0904/0904晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0904/0904通行费电子票据汇总单(票据).pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0904/0904通行费电子票据汇总单(票据)2.pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0904/0904通行费电子票据汇总单(行程).pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0904/0904通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "0906/0905厦门到晋江发票1.pdf",
+   "class": "toll_invoice",
+   "small": "4.41",
+   "big": "肆元肆角壹分",
+   "big_as_decimal": "4.41",
+   "match": true
+  },
+  {
+   "rel": "0906/0905厦门到晋江发票2.pdf",
+   "class": "toll_invoice",
+   "small": "15.54",
+   "big": "壹拾伍元伍角肆分",
+   "big_as_decimal": "15.54",
+   "match": true
+  },
+  {
+   "rel": "0906/0905厦门到晋江发票2.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "15.09",
+   "tax": "0.45",
+   "total": "15.54",
+   "match": true
+  },
+  {
+   "rel": "0906/0905晋江到厦门发票1.pdf",
+   "class": "toll_invoice",
+   "small": "4.42",
+   "big": "肆元肆角贰分",
+   "big_as_decimal": "4.42",
+   "match": true
+  },
+  {
+   "rel": "0906/0905晋江到厦门发票2.pdf",
+   "class": "toll_invoice",
+   "small": "15.53",
+   "big": "壹拾伍元伍角叁分",
+   "big_as_decimal": "15.53",
+   "match": true
+  },
+  {
+   "rel": "0906/0905晋江到厦门发票2.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "15.08",
+   "tax": "0.45",
+   "total": "15.53",
+   "match": true
+  },
+  {
+   "rel": "0906/0905通行费电子票据汇总单(票据).pdf",
+   "class": "summary_by_invoice",
+   "small": "19.95",
+   "big": "壹拾玖元玖角伍分",
+   "big_as_decimal": "19.95",
+   "match": true
+  },
+  {
+   "rel": "0906/0905通行费电子票据汇总单(票据)2.pdf",
+   "class": "summary_by_invoice",
+   "small": "19.95",
+   "big": "壹拾玖元玖角伍分",
+   "big_as_decimal": "19.95",
+   "match": true
+  },
+  {
+   "rel": "0906/0905通行费电子票据汇总单(行程).pdf",
+   "class": "summary_by_trip",
+   "small": "19.95",
+   "big": "壹拾玖元玖角伍分",
+   "big_as_decimal": "19.95",
+   "match": true
+  },
+  {
+   "rel": "0906/0905通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "19.95",
+   "big": "壹拾玖元玖角伍分",
+   "big_as_decimal": "19.95",
+   "match": true
+  },
+  {
+   "rel": "0917/0917厦门到晋江发票1.pdf",
+   "class": "toll_invoice",
+   "small": "15.69",
+   "big": "壹拾伍元陆角玖分",
+   "big_as_decimal": "15.69",
+   "match": true
+  },
+  {
+   "rel": "0917/0917厦门到晋江发票1.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "15.23",
+   "tax": "0.46",
+   "total": "15.69",
+   "match": true
+  },
+  {
+   "rel": "0917/0917厦门到晋江发票2.pdf",
+   "class": "toll_invoice",
+   "small": "16.24",
+   "big": "壹拾陆元贰角肆分",
+   "big_as_decimal": "16.24",
+   "match": true
+  },
+  {
+   "rel": "0917/0917晋江到厦门发票1.pdf",
+   "class": "toll_invoice",
+   "small": "16.24",
+   "big": "壹拾陆元贰角肆分",
+   "big_as_decimal": "16.24",
+   "match": true
+  },
+  {
+   "rel": "0917/0917晋江到厦门发票2.pdf",
+   "class": "toll_invoice",
+   "small": "20.73",
+   "big": "贰拾元零柒角叁分",
+   "big_as_decimal": "20.73",
+   "match": true
+  },
+  {
+   "rel": "0917/0917晋江到厦门发票2.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "20.13",
+   "tax": "0.60",
+   "total": "20.73",
+   "match": true
+  },
+  {
+   "rel": "0917/0917通行费电子票据汇总单(票据).pdf",
+   "class": "summary_by_invoice",
+   "small": "31.93",
+   "big": "叁拾壹元玖角叁分",
+   "big_as_decimal": "31.93",
+   "match": true
+  },
+  {
+   "rel": "0917/0917通行费电子票据汇总单(票据)1.pdf",
+   "class": "summary_by_invoice",
+   "small": "36.97",
+   "big": "叁拾陆元玖角柒分",
+   "big_as_decimal": "36.97",
+   "match": true
+  },
+  {
+   "rel": "0917/0917通行费电子票据汇总单(行程).pdf",
+   "class": "summary_by_trip",
+   "small": "31.93",
+   "big": "叁拾壹元玖角叁分",
+   "big_as_decimal": "31.93",
+   "match": true
+  },
+  {
+   "rel": "0917/0917通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "36.97",
+   "big": "叁拾陆元玖角柒分",
+   "big_as_decimal": "36.97",
+   "match": true
+  },
+  {
+   "rel": "0928/0928厦门到晋江发票1.pdf",
+   "class": "toll_invoice",
+   "small": "16.24",
+   "big": "壹拾陆元贰角肆分",
+   "big_as_decimal": "16.24",
+   "match": true
+  },
+  {
+   "rel": "0928/0928厦门到晋江发票2.pdf",
+   "class": "toll_invoice",
+   "small": "15.69",
+   "big": "壹拾伍元陆角玖分",
+   "big_as_decimal": "15.69",
+   "match": true
+  },
+  {
+   "rel": "0928/0928厦门到晋江发票2.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "15.23",
+   "tax": "0.46",
+   "total": "15.69",
+   "match": true
+  },
+  {
+   "rel": "0928/0928晋江到厦门发票1.pdf",
+   "class": "toll_invoice",
+   "small": "16.24",
+   "big": "壹拾陆元贰角肆分",
+   "big_as_decimal": "16.24",
+   "match": true
+  },
+  {
+   "rel": "0928/0928晋江到厦门发票2.pdf",
+   "class": "toll_invoice",
+   "small": "15.69",
+   "big": "壹拾伍元陆角玖分",
+   "big_as_decimal": "15.69",
+   "match": true
+  },
+  {
+   "rel": "0928/0928晋江到厦门发票2.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "15.23",
+   "tax": "0.46",
+   "total": "15.69",
+   "match": true
+  },
+  {
+   "rel": "0928/0928通行费电子票据汇总单(票据).pdf",
+   "class": "summary_by_invoice",
+   "small": "31.93",
+   "big": "叁拾壹元玖角叁分",
+   "big_as_decimal": "31.93",
+   "match": true
+  },
+  {
+   "rel": "0928/0928通行费电子票据汇总单(票据)2.pdf",
+   "class": "summary_by_invoice",
+   "small": "31.93",
+   "big": "叁拾壹元玖角叁分",
+   "big_as_decimal": "31.93",
+   "match": true
+  },
+  {
+   "rel": "0928/0928通行费电子票据汇总单(行程).pdf",
+   "class": "summary_by_trip",
+   "small": "31.93",
+   "big": "叁拾壹元玖角叁分",
+   "big_as_decimal": "31.93",
+   "match": true
+  },
+  {
+   "rel": "0928/0928通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "31.93",
+   "big": "叁拾壹元玖角叁分",
+   "big_as_decimal": "31.93",
+   "match": true
+  },
+  {
+   "rel": "1028/1028厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1028/1028厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1028/1028晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1028/1028晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1028/1028通行费电子票据汇总单(票据).pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1028/1028通行费电子票据汇总单(票据)2.pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1028/1028通行费电子票据汇总单(行程).pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1028/1028通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1112/1112厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1112/1112厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1112/1112晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1112/1112晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1112/1112通行费电子票据汇总单(票据).pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1112/1112通行费电子票据汇总单(票据)2.pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1112/1112通行费电子票据汇总单(行程).pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1112/1112通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1124/1124厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1124/1124厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1124/1124晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1124/1124晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1124/1124通行费电子票据汇总单(票据).pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1124/1124通行费电子票据汇总单(票据)2.pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1124/1124通行费电子票据汇总单(行程).pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1124/1124通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1204/1204厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1204/1204厦门到晋江发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1204/1204晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1204/1204晋江到厦门发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1204/1204通行费电子票据汇总单(票据).pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1204/1204通行费电子票据汇总单(票据)2.pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1204/1204通行费电子票据汇总单(行程).pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1204/1204通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1210/1210厦门-晋江发票.pdf",
+   "class": "toll_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1210/1210厦门-晋江发票.pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "21.98",
+   "tax": "0.66",
+   "total": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1210/1210晋江-厦门1 (2).pdf",
+   "class": "toll_invoice",
+   "small": "15.53",
+   "big": "壹拾伍元伍角叁分",
+   "big_as_decimal": "15.53",
+   "match": true
+  },
+  {
+   "rel": "1210/1210晋江-厦门1 (2).pdf",
+   "class": "toll_invoice",
+   "kind": "ex_tax_close",
+   "ex": "15.08",
+   "tax": "0.45",
+   "total": "15.53",
+   "match": true
+  },
+  {
+   "rel": "1210/1210晋江-厦门1.pdf",
+   "class": "toll_invoice",
+   "small": "4.42",
+   "big": "肆元肆角贰分",
+   "big_as_decimal": "4.42",
+   "match": true
+  },
+  {
+   "rel": "1210/1210通行费电子票据汇总单(票据)1.pdf",
+   "class": "summary_by_invoice",
+   "small": "19.95",
+   "big": "壹拾玖元玖角伍分",
+   "big_as_decimal": "19.95",
+   "match": true
+  },
+  {
+   "rel": "1210/1210通行费电子票据汇总单(票据)2.pdf",
+   "class": "summary_by_invoice",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "1210/1210通行费电子票据汇总单(行程)1.pdf",
+   "class": "summary_by_trip",
+   "small": "19.95",
+   "big": "壹拾玖元玖角伍分",
+   "big_as_decimal": "19.95",
+   "match": true
+  },
+  {
+   "rel": "1210/1210通行费电子票据汇总单(行程)2.pdf",
+   "class": "summary_by_trip",
+   "small": "22.64",
+   "big": "贰拾贰元陆角肆分",
+   "big_as_decimal": "22.64",
+   "match": true
+  },
+  {
+   "rel": "油票/油票1.pdf",
+   "class": "fuel_invoice",
+   "small": "444.15",
+   "big": "肆佰肆拾肆圆壹角伍分",
+   "big_as_decimal": "444.15",
+   "match": true
+  },
+  {
+   "rel": "油票/油票1.pdf",
+   "class": "fuel_invoice",
+   "kind": "ex_tax_close",
+   "ex": "393.05",
+   "tax": "51.10",
+   "total": "444.15",
+   "match": true
+  },
+  {
+   "rel": "油票/油票2.pdf",
+   "class": "fuel_invoice",
+   "small": "414.68",
+   "big": "肆佰壹拾肆圆陆角捌分",
+   "big_as_decimal": "414.68",
+   "match": true
+  },
+  {
+   "rel": "油票/油票2.pdf",
+   "class": "fuel_invoice",
+   "kind": "ex_tax_close",
+   "ex": "366.97",
+   "tax": "47.71",
+   "total": "414.68",
+   "match": true
+  },
+  {
+   "rel": "油票/油票3.pdf",
+   "class": "fuel_invoice",
+   "small": "300.00",
+   "big": "叁佰圆整",
+   "big_as_decimal": "300",
+   "match": true
+  },
+  {
+   "rel": "油票/油票3.pdf",
+   "class": "fuel_invoice",
+   "kind": "ex_tax_close",
+   "ex": "265.49",
+   "tax": "34.51",
+   "total": "300.00",
+   "match": true
+  },
+  {
+   "rel": "油票/油票4.pdf",
+   "class": "fuel_invoice",
+   "small": "433.16",
+   "big": "肆佰叁拾叁圆壹角陆分",
+   "big_as_decimal": "433.16",
+   "match": true
+  },
+  {
+   "rel": "油票/油票4.pdf",
+   "class": "fuel_invoice",
+   "kind": "ex_tax_close",
+   "ex": "383.33",
+   "tax": "49.83",
+   "total": "433.16",
+   "match": true
+  },
+  {
+   "rel": "油票/油票5.pdf",
+   "class": "fuel_invoice",
+   "small": "439.18",
+   "big": "肆佰叁拾玖圆壹角捌分",
+   "big_as_decimal": "439.18",
+   "match": true
+  },
+  {
+   "rel": "油票/油票5.pdf",
+   "class": "fuel_invoice",
+   "kind": "ex_tax_close",
+   "ex": "388.65",
+   "tax": "50.53",
+   "total": "439.18",
+   "match": true
+  }
+ ]
+}

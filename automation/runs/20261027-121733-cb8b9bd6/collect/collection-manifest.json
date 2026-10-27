@@ -1,0 +1,2059 @@
+{
+ "files": [
+  {
+   "bytes": 41808,
+   "copy": "20250826_通行费发票_厦门到晋江_16304714_20b93a2a.pdf",
+   "identities": [
+    "16304714"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16304714",
+     "page": 1
+    }
+   ],
+   "rel": "0825/0825厦门到晋江发票.pdf",
+   "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6"
+  },
+  {
+   "bytes": 41801,
+   "copy": "20250826_通行费发票_晋江到厦门_16166322_771f05b9.pdf",
+   "identities": [
+    "16166322"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16166322",
+     "page": 1
+    }
+   ],
+   "rel": "0825/0825晋江到厦门发票.pdf",
+   "sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124"
+  },
+  {
+   "bytes": 45789,
+   "copy": "无日期_汇总单票据_3520250800404681_5dcf1a16.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0825/0825通行费电子票据汇总单(票据).pdf",
+   "sha256": "ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75",
+   "summary_number": "3520250800404681"
+  },
+  {
+   "bytes": 45742,
+   "copy": "无日期_汇总单票据_3520250800404618_2a65c29f.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0825/0825通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7",
+   "summary_number": "3520250800404618"
+  },
+  {
+   "bytes": 45558,
+   "copy": "无日期_汇总单行程_3520250800404681_ec26e52f.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0825/0825通行费电子票据汇总单(行程).pdf",
+   "sha256": "941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a",
+   "summary_number": "3520250800404681"
+  },
+  {
+   "bytes": 45529,
+   "copy": "无日期_汇总单行程_3520250800404618_d81f7ed8.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0825/0825通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069",
+   "summary_number": "3520250800404618"
+  },
+  {
+   "bytes": 41798,
+   "copy": "20250905_通行费发票_厦门到晋江_16104706_361851dc.pdf",
+   "identities": [
+    "16104706"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16104706",
+     "page": 1
+    }
+   ],
+   "rel": "0904/0904厦门到晋江发票.pdf",
+   "sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df"
+  },
+  {
+   "bytes": 41828,
+   "copy": "20250905_通行费发票_晋江到厦门_16104709_45cd8ec6.pdf",
+   "identities": [
+    "16104709"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16104709",
+     "page": 1
+    }
+   ],
+   "rel": "0904/0904晋江到厦门发票.pdf",
+   "sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b"
+  },
+  {
+   "bytes": 45806,
+   "copy": "无日期_汇总单票据_3520250900092215_16662a5b.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0904/0904通行费电子票据汇总单(票据).pdf",
+   "sha256": "6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc",
+   "summary_number": "3520250900092215"
+  },
+  {
+   "bytes": 45788,
+   "copy": "无日期_汇总单票据_3520250900092251_7d5e0013.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0904/0904通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb",
+   "summary_number": "3520250900092251"
+  },
+  {
+   "bytes": 45574,
+   "copy": "无日期_汇总单行程_3520250900092215_b6f2eac8.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0904/0904通行费电子票据汇总单(行程).pdf",
+   "sha256": "e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071",
+   "summary_number": "3520250900092215"
+  },
+  {
+   "bytes": 45559,
+   "copy": "无日期_汇总单行程_3520250900092251_9aca8078.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0904/0904通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7",
+   "summary_number": "3520250900092251"
+  },
+  {
+   "bytes": 38488,
+   "copy": "20250906_通行费发票_厦门到晋江_15913017_5a20ce14.pdf",
+   "identities": [
+    "15913017"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "15913017",
+     "page": 1
+    }
+   ],
+   "rel": "0906/0905厦门到晋江发票1.pdf",
+   "sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a"
+  },
+  {
+   "bytes": 41782,
+   "copy": "20250906_通行费发票_厦门到晋江_16108478_9124720e.pdf",
+   "identities": [
+    "16108478"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16108478",
+     "page": 1
+    }
+   ],
+   "rel": "0906/0905厦门到晋江发票2.pdf",
+   "sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb"
+  },
+  {
+   "bytes": 38471,
+   "copy": "20250906_通行费发票_晋江到厦门_15913011_a4bd02c9.pdf",
+   "identities": [
+    "15913011"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "15913011",
+     "page": 1
+    }
+   ],
+   "rel": "0906/0905晋江到厦门发票1.pdf",
+   "sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e"
+  },
+  {
+   "bytes": 41744,
+   "copy": "20250906_通行费发票_晋江到厦门_16366191_7bbf4ac8.pdf",
+   "identities": [
+    "16366191"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16366191",
+     "page": 1
+    }
+   ],
+   "rel": "0906/0905晋江到厦门发票2.pdf",
+   "sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1"
+  },
+  {
+   "bytes": 46812,
+   "copy": "无日期_汇总单票据_3520250900105488_a50c4a08.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0906/0905通行费电子票据汇总单(票据).pdf",
+   "sha256": "a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4",
+   "summary_number": "3520250900105488"
+  },
+  {
+   "bytes": 46826,
+   "copy": "无日期_汇总单票据_3520250900105478_e80e8f95.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0906/0905通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8",
+   "summary_number": "3520250900105478"
+  },
+  {
+   "bytes": 46129,
+   "copy": "无日期_汇总单行程_3520250900105488_201470c4.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0906/0905通行费电子票据汇总单(行程).pdf",
+   "sha256": "881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8",
+   "summary_number": "3520250900105488"
+  },
+  {
+   "bytes": 46141,
+   "copy": "无日期_汇总单行程_3520250900105478_21ab410c.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0906/0905通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14",
+   "summary_number": "3520250900105478"
+  },
+  {
+   "bytes": 41848,
+   "copy": "20250918_通行费发票_厦门到晋江_16227300_57a8835d.pdf",
+   "identities": [
+    "16227300"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16227300",
+     "page": 1
+    }
+   ],
+   "rel": "0917/0917厦门到晋江发票1.pdf",
+   "sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55"
+  },
+  {
+   "bytes": 39228,
+   "copy": "20250918_通行费发票_厦门到晋江_16657870_2d470928.pdf",
+   "identities": [
+    "16657870"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16657870",
+     "page": 1
+    }
+   ],
+   "rel": "0917/0917厦门到晋江发票2.pdf",
+   "sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937"
+  },
+  {
+   "bytes": 39211,
+   "copy": "20250918_通行费发票_晋江到厦门_16657942_1e4d9c8e.pdf",
+   "identities": [
+    "16657942"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16657942",
+     "page": 1
+    }
+   ],
+   "rel": "0917/0917晋江到厦门发票1.pdf",
+   "sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3"
+  },
+  {
+   "bytes": 41991,
+   "copy": "20250918_通行费发票_晋江到厦门_16227311_8697581b.pdf",
+   "identities": [
+    "16227311"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16227311",
+     "page": 1
+    }
+   ],
+   "rel": "0917/0917晋江到厦门发票2.pdf",
+   "sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3"
+  },
+  {
+   "bytes": 47147,
+   "copy": "无日期_汇总单票据_3520250900282520_b578fc4a.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0917/0917通行费电子票据汇总单(票据).pdf",
+   "sha256": "8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d",
+   "summary_number": "3520250900282520"
+  },
+  {
+   "bytes": 47106,
+   "copy": "无日期_汇总单票据_3520250900282612_e3effecc.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0917/0917通行费电子票据汇总单(票据)1.pdf",
+   "sha256": "c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f",
+   "summary_number": "3520250900282612"
+  },
+  {
+   "bytes": 46416,
+   "copy": "无日期_汇总单行程_3520250900282520_7b4a95c0.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0917/0917通行费电子票据汇总单(行程).pdf",
+   "sha256": "b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b",
+   "summary_number": "3520250900282520"
+  },
+  {
+   "bytes": 46477,
+   "copy": "无日期_汇总单行程_3520250900282612_3b149dfe.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0917/0917通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8",
+   "summary_number": "3520250900282612"
+  },
+  {
+   "bytes": 39226,
+   "copy": "20250929_通行费发票_厦门到晋江_16858364_f0645949.pdf",
+   "identities": [
+    "16858364"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16858364",
+     "page": 1
+    }
+   ],
+   "rel": "0928/0928厦门到晋江发票1.pdf",
+   "sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27"
+  },
+  {
+   "bytes": 41844,
+   "copy": "20250929_通行费发票_厦门到晋江_16422064_6b9cc796.pdf",
+   "identities": [
+    "16422064"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16422064",
+     "page": 1
+    }
+   ],
+   "rel": "0928/0928厦门到晋江发票2.pdf",
+   "sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753"
+  },
+  {
+   "bytes": 39213,
+   "copy": "20250929_通行费发票_晋江到厦门_16548299_f563d088.pdf",
+   "identities": [
+    "16548299"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "16548299",
+     "page": 1
+    }
+   ],
+   "rel": "0928/0928晋江到厦门发票1.pdf",
+   "sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5"
+  },
+  {
+   "bytes": 41827,
+   "copy": "20250929_通行费发票_晋江到厦门_17727508_f0de85e8.pdf",
+   "identities": [
+    "17727508"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "17727508",
+     "page": 1
+    }
+   ],
+   "rel": "0928/0928晋江到厦门发票2.pdf",
+   "sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae"
+  },
+  {
+   "bytes": 47126,
+   "copy": "无日期_汇总单票据_3520250900432758_a48553a6.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0928/0928通行费电子票据汇总单(票据).pdf",
+   "sha256": "d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba",
+   "summary_number": "3520250900432758"
+  },
+  {
+   "bytes": 47148,
+   "copy": "无日期_汇总单票据_3520250900432800_3556610c.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "0928/0928通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce",
+   "summary_number": "3520250900432800"
+  },
+  {
+   "bytes": 46396,
+   "copy": "无日期_汇总单行程_3520250900432758_fe4f406a.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0928/0928通行费电子票据汇总单(行程).pdf",
+   "sha256": "29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81",
+   "summary_number": "3520250900432758"
+  },
+  {
+   "bytes": 46415,
+   "copy": "无日期_汇总单行程_3520250900432800_06aa7e13.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "0928/0928通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289",
+   "summary_number": "3520250900432800"
+  },
+  {
+   "bytes": 41793,
+   "copy": "20251028_通行费发票_厦门到晋江_17793922_529459ad.pdf",
+   "identities": [
+    "17793922"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "17793922",
+     "page": 1
+    }
+   ],
+   "rel": "1028/1028厦门到晋江发票.pdf",
+   "sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd"
+  },
+  {
+   "bytes": 41802,
+   "copy": "20251028_通行费发票_晋江到厦门_17794993_4e02d674.pdf",
+   "identities": [
+    "17794993"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "17794993",
+     "page": 1
+    }
+   ],
+   "rel": "1028/1028晋江到厦门发票.pdf",
+   "sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc"
+  },
+  {
+   "bytes": 45792,
+   "copy": "无日期_汇总单票据_3520251000349301_5def8da4.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1028/1028通行费电子票据汇总单(票据).pdf",
+   "sha256": "8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0",
+   "summary_number": "3520251000349301"
+  },
+  {
+   "bytes": 45794,
+   "copy": "无日期_汇总单票据_3520251000353752_8b21067c.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1028/1028通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa",
+   "summary_number": "3520251000353752"
+  },
+  {
+   "bytes": 45562,
+   "copy": "无日期_汇总单行程_3520251000349301_1d6071e4.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1028/1028通行费电子票据汇总单(行程).pdf",
+   "sha256": "f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7",
+   "summary_number": "3520251000349301"
+  },
+  {
+   "bytes": 45564,
+   "copy": "无日期_汇总单行程_3520251000353752_08443de8.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1028/1028通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c",
+   "summary_number": "3520251000353752"
+  },
+  {
+   "bytes": 41802,
+   "copy": "20251112_通行费发票_厦门到晋江_17950250_3876b17e.pdf",
+   "identities": [
+    "17950250"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "17950250",
+     "page": 1
+    }
+   ],
+   "rel": "1112/1112厦门到晋江发票.pdf",
+   "sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a"
+  },
+  {
+   "bytes": 41822,
+   "copy": "20251112_通行费发票_晋江到厦门_17952458_96f40e06.pdf",
+   "identities": [
+    "17952458"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "17952458",
+     "page": 1
+    }
+   ],
+   "rel": "1112/1112晋江到厦门发票.pdf",
+   "sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31"
+  },
+  {
+   "bytes": 45791,
+   "copy": "无日期_汇总单票据_3520251100189937_bc5fb0b2.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1112/1112通行费电子票据汇总单(票据).pdf",
+   "sha256": "75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845",
+   "summary_number": "3520251100189937"
+  },
+  {
+   "bytes": 45840,
+   "copy": "无日期_汇总单票据_3520251100197026_3a722430.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1112/1112通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65",
+   "summary_number": "3520251100197026"
+  },
+  {
+   "bytes": 45805,
+   "copy": "无日期_汇总单行程_3520251100189937_a01bc167.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1112/1112通行费电子票据汇总单(行程).pdf",
+   "sha256": "81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6",
+   "summary_number": "3520251100189937"
+  },
+  {
+   "bytes": 45855,
+   "copy": "无日期_汇总单行程_3520251100197026_02fd51ad.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1112/1112通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa",
+   "summary_number": "3520251100197026"
+  },
+  {
+   "bytes": 41818,
+   "copy": "20251124_通行费发票_厦门到晋江_20703083_5e79b592.pdf",
+   "identities": [
+    "20703083"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "20703083",
+     "page": 1
+    }
+   ],
+   "rel": "1124/1124厦门到晋江发票.pdf",
+   "sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c"
+  },
+  {
+   "bytes": 41828,
+   "copy": "20251124_通行费发票_晋江到厦门_18011706_011757fb.pdf",
+   "identities": [
+    "18011706"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "18011706",
+     "page": 1
+    }
+   ],
+   "rel": "1124/1124晋江到厦门发票.pdf",
+   "sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507"
+  },
+  {
+   "bytes": 45792,
+   "copy": "无日期_汇总单票据_3520251100356544_bf9a5b52.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1124/1124通行费电子票据汇总单(票据).pdf",
+   "sha256": "0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657",
+   "summary_number": "3520251100356544"
+  },
+  {
+   "bytes": 45792,
+   "copy": "无日期_汇总单票据_3520251100359670_3d5b5c3b.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1124/1124通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d",
+   "summary_number": "3520251100359670"
+  },
+  {
+   "bytes": 45803,
+   "copy": "无日期_汇总单行程_3520251100356544_2d88fa36.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1124/1124通行费电子票据汇总单(行程).pdf",
+   "sha256": "060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839",
+   "summary_number": "3520251100356544"
+  },
+  {
+   "bytes": 45804,
+   "copy": "无日期_汇总单行程_3520251100359670_801bc179.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1124/1124通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295",
+   "summary_number": "3520251100359670"
+  },
+  {
+   "bytes": 41820,
+   "copy": "20251204_通行费发票_厦门到晋江_18196512_d7a86968.pdf",
+   "identities": [
+    "18196512"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "18196512",
+     "page": 1
+    }
+   ],
+   "rel": "1204/1204厦门到晋江发票.pdf",
+   "sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2"
+  },
+  {
+   "bytes": 41816,
+   "copy": "20251204_通行费发票_晋江到厦门_18197206_56d15941.pdf",
+   "identities": [
+    "18197206"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "18197206",
+     "page": 1
+    }
+   ],
+   "rel": "1204/1204晋江到厦门发票.pdf",
+   "sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574"
+  },
+  {
+   "bytes": 45786,
+   "copy": "无日期_汇总单票据_3520251200079962_296aa2c4.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1204/1204通行费电子票据汇总单(票据).pdf",
+   "sha256": "878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2",
+   "summary_number": "3520251200079962"
+  },
+  {
+   "bytes": 45789,
+   "copy": "无日期_汇总单票据_3520251200082809_b0dc2694.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1204/1204通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b",
+   "summary_number": "3520251200082809"
+  },
+  {
+   "bytes": 45800,
+   "copy": "无日期_汇总单行程_3520251200079962_750183aa.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1204/1204通行费电子票据汇总单(行程).pdf",
+   "sha256": "c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e",
+   "summary_number": "3520251200079962"
+  },
+  {
+   "bytes": 45802,
+   "copy": "无日期_汇总单行程_3520251200082809_b3d55e48.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1204/1204通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749",
+   "summary_number": "3520251200082809"
+  },
+  {
+   "bytes": 41814,
+   "copy": "20251210_通行费发票_厦门到晋江_20514402_ec367d9f.pdf",
+   "identities": [
+    "20514402"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "20514402",
+     "page": 1
+    }
+   ],
+   "rel": "1210/1210厦门-晋江发票.pdf",
+   "sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188"
+  },
+  {
+   "bytes": 41729,
+   "copy": "20251210_通行费发票_晋江到厦门_20519372_e73f9663.pdf",
+   "identities": [
+    "20519372"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "20519372",
+     "page": 1
+    }
+   ],
+   "rel": "1210/1210晋江-厦门1 (2).pdf",
+   "sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa"
+  },
+  {
+   "bytes": 38482,
+   "copy": "20251210_通行费发票_晋江到厦门_19977515_2a5662d7.pdf",
+   "identities": [
+    "19977515"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "toll_invoice",
+     "invoice_code": "035002400112",
+     "invoice_number": "19977515",
+     "page": 1
+    }
+   ],
+   "rel": "1210/1210晋江-厦门1.pdf",
+   "sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168"
+  },
+  {
+   "bytes": 46811,
+   "copy": "无日期_汇总单票据_3520251200189737_621eed63.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1210/1210通行费电子票据汇总单(票据)1.pdf",
+   "sha256": "5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272",
+   "summary_number": "3520251200189737"
+  },
+  {
+   "bytes": 45743,
+   "copy": "无日期_汇总单票据_3520251200181224_ea8a750e.pdf",
+   "kind": "summary_by_ticket",
+   "pages": [
+    {
+     "class": "summary_by_ticket",
+     "page": 1
+    }
+   ],
+   "rel": "1210/1210通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299",
+   "summary_number": "3520251200181224"
+  },
+  {
+   "bytes": 46363,
+   "copy": "无日期_汇总单行程_3520251200189737_1d6b0d1e.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1210/1210通行费电子票据汇总单(行程)1.pdf",
+   "sha256": "934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2",
+   "summary_number": "3520251200189737"
+  },
+  {
+   "bytes": 45753,
+   "copy": "无日期_汇总单行程_3520251200181224_b1c880ce.pdf",
+   "kind": "summary_by_trip",
+   "pages": [
+    {
+     "class": "summary_by_trip",
+     "page": 1
+    }
+   ],
+   "rel": "1210/1210通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157",
+   "summary_number": "3520251200181224"
+  },
+  {
+   "bytes": 12875,
+   "copy": null,
+   "kind": "non_pdf_material",
+   "rel": "12月-自驾公出公里数统计表.xlsx",
+   "sha256": "2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83"
+  },
+  {
+   "bytes": 63415,
+   "copy": "20251212_油票_25357000000191876369_4bfa13f0.pdf",
+   "identities": [
+    "25357000000191876369"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "fuel_invoice",
+     "invoice_number": "25357000000191876369",
+     "page": 1
+    }
+   ],
+   "rel": "油票/油票1.pdf",
+   "sha256": "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc"
+  },
+  {
+   "bytes": 63626,
+   "copy": "20251212_油票_25357000000191876368_f0801b1d.pdf",
+   "identities": [
+    "25357000000191876368"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "fuel_invoice",
+     "invoice_number": "25357000000191876368",
+     "page": 1
+    }
+   ],
+   "rel": "油票/油票2.pdf",
+   "sha256": "edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74"
+  },
+  {
+   "bytes": 62972,
+   "copy": "20251212_油票_25357000000191872798_6eb77210.pdf",
+   "identities": [
+    "25357000000191872798"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "fuel_invoice",
+     "invoice_number": "25357000000191872798",
+     "page": 1
+    }
+   ],
+   "rel": "油票/油票3.pdf",
+   "sha256": "6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b"
+  },
+  {
+   "bytes": 63588,
+   "copy": "20251212_油票_25357000000191196652_00e92daf.pdf",
+   "identities": [
+    "25357000000191196652"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "fuel_invoice",
+     "invoice_number": "25357000000191196652",
+     "page": 1
+    }
+   ],
+   "rel": "油票/油票4.pdf",
+   "sha256": "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452"
+  },
+  {
+   "bytes": 63816,
+   "copy": "20251212_油票_25357000000191194735_0ed38f50.pdf",
+   "identities": [
+    "25357000000191194735"
+   ],
+   "kind": "invoice_file",
+   "pages": [
+    {
+     "class": "fuel_invoice",
+     "invoice_number": "25357000000191194735",
+     "page": 1
+    }
+   ],
+   "rel": "油票/油票5.pdf",
+   "sha256": "3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da"
+  }
+ ],
+ "gaps": [],
+ "identities": [
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250906_通行费发票_晋江到厦门_15913011_a4bd02c9.pdf",
+   "copy_sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e",
+   "face_total": "4.42",
+   "issue_date": "2025-09-06",
+   "number": "15913011",
+   "record_id": "inv-a4bd02c9",
+   "scans": [
+    {
+     "file": "0906/0905晋江到厦门发票1.pdf",
+     "locator": "page:1",
+     "source_sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250906_通行费发票_厦门到晋江_15913017_5a20ce14.pdf",
+   "copy_sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+   "face_total": "4.41",
+   "issue_date": "2025-09-06",
+   "number": "15913017",
+   "record_id": "inv-5a20ce14",
+   "scans": [
+    {
+     "file": "0906/0905厦门到晋江发票1.pdf",
+     "locator": "page:1",
+     "source_sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250905_通行费发票_厦门到晋江_16104706_361851dc.pdf",
+   "copy_sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df",
+   "face_total": "22.64",
+   "issue_date": "2025-09-05",
+   "number": "16104706",
+   "record_id": "inv-361851dc",
+   "scans": [
+    {
+     "file": "0904/0904厦门到晋江发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250905_通行费发票_晋江到厦门_16104709_45cd8ec6.pdf",
+   "copy_sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b",
+   "face_total": "22.64",
+   "issue_date": "2025-09-05",
+   "number": "16104709",
+   "record_id": "inv-45cd8ec6",
+   "scans": [
+    {
+     "file": "0904/0904晋江到厦门发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250906_通行费发票_厦门到晋江_16108478_9124720e.pdf",
+   "copy_sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb",
+   "face_total": "15.54",
+   "issue_date": "2025-09-06",
+   "number": "16108478",
+   "record_id": "inv-9124720e",
+   "scans": [
+    {
+     "file": "0906/0905厦门到晋江发票2.pdf",
+     "locator": "page:1",
+     "source_sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250826_通行费发票_晋江到厦门_16166322_771f05b9.pdf",
+   "copy_sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124",
+   "face_total": "22.64",
+   "issue_date": "2025-08-26",
+   "number": "16166322",
+   "record_id": "inv-771f05b9",
+   "scans": [
+    {
+     "file": "0825/0825晋江到厦门发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250918_通行费发票_厦门到晋江_16227300_57a8835d.pdf",
+   "copy_sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55",
+   "face_total": "15.69",
+   "issue_date": "2025-09-18",
+   "number": "16227300",
+   "record_id": "inv-57a8835d",
+   "scans": [
+    {
+     "file": "0917/0917厦门到晋江发票1.pdf",
+     "locator": "page:1",
+     "source_sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250918_通行费发票_晋江到厦门_16227311_8697581b.pdf",
+   "copy_sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3",
+   "face_total": "20.73",
+   "issue_date": "2025-09-18",
+   "number": "16227311",
+   "record_id": "inv-8697581b",
+   "scans": [
+    {
+     "file": "0917/0917晋江到厦门发票2.pdf",
+     "locator": "page:1",
+     "source_sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250826_通行费发票_厦门到晋江_16304714_20b93a2a.pdf",
+   "copy_sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+   "face_total": "22.64",
+   "issue_date": "2025-08-26",
+   "number": "16304714",
+   "record_id": "inv-20b93a2a",
+   "scans": [
+    {
+     "file": "0825/0825厦门到晋江发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250906_通行费发票_晋江到厦门_16366191_7bbf4ac8.pdf",
+   "copy_sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1",
+   "face_total": "15.53",
+   "issue_date": "2025-09-06",
+   "number": "16366191",
+   "record_id": "inv-7bbf4ac8",
+   "scans": [
+    {
+     "file": "0906/0905晋江到厦门发票2.pdf",
+     "locator": "page:1",
+     "source_sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250929_通行费发票_厦门到晋江_16422064_6b9cc796.pdf",
+   "copy_sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753",
+   "face_total": "15.69",
+   "issue_date": "2025-09-29",
+   "number": "16422064",
+   "record_id": "inv-6b9cc796",
+   "scans": [
+    {
+     "file": "0928/0928厦门到晋江发票2.pdf",
+     "locator": "page:1",
+     "source_sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250929_通行费发票_晋江到厦门_16548299_f563d088.pdf",
+   "copy_sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5",
+   "face_total": "16.24",
+   "issue_date": "2025-09-29",
+   "number": "16548299",
+   "record_id": "inv-f563d088",
+   "scans": [
+    {
+     "file": "0928/0928晋江到厦门发票1.pdf",
+     "locator": "page:1",
+     "source_sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250918_通行费发票_厦门到晋江_16657870_2d470928.pdf",
+   "copy_sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937",
+   "face_total": "16.24",
+   "issue_date": "2025-09-18",
+   "number": "16657870",
+   "record_id": "inv-2d470928",
+   "scans": [
+    {
+     "file": "0917/0917厦门到晋江发票2.pdf",
+     "locator": "page:1",
+     "source_sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250918_通行费发票_晋江到厦门_16657942_1e4d9c8e.pdf",
+   "copy_sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3",
+   "face_total": "16.24",
+   "issue_date": "2025-09-18",
+   "number": "16657942",
+   "record_id": "inv-1e4d9c8e",
+   "scans": [
+    {
+     "file": "0917/0917晋江到厦门发票1.pdf",
+     "locator": "page:1",
+     "source_sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250929_通行费发票_厦门到晋江_16858364_f0645949.pdf",
+   "copy_sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27",
+   "face_total": "16.24",
+   "issue_date": "2025-09-29",
+   "number": "16858364",
+   "record_id": "inv-f0645949",
+   "scans": [
+    {
+     "file": "0928/0928厦门到晋江发票1.pdf",
+     "locator": "page:1",
+     "source_sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20250929_通行费发票_晋江到厦门_17727508_f0de85e8.pdf",
+   "copy_sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae",
+   "face_total": "15.69",
+   "issue_date": "2025-09-29",
+   "number": "17727508",
+   "record_id": "inv-f0de85e8",
+   "scans": [
+    {
+     "file": "0928/0928晋江到厦门发票2.pdf",
+     "locator": "page:1",
+     "source_sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251028_通行费发票_厦门到晋江_17793922_529459ad.pdf",
+   "copy_sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+   "face_total": "22.64",
+   "issue_date": "2025-10-28",
+   "number": "17793922",
+   "record_id": "inv-529459ad",
+   "scans": [
+    {
+     "file": "1028/1028厦门到晋江发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251028_通行费发票_晋江到厦门_17794993_4e02d674.pdf",
+   "copy_sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc",
+   "face_total": "22.64",
+   "issue_date": "2025-10-28",
+   "number": "17794993",
+   "record_id": "inv-4e02d674",
+   "scans": [
+    {
+     "file": "1028/1028晋江到厦门发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251112_通行费发票_厦门到晋江_17950250_3876b17e.pdf",
+   "copy_sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a",
+   "face_total": "22.64",
+   "issue_date": "2025-11-12",
+   "number": "17950250",
+   "record_id": "inv-3876b17e",
+   "scans": [
+    {
+     "file": "1112/1112厦门到晋江发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251112_通行费发票_晋江到厦门_17952458_96f40e06.pdf",
+   "copy_sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31",
+   "face_total": "22.64",
+   "issue_date": "2025-11-12",
+   "number": "17952458",
+   "record_id": "inv-96f40e06",
+   "scans": [
+    {
+     "file": "1112/1112晋江到厦门发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251124_通行费发票_晋江到厦门_18011706_011757fb.pdf",
+   "copy_sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507",
+   "face_total": "22.64",
+   "issue_date": "2025-11-24",
+   "number": "18011706",
+   "record_id": "inv-011757fb",
+   "scans": [
+    {
+     "file": "1124/1124晋江到厦门发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251204_通行费发票_厦门到晋江_18196512_d7a86968.pdf",
+   "copy_sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2",
+   "face_total": "22.64",
+   "issue_date": "2025-12-04",
+   "number": "18196512",
+   "record_id": "inv-d7a86968",
+   "scans": [
+    {
+     "file": "1204/1204厦门到晋江发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251204_通行费发票_晋江到厦门_18197206_56d15941.pdf",
+   "copy_sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574",
+   "face_total": "22.64",
+   "issue_date": "2025-12-04",
+   "number": "18197206",
+   "record_id": "inv-56d15941",
+   "scans": [
+    {
+     "file": "1204/1204晋江到厦门发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251210_通行费发票_晋江到厦门_19977515_2a5662d7.pdf",
+   "copy_sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+   "face_total": "4.42",
+   "issue_date": "2025-12-10",
+   "number": "19977515",
+   "record_id": "inv-2a5662d7",
+   "scans": [
+    {
+     "file": "1210/1210晋江-厦门1.pdf",
+     "locator": "page:1",
+     "source_sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251210_通行费发票_厦门到晋江_20514402_ec367d9f.pdf",
+   "copy_sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188",
+   "face_total": "22.64",
+   "issue_date": "2025-12-10",
+   "number": "20514402",
+   "record_id": "inv-ec367d9f",
+   "scans": [
+    {
+     "file": "1210/1210厦门-晋江发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251210_通行费发票_晋江到厦门_20519372_e73f9663.pdf",
+   "copy_sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa",
+   "face_total": "15.53",
+   "issue_date": "2025-12-10",
+   "number": "20519372",
+   "record_id": "inv-e73f9663",
+   "scans": [
+    {
+     "file": "1210/1210晋江-厦门1 (2).pdf",
+     "locator": "page:1",
+     "source_sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa"
+    }
+   ]
+  },
+  {
+   "class": "toll_invoice",
+   "code": "035002400112",
+   "copy_name": "20251124_通行费发票_厦门到晋江_20703083_5e79b592.pdf",
+   "copy_sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c",
+   "face_total": "22.64",
+   "issue_date": "2025-11-24",
+   "number": "20703083",
+   "record_id": "inv-5e79b592",
+   "scans": [
+    {
+     "file": "1124/1124厦门到晋江发票.pdf",
+     "locator": "page:1",
+     "source_sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c"
+    }
+   ]
+  },
+  {
+   "class": "fuel_invoice",
+   "code": "",
+   "copy_name": "20251212_油票_25357000000191194735_0ed38f50.pdf",
+   "copy_sha256": "3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da",
+   "face_total": "439.18",
+   "issue_date": "2025-12-12",
+   "number": "25357000000191194735",
+   "record_id": "inv-0ed38f50",
+   "scans": [
+    {
+     "file": "油票/油票5.pdf",
+     "locator": "page:1",
+     "source_sha256": "3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da"
+    }
+   ]
+  },
+  {
+   "class": "fuel_invoice",
+   "code": "",
+   "copy_name": "20251212_油票_25357000000191196652_00e92daf.pdf",
+   "copy_sha256": "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452",
+   "face_total": "433.16",
+   "issue_date": "2025-12-12",
+   "number": "25357000000191196652",
+   "record_id": "inv-00e92daf",
+   "scans": [
+    {
+     "file": "油票/油票4.pdf",
+     "locator": "page:1",
+     "source_sha256": "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452"
+    }
+   ]
+  },
+  {
+   "class": "fuel_invoice",
+   "code": "",
+   "copy_name": "20251212_油票_25357000000191872798_6eb77210.pdf",
+   "copy_sha256": "6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b",
+   "face_total": "300.00",
+   "issue_date": "2025-12-12",
+   "number": "25357000000191872798",
+   "record_id": "inv-6eb77210",
+   "scans": [
+    {
+     "file": "油票/油票3.pdf",
+     "locator": "page:1",
+     "source_sha256": "6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b"
+    }
+   ]
+  },
+  {
+   "class": "fuel_invoice",
+   "code": "",
+   "copy_name": "20251212_油票_25357000000191876368_f0801b1d.pdf",
+   "copy_sha256": "edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74",
+   "face_total": "414.68",
+   "issue_date": "2025-12-12",
+   "number": "25357000000191876368",
+   "record_id": "inv-f0801b1d",
+   "scans": [
+    {
+     "file": "油票/油票2.pdf",
+     "locator": "page:1",
+     "source_sha256": "edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74"
+    }
+   ]
+  },
+  {
+   "class": "fuel_invoice",
+   "code": "",
+   "copy_name": "20251212_油票_25357000000191876369_4bfa13f0.pdf",
+   "copy_sha256": "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc",
+   "face_total": "444.15",
+   "issue_date": "2025-12-12",
+   "number": "25357000000191876369",
+   "record_id": "inv-4bfa13f0",
+   "scans": [
+    {
+     "file": "油票/油票1.pdf",
+     "locator": "page:1",
+     "source_sha256": "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc"
+    }
+   ]
+  }
+ ],
+ "materials_root": "feature01-细化报销skill\\12月公出-发票",
+ "rules": {
+  "copies": "仅整理副本写入输出目录，原件零改动；重复扫描不产生第二副本",
+  "identity": "invoice_number（辅 invoice_code）；同票不同扫描合并；金额不作身份",
+  "naming": "日期_票种_方向或路线_票号_短哈希.pdf；方向仅取原文件名 X到Y/X-Y 段，缺失省略；日期/票号缺失用 无日期/无票号 占位并登记 GAP",
+  "summary_sheets": "汇总单仅交叉核对不计费；开票日期/行程日期/目录日期分开"
+ },
+ "schema_version": "1.0",
+ "summaries": [
+  {
+   "copy": "无日期_汇总单票据_3520250800404681_5dcf1a16.pdf",
+   "dir": "0825",
+   "file": "0825/0825通行费电子票据汇总单(票据).pdf",
+   "sha256": "ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75",
+   "summary_number": "3520250800404681",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520250800404618_2a65c29f.pdf",
+   "dir": "0825",
+   "file": "0825/0825通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7",
+   "summary_number": "3520250800404618",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250800404681_ec26e52f.pdf",
+   "dir": "0825",
+   "file": "0825/0825通行费电子票据汇总单(行程).pdf",
+   "sha256": "941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a",
+   "summary_number": "3520250800404681",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250800404618_d81f7ed8.pdf",
+   "dir": "0825",
+   "file": "0825/0825通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069",
+   "summary_number": "3520250800404618",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520250900092215_16662a5b.pdf",
+   "dir": "0904",
+   "file": "0904/0904通行费电子票据汇总单(票据).pdf",
+   "sha256": "6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc",
+   "summary_number": "3520250900092215",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520250900092251_7d5e0013.pdf",
+   "dir": "0904",
+   "file": "0904/0904通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb",
+   "summary_number": "3520250900092251",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250900092215_b6f2eac8.pdf",
+   "dir": "0904",
+   "file": "0904/0904通行费电子票据汇总单(行程).pdf",
+   "sha256": "e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071",
+   "summary_number": "3520250900092215",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250900092251_9aca8078.pdf",
+   "dir": "0904",
+   "file": "0904/0904通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7",
+   "summary_number": "3520250900092251",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520250900105488_a50c4a08.pdf",
+   "dir": "0906",
+   "file": "0906/0905通行费电子票据汇总单(票据).pdf",
+   "sha256": "a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4",
+   "summary_number": "3520250900105488",
+   "transaction_total": "19.95",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520250900105478_e80e8f95.pdf",
+   "dir": "0906",
+   "file": "0906/0905通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8",
+   "summary_number": "3520250900105478",
+   "transaction_total": "19.95",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250900105488_201470c4.pdf",
+   "dir": "0906",
+   "file": "0906/0905通行费电子票据汇总单(行程).pdf",
+   "sha256": "881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8",
+   "summary_number": "3520250900105488",
+   "transaction_total": "19.95",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250900105478_21ab410c.pdf",
+   "dir": "0906",
+   "file": "0906/0905通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14",
+   "summary_number": "3520250900105478",
+   "transaction_total": "19.95",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520250900282520_b578fc4a.pdf",
+   "dir": "0917",
+   "file": "0917/0917通行费电子票据汇总单(票据).pdf",
+   "sha256": "8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d",
+   "summary_number": "3520250900282520",
+   "transaction_total": "31.93",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520250900282612_e3effecc.pdf",
+   "dir": "0917",
+   "file": "0917/0917通行费电子票据汇总单(票据)1.pdf",
+   "sha256": "c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f",
+   "summary_number": "3520250900282612",
+   "transaction_total": "36.97",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250900282520_7b4a95c0.pdf",
+   "dir": "0917",
+   "file": "0917/0917通行费电子票据汇总单(行程).pdf",
+   "sha256": "b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b",
+   "summary_number": "3520250900282520",
+   "transaction_total": "31.93",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250900282612_3b149dfe.pdf",
+   "dir": "0917",
+   "file": "0917/0917通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8",
+   "summary_number": "3520250900282612",
+   "transaction_total": "36.97",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520250900432758_a48553a6.pdf",
+   "dir": "0928",
+   "file": "0928/0928通行费电子票据汇总单(票据).pdf",
+   "sha256": "d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba",
+   "summary_number": "3520250900432758",
+   "transaction_total": "31.93",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520250900432800_3556610c.pdf",
+   "dir": "0928",
+   "file": "0928/0928通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce",
+   "summary_number": "3520250900432800",
+   "transaction_total": "31.93",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250900432758_fe4f406a.pdf",
+   "dir": "0928",
+   "file": "0928/0928通行费电子票据汇总单(行程).pdf",
+   "sha256": "29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81",
+   "summary_number": "3520250900432758",
+   "transaction_total": "31.93",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520250900432800_06aa7e13.pdf",
+   "dir": "0928",
+   "file": "0928/0928通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289",
+   "summary_number": "3520250900432800",
+   "transaction_total": "31.93",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251000349301_5def8da4.pdf",
+   "dir": "1028",
+   "file": "1028/1028通行费电子票据汇总单(票据).pdf",
+   "sha256": "8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0",
+   "summary_number": "3520251000349301",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251000353752_8b21067c.pdf",
+   "dir": "1028",
+   "file": "1028/1028通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa",
+   "summary_number": "3520251000353752",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251000349301_1d6071e4.pdf",
+   "dir": "1028",
+   "file": "1028/1028通行费电子票据汇总单(行程).pdf",
+   "sha256": "f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7",
+   "summary_number": "3520251000349301",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251000353752_08443de8.pdf",
+   "dir": "1028",
+   "file": "1028/1028通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c",
+   "summary_number": "3520251000353752",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251100189937_bc5fb0b2.pdf",
+   "dir": "1112",
+   "file": "1112/1112通行费电子票据汇总单(票据).pdf",
+   "sha256": "75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845",
+   "summary_number": "3520251100189937",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251100197026_3a722430.pdf",
+   "dir": "1112",
+   "file": "1112/1112通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65",
+   "summary_number": "3520251100197026",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251100189937_a01bc167.pdf",
+   "dir": "1112",
+   "file": "1112/1112通行费电子票据汇总单(行程).pdf",
+   "sha256": "81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6",
+   "summary_number": "3520251100189937",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251100197026_02fd51ad.pdf",
+   "dir": "1112",
+   "file": "1112/1112通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa",
+   "summary_number": "3520251100197026",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251100356544_bf9a5b52.pdf",
+   "dir": "1124",
+   "file": "1124/1124通行费电子票据汇总单(票据).pdf",
+   "sha256": "0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657",
+   "summary_number": "3520251100356544",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251100359670_3d5b5c3b.pdf",
+   "dir": "1124",
+   "file": "1124/1124通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d",
+   "summary_number": "3520251100359670",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251100356544_2d88fa36.pdf",
+   "dir": "1124",
+   "file": "1124/1124通行费电子票据汇总单(行程).pdf",
+   "sha256": "060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839",
+   "summary_number": "3520251100356544",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251100359670_801bc179.pdf",
+   "dir": "1124",
+   "file": "1124/1124通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295",
+   "summary_number": "3520251100359670",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251200079962_296aa2c4.pdf",
+   "dir": "1204",
+   "file": "1204/1204通行费电子票据汇总单(票据).pdf",
+   "sha256": "878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2",
+   "summary_number": "3520251200079962",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251200082809_b0dc2694.pdf",
+   "dir": "1204",
+   "file": "1204/1204通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b",
+   "summary_number": "3520251200082809",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251200079962_750183aa.pdf",
+   "dir": "1204",
+   "file": "1204/1204通行费电子票据汇总单(行程).pdf",
+   "sha256": "c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e",
+   "summary_number": "3520251200079962",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251200082809_b3d55e48.pdf",
+   "dir": "1204",
+   "file": "1204/1204通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749",
+   "summary_number": "3520251200082809",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251200189737_621eed63.pdf",
+   "dir": "1210",
+   "file": "1210/1210通行费电子票据汇总单(票据)1.pdf",
+   "sha256": "5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272",
+   "summary_number": "3520251200189737",
+   "transaction_total": "19.95",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单票据_3520251200181224_ea8a750e.pdf",
+   "dir": "1210",
+   "file": "1210/1210通行费电子票据汇总单(票据)2.pdf",
+   "sha256": "b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299",
+   "summary_number": "3520251200181224",
+   "transaction_total": "22.64",
+   "variant": "summary_by_ticket"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251200189737_1d6b0d1e.pdf",
+   "dir": "1210",
+   "file": "1210/1210通行费电子票据汇总单(行程)1.pdf",
+   "sha256": "934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2",
+   "summary_number": "3520251200189737",
+   "transaction_total": "19.95",
+   "variant": "summary_by_trip"
+  },
+  {
+   "copy": "无日期_汇总单行程_3520251200181224_b1c880ce.pdf",
+   "dir": "1210",
+   "file": "1210/1210通行费电子票据汇总单(行程)2.pdf",
+   "sha256": "b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157",
+   "summary_number": "3520251200181224",
+   "transaction_total": "22.64",
+   "variant": "summary_by_trip"
+  }
+ ]
+}

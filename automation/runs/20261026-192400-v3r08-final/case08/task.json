@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "task_id": "v3r08-case08-15426095951",
+  "document_type": "travel",
+  "operator": "陈晶",
+  "template_biz_number": "15426095951",
+  "template_snapshot_path": "template_snapshot.json",
+  "materials_dir": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票",
+  "statement": "CASE-08 新 session 独立验收（阶段一）：用户指定模板 15426095951，材料为 feature01-细化报销skill/12月公出-发票/ 共 73 件原件（10 个日期目录 67 份通行费/汇总单 PDF + 1 份自驾公出公里数统计表 xlsx + 5 份油票 PDF）。业务规则（冻结合同 BPM-MATERIALS-20261026-V3 §4）：读取用户公里统计按 1 元/公里计公里补贴 M=K×1.00，逐票核实去重后真实通行费票据合计 T，待报销总额 R=M+T；去重后油票合计 O 仅作票据覆盖依据 F=O+T，严格门槛 F>R 方可进入 OA 填写；油票不额外加报，汇总单不重复计费，原公里数保留。本任务为只填不存 fill_only，阶段一仅推进到 validate-only。",
+  "authorization": {
+    "mode": "fill_only",
+    "task_id": "v3r08-case08-15426095951",
+    "statement": "CASE-08 独立验收员阶段一任务书：仅允许理解原件、复算事实链、生成自有 v1.0 计划并 validate-only；不新建报销页、不真实填写、不保存、不改旧单、不动 registry。",
+    "allow_submit": false
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "kind": "captured_exact_identity_only",
+  "source": "automation\\runs\\20261023-142146-travelcensus\\travel_census.json",
+  "sha256": "59c992c659a7f788868a94220307373a87227e1e25128be40cfd640e38c743ff",
+  "locator": "$.docs[24].fetch.body",
+  "purpose": "Identity lookup only; fresh live main response and view must independently match."
+}

@@ -1,0 +1,590 @@
+{
+  "schema_version": "1.0",
+  "root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票",
+  "files": [
+    {
+      "material_id": "sha256:775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825厦门到晋江发票.pdf",
+      "relative_path": "0825/0825厦门到晋江发票.pdf",
+      "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+      "size_bytes": 41808,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825晋江到厦门发票.pdf",
+      "relative_path": "0825/0825晋江到厦门发票.pdf",
+      "sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124",
+      "size_bytes": 41801,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0825/0825通行费电子票据汇总单(票据).pdf",
+      "sha256": "ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75",
+      "size_bytes": 45789,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "0825/0825通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7",
+      "size_bytes": 45742,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0825/0825通行费电子票据汇总单(行程).pdf",
+      "sha256": "941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a",
+      "size_bytes": 45558,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0825\\0825通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0825/0825通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069",
+      "size_bytes": 45529,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904厦门到晋江发票.pdf",
+      "relative_path": "0904/0904厦门到晋江发票.pdf",
+      "sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df",
+      "size_bytes": 41798,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904晋江到厦门发票.pdf",
+      "relative_path": "0904/0904晋江到厦门发票.pdf",
+      "sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b",
+      "size_bytes": 41828,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0904/0904通行费电子票据汇总单(票据).pdf",
+      "sha256": "6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc",
+      "size_bytes": 45806,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "0904/0904通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb",
+      "size_bytes": 45788,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0904/0904通行费电子票据汇总单(行程).pdf",
+      "sha256": "e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071",
+      "size_bytes": 45574,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0904\\0904通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0904/0904通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7",
+      "size_bytes": 45559,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905厦门到晋江发票1.pdf",
+      "relative_path": "0906/0905厦门到晋江发票1.pdf",
+      "sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+      "size_bytes": 38488,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905厦门到晋江发票2.pdf",
+      "relative_path": "0906/0905厦门到晋江发票2.pdf",
+      "sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb",
+      "size_bytes": 41782,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905晋江到厦门发票1.pdf",
+      "relative_path": "0906/0905晋江到厦门发票1.pdf",
+      "sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e",
+      "size_bytes": 38471,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905晋江到厦门发票2.pdf",
+      "relative_path": "0906/0905晋江到厦门发票2.pdf",
+      "sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1",
+      "size_bytes": 41744,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0906/0905通行费电子票据汇总单(票据).pdf",
+      "sha256": "a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4",
+      "size_bytes": 46812,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "0906/0905通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8",
+      "size_bytes": 46826,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0906/0905通行费电子票据汇总单(行程).pdf",
+      "sha256": "881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8",
+      "size_bytes": 46129,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0906\\0905通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0906/0905通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14",
+      "size_bytes": 46141,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917厦门到晋江发票1.pdf",
+      "relative_path": "0917/0917厦门到晋江发票1.pdf",
+      "sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55",
+      "size_bytes": 41848,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917厦门到晋江发票2.pdf",
+      "relative_path": "0917/0917厦门到晋江发票2.pdf",
+      "sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937",
+      "size_bytes": 39228,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917晋江到厦门发票1.pdf",
+      "relative_path": "0917/0917晋江到厦门发票1.pdf",
+      "sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3",
+      "size_bytes": 39211,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917晋江到厦门发票2.pdf",
+      "relative_path": "0917/0917晋江到厦门发票2.pdf",
+      "sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3",
+      "size_bytes": 41991,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0917/0917通行费电子票据汇总单(票据).pdf",
+      "sha256": "8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d",
+      "size_bytes": 47147,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917通行费电子票据汇总单(票据)1.pdf",
+      "relative_path": "0917/0917通行费电子票据汇总单(票据)1.pdf",
+      "sha256": "c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f",
+      "size_bytes": 47106,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0917/0917通行费电子票据汇总单(行程).pdf",
+      "sha256": "b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b",
+      "size_bytes": 46416,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0917\\0917通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0917/0917通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8",
+      "size_bytes": 46477,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928厦门到晋江发票1.pdf",
+      "relative_path": "0928/0928厦门到晋江发票1.pdf",
+      "sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27",
+      "size_bytes": 39226,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928厦门到晋江发票2.pdf",
+      "relative_path": "0928/0928厦门到晋江发票2.pdf",
+      "sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753",
+      "size_bytes": 41844,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928晋江到厦门发票1.pdf",
+      "relative_path": "0928/0928晋江到厦门发票1.pdf",
+      "sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5",
+      "size_bytes": 39213,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928晋江到厦门发票2.pdf",
+      "relative_path": "0928/0928晋江到厦门发票2.pdf",
+      "sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae",
+      "size_bytes": 41827,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928通行费电子票据汇总单(票据).pdf",
+      "relative_path": "0928/0928通行费电子票据汇总单(票据).pdf",
+      "sha256": "d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba",
+      "size_bytes": 47126,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "0928/0928通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce",
+      "size_bytes": 47148,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928通行费电子票据汇总单(行程).pdf",
+      "relative_path": "0928/0928通行费电子票据汇总单(行程).pdf",
+      "sha256": "29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81",
+      "size_bytes": 46396,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\0928\\0928通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "0928/0928通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289",
+      "size_bytes": 46415,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028厦门到晋江发票.pdf",
+      "relative_path": "1028/1028厦门到晋江发票.pdf",
+      "sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+      "size_bytes": 41793,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028晋江到厦门发票.pdf",
+      "relative_path": "1028/1028晋江到厦门发票.pdf",
+      "sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc",
+      "size_bytes": 41802,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028通行费电子票据汇总单(票据).pdf",
+      "relative_path": "1028/1028通行费电子票据汇总单(票据).pdf",
+      "sha256": "8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0",
+      "size_bytes": 45792,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1028/1028通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa",
+      "size_bytes": 45794,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028通行费电子票据汇总单(行程).pdf",
+      "relative_path": "1028/1028通行费电子票据汇总单(行程).pdf",
+      "sha256": "f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7",
+      "size_bytes": 45562,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1028\\1028通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1028/1028通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c",
+      "size_bytes": 45564,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112厦门到晋江发票.pdf",
+      "relative_path": "1112/1112厦门到晋江发票.pdf",
+      "sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a",
+      "size_bytes": 41802,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112晋江到厦门发票.pdf",
+      "relative_path": "1112/1112晋江到厦门发票.pdf",
+      "sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31",
+      "size_bytes": 41822,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112通行费电子票据汇总单(票据).pdf",
+      "relative_path": "1112/1112通行费电子票据汇总单(票据).pdf",
+      "sha256": "75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845",
+      "size_bytes": 45791,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1112/1112通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65",
+      "size_bytes": 45840,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112通行费电子票据汇总单(行程).pdf",
+      "relative_path": "1112/1112通行费电子票据汇总单(行程).pdf",
+      "sha256": "81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6",
+      "size_bytes": 45805,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1112\\1112通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1112/1112通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa",
+      "size_bytes": 45855,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124厦门到晋江发票.pdf",
+      "relative_path": "1124/1124厦门到晋江发票.pdf",
+      "sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c",
+      "size_bytes": 41818,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124晋江到厦门发票.pdf",
+      "relative_path": "1124/1124晋江到厦门发票.pdf",
+      "sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507",
+      "size_bytes": 41828,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124通行费电子票据汇总单(票据).pdf",
+      "relative_path": "1124/1124通行费电子票据汇总单(票据).pdf",
+      "sha256": "0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657",
+      "size_bytes": 45792,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1124/1124通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d",
+      "size_bytes": 45792,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124通行费电子票据汇总单(行程).pdf",
+      "relative_path": "1124/1124通行费电子票据汇总单(行程).pdf",
+      "sha256": "060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839",
+      "size_bytes": 45803,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1124\\1124通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1124/1124通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295",
+      "size_bytes": 45804,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204厦门到晋江发票.pdf",
+      "relative_path": "1204/1204厦门到晋江发票.pdf",
+      "sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2",
+      "size_bytes": 41820,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204晋江到厦门发票.pdf",
+      "relative_path": "1204/1204晋江到厦门发票.pdf",
+      "sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574",
+      "size_bytes": 41816,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204通行费电子票据汇总单(票据).pdf",
+      "relative_path": "1204/1204通行费电子票据汇总单(票据).pdf",
+      "sha256": "878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2",
+      "size_bytes": 45786,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1204/1204通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b",
+      "size_bytes": 45789,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204通行费电子票据汇总单(行程).pdf",
+      "relative_path": "1204/1204通行费电子票据汇总单(行程).pdf",
+      "sha256": "c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e",
+      "size_bytes": 45800,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1204\\1204通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1204/1204通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749",
+      "size_bytes": 45802,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210厦门-晋江发票.pdf",
+      "relative_path": "1210/1210厦门-晋江发票.pdf",
+      "sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188",
+      "size_bytes": 41814,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210晋江-厦门1 (2).pdf",
+      "relative_path": "1210/1210晋江-厦门1 (2).pdf",
+      "sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa",
+      "size_bytes": 41729,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210晋江-厦门1.pdf",
+      "relative_path": "1210/1210晋江-厦门1.pdf",
+      "sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+      "size_bytes": 38482,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210通行费电子票据汇总单(票据)1.pdf",
+      "relative_path": "1210/1210通行费电子票据汇总单(票据)1.pdf",
+      "sha256": "5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272",
+      "size_bytes": 46811,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210通行费电子票据汇总单(票据)2.pdf",
+      "relative_path": "1210/1210通行费电子票据汇总单(票据)2.pdf",
+      "sha256": "b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299",
+      "size_bytes": 45743,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210通行费电子票据汇总单(行程)1.pdf",
+      "relative_path": "1210/1210通行费电子票据汇总单(行程)1.pdf",
+      "sha256": "934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2",
+      "size_bytes": 46363,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\1210\\1210通行费电子票据汇总单(行程)2.pdf",
+      "relative_path": "1210/1210通行费电子票据汇总单(行程)2.pdf",
+      "sha256": "b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157",
+      "size_bytes": 45753,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\12月-自驾公出公里数统计表.xlsx",
+      "relative_path": "12月-自驾公出公里数统计表.xlsx",
+      "sha256": "2a8866e6a84cd9ff1f2420140dc9ea885b51adda5fca0a9fb80d51291e663a83",
+      "size_bytes": 12875,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票1.pdf",
+      "relative_path": "油票/油票1.pdf",
+      "sha256": "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc",
+      "size_bytes": 63415,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票2.pdf",
+      "relative_path": "油票/油票2.pdf",
+      "sha256": "edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74",
+      "size_bytes": 63626,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票3.pdf",
+      "relative_path": "油票/油票3.pdf",
+      "sha256": "6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b",
+      "size_bytes": 62972,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票4.pdf",
+      "relative_path": "油票/油票4.pdf",
+      "sha256": "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452",
+      "size_bytes": 63588,
+      "duplicate_paths": []
+    },
+    {
+      "material_id": "sha256:3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\12月公出-发票\\油票\\油票5.pdf",
+      "relative_path": "油票/油票5.pdf",
+      "sha256": "3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da",
+      "size_bytes": 63816,
+      "duplicate_paths": []
+    }
+  ]
+}

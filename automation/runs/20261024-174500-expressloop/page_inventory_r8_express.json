@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "kind": "page_inventory_fill_only",
+  "task_id": "20261024-r8-expressloop-15426094780",
+  "run": "20261024-173807-72170651",
+  "attempt": "attempt_001",
+  "generated_at": "2026-10-24T17:45:38+08:00",
+  "identity": {
+    "operator": "陈晶",
+    "applicant": {
+      "name": "陈晶",
+      "company": "厦门乔丹科技有限公司",
+      "department": "运动表现研究部"
+    },
+    "applicant_employee_id": "116070053",
+    "applicant_employee_id_source": "页面登录默认（preserve_system_defaults，agent 未选择；区别 round-7 徐亮 picker）",
+    "page_status": "编制中",
+    "is_new_form": true,
+    "biz_number": "(未保存，无单号)"
+  },
+  "content": {
+    "row_counts": {
+      "relations": 0,
+      "details": 1,
+      "costs": 8,
+      "banks": 4
+    },
+    "expected_counts": {
+      "relations": 0,
+      "details": 1,
+      "costs": 8,
+      "banks": 4
+    },
+    "amounts": {
+      "details": "347.50",
+      "banks": "347.50",
+      "costs": "347.50",
+      "total": "347.50"
+    },
+    "costs_projects": [
+      "其它",
+      "其它",
+      "其它",
+      "其它",
+      "其它",
+      "其它",
+      "其它",
+      "其它"
+    ],
+    "header": {
+      "corpCode": "厦门乔丹科技有限公司",
+      "bizOrign": "乔丹科技",
+      "payType": "转账",
+      "currencyType": "人民币",
+      "submitType": "快递费",
+      "budgetYears": "2026",
+      "description": "【历史回放测试·不保存·express-complex-R2-defaultbank】样品寄送",
+      "totalCost": "347.50"
+    }
+  },
+  "verification": {
+    "ok": true,
+    "plan_hash": "a494e784883c3431f2b7863ca1a365c4b9cf618f6aaf2a5462b533784a1d5ae7",
+    "snapshot_sha256_of_readback": "beaa91e1dcebafc7b667af238f75927e9de67ec9278c2d8cd4a1ce4f49927d55",
+    "independent_readback": "attempt_001/evidence/independent_readback.json",
+    "independent_verification": "attempt_001/evidence/independent_verification.json"
+  },
+  "disposition": {
+    "save_attempted": false,
+    "save_status": "NOT_ATTEMPTED",
+    "mode": "fill_only",
+    "keep_open_minutes": 5,
+    "end_state": "页面随 keep-open 自动关闭；未保存、未提交、未产生服务端单据",
+    "screenshots": [
+      "attempt_001/evidence/v1_final.png",
+      "attempt_001/evidence/fill_00_before.png",
+      "attempt_001/evidence/v1_relations_after.png",
+      "attempt_001/evidence/v1_details_after.png",
+      "attempt_001/evidence/v1_costs_after.png",
+      "attempt_001/evidence/v1_banks_after.png"
+    ],
+    "v1_final_sha256": "5eadb4f34ac436b15e3f37e74091a678f4d5cead77e1fb7d467d350a2a41c9da"
+  },
+  "history": {
+    "v1": "20261024-173807-72170651 SUCCESS_FILL_ONLY（首次即成功，无失败-恢复轮次）"
+  }
+}

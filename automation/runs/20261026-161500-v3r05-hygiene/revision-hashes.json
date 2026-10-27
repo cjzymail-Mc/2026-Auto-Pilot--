@@ -1,0 +1,32 @@
+{
+ "generated_at": "2026-10-26T16:15:09+08:00",
+ "round": "V3-R05",
+ "contract": "ctr-82e59a70",
+ "targets": {
+  "wide-query-manifest.json": {
+   "before": "d6936fcc46ee98692d459d933e0b0e9ff679496ae95907c554e21c037898483a",
+   "after": "dc7f5c324d97181380cd7c809793331937036e25d4d207db260d233b2464b16f",
+   "changed": true
+  },
+  "candidates3e-manifest.json": {
+   "before": "d1c6dc6f776d84674fc636ebca6eeaf1baa68c53b249c8b87151553a8bfb1757",
+   "after": "6893df02fb811cd8e2753cffcd41ba0736a0b99e1c071fe70e0f58a896e0b68b",
+   "changed": true
+  },
+  "actual_trip_matches.json": {
+   "before": "3066f5fc82e4b286f39992e0eb5f96e8ebd401a3b3bfeb58a53a47a44dee45b2",
+   "after": "7da036aabed9b56c13a5801ad521f1d7c9e8db3583a5dc0e3c5aa8c538cec687",
+   "changed": true
+  },
+  "final-artifact-hashes.json": {
+   "before": "2dc25ce547d687908e0610710b92257e621e6e5451c5109fe9cf7a4856d314c6",
+   "after": "e8d46140294b543ac167813809b0054b1c78938dc9442e455123ee7fa790d28a",
+   "changed": true
+  },
+  "CASE-03-report.md": {
+   "before": "d857ba1d986ee62d0726d1e7a4f3114919f51b8e9bf34d8be575d44ca3f1b98c",
+   "after": "214dca93d64275a8a5a0c6d39904f2ac792f3b22bf65ba19afb8bf5f25f0db1c",
+   "changed": true
+  }
+ }
+}

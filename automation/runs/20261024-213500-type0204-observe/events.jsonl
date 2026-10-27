@@ -1,0 +1,208 @@
+{"event": "profile_lock_acquired", "pid": 12268, "ts": "2026-10-24T21:09:40"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 429, "ts": "2026-10-24T21:09:51"}
+{"event": "observe_0204_start", "run": "20261024-213500-type0204-observe", "discipline": "只读控件观察：零业务行写入/零保存/零提交，页弃置不保存", "ts": "2026-10-24T21:09:51"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847394122, "dur_ms": 333, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T21:09:54"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T21:09:54"}
+{"event": "observe_target_start", "document_type": "office_supplies", "ts": "2026-10-24T21:09:54"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847398265, "dur_ms": 141, "outcome": "ok", "exc": "", "name": "form_before_02.png", "ts": "2026-10-24T21:09:58"}
+{"event": "observe_picker_enum", "where": "02/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:10:00"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847403233, "dur_ms": 96, "outcome": "ok", "exc": "", "name": "category_set_02.png", "ts": "2026-10-24T21:10:03"}
+{"event": "observe_picker_enum", "where": "02/details/reimItem", "options_masked": ["", "培训***", "业务***", "其他", "办公***"], "option_count": 5, "ts": "2026-10-24T21:10:08"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847408496, "dur_ms": 101, "outcome": "ok", "exc": "", "name": "details_row_02.png", "ts": "2026-10-24T21:10:08"}
+{"event": "observe_picker_enum", "where": "02/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:10:13"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847413940, "dur_ms": 100, "outcome": "ok", "exc": "", "name": "relations_row_02.png", "ts": "2026-10-24T21:10:14"}
+{"event": "observe_target_done", "document_type": "office_supplies", "error": null, "tables": 8, "reimItem_count": 5, "relation_types": 22, "ts": "2026-10-24T21:10:14"}
+{"event": "observe_page_abandoned", "document_type": "office_supplies", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:10:14"}
+{"event": "observe_target_start", "document_type": "welfare_labor", "ts": "2026-10-24T21:10:14"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847417683, "dur_ms": 86, "outcome": "ok", "exc": "", "name": "form_before_04.png", "ts": "2026-10-24T21:10:17"}
+{"event": "observe_picker_enum", "where": "04/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:10:19"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847422339, "dur_ms": 108, "outcome": "ok", "exc": "", "name": "category_set_04.png", "ts": "2026-10-24T21:10:22"}
+{"event": "observe_picker_enum", "where": "04/details/reimItem", "options_masked": ["", "宿舍***", "食堂***", "住房***", "团建***", "员工***"], "option_count": 6, "ts": "2026-10-24T21:10:27"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847427652, "dur_ms": 105, "outcome": "ok", "exc": "", "name": "details_row_04.png", "ts": "2026-10-24T21:10:27"}
+{"event": "observe_picker_enum", "where": "04/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:10:33"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847433258, "dur_ms": 128, "outcome": "ok", "exc": "", "name": "relations_row_04.png", "ts": "2026-10-24T21:10:33"}
+{"event": "observe_target_done", "document_type": "welfare_labor", "error": null, "tables": 8, "reimItem_count": 6, "relation_types": 22, "ts": "2026-10-24T21:10:33"}
+{"event": "observe_page_abandoned", "document_type": "welfare_labor", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:10:33"}
+{"event": "observe_0204_done", "status": "OBSERVED", "targets": ["office_supplies", "welfare_labor"], "ts": "2026-10-24T21:10:33"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 12268, "ts": "2026-10-24T21:12:42"}
+{"event": "profile_lock_acquired", "pid": 7320, "ts": "2026-10-24T21:12:42"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 169, "ts": "2026-10-24T21:12:43"}
+{"event": "observe_0204_start", "run": "20261024-213500-type0204-observe", "discipline": "只读控件观察：零业务行写入/零保存/零提交，页弃置不保存", "ts": "2026-10-24T21:12:43"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847565766, "dur_ms": 194, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T21:12:45"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T21:12:46"}
+{"event": "observe_target_start", "document_type": "office_supplies", "ts": "2026-10-24T21:12:46"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847569613, "dur_ms": 109, "outcome": "ok", "exc": "", "name": "form_before_02.png", "ts": "2026-10-24T21:12:49"}
+{"event": "observe_picker_enum", "where": "02/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:12:51"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847574555, "dur_ms": 91, "outcome": "ok", "exc": "", "name": "category_set_02.png", "ts": "2026-10-24T21:12:54"}
+{"event": "observe_picker_enum", "where": "02/details/reimItem", "options_masked": ["", "培训***", "业务***", "其他", "办公***"], "option_count": 5, "ts": "2026-10-24T21:12:59"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847585379, "dur_ms": 122, "outcome": "ok", "exc": "", "name": "details_row_02.png", "ts": "2026-10-24T21:13:05"}
+{"event": "observe_picker_enum", "where": "02/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:13:10"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847590963, "dur_ms": 88, "outcome": "ok", "exc": "", "name": "relations_row_02.png", "ts": "2026-10-24T21:13:11"}
+{"event": "observe_target_done", "document_type": "office_supplies", "error": null, "tables": 8, "reimItem_count": 5, "relation_types": 22, "ts": "2026-10-24T21:13:11"}
+{"event": "observe_page_abandoned", "document_type": "office_supplies", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:13:11"}
+{"event": "observe_target_start", "document_type": "welfare_labor", "ts": "2026-10-24T21:13:11"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847594538, "dur_ms": 126, "outcome": "ok", "exc": "", "name": "form_before_04.png", "ts": "2026-10-24T21:13:14"}
+{"event": "observe_picker_enum", "where": "04/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:13:16"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847599289, "dur_ms": 93, "outcome": "ok", "exc": "", "name": "category_set_04.png", "ts": "2026-10-24T21:13:19"}
+{"event": "observe_picker_enum", "where": "04/details/reimItem", "options_masked": ["", "宿舍***", "食堂***", "住房***", "团建***", "员工***"], "option_count": 6, "ts": "2026-10-24T21:13:24"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847609945, "dur_ms": 85, "outcome": "ok", "exc": "", "name": "details_row_04.png", "ts": "2026-10-24T21:13:30"}
+{"event": "observe_picker_enum", "where": "04/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:13:35"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847615481, "dur_ms": 111, "outcome": "ok", "exc": "", "name": "relations_row_04.png", "ts": "2026-10-24T21:13:35"}
+{"event": "observe_target_done", "document_type": "welfare_labor", "error": null, "tables": 8, "reimItem_count": 6, "relation_types": 22, "ts": "2026-10-24T21:13:35"}
+{"event": "observe_page_abandoned", "document_type": "welfare_labor", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:13:35"}
+{"event": "observe_0204_done", "status": "OBSERVED", "targets": ["office_supplies", "welfare_labor"], "ts": "2026-10-24T21:13:35"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 7320, "ts": "2026-10-24T21:15:48"}
+{"event": "profile_lock_acquired", "pid": 21120, "ts": "2026-10-24T21:15:48"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 184, "ts": "2026-10-24T21:15:49"}
+{"event": "observe_0204_start", "run": "20261024-213500-type0204-observe", "discipline": "只读控件观察：零业务行写入/零保存/零提交，页弃置不保存", "ts": "2026-10-24T21:15:49"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847752232, "dur_ms": 199, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T21:15:52"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T21:15:52"}
+{"event": "observe_target_start", "document_type": "office_supplies", "ts": "2026-10-24T21:15:52"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847756159, "dur_ms": 116, "outcome": "ok", "exc": "", "name": "form_before_02.png", "ts": "2026-10-24T21:15:56"}
+{"event": "observe_picker_enum", "where": "02/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:15:58"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847761294, "dur_ms": 97, "outcome": "ok", "exc": "", "name": "category_set_02.png", "ts": "2026-10-24T21:16:01"}
+{"event": "observe_picker_enum", "where": "02/details/reimItem", "options_masked": ["", "培训***", "业务***", "其他", "办公***"], "option_count": 5, "ts": "2026-10-24T21:16:06"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847772125, "dur_ms": 101, "outcome": "ok", "exc": "", "name": "details_row_02.png", "ts": "2026-10-24T21:16:12"}
+{"event": "observe_picker_enum", "where": "02/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:16:17"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847777724, "dur_ms": 88, "outcome": "ok", "exc": "", "name": "relations_row_02.png", "ts": "2026-10-24T21:16:17"}
+{"event": "observe_target_done", "document_type": "office_supplies", "error": null, "tables": 8, "reimItem_count": 5, "relation_types": 22, "ts": "2026-10-24T21:16:17"}
+{"event": "observe_page_abandoned", "document_type": "office_supplies", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:16:17"}
+{"event": "observe_target_start", "document_type": "welfare_labor", "ts": "2026-10-24T21:16:17"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847781368, "dur_ms": 118, "outcome": "ok", "exc": "", "name": "form_before_04.png", "ts": "2026-10-24T21:16:21"}
+{"event": "observe_picker_enum", "where": "04/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:16:23"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847786105, "dur_ms": 119, "outcome": "ok", "exc": "", "name": "category_set_04.png", "ts": "2026-10-24T21:16:26"}
+{"event": "observe_picker_enum", "where": "04/details/reimItem", "options_masked": ["", "宿舍***", "食堂***", "住房***", "团建***", "员工***"], "option_count": 6, "ts": "2026-10-24T21:16:31"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847797021, "dur_ms": 88, "outcome": "ok", "exc": "", "name": "details_row_04.png", "ts": "2026-10-24T21:16:37"}
+{"event": "observe_picker_enum", "where": "04/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:16:42"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847802586, "dur_ms": 103, "outcome": "ok", "exc": "", "name": "relations_row_04.png", "ts": "2026-10-24T21:16:42"}
+{"event": "observe_target_done", "document_type": "welfare_labor", "error": null, "tables": 8, "reimItem_count": 6, "relation_types": 22, "ts": "2026-10-24T21:16:42"}
+{"event": "observe_page_abandoned", "document_type": "welfare_labor", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:16:42"}
+{"event": "observe_0204_done", "status": "OBSERVED", "targets": ["office_supplies", "welfare_labor"], "ts": "2026-10-24T21:16:42"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 21120, "ts": "2026-10-24T21:17:15"}
+{"event": "profile_lock_acquired", "pid": 908, "ts": "2026-10-24T21:17:15"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 84, "ts": "2026-10-24T21:17:16"}
+{"event": "observe_0204_start", "run": "20261024-213500-type0204-observe", "discipline": "只读控件观察：零业务行写入/零保存/零提交，页弃置不保存", "ts": "2026-10-24T21:17:16"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847838949, "dur_ms": 166, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T21:17:19"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T21:17:19"}
+{"event": "observe_target_start", "document_type": "office_supplies", "ts": "2026-10-24T21:17:19"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847842842, "dur_ms": 141, "outcome": "ok", "exc": "", "name": "form_before_02.png", "ts": "2026-10-24T21:17:22"}
+{"event": "observe_picker_enum", "where": "02/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:17:24"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847847809, "dur_ms": 83, "outcome": "ok", "exc": "", "name": "category_set_02.png", "ts": "2026-10-24T21:17:27"}
+{"event": "observe_picker_enum", "where": "02/details/reimItem", "options_masked": ["", "培训***", "业务***", "其他", "办公***"], "option_count": 5, "ts": "2026-10-24T21:17:33"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847863834, "dur_ms": 105, "outcome": "ok", "exc": "", "name": "details_row_02.png", "ts": "2026-10-24T21:17:43"}
+{"event": "observe_picker_enum", "where": "02/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:17:49"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847869404, "dur_ms": 116, "outcome": "ok", "exc": "", "name": "relations_row_02.png", "ts": "2026-10-24T21:17:49"}
+{"event": "observe_target_done", "document_type": "office_supplies", "error": null, "tables": 8, "reimItem_count": 5, "relation_types": 22, "ts": "2026-10-24T21:17:49"}
+{"event": "observe_page_abandoned", "document_type": "office_supplies", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:17:49"}
+{"event": "observe_target_start", "document_type": "welfare_labor", "ts": "2026-10-24T21:17:49"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847873066, "dur_ms": 129, "outcome": "ok", "exc": "", "name": "form_before_04.png", "ts": "2026-10-24T21:17:53"}
+{"event": "observe_picker_enum", "where": "04/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:17:54"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847878006, "dur_ms": 81, "outcome": "ok", "exc": "", "name": "category_set_04.png", "ts": "2026-10-24T21:17:58"}
+{"event": "observe_picker_enum", "where": "04/details/reimItem", "options_masked": ["", "宿舍***", "食堂***", "住房***", "团建***", "员工***"], "option_count": 6, "ts": "2026-10-24T21:18:03"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847894028, "dur_ms": 93, "outcome": "ok", "exc": "", "name": "details_row_04.png", "ts": "2026-10-24T21:18:14"}
+{"event": "observe_picker_enum", "where": "04/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:18:19"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847899512, "dur_ms": 119, "outcome": "ok", "exc": "", "name": "relations_row_04.png", "ts": "2026-10-24T21:18:19"}
+{"event": "observe_target_done", "document_type": "welfare_labor", "error": null, "tables": 8, "reimItem_count": 6, "relation_types": 22, "ts": "2026-10-24T21:18:19"}
+{"event": "observe_page_abandoned", "document_type": "welfare_labor", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:18:19"}
+{"event": "observe_0204_done", "status": "OBSERVED", "targets": ["office_supplies", "welfare_labor"], "ts": "2026-10-24T21:18:19"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 908, "ts": "2026-10-24T21:18:57"}
+{"event": "profile_lock_acquired", "pid": 16924, "ts": "2026-10-24T21:18:57"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 99, "ts": "2026-10-24T21:18:58"}
+{"event": "observe_0204_start", "run": "20261024-213500-type0204-observe", "discipline": "只读控件观察：零业务行写入/零保存/零提交，页弃置不保存", "ts": "2026-10-24T21:18:58"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847940555, "dur_ms": 238, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T21:19:00"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T21:19:00"}
+{"event": "observe_target_start", "document_type": "office_supplies", "ts": "2026-10-24T21:19:00"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847944554, "dur_ms": 140, "outcome": "ok", "exc": "", "name": "form_before_02.png", "ts": "2026-10-24T21:19:04"}
+{"event": "observe_picker_enum", "where": "02/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:19:06"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847949493, "dur_ms": 98, "outcome": "ok", "exc": "", "name": "category_set_02.png", "ts": "2026-10-24T21:19:09"}
+{"event": "observe_picker_enum", "where": "02/details/reimItem", "options_masked": ["", "培训***", "业务***", "其他", "办公***"], "option_count": 5, "ts": "2026-10-24T21:19:14"}
+{"event": "observe_budget_dialog_blocked", "where": "02/budgetNo", "dialogs": [], "ts": "2026-10-24T21:19:22"}
+{"event": "observe_budget_dialog_blocked", "where": "02/subjectName", "dialogs": [], "ts": "2026-10-24T21:19:25"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847965630, "dur_ms": 110, "outcome": "ok", "exc": "", "name": "details_row_02.png", "ts": "2026-10-24T21:19:25"}
+{"event": "observe_picker_enum", "where": "02/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:19:31"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847971263, "dur_ms": 100, "outcome": "ok", "exc": "", "name": "relations_row_02.png", "ts": "2026-10-24T21:19:31"}
+{"event": "observe_target_done", "document_type": "office_supplies", "error": null, "tables": 8, "reimItem_count": 5, "relation_types": 22, "ts": "2026-10-24T21:19:31"}
+{"event": "observe_page_abandoned", "document_type": "office_supplies", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:19:31"}
+{"event": "observe_target_start", "document_type": "welfare_labor", "ts": "2026-10-24T21:19:31"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847974921, "dur_ms": 131, "outcome": "ok", "exc": "", "name": "form_before_04.png", "ts": "2026-10-24T21:19:35"}
+{"event": "observe_picker_enum", "where": "04/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:19:36"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847979707, "dur_ms": 107, "outcome": "ok", "exc": "", "name": "category_set_04.png", "ts": "2026-10-24T21:19:39"}
+{"event": "observe_picker_enum", "where": "04/details/reimItem", "options_masked": ["", "宿舍***", "食堂***", "住房***", "团建***", "员工***"], "option_count": 6, "ts": "2026-10-24T21:19:45"}
+{"event": "observe_budget_dialog_blocked", "where": "04/budgetNo", "dialogs": [], "ts": "2026-10-24T21:19:53"}
+{"event": "observe_budget_dialog_blocked", "where": "04/subjectName", "dialogs": [], "ts": "2026-10-24T21:19:55"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792847995715, "dur_ms": 98, "outcome": "ok", "exc": "", "name": "details_row_04.png", "ts": "2026-10-24T21:19:55"}
+{"event": "observe_picker_enum", "where": "04/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:20:01"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848001289, "dur_ms": 123, "outcome": "ok", "exc": "", "name": "relations_row_04.png", "ts": "2026-10-24T21:20:01"}
+{"event": "observe_target_done", "document_type": "welfare_labor", "error": null, "tables": 8, "reimItem_count": 6, "relation_types": 22, "ts": "2026-10-24T21:20:01"}
+{"event": "observe_page_abandoned", "document_type": "welfare_labor", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:20:01"}
+{"event": "observe_0204_done", "status": "OBSERVED", "targets": ["office_supplies", "welfare_labor"], "ts": "2026-10-24T21:20:01"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 16924, "ts": "2026-10-24T21:20:54"}
+{"event": "profile_lock_acquired", "pid": 18660, "ts": "2026-10-24T21:20:54"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 115, "ts": "2026-10-24T21:20:55"}
+{"event": "observe_0204_start", "run": "20261024-213500-type0204-observe", "discipline": "只读控件观察：零业务行写入/零保存/零提交，页弃置不保存", "ts": "2026-10-24T21:20:55"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848058192, "dur_ms": 194, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T21:20:58"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T21:20:58"}
+{"event": "observe_target_start", "document_type": "office_supplies", "ts": "2026-10-24T21:20:58"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848062048, "dur_ms": 116, "outcome": "ok", "exc": "", "name": "form_before_02.png", "ts": "2026-10-24T21:21:02"}
+{"event": "observe_picker_enum", "where": "02/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:21:03"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848066846, "dur_ms": 111, "outcome": "ok", "exc": "", "name": "category_set_02.png", "ts": "2026-10-24T21:21:06"}
+{"event": "observe_picker_enum", "where": "02/details/reimItem", "options_masked": ["", "培训***", "业务***", "其他", "办公***"], "option_count": 5, "ts": "2026-10-24T21:21:12"}
+{"event": "observe_budget_dialog_blocked", "where": "02/budgetNo", "dialogs": [], "ts": "2026-10-24T21:21:20"}
+{"event": "observe_budget_dialog_blocked", "where": "02/subjectName", "dialogs": [], "ts": "2026-10-24T21:21:22"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848082808, "dur_ms": 89, "outcome": "ok", "exc": "", "name": "details_row_02.png", "ts": "2026-10-24T21:21:22"}
+{"event": "observe_picker_enum", "where": "02/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:21:28"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848088311, "dur_ms": 103, "outcome": "ok", "exc": "", "name": "relations_row_02.png", "ts": "2026-10-24T21:21:28"}
+{"event": "observe_target_done", "document_type": "office_supplies", "error": null, "tables": 8, "reimItem_count": 5, "relation_types": 22, "ts": "2026-10-24T21:21:28"}
+{"event": "observe_page_abandoned", "document_type": "office_supplies", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:21:28"}
+{"event": "observe_target_start", "document_type": "welfare_labor", "ts": "2026-10-24T21:21:28"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848091943, "dur_ms": 93, "outcome": "ok", "exc": "", "name": "form_before_04.png", "ts": "2026-10-24T21:21:32"}
+{"event": "observe_picker_enum", "where": "04/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:21:33"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848096855, "dur_ms": 93, "outcome": "ok", "exc": "", "name": "category_set_04.png", "ts": "2026-10-24T21:21:36"}
+{"event": "observe_picker_enum", "where": "04/details/reimItem", "options_masked": ["", "宿舍***", "食堂***", "住房***", "团建***", "员工***"], "option_count": 6, "ts": "2026-10-24T21:21:42"}
+{"event": "observe_budget_dialog_blocked", "where": "04/budgetNo", "dialogs": [], "ts": "2026-10-24T21:21:50"}
+{"event": "observe_budget_dialog_blocked", "where": "04/subjectName", "dialogs": [], "ts": "2026-10-24T21:21:52"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848112937, "dur_ms": 91, "outcome": "ok", "exc": "", "name": "details_row_04.png", "ts": "2026-10-24T21:21:53"}
+{"event": "observe_picker_enum", "where": "04/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:21:58"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848118494, "dur_ms": 131, "outcome": "ok", "exc": "", "name": "relations_row_04.png", "ts": "2026-10-24T21:21:58"}
+{"event": "observe_target_done", "document_type": "welfare_labor", "error": null, "tables": 8, "reimItem_count": 6, "relation_types": 22, "ts": "2026-10-24T21:21:58"}
+{"event": "observe_page_abandoned", "document_type": "welfare_labor", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:21:58"}
+{"event": "observe_0204_done", "status": "OBSERVED", "targets": ["office_supplies", "welfare_labor"], "ts": "2026-10-24T21:21:58"}
+{"event": "profile_lock_stale_taken_over", "old_pid": 18660, "ts": "2026-10-24T21:22:41"}
+{"event": "profile_lock_acquired", "pid": 18236, "ts": "2026-10-24T21:22:41"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 104, "ts": "2026-10-24T21:22:42"}
+{"event": "observe_0204_start", "run": "20261024-213500-type0204-observe", "discipline": "只读控件观察：零业务行写入/零保存/零提交，页弃置不保存", "ts": "2026-10-24T21:22:42"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848164843, "dur_ms": 210, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T21:22:45"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T21:22:45"}
+{"event": "observe_target_start", "document_type": "office_supplies", "ts": "2026-10-24T21:22:45"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848168777, "dur_ms": 121, "outcome": "ok", "exc": "", "name": "form_before_02.png", "ts": "2026-10-24T21:22:48"}
+{"event": "observe_picker_enum", "where": "02/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:22:50"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848173777, "dur_ms": 99, "outcome": "ok", "exc": "", "name": "category_set_02.png", "ts": "2026-10-24T21:22:53"}
+{"event": "observe_picker_enum", "where": "02/details/reimItem", "options_masked": ["", "培训***", "业务***", "其他", "办公***"], "option_count": 5, "ts": "2026-10-24T21:22:59"}
+{"event": "observe_cell_before_activate", "where": "02/details/budgetNo", "text": "", "editors": null, "ts": "2026-10-24T21:23:04"}
+{"event": "observe_cell_editor_state", "where": "02/details/budgetNo", "dropdown_count": 0, "button_count": 1, "button_visible": true, "cell_html_len": 1424, "ts": "2026-10-24T21:23:05"}
+{"event": "observe_budget_dialog_blocked", "where": "02/budgetNo", "dialogs": [], "ts": "2026-10-24T21:23:07"}
+{"event": "observe_cell_before_activate", "where": "02/details/subjectName", "text": "", "editors": null, "ts": "2026-10-24T21:23:07"}
+{"event": "observe_cell_editor_state", "where": "02/details/subjectName", "dropdown_count": 0, "button_count": 1, "button_visible": true, "cell_html_len": 1056, "ts": "2026-10-24T21:23:08"}
+{"event": "observe_budget_dialog_blocked", "where": "02/subjectName", "dialogs": [], "ts": "2026-10-24T21:23:09"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848189863, "dur_ms": 114, "outcome": "ok", "exc": "", "name": "details_row_02.png", "ts": "2026-10-24T21:23:09"}
+{"event": "observe_picker_enum", "where": "02/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:23:15"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848195449, "dur_ms": 157, "outcome": "ok", "exc": "", "name": "relations_row_02.png", "ts": "2026-10-24T21:23:15"}
+{"event": "observe_target_done", "document_type": "office_supplies", "error": null, "tables": 8, "reimItem_count": 5, "relation_types": 22, "ts": "2026-10-24T21:23:15"}
+{"event": "observe_page_abandoned", "document_type": "office_supplies", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:23:15"}
+{"event": "observe_target_start", "document_type": "welfare_labor", "ts": "2026-10-24T21:23:15"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848199142, "dur_ms": 104, "outcome": "ok", "exc": "", "name": "form_before_04.png", "ts": "2026-10-24T21:23:19"}
+{"event": "observe_picker_enum", "where": "04/submitType", "options_masked": ["", "其他***", "低值***", "促销***", "福利***", "业务***", "各项***", "商品***", "差旅***", "广宣***", "固定***", "工资***", "研发***", "车辆***", "猎头***"], "option_count": 38, "ts": "2026-10-24T21:23:20"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848203910, "dur_ms": 81, "outcome": "ok", "exc": "", "name": "category_set_04.png", "ts": "2026-10-24T21:23:23"}
+{"event": "observe_picker_enum", "where": "04/details/reimItem", "options_masked": ["", "宿舍***", "食堂***", "住房***", "团建***", "员工***"], "option_count": 6, "ts": "2026-10-24T21:23:29"}
+{"event": "observe_cell_before_activate", "where": "04/details/budgetNo", "text": "", "editors": null, "ts": "2026-10-24T21:23:34"}
+{"event": "observe_cell_editor_state", "where": "04/details/budgetNo", "dropdown_count": 0, "button_count": 1, "button_visible": true, "cell_html_len": 1424, "ts": "2026-10-24T21:23:35"}
+{"event": "observe_budget_dialog_blocked", "where": "04/budgetNo", "dialogs": [], "ts": "2026-10-24T21:23:37"}
+{"event": "observe_cell_before_activate", "where": "04/details/subjectName", "text": "", "editors": null, "ts": "2026-10-24T21:23:37"}
+{"event": "observe_cell_editor_state", "where": "04/details/subjectName", "dropdown_count": 0, "button_count": 1, "button_visible": true, "cell_html_len": 1056, "ts": "2026-10-24T21:23:38"}
+{"event": "observe_budget_dialog_blocked", "where": "04/subjectName", "dialogs": [], "ts": "2026-10-24T21:23:40"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848220104, "dur_ms": 94, "outcome": "ok", "exc": "", "name": "details_row_04.png", "ts": "2026-10-24T21:23:40"}
+{"event": "observe_picker_enum", "where": "04/relations/bizTypeName", "options_masked": ["", "项目***", "福利***", "物品***", "工伤***", "申请***", "印制***", "资产***", "礼赠***", "出差***", "资产***", "公出***", "用车***", "爱心***", "物品***"], "option_count": 22, "ts": "2026-10-24T21:23:45"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792848225661, "dur_ms": 101, "outcome": "ok", "exc": "", "name": "relations_row_04.png", "ts": "2026-10-24T21:23:45"}
+{"event": "observe_target_done", "document_type": "welfare_labor", "error": null, "tables": 8, "reimItem_count": 6, "relation_types": 22, "ts": "2026-10-24T21:23:45"}
+{"event": "observe_page_abandoned", "document_type": "welfare_labor", "saved": false, "note": "未保存弃页（零保存纪律）", "ts": "2026-10-24T21:23:45"}
+{"event": "observe_0204_done", "status": "OBSERVED", "targets": ["office_supplies", "welfare_labor"], "ts": "2026-10-24T21:23:45"}

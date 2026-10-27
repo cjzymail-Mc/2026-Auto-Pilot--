@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "kind": "agent_extraction_review",
+  "reviewer": "bpm-chain-agent/round-10",
+  "material_sha256": "a80c424a35dde194c0d885c71606c166aef6ff4a9a25de7e6996a164690d8bef",
+  "material_kind": "authorized_historical_replay_json",
+  "extracted": {
+    "applicant": {
+      "name": "/applicant/name",
+      "company": "/applicant/company",
+      "department": "/applicant/department"
+    },
+    "header": {
+      "corpCode": "/header/corpCode",
+      "bizOrign": "/header/bizOrign",
+      "budgetYears": "/header/budgetYears",
+      "payType": "/header/payType",
+      "currencyType": "/header/currencyType",
+      "submitType": "/header/submitType",
+      "description": "/header/description",
+      "totalCost": "/header/totalCost"
+    },
+    "tables": {
+      "relations": [
+        "/tables/relations/0/fields/bizTypeName",
+        "/tables/relations/0/fields/bizNumber",
+        "/tables/relations/0/fields/nowCost",
+        "/tables/relations/0/fields/isLast",
+        "/tables/relations/1/fields/bizTypeName",
+        "/tables/relations/1/fields/bizNumber",
+        "/tables/relations/1/fields/nowCost",
+        "/tables/relations/1/fields/isLast",
+        "/tables/relations/2/fields/bizTypeName",
+        "/tables/relations/2/fields/bizNumber",
+        "/tables/relations/2/fields/nowCost",
+        "/tables/relations/2/fields/isLast"
+      ],
+      "details": [
+        "/tables/details/0/fields/reimItem",
+        "/tables/details/0/fields/digest",
+        "/tables/details/0/fields/budgetDeptName",
+        "/tables/details/0/fields/budgetNo",
+        "/tables/details/0/fields/subjectName",
+        "/tables/details/0/fields/budgetItemName",
+        "/tables/details/0/fields/cost",
+        "/tables/details/1/fields/reimItem",
+        "/tables/details/1/fields/digest",
+        "/tables/details/1/fields/budgetDeptName",
+        "/tables/details/1/fields/budgetNo",
+        "/tables/details/1/fields/subjectName",
+        "/tables/details/1/fields/budgetItemName",
+        "/tables/details/1/fields/cost"
+      ],
+      "costs": [
+        "/tables/costs/0/fields/project",
+        "/tables/costs/0/fields/startDate",
+        "/tables/costs/0/fields/endDate",
+        "/tables/costs/0/fields/projectPlace",
+        "/tables/costs/0/fields/count",
+        "/tables/costs/0/fields/cost",
+        "/tables/costs/0/fields/reason",
+        "/tables/costs/1/fields/project",
+        "/tables/costs/1/fields/startDate",
+        "/tables/costs/1/fields/endDate",
+        "/tables/costs/1/fields/projectPlace",
+        "/tables/costs/1/fields/count",
+        "/tables/costs/1/fields/cost",
+        "/tables/costs/1/fields/reason",
+        "/tables/costs/2/fields/project",
+        "/tables/costs/2/fields/startDate",
+        "/tables/costs/2/fields/endDate",
+        "/tables/costs/2/fields/projectPlace",
+        "/tables/costs/2/fields/count",
+        "/tables/costs/2/fields/cost",
+        "/tables/costs/2/fields/reason",
+        "/tables/costs/3/fields/project",
+        "/tables/costs/3/fields/startDate",
+        "/tables/costs/3/fields/endDate",
+        "/tables/costs/3/fields/projectPlace",
+        "/tables/costs/3/fields/count",
+        "/tables/costs/3/fields/cost",
+        "/tables/costs/3/fields/reason",
+        "/tables/costs/4/fields/project",
+        "/tables/costs/4/fields/startDate",
+        "/tables/costs/4/fields/endDate",
+        "/tables/costs/4/fields/projectPlace",
+        "/tables/costs/4/fields/count",
+        "/tables/costs/4/fields/cost",
+        "/tables/costs/4/fields/reason",
+        "/tables/costs/5/fields/project",
+        "/tables/costs/5/fields/startDate",
+        "/tables/costs/5/fields/endDate",
+        "/tables/costs/5/fields/projectPlace",
+        "/tables/costs/5/fields/count",
+        "/tables/costs/5/fields/cost",
+        "/tables/costs/5/fields/reason"
+      ],
+      "banks": [
+        "/tables/banks/0/fields/payee",
+        "/tables/banks/0/fields/account",
+        "/tables/banks/0/fields/bank",
+        "/tables/banks/0/fields/bankCode",
+        "/tables/banks/0/fields/cost"
+      ]
+    },
+    "authorization_semantics": [
+      "/demo_only",
+      "/not_new_expenses",
+      "/substitution_authorization/user_reply",
+      "/invoice_requirement_for_demo"
+    ]
+  },
+  "mechanical_crosscheck": {
+    "details_sum": "633.84",
+    "costs_sum": "633.84",
+    "banks_sum": "633.84",
+    "header_totalCost": "633.84",
+    "relations_nowCost_sum": "633.84"
+  },
+  "review_notes": [
+    "结构化 JSON 材料（非扫描件）：无 OCR 层，字段值由 JSON 指针直接定位。",
+    "test_only/demo_only/synthetic 与免票语义随件携带未删除。",
+    "bpm_chain 产品化复跑（round-10）：值与来源全部绑定本 run 材料原件。"
+  ]
+}

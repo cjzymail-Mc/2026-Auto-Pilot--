@@ -1,0 +1,14 @@
+{
+  "schema": "PASS",
+  "validate_plan_issues": [],
+  "coverage_recheck": {
+    "F": "2518.10",
+    "R": "1924.93",
+    "F_gt_R": true,
+    "costs_sum": "1924.93",
+    "totalCost": "1924.93",
+    "pass": true
+  },
+  "v11_sha256": "6c9d1b6fd719124e30b3af0e5cba7fb9df783abc3ae6c7a65e763734ec721f7c",
+  "plan_sha256_v10": "0d5b22cd6f12058dd04567b3bb63b14ca1775cbd51690e324ece118a3a242fa8"
+}

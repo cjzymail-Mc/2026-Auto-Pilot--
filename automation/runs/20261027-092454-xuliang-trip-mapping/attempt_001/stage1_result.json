@@ -1,0 +1,158 @@
+{
+ "probe_version": "v2",
+ "run": "20261027-092454-xuliang-trip-mapping",
+ "attempt": "attempt_001",
+ "doc_id": null,
+ "expect_name": "陈晶",
+ "checks": {
+  "c1_entry_login": {
+   "status": "PASS",
+   "reason": "域名内页+账户名命中+导航成立（顶栏无显式退出钮，按放宽判据放行）",
+   "evidence": [
+    "attempt_001/evidence/entry.png"
+   ]
+  },
+  "c2_locate_target": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "NOT_RUN",
+   "reason": "未启用 --fill-plan（只读任务不新建/不填写）",
+   "evidence": []
+  }
+ },
+ "phases": {},
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 2570,
+  "classify": "LOGGED_IN",
+  "markers": {
+   "url": "https://bpm.qiaodan.com/oa/home",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 29,
+   "forms": 0,
+   "name_hits": 1,
+   "logout_hits": 0
+  },
+  "cookies_names": [
+   "ww_lang",
+   "wwopen.open.sid"
+  ],
+  "screenshot": "attempt_001/evidence/entry.png",
+  "html": "attempt_001/evidence/entry.html"
+ },
+ "finish_reason": "DETAILS_CAPTURED",
+ "xuliang_details": {
+  "stage": "xuliang candidate details",
+  "targets": [
+   {
+    "bizNumber": "12025085486",
+    "uuid": "2105b4d8415f4667ba07750d0428f333",
+    "trip_date": "2025-08-25",
+    "census_desc": "徐亮0825",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-xuliang-12025085486.json",
+    "api_sha256": "2d4dfe751b4a03e6705a93d0129f5a81d3669eb594d2bdff383d1e2f44ef805d",
+    "doc_appliedName": "徐亮",
+    "doc_createdName": "徐亮",
+    "doc_bizReason": "plaid3.0量产会议",
+    "doc_place": "晋江",
+    "doc_reimed": 2,
+    "rows": [
+     {
+      "appliedName": "徐亮",
+      "factStart": "2025-08-25T13:30",
+      "factEnd": "2025-08-25T18:00",
+      "natureStart": "2025-08-25",
+      "natureEnd": "2025-08-25"
+     }
+    ],
+    "xuliang_in_rows": true,
+    "covers_trip_date": true
+   },
+   {
+    "bizNumber": "12025112775",
+    "uuid": "6a636d318de64efaa9026dbee8b85440",
+    "trip_date": "2025-11-12",
+    "census_desc": "徐亮1114",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-xuliang-12025112775.json",
+    "api_sha256": "ed5d469d54e86882211bad34e52a915cc0c82af7ee5796af1bac38d97b992e14",
+    "doc_appliedName": "徐亮",
+    "doc_createdName": "徐亮",
+    "doc_bizReason": "plaid3.0标准制定",
+    "doc_place": "晋江",
+    "doc_reimed": 2,
+    "rows": [
+     {
+      "appliedName": "徐亮",
+      "factStart": "2025-11-12T08:30",
+      "factEnd": "2025-11-12T17:30",
+      "natureStart": "2025-11-12",
+      "natureEnd": "2025-11-12"
+     }
+    ],
+    "xuliang_in_rows": true,
+    "covers_trip_date": true
+   },
+   {
+    "bizNumber": "12025121233",
+    "uuid": "be228bd423fa4c7db8f5cfe3d7da676b",
+    "trip_date": "2025-12-04",
+    "census_desc": "徐亮1204",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-xuliang-12025121233.json",
+    "api_sha256": "95bf03ad8b3c255e40a745e9c5fa0b40bf948a8b1ac19e0d6fd216f200022a62",
+    "doc_appliedName": "徐亮",
+    "doc_createdName": "徐亮",
+    "doc_bizReason": "带客户参观工厂",
+    "doc_place": "晋江",
+    "doc_reimed": 2,
+    "rows": [
+     {
+      "appliedName": "徐亮",
+      "factStart": "2025-12-04T08:30",
+      "factEnd": "2025-12-04T17:30",
+      "natureStart": "2025-12-04",
+      "natureEnd": "2025-12-04"
+     }
+    ],
+    "xuliang_in_rows": true,
+    "covers_trip_date": true
+   }
+  ]
+ },
+ "tech_used_s": 8.8,
+ "login_wait_s": 0.0,
+ "wall_s": 10.0,
+ "budget_respected": true
+}

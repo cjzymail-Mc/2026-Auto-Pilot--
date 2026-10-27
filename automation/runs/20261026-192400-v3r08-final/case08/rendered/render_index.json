@@ -1,0 +1,506 @@
+{
+ "0825/0825厦门到晋江发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0825__0825厦门到晋江发票\\page-001.png",
+   "png_sha256": "00534ae2d91c656993770d7140eb052edbd02716e714930ee7c063274278c78b"
+  }
+ ],
+ "0825/0825晋江到厦门发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0825__0825晋江到厦门发票\\page-001.png",
+   "png_sha256": "05374a728bdc712d46f51cbcbf26f627225963166af87433af6e5e61fc839164"
+  }
+ ],
+ "0825/0825通行费电子票据汇总单(票据).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0825__0825通行费电子票据汇总单(票据)\\page-001.png",
+   "png_sha256": "6923a64d94452fbcf157c6536c1baea08d4a03ace298dd381d98f434e97a0f36"
+  }
+ ],
+ "0825/0825通行费电子票据汇总单(票据)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0825__0825通行费电子票据汇总单(票据)2\\page-001.png",
+   "png_sha256": "5d9e22216145597ca47451cd845e676e49bba8caf87a6a65f52eeb8ab94a7603"
+  }
+ ],
+ "0825/0825通行费电子票据汇总单(行程).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0825__0825通行费电子票据汇总单(行程)\\page-001.png",
+   "png_sha256": "ba926d904e243685ea8bb9f407136420d8385d5659727065187aa4e1be63d10d"
+  }
+ ],
+ "0825/0825通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0825__0825通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "813a146d307d65fb652b0573b668e09db0cc9bfd68b6ac06161a3bfa2ff8a87a"
+  }
+ ],
+ "0904/0904厦门到晋江发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0904__0904厦门到晋江发票\\page-001.png",
+   "png_sha256": "36930aa1f419d91c6015173ab098e8f796032b87b7eb97f4cd4b8eb9db8626ef"
+  }
+ ],
+ "0904/0904晋江到厦门发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0904__0904晋江到厦门发票\\page-001.png",
+   "png_sha256": "f9cc433062daba919ef27bc565d70088a7c2cd168ddd694537a619f429827582"
+  }
+ ],
+ "0904/0904通行费电子票据汇总单(票据).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0904__0904通行费电子票据汇总单(票据)\\page-001.png",
+   "png_sha256": "7b552949a549e8272eeb964832810cb740ee41a4d6c206b887f6828ca22074f5"
+  }
+ ],
+ "0904/0904通行费电子票据汇总单(票据)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0904__0904通行费电子票据汇总单(票据)2\\page-001.png",
+   "png_sha256": "ad12d027994afbbdcc0a1a28eca67694d149ca4d146ef8d9be28654d950e6926"
+  }
+ ],
+ "0904/0904通行费电子票据汇总单(行程).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0904__0904通行费电子票据汇总单(行程)\\page-001.png",
+   "png_sha256": "b928714646b314215c36796c7a00ddc7b92e631a54812178f120990e88c5af12"
+  }
+ ],
+ "0904/0904通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0904__0904通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "37a3613de5094a15c7bfcff6d0b483ec02234d132f48695c50084ecdb0294d2d"
+  }
+ ],
+ "0906/0905厦门到晋江发票1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0906__0905厦门到晋江发票1\\page-001.png",
+   "png_sha256": "4818e709a83ccbb69702be980287799ffe17e6d9c378886b0721c1dcc2fae811"
+  }
+ ],
+ "0906/0905厦门到晋江发票2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0906__0905厦门到晋江发票2\\page-001.png",
+   "png_sha256": "5fac9bc6710cf96dffebe30113c75d6cff99756fef4398c232e63f319f215b05"
+  }
+ ],
+ "0906/0905晋江到厦门发票1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0906__0905晋江到厦门发票1\\page-001.png",
+   "png_sha256": "b456a999625f5a8aef3a1c17f2a6592c4e022b189d02c3a7c89fe7e83ae5bdba"
+  }
+ ],
+ "0906/0905晋江到厦门发票2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0906__0905晋江到厦门发票2\\page-001.png",
+   "png_sha256": "5ee829ee036d638818dcf82fe3325b9dd370b5f197884938766c6d2f6a198f0b"
+  }
+ ],
+ "0906/0905通行费电子票据汇总单(票据).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0906__0905通行费电子票据汇总单(票据)\\page-001.png",
+   "png_sha256": "d65607940180c046f47d6fa38ebcc79bf684609f20bc5d13700bc2f5d84305e6"
+  }
+ ],
+ "0906/0905通行费电子票据汇总单(票据)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0906__0905通行费电子票据汇总单(票据)2\\page-001.png",
+   "png_sha256": "8b27c3e66a2b6ab08df6e6bbb95080da1bfe9dec3bfaa4f2991bc9a3b48d2cc9"
+  }
+ ],
+ "0906/0905通行费电子票据汇总单(行程).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0906__0905通行费电子票据汇总单(行程)\\page-001.png",
+   "png_sha256": "40a825047875a1544517f7231c2944671dfe1c8c3de0e815b3c64bd9928c8181"
+  }
+ ],
+ "0906/0905通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0906__0905通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "e60ed6b2f9461e8b289695a238a829d591788723329fb2a498c2e47872b65eee"
+  }
+ ],
+ "0917/0917厦门到晋江发票1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0917__0917厦门到晋江发票1\\page-001.png",
+   "png_sha256": "1c43aa5aa441f03e162339c8d72d41deb2beefc2040fbff348e9eb8fc1b29e83"
+  }
+ ],
+ "0917/0917厦门到晋江发票2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0917__0917厦门到晋江发票2\\page-001.png",
+   "png_sha256": "af1a89ae9918227e42b41b1e6d06686449b8e8cd25b7569ce9cfeb5c834233c7"
+  }
+ ],
+ "0917/0917晋江到厦门发票1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0917__0917晋江到厦门发票1\\page-001.png",
+   "png_sha256": "c55723f23b1f4802efa6f091fd2ec263ab10b86b67c65bafc80ae244364c15de"
+  }
+ ],
+ "0917/0917晋江到厦门发票2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0917__0917晋江到厦门发票2\\page-001.png",
+   "png_sha256": "3cf7e47c2f3ba50def07b0ee847971d8e898725f0f336f7c9fd2eb0aaeba452d"
+  }
+ ],
+ "0917/0917通行费电子票据汇总单(票据).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0917__0917通行费电子票据汇总单(票据)\\page-001.png",
+   "png_sha256": "2c0ce376dcdf93fe3896cf03d7ada2d0cfa0e2c71047edcd595e0d29d7f4a924"
+  }
+ ],
+ "0917/0917通行费电子票据汇总单(票据)1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0917__0917通行费电子票据汇总单(票据)1\\page-001.png",
+   "png_sha256": "1812f32e6167e0b4ded9da421c6203a55314c8c0dfdbf4e8ca58c0a92e1a0659"
+  }
+ ],
+ "0917/0917通行费电子票据汇总单(行程).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0917__0917通行费电子票据汇总单(行程)\\page-001.png",
+   "png_sha256": "45b7a74afe58c478cbd16b4f2b0d7e67ac0a643f754acb4a82862a2b8343cab5"
+  }
+ ],
+ "0917/0917通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0917__0917通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "5cc089bfd67b7434fc8fc8765c3142bbce1d56e5a58d8cb49b16570ba13562b6"
+  }
+ ],
+ "0928/0928厦门到晋江发票1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0928__0928厦门到晋江发票1\\page-001.png",
+   "png_sha256": "e2be23b7fc42c813e5fce563741309ced120258a9826a9f2591fa4a04d66c07c"
+  }
+ ],
+ "0928/0928厦门到晋江发票2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0928__0928厦门到晋江发票2\\page-001.png",
+   "png_sha256": "14e8ed37b00e2b4e6228e432f1a24a91982f04d86acff095cba766a8719e4c8e"
+  }
+ ],
+ "0928/0928晋江到厦门发票1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0928__0928晋江到厦门发票1\\page-001.png",
+   "png_sha256": "30609379b724ec506162e85001ffeb69947933f87dd76dc9e51935af0899504b"
+  }
+ ],
+ "0928/0928晋江到厦门发票2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0928__0928晋江到厦门发票2\\page-001.png",
+   "png_sha256": "d7e663cc25e02c1a3ec5ca6528b1463bb28f57e9f8b732c83070df961752f665"
+  }
+ ],
+ "0928/0928通行费电子票据汇总单(票据).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0928__0928通行费电子票据汇总单(票据)\\page-001.png",
+   "png_sha256": "da0662132da7cd01e844bbf02d2970d73833b755b8f1ae6926952b124236579e"
+  }
+ ],
+ "0928/0928通行费电子票据汇总单(票据)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0928__0928通行费电子票据汇总单(票据)2\\page-001.png",
+   "png_sha256": "e5ce6c2f8fa6c4dc168164cba96abf707370d84cd6d211395cd73619b7db7d29"
+  }
+ ],
+ "0928/0928通行费电子票据汇总单(行程).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0928__0928通行费电子票据汇总单(行程)\\page-001.png",
+   "png_sha256": "87d6bf787384eeddee0d41f923734e0c5690086b001e90597604699eafcb44a2"
+  }
+ ],
+ "0928/0928通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\0928__0928通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "f48cbcb8693fa9dc70d27a4022ffc1d131603a54232c6e511f8edeeb6541da28"
+  }
+ ],
+ "1028/1028厦门到晋江发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1028__1028厦门到晋江发票\\page-001.png",
+   "png_sha256": "f47efd158be0616a32b22947572f7e47c80973500f333f9eaa39eed90f7528a2"
+  }
+ ],
+ "1028/1028晋江到厦门发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1028__1028晋江到厦门发票\\page-001.png",
+   "png_sha256": "ded8d5f8d5de6bcbbb885034a597f7de4b5f8355d1794d4fad2f008a498d3b8b"
+  }
+ ],
+ "1028/1028通行费电子票据汇总单(票据).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1028__1028通行费电子票据汇总单(票据)\\page-001.png",
+   "png_sha256": "cd3c1dce0ca3594de3af9415e9d39fd8e651dbd76a14bfbaaaa16410bcafef20"
+  }
+ ],
+ "1028/1028通行费电子票据汇总单(票据)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1028__1028通行费电子票据汇总单(票据)2\\page-001.png",
+   "png_sha256": "b9ee5f8356ec9c13f0b4b1eda5c1a693f8c9a991974b0530d158c5c5a1cb0f7c"
+  }
+ ],
+ "1028/1028通行费电子票据汇总单(行程).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1028__1028通行费电子票据汇总单(行程)\\page-001.png",
+   "png_sha256": "dadc50e33735ab8ef9986f4804c08a16ac675cc81948baf2e8e5106724817180"
+  }
+ ],
+ "1028/1028通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1028__1028通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "3162313925dde8540617023c1b690b87b25fccc08fb718266305fd1cd5664c5f"
+  }
+ ],
+ "1112/1112厦门到晋江发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1112__1112厦门到晋江发票\\page-001.png",
+   "png_sha256": "2bc633f71816d5b83a0b3f0fb994b17cd07d6fa1646647fb3f24601d6c55a871"
+  }
+ ],
+ "1112/1112晋江到厦门发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1112__1112晋江到厦门发票\\page-001.png",
+   "png_sha256": "d034ffbd7bf569c31eb316cb8f983c941b94650b456ce3f33c90d06eb47c0b2e"
+  }
+ ],
+ "1112/1112通行费电子票据汇总单(票据).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1112__1112通行费电子票据汇总单(票据)\\page-001.png",
+   "png_sha256": "33991b1c897195b91aa23f40838c509dc555d23a791345654619d08774e46b59"
+  }
+ ],
+ "1112/1112通行费电子票据汇总单(票据)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1112__1112通行费电子票据汇总单(票据)2\\page-001.png",
+   "png_sha256": "2155e45c9ee35fc5b529458a73db823d54a061c9952f90006020d99ef9bb1930"
+  }
+ ],
+ "1112/1112通行费电子票据汇总单(行程).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1112__1112通行费电子票据汇总单(行程)\\page-001.png",
+   "png_sha256": "23984d4f8724733f229c3073b31df45d72c079d6cc9b92cea7978d276272a01d"
+  }
+ ],
+ "1112/1112通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1112__1112通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "edb631706333e18060b7f71e3cc8d75654f4e879384dea6b70310494b25fc038"
+  }
+ ],
+ "1124/1124厦门到晋江发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1124__1124厦门到晋江发票\\page-001.png",
+   "png_sha256": "e53fa3893dc75fa7037666e8a85e5992942446618e357556356e6159056e2c54"
+  }
+ ],
+ "1124/1124晋江到厦门发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1124__1124晋江到厦门发票\\page-001.png",
+   "png_sha256": "525ba040041f359ae07ed67e9a5d1247e5c39c93b5302c159bd56ec0a05a80e8"
+  }
+ ],
+ "1124/1124通行费电子票据汇总单(票据).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1124__1124通行费电子票据汇总单(票据)\\page-001.png",
+   "png_sha256": "ece8ced200886f405517b54022484d6030d3732f741885f080bd87c0191042d1"
+  }
+ ],
+ "1124/1124通行费电子票据汇总单(票据)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1124__1124通行费电子票据汇总单(票据)2\\page-001.png",
+   "png_sha256": "ac2e10e956ab4fc211cb5641cdccf5231f51e31a18477b95776fdb367482b68b"
+  }
+ ],
+ "1124/1124通行费电子票据汇总单(行程).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1124__1124通行费电子票据汇总单(行程)\\page-001.png",
+   "png_sha256": "ab7f10735bd74552e9fa23102a567db24c896c874c2f91c038e1d2fa503d51df"
+  }
+ ],
+ "1124/1124通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1124__1124通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "0a5950a9de9cb24266adef78d8f1f8c33e8034e78c41325d2e51a8d4b696bfeb"
+  }
+ ],
+ "1204/1204厦门到晋江发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1204__1204厦门到晋江发票\\page-001.png",
+   "png_sha256": "09de32136ac559c6eb9344ede4f75b91e4a3c17a6196a8d2f9d78d64bffa3d7a"
+  }
+ ],
+ "1204/1204晋江到厦门发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1204__1204晋江到厦门发票\\page-001.png",
+   "png_sha256": "bf721f48d02e34fc3fa2ec66dafa5e2208b75fe370eac41bb68f0fbd9f2706f0"
+  }
+ ],
+ "1204/1204通行费电子票据汇总单(票据).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1204__1204通行费电子票据汇总单(票据)\\page-001.png",
+   "png_sha256": "972a365f04fc2aa1569abaa42fa112bafcc51f5294eaf575108a43c45287551f"
+  }
+ ],
+ "1204/1204通行费电子票据汇总单(票据)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1204__1204通行费电子票据汇总单(票据)2\\page-001.png",
+   "png_sha256": "44eeab6948237cca93bdd6b1d5109d41d2632e693011c3b1d9ac431f511165c3"
+  }
+ ],
+ "1204/1204通行费电子票据汇总单(行程).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1204__1204通行费电子票据汇总单(行程)\\page-001.png",
+   "png_sha256": "ab58b31cbe1c4afc08cb36f7f682cee0dd9db55a6420aef5d664c3fc47476402"
+  }
+ ],
+ "1204/1204通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1204__1204通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "884066a6cc9b625a741357052cac8aa62c1c0259f53e89ef458acefbf617da95"
+  }
+ ],
+ "1210/1210厦门-晋江发票.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1210__1210厦门-晋江发票\\page-001.png",
+   "png_sha256": "2aa99ea145db43d7c19e31f1e0f359e4d3b3186202940c5e988ced96a66867c6"
+  }
+ ],
+ "1210/1210晋江-厦门1 (2).pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1210__1210晋江-厦门1 (2)\\page-001.png",
+   "png_sha256": "727f64d010462716657b57682d9dcd0489b8fda0e39816cf927945d722ab9e4c"
+  }
+ ],
+ "1210/1210晋江-厦门1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1210__1210晋江-厦门1\\page-001.png",
+   "png_sha256": "a060c38770cc343e29354971ce8974cef4a194ad8c25551bcc58aa9f057d9f1c"
+  }
+ ],
+ "1210/1210通行费电子票据汇总单(票据)1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1210__1210通行费电子票据汇总单(票据)1\\page-001.png",
+   "png_sha256": "bc308b90c6c25170c3d89b1f5708178b1ca1811252de687082763643732f4da2"
+  }
+ ],
+ "1210/1210通行费电子票据汇总单(票据)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1210__1210通行费电子票据汇总单(票据)2\\page-001.png",
+   "png_sha256": "87eed39db438c981b31496e0a85259999fbcd89dddb11bfcb308be26fb243eeb"
+  }
+ ],
+ "1210/1210通行费电子票据汇总单(行程)1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1210__1210通行费电子票据汇总单(行程)1\\page-001.png",
+   "png_sha256": "99b45a4148366f8bbb3a419faef815e3fed13181178197a00f59307713bd6f73"
+  }
+ ],
+ "1210/1210通行费电子票据汇总单(行程)2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\1210__1210通行费电子票据汇总单(行程)2\\page-001.png",
+   "png_sha256": "3a7c8a627943f56c846741e1c23d9f923215b4e2da31e26b886ee9795401d1e5"
+  }
+ ],
+ "油票/油票1.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\油票__油票1\\page-001.png",
+   "png_sha256": "1a37a4d4b2730925ce21b5da382de68102acf5e9e23c2956cf0290d9529b8d97"
+  }
+ ],
+ "油票/油票2.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\油票__油票2\\page-001.png",
+   "png_sha256": "4b95344a06b4cd494aa0e019b1d89cd233e1d9bd2662a57c35d6070368cca9dd"
+  }
+ ],
+ "油票/油票3.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\油票__油票3\\page-001.png",
+   "png_sha256": "53be31a47903e16ce4a4a60a3012f4c390f825f39f40e1d8a9813affbb677e6e"
+  }
+ ],
+ "油票/油票4.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\油票__油票4\\page-001.png",
+   "png_sha256": "c6992fe74059ff0b604365fad8e2bde5ba3673f684ebfb467739463e70ed4599"
+  }
+ ],
+ "油票/油票5.pdf": [
+  {
+   "page": 1,
+   "png": "automation\\runs\\20261026-192400-v3r08-final\\case08\\rendered\\油票__油票5\\page-001.png",
+   "png_sha256": "67521f6c476c7c54d454ea1eba36d99fca24a265a98e93381c70493d59e00fbe"
+  }
+ ]
+}

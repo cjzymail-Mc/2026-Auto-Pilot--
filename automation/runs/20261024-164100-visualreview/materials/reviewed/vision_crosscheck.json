@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "kind": "agent_vision_crosscheck",
+  "vision_model": "4.5v(analyze_image)",
+  "renders": [
+    {
+      "page": 1,
+      "path": "renders/page-001.png",
+      "sha256": "a5196f34dfe632c1a987c4836cac98cf052c13b746adcb6bb999f0e0422b98d7"
+    },
+    {
+      "page": 2,
+      "path": "renders/page-002.png",
+      "sha256": "8876c02aa2f2cf05c37c87ed0fc3e067680fdfcd36488e320a9285799cb9faa6"
+    }
+  ],
+  "vision_readings": {
+    "page1": {
+      "title": "合成演示发票（非真实票）",
+      "invoice_number": "SYNTH-2026-0007",
+      "date": "2026-10-24",
+      "buyer": "厦门某某科技有限公司",
+      "seller": "晋江某某服务中心",
+      "total_in_words": "陆佰叁拾叁元捌角肆分",
+      "total_amount": "633.84"
+    },
+    "page2": {
+      "title": "合成演示明细清单（非真实票）",
+      "lines": [
+        "1 其它交通费 191.28",
+        "2 伙食费 24.00"
+      ]
+    }
+  },
+  "ground_truth_agreement": "8/8 字段与生成期 ground truth 完全一致（含两页页码锚点）",
+  "gap_registration": {
+    "code": "REAL_TRAVEL_INVOICE_ORIGINALS_ABSENT",
+    "statement": "仓库内不存在任何真实 travel 发票原件（PDF/图片）；本演示为合成样张，真实票面 agent 视觉复核留待用户提供原件后执行。barstub 仅管线测试引擎。",
+    "searched": "automation/runs/**/originals、各材料目录（2026-10-24 盘点结论：无真实发票文件）"
+  }
+}

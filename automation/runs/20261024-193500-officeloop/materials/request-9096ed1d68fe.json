@@ -1,0 +1,10 @@
+{
+  "statement": "低值易耗品、办公用品采购报销（合成离线链验证）：1 行明细+1 行费用说明+三名收款人分摊，合计 1234.56；synthetic/test_only，不填真实页面。",
+  "materials_dir": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-193500-officeloop\\originals",
+  "template_biz_number": "15426101596",
+  "declared_category": "低值易耗品、办公用品采购",
+  "relation_refs": [],
+  "schema_version": "1.0",
+  "source_semantics": "user_instruction",
+  "registered_at": "2026-10-24T11:37:48.379305+00:00"
+}

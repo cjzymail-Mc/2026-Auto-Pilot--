@@ -1,0 +1,303 @@
+{
+ "probe_version": "v2",
+ "run": "20261026-143340-v3r04-case03",
+ "attempt": "attempt_012",
+ "doc_id": null,
+ "expect_name": "陈晶",
+ "checks": {
+  "c1_entry_login": {
+   "status": "PASS",
+   "reason": "域名内页+账户名命中+导航成立（顶栏无显式退出钮，按放宽判据放行）",
+   "evidence": [
+    "attempt_012/evidence/entry.png"
+   ]
+  },
+  "c2_locate_target": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "NOT_RUN",
+   "reason": "未启用 --fill-plan（只读任务不新建/不填写）",
+   "evidence": []
+  }
+ },
+ "phases": {},
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 2726,
+  "classify": "LOGGED_IN",
+  "markers": {
+   "url": "https://bpm.qiaodan.com/oa/home",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 29,
+   "forms": 0,
+   "name_hits": 1,
+   "logout_hits": 0
+  },
+  "cookies_names": [
+   "ww_lang",
+   "wwopen.open.sid"
+  ],
+  "screenshot": "attempt_012/evidence/entry.png",
+  "html": "attempt_012/evidence/entry.html"
+ },
+ "case03_candidates_3e": {
+  "stage": "3e gap-day candidate details",
+  "candidates": [
+   {
+    "bizNumber": "12025091498",
+    "uuid": "673e1743f72b4e4b8a6def58ca3e5955",
+    "appliedAt": "2025-09-05",
+    "applicant": "阮果清",
+    "place": "晋江工厂",
+    "gap_day": "2025-09-04",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-cand-12025091498.json",
+    "api_sha256": "b9ba1064d12d23eb9672c60157e811d653bacb756f92fdb29a680b13c91b5dc5",
+    "doc_appliedName": "阮果清",
+    "doc_place": "晋江工厂公出",
+    "doc_bizReason": "晋江工厂公出",
+    "doc_bizStatus": 4,
+    "doc_reimed": 0,
+    "rows": [
+     {
+      "appliedName": "阮果清",
+      "factStart": "2025-09-05T13:30",
+      "factEnd": "2025-09-05T18:00"
+     }
+    ],
+    "chen_in_rows": false,
+    "covers_gap_day": false
+   },
+   {
+    "bizNumber": "12025092018",
+    "uuid": "94f8f9da76dc4046940a6294864c6739",
+    "appliedAt": "2025-09-08",
+    "applicant": "徐亮",
+    "place": "晋江",
+    "gap_day": "2025-09-04",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-cand-12025092018.json",
+    "api_sha256": "4f908631ed6218dff4e5a5151ddf0e2ade4a0258430a5fb8382bf634fa149e60",
+    "doc_appliedName": "徐亮",
+    "doc_place": "晋江",
+    "doc_bizReason": "会议",
+    "doc_bizStatus": 4,
+    "doc_reimed": 2,
+    "rows": [
+     {
+      "appliedName": "徐亮",
+      "factStart": "2025-09-04T08:30",
+      "factEnd": "2025-09-04T18:00"
+     },
+     {
+      "appliedName": "徐亮",
+      "factStart": "2025-09-05T08:30",
+      "factEnd": "2025-09-05T13:30"
+     }
+    ],
+    "chen_in_rows": false,
+    "covers_gap_day": true
+   },
+   {
+    "bizNumber": "12025094906",
+    "uuid": "d9186d5d1f8147209db9902e262be113",
+    "appliedAt": "2025-09-17",
+    "applicant": "张宇昂",
+    "place": "泉州石狮",
+    "gap_day": "2025-09-17",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-cand-12025094906.json",
+    "api_sha256": "0a3cb207357528cd5a9d4c44be9185c12a9247b640ea434f099cafe2121754b3",
+    "doc_appliedName": "张宇昂",
+    "doc_place": "泉州石狮",
+    "doc_bizReason": "厂家走访",
+    "doc_bizStatus": 4,
+    "doc_reimed": 2,
+    "rows": [
+     {
+      "appliedName": "张宇昂",
+      "factStart": "2025-09-17T08:30",
+      "factEnd": "2025-09-17T18:00"
+     },
+     {
+      "appliedName": "徐亮",
+      "factStart": "2025-09-17T08:30",
+      "factEnd": "2025-09-17T18:00"
+     }
+    ],
+    "chen_in_rows": false,
+    "covers_gap_day": true
+   },
+   {
+    "bizNumber": "12025095297",
+    "uuid": "6e46825db34d41768aa57284d1b3f190",
+    "appliedAt": "2025-09-18",
+    "applicant": "张宇昂",
+    "place": "晋江",
+    "gap_day": "2025-09-17",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-cand-12025095297.json",
+    "api_sha256": "1cb0963a0ec2383eb66a593d8b80763964bfc71d19d0a4f9a263a8e14c91e5dc",
+    "doc_appliedName": "张宇昂",
+    "doc_place": "晋江",
+    "doc_bizReason": "pb6.0量产跟进",
+    "doc_bizStatus": 4,
+    "doc_reimed": 0,
+    "rows": [
+     {
+      "appliedName": "张宇昂",
+      "factStart": "2025-09-17T08:30",
+      "factEnd": "2025-09-18T18:00"
+     }
+    ],
+    "chen_in_rows": false,
+    "covers_gap_day": true
+   },
+   {
+    "bizNumber": "12025098708",
+    "uuid": "fbf995fe72db4b14a46a00735852bd36",
+    "appliedAt": "2025-09-28",
+    "applicant": "张宇昂",
+    "place": "泉州",
+    "gap_day": "2025-09-28",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-cand-12025098708.json",
+    "api_sha256": "53c282a599bd0db24e5a46b2c98e24c6fcd9517388e335ea4ca47f157a4419d1",
+    "doc_appliedName": "张宇昂",
+    "doc_place": "泉州",
+    "doc_bizReason": "供应商走访（通达）",
+    "doc_bizStatus": 4,
+    "doc_reimed": 2,
+    "rows": [
+     {
+      "appliedName": "张宇昂",
+      "factStart": "2025-09-28T08:30",
+      "factEnd": "2025-09-28T18:00"
+     },
+     {
+      "appliedName": "徐亮",
+      "factStart": "2025-09-28T08:30",
+      "factEnd": "2025-09-28T18:00"
+     }
+    ],
+    "chen_in_rows": false,
+    "covers_gap_day": true
+   },
+   {
+    "bizNumber": "12025115994",
+    "uuid": "9de4366410e14b26be9790b2b5c8b88b",
+    "appliedAt": "2025-11-27",
+    "applicant": "徐亮",
+    "place": "晋江",
+    "gap_day": "2025-11-24",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-cand-12025115994.json",
+    "api_sha256": "8b753d068fe62a2111784e6ef27c18eeb7502728099ea2d8b2b78b57fce92bf2",
+    "doc_appliedName": "徐亮",
+    "doc_place": "晋江",
+    "doc_bizReason": "plaid3量产试做",
+    "doc_bizStatus": 4,
+    "doc_reimed": 2,
+    "rows": [
+     {
+      "appliedName": "徐亮",
+      "factStart": "2025-11-24T08:30",
+      "factEnd": "2025-11-24T17:30"
+     }
+    ],
+    "chen_in_rows": false,
+    "covers_gap_day": true
+   },
+   {
+    "bizNumber": "12025122974",
+    "uuid": "522cecce78ea4f2dbbee656c7cf99772",
+    "appliedAt": "2025-12-10",
+    "applicant": "阮果清",
+    "place": "晋江工厂",
+    "gap_day": "2025-12-10",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-cand-12025122974.json",
+    "api_sha256": "e356a04e8d8eac5aac823405a649c77782eecc2bcf47a903b9570ec04e7a1bea",
+    "doc_appliedName": "阮果清",
+    "doc_place": "晋江工厂",
+    "doc_bizReason": "晋江工厂公出",
+    "doc_bizStatus": 4,
+    "doc_reimed": 0,
+    "rows": [
+     {
+      "appliedName": "阮果清",
+      "factStart": "2025-12-10T13:00",
+      "factEnd": "2025-12-10T17:30"
+     }
+    ],
+    "chen_in_rows": false,
+    "covers_gap_day": true
+   },
+   {
+    "bizNumber": "12025123375",
+    "uuid": "429045c57c744a16913a93304f658f41",
+    "appliedAt": "2025-12-12",
+    "applicant": "徐亮",
+    "place": "晋江",
+    "gap_day": "2025-12-10",
+    "status": "CAPTURED",
+    "http_status": 200,
+    "api_file": "api-cand-12025123375.json",
+    "api_sha256": "6a2bc28433d84476b6567f2a56b8efb8872f992bf6bcd5e6498e206ae40033d2",
+    "doc_appliedName": "徐亮",
+    "doc_place": "晋江",
+    "doc_bizReason": "项目跟进",
+    "doc_bizStatus": 4,
+    "doc_reimed": 2,
+    "rows": [
+     {
+      "appliedName": "徐亮",
+      "factStart": "2025-12-10T08:30",
+      "factEnd": "2025-12-10T17:30"
+     }
+    ],
+    "chen_in_rows": false,
+    "covers_gap_day": true
+   }
+  ]
+ },
+ "finish_reason": "CANDIDATES_CAPTURED",
+ "tech_used_s": 8.3,
+ "login_wait_s": 0.0,
+ "wall_s": 9.6,
+ "budget_respected": true
+}

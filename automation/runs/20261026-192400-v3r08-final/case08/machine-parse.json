@@ -1,0 +1,1854 @@
+[
+ {
+  "relative_path": "0825/0825厦门到晋江发票.pdf",
+  "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16304714",
+  "issue_date": "2025年08月26日",
+  "checksum": "04536 86912 96402 57294",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250825",
+   "20250825"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "0825/0825晋江到厦门发票.pdf",
+  "sha256": "0d4a4d9dcdb88681c29ab27390db0fbf9274c46abfdb99a36c49104322fcd124",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16166322",
+  "issue_date": "2025年08月26日",
+  "checksum": "00325 58041 42534 32244",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250825",
+   "20250825"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "0825/0825通行费电子票据汇总单(票据).pdf",
+  "sha256": "ea27aa3f208d50138e1cc9041c632f12e3af04fc04f189dbaccafacc17f8ba75",
+  "kind": "summary",
+  "summary_no": "3520250800404681",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "翔安",
+    "池店"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16304714"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "0825/0825通行费电子票据汇总单(票据)2.pdf",
+  "sha256": "319eb8304f75e5f45de37a0b09dab4c7aaa61c26c46c7143d942bb6ad988e6e7",
+  "kind": "summary",
+  "summary_no": "3520250800404618",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "池店",
+    "翔安"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16166322"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "0825/0825通行费电子票据汇总单(行程).pdf",
+  "sha256": "941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a",
+  "kind": "summary",
+  "summary_no": "3520250800404681",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16304714"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "0825/0825通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "71ca0ed3919a919fc878915bb98a954c5e79a87625ad6f16488a087465782069",
+  "kind": "summary",
+  "summary_no": "3520250800404618",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16166322"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "0904/0904厦门到晋江发票.pdf",
+  "sha256": "d9091196c294a1963b64b2793a1b91aea5cfafcbe56aa511d766ac6804cd50df",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16104706",
+  "issue_date": "2025年09月05日",
+  "checksum": "05982 23006 28917 60314",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250904",
+   "20250904"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "0904/0904晋江到厦门发票.pdf",
+  "sha256": "f76c780ebfc25b3d7588b8ef6244d43093e907732669c1e01f2492eebe3c681b",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16104709",
+  "issue_date": "2025年09月05日",
+  "checksum": "17480 98391 36463 79726",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250904",
+   "20250904"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "0904/0904通行费电子票据汇总单(票据).pdf",
+  "sha256": "6eb75f49be1caf958bba83522e5e558eb9237eeb8e015d6b6a82e04d8b85a3fc",
+  "kind": "summary",
+  "summary_no": "3520250900092215",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "翔安",
+    "池店"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16104706"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "0904/0904通行费电子票据汇总单(票据)2.pdf",
+  "sha256": "1d627fa9b8829214367aa50529cd8dea224c67e6268f739232027f7168b60bcb",
+  "kind": "summary",
+  "summary_no": "3520250900092251",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "池店",
+    "翔安"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16104709"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "0904/0904通行费电子票据汇总单(行程).pdf",
+  "sha256": "e6834778f428b6aa0db157b967bec13499eb4d652d07475e11086e85ec9a7071",
+  "kind": "summary",
+  "summary_no": "3520250900092215",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16104706"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "0904/0904通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "1d020ac8a3377ad86ea915fbbf516781996b0dfa6ded4f82a78cf157b353c2b7",
+  "kind": "summary",
+  "summary_no": "3520250900092251",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16104709"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "0906/0905厦门到晋江发票1.pdf",
+  "sha256": "65c5454b229f6a3218d9ba5b5b18771a707e65df3c5c09bfbaf4c6fdef4bc94a",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "15913017",
+  "issue_date": "2025年09月06日",
+  "checksum": "09110 84767 72624 48090",
+  "total_lower": "￥4.41",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250905",
+   "20250905"
+  ],
+  "amount_lines": [],
+  "amounts_all": [
+   "￥4.41",
+   "￥4.41"
+  ],
+  "upper_total": [
+   "肆元肆角壹分"
+  ]
+ },
+ {
+  "relative_path": "0906/0905厦门到晋江发票2.pdf",
+  "sha256": "c82b92281631e392b4247a4f8ec51640c2ef49299cc92e84402f26d8600f45fb",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16108478",
+  "issue_date": "2025年09月06日",
+  "checksum": "06811 92028 87940 35059",
+  "total_lower": "￥15.54",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250905",
+   "20250905"
+  ],
+  "amount_lines": [
+   [
+    "15.09",
+    "3%",
+    "0.45"
+   ]
+  ],
+  "amounts_all": [
+   "￥15.09",
+   "￥0.45",
+   "￥15.54"
+  ],
+  "upper_total": [
+   "壹拾伍元伍角肆分"
+  ]
+ },
+ {
+  "relative_path": "0906/0905晋江到厦门发票1.pdf",
+  "sha256": "971745466df37e12412f845a9543e084a9f3dde171186df89b6289d3507a1d0e",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "15913011",
+  "issue_date": "2025年09月06日",
+  "checksum": "06284 02372 26630 63436",
+  "total_lower": "￥4.42",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250905",
+   "20250905"
+  ],
+  "amount_lines": [],
+  "amounts_all": [
+   "￥4.42",
+   "￥4.42"
+  ],
+  "upper_total": [
+   "肆元肆角贰分"
+  ]
+ },
+ {
+  "relative_path": "0906/0905晋江到厦门发票2.pdf",
+  "sha256": "f7e076247653f7d6009c9e08b109a613e7de93200bd965ebbb47922e093801c1",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16366191",
+  "issue_date": "2025年09月06日",
+  "checksum": "02875 09847 52091 65300",
+  "total_lower": "￥15.53",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250905",
+   "20250905"
+  ],
+  "amount_lines": [
+   [
+    "15.08",
+    "3%",
+    "0.45"
+   ]
+  ],
+  "amounts_all": [
+   "￥15.08",
+   "￥0.45",
+   "￥15.53"
+  ],
+  "upper_total": [
+   "壹拾伍元伍角叁分"
+  ]
+ },
+ {
+  "relative_path": "0906/0905通行费电子票据汇总单(票据).pdf",
+  "sha256": "a18564a0a9a0e3dd11537beb393b8d779eeec3c7e4afc89f59b1293d91ff7ed4",
+  "kind": "summary",
+  "summary_no": "3520250900105488",
+  "ticket_count": 2,
+  "routes": [
+   [
+    "翔安",
+    "晋江南"
+   ],
+   [
+    "翔安",
+    "晋江南"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "15913017"
+   },
+   {
+    "code": "035002400112",
+    "number": "16108478"
+   }
+  ],
+  "ticket_amounts": [
+   "4.41",
+   "4.41",
+   "19.95",
+   "15.54",
+   "0.45",
+   "15.54"
+  ]
+ },
+ {
+  "relative_path": "0906/0905通行费电子票据汇总单(票据)2.pdf",
+  "sha256": "d7641230239c003c63e87481b18e05bb86b21f3798a9c4ac1c77a1c0e264bfb8",
+  "kind": "summary",
+  "summary_no": "3520250900105478",
+  "ticket_count": 2,
+  "routes": [
+   [
+    "晋江南",
+    "翔安"
+   ],
+   [
+    "晋江南",
+    "翔安"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "15913011"
+   },
+   {
+    "code": "035002400112",
+    "number": "16366191"
+   }
+  ],
+  "ticket_amounts": [
+   "4.42",
+   "4.42",
+   "19.95",
+   "15.53",
+   "0.45",
+   "15.53"
+  ]
+ },
+ {
+  "relative_path": "0906/0905通行费电子票据汇总单(行程).pdf",
+  "sha256": "881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8",
+  "kind": "summary",
+  "summary_no": "3520250900105488",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "15913017"
+   },
+   {
+    "code": "035002400112",
+    "number": "16108478"
+   }
+  ],
+  "ticket_amounts": [
+   "19.95",
+   "4.41",
+   "4.41",
+   "15.54",
+   "15.54",
+   "0.45"
+  ]
+ },
+ {
+  "relative_path": "0906/0905通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "b200a66cc4b8959ae9a6e6dc00918a443fc44431229cb4b1dfe4ae3ae2902b14",
+  "kind": "summary",
+  "summary_no": "3520250900105478",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "15913011"
+   },
+   {
+    "code": "035002400112",
+    "number": "16366191"
+   }
+  ],
+  "ticket_amounts": [
+   "19.95",
+   "4.42",
+   "4.42",
+   "15.53",
+   "15.53",
+   "0.45"
+  ]
+ },
+ {
+  "relative_path": "0917/0917厦门到晋江发票1.pdf",
+  "sha256": "545b2e19cba2d095c072395e9a37cb91bfa752bc839625d334f12c794139cb55",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16227300",
+  "issue_date": "2025年09月18日",
+  "checksum": "17133 02012 94863 39029",
+  "total_lower": "￥15.69",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250917",
+   "20250917"
+  ],
+  "amount_lines": [
+   [
+    "15.23",
+    "3%",
+    "0.46"
+   ]
+  ],
+  "amounts_all": [
+   "￥15.23",
+   "￥0.46",
+   "￥15.69"
+  ],
+  "upper_total": [
+   "壹拾伍元陆角玖分"
+  ]
+ },
+ {
+  "relative_path": "0917/0917厦门到晋江发票2.pdf",
+  "sha256": "c39d7439d64f2d6af5bc4a5ba1640b03b057eb1740ccf79916fad52428d2d937",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16657870",
+  "issue_date": "2025年09月18日",
+  "checksum": "04484 20873 63057 08886",
+  "total_lower": "￥16.24",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250917",
+   "20250917"
+  ],
+  "amount_lines": [],
+  "amounts_all": [
+   "￥16.24",
+   "￥16.24"
+  ],
+  "upper_total": [
+   "壹拾陆元贰角肆分"
+  ]
+ },
+ {
+  "relative_path": "0917/0917晋江到厦门发票1.pdf",
+  "sha256": "3a053649d23da91f3891708971d9de642fe9d81c79861abdb535a4c85eaa8ea3",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16657942",
+  "issue_date": "2025年09月18日",
+  "checksum": "03480 15330 82949 08393",
+  "total_lower": "￥16.24",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250917",
+   "20250917"
+  ],
+  "amount_lines": [],
+  "amounts_all": [
+   "￥16.24",
+   "￥16.24"
+  ],
+  "upper_total": [
+   "壹拾陆元贰角肆分"
+  ]
+ },
+ {
+  "relative_path": "0917/0917晋江到厦门发票2.pdf",
+  "sha256": "a223cfa80e608bc1cd99bb6e61451d16d6584549918b77063dd98e88d97c06c3",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16227311",
+  "issue_date": "2025年09月18日",
+  "checksum": "16212 85898 03142 15533",
+  "total_lower": "￥20.73",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250917",
+   "20250917"
+  ],
+  "amount_lines": [
+   [
+    "20.13",
+    "3%",
+    "0.60"
+   ]
+  ],
+  "amounts_all": [
+   "￥20.13",
+   "￥0.60",
+   "￥20.73"
+  ],
+  "upper_total": [
+   "贰拾元零柒角叁分"
+  ]
+ },
+ {
+  "relative_path": "0917/0917通行费电子票据汇总单(票据).pdf",
+  "sha256": "8707e02ce10361caefaad43058f72104d9e867a9acee2936c4512dfc745cac5d",
+  "kind": "summary",
+  "summary_no": "3520250900282520",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16657870"
+   },
+   {
+    "code": "035002400112",
+    "number": "16227300"
+   }
+  ],
+  "ticket_amounts": [
+   "16.24",
+   "16.24",
+   "31.93",
+   "15.69",
+   "0.46",
+   "15.69"
+  ]
+ },
+ {
+  "relative_path": "0917/0917通行费电子票据汇总单(票据)1.pdf",
+  "sha256": "c53887bcc6aa0b9d3a7c6b799add4d4d2d754a35b6ee45224939fb76382bdf1f",
+  "kind": "summary",
+  "summary_no": "3520250900282612",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16657942"
+   },
+   {
+    "code": "035002400112",
+    "number": "16227311"
+   }
+  ],
+  "ticket_amounts": [
+   "16.24",
+   "16.24",
+   "36.97",
+   "20.73",
+   "0.60",
+   "20.73"
+  ]
+ },
+ {
+  "relative_path": "0917/0917通行费电子票据汇总单(行程).pdf",
+  "sha256": "b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b",
+  "kind": "summary",
+  "summary_no": "3520250900282520",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16657870"
+   },
+   {
+    "code": "035002400112",
+    "number": "16227300"
+   }
+  ],
+  "ticket_amounts": [
+   "31.93",
+   "16.24",
+   "16.24",
+   "15.69",
+   "15.69",
+   "0.46"
+  ]
+ },
+ {
+  "relative_path": "0917/0917通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "f13f63ba9763de1e199b4aed236fc051c28c9db3dd98e2e65e5035d1bdfd48e8",
+  "kind": "summary",
+  "summary_no": "3520250900282612",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16657942"
+   },
+   {
+    "code": "035002400112",
+    "number": "16227311"
+   }
+  ],
+  "ticket_amounts": [
+   "36.97",
+   "16.24",
+   "16.24",
+   "20.73",
+   "20.73",
+   "0.60"
+  ]
+ },
+ {
+  "relative_path": "0928/0928厦门到晋江发票1.pdf",
+  "sha256": "a32eed3f466ae901891bc6d6521fdc2df93d2ea0ad9e9a3eec16872091d5ff27",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16858364",
+  "issue_date": "2025年09月29日",
+  "checksum": "09712 97386 62773 44222",
+  "total_lower": "￥16.24",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250928",
+   "20250928"
+  ],
+  "amount_lines": [],
+  "amounts_all": [
+   "￥16.24",
+   "￥16.24"
+  ],
+  "upper_total": [
+   "壹拾陆元贰角肆分"
+  ]
+ },
+ {
+  "relative_path": "0928/0928厦门到晋江发票2.pdf",
+  "sha256": "9468de8cadb19e7da05a7105efdcd620e88fae806d58f0a4b97011aabf1a1753",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16422064",
+  "issue_date": "2025年09月29日",
+  "checksum": "02061 86128 65852 82882",
+  "total_lower": "￥15.69",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250928",
+   "20250928"
+  ],
+  "amount_lines": [
+   [
+    "15.23",
+    "3%",
+    "0.46"
+   ]
+  ],
+  "amounts_all": [
+   "￥15.23",
+   "￥0.46",
+   "￥15.69"
+  ],
+  "upper_total": [
+   "壹拾伍元陆角玖分"
+  ]
+ },
+ {
+  "relative_path": "0928/0928晋江到厦门发票1.pdf",
+  "sha256": "2c86eb6e49d53167237d31d8bc63ddc6c53d1ac386f78289aa68a5a8b610b4b5",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "16548299",
+  "issue_date": "2025年09月29日",
+  "checksum": "03768 63323 62214 82462",
+  "total_lower": "￥16.24",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250928",
+   "20250928"
+  ],
+  "amount_lines": [],
+  "amounts_all": [
+   "￥16.24",
+   "￥16.24"
+  ],
+  "upper_total": [
+   "壹拾陆元贰角肆分"
+  ]
+ },
+ {
+  "relative_path": "0928/0928晋江到厦门发票2.pdf",
+  "sha256": "73f81366f14b33b8e7c3c08c7712f79fe812014dce623b1ee96707cc58e061ae",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "17727508",
+  "issue_date": "2025年09月29日",
+  "checksum": "12892 71296 71028 46560",
+  "total_lower": "￥15.69",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20250928",
+   "20250928"
+  ],
+  "amount_lines": [
+   [
+    "15.23",
+    "3%",
+    "0.46"
+   ]
+  ],
+  "amounts_all": [
+   "￥15.23",
+   "￥0.46",
+   "￥15.69"
+  ],
+  "upper_total": [
+   "壹拾伍元陆角玖分"
+  ]
+ },
+ {
+  "relative_path": "0928/0928通行费电子票据汇总单(票据).pdf",
+  "sha256": "d2802a6e946ec27c811fe8f513860c78fb2cb4880c6424f517414daa3296b5ba",
+  "kind": "summary",
+  "summary_no": "3520250900432758",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16858364"
+   },
+   {
+    "code": "035002400112",
+    "number": "16422064"
+   }
+  ],
+  "ticket_amounts": [
+   "16.24",
+   "16.24",
+   "31.93",
+   "15.69",
+   "0.46",
+   "15.69"
+  ]
+ },
+ {
+  "relative_path": "0928/0928通行费电子票据汇总单(票据)2.pdf",
+  "sha256": "dc2291d60aa68539ad4b36512443d1eba63da72249d906ccb3269cb16667d4ce",
+  "kind": "summary",
+  "summary_no": "3520250900432800",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16548299"
+   },
+   {
+    "code": "035002400112",
+    "number": "17727508"
+   }
+  ],
+  "ticket_amounts": [
+   "16.24",
+   "16.24",
+   "31.93",
+   "15.69",
+   "0.46",
+   "15.69"
+  ]
+ },
+ {
+  "relative_path": "0928/0928通行费电子票据汇总单(行程).pdf",
+  "sha256": "29deb152ee3f9b972c99f6ca2b77118511d88d6f6f3a16559f5e9bff45acfd81",
+  "kind": "summary",
+  "summary_no": "3520250900432758",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16858364"
+   },
+   {
+    "code": "035002400112",
+    "number": "16422064"
+   }
+  ],
+  "ticket_amounts": [
+   "31.93",
+   "16.24",
+   "16.24",
+   "15.69",
+   "15.69",
+   "0.46"
+  ]
+ },
+ {
+  "relative_path": "0928/0928通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "4fdd015c8f9870d7abd94645a3a98185d5cac70795aceae42b326d1a08b7d289",
+  "kind": "summary",
+  "summary_no": "3520250900432800",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "16548299"
+   },
+   {
+    "code": "035002400112",
+    "number": "17727508"
+   }
+  ],
+  "ticket_amounts": [
+   "31.93",
+   "16.24",
+   "16.24",
+   "15.69",
+   "15.69",
+   "0.46"
+  ]
+ },
+ {
+  "relative_path": "1028/1028厦门到晋江发票.pdf",
+  "sha256": "b1ecf5dd71fd65ea36ecdbde26745bac617816509b8f910a5c635a9a1a47dabd",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "17793922",
+  "issue_date": "2025年10月28日",
+  "checksum": "01342 24972 82266 12274",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251028",
+   "20251028"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "1028/1028晋江到厦门发票.pdf",
+  "sha256": "6994dac5e8c069c6178d089968747deeb803e7bff1779fbf25d8cb11bfc600bc",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "17794993",
+  "issue_date": "2025年10月28日",
+  "checksum": "15272 90862 96468 36905",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251028",
+   "20251028"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "1028/1028通行费电子票据汇总单(票据).pdf",
+  "sha256": "8f5e67f3547ba99a308f20dffed0d30d26f6c1ee790a9573c94bba78088b03a0",
+  "kind": "summary",
+  "summary_no": "3520251000349301",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "翔安",
+    "池店"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "17793922"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "1028/1028通行费电子票据汇总单(票据)2.pdf",
+  "sha256": "c1a5717526e009a4eb13873c9cf51f656b57cb78d2f0705d11fec8368bcfe5fa",
+  "kind": "summary",
+  "summary_no": "3520251000353752",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "池店",
+    "翔安"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "17794993"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "1028/1028通行费电子票据汇总单(行程).pdf",
+  "sha256": "f02a91ea658e2c693c0799eec64d22ced76f9cf62a009ab8e7b153256423c5c7",
+  "kind": "summary",
+  "summary_no": "3520251000349301",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "17793922"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "1028/1028通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "45faaf7299b68c88ae4f48f1f473e428c80292b601061b2948b59ff73968d48c",
+  "kind": "summary",
+  "summary_no": "3520251000353752",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "17794993"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "1112/1112厦门到晋江发票.pdf",
+  "sha256": "aec32556f491b7d501320d4aec126c1b740b4dacd2d39b1dd645ef2fdbfcb70a",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "17950250",
+  "issue_date": "2025年11月12日",
+  "checksum": "17617 88583 93056 68858",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251112",
+   "20251112"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "1112/1112晋江到厦门发票.pdf",
+  "sha256": "9df21719b90ff16568b39d8320f17819112434eede9548cb65500c50110edd31",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "17952458",
+  "issue_date": "2025年11月12日",
+  "checksum": "11913 67619 81905 02366",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251112",
+   "20251112"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "1112/1112通行费电子票据汇总单(票据).pdf",
+  "sha256": "75d5a100d6a3ab90f33cdebbf09a6150014757f4d80a3af7bcefb5a654b61845",
+  "kind": "summary",
+  "summary_no": "3520251100189937",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "翔安",
+    "池店"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "17950250"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "1112/1112通行费电子票据汇总单(票据)2.pdf",
+  "sha256": "1e1ba85d9b96a20092f3e1d11387d5dafaeedd914a0ca0915c5f2308f2b6ac65",
+  "kind": "summary",
+  "summary_no": "3520251100197026",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "池店",
+    "翔安"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "17952458"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "1112/1112通行费电子票据汇总单(行程).pdf",
+  "sha256": "81f2de6dc7b6a799aa21a3444f8b846ba558af159a6dbe8edb357cbd857c0eb6",
+  "kind": "summary",
+  "summary_no": "3520251100189937",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "17950250"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "1112/1112通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "61694faadc0d1085021c2328640e1d11cd6a7116c64915c66a776d83299f7faa",
+  "kind": "summary",
+  "summary_no": "3520251100197026",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "17952458"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "1124/1124厦门到晋江发票.pdf",
+  "sha256": "4c6b6c9c14285a4ab623ac5bd9b0835f15a06978fc7542678e72da794f28ee3c",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "20703083",
+  "issue_date": "2025年11月24日",
+  "checksum": "12799 78958 75914 33346",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251124",
+   "20251124"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "1124/1124晋江到厦门发票.pdf",
+  "sha256": "8b30364a37a25508a0308d772a309f14e27d696ca59c5326104bda9193191507",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "18011706",
+  "issue_date": "2025年11月24日",
+  "checksum": "03791 22452 58815 83662",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251124",
+   "20251124"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "1124/1124通行费电子票据汇总单(票据).pdf",
+  "sha256": "0ac67c37ce2343ffe06fb986721bb1a953f33ee3660cb4f12ab0dd44be17f657",
+  "kind": "summary",
+  "summary_no": "3520251100356544",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "翔安",
+    "池店"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "20703083"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "1124/1124通行费电子票据汇总单(票据)2.pdf",
+  "sha256": "0f6723ddae22093d425a0a668625b4119b0dcabd1d419392515f4de22401a39d",
+  "kind": "summary",
+  "summary_no": "3520251100359670",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "池店",
+    "翔安"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "18011706"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "1124/1124通行费电子票据汇总单(行程).pdf",
+  "sha256": "060e5f01cb7be817ed2da886c1de07e2903855202c0dc69c0ce2633f3d413839",
+  "kind": "summary",
+  "summary_no": "3520251100356544",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "20703083"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "1124/1124通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "cd0985c91f99fd17799d49724018402930059cb03f6cb22736b8fe7f447be295",
+  "kind": "summary",
+  "summary_no": "3520251100359670",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "18011706"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "1204/1204厦门到晋江发票.pdf",
+  "sha256": "a208df8ba6cddcea5664debbd968f423afee03411d34a735c5ddadae04215ba2",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "18196512",
+  "issue_date": "2025年12月04日",
+  "checksum": "08608 08998 94545 83619",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251204",
+   "20251204"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "1204/1204晋江到厦门发票.pdf",
+  "sha256": "880da46ac48c8fcee95504884a71b64f80f5955b12bcd0a64071988e06daa574",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "18197206",
+  "issue_date": "2025年12月04日",
+  "checksum": "06848 89687 85439 40036",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251204",
+   "20251204"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "1204/1204通行费电子票据汇总单(票据).pdf",
+  "sha256": "878743d18bd0262fc3e0b7a999e7e2321f83c7aaa2e50106f7e007a67d30d1b2",
+  "kind": "summary",
+  "summary_no": "3520251200079962",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "翔安",
+    "池店"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "18196512"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "1204/1204通行费电子票据汇总单(票据)2.pdf",
+  "sha256": "ce593a45a9d4054d3d461d11a6e28b0986438bfbfa90f8b73130e93f6273ee3b",
+  "kind": "summary",
+  "summary_no": "3520251200082809",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "池店",
+    "翔安"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "18197206"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "1204/1204通行费电子票据汇总单(行程).pdf",
+  "sha256": "c0cfa4376273caed571fcf9249e5e4388ca2ccc75f01374de35cc485e4c9907e",
+  "kind": "summary",
+  "summary_no": "3520251200079962",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "18196512"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "1204/1204通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "72e6e098c8b9da0759105121f65636dfe7cda8a741fe13205376e903aaa88749",
+  "kind": "summary",
+  "summary_no": "3520251200082809",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "18197206"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "1210/1210厦门-晋江发票.pdf",
+  "sha256": "f491e48ec0ec4d4aa253bc550a3b6055b9a4b256bef6284a75aac67c8c45b188",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "20514402",
+  "issue_date": "2025年12月10日",
+  "checksum": "05816 96215 20157 83871",
+  "total_lower": "￥22.64",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251210",
+   "20251210"
+  ],
+  "amount_lines": [
+   [
+    "21.98",
+    "3%",
+    "0.66"
+   ]
+  ],
+  "amounts_all": [
+   "￥21.98",
+   "￥0.66",
+   "￥22.64"
+  ],
+  "upper_total": [
+   "贰拾贰元陆角肆分"
+  ]
+ },
+ {
+  "relative_path": "1210/1210晋江-厦门1 (2).pdf",
+  "sha256": "1ae368f75f769f92d0fca5d762b6674b2fc138d8446771f31aabc14580d84bfa",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "20519372",
+  "issue_date": "2025年12月10日",
+  "checksum": "17824 64670 74834 13664",
+  "total_lower": "￥15.53",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251210",
+   "20251210"
+  ],
+  "amount_lines": [
+   [
+    "15.08",
+    "3%",
+    "0.45"
+   ]
+  ],
+  "amounts_all": [
+   "￥15.08",
+   "￥0.45",
+   "￥15.53"
+  ],
+  "upper_total": [
+   "壹拾伍元伍角叁分"
+  ]
+ },
+ {
+  "relative_path": "1210/1210晋江-厦门1.pdf",
+  "sha256": "9a3f6ffbc9bae0431bb29b0c1b97a959ddc3c90ead6f57655c20d3ca529ff168",
+  "kind": "toll_invoice",
+  "invoice_code": "035002400112",
+  "invoice_number": "19977515",
+  "issue_date": "2025年12月10日",
+  "checksum": "06077 59297 85038 12683",
+  "total_lower": "￥4.42",
+  "plate": "闽D263GG",
+  "travel_dates": [
+   "20251210",
+   "20251210"
+  ],
+  "amount_lines": [],
+  "amounts_all": [
+   "￥4.42",
+   "￥4.42"
+  ],
+  "upper_total": [
+   "肆元肆角贰分"
+  ]
+ },
+ {
+  "relative_path": "1210/1210通行费电子票据汇总单(票据)1.pdf",
+  "sha256": "5366488af488bcd737ae40739e1c71e37fb470b6d07d81cd9109bf1401ddb272",
+  "kind": "summary",
+  "summary_no": "3520251200189737",
+  "ticket_count": 2,
+  "routes": [
+   [
+    "晋江南",
+    "翔安"
+   ],
+   [
+    "晋江南",
+    "翔安"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "19977515"
+   },
+   {
+    "code": "035002400112",
+    "number": "20519372"
+   }
+  ],
+  "ticket_amounts": [
+   "4.42",
+   "4.42",
+   "19.95",
+   "15.53",
+   "0.45",
+   "15.53"
+  ]
+ },
+ {
+  "relative_path": "1210/1210通行费电子票据汇总单(票据)2.pdf",
+  "sha256": "b535f2a4f1617a9d9409ef509b6e3c1019e7214bbd520986e7290ebbc1793299",
+  "kind": "summary",
+  "summary_no": "3520251200181224",
+  "ticket_count": 1,
+  "routes": [
+   [
+    "翔安",
+    "池店"
+   ]
+  ],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "20514402"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "0.66",
+   "22.64",
+   "22.64"
+  ]
+ },
+ {
+  "relative_path": "1210/1210通行费电子票据汇总单(行程)1.pdf",
+  "sha256": "934272a0ba82bc4f4e611cf9d01ae7690282467470b94b35d5362eecf4058fb2",
+  "kind": "summary",
+  "summary_no": "3520251200189737",
+  "ticket_count": 2,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "19977515"
+   },
+   {
+    "code": "035002400112",
+    "number": "20519372"
+   }
+  ],
+  "ticket_amounts": [
+   "19.95",
+   "4.42",
+   "4.42",
+   "15.53",
+   "15.53",
+   "0.45"
+  ]
+ },
+ {
+  "relative_path": "1210/1210通行费电子票据汇总单(行程)2.pdf",
+  "sha256": "b66c294bdded4ec6ec0fd313243931a561e438f36362d62d65a1b226d6c3e157",
+  "kind": "summary",
+  "summary_no": "3520251200181224",
+  "ticket_count": 1,
+  "routes": [],
+  "total_lower": null,
+  "tickets": [
+   {
+    "code": "035002400112",
+    "number": "20514402"
+   }
+  ],
+  "ticket_amounts": [
+   "22.64",
+   "22.64",
+   "22.64",
+   "0.66"
+  ]
+ },
+ {
+  "relative_path": "油票/油票1.pdf",
+  "sha256": "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc",
+  "kind": "oil_invoice",
+  "invoice_number": "25357000000191876369",
+  "issue_date": "2025年12月12日",
+  "amounts_all": [],
+  "total_lower": null,
+  "item": [
+   [
+    "汽油",
+    "95号车用汽油(ⅥB"
+   ]
+  ]
+ },
+ {
+  "relative_path": "油票/油票2.pdf",
+  "sha256": "edf10b1ccf16177e6de7d33f5d8635d8f8425c212023fd2360e516d8d12a8c74",
+  "kind": "oil_invoice",
+  "invoice_number": "25357000000191876368",
+  "issue_date": "2025年12月12日",
+  "amounts_all": [],
+  "total_lower": null,
+  "item": [
+   [
+    "汽油",
+    "95号车用汽油(ⅥB"
+   ]
+  ]
+ },
+ {
+  "relative_path": "油票/油票3.pdf",
+  "sha256": "6f185efe5c2ffb0f34d8582bf42935936f8e2941ed2ec9ad068adad1fc01ab8b",
+  "kind": "oil_invoice",
+  "invoice_number": "25357000000191872798",
+  "issue_date": "2025年12月12日",
+  "amounts_all": [],
+  "total_lower": null,
+  "item": [
+   [
+    "汽油",
+    "95号车用汽油(ⅥB"
+   ]
+  ]
+ },
+ {
+  "relative_path": "油票/油票4.pdf",
+  "sha256": "70f0a10e31444ee4b5f9e7173958952463ef8b6e56d95504d3c330c9077f3452",
+  "kind": "oil_invoice",
+  "invoice_number": "25357000000191196652",
+  "issue_date": "2025年12月12日",
+  "amounts_all": [],
+  "total_lower": null,
+  "item": [
+   [
+    "汽油",
+    "95号车用汽油(ⅥB"
+   ]
+  ]
+ },
+ {
+  "relative_path": "油票/油票5.pdf",
+  "sha256": "3699d27434cc2911149b668e21078513c64d9ccd53a19533e535575aaf6da1da",
+  "kind": "oil_invoice",
+  "invoice_number": "25357000000191194735",
+  "issue_date": "2025年12月12日",
+  "amounts_all": [],
+  "total_lower": null,
+  "item": [
+   [
+    "汽油",
+    "95号车用汽油(ⅥB"
+   ]
+  ]
+ }
+]

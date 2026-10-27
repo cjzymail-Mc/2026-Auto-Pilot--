@@ -1,0 +1,602 @@
+{
+ "probe_version": "v2",
+ "run": "20261026-143340-v3r04-case03",
+ "attempt": "attempt_008",
+ "doc_id": null,
+ "expect_name": "陈晶",
+ "checks": {
+  "c1_entry_login": {
+   "status": "PASS",
+   "reason": "域名内页+账户名命中+导航成立（顶栏无显式退出钮，按放宽判据放行）",
+   "evidence": [
+    "attempt_008/evidence/entry.png"
+   ]
+  },
+  "c2_locate_target": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "NOT_RUN",
+   "reason": "未启用 --fill-plan（只读任务不新建/不填写）",
+   "evidence": []
+  }
+ },
+ "phases": {},
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 2575,
+  "classify": "LOGGED_IN",
+  "markers": {
+   "url": "https://bpm.qiaodan.com/oa/home",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 29,
+   "forms": 0,
+   "name_hits": 1,
+   "logout_hits": 0
+  },
+  "cookies_names": [
+   "ww_lang",
+   "wwopen.open.sid"
+  ],
+  "screenshot": "attempt_008/evidence/entry.png",
+  "html": "attempt_008/evidence/entry.html"
+ },
+ "case03_details": {
+  "stage": "detail views",
+  "docs": [
+   {
+    "bizNumber": "12025044500",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025073893",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025084223",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025084529",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025085485",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025092237",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025103469",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025105858",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025115547",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025121473",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12025127761",
+    "status": "ROW_NOT_FOUND"
+   },
+   {
+    "bizNumber": "12026075605",
+    "uuid": "5527f9e0517e4bcfa3aa3bb7fc01321a",
+    "appliedAt": "2026-07-24",
+    "view_url": "(dialog)",
+    "text_evidence": "detail-12026075605-text.txt",
+    "screenshot": "attempt_008/evidence/detail-12026075605.png",
+    "api": [
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-000--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-001--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-002--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-003--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-004--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-005--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-006--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-007--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-008--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-009--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-010--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-011--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-012--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-013--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-014--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-015--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-016--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-017--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-018--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-019--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-020--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-021--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-022--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-023--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-024--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-025--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-026--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-027--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-028--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-029--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-030--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-031--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-032--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-033--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-034--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-035--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-036--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-037--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-038--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-039--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-040--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-041--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-042--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-043--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-044--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-045--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-046--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-047--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-048--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-049--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-050--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-051--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-052--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-053--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-054--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-055--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-056--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-057--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-058--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-059--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-060--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-061--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-062--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-063--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-064--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-065--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-066--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-067--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-068--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-069--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-070--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-071--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-072--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-073--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-074--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-075--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-076--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     },
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026075605-077--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-078--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-079--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-080--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-081--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-082--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026075605-083--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     }
+    ]
+   },
+   {
+    "bizNumber": "12026096668",
+    "uuid": "ee5483774f3540b78a66ead6d30f22ae",
+    "appliedAt": "2026-09-23",
+    "view_url": "(dialog)",
+    "text_evidence": "detail-12026096668-text.txt",
+    "screenshot": "attempt_008/evidence/detail-12026096668.png",
+    "api": [
+     {
+      "path": "/KindlyTips/query",
+      "file": "api-detail-12026096668-000--KindlyTips-query.json",
+      "sha256": "466df0d4c49f0af3fd931821e4798fe315fae602ea10806bff368ebd97d12bab"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026096668-001--WorkOut-query-20-1.json",
+      "sha256": "0144fdc5b506ec5ffec3c6c411e7d179bb69884d7649ca83fb0941f3d480ca62"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026096668-002--WorkOut-query-20-1.json",
+      "sha256": "3ef59032090a892cf7e1c3b15ba05c0d8610f4214bc2ab15b3822f3e000ccc8d"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026096668-003--WorkOut-query-20-1.json",
+      "sha256": "2a71e672717c0b2208b867677ace70888f51b293766a3b38c8e7c098b1c3f78b"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026096668-004--WorkOut-query-20-1.json",
+      "sha256": "9cadc11ec081d97ff81da2ebde8a18a2d3883f315eff77caa5b58d0a106daf66"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026096668-005--WorkOut-query-20-1.json",
+      "sha256": "aa1803213924a823b128c3da840932a3a89a672032a32ea596decb076426dde5"
+     },
+     {
+      "path": "/WorkOut/query/20/1",
+      "file": "api-detail-12026096668-006--WorkOut-query-20-1.json",
+      "sha256": "2bde1320cb8a3f8504952d7aff2a93d122e93a57fe12b0fa1c24cabf439b37b1"
+     }
+    ]
+   }
+  ],
+  "learned_view_url": "https://bpm.qiaodan.com/oa/workouts",
+  "learned_api": [],
+  "route_view": false
+ },
+ "finish_reason": "DETAILS_CAPTURED",
+ "tech_used_s": 313.8,
+ "login_wait_s": 0.0,
+ "wall_s": 315.0,
+ "budget_respected": true
+}

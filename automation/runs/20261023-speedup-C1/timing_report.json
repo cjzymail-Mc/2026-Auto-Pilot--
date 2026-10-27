@@ -1,0 +1,113 @@
+{
+  "comparable_complete_ui": true,
+  "counts": {
+    "structured_row_written": 9,
+    "exact_picker_blocked": 0,
+    "inner_exc": 0
+  },
+  "definitions": {
+    "page_roundtrip": "top-frame navigation; API requests reported separately",
+    "model_intervention": "explicit model intervention events during the UI window; absence is not a global model-call count",
+    "uncovered": "time outside action timing intervals; no causal attribution"
+  },
+  "page_navigation": {
+    "count": 2,
+    "coverage": "top-frame navigation events"
+  },
+  "executor_metrics": {
+    "event": "ui_execution_metrics",
+    "network": {
+      "requests": 165,
+      "failed": 1
+    },
+    "model_control_interventions": 0,
+    "external_cell_commands": 0,
+    "definitions": "continuous executor; model calls and external read-only diagnostic shell commands are not automatically measured",
+    "ts": "2026-10-23T18:26:04"
+  },
+  "global_model_calls": null,
+  "external_diagnostic_commands": null,
+  "ui_seconds": 155.226,
+  "strict_pass": true,
+  "instrumented_union_seconds": 148.41,
+  "uncovered_seconds": 6.816,
+  "actions": {
+    "goto_new_form": {
+      "count": 1,
+      "union_seconds": 0.151
+    },
+    "screenshot": {
+      "count": 5,
+      "union_seconds": 0.593
+    },
+    "overlay_dump": {
+      "count": 1,
+      "union_seconds": 0.005
+    },
+    "dialog_element_handle": {
+      "count": 1,
+      "union_seconds": 0.027
+    },
+    "pick_candidates": {
+      "count": 1,
+      "union_seconds": 0.064
+    },
+    "initial_applicant_select": {
+      "count": 1,
+      "union_seconds": 6.273
+    },
+    "pick_option": {
+      "count": 14,
+      "union_seconds": 18.441
+    },
+    "table_schema_scan": {
+      "count": 23,
+      "union_seconds": 0.245
+    },
+    "cell_activate": {
+      "count": 56,
+      "union_seconds": 42.541
+    },
+    "cell_blur_readback": {
+      "count": 64,
+      "union_seconds": 3.261
+    },
+    "structured_cell": {
+      "count": 61,
+      "union_seconds": 115.304
+    },
+    "picker_open": {
+      "count": 8,
+      "union_seconds": 11.094
+    },
+    "picker_select_confirm": {
+      "count": 8,
+      "union_seconds": 11.918
+    },
+    "cell_input_write": {
+      "count": 46,
+      "union_seconds": 3.52
+    },
+    "table_row_fill": {
+      "count": 12,
+      "union_seconds": 136.344
+    },
+    "row_add": {
+      "count": 8,
+      "union_seconds": 10.536
+    },
+    "picker_query": {
+      "count": 3,
+      "union_seconds": 4.742
+    },
+    "section_fill": {
+      "count": 4,
+      "union_seconds": 136.939
+    },
+    "independent_readback_verify": {
+      "count": 1,
+      "union_seconds": 0.388
+    }
+  },
+  "target_360_seconds": true
+}

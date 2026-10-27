@@ -1,0 +1,10 @@
+{
+  "template_biz_number": "15426104120",
+  "materials_dir": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-175000-rdloop\\originals",
+  "relation_refs": [],
+  "declared_category": "研发材料费",
+  "statement": "研发材料费报销（授权历史回放）：外购样品 18 项物品档案行、4 行预算明细、四名收款人分摊，合计 9935.16；本轮 fill_only 只填不存。",
+  "schema_version": "1.0",
+  "source_semantics": "user_instruction",
+  "registered_at": "2026-10-24T09:41:53.011814+00:00"
+}

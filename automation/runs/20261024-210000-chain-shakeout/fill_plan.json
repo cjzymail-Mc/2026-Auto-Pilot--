@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0",
+  "task_id": "chain-r10-welfare_labor-15426071883",
+  "document_type": "welfare_labor",
+  "config_version": "1.0",
+  "operator": "陈晶",
+  "applicant": {
+    "name": "陈晶",
+    "company": "厦门乔丹科技有限公司",
+    "department": "运动表现研究部"
+  },
+  "template": {
+    "biz_number": "15426071883",
+    "captured_at": "2026-10-24T08:42:23.041563+00:00",
+    "sha256": "8208a9ed89e504b23a942cb8f2f200cb2df0d00a9ef0ad5d1306d3d31272b177",
+    "snapshot_path": "template_snapshot.json"
+  },
+  "materials": {
+    "manifest_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\materials\\manifest.json",
+    "manifest_sha256": "ea25a152e0884028704687d7db7887779ef29019937d2efb2de64a2dafddf7e9",
+    "no_invoice_rows": [
+      {
+        "plan_pointer": "/tables/details/0/fields/cost",
+        "reason": "合成离线链测试材料免票声明：test_only/not_new_expenses，不申报真实费用；04 类文档级 invoice=false（config invoice_policy 声明，研究实测），本字段为生成器现行免票机制载体",
+        "proof": {
+          "kind": "material",
+          "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+          "locator": "/no_invoice_rule",
+          "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+        }
+      }
+    ]
+  },
+  "header": {
+    "corpCode": "厦门乔丹科技有限公司",
+    "bizOrign": "乔丹科技",
+    "budgetYears": "2026",
+    "payType": "转账",
+    "currencyType": "人民币",
+    "submitType": "福利费、劳保用品",
+    "description": "【合成测试材料·离线链验证·welfare_labor r9】部门团建费用",
+    "totalCost": "2345.67"
+  },
+  "tables": {
+    "relations": [],
+    "details": [
+      {
+        "row_id": "d1",
+        "fields": {
+          "reimItem": "04003",
+          "digest": "合成：部门团建",
+          "budgetDeptName": "集团人力行政中心",
+          "budgetNo": "15626010048",
+          "subjectName": "职工薪酬-福利费-团建费",
+          "budgetItemName": "员工福利费-部门团建费",
+          "budgetOwner": "21",
+          "cost": "2345.67"
+        }
+      }
+    ],
+    "costs": [],
+    "banks": [
+      {
+        "row_id": "b1",
+        "fields": {
+          "payee": "收款人丁",
+          "account": "6217000000000000011",
+          "bank": "中国银行股份有限公司厦门分行",
+          "bankCode": "104393000011",
+          "cost": "2345.67"
+        }
+      }
+    ]
+  },
+  "sources": {
+    "/applicant/name": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/applicant/name",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/applicant/company": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/applicant/company",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/applicant/department": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/applicant/department",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/header/corpCode": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/header/corpCode",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/header/bizOrign": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/header/bizOrign",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/header/budgetYears": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/header/budgetYears",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/header/payType": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/header/payType",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/header/currencyType": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/header/currencyType",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/header/submitType": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/header/submitType",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/header/description": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/header/description",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/details/0/fields/reimItem": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/details/0/fields/reimItem",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/details/0/fields/digest": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/details/0/fields/digest",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/details/0/fields/budgetDeptName": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/details/0/fields/budgetDeptName",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/details/0/fields/budgetNo": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/details/0/fields/budgetNo",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/details/0/fields/subjectName": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/details/0/fields/subjectName",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/details/0/fields/budgetItemName": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/details/0/fields/budgetItemName",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/details/0/fields/budgetOwner": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/details/0/fields/budgetOwner",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/details/0/fields/cost": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/details/0/fields/cost",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/banks/0/fields/payee": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/banks/0/fields/payee",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/banks/0/fields/account": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/banks/0/fields/account",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/banks/0/fields/bank": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/banks/0/fields/bank",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/banks/0/fields/bankCode": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/banks/0/fields/bankCode",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/tables/banks/0/fields/cost": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/tables/banks/0/fields/cost",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/header/totalCost": {
+      "kind": "derived",
+      "operation": "sum",
+      "inputs": [
+        "/tables/details/0/fields/cost"
+      ]
+    },
+    "/table_applicability/relations/reason": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/table_applicability/relations/reason",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    },
+    "/table_applicability/costs/reason": {
+      "kind": "material",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-210000-chain-shakeout\\originals\\synthetic_welfare_r9.json",
+      "locator": "/table_applicability/costs/reason",
+      "sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+    }
+  },
+  "authorization": {
+    "mode": "fill_only",
+    "task_id": "chain-r10-welfare_labor-15426071883",
+    "allow_submit": false,
+    "statement": "合成离线链复跑（round-10 bpm_chain）：synthetic/test_only/not_new_expenses；仅 validate-only 子进程，不填真实页面、不保存不提交。"
+  },
+  "unresolved": [],
+  "not_applicable": [],
+  "amount_rules": {
+    "costs": "not_applicable",
+    "costs_reason": "合成离线链材料：04 类本类费用不落 costs（研究样本 15426071883 costs=0 行；config costs_applicability 依据）",
+    "cost_amount_semantics": "line_total"
+  },
+  "table_applicability": {
+    "relations": {
+      "reason": "合成离线链材料：04 类 plan 级非空 relations 待 bpm_plan 授权轮（本轮裁决①）；真实单实测福利申请单(74)关联见 config observed_relation_types"
+    },
+    "costs": {
+      "reason": "合成离线链材料：04 类本类费用不落 costs（研究样本 15426071883 costs=0 行；config costs_applicability 依据）"
+    }
+  },
+  "test_context": {
+    "purpose": "15426071883 福利费、劳保用品（round-10，bpm_chain 复跑；合成材料 synthetic/test_only）",
+    "round": "10",
+    "authorization_path": "originals/synthetic_welfare_r9.json",
+    "authorization_sha256": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1"
+  }
+}

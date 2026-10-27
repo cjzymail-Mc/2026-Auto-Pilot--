@@ -1,0 +1,52 @@
+{
+ "probe_version": "v2",
+ "run": "20261024-104058-login60",
+ "attempt": "attempt_001",
+ "doc_id": null,
+ "expect_name": null,
+ "checks": {
+  "c1_entry_login": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c2_locate_target": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "NOT_RUN",
+   "reason": "未启用 --fill-plan（只读任务不新建/不填写）",
+   "evidence": []
+  }
+ },
+ "phases": {},
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "finish_reason": "FATAL:PermissionError(13, '拒绝访问。', None, 5, None)",
+ "tech_used_s": 0.0,
+ "login_wait_s": 0.0,
+ "wall_s": 0.2,
+ "budget_respected": true
+}

@@ -1,0 +1,14 @@
+{
+ "actual_trip_matches.json": "7da036aabed9b56c13a5801ad521f1d7c9e8db3583a5dc0e3c5aa8c538cec687",
+ "CASE-03-report.md": "214dca93d64275a8a5a0c6d39904f2ac792f3b22bf65ba19afb8bf5f25f0db1c",
+ "details3d-manifest.json": "710fa4c827a231cc1eb293d25612d67d6023a08c44c1cd3084c5aea9916f588d",
+ "candidates3e-manifest.json": "6893df02fb811cd8e2753cffcd41ba0736a0b99e1c071fe70e0f58a896e0b68b",
+ "chen-docs.json": "43da29d997a50d01691df31f66986f226073b0828ae1eb240c0ffcda8fe3da11",
+ "events.jsonl": "d4ac9df585f96266c1afecacee8a77fbb5541e24ee7f12c16d9cbc66c4176f6f",
+ "revision": {
+  "added_at": "2026-10-26T16:15:09+08:00",
+  "round": "V3-R05",
+  "note": "O1/O2/O3 加法订正后重算；新增 wide-query-manifest.json 与 CASE-03-report.md；原 6 键保留新值（文件本体修订）"
+ },
+ "wide-query-manifest.json": "dc7f5c324d97181380cd7c809793331937036e25d4d207db260d233b2464b16f"
+}

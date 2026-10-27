@@ -1,0 +1,10 @@
+{
+  "materials_dir": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-211000-chain-r10-express\\originals",
+  "relation_refs": [],
+  "declared_category": "快递费",
+  "statement": "快递费报销链复跑（bpm_chain round-10）：明细 1 行、结算 8 行、收款 4 行，合计 347.50；validate-only 只填不存。",
+  "template_biz_number": "15426094780",
+  "schema_version": "1.0",
+  "source_semantics": "user_instruction",
+  "registered_at": "2026-10-24T12:55:06.238305+00:00"
+}

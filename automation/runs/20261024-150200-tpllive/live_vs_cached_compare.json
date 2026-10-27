@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "compared_at": "2026-10-24T14:18:15+0800",
+  "live_sha256": "afa5534c3c310ca68b18263a97f78a62861b475ddee56dc364f924d822864280",
+  "cached_sha256": "ffc75d19611781123d5146cac2011b71aa60ac84e08d86c0beb8b6da41406890",
+  "checks": {
+    "uuid_match": true,
+    "document_type_match": true,
+    "header_keys_match": true,
+    "table_names_match": true,
+    "table_rows_match": true,
+    "header_identity_match": true
+  },
+  "live": {
+    "uuid": "92d41ffd042746e390f0a070118ca1d9",
+    "biz_number": "15426095951",
+    "document_type": "travel",
+    "header_keys": [
+      "bizOrign",
+      "bizStatus",
+      "budgetYears",
+      "corpCode",
+      "createdBy",
+      "createdName",
+      "currencyType",
+      "description",
+      "payType",
+      "submitType",
+      "totalCost"
+    ],
+    "header_identity": {
+      "bizNumber": null,
+      "submitType": "08",
+      "appliedName": null,
+      "appliedDeptName": null,
+      "corpCode": "1003",
+      "bizOrign": "QDTech",
+      "payType": "02",
+      "currencyType": "RMB"
+    },
+    "table_names": [
+      "banks",
+      "costs",
+      "detailrels",
+      "details",
+      "products",
+      "relations"
+    ],
+    "table_rows": {
+      "details": 2,
+      "costs": 2,
+      "relations": 1,
+      "banks": 1,
+      "products": 0,
+      "detailrels": 1
+    },
+    "applicant_name": "陈晶"
+  },
+  "cached": {
+    "uuid": "92d41ffd042746e390f0a070118ca1d9",
+    "biz_number": "15426095951",
+    "document_type": "travel",
+    "header_keys": [
+      "bizOrign",
+      "bizStatus",
+      "budgetYears",
+      "corpCode",
+      "createdBy",
+      "createdName",
+      "currencyType",
+      "description",
+      "payType",
+      "submitType",
+      "totalCost"
+    ],
+    "header_identity": {
+      "bizNumber": null,
+      "submitType": "08",
+      "appliedName": null,
+      "appliedDeptName": null,
+      "corpCode": "1003",
+      "bizOrign": "QDTech",
+      "payType": "02",
+      "currencyType": "RMB"
+    },
+    "table_names": [
+      "banks",
+      "costs",
+      "detailrels",
+      "details",
+      "products",
+      "relations"
+    ],
+    "table_rows": {
+      "details": 2,
+      "costs": 2,
+      "relations": 1,
+      "banks": 1,
+      "products": 0,
+      "detailrels": 1
+    },
+    "applicant_name": "陈晶"
+  },
+  "consistent": true
+}

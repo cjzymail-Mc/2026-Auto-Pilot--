@@ -1,0 +1,10 @@
+{
+  "materials_dir": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-194500-welfareloop\\originals",
+  "template_biz_number": "15426071883",
+  "relation_refs": [],
+  "declared_category": "福利费、劳保用品",
+  "statement": "福利费、劳保用品报销（合成离线链验证）：1 行明细（跨部门预算）+费用说明空+单收款人，合计 2345.67；synthetic/test_only，不填真实页面。",
+  "schema_version": "1.0",
+  "source_semantics": "user_instruction",
+  "registered_at": "2026-10-24T11:42:01.224270+00:00"
+}

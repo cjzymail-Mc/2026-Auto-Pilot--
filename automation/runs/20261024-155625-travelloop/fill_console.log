@@ -1,0 +1,7 @@
+[16:00:24] preflight wininet: ['ProxyEnable    REG_DWORD    0x1', 'ProxyServer    REG_SZ    127.0.0.1:7897'] | socket443: True
+[16:00:29] entry classify=LOGGED_IN url=https://bpm.qiaodan.com/oa/home name_hits=1 logout_hits=0
+[16:00:29] phase entry -> PASS
+[16:00:29] FILL 新建报销单（只填不存；保存/发送/流转等绝不点击）
+[16:00:34] phase fill -> BLOCKED
+[16:00:34] FINISH NEEDS_INPUT tech=8.3s login_wait=0.0s attempt=attempt_001
+[16:00:34] NEEDS_INPUT 浏览器驻留 5 分钟，等待用户审核；不执行额外业务动作

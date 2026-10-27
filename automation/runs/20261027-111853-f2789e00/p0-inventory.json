@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-10-27T11:25:17+08:00",
+  "originals_zero_drift": {
+    "checked": 73,
+    "total": 73,
+    "drift": [],
+    "baseline": "automation/runs/20261026-100322-v3r00-inventory/case-file-manifest.json"
+  },
+  "registry": {
+    "form_files": 12,
+    "save_intent_like": 0,
+    "newest": "case07-user-review-fill-20261027 (FORM_INTENT, run 20261027-074251; 用户自述手存未核实, registry 保持原样)"
+  },
+  "identity_probe": {
+    "tool": "bpm_login.py",
+    "result": "SUCCESS_LOGIN_ONLY (11:20:45)",
+    "principal": "陈晶 (authenticated; identity_source=live_authenticated_account_header_and_token_subject)",
+    "effective_reuse_until": "2026-11-23 (server refresh token earlier-of; 当前代码 REUSE_DAYS=60, 30天收紧属后续阶段)"
+  },
+  "sample_15425123013": {
+    "source": "automation/runs/20261027-sample15425123013-live/sample_snapshot.json (引用不复制)",
+    "form_category": "差旅费 submitType=08",
+    "applicant": "徐亮/117070006/corpCode 1003",
+    "totalCost": "2176.93",
+    "notable_relations": [
+      "12025098708 (反例 +4.00)",
+      "12025092018 (正向对照 437.18)"
+    ]
+  },
+  "worktree": "既有未提交 diff = rounds 3–10 遗留 (fill_once.py/stage1_browser_probe.py/stage1_probe_selftest.py/SKILL.md/AGENTS.md/README.md/.gitignore 等) + 本轮允许清单内新增；无其他执行中写入者（workflow.py 进程零、B 唯一执行者；上一浏览器动作仅 11:20 只读探查且已退出，无遗留业务页）",
+  "browser_actions_this_round": [
+    "bpm_login.py 只读探查 ×1 (11:20, 已退出, 锁释放)"
+  ],
+  "reusable_base_and_gaps": [
+    {
+      "base": "bpm_coverage.py fuel_pool_strict_surplus",
+      "gap": "R=M+T 无餐补；新模型 R=M+T+C 须版本化并存，不静默升级旧任务"
+    },
+    {
+      "base": "bpm_login/bpm_session 登录自发现+会话记录",
+      "gap": "REUSE_DAYS=60；30天收紧+旧记录 min(原窗口,30) 迁移属后续阶段"
+    },
+    {
+      "base": "bpm_template 精确单号 live/census 只读",
+      "gap": "统一入口路由（模板先核表单/类别→场景识别→能力检查→runbook）待实施"
+    },
+    {
+      "base": "V3 材料/Excel/公出对照工件 (case01/02/03, trip-form-mapping)",
+      "gap": "整合进正式模块属后续轮；本轮只读引用"
+    },
+    {
+      "base": "verify_bpm_build 源清单自动并 bpm_*.py + test_bpm_*.py",
+      "gap": "automation/business-scenarios/self_drive.json 须显式加列"
+    }
+  ]
+}

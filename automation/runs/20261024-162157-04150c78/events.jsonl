@@ -1,0 +1,63 @@
+{"event": "timing", "action": "plan_source_validation", "t0_ms": 1792830117368.8396, "dur_ms": 239.162109375, "outcome": "ok"}
+{"event": "timing", "action": "entry_plan_validation_binding", "t0_ms": 1792830117361.3318, "dur_ms": 271.489013671875, "outcome": "ok", "plan_hash": "e917a10d68e5b95a8f5e5212ab58db2b2b68ea9c5e0e4dc601ee4c2efcd30c48", "source_manifest_sha256": "7dd0e9e5af8cbe3915334a94edc123b98afc8cb4c520e527d0fdc2132eb2f223"}
+{"event": "profile_lock_acquired", "pid": 15996, "ts": "2026-10-24T16:21:58"}
+{"event": "probe_start", "run": "20261024-162157-04150c78", "attempt": "attempt_001", "doc_id": null, "tech_budget": 1800.0, "login_wait_cap": 480.0, "wall_cap": 2400.0, "ts": "2026-10-24T16:21:58"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-24T16:21:58"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 586, "ts": "2026-10-24T16:21:59"}
+{"event": "timing", "action": "browser_session_start", "t0_ms": 1792830118065, "dur_ms": 958, "outcome": "ok", "exc": "", "ts": "2026-10-24T16:21:59"}
+{"event": "page_navigation", "epoch_ms": 1792830119281, "ts": "2026-10-24T16:21:59"}
+{"event": "page_navigation", "epoch_ms": 1792830119774, "ts": "2026-10-24T16:21:59"}
+{"event": "page_navigation", "epoch_ms": 1792830120597, "ts": "2026-10-24T16:22:00"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792830121710, "dur_ms": 803, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-24T16:22:02"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 1440.0, "ts": "2026-10-24T16:22:02"}
+{"event": "form_intent_superseded", "run": "20261024-160024-8502f91d", "attempt": "attempt_001", "new_run": "20261024-162157-04150c78", "new_plan_hash": "e917a10d68e5b95a8f5e5212ab58db2b2b68ea9c5e0e4dc601ee4c2efcd30c48", "ts": "2026-10-24T16:22:02"}
+{"event": "structured_fill_start", "plan_hash": "e917a10d68e5b95a8f5e5212ab58db2b2b68ea9c5e0e4dc601ee4c2efcd30c48", "ts": "2026-10-24T16:22:02"}
+{"event": "UI_START", "epoch_ms": 1792830122946, "round": "7", "rows": {"relations": 3, "details": 2, "costs": 6, "banks": 1}, "network": "chromium --no-proxy-server; fresh test context", "cache": "cold context; session reused", "ts": "2026-10-24T16:22:02"}
+{"event": "fill_start", "plan": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261024-155625-travelloop\\fill_plan_r7.json", "goal": null, "ts": "2026-10-24T16:22:02"}
+{"event": "page_navigation", "epoch_ms": 1792830123004, "ts": "2026-10-24T16:22:03"}
+{"event": "timing", "action": "goto_new_form", "t0_ms": 1792830122948, "dur_ms": 137, "outcome": "ok", "exc": "", "ts": "2026-10-24T16:22:03"}
+{"event": "page_navigation", "epoch_ms": 1792830123300, "ts": "2026-10-24T16:22:03"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792830127114, "dur_ms": 129, "outcome": "ok", "exc": "", "name": "fill_00_before.png", "ts": "2026-10-24T16:22:07"}
+{"event": "timing", "action": "overlay_dump", "t0_ms": 1792830130375, "dur_ms": 5, "outcome": "ok", "exc": "", "ts": "2026-10-24T16:22:10"}
+{"event": "timing", "action": "dialog_element_handle", "t0_ms": 1792830130386, "dur_ms": 12, "outcome": "ok", "exc": "", "dsel": "html.qd-env-prod>body.ui-overflow-hidden:nth-of-type(1)>div.", "ts": "2026-10-24T16:22:10"}
+{"event": "timing", "action": "pick_candidates", "t0_ms": 1792830130375, "dur_ms": 33, "outcome": "ok", "exc": "", "ts": "2026-10-24T16:22:10"}
+{"event": "timing", "action": "initial_applicant_select", "t0_ms": 1792830127433, "dur_ms": 6266, "outcome": "ok", "exc": "", "ts": "2026-10-24T16:22:13"}
+{"event": "person_identities_locked", "applicant_employee_verified": true, "creator_unchanged": true, "ts": "2026-10-24T16:22:13"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792830133945, "dur_ms": 1568, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-24T16:22:15"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792830136846, "dur_ms": 1642, "outcome": "ok", "exc": "", "kind": "multiselect", "ts": "2026-10-24T16:22:18"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792830138525, "dur_ms": 1277, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-24T16:22:19"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792830140874, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-24T16:22:20"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792830140942, "dur_ms": 798, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "act": "dblclick", "attempt": 1, "ts": "2026-10-24T16:22:21"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792830141768, "dur_ms": 1313, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "ts": "2026-10-24T16:22:23"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792830143095, "dur_ms": 82, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "ts": "2026-10-24T16:22:23"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792830140932, "dur_ms": 2261, "outcome": "ok", "exc": "", "where": "relations/0/bizTypeName", "ts": "2026-10-24T16:22:23"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792830143220, "dur_ms": 723, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "act": "dblclick", "attempt": 1, "ts": "2026-10-24T16:22:23"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792830143995, "dur_ms": 1356, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-24T16:22:25"}
+{"event": "timing", "action": "picker_select_confirm", "t0_ms": 1792830145495, "dur_ms": 1468, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-24T16:22:26"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792830146964, "dur_ms": 59, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-24T16:22:27"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792830147023, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-24T16:22:27"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792830143209, "dur_ms": 3909, "outcome": "ok", "exc": "", "where": "relations/0/bizNumber", "ts": "2026-10-24T16:22:27"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792830147118, "dur_ms": 8, "outcome": "ok", "exc": "", "prop": "bizNo", "ts": "2026-10-24T16:22:27"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792830147154, "dur_ms": 815, "outcome": "ok", "exc": "", "where": "detailrels/0/cost", "act": "dblclick", "attempt": 1, "ts": "2026-10-24T16:22:27"}
+{"event": "timing", "action": "cell_input_write", "t0_ms": 1792830148003, "dur_ms": 103, "outcome": "ok", "exc": "", "where": "detailrels/0/cost", "how": "mounted_native", "ts": "2026-10-24T16:22:28"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792830148538, "dur_ms": 77, "outcome": "ok", "exc": "", "where": "detailrels/0/cost", "ts": "2026-10-24T16:22:28"}
+{"event": "cell_already_equal", "table": "relations", "row": 0, "field": "isLast", "ts": "2026-10-24T16:22:28"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792830140874, "dur_ms": 7788, "outcome": "ok", "exc": "", "section": "relations", "row": 0, "ts": "2026-10-24T16:22:28"}
+{"event": "timing", "action": "row_add", "t0_ms": 1792830148683, "dur_ms": 1331, "outcome": "ok", "exc": "", "section": "relations", "ts": "2026-10-24T16:22:30"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792830150015, "dur_ms": 9, "outcome": "ok", "exc": "", "prop": "bizTypeName", "ts": "2026-10-24T16:22:30"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792830150095, "dur_ms": 1330, "outcome": "ok", "exc": "", "where": "relations/1/bizTypeName", "ts": "2026-10-24T16:22:31"}
+{"event": "timing", "action": "cell_blur_readback", "t0_ms": 1792830151441, "dur_ms": 50, "outcome": "ok", "exc": "", "where": "relations/1/bizTypeName", "ts": "2026-10-24T16:22:31"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792830150067, "dur_ms": 1444, "outcome": "ok", "exc": "", "where": "relations/1/bizTypeName", "ts": "2026-10-24T16:22:31"}
+{"event": "timing", "action": "cell_activate", "t0_ms": 1792830151535, "dur_ms": 778, "outcome": "ok", "exc": "", "where": "relations/1/bizNumber", "act": "dblclick", "attempt": 1, "ts": "2026-10-24T16:22:32"}
+{"event": "timing", "action": "picker_open", "t0_ms": 1792830152354, "dur_ms": 1362, "outcome": "ok", "exc": "", "where": "relations/1/bizNumber", "ts": "2026-10-24T16:22:33"}
+{"event": "timing", "action": "picker_query", "t0_ms": 1792830153731, "dur_ms": 1561, "outcome": "ok", "exc": "", "where": "relations/1/bizNumber", "ts": "2026-10-24T16:22:35"}
+{"event": "exact_picker_blocked", "where": "relations/1/bizNumber", "candidate_count": 0, "ts": "2026-10-24T16:22:35"}
+{"event": "timing", "action": "structured_cell", "t0_ms": 1792830151526, "dur_ms": 3772, "outcome": "error", "exc": "UIBlocked", "where": "relations/1/bizNumber", "ts": "2026-10-24T16:22:35"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792830148663, "dur_ms": 6636, "outcome": "error", "exc": "UIBlocked", "section": "relations", "row": 1, "ts": "2026-10-24T16:22:35"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792830140874, "dur_ms": 14426, "outcome": "error", "exc": "UIBlocked", "section": "relations", "ts": "2026-10-24T16:22:35"}
+{"event": "timing", "action": "ui_execution", "t0_ms": 1792830122947, "dur_ms": 32355, "outcome": "error", "exc": "UIBlocked", "ts": "2026-10-24T16:22:35"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792830155431, "dur_ms": 138, "outcome": "ok", "exc": "", "name": "v1_blocked.png", "ts": "2026-10-24T16:22:35"}
+{"event": "probe_end", "reason": "NEEDS_INPUT", "tech_used_s": 36.3, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-24T16:22:35"}
+{"event": "keep_open_start", "minutes": 5.0, "task_status": "NEEDS_INPUT", "ts": "2026-10-24T16:22:35"}
+{"event": "keep_open_end", "task_status": "NEEDS_INPUT", "ts": "2026-10-24T16:27:35"}
+{"event": "own_test_page_close", "unsaved": true, "save_attempted": false, "ts": "2026-10-24T16:27:35"}

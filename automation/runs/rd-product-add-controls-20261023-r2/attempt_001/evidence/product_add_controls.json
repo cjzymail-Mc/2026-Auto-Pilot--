@@ -1,0 +1,72 @@
+[
+  {
+    "prop": "code",
+    "cell": {
+      "text": "",
+      "classes": "field-col prop-code readonly ng-star-inserted",
+      "inputs": [],
+      "buttons": []
+    }
+  },
+  {
+    "prop": "name",
+    "cell": {
+      "text": "",
+      "classes": "field-col prop-name ui-editable-column ng-star-inserted ui-editing-cell",
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "readonly": true,
+          "disabled": false,
+          "value": ""
+        }
+      ],
+      "buttons": [
+        {
+          "title": "",
+          "aria": "选择表格数据",
+          "icons": [
+            "ui-button-icon-left ui-clickable fa fa-table",
+            "ui-button-text ui-clickable"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "prop": "purchaser",
+    "cell": {
+      "text": "",
+      "classes": "field-col prop-purchaser readonly ng-star-inserted",
+      "inputs": [],
+      "buttons": []
+    }
+  },
+  {
+    "prop": "price",
+    "cell": {
+      "text": "",
+      "classes": "field-col prop-price readonly ng-star-inserted",
+      "inputs": [],
+      "buttons": []
+    }
+  },
+  {
+    "prop": "description",
+    "cell": {
+      "text": "",
+      "classes": "field-col prop-description ui-editable-column ng-star-inserted ui-editing-cell",
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "readonly": false,
+          "disabled": false,
+          "value": ""
+        }
+      ],
+      "buttons": []
+    }
+  }
+]

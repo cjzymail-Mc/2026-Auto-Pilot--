@@ -1,0 +1,35 @@
+{"event": "timing", "action": "plan_source_validation", "t0_ms": 1792759903638.5308, "dur_ms": 371.380126953125, "outcome": "ok"}
+{"event": "timing", "action": "entry_plan_validation_binding", "t0_ms": 1792759903630.5303, "dur_ms": 399.1171875, "outcome": "ok", "plan_hash": "2579a8358b23cb804322cf914c04719b821b8c8d5a6312f03b78abf44a5cb88d", "source_manifest_sha256": "cda6b70a188900cc00d486154dbff613ac7d20a6fc1586501d6eba7c07d6ec0b"}
+{"event": "profile_lock_acquired", "pid": 15544, "ts": "2026-10-23T20:51:44"}
+{"event": "probe_start", "run": "types-rd-complex-R1", "attempt": "attempt_001", "doc_id": null, "tech_budget": 2400.0, "login_wait_cap": 60.0, "wall_cap": 3000.0, "ts": "2026-10-23T20:51:44"}
+{"event": "preflight", "wininet_proxy": ["ProxyEnable    REG_DWORD    0x1", "ProxyServer    REG_SZ    127.0.0.1:7897"], "direct_socket_443": "True", "ts": "2026-10-23T20:51:44"}
+{"event": "session_state_injected", "cookies": 2, "origins": 1, "page_storage_origins": 1, "mtime_age_s": 182, "ts": "2026-10-23T20:51:45"}
+{"event": "timing", "action": "browser_session_start", "t0_ms": 1792759904663, "dur_ms": 973, "outcome": "ok", "exc": "", "ts": "2026-10-23T20:51:45"}
+{"event": "page_navigation", "epoch_ms": 1792759905888, "ts": "2026-10-23T20:51:45"}
+{"event": "page_navigation", "epoch_ms": 1792759906433, "ts": "2026-10-23T20:51:46"}
+{"event": "page_navigation", "epoch_ms": 1792759907385, "ts": "2026-10-23T20:51:47"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792759908340, "dur_ms": 404, "outcome": "ok", "exc": "", "name": "entry.png", "ts": "2026-10-23T20:51:48"}
+{"event": "session_state_saved", "cookies": 2, "origins": 1, "page_storage_origins": ["https://bpm.qiaodan.com"], "page_storage_key_counts": {"https://bpm.qiaodan.com": 3}, "ttl_hours": 24.0, "ts": "2026-10-23T20:51:49"}
+{"event": "structured_fill_start", "plan_hash": "2579a8358b23cb804322cf914c04719b821b8c8d5a6312f03b78abf44a5cb88d", "ts": "2026-10-23T20:51:49"}
+{"event": "UI_START", "epoch_ms": 1792759909534, "round": "rd-complex-R1", "rows": {"relations": 0, "details": 4, "costs": 0, "banks": 4, "products": 18}, "network": "chromium --no-proxy-server; fresh test context", "cache": "cold context; session reused", "ts": "2026-10-23T20:51:49"}
+{"event": "fill_start", "plan": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\rd-complex-R1\\fill_plan.json", "goal": null, "ts": "2026-10-23T20:51:49"}
+{"event": "page_navigation", "epoch_ms": 1792759909552, "ts": "2026-10-23T20:51:49"}
+{"event": "timing", "action": "goto_new_form", "t0_ms": 1792759909535, "dur_ms": 111, "outcome": "ok", "exc": "", "ts": "2026-10-23T20:51:49"}
+{"event": "page_navigation", "epoch_ms": 1792759909901, "ts": "2026-10-23T20:51:49"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792759913672, "dur_ms": 101, "outcome": "ok", "exc": "", "name": "fill_00_before.png", "ts": "2026-10-23T20:51:53"}
+{"event": "person_identities_locked", "applicant_employee_verified": false, "creator_unchanged": true, "ts": "2026-10-23T20:51:53"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792759914011, "dur_ms": 1640, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T20:51:55"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792759916943, "dur_ms": 1650, "outcome": "ok", "exc": "", "kind": "multiselect", "ts": "2026-10-23T20:51:58"}
+{"event": "timing", "action": "pick_option", "t0_ms": 1792759918625, "dur_ms": 1310, "outcome": "ok", "exc": "", "kind": "dropdown", "ts": "2026-10-23T20:51:59"}
+{"event": "header_generated_default_bank_admitted", "pre_header_rows": 0, "after_header_rows": 1, "default_payee_matches_applicant": true, "amount_is_blank_or_zero": true, "ts": "2026-10-23T20:52:00"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792759921202, "dur_ms": 98, "outcome": "ok", "exc": "", "name": "v1_relations_after.png", "ts": "2026-10-23T20:52:01"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792759921144, "dur_ms": 156, "outcome": "ok", "exc": "", "section": "relations", "ts": "2026-10-23T20:52:01"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792759921888, "dur_ms": 123, "outcome": "ok", "exc": "", "name": "v1_costs_after.png", "ts": "2026-10-23T20:52:02"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792759921861, "dur_ms": 150, "outcome": "ok", "exc": "", "section": "costs", "ts": "2026-10-23T20:52:02"}
+{"event": "timing", "action": "table_schema_scan", "t0_ms": 1792759922453, "dur_ms": 10, "outcome": "ok", "exc": "", "prop": "code", "ts": "2026-10-23T20:52:02"}
+{"event": "timing", "action": "table_row_fill", "t0_ms": 1792759922453, "dur_ms": 36, "outcome": "error", "exc": "UIBlocked", "section": "products", "row": 0, "ts": "2026-10-23T20:52:02"}
+{"event": "timing", "action": "section_fill", "t0_ms": 1792759922453, "dur_ms": 37, "outcome": "error", "exc": "UIBlocked", "section": "products", "ts": "2026-10-23T20:52:02"}
+{"event": "timing", "action": "ui_execution", "t0_ms": 1792759909534, "dur_ms": 12956, "outcome": "error", "exc": "UIBlocked", "ts": "2026-10-23T20:52:02"}
+{"event": "timing", "action": "screenshot", "t0_ms": 1792759922612, "dur_ms": 87, "outcome": "ok", "exc": "", "name": "v1_blocked.png", "ts": "2026-10-23T20:52:02"}
+{"event": "probe_end", "reason": "NEEDS_INPUT", "tech_used_s": 16.9, "login_wait_s": 0.0, "budget_respected": true, "ts": "2026-10-23T20:52:02"}
+{"event": "own_test_page_close", "unsaved": true, "save_attempted": false, "ts": "2026-10-23T20:52:02"}

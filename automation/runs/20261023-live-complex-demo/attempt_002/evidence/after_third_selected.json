@@ -1,0 +1,179 @@
+{
+  "page": {
+    "url": "https://bpm.qiaodan.com/oa/reimburse?type=new",
+    "is_new": true,
+    "operator": "陈晶",
+    "biz_number": "",
+    "uuid": "",
+    "status": "编制中"
+  },
+  "applicant": {
+    "name": "徐亮",
+    "company": "厦门乔丹科技有限公司",
+    "department": "运动表现研究部"
+  },
+  "header": {
+    "bizStatus": "编制中",
+    "bizNumber": "",
+    "appliedName": "徐亮",
+    "appliedAt": "2026-10-23",
+    "appliedDuty": "高级研究员",
+    "appliedBy": "117070006",
+    "appliedDeptName": "运动表现研究部",
+    "appliedPhone": "17605078513",
+    "totalCost": "0.00",
+    "upperCost": "",
+    "loanCost": "0.00",
+    "quitCost": "0.00",
+    "payCost": "0.00",
+    "description": "【现场演示·不保存·关联已替换】公出油补",
+    "createdName": "陈晶",
+    "createdDeptName": "运动表现研究部",
+    "createdAt": "2026-10-23",
+    "bizCompletedName": "",
+    "bizCompletedAt": "",
+    "bizLastAuditName": "",
+    "bizLastAuditAt": "",
+    "corpCode": "厦门乔丹科技有限公司",
+    "bizOrign": "乔丹科技",
+    "budgetYears": "2026",
+    "payType": "转账",
+    "currencyType": "人民币",
+    "submitType": "差旅费"
+  },
+  "tables": {
+    "relations": [
+      {
+        "fields": {
+          "bizTypeName": "公出单",
+          "bizNumber": "12026101976",
+          "bizCost": "0.00",
+          "totalReimedCost": "0.00",
+          "nowCost": "215.28",
+          "isLast": "否",
+          "description": "徐亮(2026-10-14)"
+        }
+      },
+      {
+        "fields": {
+          "bizTypeName": "公出单",
+          "bizNumber": "12026070366",
+          "bizCost": "0.00",
+          "totalReimedCost": "0.00",
+          "nowCost": "215.28",
+          "isLast": "否",
+          "description": "徐亮(2026-07-02)"
+        }
+      },
+      {
+        "fields": {
+          "bizTypeName": "公出单",
+          "bizNumber": "12026037675",
+          "bizCost": "0.00",
+          "totalReimedCost": "0.00",
+          "nowCost": "0.00",
+          "isLast": "否",
+          "description": "徐亮(2026-03-30)"
+        }
+      }
+    ],
+    "details": [
+      {
+        "fields": {
+          "reimItem": "",
+          "digest": "",
+          "budgetDeptName": "",
+          "budgetNo": "",
+          "budgetOwner": "",
+          "subjectName": "",
+          "budgetItemName": "",
+          "subjectTotalCost": "0.00",
+          "subjectSurplus": "0.00",
+          "cost": "",
+          "quarterlyMeet": "",
+          "occupyRelationNo": "",
+          "description": ""
+        }
+      }
+    ],
+    "costs": [
+      {
+        "fields": {
+          "project": "",
+          "startDate": "",
+          "endDate": "",
+          "projectPlace": "",
+          "count": "",
+          "cost": "",
+          "reason": ""
+        }
+      }
+    ],
+    "banks": [
+      {
+        "fields": {
+          "payee": "",
+          "account": "",
+          "bank": "",
+          "bankCode": "",
+          "cost": "",
+          "description": ""
+        }
+      }
+    ]
+  },
+  "completeness": {
+    "header": true,
+    "relations": true,
+    "details": true,
+    "costs": true,
+    "banks": true,
+    "detailrels": true
+  },
+  "extra_tables": {
+    "detailrels": [
+      {
+        "fields": {
+          "bizTypeName": "公出单",
+          "bizNo": "12026101976",
+          "digest": "",
+          "bizDetailCost": "",
+          "bizDetailNum": "",
+          "usedCost": "",
+          "cost": "215.28",
+          "description": ""
+        }
+      },
+      {
+        "fields": {
+          "bizTypeName": "公出单",
+          "bizNo": "12026070366",
+          "digest": "",
+          "bizDetailCost": "",
+          "bizDetailNum": "",
+          "usedCost": "",
+          "cost": "215.28",
+          "description": ""
+        }
+      },
+      {
+        "fields": {
+          "bizTypeName": "公出单",
+          "bizNo": "12026037675",
+          "digest": "",
+          "bizDetailCost": "",
+          "bizDetailNum": "",
+          "usedCost": "",
+          "cost": "",
+          "description": ""
+        }
+      }
+    ],
+    "unmodeled:附件": []
+  },
+  "validation": {
+    "invalid_fields": [],
+    "pending": false
+  },
+  "observed_at": "2026-10-23T09:20:57.683206+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "objective": "按真实演示后报销填写提速方案施工，修复核验、固化正式控件、完成真实 C0/C1 对照及严格整单回读",
+  "plan_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\2026-10-23 真实演示后报销填写提速方案.md",
+  "plan_sha256": "f99d556e1860b0371d6a5763fdedd1ad8056e40aa93419f1a1bbe0fedc9a7de5",
+  "authorization": "用户明确要求执行本方案；第 2.1 节授权真实观察、控件测试、新建未保存测试单及必要 C0/C1 回归",
+  "forbidden": [
+    "覆盖或重存已保存样张",
+    "保存新测试单",
+    "提交",
+    "发送",
+    "流转",
+    "审批",
+    "上传",
+    "直接写接口"
+  ],
+  "goal_registration": "create_goal rejected: unfinished prior goal; prior goal state preserved",
+  "protected_sample": {
+    "state": "user_saved",
+    "identity": "pending_exact_read_only_discovery"
+  }
+}

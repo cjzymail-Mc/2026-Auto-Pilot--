@@ -1,0 +1,6 @@
+{
+ "request_path": "/KindlyTips/query",
+ "method": "POST",
+ "post_data": "{\"args\":[{\"propertyName\":\"Type\",\"queryType\":20,\"text\":\"3,5\"},{\"propertyName\":\"ToUserCode\",\"queryType\":2,\"text\":\"116070053\"},{\"propertyName\":\"SendDate\",\"queryType\":10,\"text\":\"1792944000,1793030399.999\"}]}",
+ "body": []
+}

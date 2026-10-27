@@ -1,0 +1,9 @@
+用户已明确要求按最新的 feature01-细化报销skill/2026-10-27 报销单-自驾公出类技能固化施工合同-V1.md 施工。此消息仅负责启动前合法接手，不是修改旧业务或重做旧 V3。
+
+你正在通过 Claude Code --resume 恢复原 B 主 session；必须使用真实当前 session ID，不能伪造、改绑或 fork。原 B 为 c05e555a-0c54-4418-96a2-d92a751dfbc9。先核实本窗口真实 ID、repo 硬规则和现行 team-workflow skill；若不符立即停止。不要使用 claude -p，不改全局配置或权限。
+
+请先验证本交互主 session 的 Bash run_in_background:true 与原生完成通知能力，可用只输出常量的短任务；不能用轮询或外部常驻进程替代。完整读取最新合同第9节，按正常 helper status 核实旧 run d91601924848489f84e317e68582de26。它预期为 DONE，不能从本消息当成当前事实。原 A 的独立交互进程可能仍存在，须确认没有实际写入者、在途工具或 waiter；不要终止或接管该窗口。旧业务 registry、页面及 profile 凭证保持不动。
+
+仅在核实旧 run 已终态且执行者静止后，由你这个真实恢复的原绑定 B 用正常 helper archive 归档。保留旧状态原字节、失败字典和末轮归档；不能从外部传另一个 session ID 冒充、手删状态或清计数。归档后按合同9.2核对根 team-task.md 与旧 run final/team-task.md 字节完全一致、归档可回读且没有新 run/执行者/草稿，才仅清空这份已归档末轮根任务。旧 progress 交后续 helper init 正常处理。
+
+本次只完成这一接手步骤并报告原生通知能力、实际当前 session ID、核实结果和归档路径。暂不初始化新 workflow，不修改业务代码，不登录 OA、不填写、不保存、不上传。若有任何不明归属或仍在写入者，保持现场并报告具体证据。

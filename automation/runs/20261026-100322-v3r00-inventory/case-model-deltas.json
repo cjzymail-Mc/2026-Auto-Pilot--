@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "purpose": "V3 真实公出案例 vs 现有 travel/express/rd_materials 模型差异清单（CASE-01..08 施工输入；R00 只盘点不实现）",
+  "generated_at": "2026-10-26T10:15:00+08:00",
+  "contract": "BPM-MATERIALS-20261026-V3 + team_run 20261026-095208-a68a0869 / ctr-08d9de84",
+  "evidence": {
+    "case_manifest": "automation/runs/20261026-100322-v3r00-inventory/case-file-manifest.json",
+    "excel_structure": "automation/runs/20261026-100322-v3r00-inventory/excel-structure/inspect_excel_report.json",
+    "r00_report": "automation/runs/20261026-100322-v3r00-inventory/R00-report.md",
+    "relation_type_enum_evidence": "automation/runs/20261024-213500-type0204-observe/attempt_007/evidence/observe_result.json"
+  },
+  "deltas": [
+    {
+      "id": "DELTA-1",
+      "area": "金额模型",
+      "current_model": "reconcile 要求票面金额与费用行分配全额闭合（部分票面/超分配阻断）",
+      "case_requirement": "R=M+T（K=纳入范围真实公里合计×1元/公里 + T=去重真实通行费合计）；覆盖校验 F=O+T 必须严格大于 R；油票仅作覆盖不加报；coverage_margin=F-R 复算须与 O-M 一致",
+      "work_package": "CASE-04",
+      "notes": "新增票据覆盖（池）分支并与普通全额分配分开建模（事实层/配置/schema/计划验证/独立核验一致）；不得删除或放宽通用约束；F=R/F<R/差0.01元边界必须写入前拒绝"
+    },
+    {
+      "id": "DELTA-2",
+      "area": "油票角色",
+      "current_model": "每张发票须分配到费用行并闭合",
+      "case_requirement": "油票（油票/油票1-5.pdf，逐份核实，不按文件名计金额）只计入 O 作覆盖依据；不进费用行、不加报、不参与逐票公出对应",
+      "work_package": "CASE-01/04",
+      "notes": "去重按票据唯一身份（价税合计口径），红字/作废/冲销按实际处理"
+    },
+    {
+      "id": "DELTA-3",
+      "area": "汇总单语义",
+      "current_model": "汇总层 vs 明细层一致校验已存在（通用）",
+      "case_requirement": "通行费电子票据汇总单(票据)/(行程) 为汇总验证层，与独立发票不得相加计费；文件数≠可计费票数",
+      "work_package": "CASE-01",
+      "notes": "10 组均有 (票据)+(行程) 成对汇总单及编号变体；需建立 文件→唯一票据 映射与同票多扫去重"
+    },
+    {
+      "id": "DELTA-4",
+      "area": "工作簿回填",
+      "current_model": "xlsx 链路仅读侧（sheet/隐藏行/公式重算/前导零）",
+      "case_requirement": "保持原结构副本回填 G 列过路费逐票金额 + H 合计可靠重算；保留用户公里数与原公式语义；区分有证据零通行费 vs 未找到票据；交付 cell 变更清单；原件只读+哈希",
+      "work_package": "CASE-02",
+      "notes": "结构事实：单 sheet 汇总；行1 标题合并、行3 表头 A序号/B时间/C出发地/D目的地/E公里数/F补贴金额/G过路费/H合计/I备注(+J 合并扩展)；数据行4-24 去返成对；行25-38 空尾行；G 列数据行现值需逐格核（--blanks 显示 G4-G24 非空候选）；stray 警告=标题行布局误报，禁止清理任何单元格"
+    },
+    {
+      "id": "DELTA-5",
+      "area": "公出单模块逐票查找",
+      "current_model": "无该模块查询能力；仅有新页关联弹窗枚举观察",
+      "case_requirement": "进入真实公出单模块定向查询（申请人/年份/日期时段/起讫地），分页/详情消歧；每张去重通行费票据一条最终匹配结论，一张不漏；查不到≠单据不存在（已被原报销使用的单可能不在可关联弹窗）",
+      "work_package": "CASE-03",
+      "notes": "关联类型枚举已实测含『公出单』『出差单』（attempt_007）；真实模块访问/页面身份/关键事实核对不得被缓存或接口回放替代"
+    },
+    {
+      "id": "DELTA-6",
+      "area": "两套关联数据分离",
+      "current_model": "relations 表按计划写入并全量回读，单一来源",
+      "case_requirement": "actual_trip_matches（真实逐票对照，交用户）与 oa_test_relations（随机选真实可选单据作 test_placeholder，仅本案例 fill_only）分开建模、核验、报告；占位不得冒充真实匹配、不得覆盖真实费用/应报额",
+      "work_package": "CASE-03/04/06",
+      "notes": "占位单必须真实可选控件实选并完整回读；选取若产生即时持久占用则停止并报告；不释放/不修改旧关联"
+    },
+    {
+      "id": "DELTA-7",
+      "area": "日期期间判定",
+      "current_model": "本次日期来自材料/用户规则，不从目录推导（已有红线）",
+      "case_requirement": "Excel 时间列真实日期（预览 2025-11-24/12-04/12-10 倒序）+ 票面通行日/区间 + 真实公出单 三方定期间；目录组 0825…1210 与文件名（0906 目录内含 0905 文件）不作期间证据；开票日≠通行日",
+      "work_package": "CASE-01/03",
+      "notes": "目录与票面不一致时留差异与裁决依据"
+    },
+    {
+      "id": "DELTA-8",
+      "area": "模板身份",
+      "current_model": "由用户每次指定完整模板单号",
+      "case_requirement": "本案例模板号在 V3/V2/V1/2026-10-24 任务书及 feature01 全部 md 中均未指定 → 缺口登记；已知历史单号（15426093015 差旅回放等）不得冒充",
+      "work_package": "CASE-05 前置",
+      "notes": "类别归属倾向差旅费分支（公出单关联+公里补贴+通行费；submitType 枚举含差旅费），但须用户明确或从原报销单上下文核实后定案"
+    },
+    {
+      "id": "DELTA-9",
+      "area": "验收口径",
+      "current_model": "旧报告含 fill/save/reopen 待验表述",
+      "case_requirement": "全程 fill_only；不测保存按钮、不验收保存成功/新单号/UUID/重开/持久化；B1-B7/A1-A9 照常由 agent 独立完成",
+      "work_package": "全局",
+      "notes": "台账纠偏已在本轮 R00 落地"
+    }
+  ]
+}

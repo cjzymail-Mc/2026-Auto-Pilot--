@@ -1,0 +1,61 @@
+{
+ "renders": [
+  {
+   "tag": "toll_first",
+   "rel": "0825/0825厦门到晋江发票.pdf",
+   "page": 1,
+   "png_sha256": "00534ae2d91c656993770d7140eb052edbd02716e714930ee7c063274278c78b"
+  },
+  {
+   "tag": "toll_daishou_0906_a",
+   "rel": "0906/0905厦门到晋江发票1.pdf",
+   "page": 1,
+   "png_sha256": "4818e709a83ccbb69702be980287799ffe17e6d9c378886b0721c1dcc2fae811"
+  },
+  {
+   "tag": "toll_split_0906_b",
+   "rel": "0906/0905厦门到晋江发票2.pdf",
+   "page": 1,
+   "png_sha256": "5fac9bc6710cf96dffebe30113c75d6cff99756fef4398c232e63f319f215b05"
+  },
+  {
+   "tag": "toll_1210_p2",
+   "rel": "1210/1210晋江-厦门1 (2).pdf",
+   "page": 1,
+   "png_sha256": "727f64d010462716657b57682d9dcd0489b8fda0e39816cf927945d722ab9e4c"
+  },
+  {
+   "tag": "cluster_41802_a",
+   "rel": "1028/1028晋江到厦门发票.pdf",
+   "page": 1,
+   "png_sha256": "ded8d5f8d5de6bcbbb885034a597f7de4b5f8355d1794d4fad2f008a498d3b8b"
+  },
+  {
+   "tag": "cluster_41802_b",
+   "rel": "1112/1112厦门到晋江发票.pdf",
+   "page": 1,
+   "png_sha256": "2bc633f71816d5b83a0b3f0fb994b17cd07d6fa1646647fb3f24601d6c55a871"
+  },
+  {
+   "tag": "summary_first",
+   "rel": "0825/0825通行费电子票据汇总单(票据).pdf",
+   "page": 1,
+   "png_sha256": "6923a64d94452fbcf157c6536c1baea08d4a03ace298dd381d98f434e97a0f36"
+  },
+  {
+   "tag": "summary_trip_0917",
+   "rel": "0917/0917通行费电子票据汇总单(行程).pdf",
+   "page": 1,
+   "png_sha256": "45b7a74afe58c478cbd16b4f2b0d7e67ac0a643f754acb4a82862a2b8343cab5"
+  },
+  {
+   "tag": "fuel_first",
+   "rel": "油票/油票1.pdf",
+   "page": 1,
+   "png_sha256": "1a37a4d4b2730925ce21b5da382de68102acf5e9e23c2956cf0290d9529b8d97"
+  }
+ ],
+ "post_hash_files": 73,
+ "post_hash_drift": [],
+ "render_note": "fitz 150dpi 只读渲染；原图目录未写入"
+}

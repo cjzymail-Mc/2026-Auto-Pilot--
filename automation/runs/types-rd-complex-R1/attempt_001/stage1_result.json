@@ -1,0 +1,89 @@
+{
+ "probe_version": "v2",
+ "run": "types-rd-complex-R1",
+ "attempt": "attempt_001",
+ "doc_id": null,
+ "expect_name": "陈晶",
+ "checks": {
+  "c1_entry_login": {
+   "status": "PASS",
+   "reason": "域名内页+账户名命中+导航成立（顶栏无显式退出钮，按放宽判据放行）",
+   "evidence": [
+    "attempt_001/evidence/entry.png"
+   ]
+  },
+  "c2_locate_target": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c3_structure": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c4_normal_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "只读探针不写入；写入验证须显式授权（temp.md P4）",
+   "evidence": []
+  },
+  "c5_hard_field_write": {
+   "status": "NOT_AUTHORIZED",
+   "reason": "同上",
+   "evidence": []
+  },
+  "c6_recover": {
+   "status": "NOT_RUN",
+   "reason": "",
+   "evidence": []
+  },
+  "c7_fill_new": {
+   "status": "BLOCKED",
+   "reason": "PRODUCT_ARCHIVE_PICKER_NOT_UNIQUE",
+   "evidence": []
+  }
+ },
+ "phases": {
+  "entry": "PASS",
+  "fill": "BLOCKED"
+ },
+ "events_jsonl_note": "events.jsonl 在 run 级持续追加（可变文件，不参与终局哈希）",
+ "screenshots_note": "证据均在 attempt 目录，旧 run/attempt 文件一律不覆盖",
+ "fill_plan_file": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\rd-complex-R1\\fill_plan.json",
+ "plan_hash": "2579a8358b23cb804322cf914c04719b821b8c8d5a6312f03b78abf44a5cb88d",
+ "task_id": "type-replay-20261023-rd-complex-R1",
+ "validation_scope": "v1_independent",
+ "save_status": "NOT_ATTEMPTED",
+ "entry": {
+  "nav_error": null,
+  "nav_ms": 2512,
+  "classify": "LOGGED_IN",
+  "markers": {
+   "url": "https://bpm.qiaodan.com/oa/home",
+   "hasPassword": false,
+   "qrHints": 0,
+   "loginText": false,
+   "oaNav": 29,
+   "forms": 0,
+   "name_hits": 1,
+   "logout_hits": 0
+  },
+  "cookies_names": [
+   "ww_lang",
+   "wwopen.open.sid"
+  ],
+  "screenshot": "attempt_001/evidence/entry.png",
+  "html": "attempt_001/evidence/entry.html"
+ },
+ "task_status": "NEEDS_INPUT",
+ "issues": [
+  {
+   "code": "PRODUCT_ARCHIVE_PICKER_NOT_UNIQUE"
+  }
+ ],
+ "finish_reason": "NEEDS_INPUT",
+ "tech_used_s": 16.9,
+ "login_wait_s": 0.0,
+ "wall_s": 18.1,
+ "budget_respected": true
+}

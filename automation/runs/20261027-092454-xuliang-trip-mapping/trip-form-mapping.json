@@ -1,0 +1,170 @@
+{
+ "schema": "xuliang-trip-mapping/1.2",
+ "generated_at": "2026-10-27T09:39:23+08:00",
+ "rule": "费用归属徐亮——仅包含徐亮的公出单有效；陈晶独有单(12025085485/12025092237/12025115547/12025121473)全部剔除",
+ "revision": {
+  "v1.1": "用户更正：①12025092018覆盖09-04+09-05两日(此前漏计09-05)；②剔除12025092237(不含徐亮,错误单据)；③08-25/11-12/12-04改挂徐亮候选单,详情fact未采待核",
+  "v1.2": "2026-10-27 09:46 live 只读详情核实：3 张候选全部 VERIFIED（12025085486→08-25、12025112775→11-12 张力解除、12025121233→12-04）；10/10 行程日 9 张含徐亮单全覆盖，27 票 Σ486.93，全部 reimed=2"
+ },
+ "rows": [
+  {
+   "travel_date": "2025-08-25",
+   "tickets": 2,
+   "amount_sum": "45.28",
+   "form": "12025085486",
+   "applicant": "徐亮",
+   "creator": "徐亮",
+   "xuliang": "申请人",
+   "reason": "plaid3.0量产会议",
+   "reimed": "已用(挂7a4085f7)",
+   "verify": "VERIFIED",
+   "evidence": "api-xuliang-12025085486.json：徐亮 08-25 13:30→18:00（nature 08-25）"
+  },
+  {
+   "travel_date": "2025-09-04",
+   "tickets": 2,
+   "amount_sum": "45.28",
+   "form": "12025092018",
+   "applicant": "徐亮",
+   "creator": "徐亮",
+   "xuliang": "申请人+同行人",
+   "reason": "会议",
+   "reimed": "已用",
+   "verify": "VERIFIED",
+   "evidence": "api-cand详情：徐亮09-04 08:30→18:00"
+  },
+  {
+   "travel_date": "2025-09-05",
+   "tickets": 4,
+   "amount_sum": "39.90",
+   "form": "12025092018",
+   "applicant": "徐亮",
+   "creator": "徐亮",
+   "xuliang": "申请人+同行人",
+   "reason": "会议",
+   "reimed": "已用",
+   "verify": "VERIFIED",
+   "evidence": "api-cand详情：徐亮09-05 08:30→13:30（与09-04同一单，用户确认口径）"
+  },
+  {
+   "travel_date": "2025-09-17",
+   "tickets": 4,
+   "amount_sum": "68.90",
+   "form": "12025094906",
+   "applicant": "张宇昂",
+   "creator": "张宇昂",
+   "xuliang": "同行人",
+   "reason": "厂家走访",
+   "reimed": "已用",
+   "verify": "VERIFIED",
+   "evidence": "api-cand详情：张宇昂+徐亮09-17"
+  },
+  {
+   "travel_date": "2025-09-28",
+   "tickets": 4,
+   "amount_sum": "63.86",
+   "form": "12025098708",
+   "applicant": "张宇昂",
+   "creator": "张宇昂",
+   "xuliang": "同行人",
+   "reason": "供应商走访（通达）",
+   "reimed": "已用",
+   "verify": "VERIFIED",
+   "evidence": "api-cand详情：张宇昂+徐亮09-28"
+  },
+  {
+   "travel_date": "2025-10-28",
+   "tickets": 2,
+   "amount_sum": "45.28",
+   "form": "12025105858",
+   "applicant": "陈晶",
+   "creator": "陈晶",
+   "xuliang": "同行人",
+   "reason": "Plaid 试产会议",
+   "reimed": "已用",
+   "verify": "VERIFIED",
+   "evidence": "api-detail详情：陈晶+徐亮10-28"
+  },
+  {
+   "travel_date": "2025-11-12",
+   "tickets": 2,
+   "amount_sum": "45.28",
+   "form": "12025112775",
+   "applicant": "徐亮",
+   "creator": "徐亮",
+   "xuliang": "申请人",
+   "reason": "plaid3.0标准制定",
+   "reimed": "已用(挂7a4085f7)",
+   "verify": "VERIFIED",
+   "evidence": "api-xuliang-12025112775.json：徐亮 11-12 08:30→17:30（nature 11-12，描述'徐亮1114'仅为制单标签）"
+  },
+  {
+   "travel_date": "2025-11-24",
+   "tickets": 2,
+   "amount_sum": "45.28",
+   "form": "12025115994",
+   "applicant": "徐亮",
+   "creator": "徐亮",
+   "xuliang": "申请人+同行人",
+   "reason": "plaid3量产试做",
+   "reimed": "已用",
+   "verify": "VERIFIED",
+   "evidence": "api-cand详情：徐亮11-24 08:30→17:30"
+  },
+  {
+   "travel_date": "2025-12-04",
+   "tickets": 2,
+   "amount_sum": "45.28",
+   "form": "12025121233",
+   "applicant": "徐亮",
+   "creator": "徐亮",
+   "xuliang": "申请人",
+   "reason": "带客户参观工厂",
+   "reimed": "已用(挂7a4085f7)",
+   "verify": "VERIFIED",
+   "evidence": "api-xuliang-12025121233.json：徐亮 12-04 08:30→17:30（nature 12-04）"
+  },
+  {
+   "travel_date": "2025-12-10",
+   "tickets": 3,
+   "amount_sum": "42.59",
+   "form": "12025123375",
+   "applicant": "徐亮",
+   "creator": "徐亮",
+   "xuliang": "申请人+同行人",
+   "reason": "项目跟进",
+   "reimed": "已用",
+   "verify": "VERIFIED",
+   "evidence": "api-cand详情：徐亮12-10 08:30→17:30"
+  }
+ ],
+ "totals": {
+  "trips": 10,
+  "tickets": 27,
+  "amount_sum": "486.93",
+  "verified": 10,
+  "pending": 0
+ },
+ "pending_detail_fetch": [],
+ "excluded_forms": [
+  "12025085485",
+  "12025092237",
+  "12025115547",
+  "12025121473"
+ ],
+ "provenance": {
+  "wide_list": "automation/runs/20261026-143340-v3r04-case03 api-wide 96单",
+  "details": "同run api-detail/api-cand traveler行",
+  "tickets": "同run actual_trip_matches.json",
+  "extra": "automation/runs/20261023-142146-travelcensus/travel_census.json(relation条目:description 徐亮0825/1114/1204,挂报销7a4085f7…)"
+ },
+ "detail_fetch_evidence": {
+  "manifest": "xuliang-details-manifest.json",
+  "api_files": [
+   "attempt_001/evidence/api-xuliang-12025085486.json",
+   "attempt_001/evidence/api-xuliang-12025112775.json",
+   "attempt_001/evidence/api-xuliang-12025121233.json"
+  ],
+  "method": "只读 GET /WorkOut/<uuid>，临时 context，认证头仅内存，零业务写入"
+ }
+}

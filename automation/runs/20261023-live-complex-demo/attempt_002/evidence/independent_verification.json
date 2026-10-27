@@ -1,0 +1,67 @@
+{
+  "ok": false,
+  "issues": [
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/0/bizDetailCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/0/bizDetailNum"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/0/usedCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/1/bizDetailCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/1/bizDetailNum"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/1/usedCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/2/bizDetailCost"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/2/bizDetailNum"
+    },
+    {
+      "code": "UNSUPPORTED_DETAIL_ALLOCATION",
+      "path": "/extra_tables/detailrels/2/usedCost"
+    }
+  ],
+  "plan_hash": "c6b2e7f1a41e67f69acef8d419ad619993bf71a4e1713dd8577f2b394df9b8e3",
+  "snapshot_hash": "8e490cbefa3cc5a588d3d9903447f90c366bd84c2d5dd358430fdd0396cbee3f",
+  "counts": {
+    "relations": {
+      "expected": 3,
+      "actual": 3
+    },
+    "details": {
+      "expected": 2,
+      "actual": 2
+    },
+    "costs": {
+      "expected": 6,
+      "actual": 6
+    },
+    "banks": {
+      "expected": 1,
+      "actual": 1
+    }
+  },
+  "amounts": {
+    "details": "633.84",
+    "banks": "633.84",
+    "costs": "633.84",
+    "total": "633.84"
+  }
+}

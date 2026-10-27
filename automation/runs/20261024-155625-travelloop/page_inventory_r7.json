@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "kind": "page_inventory_fill_only",
+  "task_id": "20261024-r7-travelloop-15426093015",
+  "run": "20261024-163009-3250e7d0",
+  "attempt": "attempt_001",
+  "generated_at": "2026-10-24T16:34:01+08:00",
+  "identity": {
+    "operator": "陈晶",
+    "applicant": {
+      "name": "徐亮",
+      "company": "厦门乔丹科技有限公司",
+      "department": "运动表现研究部"
+    },
+    "applicant_employee_id": "117070006",
+    "page_status": "编制中",
+    "is_new_form": true,
+    "biz_number": "(未保存，无单号)"
+  },
+  "content": {
+    "row_counts": {
+      "relations": 3,
+      "details": 2,
+      "costs": 6,
+      "banks": 1
+    },
+    "expected_counts": {
+      "relations": 3,
+      "details": 2,
+      "costs": 6,
+      "banks": 1
+    },
+    "amounts": {
+      "details": "633.84",
+      "banks": "633.84",
+      "costs": "633.84",
+      "total": "633.84"
+    },
+    "relations_numbers": [
+      "12026101976",
+      "12026070366",
+      "12026037675"
+    ],
+    "header": {
+      "corpCode": "厦门乔丹科技有限公司",
+      "payType": "转账",
+      "currencyType": "人民币",
+      "submitType": "差旅费",
+      "budgetYears": "2026",
+      "description": "【现场演示·不保存·关联已替换】公出油补",
+      "totalCost": "633.84"
+    }
+  },
+  "verification": {
+    "ok": true,
+    "plan_hash": "e917a10d68e5b95a8f5e5212ab58db2b2b68ea9c5e0e4dc601ee4c2efcd30c48",
+    "snapshot_sha256_of_readback": "98712d67f0f4d5d54cc24252080780cb997d987b49e4005d2258ba91324ff6d6",
+    "independent_readback": "attempt_001/evidence/independent_readback.json",
+    "independent_verification": "attempt_001/evidence/independent_verification.json"
+  },
+  "disposition": {
+    "save_attempted": false,
+    "save_status": "NOT_ATTEMPTED",
+    "mode": "fill_only",
+    "keep_open_minutes": 5,
+    "end_state": "页面随 keep-open 自动关闭；未保存、未提交、未产生服务端单据",
+    "screenshots": [
+      "attempt_001/evidence/v1_final.png",
+      "attempt_001/evidence/fill_00_before.png",
+      "attempt_001/evidence/v1_relations_after.png",
+      "attempt_001/evidence/v1_details_after.png",
+      "attempt_001/evidence/v1_costs_after.png",
+      "attempt_001/evidence/v1_banks_after.png"
+    ],
+    "v1_final_sha256": "c93b595ab9b0c2091593422139d19140881a9286ccb25985b06947f3b614d8a8"
+  },
+  "history": {
+    "superseded_zero_write": "20261024-160024-8502f91d (缺申请人工号，页面零写入)",
+    "superseded_written_never_saved": "20261024-162157-04150c78 (relations/1 关联选择瞬时 0 候选，save 从未尝试)",
+    "final": "20261024-163009-3250e7d0 SUCCESS_FILL_ONLY"
+  }
+}

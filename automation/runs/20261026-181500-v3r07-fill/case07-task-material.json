@@ -1,0 +1,37 @@
+{
+  "schema_version": "v3r07-case07-task-material-1.0",
+  "generated_at": "2026-10-26T18:26:50+08:00",
+  "case": "CASE-07 随机测试占位关联（fill_only）",
+  "basis": "team-task src-c1c5d877 / 合同 ctr-affef776 冻结范围 2；V3 §5.3",
+  "placeholder_relation": {
+    "bizTypeName": "公出单",
+    "bizNumber": "12024070132",
+    "nowCost": "1924.93",
+    "isLast": "是",
+    "chosen_row": {
+      "status": "结束",
+      "applied_date": "2024-07-01",
+      "bizNumber": "12024070132",
+      "applicant": "陈晶",
+      "reason": "项目跟进"
+    },
+    "selection": {
+      "method": "random.Random(seed).randrange",
+      "seed": "6074a75771428d7e",
+      "seed_derivation": "sha256('20261026-180546-c1c5d877-case07')[:16]（team_run 派生，先验提交，先于枚举查看）",
+      "enumeration_path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\runs\\20261026-181500-v3r07-fill\\attempt_002\\evidence\\relation_enumeration.json",
+      "enumeration_sha256": "369a47938da2215e0cc11a495128e0a7f75f8ef3d2c8d0948607df972b3b0176",
+      "enumeration_scope": "真实 relation dialog 默认首屏（未翻页、未检索、未选择）",
+      "total_available": 76,
+      "candidates_count": 20,
+      "exclusion": {
+        "excluded_number": "12026096668",
+        "hits_in_candidates": 0,
+        "policy": "命中则先移除再 randrange；本次不在列，无移除"
+      },
+      "chosen_index": 6
+    },
+    "nowCost_semantics": "关联行 nowCost 合计 == 应报总额 totalCost（单行=1924.93；旧单与 demo 同口径闭合）"
+  },
+  "separation": "与 actual_trip_matches（automation/runs/20261026-143340-v3r04-case03/，12 MATCHED/15 NO_MATCH）两套数据分开建模、核验、报告；占位选中对象仅为本案例 fill_only 测试占位，不冒充真实逐票对照结论，不改动模板旧单关联，不重新占用已用真实公出单 12026096668；绑定本案例及 fill_only。"
+}

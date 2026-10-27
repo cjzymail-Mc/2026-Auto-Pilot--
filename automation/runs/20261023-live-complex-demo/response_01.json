@@ -1,0 +1,4 @@
+{
+  "error": "ValueError",
+  "message": "full document number does not identify exactly one UUID"
+}
