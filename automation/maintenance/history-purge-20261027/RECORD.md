@@ -19,6 +19,18 @@
 - **远端处理**：净化前历史已推送过的远端仓库必须删除重建（服务端不可达对象可残留），不得以 force-push 覆盖了事；其他克隆全部作废。
 - 净化前 11 个本轮 commit 与净化一起获得新 hash；`runbook`/STATE 引用的路径不受影响（路径未变）。
 
+## 截图分级（同日第二轮）
+
+用户裁定（2026-10-27）：run 截图分级入库——过程截图（观察普查/逐动作/逐表回读/票据渲染页）不入库；里程碑（vN_final / vN_blocked / template_view / after_login / login_gate / demo_final）与每 run 最高 attempt 的 entry.png 保留。共 347 张移出 Git 全部历史，清单 `../png-tiering-remove-list-20261027.txt`（相对本目录）。
+
+- **保留集视觉核验**：21 张风险截图经 vision-reader 逐张核验，13 张目视含真实银行资料（真实填写终局 v1_final ×9、回放 v1_blocked ×2、真实单据模板视图 template_view ×2），并入移除清单；8 张确认干净（银行区未入镜或空表）保留。卡号不转录入库，判定只记结论。
+- **长期口径**：真实表单内容画面（终局/模板视图）可能目视含银行行，默认仅本地保留；在库证据链以 events.jsonl、stage1_result.json 及回读 JSON 为准。
+- .gitignore 追加：38 条家族 glob（过程环节及 renders/rendered 票据渲染页，未来 run 同样适用）+ 47 条显式例外（低 attempt entry/导航页、上述 13 张）。
+- 二次 filter-repo 后全部 commit hash 再变；映射 `commit-map-tiering-20261027.txt`，与首轮 `commit-map.txt` 链式换算。远端同样须删除重建，旧克隆作废。
+- 验证：347 路径历史零残留；在库 PNG 85 张（8 里程碑 + 53 entry + 7 登录类 + 17 其他）；全 blob 卡号扫描 2144/2144 = 0；push 模拟 49.2 → **11.0 MiB**。
+- 原件本地存档：仓库外 `../2026-Auto-Pilot-企业微信-purged-local-20261027/png-tiering-20261027/`（相对仓库根）。
+- 并发保护：filter-repo 前将并发 session 的 6 个未提交文件按字节备份至仓库外 `../2026-Auto-Pilot-企业微信-tiering-workdir-20261027/dirty-backup/`，重写后原样恢复并核对哈希。
+
 ## 判定口径
 
 - 真实卡号清单：14 个具体号码存仓库外 `../2026-Auto-Pilot-企业微信-purged-local-20261027/real-card-patterns-20261027.txt`（verify_purge.py 以 --patterns 读取；卡号本身不落 Git），与 `real-card-exclusion-20261027.txt`（当日新增文件排除，仅路径）同一口径。
