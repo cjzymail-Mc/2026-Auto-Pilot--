@@ -1,0 +1,16 @@
+{
+  "backup": "C:\\Users\\xy198\\.claude-glm\\vision-routing\\backups\\20261026-171954-format-tuning",
+  "changes": [
+    {
+      "file": "C:\\Users\\xy198\\.claude-glm\\vision-routing\\agents.json",
+      "before_sha256": "2612e84a5f65914a1f5c17a57212a2eaac9a26778656914320d69cb28949ed8d",
+      "after_sha256": "7891473fe6a8e8176f1fce88a30fb50f8cf11db582866a60e169c3502bb554d8"
+    },
+    {
+      "file": "C:\\Users\\xy198\\.claude-glm\\vision-routing\\routing.md",
+      "before_sha256": "12f6a9addfec1c7ef094fe9b5383d5e7e277481c038413fabfb4b02db6f8362d",
+      "after_sha256": "5d7e1043ff86e2d3ff35c21f21e31127e44a9d793f51c4ad1db874d1636bb805"
+    }
+  ],
+  "reason": "preserve requested JSON format and verify characters; no sample answers added"
+}

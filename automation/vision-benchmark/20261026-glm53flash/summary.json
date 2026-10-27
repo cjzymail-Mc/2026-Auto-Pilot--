@@ -1,0 +1,133 @@
+{
+  "at": "2026-10-26T06:28:49.985432+00:00",
+  "completed_requests": 13,
+  "requested_models": [
+    "glm-5.3",
+    "glm-5.3-flash"
+  ],
+  "real_material_status": "COMPLETED_AFTER_EXPLICIT_USER_CONSENT",
+  "destination": "api.z.ai",
+  "real_originals": {
+    "requests": 5,
+    "correct": 68,
+    "total": 68
+  },
+  "real_degraded": {
+    "requests": 1,
+    "correct": 15,
+    "total": 15
+  },
+  "read_route": {
+    "requests": 1,
+    "correct": 15,
+    "total": 15
+  },
+  "explicit_absence_retest": {
+    "requests": 1,
+    "correct": 14,
+    "total": 14
+  },
+  "synthetic_flash": {
+    "requests": 4,
+    "correct": 42,
+    "total": 44
+  },
+  "unprinted_values_in_original_R02": {
+    "trip_count": 1,
+    "invoice_count": 1
+  },
+  "absence_retest_values": {
+    "trip_count": null,
+    "invoice_count": null
+  },
+  "input_and_original_hash_checks": "all_passed",
+  "isolation_checks": [
+    {
+      "result": "D01-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "N01-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "R01-glm-5.3-flash-read",
+      "tools": [
+        "Read"
+      ],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "R01-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "R02-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "R02N-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "R03-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "R04-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "R05-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "S01-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "S01-glm-5.3",
+      "tools": [],
+      "model": "glm-5.3",
+      "mcp_servers": []
+    },
+    {
+      "result": "T01-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    },
+    {
+      "result": "T02-glm-5.3-flash",
+      "tools": [],
+      "model": "glm-5.3-flash",
+      "mcp_servers": []
+    }
+  ],
+  "limitations": [
+    "5 original digital PDF renderings, one derivative; not a population accuracy estimate",
+    "predefined field scoring is not complete response validation",
+    "initial R02 supplied unprinted counts; a prompted follow-up corrected them",
+    "Read and absence checks repeat existing images, not additional independent samples",
+    "no box-coordinate, phone-photo/glare, handwriting, stamp-overlap or multipage validation"
+  ]
+}

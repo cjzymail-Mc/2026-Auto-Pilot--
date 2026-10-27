@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-26T09:28:21.540749+00:00",
+  "destination": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]",
+  "changes": [
+    {
+      "file": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\claude-glm-dist\\claude-glm-settings.json",
+      "sha256": "4d7b044b56bd5d4d63b1982b2c68d78057880eff2c345142b1ca7c772c060cc7",
+      "backup": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\claude-glm-dist\\claude-glm-settings.json.bak-vision-20261026-172821"
+    },
+    {
+      "file": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\claude-glm-dist\\claude-glm.bashrc.snippet",
+      "sha256": "d6684de682147e190e3f652f62111b431d00c7ef4bbd806c4b1463ee29c5aaaa",
+      "backup": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\claude-glm-dist\\claude-glm.bashrc.snippet.bak-vision-20261026-172821"
+    },
+    {
+      "file": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\claude-glm-dist\\install-claude-glm.ps1",
+      "sha256": "dfcc629ba52b2d445cea770d33cfce34646bd4ccddcbd8d54f47286d0a699737",
+      "backup": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\claude-glm-dist\\install-claude-glm.ps1.bak-vision-20261026-172821"
+    },
+    {
+      "file": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\claude-glm-dist\\README.md",
+      "sha256": "9514d2672c946b3d5fc04fb18dd33d66f16b6e65367c9dd981b40eb24f619cab",
+      "backup": null
+    },
+    {
+      "file": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\claude-glm-dist\\vision-routing\\agents.json",
+      "sha256": "7891473fe6a8e8176f1fce88a30fb50f8cf11db582866a60e169c3502bb554d8",
+      "backup": null
+    },
+    {
+      "file": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\claude-glm-dist\\vision-routing\\routing.md",
+      "sha256": "5d7e1043ff86e2d3ff35c21f21e31127e44a9d793f51c4ad1db874d1636bb805",
+      "backup": null
+    }
+  ],
+  "record": "D:\\Downloads\\Mc Claude Code Workshop\\Mc-emoji\\[feature-04-Hot-Fix-Clash+wsl-codex]\\[3-Openrouter+claude配置-glm]\\2026-10-26 glm-5.3主模型与Flash视觉自动委派实测.md",
+  "tests_passed_before_sync": true
+}

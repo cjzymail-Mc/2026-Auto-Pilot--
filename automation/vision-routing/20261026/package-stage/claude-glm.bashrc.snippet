@@ -1,0 +1,74 @@
+# claude-glm: isolated provider settings; main GLM-5.3 and Zhipu-only Flash vision routing.
+# 2026-10-26 portable distribution update.
+claude-glm() (
+  export CLAUDE_CONFIG_DIR=~/.claude-glm
+  # Account settings live only in this subshell; no credential/model leakage.
+  unset ANTHROPIC_API_KEY ANTHROPIC_MODEL ANTHROPIC_DEFAULT_MODEL ANTHROPIC_SMALL_FAST_MODEL
+  unset CLAUDE_CODE_USE_BEDROCK CLAUDE_CODE_USE_VERTEX CLAUDE_CODE_USE_FOUNDRY
+  # Use the Git Bash running this launcher, including custom install locations.
+  if [[ -x /usr/bin/cygpath ]]; then
+    export CLAUDE_CODE_GIT_BASH_PATH="$(/usr/bin/cygpath -w "$BASH")"
+  fi
+  echo
+  echo "  选择 provider:"
+  echo "    [1] Zhipu      (api.z.ai 直连,   glm-5.3)"
+  echo "    [2] DeepSeek   (deepseek 直连,   v4-pro[1m] / v4-flash)"
+  echo "    [3] OpenRouter (z-ai/glm-5.2,    走 Clash)"
+  echo
+  read -p "  输入 1/2/3 (回车默认 1=Zhipu): " _glm_choice
+  local opus_model haiku_model provider
+  local -a _glm_vision_args=() _glm_main_args=()
+  if [ "$_glm_choice" = "3" ]; then
+    if [ -z "$OPENROUTER_API_KEY" ]; then
+      echo "  ✗ OPENROUTER_API_KEY 为空，先配好系统环境变量再来。"; return 1
+    fi
+    export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
+    export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
+    opus_model="z-ai/glm-5.2"; haiku_model="z-ai/glm-5.2"; provider="OpenRouter"
+  elif [ "$_glm_choice" = "2" ]; then
+    if [ -z "$DEEPSEEK_API_KEY" ]; then
+      echo "  ✗ DEEPSEEK_API_KEY 为空，先配好系统环境变量再来。"; return 1
+    fi
+    export ANTHROPIC_BASE_URL="https://api.deepseek.com/anthropic"
+    export ANTHROPIC_AUTH_TOKEN="$DEEPSEEK_API_KEY"
+    opus_model="deepseek-v4-pro[1m]"; haiku_model="deepseek-v4-flash"; provider="DeepSeek"
+  else
+    if [ -z "$ZHIPU_API_KEY" ]; then
+      echo "  ✗ ZHIPU_API_KEY 为空，先配好系统环境变量再来。"; return 1
+    fi
+    export ANTHROPIC_BASE_URL="https://api.z.ai/api/anthropic"
+    export ANTHROPIC_AUTH_TOKEN="$ZHIPU_API_KEY"
+    opus_model="glm-5.3"; haiku_model="glm-5.3"; provider="Zhipu"
+    # BEGIN claude-glm vision routing 20261026
+    if [ ! -r "$CLAUDE_CONFIG_DIR/vision-routing/agents.json" ] || [ ! -r "$CLAUDE_CONFIG_DIR/vision-routing/routing.md" ]; then
+      echo "claude-glm: missing Zhipu vision-routing config" >&2
+      return 1
+    fi
+    _glm_vision_args=(--agents "$(cat "$CLAUDE_CONFIG_DIR/vision-routing/agents.json")" --append-system-prompt "$(cat "$CLAUDE_CONFIG_DIR/vision-routing/routing.md")")
+    # END claude-glm vision routing 20261026
+  fi
+  export ANTHROPIC_DEFAULT_OPUS_MODEL="$opus_model"
+  export ANTHROPIC_DEFAULT_SONNET_MODEL="$opus_model"
+  export ANTHROPIC_DEFAULT_HAIKU_MODEL="$haiku_model"
+  export CLAUDE_CODE_SUBAGENT_MODEL="$haiku_model"
+
+  # Proxy and provider changes are confined to the launcher subshell.
+  if [ "$_glm_choice" != "3" ]; then
+    unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy ALL_PROXY all_proxy
+    echo "  · $provider 直连（本次启动不使用代理）"
+  fi
+
+  echo "  → 启动 $provider（主=$opus_model, 副=$haiku_model）"
+  echo
+  # Pin each provider's main model; an explicit user --model still wins.
+  local _glm_arg _glm_has_model=0
+  for _glm_arg in "$@"; do
+    case "$_glm_arg" in
+      --model|--model=*) _glm_has_model=1 ;;
+    esac
+  done
+  if [ "$_glm_has_model" -eq 0 ]; then
+    _glm_main_args=(--model "$opus_model")
+  fi
+  claude "${_glm_main_args[@]}" "${_glm_vision_args[@]}" "$@"
+)

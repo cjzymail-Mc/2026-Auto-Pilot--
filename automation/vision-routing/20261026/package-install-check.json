@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "fixture": "C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k",
+  "real_api_requests": 0,
+  "legacy_haiku_migrated": true,
+  "custom_settings_and_hooks_preserved": true,
+  "single_launcher": true,
+  "second_install_identical": true,
+  "second_install_no_new_backups": true,
+  "backup_counts": [
+    2,
+    2
+  ],
+  "installed_visual_agent": "glm-5.3-flash",
+  "portable_launcher_probe": {
+    "probe": true,
+    "provider_host": "api.z.ai",
+    "main_model_options": [
+      "glm-5.3"
+    ],
+    "agents": {
+      "vision-reader": {
+        "model": "glm-5.3-flash",
+        "tools": [
+          "Read"
+        ]
+      }
+    },
+    "has_visual_rules": true,
+    "haiku_alias": "glm-5.3",
+    "subagent_default": "glm-5.3"
+  },
+  "logs": [
+    {
+      "repeat": 1,
+      "exit_code": 0,
+      "stdout": "\n[*] 第 1 步 / 前置检测\n    [OK] Claude Code：2.1.299 (Claude Code)\n    [OK] Git Bash：C:\\Program Files\\Git\\bin\\bash.exe\n    [OK] Python：C:\\Users\\xy198\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\n\n[*] 第 2 步 / 更新 GLM 配置与私有 PATH 钩子\n    [OK] 已备份：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.claude-glm\\settings.json.bak-claude-glm-20261026-172615-165\n    [OK] GLM 配置与私有 PATH 钩子已就位：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.claude-glm\n\n[*] 第 3 步 / 更新 Git Bash 启动函数\n    [OK] 已备份：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.bashrc.bak-claude-glm-20261026-172615-255\n    [OK] claude-glm 函数已更新；其他 Bash 内容保留，语法检查通过\n    [OK] 已跳过联网冒烟，仅更新配置\n\n[*] 完成\n新开 Git Bash，在项目目录运行 claude-glm（默认选 1）。接续原会话：claude-glm --resume。\n默认主模型glm-5.3；Zhipu图片任务委派glm-5.3-flash。auto mode与PATH钩子保留。旧会话不会自动获得新启动参数。\nsettings：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.claude-glm\\settings.json\n启动函数：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.bashrc\n私有钩子：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.claude-glm\\local-hooks\\prepare-bash-env.py\n",
+      "stderr": ""
+    },
+    {
+      "repeat": 2,
+      "exit_code": 0,
+      "stdout": "\n[*] 第 1 步 / 前置检测\n    [OK] Claude Code：2.1.299 (Claude Code)\n    [OK] Git Bash：C:\\Program Files\\Git\\bin\\bash.exe\n    [OK] Python：C:\\Users\\xy198\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\n\n[*] 第 2 步 / 更新 GLM 配置与私有 PATH 钩子\n    [OK] GLM 配置与私有 PATH 钩子已就位：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.claude-glm\n\n[*] 第 3 步 / 更新 Git Bash 启动函数\n    [OK] .bashrc 启动函数已是新版，无需改动\n    [OK] 已跳过联网冒烟，仅更新配置\n\n[*] 完成\n新开 Git Bash，在项目目录运行 claude-glm（默认选 1）。接续原会话：claude-glm --resume。\n默认主模型glm-5.3；Zhipu图片任务委派glm-5.3-flash。auto mode与PATH钩子保留。旧会话不会自动获得新启动参数。\nsettings：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.claude-glm\\settings.json\n启动函数：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.bashrc\n私有钩子：C:\\Users\\xy198\\AppData\\Local\\Temp\\claude-glm-dist-check-m62mkc5k\\.claude-glm\\local-hooks\\prepare-bash-env.py\n",
+      "stderr": ""
+    }
+  ],
+  "installed_hashes": {
+    ".bashrc": "5f46a421003c87c10f02d89b789d1f26cccb79d0817df9ac7e0c040f88c65d39",
+    ".claude-glm\\settings.json": "ee316b73844cf72833f83d2fbd5a2c17de3d2c49e4f55cb284bf2d686036ce59",
+    ".claude-glm\\local-hooks\\prepare-bash-env.py": "e430d4c9de42f6dc9ba60f3eb5569bbc306fe454297535bb7ce34c3aff3623d3",
+    ".claude-glm\\vision-routing\\agents.json": "7891473fe6a8e8176f1fce88a30fb50f8cf11db582866a60e169c3502bb554d8",
+    ".claude-glm\\vision-routing\\routing.md": "5d7e1043ff86e2d3ff35c21f21e31127e44a9d793f51c4ad1db874d1636bb805"
+  }
+}

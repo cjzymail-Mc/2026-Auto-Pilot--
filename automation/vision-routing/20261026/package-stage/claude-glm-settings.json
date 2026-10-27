@@ -1,0 +1,17 @@
+{
+  "env": {
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "400000",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "60",
+    "CLAUDE_CODE_MAX_CONTEXT_TOKENS": "1000000",
+    "CLAUDE_CODE_AUTO_MODE_SERVER": "0"
+  },
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "model": "glm-5.3",
+  "tui": "fullscreen",
+  "theme": "dark",
+  "_comment": "Provider credentials/models are set inside the claude-glm launcher subshell. Auto mode uses client-side classifier requests. The installer registers only the private SessionStart PATH hook using detected Python and Git Bash paths; existing custom hooks/plugins are preserved. Main model is explicitly glm-5.3; Zhipu loads the fixed glm-5.3-flash Read-only visual agent at startup. Other provider routes and explicit --model are preserved.",
+  "alwaysThinkingEnabled": true
+}

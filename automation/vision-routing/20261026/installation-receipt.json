@@ -1,0 +1,20 @@
+{
+  "prepared_at": "2026-10-26T09:12:53.192304+00:00",
+  "bashrc_before_sha256": "4262e4f5ee995b84ba74685dcd85e0f6b52478eb29da121f52916bcc18ddf259",
+  "bashrc_after_sha256": "ead5552aafa4dc0a9150fc161a0202ec0c3e673b583e020399c93682723fde87",
+  "settings_before_sha256": "4b49d4bfb9aee5570a9e68f0dec4f69efe0b7c0a9f3adc737b1cbc7223a8d333",
+  "settings_after_sha256": "4db469aa15bfeaf346f1c69a4805e1768d60d9936fa2ae0cd3d510279db026ae",
+  "default_model_before": "haiku",
+  "default_model_after": "glm-5.3",
+  "zhipu_main": "glm-5.3",
+  "vision_model": "glm-5.3-flash",
+  "scope": "Zhipu-only runtime agent definition and routing instruction; no model alias, credential, hook or permission changes",
+  "applied_at": "2026-10-26T09:12:53.198310+00:00",
+  "backup_directory": "C:\\Users\\xy198\\.claude-glm\\vision-routing\\backups\\20261026-171253",
+  "changed_files": [
+    "C:\\Users\\xy198\\.bashrc",
+    "C:\\Users\\xy198\\.claude-glm\\settings.json",
+    "C:\\Users\\xy198\\.claude-glm\\vision-routing\\agents.json",
+    "C:\\Users\\xy198\\.claude-glm\\vision-routing\\routing.md"
+  ]
+}

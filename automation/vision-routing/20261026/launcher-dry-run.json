@@ -1,0 +1,84 @@
+{
+  "bash_syntax": "pass",
+  "network_calls": 0,
+  "cases": [
+    {
+      "choice": "1",
+      "explicit_override": false,
+      "exit_code": 0,
+      "probe": {
+        "probe": true,
+        "provider_host": "api.z.ai",
+        "main_model_options": [
+          "glm-5.3"
+        ],
+        "agents": {
+          "vision-reader": {
+            "model": "glm-5.3-flash",
+            "tools": [
+              "Read"
+            ]
+          }
+        },
+        "has_visual_rules": true,
+        "haiku_alias": "glm-5.3",
+        "subagent_default": "glm-5.3"
+      }
+    },
+    {
+      "choice": "2",
+      "explicit_override": false,
+      "exit_code": 0,
+      "probe": {
+        "probe": true,
+        "provider_host": "api.deepseek.com",
+        "main_model_options": [
+          "deepseek-v4-pro[1m]"
+        ],
+        "agents": {},
+        "has_visual_rules": false,
+        "haiku_alias": "deepseek-v4-flash",
+        "subagent_default": "deepseek-v4-flash"
+      }
+    },
+    {
+      "choice": "3",
+      "explicit_override": false,
+      "exit_code": 0,
+      "probe": {
+        "probe": true,
+        "provider_host": "openrouter.ai",
+        "main_model_options": [
+          "z-ai/glm-5.2"
+        ],
+        "agents": {},
+        "has_visual_rules": false,
+        "haiku_alias": "z-ai/glm-5.2",
+        "subagent_default": "z-ai/glm-5.2"
+      }
+    },
+    {
+      "choice": "1",
+      "explicit_override": true,
+      "exit_code": 0,
+      "probe": {
+        "probe": true,
+        "provider_host": "api.z.ai",
+        "main_model_options": [
+          "glm-5.3-flash"
+        ],
+        "agents": {
+          "vision-reader": {
+            "model": "glm-5.3-flash",
+            "tools": [
+              "Read"
+            ]
+          }
+        },
+        "has_visual_rules": true,
+        "haiku_alias": "glm-5.3",
+        "subagent_default": "glm-5.3"
+      }
+    }
+  ]
+}

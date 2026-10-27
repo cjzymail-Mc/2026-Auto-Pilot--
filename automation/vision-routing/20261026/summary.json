@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "default_model": "glm-5.3",
+  "vision_model": "glm-5.3-flash",
+  "provider_scope": "Zhipu only",
+  "tests": {
+    "plain": {
+      "score": {
+        "correct": 2,
+        "total": 2
+      },
+      "assistant_models": [
+        "glm-5.3"
+      ],
+      "main_stayed_glm53": true,
+      "vision_delegations": 0,
+      "main_read_calls": 0,
+      "child_read_calls": 0,
+      "elapsed_seconds": 7.06
+    },
+    "synthetic": {
+      "score": {
+        "correct": 6,
+        "total": 7
+      },
+      "assistant_models": [
+        "glm-5.3",
+        "glm-5.3-flash"
+      ],
+      "main_stayed_glm53": true,
+      "vision_delegations": 1,
+      "main_read_calls": 0,
+      "child_read_calls": 1,
+      "elapsed_seconds": 118.74
+    },
+    "synthetic-format-v2": {
+      "score": {
+        "correct": 7,
+        "total": 7
+      },
+      "assistant_models": [
+        "glm-5.3",
+        "glm-5.3-flash"
+      ],
+      "main_stayed_glm53": true,
+      "vision_delegations": 1,
+      "main_read_calls": 0,
+      "child_read_calls": 1,
+      "elapsed_seconds": 43.51
+    },
+    "real-format-v2": {
+      "score": {
+        "correct": 15,
+        "total": 15
+      },
+      "assistant_models": [
+        "glm-5.3",
+        "glm-5.3-flash"
+      ],
+      "main_stayed_glm53": true,
+      "vision_delegations": 1,
+      "main_read_calls": 0,
+      "child_read_calls": 1,
+      "elapsed_seconds": 93.17
+    }
+  },
+  "package_install_check": "PASS",
+  "package_synced_files": 6,
+  "package_post_sync_hash_checks": "PASS",
+  "backup_directory": "C:\\Users\\xy198\\.claude-glm\\vision-routing\\backups\\20261026-171253"
+}

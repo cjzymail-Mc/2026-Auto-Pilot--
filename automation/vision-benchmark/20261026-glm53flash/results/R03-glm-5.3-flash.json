@@ -1,0 +1,2974 @@
+{
+  "case_id": "R03",
+  "requested_model": "glm-5.3-flash",
+  "at": "2026-10-26T06:21:14.523169+00:00",
+  "prompt": "请只依据这张单页图片提取票据内容，返回一个JSON对象。字段为：document_type, document_number, issue_or_apply_date, plate, travel_date_from, travel_date_to, origin_station, destination_station, invoice_codes, invoice_numbers, trip_count, invoice_count, amount_ex_tax, tax_amount, total_amount, total_amount_cn, buyer_name, quantity, unit_price。document_type只能为trip_summary/toll_invoice/fuel_invoice/unknown。document_number为本单据自己的汇总单号或发票号码；issue_or_apply_date为开票日期或开票申请日期。通行起止日期不可用开票申请日期替代。站名保持原文，换行要拼接，保留省份前缀；invoice_codes和invoice_numbers为图片中引用的全部票据代码/号码数组，逐票据行对应，重复代码保留，保留前导零；trip_count和invoice_count为整数；其他字段用字符串。金额、数量、单价按印刷原值抄录，不计算替代。不适用或看不清的字段用null，不猜测。禁止调用工具、读取PDF文字层、搜索资料或参考其他文件。只输出JSON。",
+  "image_sha256": "c6f64537bf7608de04e159955908d9d172acc1d88dfa9b30b7b6563f959ff2aa",
+  "route": "Git Bash existing claude-glm/Zhipu; Anthropic-compatible; base64 image content block",
+  "isolation": "safe-mode; no settings sources; no MCP; no tools; no persistence; fresh CLI process",
+  "exit_code": 0,
+  "records": [
+    {
+      "type": "system",
+      "subtype": "ui_invalidate",
+      "event": "ui.render",
+      "uuid": "e12df6fa-6a2d-455e-9ab9-2186613f89e9",
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8"
+    },
+    {
+      "type": "system",
+      "subtype": "init",
+      "cwd": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\vision-benchmark\\20261026-glm53flash\\inputs",
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "tools": [],
+      "mcp_servers": [],
+      "model": "glm-5.3-flash",
+      "permissionMode": "default",
+      "slash_commands": [],
+      "apiKeySource": "none",
+      "claude_code_version": "2.1.299",
+      "output_style": "default",
+      "agents": [
+        "claude",
+        "Explore",
+        "general-purpose",
+        "Plan"
+      ],
+      "skills": [],
+      "plugins": [
+        {
+          "name": "cc-plugin-agents-md",
+          "path": "builtin",
+          "source": "cc-plugin-agents-md@builtin"
+        },
+        {
+          "name": "cc-plugin-telemetry",
+          "path": "builtin",
+          "source": "cc-plugin-telemetry@builtin"
+        },
+        {
+          "name": "cc-plugin-plugin-authoring",
+          "path": "builtin",
+          "source": "cc-plugin-plugin-authoring@builtin"
+        }
+      ],
+      "capabilities": [
+        "interrupt_receipt_v1",
+        "interrupt_cancel_queued_v1",
+        "interrupt_send_now_v1",
+        "msg_lifecycle_v1",
+        "request_marker_lists_v1",
+        "sdk_mcp_tools_list_changed",
+        "sdk_mcp_manifests",
+        "mcp_read_resource_v1",
+        "mcp_tool_ui_meta_v1",
+        "ui_surface_v1"
+      ],
+      "analytics_disabled": false,
+      "product_feedback_disabled": false,
+      "uuid": "e213b0fc-3168-493f-adb8-4b90525cff46",
+      "messaging_socket_path": "\\\\.\\pipe\\LOCAL\\cc-msg-d56f30dd645a17035413d0b25a6b1837",
+      "fast_mode_state": "off",
+      "fast_mode_disabled_reason": "sdk_opt_in_required",
+      "per_turn_effort_active": false,
+      "view_mode": "default",
+      "powershell_path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 1,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "06b565f4-8ddf-43a6-b30e-6df88a364618"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 3,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "229eb058-aa91-417c-9155-a97944f7d048"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 5,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ca4e90d1-d296-4410-94b0-70499a59c5ea"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 6,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ac4418a3-ba29-4778-8797-6e5d2e54ca66"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 7,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "59e69896-c968-4d3a-acc7-a8936e1e9ee4"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 9,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6b7838b4-f2e8-4479-a5e8-d559e898fa27"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 11,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "4299bf1c-ec52-4f54-b599-dc2a7b3d86b8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 14,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "8b16c34c-e980-4792-8995-d1d80978629c"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 16,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "deb03865-7d67-43c9-a3a7-9dfc681d9efe"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 18,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ca8a58d0-a75f-4ef0-b1ed-0e174fbfd45b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 20,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b70cac96-0022-4b82-a803-e704aebcb3bc"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 21,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "30fc651b-afaa-4e75-8cb6-a5f69393ecb4"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 22,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9afc11c3-d58c-4fb5-96c2-fec0fa956ecf"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 23,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ab9de0dd-18b9-4612-8316-313fe906ff38"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 24,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ce67e0b6-5469-490b-bcb4-aafd5cf91a19"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 26,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "419181dd-d669-4b5d-a06d-56d982aa02a5"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 28,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "43fc33fd-d0ec-430f-bb71-1f1b493eefed"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 29,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ab069c74-7710-4f61-b1e8-e47aede4e3e5"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 30,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c5b4e6cc-17bb-40e7-bacc-8a44e0c5afc6"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 31,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "5e33b04b-8634-4079-84e5-17daa9d35933"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 32,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e3c304b3-c96f-4b44-b7c1-caf4942809cb"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 33,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "76033cde-88ab-4bf8-be55-fa6e1f77fc4a"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 34,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a3857b36-e911-4caf-bc14-29426ff07ff3"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 35,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2a89f152-8289-4c4a-92c8-d9a5b83df613"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 36,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "bd5875f9-6460-4293-bd8d-1865eaf2c114"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 37,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "34cccfcf-c4a1-4dac-8337-be940c8dc7e3"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 38,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "19e32ee1-460b-42b9-b274-9cdaac3ec86d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 41,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b8ee2e9c-3674-46fa-b054-0a37f8589b41"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 42,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "edc790ce-3940-4983-aea9-1bfca7424b0e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 43,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "1fb2f8c2-7949-43f4-9504-49fd2e77ca04"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 44,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c761e096-bfd3-4773-a684-345818d43e4b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 46,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "379a3c45-0499-45b4-b910-d749dbcc0864"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 47,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "8766af1a-9e59-46fd-8e8a-f21cc4a91d4b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 49,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "3e161ddf-d8c5-400a-99a6-ff5ef4029759"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 50,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c523fe9a-8004-4a97-bf4c-f9d5f6f44196"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 51,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "54c9adb1-5fba-456c-8341-38bd1b49ecb8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 54,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f11b2f01-8f07-4452-b001-bd9fac3e598e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 56,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9f325d7e-0628-4ee7-a8eb-f44feb36616c"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 57,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "02941f79-a3fd-420c-afc3-27a7e69d09ee"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 59,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b4c67956-b33c-4ef5-82db-ce5b05986952"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 61,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "10db0931-df4d-4d12-9551-a227330ed11a"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 62,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "32f7f9bd-7775-40cd-b5ce-dd66cb250227"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 63,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b283acec-f5e3-4b57-a084-7a7a55105a70"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 64,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e22023f0-8aa9-4a5a-92c1-d4512dacdcc7"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 65,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6295e642-a7a0-4f4f-9694-2c1c3b770c4d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 66,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "0d9ed947-b217-4ac5-a47a-303f3b262338"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 67,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "883b88e6-8d9e-436a-aac7-539911e766d0"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 68,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "84c21d53-e4db-4506-acb5-b7ab0d8c85c2"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 70,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "461d9411-5c95-4773-9900-1e159a91e394"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 71,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "8b45bcba-b64f-4ec8-8443-ed3aad3b09ad"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 72,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "158b31e3-df1c-443a-9240-06c4cd9aaef5"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 73,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ffeba084-aa4d-4287-850f-7fbe5c0cfdf2"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 74,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "d2108c8d-9159-4ca4-95d8-1f5f28a05d0d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 75,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "04b56368-f631-47c8-8f08-7047ad9f58c3"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 76,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ce042c01-e9c8-4d11-897b-b31e3622f226"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 79,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "99af4e9a-4020-461a-b04a-b0290e5764b6"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 81,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b7c8f0fd-0e16-417a-a255-9f0e132fbc4f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 82,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "803ff7ee-7a27-4526-bfe7-647d01587db4"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 83,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b064207d-fae0-4cbc-9d12-d0e36f49e8f7"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 84,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "0d0fb2da-a026-44a3-863a-7147b9790f53"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 85,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "3ee03f69-550e-41f4-aaac-f75fb93be7ed"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 86,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ddc8ec24-9fb8-446c-9fc1-4bebae315c5a"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 87,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ebe27133-aef3-4ac7-a771-dd4f56b8751b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 88,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "d0c5264d-789b-4895-8582-53ddbbe7a1e9"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 89,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "4144d361-f922-47b0-9199-23da284b32bc"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 90,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ada3c7a1-89dd-405a-8f27-9888f04998e1"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 91,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f2a98082-0452-4af2-8382-6b1d839da47d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 92,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "52de2818-250f-445d-9372-9317109189ca"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 93,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "8ab25852-45e2-41a4-b533-82abc19e77b8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 94,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "560f465f-dbf6-4db9-81ce-f6646ba982c9"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 95,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e3ac6b3e-3932-46c5-93b5-2b5a52f9bfce"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 96,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ac64634b-718a-4b8a-861a-bde90002d9d6"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 97,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "71d37db7-762d-4ae7-9ae1-5879ec94f582"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 98,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c6c59a38-bba8-416d-aab1-fc24869dfc31"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 99,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f4c3086e-2bab-4626-8893-f396053fcef8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 101,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "d15f6b22-92e8-40f1-8f67-2e84cbb79e4c"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 102,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ac816dd2-6011-4359-87fd-8d7f2611bd44"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 104,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c1201762-9ba3-478e-8a1e-9c747e2422d0"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 106,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c0933859-b19b-46ff-b09b-ae466e669858"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 107,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "4563fbe0-6d4c-429f-9e98-c5edb365f74a"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 108,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b8687973-fada-48ab-b2dd-06a91ab2886e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 109,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e7be081d-8785-4d81-a1c4-93999e2f6ebe"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 110,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c4f50125-374e-4e37-9e2f-c649eec5209d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 111,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c7646764-91b1-4b08-8f5d-d2161a4ca163"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 112,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "44389eff-0a99-40b4-894d-28a2a1f54e92"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 113,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b46abd21-5384-420e-9c48-0daaa0944dcf"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 114,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "86fb5126-72ef-41f5-baf4-4848b3742ce5"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 115,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a7748ec3-2896-465f-8dda-12f4d83b402d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 116,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "96a23587-2388-47e0-ab53-da3549b62346"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 117,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a4bb35b7-8947-42d9-9701-05c6d24e4be6"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 119,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c99ca062-35bb-429c-b935-8a9972abf540"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 120,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ebb72c98-63e3-4841-9e14-31af650d3dc1"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 121,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "322b36ed-a1ed-4dd8-9946-025d67b5f852"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 123,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "3f8b17e5-6f67-4c2f-b5d5-ef5d2c9b71c2"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 124,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "055f5b65-174d-4a44-949e-180c1252b4ec"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 126,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e544b083-b3a3-421d-a9a9-ec48fdddfe0f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 127,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9e92353c-88bb-4b13-984a-832eff092087"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 128,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "320c1ae3-126c-430b-afa5-9fc08d80c8d3"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 130,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2b642376-7dbe-46ff-8b4f-b990ac60c951"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 132,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b3a622af-b3f1-4713-8675-2cccee888ccb"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 134,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a9738083-aa3d-4754-a864-c6085a538af0"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 135,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e2dcb6c2-2ebd-46f4-bc31-047bc779aade"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 136,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "4ba4c68b-0009-4e1b-a5ce-a23f348a6adb"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 137,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "1c137dab-0251-40d2-a891-72424cb01c13"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 140,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "bf590d7e-37e8-42e0-9528-b41c2546ba7e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 141,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b47c30b7-a753-4955-bbd2-5f5cdaba322d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 143,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "d9545dff-b5b5-481b-b1f3-4c06f2059aa5"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 144,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a309ccc3-cf6e-493b-baeb-3a68b9c44757"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 145,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "4409e4e4-a757-4ddb-af08-9bc1a08ea49f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 147,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2cac4732-931f-4c4f-8d9c-2e069c53ce9b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 149,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f6b50d57-6cf0-4aa4-964d-1efd16ef44cc"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 150,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9f4227af-412f-4fb7-afe7-9aad0363c475"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 153,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "474f19f8-3349-408a-9753-908d76654897"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 155,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "51aec879-8252-48ee-80a3-049c7defbab2"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 156,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "195e2d37-9938-4eec-bbe9-29739952e74c"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 158,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "5c840e1a-ecbd-4f91-9cd5-e69e5bfe8c15"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 159,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "4426cfe8-0256-4c8e-a570-af8b52d8bdd1"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 160,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "82053734-bed3-4735-aaef-484321180969"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 162,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "7ba2b9bd-f345-4ea3-9670-b6d4ce2fa855"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 164,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ac1a0574-2176-4162-987f-26a05a1ab3bf"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 165,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "0a03384e-355a-4b75-8af5-a389c8f69b6e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 167,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "583071c5-ba6d-43de-945a-69999e8af035"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 168,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a76ada3c-30ab-4586-b7c0-2b3727cdb9bb"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 169,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "78e088ba-be0f-41d3-922c-57608839aa72"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 171,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "46e4180e-8b6b-487b-a9b6-0b80b3603ef4"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 173,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c423d160-095e-4bef-8c2e-02bf76d193c2"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 174,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "154a9d41-8368-40ec-861d-359a3c7bb283"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 176,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c71ff108-21c6-4a44-ab25-f69d02ee6c87"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 177,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "1d0aa8c9-79c9-4372-91a1-44496eb137af"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 178,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "31f32063-3dda-4524-9713-9392a66ba91b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 179,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "91f4d7da-227f-4289-a2b1-5e27f5278f1d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 180,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9949e531-af5d-451b-866f-1436240fee1e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 183,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "cb9ba467-fa4a-4870-beee-374b309e7fa3"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 184,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "25ada482-9d51-4c45-99f5-1aec5e96ff29"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 186,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "70c61188-b46b-4b4a-866a-c502e6bf34e5"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 188,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "73c5fc96-2337-4d0f-b3d0-f63d53548102"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 189,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6a7ff943-e24b-4578-b34f-2f41ad4ecb86"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 191,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "df926756-35ba-4624-a561-b1f6d20ce44e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 193,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "fd00028f-322d-42dc-9956-79f11a622255"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 195,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "11455b75-dcf0-4817-a240-97b3e42922a9"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 196,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9504c399-32de-48df-a3aa-9e48a01d09a4"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 197,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "42fc7791-aa51-42a8-a87d-80d0f5460651"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 198,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "dac0d7ec-2a4d-439a-b7a8-257f81434a11"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 200,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ae06825e-434f-4893-8333-68cd0194b66e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 202,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "91cd8038-b965-41f4-b804-97d6926fff7e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 204,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "322f204c-add7-4bb8-a22f-9b111a5a4d4f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 206,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "cf5f3bb1-631f-4227-9be0-ce0bc986db9b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 207,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "44da88a1-ed87-4109-93df-260d5a88e659"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 208,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "5f7ee6d6-3019-450d-8891-7ea171213c88"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 209,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "0b1eb37a-7ab4-4d48-8c4d-5dff8644a9f9"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 211,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "936998e4-4630-4a87-a855-e638af97bcde"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 212,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "cd5d29bd-1abe-4ab9-8722-8c1cfaaa9209"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 213,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "70f2fdd8-1007-4ffb-9561-32a5427a2387"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 215,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "cb7c84f4-852a-43d6-80d2-0c602522ddd1"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 216,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "02e0721e-d508-4625-994f-6ee3452d6dde"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 217,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "72de7a8f-2d60-465d-8311-1db7da4b9a95"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 218,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "fba4b0b4-ed7b-433e-b622-8150cf83db3d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 219,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "137fad6f-1063-4d29-828f-87efb198542f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 220,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f5758a25-8d67-41a8-9fd7-e508acad7486"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 222,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "1bf78750-6205-41b0-a805-a9a543704d53"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 224,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "390bad84-8926-43ac-be1a-d8226a1ebbbe"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 226,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b8b2e4cc-27f2-40b3-b5be-2a0227070664"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 227,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b230c323-68a1-43ce-ac1e-6292861f8edb"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 229,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2c3b7cfc-7193-454b-841f-b13416efc0e8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 230,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "594c58f2-7c91-4384-98f5-83743a5d935d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 232,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "323d4126-309d-4bf9-b477-baa4d9284f65"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 233,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ca1daf07-c355-467d-853e-8afd3190448f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 236,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f59a417c-86a1-44f0-be71-b3d6161b65e2"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 237,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "49afb489-e1a8-40e6-90da-faa931d1869d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 238,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "88597db7-9837-4101-8d33-f599d0c15db4"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 240,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6d1a20f4-56b8-441b-8745-34d035f10195"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 241,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "d02abdfa-4c6e-45a4-a95e-2e13426ec6ab"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 243,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2eec18c7-b971-4f05-81f4-13218ef4f047"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 246,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "d140a675-382e-45f9-8862-fcc52af23d23"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 247,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ab39a63a-698c-400f-b047-bb3141f09f82"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 249,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "5497ee7a-816f-4989-8570-e841da90caf3"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 250,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6b3f57ea-77df-40de-88ba-d752611e5a94"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 251,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "33f47b3f-6eb0-4728-8488-8e0df5f27f5f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 252,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f36d2bac-000f-41ed-aa3f-61386dd55e5c"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 253,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f395f176-8a8c-4df2-b4aa-42ae8b6695a9"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 254,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "1202b7a4-69bb-44bb-9d30-618465caa115"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 255,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "fcad06bc-fed5-4b78-869e-91f41a107c1a"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 256,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "5c889d6e-bb4b-4be6-9493-0b4a9cdf4e73"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 258,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6c9fa0e4-3af7-4446-96ae-bfb1042ca45b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 259,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b20fcd4a-a626-4bb1-aa4e-fec05e0433ba"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 261,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "00b64f04-5727-4028-8f5e-58174a1f26be"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 263,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "dac98e2d-3ec7-4ebc-92cc-f6cc91aa5ba1"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 264,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2c8b283b-fb5a-4d6b-bacd-afb8b5093fcc"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 265,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f8e45347-1a23-433e-9046-f7c3eb8931e8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 266,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a4cddb9e-94b4-48e7-adb0-0e1c23ecfd27"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 267,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "1c8099f7-1c61-4af7-b029-39edbf2dcdd7"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 269,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "cc4016d0-4c28-42fe-8ef9-f3942d152eeb"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 270,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "4872e2f2-c3c5-418e-9769-7334c92f8eb3"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 271,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "5955e681-2c38-4a62-94d4-75e8cceb8ab2"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 273,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "7c3ae9ac-a3b9-40ce-ab5b-e52d27725b87"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 275,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "0b75edfb-4b07-4623-967d-8d0fcdf0fe74"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 276,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "506c270a-90e1-4e2c-9743-238e98ecae14"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 277,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "d433958c-aa30-48b4-a12b-2607a98016f2"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 278,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "388e9d97-af12-45ae-9961-3b92f2002e9e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 279,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f6f03a97-c7f0-427c-bec5-1be7a09c1446"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 280,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "df834eda-210c-431c-89f3-9b5c59c1a66b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 281,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "19e11cc4-5985-4b4e-8088-51e7d7082939"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 282,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ba382f28-e71d-4a02-b668-564883220fb3"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 283,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ec1d4707-209f-4038-b224-43ebfd833753"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 284,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "53123d6a-9e26-4368-9893-182b17ade7ee"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 285,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b5afa61a-3798-4bef-b38c-24e8326ecdf8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 286,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9d4ad065-03b8-4981-aeac-11b62ca17dfc"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 287,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "29c66313-93da-4188-99fd-1de14106a086"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 288,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "99d9f564-ce55-4c40-852f-1f9e18045ad4"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 289,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "58f2e232-7c29-453c-8cff-dcb0643c53da"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 290,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "1ced5afb-b827-4ff3-b582-752a328fe09b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 292,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "87b15d63-3d27-49ae-ab2b-79467434b082"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 294,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "06da16e6-683f-4530-9e85-30ea1a69ae02"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 295,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b02a3864-7125-4c1c-92cb-b37ac716161b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 297,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6313df9a-1191-413f-9564-081ff6f2fbdb"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 298,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "3ee43239-07cc-4c67-8b34-34369e5b1df5"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 299,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "24945a7d-7543-47c3-8a36-8920ce6e58bc"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 301,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a94457be-a363-4c8e-9baa-bb71737204ae"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 303,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b54f5aae-a803-4bbf-a784-6b31f8075e01"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 304,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "46af31df-3d1b-413e-9648-d323c455d5bb"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 306,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6e32ba93-48fa-40fd-940d-7a01a63734f6"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 307,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "0e171868-bc70-48d4-a0c1-269e7945d380"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 308,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f748ac67-8c08-4620-a9e2-68690ca97831"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 309,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a03cf1de-61b0-4906-906e-838964351dc1"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 310,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "42e831dc-beae-47dd-b247-d8e893019483"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 311,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "66547b07-c4d5-4ecf-8865-7d157989c27e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 312,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "74f04576-bbbf-48ef-86ca-a1271ccadea0"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 313,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "7103b577-4758-4489-9925-a61a7bccf4f9"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 314,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c142bc99-f4bd-4a5c-9978-d93015a4c16a"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 316,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "81cdfa23-aeef-4b77-ab6f-61fc7f995c05"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 318,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "5d5dd16a-df40-4ab3-8dca-197b0a9d4c64"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 319,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "08dec67e-acf1-46ff-bb21-ca09d8788770"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 320,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9256986e-27d5-492c-95f6-05a4069dcacd"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 321,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "7bbe0f10-3d48-4385-b1a4-19ac286a6032"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 323,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "535da944-5342-4ffb-9a4f-41db41b9125f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 324,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b48c257a-9106-43aa-b0bc-38553cbc9fb1"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 327,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ceecc32c-d76d-4b78-8df2-ad7eb351bd88"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 329,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "97b08225-1a29-44f0-a14d-fbfac454f11b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 330,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f621e7ca-bb14-4d4e-b690-706953c46d44"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 331,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e82c8870-43e1-41e9-967c-902c01b4692f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 333,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "dc6be51d-7939-409e-8ffd-798ad9170283"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 334,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9a8af1c6-de1e-4ad3-99f0-5293272a3179"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 335,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f0280405-c4e5-4768-932b-1fde95263b44"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 336,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "3742d61d-1142-4513-a0fd-14a598ebe8b8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 337,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "99f88196-73b6-4a86-9ea1-b58fbdad5848"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 338,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "13758551-8916-4956-9bdc-322333dd0c38"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 339,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e2f015de-40d4-4f03-8aae-40bada086c95"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 340,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2329de5c-f6ca-480c-9b3d-a463e1fa519a"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 341,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e3651851-bc2f-47f4-a11f-dc7f8f9f5e51"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 342,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "3486ebc7-7917-49e7-b5fd-4cf2733753f1"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 343,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "8c627a73-6c6f-460d-81ca-659590f21432"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 344,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "d64b3bb9-4ba8-470e-99fc-636649ae7b7c"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 346,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b7f31f4e-3418-4fc3-80f1-6f09a2227e0f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 347,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "68bde323-f89e-48a1-9f3c-7ee70999576d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 348,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f8ff7702-41b3-48d6-9d41-ea9833a53af9"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 349,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "373ac060-04f2-4939-850f-4babacd7653c"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 350,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "7f852df3-1580-44f0-92c8-603adaf04f27"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 351,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "4719373b-0991-4498-aaaf-b5f434a6c3e0"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 352,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "d663ddf8-17e0-4ae6-952d-2f503dafbe07"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 353,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "84d5ca87-4365-48bf-80b6-883f11f738c6"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 355,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2b248d6d-df27-44bf-be4b-ffd388a12606"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 357,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "37d20478-d83c-4a58-84f1-c89e203cfe71"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 358,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "29a33857-4514-4385-b74c-ca17235a3736"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 359,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a42869d4-6d7d-4d88-a077-80a6f02a02ba"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 360,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "cb8e2334-cc18-4f40-b306-6e0517f3a5d0"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 361,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "4f2543a5-8d92-4caa-ac5b-a61c27fde31e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 362,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "00db4be7-7dd5-491e-be46-ccde0c0d5066"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 363,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "89af7120-06fb-4cdd-9416-1359817d80b8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 364,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "02aee951-db6d-431b-a051-7882439f6514"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 365,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e0aca73e-df9d-4806-94d8-86e365aa3872"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 367,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "35d3850e-63cf-4737-81eb-2981b54b1816"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 369,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b54514c6-a049-4ce6-856a-bf24e5813bbb"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 370,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e6224709-1f14-4b77-b3cd-d24e8e10627e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 371,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "0ed1d4e4-4408-4e2b-bf4e-eab74d51b281"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 372,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c32a3d97-3df9-4e09-a50f-9a2946fd1cb2"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 373,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ea060dbb-69f0-45aa-9a3b-901fca9c9a9d"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 374,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "018c20c9-5b55-4523-a26e-89058000c9ca"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 375,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2f378bc6-2789-4bf9-90b9-4a42d60e72a7"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 376,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "30b91157-c86e-4987-9da1-8111445296d6"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 377,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "471d3029-fea2-453f-b440-c7f56d46c17c"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 378,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "269a3d91-7baf-4bc4-aca7-58322f6ac5fd"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 379,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9f2ac06c-7ad0-40f8-a51c-99e2d3c0e537"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 380,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "963f190e-0e7f-4b40-a82d-b0e387c02ac4"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 381,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6ba62e72-c717-4e30-bca7-538c0b6c149c"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 382,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "bd9b3eb9-6ba5-4f43-b78d-514cd72a0f22"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 383,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ad9285ad-5aba-4e3c-9dd9-6aece7dd52c5"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 384,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "9c5b1115-c0c8-4fe8-b1ad-bcf9870a4e73"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 386,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "260087a0-972d-4dff-bcc8-fd2537e83723"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 388,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "bf83bfd6-9ac8-4686-a791-b28a672a625a"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 389,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "6b36222b-eee7-481d-918a-6a08062b5e38"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 390,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "49a1b9ca-d7e0-46a0-adb7-327baaf57f2f"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 391,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "752152bc-93b3-44bd-9e15-f730ed464dc7"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 392,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "565cf7ae-ccdb-494c-a2ac-25470cf5a966"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 393,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f2ac8ead-6683-4246-aac8-1653a52607b1"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 395,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "5a779905-feba-4a4e-945a-0e25fae4319e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 396,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "8d037ce7-6e04-41ac-ad27-89d0fa5a81e9"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 397,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "ae0817e0-12f3-467d-ab31-c219ae5a7b4b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 400,
+      "estimated_tokens_delta": 3,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "89a11beb-c0bc-45e5-8fff-b7fcc5523232"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 401,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "8d007ee0-8f82-4b22-921b-da11e9e3886e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 402,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "02f8f8e4-c412-46f5-b884-70c0cd2cac68"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 403,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "88672cdc-0ffe-4b19-a6d3-ab13ae89f487"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 404,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f795ef9e-647e-4f10-b40a-6b77c26584d3"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 405,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "3b1e619f-2a67-4ba0-aef5-50db20e3f13b"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 406,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "2356a6c1-350b-4699-8e35-058e1c97b1fc"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 407,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "b03ba1a4-fcc2-4b0e-8ee0-d48bce685c8e"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 409,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "7f47b2ea-be8e-4c98-b1ec-c9380c67b826"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 411,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "f7e4d9fb-0608-4f99-882e-a5f557ac5bb8"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 412,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "fa43ba06-6959-479f-91b4-4752f6116f50"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 413,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a1dc6838-f944-45b6-a2c7-f9ca89f75d01"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 414,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e86ea3ad-fb19-4f95-839d-93eeaf8f0d05"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 415,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "c261098c-4631-4a6d-b9ad-dfae04c239f7"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 416,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e5117d6d-2104-4073-80ed-e9f363fa20b0"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 417,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "448f4aeb-78f0-47c2-8a71-ddf1df95091a"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 418,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "727e2a3a-beb7-457c-8731-2acacb1b5b21"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 419,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "86d6d38d-a6f2-47c7-b18d-aab87e171094"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 420,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "196e1962-9c8b-45c6-844e-bcdba1de6d76"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 422,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "e2718056-fe87-49ff-86bd-8e9f83e71ddc"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 424,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "53ed05c7-4338-4c0b-b2f0-10f50d789db6"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 426,
+      "estimated_tokens_delta": 2,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "5df91b56-94cd-490a-a174-dfc4e26e7485"
+    },
+    {
+      "type": "system",
+      "subtype": "thinking_tokens",
+      "estimated_tokens": 427,
+      "estimated_tokens_delta": 1,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "63b18208-cec0-4df1-8175-ba4a4ac0e90c"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "id": "msg_20261026142115e0eef6de182e43d8",
+        "type": "message",
+        "role": "assistant",
+        "model": "glm-5.3-flash",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "The user wants me to extract ticket information from this image. It's a fuel invoice (电子发票 - 普通发票) for gasoline.\n\nLet me extract the fields:\n- document_type: fuel_invoice (it's a 成品油 invoice for 汽油)\n- document_number: 25357000000191876369 (发票号码)\n- issue_or_apply_date: 2025年12月12日\n- plate: not visible - null\n- travel_date_from/to: not applicable - null\n- origin_station/destination_station: null\n- invoice_codes: this is a fully digitalized invoice (电子发票), typically no invoice code, only invoice number. The QR code might contain code but I can only see the printed 发票号码. So invoice_codes could be null or empty. Actually, for these new digital invoices, there's no 发票代码. So null or empty array. I'll use null.\n- invoice_numbers: [\"25357000000191876369\"]\n- trip_count: null\n- invoice_count: null (or 1? It's the invoice itself, not a summary. Probably null)\n- amount_ex_tax: 393.05\n- tax_amount: 51.10\n- total_amount: 444.15\n- total_amount_cn: 肆佰肆拾肆圆壹角伍分\n- buyer_name: 厦门乔丹科技有限公司\n- quantity: 58.75\n- unit_price: 6.69021277\n\nOutput JSON only.",
+            "signature": "8bb70f2eada344b39a24fd83"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 0,
+          "output_tokens": 0
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "7561eee9-cc56-47f9-a411-63bec6116ac6",
+      "timestamp": "2026-10-26T06:21:24.612Z",
+      "thinking_duration_ms": 4192,
+      "thinking_display": "updates"
+    },
+    {
+      "type": "assistant",
+      "message": {
+        "id": "msg_20261026142115e0eef6de182e43d8",
+        "type": "message",
+        "role": "assistant",
+        "model": "glm-5.3-flash",
+        "content": [
+          {
+            "type": "text",
+            "text": "```json\n{\n  \"document_type\": \"fuel_invoice\",\n  \"document_number\": \"25357000000191876369\",\n  \"issue_or_apply_date\": \"2025年12月12日\",\n  \"plate\": null,\n  \"travel_date_from\": null,\n  \"travel_date_to\": null,\n  \"origin_station\": null,\n  \"destination_station\": null,\n  \"invoice_codes\": null,\n  \"invoice_numbers\": [\"25357000000191876369\"],\n  \"trip_count\": null,\n  \"invoice_count\": null,\n  \"amount_ex_tax\": \"393.05\",\n  \"tax_amount\": \"51.10\",\n  \"total_amount\": \"444.15\",\n  \"total_amount_cn\": \"肆佰肆拾肆圆壹角伍分\",\n  \"buyer_name\": \"厦门乔丹科技有限公司\",\n  \"quantity\": \"58.75\",\n  \"unit_price\": \"6.69021277\"\n}\n```"
+          }
+        ],
+        "stop_reason": null,
+        "stop_sequence": null,
+        "usage": {
+          "input_tokens": 0,
+          "output_tokens": 0
+        },
+        "context_management": null
+      },
+      "parent_tool_use_id": null,
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "uuid": "a0c4f0ee-1b95-4608-b069-8e6c2c78983c",
+      "timestamp": "2026-10-26T06:21:27.121Z"
+    },
+    {
+      "duration_api_ms": 11517,
+      "stop_reason": "end_turn",
+      "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+      "total_cost_usd": 0.028220000000000002,
+      "usage": {
+        "input_tokens": 2979,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 533,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "",
+        "iterations": [],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "modelUsage": {
+        "glm-5.3-flash": {
+          "inputTokens": 2979,
+          "outputTokens": 533,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.028220000000000002,
+          "contextWindow": 200000,
+          "maxOutputTokens": 32000,
+          "thinkingTokens": 0,
+          "canonicalModel": "glm-5.3-flash",
+          "provider": "firstParty",
+          "costBasis": "unknown"
+        }
+      },
+      "permission_denials": [],
+      "terminal_reason": "completed",
+      "fast_mode_state": "off",
+      "fast_mode_disabled_reason": "sdk_opt_in_required",
+      "subagent_stats": {
+        "spawned": 0,
+        "requested": {
+          "background": 0,
+          "foreground": 0,
+          "unset": 0
+        },
+        "started_in_background": 0,
+        "max_depth": 0,
+        "spawned_by_subagents": 0,
+        "completed": 0,
+        "failed": 0,
+        "killed": {
+          "parent": 0,
+          "user": 0,
+          "system": 0
+        },
+        "refused": {
+          "depth_limit": 0,
+          "concurrency_limit": 0,
+          "budget": 0
+        },
+        "by_type": {}
+      },
+      "safety_stops": 0,
+      "is_error": false,
+      "num_turns": 1,
+      "subtype": "success",
+      "api_error_status": null,
+      "result": "```json\n{\n  \"document_type\": \"fuel_invoice\",\n  \"document_number\": \"25357000000191876369\",\n  \"issue_or_apply_date\": \"2025年12月12日\",\n  \"plate\": null,\n  \"travel_date_from\": null,\n  \"travel_date_to\": null,\n  \"origin_station\": null,\n  \"destination_station\": null,\n  \"invoice_codes\": null,\n  \"invoice_numbers\": [\"25357000000191876369\"],\n  \"trip_count\": null,\n  \"invoice_count\": null,\n  \"amount_ex_tax\": \"393.05\",\n  \"tax_amount\": \"51.10\",\n  \"total_amount\": \"444.15\",\n  \"total_amount_cn\": \"肆佰肆拾肆圆壹角伍分\",\n  \"buyer_name\": \"厦门乔丹科技有限公司\",\n  \"quantity\": \"58.75\",\n  \"unit_price\": \"6.69021277\"\n}\n```",
+      "ttft_ms": 9059,
+      "type": "result",
+      "duration_ms": 11597,
+      "uuid": "5782aa6b-7ebe-4f3a-9f83-f9f1cc7a48b2",
+      "ttft_stream_ms": 4866,
+      "time_to_request_ms": 97,
+      "first_content_frame_ms": 4867,
+      "queued_turn_count": 0,
+      "result_index": 0
+    }
+  ],
+  "stderr_tail": "[claude-code:unrecognized_model] {\"model\":\"glm-5.3-flash\",\"query_source\":\"sdk\"}\n",
+  "cli_result": {
+    "duration_api_ms": 11517,
+    "stop_reason": "end_turn",
+    "session_id": "fc6b22a0-a117-4854-9270-b4ef4eae95b8",
+    "total_cost_usd": 0.028220000000000002,
+    "usage": {
+      "input_tokens": 2979,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 533,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 0,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "",
+      "iterations": [],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "glm-5.3-flash": {
+        "inputTokens": 2979,
+        "outputTokens": 533,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.028220000000000002,
+        "contextWindow": 200000,
+        "maxOutputTokens": 32000,
+        "thinkingTokens": 0,
+        "canonicalModel": "glm-5.3-flash",
+        "provider": "firstParty",
+        "costBasis": "unknown"
+      }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "safety_stops": 0,
+    "is_error": false,
+    "num_turns": 1,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "```json\n{\n  \"document_type\": \"fuel_invoice\",\n  \"document_number\": \"25357000000191876369\",\n  \"issue_or_apply_date\": \"2025年12月12日\",\n  \"plate\": null,\n  \"travel_date_from\": null,\n  \"travel_date_to\": null,\n  \"origin_station\": null,\n  \"destination_station\": null,\n  \"invoice_codes\": null,\n  \"invoice_numbers\": [\"25357000000191876369\"],\n  \"trip_count\": null,\n  \"invoice_count\": null,\n  \"amount_ex_tax\": \"393.05\",\n  \"tax_amount\": \"51.10\",\n  \"total_amount\": \"444.15\",\n  \"total_amount_cn\": \"肆佰肆拾肆圆壹角伍分\",\n  \"buyer_name\": \"厦门乔丹科技有限公司\",\n  \"quantity\": \"58.75\",\n  \"unit_price\": \"6.69021277\"\n}\n```",
+    "ttft_ms": 9059,
+    "type": "result",
+    "duration_ms": 11597,
+    "uuid": "5782aa6b-7ebe-4f3a-9f83-f9f1cc7a48b2",
+    "ttft_stream_ms": 4866,
+    "time_to_request_ms": 97,
+    "first_content_frame_ms": 4867,
+    "queued_turn_count": 0,
+    "result_index": 0
+  },
+  "returned_models": [
+    "glm-5.3-flash"
+  ],
+  "tool_calls": [],
+  "answer_text": "```json\n{\n  \"document_type\": \"fuel_invoice\",\n  \"document_number\": \"25357000000191876369\",\n  \"issue_or_apply_date\": \"2025年12月12日\",\n  \"plate\": null,\n  \"travel_date_from\": null,\n  \"travel_date_to\": null,\n  \"origin_station\": null,\n  \"destination_station\": null,\n  \"invoice_codes\": null,\n  \"invoice_numbers\": [\"25357000000191876369\"],\n  \"trip_count\": null,\n  \"invoice_count\": null,\n  \"amount_ex_tax\": \"393.05\",\n  \"tax_amount\": \"51.10\",\n  \"total_amount\": \"444.15\",\n  \"total_amount_cn\": \"肆佰肆拾肆圆壹角伍分\",\n  \"buyer_name\": \"厦门乔丹科技有限公司\",\n  \"quantity\": \"58.75\",\n  \"unit_price\": \"6.69021277\"\n}\n```",
+  "answer": {
+    "document_type": "fuel_invoice",
+    "document_number": "25357000000191876369",
+    "issue_or_apply_date": "2025年12月12日",
+    "plate": null,
+    "travel_date_from": null,
+    "travel_date_to": null,
+    "origin_station": null,
+    "destination_station": null,
+    "invoice_codes": null,
+    "invoice_numbers": [
+      "25357000000191876369"
+    ],
+    "trip_count": null,
+    "invoice_count": null,
+    "amount_ex_tax": "393.05",
+    "tax_amount": "51.10",
+    "total_amount": "444.15",
+    "total_amount_cn": "肆佰肆拾肆圆壹角伍分",
+    "buyer_name": "厦门乔丹科技有限公司",
+    "quantity": "58.75",
+    "unit_price": "6.69021277"
+  },
+  "checks": [
+    {
+      "field": "document_type",
+      "expected": "fuel_invoice",
+      "actual": "fuel_invoice",
+      "pass": true
+    },
+    {
+      "field": "document_number",
+      "expected": "25357000000191876369",
+      "actual": "25357000000191876369",
+      "pass": true
+    },
+    {
+      "field": "issue_or_apply_date",
+      "expected": "2025年12月12日",
+      "actual": "2025年12月12日",
+      "pass": true
+    },
+    {
+      "field": "invoice_numbers",
+      "expected": [
+        "25357000000191876369"
+      ],
+      "actual": [
+        "25357000000191876369"
+      ],
+      "pass": true
+    },
+    {
+      "field": "amount_ex_tax",
+      "expected": "393.05",
+      "actual": "393.05",
+      "pass": true
+    },
+    {
+      "field": "tax_amount",
+      "expected": "51.10",
+      "actual": "51.10",
+      "pass": true
+    },
+    {
+      "field": "total_amount",
+      "expected": "444.15",
+      "actual": "444.15",
+      "pass": true
+    },
+    {
+      "field": "total_amount_cn",
+      "expected": "肆佰肆拾肆圆壹角伍分",
+      "actual": "肆佰肆拾肆圆壹角伍分",
+      "pass": true
+    },
+    {
+      "field": "buyer_name",
+      "expected": "厦门乔丹科技有限公司",
+      "actual": "厦门乔丹科技有限公司",
+      "pass": true
+    },
+    {
+      "field": "quantity",
+      "expected": "58.75",
+      "actual": "58.75",
+      "pass": true
+    },
+    {
+      "field": "unit_price",
+      "expected": "6.69021277",
+      "actual": "6.69021277",
+      "pass": true
+    }
+  ],
+  "score": {
+    "correct": 11,
+    "total": 11
+  },
+  "all_pass": true,
+  "elapsed_seconds": 13.2
+}

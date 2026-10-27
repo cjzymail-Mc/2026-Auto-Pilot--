@@ -1,0 +1,368 @@
+{
+  "created_at": "2026-10-26T05:49:58.739166+00:00",
+  "cases": [
+    {
+      "id": "S01",
+      "kind": "synthetic",
+      "image": "S01.png",
+      "expected": {
+        "verification_code": "SZ4HPEWPB",
+        "invoice_number": "31531896152077045346",
+        "total_amount": "763.38",
+        "origin_station": "泉州东站",
+        "destination_station": "厦门北站",
+        "red_circle_count": 2,
+        "blue_square_count": 3
+      },
+      "image_sha256": "40ed333f472113bb5d3887daa465c8e5c983a4714bc1ec7326562b4bd4649d74",
+      "image_size": [
+        1200,
+        740
+      ]
+    },
+    {
+      "id": "R01",
+      "kind": "document",
+      "image": "R01.png",
+      "source": {
+        "rel": "0825/0825通行费电子票据汇总单(行程).pdf",
+        "sha256": "941fe8ec078fdf3300a2ec680e511c3725d75b97a9f61bc166f0dece608e870a",
+        "page": 1,
+        "dpi": 200
+      },
+      "expected": {
+        "document_type": "trip_summary",
+        "document_number": "3520250800404681",
+        "issue_or_apply_date": "2025-08-26",
+        "plate": "闽D263GG",
+        "travel_date_from": "20250825",
+        "travel_date_to": "20250825",
+        "origin_station": "闽·福建翔安站",
+        "destination_station": "闽·福建池店站",
+        "invoice_numbers": [
+          "16304714"
+        ],
+        "invoice_codes": [
+          "035002400112"
+        ],
+        "trip_count": "1",
+        "invoice_count": "1",
+        "total_amount": "22.64",
+        "total_amount_cn": "贰拾贰元陆角肆分",
+        "buyer_name": "厦门乔丹科技有限公司"
+      },
+      "image_sha256": "ba33651a7c346d4ddfbda3534e2d1f1caded271daed9970482c89e9c68bb621c",
+      "image_size": [
+        1654,
+        2500
+      ]
+    },
+    {
+      "id": "R02",
+      "kind": "document",
+      "image": "R02.png",
+      "source": {
+        "rel": "0825/0825厦门到晋江发票.pdf",
+        "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+        "page": 1,
+        "dpi": 200
+      },
+      "expected": {
+        "document_type": "toll_invoice",
+        "document_number": "16304714",
+        "issue_or_apply_date": "2025年08月26日",
+        "invoice_numbers": [
+          "16304714"
+        ],
+        "plate": "闽D263GG",
+        "travel_date_from": "20250825",
+        "travel_date_to": "20250825",
+        "amount_ex_tax": "21.98",
+        "tax_amount": "0.66",
+        "total_amount": "22.64",
+        "total_amount_cn": "贰拾贰元陆角肆分",
+        "invoice_codes": [
+          "035002400112"
+        ]
+      },
+      "image_sha256": "7a9a95ba4631320f43d9f0aa1737e955e6422f08823a7095bc3b523ea74ecc2d",
+      "image_size": [
+        1695,
+        1095
+      ]
+    },
+    {
+      "id": "R03",
+      "kind": "document",
+      "image": "R03.png",
+      "source": {
+        "rel": "油票/油票1.pdf",
+        "sha256": "6a7f12d4b7d394609ab1cc551d3c9ee18d2b62991837cf675f13464ae1e24dbc",
+        "page": 1,
+        "dpi": 200
+      },
+      "expected": {
+        "document_type": "fuel_invoice",
+        "document_number": "25357000000191876369",
+        "issue_or_apply_date": "2025年12月12日",
+        "invoice_numbers": [
+          "25357000000191876369"
+        ],
+        "amount_ex_tax": "393.05",
+        "tax_amount": "51.10",
+        "total_amount": "444.15",
+        "total_amount_cn": "肆佰肆拾肆圆壹角伍分",
+        "buyer_name": "厦门乔丹科技有限公司",
+        "quantity": "58.75",
+        "unit_price": "6.69021277"
+      },
+      "image_sha256": "c6f64537bf7608de04e159955908d9d172acc1d88dfa9b30b7b6563f959ff2aa",
+      "image_size": [
+        1654,
+        1103
+      ]
+    },
+    {
+      "id": "R04",
+      "kind": "document",
+      "image": "R04.png",
+      "source": {
+        "rel": "0906/0905通行费电子票据汇总单(行程).pdf",
+        "sha256": "881a09408214b15f28139e804bdbbcc2212361017b8c84ffbbd81df09b23bef8",
+        "page": 1,
+        "dpi": 200
+      },
+      "expected": {
+        "document_type": "trip_summary",
+        "document_number": "3520250900105488",
+        "issue_or_apply_date": "2025-09-06",
+        "plate": "闽D263GG",
+        "travel_date_from": "20250905",
+        "travel_date_to": "20250905",
+        "origin_station": "闽·福建翔安站",
+        "destination_station": "闽·福建晋江南站",
+        "invoice_numbers": [
+          "15913017",
+          "16108478"
+        ],
+        "invoice_codes": [
+          "035002400112",
+          "035002400112"
+        ],
+        "trip_count": "1",
+        "invoice_count": "2",
+        "total_amount": "19.95",
+        "total_amount_cn": "壹拾玖元玖角伍分",
+        "buyer_name": "厦门乔丹科技有限公司"
+      },
+      "image_sha256": "f0b79fc05f35fad9c9b64c1f502e12d58d002f243f4dd621d686752381aa89d6",
+      "image_size": [
+        1654,
+        2500
+      ]
+    },
+    {
+      "id": "R05",
+      "kind": "document",
+      "image": "R05.png",
+      "source": {
+        "rel": "0917/0917通行费电子票据汇总单(行程).pdf",
+        "sha256": "b7b832844f48344b787400f7e33b14f40a225f1a755d3e562d24680f02ee340b",
+        "page": 1,
+        "dpi": 200
+      },
+      "expected": {
+        "document_type": "trip_summary",
+        "document_number": "3520250900282520",
+        "issue_or_apply_date": "2025-09-18",
+        "plate": "闽D263GG",
+        "travel_date_from": "20250917",
+        "travel_date_to": "20250917",
+        "origin_station": "闽·福建翔安站",
+        "destination_station": "闽·福建石狮北石湖站",
+        "invoice_numbers": [
+          "16657870",
+          "16227300"
+        ],
+        "invoice_codes": [
+          "035002400112",
+          "035002400112"
+        ],
+        "trip_count": "1",
+        "invoice_count": "2",
+        "total_amount": "31.93",
+        "total_amount_cn": "叁拾壹元玖角叁分",
+        "buyer_name": "厦门乔丹科技有限公司"
+      },
+      "image_sha256": "8eff1836b6f621248f15536396e174aedbc756f4112eb7c54f773773af5b5f9a",
+      "image_size": [
+        1654,
+        2500
+      ]
+    },
+    {
+      "id": "D01",
+      "kind": "document",
+      "image": "D01.jpg",
+      "derived_from": "R01",
+      "transform": "width=900; rotation=3deg; gaussian_blur=0.35; JPEG quality=72",
+      "expected": {
+        "document_type": "trip_summary",
+        "document_number": "3520250800404681",
+        "issue_or_apply_date": "2025-08-26",
+        "plate": "闽D263GG",
+        "travel_date_from": "20250825",
+        "travel_date_to": "20250825",
+        "origin_station": "闽·福建翔安站",
+        "destination_station": "闽·福建池店站",
+        "invoice_numbers": [
+          "16304714"
+        ],
+        "invoice_codes": [
+          "035002400112"
+        ],
+        "trip_count": "1",
+        "invoice_count": "1",
+        "total_amount": "22.64",
+        "total_amount_cn": "贰拾贰元陆角肆分",
+        "buyer_name": "厦门乔丹科技有限公司"
+      },
+      "image_sha256": "b879ecd8adccc2880567001c40d5c6d8b7362fd3bfe9d47e26261a2557f0ce3a",
+      "image_size": [
+        970,
+        1406
+      ]
+    },
+    {
+      "id": "N01",
+      "kind": "synthetic",
+      "image": "N01.png",
+      "expected": {
+        "verification_code": "SZ4HPEWPB",
+        "invoice_number": null,
+        "total_amount": "763.38",
+        "origin_station": "泉州东站",
+        "destination_station": "厦门北站",
+        "red_circle_count": 2,
+        "blue_square_count": 3
+      },
+      "transform": "invoice number row fully removed",
+      "image_sha256": "f102e67a413ddd878ef3714d32a1816ec7643b3dd9ad1f6177a72b06d132ff95",
+      "image_size": [
+        1200,
+        740
+      ]
+    },
+    {
+      "id": "T01",
+      "kind": "document",
+      "synthetic_only": true,
+      "image": "T01.png",
+      "image_size": [
+        1800,
+        1000
+      ],
+      "image_sha256": "1a28ead2b95d66af3e455395d3405d544153d2a79c20a1ac6a8b29da237cfd72",
+      "expected": {
+        "document_type": "trip_summary",
+        "document_number": "9900837422984434",
+        "issue_or_apply_date": "2026-09-06",
+        "plate": "测试A12345",
+        "travel_date_from": "20260905",
+        "travel_date_to": "20260905",
+        "origin_station": "浙·杭州南站",
+        "destination_station": "浙·宁波东站",
+        "invoice_codes": [
+          "078842689663",
+          "078842689663"
+        ],
+        "invoice_numbers": [
+          "09605534",
+          "25409545"
+        ],
+        "trip_count": 1,
+        "invoice_count": 2,
+        "total_amount": "21.37",
+        "total_amount_cn": "贰拾壹元叁角柒分",
+        "buyer_name": "合成测试有限公司"
+      },
+      "provenance": "Pillow drawing from fictional literals and secrets-generated digits; no original PDF accessed",
+      "transform": "none"
+    },
+    {
+      "id": "T02",
+      "kind": "document",
+      "synthetic_only": true,
+      "image": "T02.jpg",
+      "image_size": [
+        926,
+        548
+      ],
+      "image_sha256": "62d92b787723ee175a0aa51c2ba51a7305cf117181e064211fa16b843ccada43",
+      "expected": {
+        "document_type": "trip_summary",
+        "document_number": "9900837422984434",
+        "issue_or_apply_date": "2026-09-06",
+        "plate": "测试A12345",
+        "travel_date_from": "20260905",
+        "travel_date_to": "20260905",
+        "origin_station": "浙·杭州南站",
+        "destination_station": "浙·宁波东站",
+        "invoice_codes": [
+          "078842689663",
+          "078842689663"
+        ],
+        "invoice_numbers": [
+          "09605534",
+          "25409545"
+        ],
+        "trip_count": 1,
+        "invoice_count": 2,
+        "total_amount": "21.37",
+        "total_amount_cn": "贰拾壹元叁角柒分",
+        "buyer_name": "合成测试有限公司"
+      },
+      "provenance": "Pillow drawing from fictional literals and secrets-generated digits; no original PDF accessed",
+      "transform": "900px, 3deg, blur=0.35, JPEG72"
+    },
+    {
+      "id": "R02N",
+      "kind": "document",
+      "image": "R02.png",
+      "source": {
+        "rel": "0825/0825厦门到晋江发票.pdf",
+        "sha256": "775508bf2eeb4645cffb8be91147db7618c00f596c697a08888f5af8fe8dd2b6",
+        "page": 1,
+        "dpi": 200
+      },
+      "expected": {
+        "document_type": "toll_invoice",
+        "document_number": "16304714",
+        "issue_or_apply_date": "2025年08月26日",
+        "invoice_numbers": [
+          "16304714"
+        ],
+        "plate": "闽D263GG",
+        "travel_date_from": "20250825",
+        "travel_date_to": "20250825",
+        "amount_ex_tax": "21.98",
+        "tax_amount": "0.66",
+        "total_amount": "22.64",
+        "total_amount_cn": "贰拾贰元陆角肆分",
+        "invoice_codes": [
+          "035002400112"
+        ],
+        "trip_count": null,
+        "invoice_count": null
+      },
+      "image_sha256": "7a9a95ba4631320f43d9f0aa1737e955e6422f08823a7095bc3b523ea74ecc2d",
+      "image_size": [
+        1695,
+        1095
+      ],
+      "followup_reason": "Original R02 supplied counts=1 despite no printed count labels; added explicit absence policy after observing the original output. This is a prompted retest, not another independent sample."
+    }
+  ],
+  "ground_truth": "synthetic generator and previously independently checked PDF text facts; never sent to model",
+  "normalization": "dates ignore separators; money Decimal; lists sorted; whitespace ignored; Chinese characters otherwise exact"
+}
