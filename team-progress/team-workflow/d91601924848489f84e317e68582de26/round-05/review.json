@@ -1,0 +1,314 @@
+{
+  "decision": "rework",
+  "summary": "Round 5 验收：证据卫生修复轮全部达标。A 独立复核：O1 wide-query-manifest 5 页 sha256_file 逐页重算==证据文件字节 5/5、原 logical sha256 键值保留且紧凑序列化复验仍成立、hash_semantics 就位；O2 candidates3e 与 actual_trip_matches 均有 date_field_semantics（matched=实际公出时间/排除块=自然区间/12 票等价+分歧示例）；O3 12/12 matched_doc applicant=陈晶+applicant_user_id=116070053 逐条回对 api-detail 原始行全中、ui_text 前缀统一、报表 8 列含申请人列。修复后内容完整性：27 票/12-15 划分/Σ221.02+265.91=486.93==T/per-doc 计数与 round-4 基线全等仅增字段；final-artifact-hashes 7 键+revision==盘面；revision-hashes before==round-4 权威值 after==盘面；73 原件连续第 5 轮零漂移；attempt_010 26 件原样。源码面：probe 全工作流未动（mtime 10-24）、schema/facts/plan/coverage 字节未变、仅 verify_bpm_build（pattern 299→308 全量等价）+test docstring+skill reference（1981B 规范）；schema 字节基线建立（ba7b065f 与 V3-R03 一致）；A 亲跑全量 unittest 308 OK skipped=4 与 B 及唯一新构建 materials-v3r05-20261026-162500 OFFLINE_PASS 一致；卫生轮 events 19 条零写零浏览器；凭证 grep 全净；台账 V3-R05+errata 仍 4 条+observations 闭环余 3 项。判据状态不变：17 PASS/10 FAIL。用户已于 2026-10-26 在 A 窗口提供完整模板单号 15426095951（陈晶最近一张报销单），模板人工缺口解除。decision=rework → round 6 派 CASE-05 模板定向读取（bpm_template --live --template-number 15426095951）+ CASE-06 计划生成（validate-only 止，不开新页不填写），台账同步缺口 CLOSED。",
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1,
+    "review|content|active_output_semantics|D22": 1
+  },
+  "checks": [
+    {
+      "id": "D01",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D02",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md",
+        "automation/runs/20261026-131000-v3r03-case02/case02-coverage.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7",
+        "automation\\runs\\20261026-131000-v3r03-case02\\case02-coverage.json": "09c26a5ee5989f66471812095b2bb7a1c66eae7982b315c1c09508a6a6c60e35"
+      }
+    },
+    {
+      "id": "D03",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md",
+        "automation/runs/20261026-131000-v3r03-case02/case02-coverage.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7",
+        "automation\\runs\\20261026-131000-v3r03-case02\\case02-coverage.json": "09c26a5ee5989f66471812095b2bb7a1c66eae7982b315c1c09508a6a6c60e35"
+      }
+    },
+    {
+      "id": "D04",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md",
+        "automation/runs/20261026-115500-v3r02-case01/case01-facts.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7",
+        "automation\\runs\\20261026-115500-v3r02-case01\\case01-facts.json": "8d5581dec67c5a9c52b1a47c092466feea8604abc25b8d2b339a09c2ea9cf5cf"
+      }
+    },
+    {
+      "id": "D05",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md",
+        "automation/runs/20261026-131000-v3r03-case02/case02-backfill.json",
+        "automation/runs/20261026-131000-v3r03-case02/12月-自驾公出公里数统计表-已核对.xlsx"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7",
+        "automation\\runs\\20261026-131000-v3r03-case02\\case02-backfill.json": "ba9e674050bf9e578439efaf90179c982a99cbfcc6150ded7e29bc2bdcacc25b",
+        "automation\\runs\\20261026-131000-v3r03-case02\\12月-自驾公出公里数统计表-已核对.xlsx": "f4fa1d1c4e82beac75740256f590b13aff3eb57ae75c033f185a904ef46f1b15"
+      }
+    },
+    {
+      "id": "D06",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md",
+        "bpm_coverage.py",
+        "automation/fill-plan.schema.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7",
+        "bpm_coverage.py": "27863654a3459e21af73b39271fcde95e3c25aff2f8b5761cc76cf8342cbcff2",
+        "automation\\fill-plan.schema.json": "ba7b065f9b6696333d72adff31e6d5c87f218c3a938d474e1232343c6ca94fd9"
+      }
+    },
+    {
+      "id": "D07",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-04/acceptance/A-verification.md",
+        "automation/runs/20261026-143340-v3r04-case03/wide-query-manifest.json",
+        "automation/runs/20261026-143340-v3r04-case03/details3d-manifest.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-04\\acceptance\\A-verification.md": "ce2056ed39dcd1667b7424888643ed10d6650bf869d2cc90181c9d9369c6a897",
+        "automation\\runs\\20261026-143340-v3r04-case03\\wide-query-manifest.json": "dc7f5c324d97181380cd7c809793331937036e25d4d207db260d233b2464b16f",
+        "automation\\runs\\20261026-143340-v3r04-case03\\details3d-manifest.json": "710fa4c827a231cc1eb293d25612d67d6023a08c44c1cd3084c5aea9916f588d"
+      }
+    },
+    {
+      "id": "D08",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-04/acceptance/A-verification.md",
+        "automation/runs/20261026-143340-v3r04-case03/actual_trip_matches.json",
+        "automation/runs/20261026-143340-v3r04-case03/CASE-03-report.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-04\\acceptance\\A-verification.md": "ce2056ed39dcd1667b7424888643ed10d6650bf869d2cc90181c9d9369c6a897",
+        "automation\\runs\\20261026-143340-v3r04-case03\\actual_trip_matches.json": "7da036aabed9b56c13a5801ad521f1d7c9e8db3583a5dc0e3c5aa8c538cec687",
+        "automation\\runs\\20261026-143340-v3r04-case03\\CASE-03-report.md": "214dca93d64275a8a5a0c6d39904f2ac792f3b22bf65ba19afb8bf5f25f0db1c"
+      }
+    },
+    {
+      "id": "D09",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D10",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D11",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D12",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D13",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7"
+      }
+    },
+    {
+      "id": "D14",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7"
+      }
+    },
+    {
+      "id": "D15",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7"
+      }
+    },
+    {
+      "id": "D16",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md",
+        "tests/test_bpm_coverage.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7",
+        "tests\\test_bpm_coverage.py": "3d03bc44c01f6877b33aa77b54a03869cec2514544c7ac1de99388d29968de1d"
+      }
+    },
+    {
+      "id": "D17",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D18",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D19",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D20",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7"
+      }
+    },
+    {
+      "id": "D21",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md",
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/hash-recheck.json",
+        "automation/offline-verify/materials-v3r05-20261026-162500/build_result.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46",
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\hash-recheck.json": "7160529215fbca797fe92c5f0751a86aa0cc003361f0946608e58b80b7eaf8fa",
+        "automation\\offline-verify\\materials-v3r05-20261026-162500\\build_result.json": "46dbe4e8ab5befcc1bc1257da4111a43cf6c8c1bc5a61149d39983435e5bf32b"
+      }
+    },
+    {
+      "id": "D22",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-03/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-03\\acceptance\\A-verification.md": "a1fab19c073d053cd3566760a54f40692434dbbf7233fe3e91feb136310746f7"
+      }
+    },
+    {
+      "id": "D23",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md",
+        "automation/template-materials-program/progress.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46",
+        "automation\\template-materials-program\\progress.json": "3aec19ff8bd8e66645a343dbb374067a8ff65d15e101b677090f1fb259d0459c"
+      }
+    },
+    {
+      "id": "D24",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D25",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md",
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/hash-recheck.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46",
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\hash-recheck.json": "7160529215fbca797fe92c5f0751a86aa0cc003361f0946608e58b80b7eaf8fa"
+      }
+    },
+    {
+      "id": "D26",
+      "status": "FAIL",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-05/acceptance/A-verification.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-05\\acceptance\\A-verification.md": "3170b03e781a3a42ae800b432a1f77365eb345d2470e5e49af0fb89d31259f46"
+      }
+    },
+    {
+      "id": "D27",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/d91601924848489f84e317e68582de26/round-04/acceptance/A-verification.md",
+        "automation/runs/20261026-143340-v3r04-case03/actual_trip_matches.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\d91601924848489f84e317e68582de26\\round-04\\acceptance\\A-verification.md": "ce2056ed39dcd1667b7424888643ed10d6650bf869d2cc90181c9d9369c6a897",
+        "automation\\runs\\20261026-143340-v3r04-case03\\actual_trip_matches.json": "7da036aabed9b56c13a5801ad521f1d7c9e8db3583a5dc0e3c5aa8c538cec687"
+      }
+    }
+  ]
+}

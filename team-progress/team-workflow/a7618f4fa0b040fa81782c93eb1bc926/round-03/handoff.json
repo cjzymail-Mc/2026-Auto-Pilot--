@@ -1,0 +1,38 @@
+{
+  "outcome": "complete",
+  "summary": "Round-3（ctr-1eecdddb，src-e0a60bed）完成：R2-P5 构建源清单修复——verify_bpm_build.py 改为 显式 CODE ∪ 根目录 bpm_*.py glob ∪ fill_once.py，先导 run template-materials-20261024-1158-r2p5fix OFFLINE_PASS（45 键，manifest 首次含 bpm_extraction.py=12246426…与冻结哈希一致）后才动 W04；W04 落地新模块 bpm_facts.py——版本化事实层（稳定 ID F-0001…、来源封闭枚举五类、user_instruction 禁携派生工件绑定、deterministic_computation 强制 derivation、分配/免票引用 fact_id 不复制值、check_version_drift 只标记 needs_replan 不改写 frozen Fact）+ 程序化对账 reconcile 11 检（同票多扫归并与跨扫票面一致、票据 Decimal 闭合含部分票面、费用行覆盖与免票依据、汇总 vs 明细、总额分层闭合含跨层双计拒绝、适用说明按类别、范围一致、收款身份组残缺/同名冲突阻断、未知材料边界、同金额不禁报、跨任务发票提示只读 task-registry 提示级降级安全）；数量乘单价与借款抵扣构造期 ValueError。验证全离线：tests/test_bpm_facts.py 28/28（含 W03 真实产物集成：reviewed_extraction 建票、Excel 112.00 vs 票面 128.70 双向定位阻断、同票双扫描去重单计、duplicate_copy 组级消费一次、同号不同票面阻断；反例清单 13/13 实质断言）、全量 discover 174/174（146 基线零回归）、终局唯一 run template-materials-20261024-w04-final OFFLINE_PASS（source_manifest 47 键含 bpm_extraction.py 与 bpm_facts.py，后续 bpm_* 新模块自动冻结）。台账 progress.json W04=已验证+round-3 条目、notes.md round-3 段含 W05 入口（FactSet+reconcile blocked=False 前置门、漂移先行、计划从事实引用取值）。ENHANCED_FINAL fresh mc-expert 首审即 GO：13 件哈希前后零漂移、八面全 PASS_DYNAMIC/PASS、D1-D6 全字面成立、UNVERIFIED_SCOPE=NONE、红线零违例、D23 对因闭合（约定域内结构性防再漏）维持 1/3 未新增。W05 待办（终审 P2 挂账）：_dec 超 2 位小数应 raise 勿静默 quantize；收款身份组补同账号不同名冲突检测；尚存 W01/W05-W10 及八类本次真实原始材料缺口（不虚构）。（failure_counts 透传 A 侧 D23=1 原值：本轮为对因闭合轮，未新增同 key 失败，计数调整权在 A review。）",
+  "artifacts": {
+    "verify_bpm_build.py": "05a1c3a3e2223b377017439c12196936dab971736698c632eca16524f14038e3",
+    "bpm_facts.py": "8ec2fa752435ab1502fc0b5a6f610339035bf676a8802050d4476153d139fcfc",
+    "tests/test_bpm_facts.py": "c7dd6ae5caead12f49061c676d15814738f333b81eff54b79e026f60461cef50",
+    "tests/fixtures/w04/scan-2.pdf": "1c398c49d3e21a6d504ae36ef780169813d77f0e0422c58ac2241e7f79b165d4",
+    "tests/fixtures/w04/scan-3.pdf": "b0ded32cf60314c3165f6101c2494a92c2655f34298218319c9c9d80ed814555",
+    "tests/fixtures/w04/task-registry-sim/TSK-9001.form.json": "1c8a7a7689c0e6780c51dd0e93a58b858327c78668769b567cce338a1cf0a294",
+    "tests/fixtures/w04/w04-v2": "3494bc379d90386004c209efc1c654a52eca6da41400ba657bff5209b20da52c",
+    "automation/template-materials-program/progress.json": "8f9c48fe0293b0eb133d9fd8fa131501a0f820f24dba98845a82acf42e544bc1",
+    "automation/template-materials-program/notes.md": "ea50671365295df8ce9ce438e423810e592dd9d435f747094c7cbce6f5a2a6b5",
+    "automation/offline-verify/template-materials-20261024-1158-r2p5fix/build_result.json": "bebbf5702b9f522793a5693a646dff51b18cb8f1f5e2c9b5438e360369e2b7a0",
+    "automation/offline-verify/template-materials-20261024-1158-r2p5fix/source_manifest.json": "ce2f448313b6b2b2237c9140d1d154528b71743160093f3ac737081ab460a5f0",
+    "automation/offline-verify/template-materials-20261024-w04-final/build_result.json": "b18dac2e99601843dbcfd1e06e064b34e737ea2827dc6f026e7b67577c466012",
+    "automation/offline-verify/template-materials-20261024-w04-final/source_manifest.json": "7670104e801413e1096790994d237c4715de9d59b7abd6baef397aa3ade52078"
+  },
+  "evidence": [
+    "team-progress.md",
+    "automation/offline-verify/template-materials-20261024-1158-r2p5fix/build_result.json",
+    "automation/offline-verify/template-materials-20261024-w04-final/build_result.json",
+    "automation/offline-verify/template-materials-20261024-w04-final/source_manifest.json",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md"
+  ],
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1
+  },
+  "evidence_hashes": {
+    "team-progress.md": "131d299ec8b140bfa488bbdbc0118eeff08d8f2fa190a47dc2563ea8a06ec4da",
+    "automation\\offline-verify\\template-materials-20261024-1158-r2p5fix\\build_result.json": "bebbf5702b9f522793a5693a646dff51b18cb8f1f5e2c9b5438e360369e2b7a0",
+    "automation\\offline-verify\\template-materials-20261024-w04-final\\build_result.json": "b18dac2e99601843dbcfd1e06e064b34e737ea2827dc6f026e7b67577c466012",
+    "automation\\offline-verify\\template-materials-20261024-w04-final\\source_manifest.json": "7670104e801413e1096790994d237c4715de9d59b7abd6baef397aa3ade52078",
+    "automation\\template-materials-program\\progress.json": "8f9c48fe0293b0eb133d9fd8fa131501a0f820f24dba98845a82acf42e544bc1",
+    "automation\\template-materials-program\\notes.md": "ea50671365295df8ce9ce438e423810e592dd9d435f747094c7cbce6f5a2a6b5"
+  }
+}

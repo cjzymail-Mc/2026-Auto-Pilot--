@@ -1,0 +1,36 @@
+{
+  "outcome": "complete",
+  "summary": "Round-5（ctr-1a5b516d，W01 用户请求与模板决策 + R4-P2 四条加固 + 未知类别只读识别，全离线零网络）完成：①R4-P2 四条闭合——bpm_facts 抽取 _validate_fact_invariants 由 add()/from_payload 共享全套构造不变量（未知类别/来源、空 locator、缺 derivation、user 禁派生绑定、FORBIDDEN 字段在反序列化路径同样拒绝，6 反例）；bpm_plan_generate expect_money 缺 amount 键显式失败（不再自比恒真）+前置门 3 拒绝无 input_hashes 的被绑定 material_extraction/template 事实（拒绝而非自动补绑定）；_dec 正例断言真实量化结果；travel/express 模板事实补快照哈希绑定。②新模块 bpm_request.py：W01a register_request（封闭键集，齐备→register_derived role=user_request 版本化工件落派生根携 user_instruction 语义；缺模板号/材料目录/说明→NEEDS_INPUT+GAP_FIELDS 且不落盘）；W01b resolve_template（cached_template 缓存定向唯一命中+快照 uuid/applicant/header/corpus path+sha 留证；类别 code/label→封闭注册；声明类别与模板矛盾→集中冲突报告 category_mismatch/declared_category_unregistered 不悄悄换类；normalize 先抛非类别错误回查原始 doc 判根因）；identify_unknown 未知类别只读识别（观察类别/注册对照/不支持部分/结构证据/登记开发子任务建议/writable=false；resolve_type/build_reuse_matrix 写入路径全拒，不映射其他费用绕过）；W01c build_reuse_matrix 六字段组封闭规则（form_identity 仅 identify/stable_context adopt 须依据+旧年度预算须 user_policy 确认/current_person 不被模板历史人员覆盖/current_business+proven_references 禁模板来源/empty_tables 只 not_applicable 带理由；adopt/replace 必绑 fact_id+fact_field 显式映射+字段级 locator）+register_matrix（role=decision_matrix）+entries_from_matrix（blueprint 绑定项建议）。bpm_materials.DERIVED_ROLES 显式扩 user_request+decision_matrix。③验证：tests/test_bpm_request.py 19/19（登记两态/唯一命中/矛盾集中/未知识别+写入拒绝/矩阵六组+三冒充反例：模板旧金额冒充本次值、旧年度预算无确认沿用、模板历史申请人覆盖/矩阵 blueprint→generate_fill_plan→validate_plan(verify_sources=True) 空 issues 贯通）；全量 218/218（round-4 基线 190 零回归）；唯一 run template-materials-20261024-w01-final OFFLINE_PASS（probe-selftest exit 0+capability-tests 218，source_manifest 51 键自动含 bpm_request.py）。④ENHANCED_FINAL（fresh mc-expert，review-contract-v2）：ADMITTED/HASH_VALIDITY=VALID（15 件双轮重算）/八面全过/UNVERIFIED_SCOPE=NONE/VERDICT=GO；独立复跑 19+218+自有 OFFLINE_PASS run template-materials-20261024-mcfinal-r5audit+合同链 79 cases；红线核查通过（.pw-profile/task-registry/legacy-ia2 未触碰、stage1_browser_probe.py 与 fill_once.py 哈希与 round-4 冻结值逐字节一致、零浏览器零网络、无新 commit）。⑤台账：progress.json W01=已验证（7 证据项）+round-5 条目+next_actionable=W06；notes.md round-5 节含 W06 入口。尚存（非本轮合同范围）：W06 live OA 模板读取+真实浏览器填写与 B1-B7 执行计划（pending-scope）；八类本次真实原件未提供（W06 开工前如实登记，不以合成材料顶替）；ENHANCED_FINAL 三条 P2 记录级挂 W06 顺带（旧日期/旧收款冒充反例实例化存档、矩阵重复 (group,field) 行显式拒绝、_load_doc 解析重复维护成本）；R2-P3 git commit 与 R2-P4 legacy token 清理仍为用户侧人工挂账。D23=1/3 维持未新增（glob 机制持续生效，计数调整权在 A）。",
+  "artifacts": {
+    "bpm_request.py": "e1206c9bae2fcab5201f1417cf24c6da8b4d17cdb34653e3c09e0ea54ba07326",
+    "bpm_facts.py": "8124a07e409ecc0b72c18d357def8a2a21b9516bb22be21cfeb2d18dad7eb227",
+    "bpm_plan_generate.py": "6360a59bfde08338fd784e87609b0df1e9aacd7799b14752fb3a21ffa306c805",
+    "bpm_materials.py": "60f4aaceaf0b778f3ba66c7c8965ed55c7df2859a241f2a22c5f69e5ed25c701",
+    "tests/test_bpm_request.py": "b1e95e76845536db67269ab3a69e62ae10afe900749f4a574d63f89b6f06881c",
+    "tests/test_bpm_plan_generate.py": "31d4637b38a05aa4c003eab0739064e1dabd95745c3dfb274853c4cce0b4c89e",
+    "tests/test_bpm_facts.py": "2ebe77fe5f1654f0c2ab53a0fc82e108a99a05cc7437df7161fe75d6ae1a4f00",
+    "tests/fixtures/w01/census.json": "e2f980a1f27d0e2d67456975d110268334dbbe1726b554eafe207019baf97258",
+    "tests/fixtures/w01/w01-v1": "3494bc379d90386004c209efc1c654a52eca6da41400ba657bff5209b20da52c",
+    "automation/template-materials-program/progress.json": "b40b2bc08b7154dad5c5c8efda98ef458684c48a4e643a537cc03e3da0aefb3d",
+    "automation/template-materials-program/notes.md": "e4af9f1abe1d26a485d02829c0b4c190c595446f9ac3ebfc8bb818e48af2f51b",
+    "automation/offline-verify/template-materials-20261024-w01-final/build_result.json": "cae0680a19d24a9a1de6f324d7b3684a7d20ac37f0c237cc39f3c20c68ff7ee4",
+    "automation/offline-verify/template-materials-20261024-w01-final/source_manifest.json": "f6a3a8d4232d47c537da5697fff20e814992ede60d1e107d7478760be22206c4"
+  },
+  "evidence": [
+    "automation/offline-verify/template-materials-20261024-w01-final/build_result.json",
+    "automation/offline-verify/template-materials-20261024-w01-final/capability-tests.log",
+    "automation/offline-verify/template-materials-20261024-w01-final/probe-selftest.log",
+    "automation/offline-verify/template-materials-20261024-mcfinal-r5audit/build_result.json",
+    "team-progress.md"
+  ],
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1
+  },
+  "evidence_hashes": {
+    "automation\\offline-verify\\template-materials-20261024-w01-final\\build_result.json": "cae0680a19d24a9a1de6f324d7b3684a7d20ac37f0c237cc39f3c20c68ff7ee4",
+    "automation\\offline-verify\\template-materials-20261024-w01-final\\capability-tests.log": "ca97cc9f39bb9a770ef916e0a2f1255ff59fac26bcafbb0ad01b612146e61792",
+    "automation\\offline-verify\\template-materials-20261024-w01-final\\probe-selftest.log": "73abc4f69b6a00abec10c34565e19038c3cef3c36760fc829a69c6add7796f4e",
+    "automation\\offline-verify\\template-materials-20261024-mcfinal-r5audit\\build_result.json": "4ac3a6ffa42912f97969eea39216cd06ab46295a594ed7f9a4ecb85dfc4ffc0e",
+    "team-progress.md": "99aec707e04bd8acf9ebf578fbfdd9ad3401a34c44aaf182c39a316423320d85"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "purpose": "A round-3 independent verification machine record",
+  "workflow_run": "d91601924848489f84e317e68582de26",
+  "round": 3,
+  "reviewer_session": "0cbc12a4-0aa0-4f70-acee-a054cbedf5a0",
+  "checked_at": "2026-10-26T14:35:00+08:00",
+  "baseline_sha256_recheck": { "match": true },
+  "handoff_artifacts_recheck": { "artifacts_total": 22, "mismatches": 0 },
+  "originals_vs_r00_manifest": { "files": 73, "drift": 0, "extra": 0, "xlsx_untouched": true, "r00_manifest_pair_identical": true },
+  "mapping_layer": {
+    "tickets_allocated": 27, "unique_identities": 27, "exactly_once": true,
+    "covers_all_toll_identities_in_facts": true,
+    "row_invoice_sums_equal_row_total": true,
+    "row_totals_equal_summary_declared_numeric": "20/20",
+    "summary_declared_string_note": "facts raw carries CNY prefix; numeric equality holds 20/20",
+    "identity_amounts_match_facts": true, "identity_file_sha256_match_facts": true,
+    "T_recomputed": "486.93", "gaps": []
+  },
+  "excel_independent": {
+    "header_row3": {"F": "公里数", "G": "补贴金额", "H": "过路费（据实）", "I": "合计", "J": "备注"},
+    "column_adjudication": "physical workbook H=toll; task-text 'G' was letter-convention error (B correction upheld)",
+    "full_cell_diff_count": 40,
+    "diff_set_exactly": ["H4:H23 values", "I4:I23 formulas =G+H"],
+    "I24_formula_unchanged": "=SUM(I4:I23)",
+    "km_and_subsidy_untouched": true,
+    "sum_F_km_from_original": "1438",
+    "copy_H_equals_mapping_rowtotals": true,
+    "cached_I_equals_G_plus_H": "20/20",
+    "cached_I24_raw": "1924.9300000000005",
+    "cached_I24_q2": "1924.93"
+  },
+  "decimal_chain_recomputed_from_originals": {
+    "K": "1438", "rate": "1.00", "M": "1438.00", "T": "486.93", "R": "1924.93",
+    "O": "2031.17", "F": "2518.10", "coverage_margin": "593.17",
+    "gate_strict_greater": true, "coverage_json_agrees": true,
+    "copy_sha256_matches_handoff": true
+  },
+  "case04_five_place_separation": {
+    "fact_layer": "bpm_facts FACT_KINDS + coverage_evaluation; reconcile() sections 1-6 generic, zero coverage branching (code read)",
+    "schema": "fill-plan.schema.json closed coverage block, const model/strict_gate",
+    "plan_validation": "bpm_plan optional coverage -> validate_coverage_block -> COVERAGE_GATE_BLOCKED",
+    "independent_verify": "bpm_coverage.evaluate_coverage pure Decimal, CoverageError fail-closed",
+    "reports": "case02-coverage.json + CASE-02-04-report.md equal to A recompute"
+  },
+  "tests_a_rerun": {
+    "coverage_module": "21/21 ok (discover -p test_bpm_coverage.py)",
+    "full_discover": "308 tests OK (skipped=4)",
+    "b_log_agrees": true
+  },
+  "build": {
+    "run": "materials-v3r03-20261026-131656", "status": "OFFLINE_PASS",
+    "manifest_keys": 63, "production_writes": false, "real_save_verified": false,
+    "missing_real_inputs": ["exact_history_template_number"]
+  },
+  "ledger": { "rounds_include": "V3-R03", "errata": 3, "observations_carry": ["schema byte baseline", "capability subset 299!=308", "P2-2 docstring", "P2-3 source.md attr"] },
+  "gitignore_finding_closure": {
+    "conclusion": "non-B write confirmed; line .claude/settings.local.json written by A at 13:15:01 at user request (env var CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP companion ignore); automation/.local-session/ line pre-dates workflow",
+    "evidence": "git diff vs HEAD 9299545; mtime 13:15:01",
+    "action": "one-line erratum correction queued for round 4"
+  },
+  "git": { "head": "9299545", "new_commits": 0, "staged_files": 0, "credential_values_in_artifacts": false },
+  "waiter": { "task": "bjyy51jg1", "woke_on": "TEAM_WORKFLOW_WAKE seq 15, A_REVIEW round 3", "reaper_disabled_by_user_env": true }
+}

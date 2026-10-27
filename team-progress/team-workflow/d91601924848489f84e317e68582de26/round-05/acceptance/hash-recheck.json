@@ -1,0 +1,97 @@
+{
+ "baseline_frozen": true,
+ "handoff_artifacts": {
+  "total": 15,
+  "mismatches": []
+ },
+ "originals": {
+  "manifest": 73,
+  "live": 73,
+  "drift": [],
+  "extra": []
+ },
+ "O1_wide_manifest": {
+  "sha256_file_ok": true,
+  "logical_preserved": true,
+  "semantics_field": true
+ },
+ "O2": {
+  "candidates3e_has_date_field_semantics": true,
+  "atm_has_date_field_semantics": true,
+  "atm_scope_note_updated": null,
+  "atm_has_top_level_date_field_semantics": true,
+  "atm_has_revision_note": true
+ },
+ "O3": {
+  "applicant_ok": true,
+  "applicant_user_id_grounded": true,
+  "ui_text_prefixed": true,
+  "n_invoices": 27,
+  "matched": 12,
+  "per_doc": {
+   "12025085485": 2,
+   "12025092237": 4,
+   "12025105858": 2,
+   "12025115547": 2,
+   "12025121473": 2
+  },
+  "sums": {
+   "matched": "221.02",
+   "no_match": "265.91"
+  },
+  "total_486_93": true,
+  "identities_still_unique_27": true
+ },
+ "report": {
+  "table_header_8cols_with_applicant": true,
+  "rows_carry_chen_uid_count": 5
+ },
+ "final_artifact_hashes": {
+  "keys": [
+   "CASE-03-report.md",
+   "actual_trip_matches.json",
+   "candidates3e-manifest.json",
+   "chen-docs.json",
+   "details3d-manifest.json",
+   "events.jsonl",
+   "revision",
+   "wide-query-manifest.json"
+  ],
+  "disk_binding_ok": true,
+  "revision_key_present": true
+ },
+ "revision_hashes": {
+  "before_matches_r4_handoff": true,
+  "after_matches_disk": true
+ },
+ "source": {
+  "schema_unchanged": true,
+  "bpm_facts_unchanged": true,
+  "bpm_plan_unchanged": true,
+  "bpm_coverage_unchanged": true,
+  "schema_baseline_bak": true,
+  "probe_not_touched_in_workflow": true
+ },
+ "hygiene_events": {
+  "count": 19,
+  "write_verbs": [],
+  "browser_mentions": 0
+ },
+ "ledger": {
+  "V3R05": true,
+  "errata_len_unchanged_4": true,
+  "template_gap_recorded": true
+ },
+ "credential_grep": [],
+ "attempt_010_files": 26,
+ "skill_ref": {
+  "exists": true,
+  "bytes": 1981,
+  "mentions_file_bytes": true
+ },
+ "A_independent_full_unittest": {
+  "command": "python -X utf8 -m unittest discover -s tests",
+  "result": "308 tests OK (skipped=4)",
+  "ran_by": "A session 0cbc12a4"
+ }
+}

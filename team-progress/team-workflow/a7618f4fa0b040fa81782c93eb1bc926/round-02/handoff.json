@@ -1,0 +1,33 @@
+{
+  "outcome": "complete",
+  "summary": "Round-2（ctr-ca6d8a81，src-20e40597）完成：W03 原件理解四链路落地——新模块 bpm_extraction.py（①文本 PDF 行级锚点提取票据事实+价税 Decimal 闭合复核；②图片本地渲染+封闭本地 OCR 引擎注册（无 tesseract 未新增第三方库；barstub 确定性像素引擎）+ocr_result/reviewed_extraction 两层分离、复核证据逐字段留痕、裸输出永不标 reviewed；③xlsx 多 sheet/隐藏行/筛选/合计行/公式缓存或本地 SUM 重算/前导零/跨表重复仅提示+CSV 行列定位与丢精度登记；④语义类别盘点（内容哈希判重、文件名不作证据、不确定标待定）+GAP_FIELDS 封闭结构化缺口（清晰件不中断））；R2-P1 修复（bpm_materials.py 两处 derived_root 解析挂 manifest 目录+任意 CWD 回归×2）；R2-P2 文档统一 discover 写法。验证全离线：新契约 13/13、全量 146/146（133 基线零回归）、verify_bpm_build OFFLINE_PASS（template-materials-20261024-111625）。ENHANCED_FINAL fresh reviewer 首审即 GO：八面全 PASS_DYNAMIC、D1-D7 成立、HASH_VALIDITY=VALID、UNVERIFIED_SCOPE=NONE、红线零违例、14 件冻结哈希复算一致。尚存（后续轮）：W01/W04-W10；R2-P5（下轮把 bpm_extraction.py 加入 verify_bpm_build source 清单）、R2-P6（W04 注意 duplicate_copy 组级语义）、R2-P3/R2-P4 用户侧挂账；八类本次真实原始材料仍缺（不虚构）。",
+  "artifacts": {
+    "bpm_extraction.py": "122464266a0efd038dbeca018c216deb8ef94b758b8b63bc1a4b6ea546d8854c",
+    "bpm_materials.py": "ce37d3b4bf9499714d8abff9ff9e747ff705b893861a1a27e44205496a164e02",
+    "tests/test_bpm_extraction.py": "6cf620e19f33ad642102dd48b3351b12a34f71ebb002ee563ee03fd529fcb921",
+    "tests/fixtures/w03/invoice.pdf": "1c398c49d3e21a6d504ae36ef780169813d77f0e0422c58ac2241e7f79b165d4",
+    "tests/fixtures/w03/发票.pdf": "341ec4960327f10ff1d8a229e9952a282e3221a0a92772d48127acbc58e0b599",
+    "tests/fixtures/w03/bars.png": "c9f743f31c83ff285da5a0bf861fbbb15c5646cca5297aa90f23dea22095ac56",
+    "tests/fixtures/w03/ledger.xlsx": "058edbefd96536696f44a220c9453ffe4655e97b28fced341a7990a21cfbff7b",
+    "tests/fixtures/w03/rows.csv": "f1b86b7646abac650c5001cabdf2120e637a5b4311799d07a1655253b4a266ed",
+    "tests/fixtures/w03/费用说明.txt": "bb31f99936a241d23db80b3eebe037ac88a258f66ffeb769df65be5bcd397c43",
+    "tests/fixtures/w03/说明备份.txt": "bb31f99936a241d23db80b3eebe037ac88a258f66ffeb769df65be5bcd397c43",
+    "tests/fixtures/w03/w03-v1": "3494bc379d90386004c209efc1c654a52eca6da41400ba657bff5209b20da52c",
+    "automation/template-materials-program/progress.json": "ae2716c012c1c8f3cf3b92627ea654af9507172fd3984b140611b89e7d49584b",
+    "automation/template-materials-program/notes.md": "428b4f5a473509061ca0b2f56bf6a9c7b627a6e13273d44ded3355b9d2a3f92e",
+    "automation/offline-verify/template-materials-20261024-111625/build_result.json": "9ebcbc92a6dac2430e0d419f4cb2c712b341d75a7eea86640d93145fddb98e34"
+  },
+  "evidence": [
+    "team-progress.md",
+    "automation/offline-verify/template-materials-20261024-111625/build_result.json",
+    "automation/template-materials-program/progress.json",
+    "automation/template-materials-program/notes.md"
+  ],
+  "failure_counts": {},
+  "evidence_hashes": {
+    "team-progress.md": "b2a6c5320578ccf6761fb1a564987e097e8d2b9afdeaef29e9bd3739a428f6ef",
+    "automation\\offline-verify\\template-materials-20261024-111625\\build_result.json": "9ebcbc92a6dac2430e0d419f4cb2c712b341d75a7eea86640d93145fddb98e34",
+    "automation\\template-materials-program\\progress.json": "ae2716c012c1c8f3cf3b92627ea654af9507172fd3984b140611b89e7d49584b",
+    "automation\\template-materials-program\\notes.md": "428b4f5a473509061ca0b2f56bf6a9c7b627a6e13273d44ded3355b9d2a3f92e"
+  }
+}

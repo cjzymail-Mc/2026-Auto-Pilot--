@@ -1,0 +1,43 @@
+{
+  "purpose": "A round-1 independent hash recheck and reverse enumeration (machine record)",
+  "workflow_run": "d91601924848489f84e317e68582de26",
+  "round": 1,
+  "reviewer_session": "0cbc12a4-0aa0-4f70-acee-a054cbedf5a0",
+  "checked_at": "2026-10-26T11:20:00+08:00",
+  "baseline_sha256_recheck": {
+    "path": "feature01-细化报销skill/2026-10-26 真实公出案例独立解析与OA填写施工合同-冻结V3.md",
+    "actual": "d437988d7b2f29b7c8dd79cc1e8892f23e4ba2567a8932925cac36f5c977ef0d",
+    "frozen_at_join": "d437988d7b2f29b7c8dd79cc1e8892f23e4ba2567a8932925cac36f5c977ef0d",
+    "match": true
+  },
+  "handoff_artifacts_recheck": {
+    "method": "sha256 recomputed in-session, compared against handoff.json values programmatically",
+    "artifacts_total": 13,
+    "mismatches": 0,
+    "note": "one earlier ad-hoc script mismatch was A transcription error; excluded by programmatic comparison"
+  },
+  "frozen_artifact_hashes_rev2": { "entries": 13, "drift": 0 },
+  "case_manifest_reverse_enumeration": {
+    "root": "feature01-细化报销skill/12月公出-发票",
+    "files_on_disk": 73,
+    "manifest_entries": 73,
+    "missing_in_manifest": [],
+    "extra_in_manifest": [],
+    "unique_sha256": 73,
+    "spot_recheck": { "sampled": 7, "matched": 7, "sample": ["xlsx original", "5 PDFs random", "油票2.pdf"] }
+  },
+  "case_originals_vs_maintenance_snapshot": {
+    "reference": "team-progress/team-workflow/a7618f4fa0b040fa81782c93eb1bc926/operator-recovery-20261026-v3/protected-before.json",
+    "referenced": 73,
+    "unchanged": 73,
+    "changed": 0
+  },
+  "task_registry": { "files": 10, "all_form_intent": true, "save_intent_hits": 0 },
+  "git": { "head": "9299545", "new_commits": 0, "staged_files": 0, "pw_profile_ignored": true, "local_session_ignored": true },
+  "offline_build": { "status": "OFFLINE_PASS", "selftest_exit": 0, "capability_exit": 0, "unittest_log": "Ran 282 tests ... OK (skipped=4)", "source_manifest_entries": 60 },
+  "d22_defect": {
+    "evidence": "automation/offline-verify/materials-v3r00-20261026-101500/build_result.json:missing_real_inputs",
+    "content": ["exact_history_template_number", "current_material_directory", "specific_create_and_save_instruction"],
+    "finding": "specific_create_and_save_instruction 仍列为 missing real input；V3 §12.1 点名要求修正的活跃输出语义残点"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "outcome": "complete",
+  "summary": "Round-8（ctr-633d23ae，任务：express+rd 真实闭环+P1-a 追认+五类续推+反例固化+P2）五项全完成：①P1-a 合同追认执行（合同§0 逐字引用 A 任务原文，bpm_plan_generate.py/bpm_ui.py 进入常设允许写清单；记录件 ratification-20261024-round8.json+台账三处留痕）。②express 真实闭环（chain 20261024-174500-expressloop：agent 自驱库函数链 96 sources 零预制 payload，模板源=缓存快照 lineage sha MATCH 自主裁决①；fill 20261024-173807-72170651 首发 SUCCESS_FILL_ONLY：relations0/details1/costs8/banks4 全对，347.50 四向闭合，IV ok=true issues=[]，save NOT_ATTEMPTED；page_inventory_r8_express.json）。③rd_materials 真实闭环（chain 20261024-175000-rdloop：155 sources，amount_rules costs=not_applicable+材料理由/products=sum 行总额；fill 20261024-174803-cd2e04e4 首发 SUCCESS_FILL_ONLY：details4/costs0/banks4/products18，18 行物品档案按现有编号选入未新造（首行 26103142 昂跑Cloudzone 张宇昂 1089.90 回读一致），9935.16 四向闭合；page_inventory_r8_rd.json）。两环 plan_hash a494e784…/dcf4f895… 与链/回读三点一致。④五类研究续推（run 20261024-180000-research-r8：01 其他费用 15425125587——details 无预算变体 budgetKey=__、申请书(34)多明细部分占用、bizCost>totalCost；24 维修费 15426015123——税额三值模型 cost1500/taxCost172.57/realCost1327.43、对公收款人银行行；06 会议支出 census list 0 候选未做（裁决③）；raw fetch 2/5 预算 --login-wait 0 只读零注册零启用；两份六节工件+RESEARCH_SUMMARY_R8；代码适配准备 code-adaptation-prep-02-04.md 9 落点映射零实施。研究进度 4/5，七类码 08/11/15/02/04/01/24 实测互异）。⑤反例固化 2 个新测试（tests/test_bpm_ui.py：COMPLETE_APPLICANT_EMPLOYEE_ID_REQUIRED 页面默认≠计划且无 identity→硬阻断+header/四表零写（R7 v1 复刻）；EXACT_PICK_MISSING relations/1 瞬时 0 候选→硬阻断+部分状态 verify_snapshot 必拒（R7 v3 复刻）；②④ R7 已随 supersede 测试组在场）。P2 五项全落：execution_ready plan_hash 双字段留兼容（bpm_request.py+测试断言非文件哈希）；supersede 活页检查 docstring 收窄当前 context 语义；新链 events schema 统一 event 键；R6-P2-2 只读措辞采纳 SKILL.md（红线段逐字不动 test_skill_docs 9/9）；服务端无残留只读观察（run 20261024-181500-noresidue：登录人默认列表 17 行零筛选零点击，round-8 两笔今日创建 0 行/回放关键词 0 命中=无残留；存量 10-23 草稿 15426104612（live-complex-demo 时期、round-7 回放同源）单列登记非本轮残留不触碰；attempt_001 收尾 AttributeError 诚实披露 attempt_002 干净重跑两轮 17 行一致）。验证：全量 255/255 OK（+2 新测试）+ verify_bpm_build 唯一 run template-materials-20261024-181500-r8final OFFLINE_PASS + skill 轮末快照入 expressloop（6 文件+index 5214a477…）。fresh mc-expert ENHANCED_FINAL：PASS_WITH_NOTES/GO——八项全 PASS 哈希独立重算 MATCH、独立重跑 255/33/9/selftest 全绿；三条非阻塞观察（链 events 双前缀单例化/research events 键名/no-residue 布尔命名）转下轮。台账 notes.md：W06 三类全闭环/W07 研究 4/5+适配准备/R8 记录。stage1_browser_probe.py/fill_once.py round-8 零改动（mtime 早于窗口，陪审核验）。缺口如实：06 会议支出无候选单号（需新 list 窗口或用户供号）；reimItem/预算选择器编辑页联动未观察（02/04/01/24 接入前缺口）；真实发票原件视觉复核缺口延续（用户供料后执行）。下轮入口：五类接入施工（02/04 按适配准备 A 表 1-2 级放量）或 D22 新 session 使用验收准备。",
+  "artifacts": {
+    "bpm_request.py": "4ce2f10787e1bfc1c59311c2961a3aa18ca081ee2c72c36a85c488271350b792",
+    "bpm_ui.py": "d85b82854feb733f4fcb0a53b225cbd5c00d67627a4dd744997a9d5262d51755",
+    ".claude/skills/bpm-fill-run/SKILL.md": "b41e9e4e9dcc0dd2b263fe083b7f86784e1a8205d4b9b4a97263607590bf1109",
+    "tests/test_bpm_ui.py": "a303893693bab5e9bb07fe6b78244e147c3190570148eaea252b5b631a32276e",
+    "tests/test_bpm_request.py": "7c07107bf9e92ed04653c0257c38c9860eea98eadd864ca166049526d12e91a8",
+    "automation/runs/20261024-174500-expressloop/fill_plan_r8.json": "6fdd0537f76aff57135599f7ed44a7443745ad4a0993d7624b2c5cc93ad6567b",
+    "automation/runs/20261024-174500-expressloop/page_inventory_r8_express.json": "21939aad6f756caae676ff0596e00d298f3e97e34a2ee81482bcaa0a3d69f926",
+    "automation/runs/20261024-175000-rdloop/fill_plan_r8.json": "f58400e698f3c8cea566772b44b132464e24a478409c5ff9ddc4f5f75c3db1b3",
+    "automation/runs/20261024-175000-rdloop/page_inventory_r8_rd.json": "02330bec5331ce002b09bf2864f03fd7a2d32876ad9b1e6aae8d47318c872917",
+    "automation/runs/20261024-173807-72170651/attempt_001/stage1_result.json": "2eaaad4d02d42a82ffa69388e8766a577e46380116b3a9d997249e2b6b928c02",
+    "automation/runs/20261024-173807-72170651/attempt_001/evidence/independent_verification.json": "4ab02215001e0b27d906f8c2baee796aa58c5d1a18dff2ec906372e068849dad",
+    "automation/runs/20261024-174803-cd2e04e4/attempt_001/stage1_result.json": "819f4f3d69790827ae021de896306362a3e5786b2b1e4db5e2b1137af01b7151",
+    "automation/runs/20261024-174803-cd2e04e4/attempt_001/evidence/independent_verification.json": "6848ced07db5bdc25ed8135f583d27ba2aa117fa725797111347cdee1279092d",
+    "automation/runs/20261024-180000-research-r8/research_qitafeiyong_15425125587.md": "5310f58fb70850a604b8d0b6fe41b8e03b789ba18d5354b469234cdb335357d1",
+    "automation/runs/20261024-180000-research-r8/research_weixiufei_15426015123.md": "e3067d57895bb95b02a3faae4373774bf96d3587db4bb669075a7d26279db0b0",
+    "automation/runs/20261024-180000-research-r8/code-adaptation-prep-02-04.md": "9b04e714f0a5b3a5cd4d066cdac2ec90ddf72a5c731364750d4c71feec38ede5",
+    "automation/runs/20261024-180000-research-r8/RESEARCH_SUMMARY_R8.md": "a8caa4ecd47bd990880e9a52a582479b1d5051ce16d564943889d34f120f6738",
+    "automation/runs/20261024-181500-noresidue/no_residue_verdict_final.json": "5937c5c4d6e4cf252936d66b27705f3a10aa5bb7ccff7142441cc9a1a1bb38a7",
+    "automation/offline-verify/template-materials-20261024-181500-r8final/build_result.json": "ffacd606f3e5d9345a58f18d3de1324f0f67096bbefa5506898208b7f59ac089",
+    "automation/type-extension/ratification-20261024-round8.json": "da452a35f5ee9b487dc382c60b9c5e66c344d9b6929a0d0dbd41eba90e0d4733",
+    "automation/template-materials-program/notes.md": "25e75b52985e74ea945208ccec95683a427586354733fcc326f875bb2ec177a7",
+    "team-progress.md": "75040dd12959430e4aa9bdfa30f77694bfe208518db587511aca41820e2fe332"
+  },
+  "evidence": [
+    "automation/runs/20261024-174500-expressloop/events.jsonl",
+    "automation/runs/20261024-174500-expressloop/chain_driver.py",
+    "automation/runs/20261024-175000-rdloop/events.jsonl",
+    "automation/runs/20261024-175000-rdloop/chain_driver.py",
+    "automation/runs/20261024-180000-research-r8/events.jsonl",
+    "automation/runs/20261024-181500-noresidue/events.jsonl",
+    "automation/type-extension/round8-execution-events.jsonl",
+    "automation/offline-verify/template-materials-20261024-181500-r8final/capability-tests.log",
+    "team-progress.md"
+  ],
+  "audit": {
+    "enhanced_final": "fresh mc-expert PASS_WITH_NOTES / GO（8/8 PASS，哈希独立重算 MATCH，独立重跑 255/33/9/selftest 全绿）",
+    "notes_next_round": [
+      "链首跑中断重跑致 events 双前缀+双 request 注册工件，建议单例化",
+      "research events 记录 header 键名（authorization 字样）仅键名无值，可改名消歧",
+      "no-residue 观察原始布尔与终判布尔并存，命名可消歧（归因切分语义正确）"
+    ]
+  },
+  "pending_ratification": {
+    "P1-a": "已由本轮合同 §0 正式追认（授权依据 A round-8 任务原文），不再是待追认项",
+    "next_round_entry": [
+      "五类接入施工：02/04 按 code-adaptation-prep-02-04.md A 表第 1-2 级放量（config 落盘→注册→离线链），实施需新合同授权 bpm_types.py/document-types 新文件",
+      "或 D22 新 session 使用验收准备",
+      "06 各项会议支出研究：需新 list 窗口或用户供单号",
+      "reimItem/预算选择器编辑页联动观察（02/04/01/24 接入前缺口，需授权真实编辑页观察或用户供料）"
+    ]
+  },
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1
+  },
+  "evidence_hashes": {
+    "automation\\runs\\20261024-174500-expressloop\\events.jsonl": "df0d8cf10a860ca6ef9189608c8bdd600b12d37441e8341388140c3dd7cc5e3b",
+    "automation\\runs\\20261024-174500-expressloop\\chain_driver.py": "37e55520d725294fff0489fe4ede651a3df899430fa3def9247c1ad9c6a1bb0c",
+    "automation\\runs\\20261024-175000-rdloop\\events.jsonl": "ddfd97e1cfef04ab09b3a1d52e0af961585ebd0f3d7c0442265105cd0789ba5b",
+    "automation\\runs\\20261024-175000-rdloop\\chain_driver.py": "9f412ac6d287922a03845a10c5e74e76dbd52e942322cdfa8ba3e69dab596fb4",
+    "automation\\runs\\20261024-180000-research-r8\\events.jsonl": "7b29e8d05eb3acebcbb72fe3ceeeaf0cd5e3f2c09d086ccbca0b7d5b0aef2835",
+    "automation\\runs\\20261024-181500-noresidue\\events.jsonl": "7e7d784898c71301c18a85be326bdd8c8172b9472167bc58560c33aa312d487e",
+    "automation\\type-extension\\round8-execution-events.jsonl": "11e143d06471d6607c9cdcd43d1429f14ea7802988aea1a1348e0bddd29693ec",
+    "automation\\offline-verify\\template-materials-20261024-181500-r8final\\capability-tests.log": "fcf43124ec62e122ea25f5d2d7212b64f008294c86be2d81959c022802a355db",
+    "team-progress.md": "75040dd12959430e4aa9bdfa30f77694bfe208518db587511aca41820e2fe332"
+  }
+}

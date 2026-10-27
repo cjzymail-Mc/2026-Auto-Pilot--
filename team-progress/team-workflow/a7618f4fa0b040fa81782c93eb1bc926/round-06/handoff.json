@@ -1,0 +1,39 @@
+{
+  "outcome": "complete",
+  "summary": "Round-6（ctr-ed80c9d0，W06 前置：执行串联+skill 链路增补+live 模板读取首试+R5-P2 顺带）完成：①D10 执行串联——bpm_request.execution_ready 真实子进程 `fill_once --fill-plan --expect-name --validate-only` 全绿（exit 0+PLAN_VALIDATED）才产 EXECUTION_READY（计划路径+sha256/操作人证据/建议执行命令含 --keep-open-minutes 45/browser_launched=false）；操作人来源封闭两值 user_policy|system_observation（validate_operator_evidence 越界即 ValueError，模板历史人员不可推导），operator_from_session_record 只读 Git 排除 .local-session（authenticated+principal.name 才可用，basis 只含姓名+核验层次）；缺证据→NEEDS_INPUT+GAP_FIELDS 不猜姓名不调 CLI；fill_once.py 零 diff（语义未动）。两态测试 6 项：就绪（断言 validate-only 结果/哈希/命令形制/不含 --validate-only）/缺身份（无 operator 键不猜）/模板来源拒绝/坏计划透传 issues/缺文件/session helper 三态。②skill 增补——SKILL.md description 路由关键词+「完整链路：模板单号+原始资料 → 执行就绪」节+references/full-chain.md（六阶段表/操作人纪律/旧入口关系/缺口形状）；授权与保存/执行恢复/环境交付红线段逐字不动；结构化校验器 tests/test_skill_docs.py 9/9（frontmatter/引用落 skill 内/命令旗标对照两脚本 add_argument 字面量/六阶段+函数对照 def/红线句逐字 pin）；系统 skill 注册表已实时加载新 description（路由佐证）。③live 模板读取首试成功——automation/runs/20261024-150200-tpllive/：TTL 前置事件（authenticated，effective_reuse_until 2026-11-23T02:42:23Z）→ bpm_template.py --live --expect-name 陈晶 --template-number 15426095951 --login-wait 0（CLI 自带 profile 锁+只读 context，失效即 fail-fast 不扫码）→ 入口即 LOGGED_IN → SUCCESS_TEMPLATE_READ_ONLY（live afa5534c…）→ 与缓存快照（20261023-142146 census，ffc75d19…）核对 uuid/类别/header 键集/表名/行数/表头身份全一致（live_vs_cached_compare.json+CONSISTENT 事件）；events 只读链全程零新建零填写零触碰未保存页。④R5-P2——bizDate/payeeName 模板冒充反例实例化入库+重复 (group,field) 行构造期显式拒绝（均测试）+_load_doc 与 bpm_template 解析重复的取舍注释。⑤验证：test_bpm_request 28/28、test_skill_docs 9/9、全量 236/236 全绿（218 基线零回归）；唯一验收 run template-materials-20261024-w06-final OFFLINE_PASS（probe-selftest 0+capability 227）；台账 W06=进行中（前置轮交付+主体验收待外部材料）+round-6 条目+notes.md round-6 节+next_actionable=W06 真实端到端/W07 可先行。⑥ENHANCED_FINAL（fresh mc-expert，review-contract-v2）VERDICT=GO：HASH_VALIDITY=VALID（17 产物+5 冻结权威双轮复算零漂移）/八面全 PASS_DYNAMIC/UNVERIFIED_SCOPE=NONE/四项动态阳性对照+审计自建 run template-materials-20261024-r6audit OFFLINE_PASS；红线核查通过（凭证零泄漏/task-registry/legacy-ia2/旧 run 今日零触碰/HEAD 仍 9299545/除 tpllive 一次只读 live 外零浏览器/授权红线段测试逐字 pin+frozen_source 快照双重锚定）。尚存（记录级，非本轮合同范围）：审计 P2-1 SKILL.md round-5 基线无盘上字节副本，建议下轮起 skill 文件轮末快照随 run 落盘或落实 R2-P3 git commit（A/用户侧）；P2-2 冻结 stage1_browser_probe 的会话维护性写入与合同“只读（不写回）”字面歧义（写入为 AGENTS.md 强制原子更新，last_scan_at 未重置、期限未续期，建议后续合同显式豁免措辞）；八类本次真实原件未提供（W06 主体验收前置，如实挂 missing_inputs）；W06 真实端到端 B1-B7 与 W07 两类研究为下轮入口；R2-P3 git commit 与 R2-P4 legacy token 清理仍用户侧挂账。口径说明：verify_bpm_build source_manifest 为 bpm glob（51 键），test_skill_docs.py/full-chain.md 不在其列（verify_bpm_build.py 不在本轮允许写面），哈希经本 handoff+台账绑定。D23=1/3 维持未新增（glob 机制持续生效，计数调整权在 A）。",
+  "artifacts": {
+    "bpm_request.py": "9b72299e8b9a0668dc209b4dd637579fe061eee895628774f79321503d0905d9",
+    "tests/test_bpm_request.py": "b0916385f81f6aa658b4463f479f77434ea1dedf580144aa3e19a38fb4647c46",
+    "tests/test_skill_docs.py": "b6dc47635a6c35936486bf7f7427fc7c07bcaab617e9a9c934b240dac36c05b0",
+    ".claude/skills/bpm-fill-run/SKILL.md": "4670f110977e6b89306d2b5e5338b95dde8a5b548c7aab842e3a87189fc2adc1",
+    ".claude/skills/bpm-fill-run/references/full-chain.md": "babb88cfe1b161946007192f180b5d2cf7e29a37ec0a8e94ecea4a970a027aff",
+    "automation/template-materials-program/progress.json": "7459f61f054136cb1728bfa9cc6fa3de0e7478f833507d64e43e96e81d9d5074",
+    "automation/template-materials-program/notes.md": "aec7994988501836cf4ce2a59b9340cf944778ba2001a23bfe457bf15a47dee3",
+    "automation/offline-verify/template-materials-20261024-w06-final/build_result.json": "9191bd23e04437aceaa727202aac4dc032ff7a138e3a35b87981b8cdd4926b34",
+    "automation/offline-verify/template-materials-20261024-w06-final/source_manifest.json": "2ca42a8e2f0e419470d4297b4799e9cccf1b7e2c1a65ae892d08284d3b8ae6dc",
+    "automation/runs/20261024-150200-tpllive/template_snapshot_live.json": "afa5534c3c310ca68b18263a97f78a62861b475ddee56dc364f924d822864280",
+    "automation/runs/20261024-150200-tpllive/template_snapshot_cached.json": "ffc75d19611781123d5146cac2011b71aa60ac84e08d86c0beb8b6da41406890",
+    "automation/runs/20261024-150200-tpllive/live_vs_cached_compare.json": "2a47e12a36d351d62bf953217de1c34447e3f92f3f3c36dd0ba7ed834cf6ecf6"
+  },
+  "evidence": [
+    "automation/offline-verify/template-materials-20261024-w06-final/build_result.json",
+    "automation/offline-verify/template-materials-20261024-w06-final/capability-tests.log",
+    "automation/offline-verify/template-materials-20261024-w06-final/probe-selftest.log",
+    "automation/offline-verify/template-materials-20261024-r6audit/build_result.json",
+    "automation/runs/20261024-150200-tpllive/events.jsonl",
+    "automation/runs/20261024-150200-tpllive/live_vs_cached_compare.json",
+    "team-progress.md"
+  ],
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1
+  },
+  "evidence_hashes": {
+    "automation\\offline-verify\\template-materials-20261024-w06-final\\build_result.json": "9191bd23e04437aceaa727202aac4dc032ff7a138e3a35b87981b8cdd4926b34",
+    "automation\\offline-verify\\template-materials-20261024-w06-final\\capability-tests.log": "4eda6d35710206146d47780b6b748e7510610dd786253e856c327d21595a5adc",
+    "automation\\offline-verify\\template-materials-20261024-w06-final\\probe-selftest.log": "b3c028adc7abe3d4cae4cfa87154044fcec89d69703cc934e1b89ffad836dc68",
+    "automation\\offline-verify\\template-materials-20261024-r6audit\\build_result.json": "43c03a51098d0659a714b67943f04a65fbc42954784617480390a76adece6581",
+    "automation\\runs\\20261024-150200-tpllive\\events.jsonl": "fd6c81afee51620c50cd9a64d6641cde2a7c45759edffa7b4c2e885e591ece42",
+    "automation\\runs\\20261024-150200-tpllive\\live_vs_cached_compare.json": "2a47e12a36d351d62bf953217de1c34447e3f92f3f3c36dd0ba7ed834cf6ecf6",
+    "team-progress.md": "1e10e8b658f5fcec3b51d4d06dd75e066d9da5ccb300d180f26215771a2950d4"
+  }
+}

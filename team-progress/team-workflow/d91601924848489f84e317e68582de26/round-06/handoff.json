@@ -1,0 +1,49 @@
+{
+  "outcome": "complete",
+  "summary": "V3 round 6 完成：CASE-05 模板定向读取 + CASE-06 可执行计划（validate-only 止；零业务写入/零 OA 开页填写/零关联选择/不测保存）。模板缺口 CLOSED：单号 15426095951 系用户 2026-10-26 在 A 窗口提供（原话入 team-task src-db223254），非 agent 自查；台账引用原话登记。登录只读探查陈晶/116070053 authenticated（effective_reuse_until 2026-11-23T02:42:23Z）。CASE-05（真实控件已验证·只读）：bpm_template --live 15426095951 → 快照 sha256 7c71bd42…（uuid 92d41ffd…；travel 兼容；details 2/costs 2/relations 1/banks 1 实结构；products 实测 0 行）；三员身份链同一=陈晶/116070053（登录探查+快照双观测）；旧 relation 公出单 12026096668 已被旧单使用→禁复用。CASE-06（离线已验证）：fill-plan v1.0（文件 sha256 0d5b22cd…，fill_once 规范化 plan_hash 1b3ba0b9…）——details 2 行（交通费/通行费 486.93+交通费/公里补贴 1438.00）、costs 20 行（其它交通 2025-08-25~12-10，逐行=公里补贴+逐票通行费，27 票号全入理由）、banks 1 行（收款四字段模板证据采用，cost 1924.93）、relations 留空+not_applicable 理由（travel 契约禁 table_applicability；随机测试占位留 CASE-07；与 actual_trip_matches 严格分离零编造）；sources 170（template 14+material 156 全带 path/locator/sha256）；no_invoice_rows 20 可定位；coverage 全量独立重算闭合（K=1438/rate=1.00/M=1438.00/T=486.93/R=1924.93/O=2031.17/F=2518.10/margin=593.17，F>R）；fill_once --validate-only --expect-name 陈晶 首轮 PLAN_VALIDATED（复跑幂等）+jsonschema SCHEMA_OK。复用矩阵双版本（采用/替换/不适用；公司标签取公出单模块实测行 7 非旧单推导）。73 原件第 6 轮零漂移 73/73。源码/schema/测试零改动（63/63==V3-R05 manifest）→沿用 materials-v3r05-20261026-162500 OFFLINE_PASS。mc-expert ENHANCED_FINAL VERDICT=GO（八面全 PASS/HASH VALID/UNVERIFIED_SCOPE=NONE；validate-only 动态复跑幂等；O 油票池构成系上游 v3r03 验收域哈希绑定采信）；P2-1 events 终态哈希/P2-2 evidence 副本哈希经 errata 加法订正（19 行 01b8f799…/58e0ccf2…）；P3-1 run_status 同步 COMPLETE；P3-2 ts 混排入 observations。层次不冒充：OA 填写/占位关联=未测（CASE-07/08 输入）。失败字典 {D23:1, D22:1} 原样带入。",
+  "artifacts": {
+    "automation/runs/20261026-172300-v3r06-template-plan/template_snapshot.json": "7c71bd42b9730635adb24c7c0d410895605b2ccaa2ca6ff1cf75a94a06b0567a",
+    "automation/runs/20261026-172300-v3r06-template-plan/fill-plan.json": "0d5b22cd6f12058dd04567b3bb63b14ca1775cbd51690e324ece118a3a242fa8",
+    "automation/runs/20261026-172300-v3r06-template-plan/case06-task-material.json": "a6583a298da434eb50caa5d29362e0d1387135313ca24e5f3d15923ba1e1d3b3",
+    "automation/runs/20261026-172300-v3r06-template-plan/materials-manifest.json": "d78b16bce9b14b25f41b78cf415f791983dfb2ba434e792c9a6ddf79dd664d6a",
+    "automation/runs/20261026-172300-v3r06-template-plan/field-reuse-matrix.json": "8cbafac3bacfc8329afdbe868afe3a01344d7d79f7a4da82187b3800d0bdca15",
+    "automation/runs/20261026-172300-v3r06-template-plan/field-reuse-matrix.md": "8c669cac5c0eca5e0b5b153e1a6eca1b1490a7a24527005a141e349545a4f1a4",
+    "automation/runs/20261026-172300-v3r06-template-plan/CASE-06-report.md": "27bf28a02bcba051da81e121ad555688c1f40ef4e8e8b63275fc009012c741d9",
+    "automation/runs/20261026-172300-v3r06-template-plan/validate_only_output.json": "0e1f0a4cf9d3861e76fa8bf723986bc7913b16d6661d24154a6db91818309429",
+    "automation/runs/20261026-172300-v3r06-template-plan/events.jsonl": "01b8f79967d337c1460a1769cdea9c268fbc62d4e95236c3d1cfb2b37b90d92b",
+    "automation/runs/20261026-172300-v3r06-template-plan/case06_build_plan.py": "bc03135552d3ae5b5f1414060d01b27394ca39eda6b7976e38839e3fa73a8470",
+    "automation/runs/20261026-172300-v3r06-template-plan/attempt_001/evidence/template_snapshot.json": "58e0ccf21971298ad257575c7b72383b3e0f795a7e621d6d944b54a5f51cdfb7",
+    "automation/template-materials-program/progress.json": "6404d384efba12d8d56b2d8422bcc87497447ebcc94060cfb38e7ac4e3bb2cff",
+    "team-progress.md": "4c703f101b16c8978f6db84dcb08c36f790ea5fea787564242d05d96f294f02e"
+  },
+  "evidence": [
+    "automation/runs/20261026-172300-v3r06-template-plan/template_snapshot.json",
+    "automation/runs/20261026-172300-v3r06-template-plan/fill-plan.json",
+    "automation/runs/20261026-172300-v3r06-template-plan/case06-task-material.json",
+    "automation/runs/20261026-172300-v3r06-template-plan/materials-manifest.json",
+    "automation/runs/20261026-172300-v3r06-template-plan/field-reuse-matrix.json",
+    "automation/runs/20261026-172300-v3r06-template-plan/field-reuse-matrix.md",
+    "automation/runs/20261026-172300-v3r06-template-plan/CASE-06-report.md",
+    "automation/runs/20261026-172300-v3r06-template-plan/validate_only_output.json",
+    "automation/runs/20261026-172300-v3r06-template-plan/events.jsonl",
+    "automation/template-materials-program/progress.json",
+    "team-progress.md"
+  ],
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1,
+    "review|content|active_output_semantics|D22": 1
+  },
+  "evidence_hashes": {
+    "automation\\runs\\20261026-172300-v3r06-template-plan\\template_snapshot.json": "7c71bd42b9730635adb24c7c0d410895605b2ccaa2ca6ff1cf75a94a06b0567a",
+    "automation\\runs\\20261026-172300-v3r06-template-plan\\fill-plan.json": "0d5b22cd6f12058dd04567b3bb63b14ca1775cbd51690e324ece118a3a242fa8",
+    "automation\\runs\\20261026-172300-v3r06-template-plan\\case06-task-material.json": "a6583a298da434eb50caa5d29362e0d1387135313ca24e5f3d15923ba1e1d3b3",
+    "automation\\runs\\20261026-172300-v3r06-template-plan\\materials-manifest.json": "d78b16bce9b14b25f41b78cf415f791983dfb2ba434e792c9a6ddf79dd664d6a",
+    "automation\\runs\\20261026-172300-v3r06-template-plan\\field-reuse-matrix.json": "8cbafac3bacfc8329afdbe868afe3a01344d7d79f7a4da82187b3800d0bdca15",
+    "automation\\runs\\20261026-172300-v3r06-template-plan\\field-reuse-matrix.md": "8c669cac5c0eca5e0b5b153e1a6eca1b1490a7a24527005a141e349545a4f1a4",
+    "automation\\runs\\20261026-172300-v3r06-template-plan\\CASE-06-report.md": "27bf28a02bcba051da81e121ad555688c1f40ef4e8e8b63275fc009012c741d9",
+    "automation\\runs\\20261026-172300-v3r06-template-plan\\validate_only_output.json": "0e1f0a4cf9d3861e76fa8bf723986bc7913b16d6661d24154a6db91818309429",
+    "automation\\runs\\20261026-172300-v3r06-template-plan\\events.jsonl": "01b8f79967d337c1460a1769cdea9c268fbc62d4e95236c3d1cfb2b37b90d92b",
+    "automation\\template-materials-program\\progress.json": "6404d384efba12d8d56b2d8422bcc87497447ebcc94060cfb38e7ac4e3bb2cff",
+    "team-progress.md": "4c703f101b16c8978f6db84dcb08c36f790ea5fea787564242d05d96f294f02e"
+  }
+}

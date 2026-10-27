@@ -1,0 +1,35 @@
+{
+  "outcome": "complete",
+  "summary": "Round-4（ctr-afabdc8a，W05 计划生成与衔接 + R3-P2a/b 两小修）完成：①R3-P2a bpm_facts._dec 超 2 位小数显式 raise；R3-P2b reconcile 收款身份组新增同账号不同户名 block（detail 携双方 locators）；FactSet.from_payload 反序列化闭环。②W05a 新模块 bpm_plan_generate.py：事实→v1.0 fill-plan 生成器，双前置门（reconcile blocked 拒绝 + current_bindings/逐事实工件哈希漂移拒绝），来源坐标统一 file#inner 且拒绝跨文件偷换，fact.source→kind 封闭映射（material_extraction 按实测哈希落位 material/agent_reviewed、template 须与快照哈希一致、user 禁绑派生工件、derived 显式 sum 现场重算、system_observation v1 显式拒绝），金额值必须等于事实金额，invoice_extractions 票号/票面/原件哈希三核+分配按主表过滤+合计闭合票面，免票依据→no_invoice_rows 有源 proof，产出当场过 validate_plan(verify_sources=True) 失败即 PlanGenerationError 不放宽。③W05b fill_once.prepare_task 阶段机 MATERIALS_READY→FACTS_BUILT→RECONCILED→PLAN_READY/NEEDS_INPUT：facts_payload（agent 中间产物）可选键，PLAN_READY 时 fill_plan.json 落 run 且 gaps=[]，对账阻断/生成器缺陷分别落 RECONCILIATION_BLOCKED/GENERATOR_INVALID 结构化缺口（GAP_FIELDS 形状），无 facts_payload 旧断言全部保持；automation/task.schema.json 同步。④验证：tests/test_bpm_plan_generate.py 16/16（两小修+往返、travel e2e validate 空 issues+load_plan 回读、六道前置门反例、express 免票+双空表+budgetOwner、阶段衔接四例含旧断言保持）；全量 190/190（round-3 基线 174 零回归）；唯一 run template-materials-20261024-w05-final OFFLINE_PASS（probe-selftest exit 0 + capability-tests 190，source_manifest 49 键自动含 bpm_plan_generate.py——R2-P5 glob 机制首次带新模块过统一构建）。⑤ENHANCED_FINAL（fresh mc-expert，review-contract-v2）：ADMITTED / HASH_VALIDITY=VALID（13 件双轮重算）/ 八面全 PASS_DYNAMIC / UNVERIFIED_SCOPE=NONE / VERDICT=GO；独立复跑 16+190+自有 OFFLINE_PASS run+6 条阳性对照+合同链 79 cases；跨轮哈希矩阵证明六个只读权威模块三轮逐字一致（校验零放宽）；红线目录（.pw-profile/task-registry/legacy-ia2）未触碰、零浏览器零生产访问。⑥台账：progress.json W05=已验证（5 证据项）+round-4 条目+next_actionable=W01/W06；notes.md round-4 节含 W01/W06 入口。尚存（非本轮合同范围，挂账后续）：W06 前置处理 ENHANCED_FINAL 四条 P2 加固建议（expect_money 缺 amount 键自比恒真、from_payload 未共享 add() 全构造不变量、空 input_hashes 事实绕 drift 门、_dec 正例同义反复断言）；W06+ 真实原件端到端仍缺外部输入（八类本次真实原始材料未提供）；R2-P3 git commit 与 R2-P4 legacy token 清理仍为用户侧人工挂账。D23=1/3 维持未新增（源清单 glob 结构性防复发，计数调整权在 A）。",
+  "artifacts": {
+    "bpm_plan_generate.py": "3c6015fc0cac564810a8fdbfe9f699e97f732beecd766e4a906ff06748c8559a",
+    "bpm_facts.py": "257477a991c3e362aaf9f760e5a8c35b4e6253e884037b3c4e0ec86d44f8d72a",
+    "fill_once.py": "6f67e20affa9f311501441a60a63acef0b8853763d6783dd30f25f45074abcb0",
+    "automation/task.schema.json": "7cc988bd517f668410672680e63b404e43ed993aeb9cb5208e8185d4b10954b9",
+    "tests/test_bpm_plan_generate.py": "2411f4666c384262f8105375b09f17fab7f8705b06cad8f50aba2248e1e1e584",
+    "tests/fixtures/w05/travel_ledger.xlsx": "ce3a19bd20372eaed72e18554e63f82d3755b452ebe44e0642cb33715684514a",
+    "tests/fixtures/w05/user_instructions.json": "3032f3bce145b53ea3c0a4803f3889d77c23d9f2362a3bd2b89552b3d14d24b7",
+    "tests/fixtures/w05/w05-v3": "3494bc379d90386004c209efc1c654a52eca6da41400ba657bff5209b20da52c",
+    "automation/template-materials-program/progress.json": "3add629db98aafc67ce9103a08818a1388130055abbac23d3d8cda36548ba7d5",
+    "automation/template-materials-program/notes.md": "b58b61a8da75d4a04cf54e2d3f4efe17415b7cf594da25e361820cd123f43699",
+    "automation/offline-verify/template-materials-20261024-w05-final/build_result.json": "154303a2c19bd5477d230132eb71107e6d5141a2fbc3053db653c9f1695b44e9",
+    "automation/offline-verify/template-materials-20261024-w05-final/source_manifest.json": "041a775cdabe45f9f6c531d1ebd5dd0a08f995116ed946b24cf6494030d95463"
+  },
+  "evidence": [
+    "automation/offline-verify/template-materials-20261024-w05-final/build_result.json",
+    "automation/offline-verify/template-materials-20261024-w05-final/capability-tests.log",
+    "automation/offline-verify/template-materials-20261024-w05-final/probe-selftest.log",
+    "automation/offline-verify/template-materials-20261024-mcexpert-audit/build_result.json",
+    "team-progress.md"
+  ],
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1
+  },
+  "evidence_hashes": {
+    "automation\\offline-verify\\template-materials-20261024-w05-final\\build_result.json": "154303a2c19bd5477d230132eb71107e6d5141a2fbc3053db653c9f1695b44e9",
+    "automation\\offline-verify\\template-materials-20261024-w05-final\\capability-tests.log": "fef6d494362b28fb36d660f135f72890603ae8a79f88b2f54586256f04c34eae",
+    "automation\\offline-verify\\template-materials-20261024-w05-final\\probe-selftest.log": "c6123c8db5146e75fa64692a48d745604e6610a302de909a321d45f7f6921307",
+    "automation\\offline-verify\\template-materials-20261024-mcexpert-audit\\build_result.json": "465401baebd681d7d8225ab67d736bfca9b2a8b70f49876e0644a4e2330ac9dc",
+    "team-progress.md": "9b691faa3747139148128d2fcacd3d17f889c63aa2831bc4b99edd968ec1f43e"
+  }
+}

@@ -1,24 +1,32 @@
 {
   "outcome": "complete",
-  "summary": "round-2（合同 ctr-a10bb3f6，A review rework 五项）全部完成并经 fresh mc-expert ENHANCED_FINAL 终审 VERDICT=GO（六维全 PASS，哈希绑定 10 项零漂移）。D2 内层观测补齐：探针三处内层 except 吞前留痕（inner_exc 事件，where=cell_activate/cell_input_write/pick_row_verify）+ 激活/写入全程 attempt/attempts 序号 + 字段级 fill_field_result×32 落盘；可见性由离线阳性对照证明（E2/E3 夹具真实产生 inner_exc×3，automation/offline-verify/20261023-125333-offline/ 34/34）。D4-a 单据类型浮层死等消除：overlay_pick_row 45822ms→825ms（row detach 后按浮层开/关场景判据：关=row_detached_overlay_state 判选中、开=fail-loud 不默认成功）。D4-b 预算科目格死等消除：cell_fill 91803ms→1654ms（只读阳性证据才 cell_input_skip×2，可写延迟挂载编辑器不误伤，fill 显式 8s 局部短超时）。全窗口 ≥45000ms 计时段 6→0；全局默认超时 45000 与 600ms 防御轮询原值未动（selftest 红线锚点锁定）。D5 整单实测 attempt_026：SUCCESS_FILL_ONLY，tech=107.6s（round-1 为 330.0s），29/32 零 mismatch，budget_respected=True，结构性留空 3 项不猜填；反向对照 p-dialog 预算联动 1813/1821ms 原链无损。D6/D3：统一复算脚本 docs/路线与评估/recalc_timeline.py（025 复算 308.6/286.0/273.0/12.9/22.6s 与 round-1 报告及 A 复算口径精确吻合；026=101.6/97.1/86.6/10.5/4.4s）；round-1 报告三处修订 diff 可证（§3 缝隙拆解 + §5 后记 + 附录 D，历史结论未改写）；新对照文档含已知差异如实声明（单次观测非受控 A/B、120~180s 实验目标非承诺）。selftest 13 组全绿（T9 新增不变量）。尚存事项：失败字典 key review|content|internal_exception_unrecorded|D2 本轮一次做对已闭合；P2 非阻断建议 4 项挂账 team-progress.md（P2-3 git commit / P2-4 legacy 清理属用户侧，P2-1/P2-2 代码瑕疵列后续轮候选）；保存授权口径澄清仍悬于用户侧（不属本轮范围）。红线全程：只填不存（026 词过滤零 save 类事件）、.pw-profile 零外泄、events.jsonl 仅追加（前 522 行 round-1 终态字节不变）、legacy-ia2 零改动。",
+  "summary": "BPM-SELFDRIVE-20261027-V1 round 1（合同 ctr-640d0763，P0+P1+P2，全离线只读）done_when D1-D5 全 PASS_DYNAMIC：①P0 接手盘点落 automation/runs/20261027-111853-f2789e00/（六要素：73 原件零漂移 9th 盘点/registry 12 件 FORM_INTENT 零保存意图/身份只读探查 11:20:45 陈晶 authenticated effective_reuse_until 2026-11-23/样本 15425123013 经既有 live 快照核验差旅费·08·徐亮·2176.93/工作树与执行者盘点区分 rounds3-10 遗留 diff/可复用基础与缺口×5）。②P1 统一入口设计决策记录（五段路由管线：模板读取→表单类别核实→场景识别采用证据+排除依据→能力检查→runbook 加载；两类用户输入=材料多路径+指定单号+一句意图，用户不写内部 JSON；30 天会话设计要点只记录不改码）+ 版本化规则配置 automation/business-scenarios/self_drive.json v1.0.0（scenario self_drive/travel·08·差旅费/rate 1.00/meal 30.00/R=M+T+C/F=O+T/strict greater/separation 含 historical 12-18-24-36-48 不复用/能力分层 real_fill=real_save=false）。③P2 bpm_self_drive.py（load_self_drive_rules 封闭校验+rules_sha256 绑定/evaluate_self_drive 纯函数 M·T·C·R·O·F 严格 F>R 无浮点容差/compare_by_key 抵消不放行/reconcile_date_labels）+ tests/test_bpm_self_drive.py 29 用例全绿：§6.1 反例 09-05 +2.00 与 09-28 −2.00 合计 381.76 相等仍逐行定位失败、12025098708 +4.00 与 12025123375 −10.00 逐单定位累计 −6.00、正向对照 12025092018 437.18（191.28+185.90+30+30）原件复算路径零误判且污染派生值 439.18 显式排除、日期反例 11-12→11-14 与 11-24→12-24 识别为 wrong_labels、历史餐补五值绑配置全拒、F=R/F<R 拒绝 +0.01 边界通过、与旧 fuel_pool_strict_surplus（R=M+T 零改动）分离回归。④全量 unittest 345 OK（skipped=4 既有）零回归；verify_bpm_build --run 20261027-111853-f2789e00 OFFLINE_PASS，self_drive.json/bpm_self_drive.py/tests 三件入 source_manifest。⑤零业务写入零漂移：无新建报销页/填写/保存/上传/审批，浏览器仅身份探查 ×1（错峰单执行者），registry/task-registry/旧 runs/冻结 V3/legacy-ia2 只读，73 原件收尾第 10 次盘点 0 漂移 0 新增（MC 独立复算同）。fresh mc-expert ENHANCED_FINAL VERDICT=GO（6 件哈希 VALID 审前审后一致/D1-D5 属实/反例断言非恒真/无 blocker-major；minor 4 条：P2-1 未跟踪文件证据形态说明、P2-2 后续轮约束——P3 正式入口接线时调用处必须强制 rules=load_self_drive_rules() 使历史餐补分离成为机制、P2-3/P2-4 informational）。案例对照值（1924.93/300.00/2224.93 等）仅存在于合同 §5 授权的离线测试，生产配置 grep 零命中（MC 实证）。",
   "artifacts": {
-    "stage1_browser_probe.py": "8b3caf86370bafaa8b2dae794cc3df7e2f48cdbe3ac574bc52fe44a135bb9b07",
-    "stage1_probe_selftest.py": "dd08100d70c0e7838d54ca5f0b121528189a972252bbe1e062911d295ed3845e",
-    "stage1_offline_verify.py": "e4558e1cc417d83671e1a1e3288522b4203cdf4f9b3bdff35766f55a3c28ac14",
-    "automation/offline-verify/20261023-125333-offline/offline_result.json": "51b385878fe9366b80a61f9cc08e0e98181668f6c0ee5270c5ece1ec1b307646",
-    "automation/runs/20261021-131724-1c1aadbd/events.jsonl": "6104848f1fe8b40331783606dd6bfe54f153b989a03b5644cfbb00dcc9adb91e",
-    "automation/runs/20261021-131724-1c1aadbd/attempt_026/stage1_result.json": "cb1d53db1fc6f6f6832648557f988ba027221deb676c630f0cf03f11f32f5b8c",
-    "docs/路线与评估/recalc_timeline.py": "b14d3859904118708d524e9521eaa9390d7adf5a57ebf6ac7291085c70d1735a",
-    "docs/路线与评估/2026-10-23-round2-死等消除与内层观测-前后对照.md": "3745d3729b3363ce9fdca58583722f6747d3740b78eeae94904b8721fa36746a",
-    "docs/路线与评估/2026-10-23-报销单填写耗时-动作级计时证据链.md": "259952922c56d48dfdc4bb7ffcc6fb930120edb96841b5961e10cca50d1cb7d0",
-    "team-progress.md": "3809a6337d831934d2476ad418651dbe1a1121040d5047c7c17d5e69444bbd91"
+    "automation/runs/20261027-111853-f2789e00/p0-inventory.json": "072e63ac79f924e53a94420c51bb1e0b1091294c0eba01064da656a7c8d1e2af",
+    "automation/runs/20261027-111853-f2789e00/p1-entry-design.md": "63d38b85c8e1e04ea599481f9dd84936bdba14f303dc73e49011d8c1d3f7750f",
+    "automation/business-scenarios/self_drive.json": "de06680806a04123c6421147ad7bca9ae8404afdb7e891d5bc15f0777e224b62",
+    "bpm_self_drive.py": "ba33c3e21e32d07699a062aa813371b3affc101bffae999140400c67d04b2b9c",
+    "tests/test_bpm_self_drive.py": "36bd00e555f3547c9eaed459a4f8a8b6b0bd08fd715ff1f71a88adf0d67fb37c",
+    "automation/offline-verify/20261027-111853-f2789e00/build_result.json": "ef37b73e60b94ad7b3ca6c26ea7dbb4824b4a9edbf34d0ae86f4646bd18a3078",
+    "automation/runs/20261027-111853-f2789e00/MC-R1-report.md": "673edf115167e6ec5132e5fc4339c00526cb3adca2818d65805cb068acd2a64e",
+    "automation/runs/20261027-111853-f2789e00/B-R1-report.md": "f5ff812df7c38234894061449ccc731f7f89fbfb4ed0bcadb3ce15c42e9dac37",
+    "automation/runs/20261027-111853-f2789e00/events.jsonl": "6dc13564d5e26004664a842d98876c84f70eafb8586bb5e79ce181c9627d9f53",
+    "team-progress.md": "db5ec5c5d76ba4984b87942d3efde9a87a7c58c282653ca6196eee7761118829",
+    "STATE.md": "33d1f39a983b1ccb7348cf2c12a2cbcfbe70237e5c0a06af90af1803d7de13cc"
   },
   "evidence": [
-    "automation/offline-verify/20261023-125333-offline/offline_result.json",
-    "automation/offline-verify/20261023-125333-offline/events.jsonl",
-    "automation/runs/20261021-131724-1c1aadbd/attempt_026/stage1_result.json",
-    "automation/runs/20261021-131724-1c1aadbd/attempt_026/evidence/fill_readback.json",
-    "automation/runs/20261021-131724-1c1aadbd/events.jsonl"
+    "automation/runs/20261027-111853-f2789e00/p0-inventory.json",
+    "automation/runs/20261027-111853-f2789e00/p1-entry-design.md",
+    "automation/business-scenarios/self_drive.json",
+    "bpm_self_drive.py",
+    "tests/test_bpm_self_drive.py",
+    "automation/offline-verify/20261027-111853-f2789e00/build_result.json",
+    "automation/offline-verify/20261027-111853-f2789e00/source_manifest.json",
+    "automation/runs/20261027-111853-f2789e00/MC-R1-report.md",
+    "automation/runs/20261027-111853-f2789e00/B-R1-report.md",
+    "automation/runs/20261027-111853-f2789e00/events.jsonl",
+    "team-progress.md",
+    "STATE.md"
   ],
-  "failure_counts": {"review|content|internal_exception_unrecorded|D2": 1}
+  "failure_counts": {}
 }

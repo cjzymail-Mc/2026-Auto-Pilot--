@@ -1,0 +1,46 @@
+{
+  "outcome": "complete",
+  "summary": "V3 新工作流首轮 R00 完成：旧 run 归档状态实物核实（RETIRED_NOT_COMPLETED，r10 断点原样保存）；R00 只读盘点（登录探查 20261026-100537-login60 陈晶/116070053 authenticated、registry 10 条全 FORM_INTENT 无 save 意图、无遗留未知活页）；r10 在途三项三态核对+全量 282 OK(skipped=4) 落盘日志+唯一 offline-verify run materials-v3r00-20261026-101500 OFFLINE_PASS（source_manifest 60 键，D23 以本构建冻结闭环，历史计数 1 原样保留）；唯一遗漏=02/04 config required_observations 回填+notes 修订（授权面外，三处登记移交下轮）；02/04 已实测/NO_TABLE_DIALOG 未解分类入台账（无观察重跑）；真实公出案例盘点：73 文件逐件 sha256（字节全唯一、4 同尺寸簇待 CASE-01 逐票核身）、Excel 只读结构（行3 表头/去返成对/stray=误报禁清理）、模板身份缺口登记（历史单号不冒充）、DELTA-1..9 差异清单（含 R=M+T、F=O+T 严格大于 R、actual_trip_matches/oa_test_relations 分离）；总台账纠偏至 fill_only 口径并区分验证层次。全程 fill_only 零业务写入零保存零提交。审查：一次性关键门 P0/P1 零违规（P2 五项已处理或登记）；fresh ENHANCED_FINAL VERDICT=GO（八面全 PASS、HASH_VALIDITY=VALID 13/13 双重算、UNVERIFIED_SCOPE=NONE）。尚存：模板身份缺口转用户/原报销单核实；02/04 回填+NO_TABLE_DIALOG 复测；CASE-01..08 施工；R00-report §4 测试指针勘误。",
+  "artifacts": {
+    "automation/runs/20261026-100322-v3r00-inventory/R00-report.md": "1823b4f432ac1924cbfdd4d96b9152baefbee76971273ebb1da66f504c7ca84a",
+    "automation/runs/20261026-100322-v3r00-inventory/case-file-manifest.json": "a18aa1f038493f956eec3c00b925347fef25f3797c2c7238ce80729aa7f1f672",
+    "automation/runs/20261026-100322-v3r00-inventory/case-model-deltas.json": "69a51b1b0d086ee83db8e79d258e2d6d097b6beddaf34709cea9ed26ea7b1782",
+    "automation/runs/20261026-100322-v3r00-inventory/excel-structure/inspect_excel_report.json": "d6079e78a69b2e7ca6fd2e74a6afc020e47f814a6f346eeb987967424258750b",
+    "automation/runs/20261026-100322-v3r00-inventory/excel-structure/inspect_excel_report.md": "3090664160c7643951c36c394c354041ca5857915f8492ac8df148d3284b2fba",
+    "automation/runs/20261026-100322-v3r00-inventory/v3r00_case_manifest.py": "9ff98a8546ff088948026d1cddd627e5b168cded26105450e6a97c3b3dd44398",
+    "automation/runs/20261026-100322-v3r00-inventory/full-unittest-discover-20261026.log": "0c7e5cefacf19cd24ac0ff57ea792faa38af4a81d2cc186641d5588c15708c6d",
+    "automation/runs/20261026-100537-login60/attempt_001/stage1_result.json": "32677c4f8d27151f627e8f935af6987de852c0a08512a253ca82c6e96e363a71",
+    "automation/offline-verify/materials-v3r00-20261026-101500/build_result.json": "caba6549ccbea74a6b85a45aceaa4c3a7caff3b6fb4d36a13a53b7a1d072cf36",
+    "automation/offline-verify/materials-v3r00-20261026-101500/source_manifest.json": "4c913ceb5ae14b34395ab89e8fbff659a1900a58d67d10185a535781e87a2c9a",
+    "automation/template-materials-program/progress.json": "862a4129f24baf53471e55174a44805362bb44a61cd36499a51206ce24eb8d21",
+    "automation/template-materials-program/notes.md": "e8f99744a48b9d220041413765aed5cf7fd206ce7eb67859ba95134d4589a3b7",
+    "team-task.md": "50e7792796731aff3be62d7754adfd1eeb4413d33e230aa0bc0f677a1a329e07"
+  },
+  "evidence": [
+    "automation/runs/20261026-100322-v3r00-inventory/R00-report.md",
+    "automation/runs/20261026-100322-v3r00-inventory/frozen-artifact-hashes.json",
+    "automation/runs/20261026-100322-v3r00-inventory/case-file-manifest.json",
+    "automation/runs/20261026-100322-v3r00-inventory/case-model-deltas.json",
+    "automation/runs/20261026-100322-v3r00-inventory/full-unittest-discover-20261026.log",
+    "automation/runs/20261026-100537-login60/attempt_001/stage1_result.json",
+    "automation/offline-verify/materials-v3r00-20261026-101500/build_result.json",
+    "automation/offline-verify/materials-v3r00-20261026-101500/source_manifest.json",
+    "automation/template-materials-program/progress.json",
+    "team-progress/team-workflow/a7618f4fa0b040fa81782c93eb1bc926/operator-recovery-20261026-v3/recovery-result.json"
+  ],
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1
+  },
+  "evidence_hashes": {
+    "automation\\runs\\20261026-100322-v3r00-inventory\\R00-report.md": "1823b4f432ac1924cbfdd4d96b9152baefbee76971273ebb1da66f504c7ca84a",
+    "automation\\runs\\20261026-100322-v3r00-inventory\\frozen-artifact-hashes.json": "1bffc7b44c4eb93234d6381e1fdd8994aca2c68369871471f36eaac13c2689bc",
+    "automation\\runs\\20261026-100322-v3r00-inventory\\case-file-manifest.json": "a18aa1f038493f956eec3c00b925347fef25f3797c2c7238ce80729aa7f1f672",
+    "automation\\runs\\20261026-100322-v3r00-inventory\\case-model-deltas.json": "69a51b1b0d086ee83db8e79d258e2d6d097b6beddaf34709cea9ed26ea7b1782",
+    "automation\\runs\\20261026-100322-v3r00-inventory\\full-unittest-discover-20261026.log": "0c7e5cefacf19cd24ac0ff57ea792faa38af4a81d2cc186641d5588c15708c6d",
+    "automation\\runs\\20261026-100537-login60\\attempt_001\\stage1_result.json": "32677c4f8d27151f627e8f935af6987de852c0a08512a253ca82c6e96e363a71",
+    "automation\\offline-verify\\materials-v3r00-20261026-101500\\build_result.json": "caba6549ccbea74a6b85a45aceaa4c3a7caff3b6fb4d36a13a53b7a1d072cf36",
+    "automation\\offline-verify\\materials-v3r00-20261026-101500\\source_manifest.json": "4c913ceb5ae14b34395ab89e8fbff659a1900a58d67d10185a535781e87a2c9a",
+    "automation\\template-materials-program\\progress.json": "862a4129f24baf53471e55174a44805362bb44a61cd36499a51206ce24eb8d21",
+    "team-progress\\team-workflow\\a7618f4fa0b040fa81782c93eb1bc926\\operator-recovery-20261026-v3\\recovery-result.json": "f0290af12c3d608ce4558311722e77e81f6bd5f2ef6ea33f14517da6f2499c79"
+  }
+}

@@ -1,0 +1,15 @@
+{
+ "verify_bpm_build.py": "05a1c3a3e2223b377017439c12196936dab971736698c632eca16524f14038e3",
+ "bpm_facts.py": "8ec2fa752435ab1502fc0b5a6f610339035bf676a8802050d4476153d139fcfc",
+ "tests/test_bpm_facts.py": "c7dd6ae5caead12f49061c676d15814738f333b81eff54b79e026f60461cef50",
+ "tests/fixtures/w04/scan-2.pdf": "1c398c49d3e21a6d504ae36ef780169813d77f0e0422c58ac2241e7f79b165d4",
+ "tests/fixtures/w04/scan-3.pdf": "b0ded32cf60314c3165f6101c2494a92c2655f34298218319c9c9d80ed814555",
+ "tests/fixtures/w04/task-registry-sim/TSK-9001.form.json": "1c8a7a7689c0e6780c51dd0e93a58b858327c78668769b567cce338a1cf0a294",
+ "tests/fixtures/w04/w04-v2": "3494bc379d90386004c209efc1c654a52eca6da41400ba657bff5209b20da52c",
+ "automation/template-materials-program/progress.json": "8f9c48fe0293b0eb133d9fd8fa131501a0f820f24dba98845a82acf42e544bc1",
+ "automation/template-materials-program/notes.md": "ea50671365295df8ce9ce438e423810e592dd9d435f747094c7cbce6f5a2a6b5",
+ "automation/offline-verify/template-materials-20261024-1158-r2p5fix/build_result.json": "bebbf5702b9f522793a5693a646dff51b18cb8f1f5e2c9b5438e360369e2b7a0",
+ "automation/offline-verify/template-materials-20261024-1158-r2p5fix/source_manifest.json": "ce2f448313b6b2b2237c9140d1d154528b71743160093f3ac737081ab460a5f0",
+ "automation/offline-verify/template-materials-20261024-w04-final/build_result.json": "b18dac2e99601843dbcfd1e06e064b34e737ea2827dc6f026e7b67577c466012",
+ "automation/offline-verify/template-materials-20261024-w04-final/source_manifest.json": "7670104e801413e1096790994d237c4715de9d59b7abd6baef397aa3ade52078"
+}

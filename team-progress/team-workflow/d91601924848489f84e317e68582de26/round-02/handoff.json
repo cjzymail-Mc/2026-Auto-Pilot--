@@ -1,0 +1,53 @@
+{
+  "outcome": "complete",
+  "summary": "V3 round 2 完成：D22 修复落地——verify_bpm_build real_input_layers(materials_dir, save_instruction_required) 三态语义（missing=[exact_history_template_number] 真缺保留 / supplied=current_material_directory 按 --materials-dir / waived=specific_create_and_save_instruction fill_only 豁免），5 新测试（含 save_instruction_required=True 阳性对照），全量 unittest discover 287 OK(skipped=4) 落盘，唯一构建 materials-v3r02-20261026-121653 OFFLINE_PASS；CASE-01 全量完成——73 件→52 唯一身份（27 通行费 T=486.93 + 5 油票 O=2031.17 全 2025-12-12 + 20 汇总单身份×票据/行程双版式成对非重复），4 同尺寸字节簇全判不同身份，交叉核验全绿（声明票数/页脚金额/Σ成员独立票面 40/40×3、被引用票 54/54 零缺失、大写↔小写 72/72、价税闭合 25/25、mismatch=0），期间链 2025-08-25→12-10，Excel 21 行 Σkm=Σ补贴=1438 观测，T/O 仅观测零预设（范围裁定 R=M+T/覆盖模型留 CASE-02/03/04），结构异常如实登记（0906 拆分票+票面 09-05 差异、0917 返程同安站 36.97 不对称、0928 石狮北石湖、1210 返程晋江南拆分票），原件两次全量 sha256 零漂移+9 张 150dpi 渲染（toll 首件模型读图逐字段一致+0917 站名拼接原始行坐标吻合）；承接项完成——02/04 required_observations 回填 OBSERVED+notes 观察状态回填节、R00-report §4 多票测试指针勘误入台账 errata（承重=D18MatrixTests::test_d18_pdf_one_page_two_invoices…，类名误记经终审 P2-1 订正并复测）、模板缺口维持 PENDING_HUMAN_NONBLOCKING；台账 progress.json/notes.md 更新 V3-R02（rounds 12/errata 1/closed_in_v3r02/D22 闭环）。fresh ENHANCED_FINAL：VERDICT=GO、HASH_VALIDITY=VALID（17 件 64 位双重算零漂移+round-1 冻结面 10 件未动）、八面全 PASS（CASE-01 独立复算超采样：72 大写全量+73 原件全量+40 交叉全核）、UNVERIFIED_SCOPE 三项均非承重已声明；GO 条件①P2-1 类名订正已完成并复测，条件②finish 后 A 侧机械 hash-recheck 终稿。全程 fill_only 零业务写入零浏览器业务动作零保存零提交；失败字典 {D23:1, D22:1} 原样带入（D22 首试修复成功不累计）。尚存：模板身份缺口（CASE-05/06 前须闭合）；CASE-02 Excel 副本回填+重算（下轮）；观察项 P2-2 test_bpm_round10_sync docstring 陈旧、P2-3 source.md sha256 属性名误导。",
+  "artifacts": {
+    "verify_bpm_build.py": "f16a4d90e00897d70f70ecd38cb4de1facf592892521418448e733c774b763c3",
+    "tests/test_bpm_build_output_semantics.py": "a32c07713a20b91e5d161ff4fa7ac48738865ecfb1b53249c0dbf1d045df8607",
+    "automation/document-types/office_supplies.json": "7f635a7cd476fbe48871bfb0ec330df97a3d0878629cee9fc40abf5af09a39c7",
+    "automation/document-types/welfare_labor.json": "267c7f1475b29d2b9920147a10f1db3457a82d07f960e94b23ef52d59589c713",
+    "automation/document-types/office_supplies.notes.md": "225746764e01c82b542c5a196b58c1dd77ccdaa245445a81e0ed7df059cedac5",
+    "automation/document-types/welfare_labor.notes.md": "d882fa94deb0a64c4bf789c2e785a54a29c4a6e94ca2654f2d736e5300d54989",
+    "automation/template-materials-program/progress.json": "966c298877362af0ace534ec61938e699fc7d89739111ad8354bf3a9877491ff",
+    "automation/template-materials-program/notes.md": "0776ae6b80973bcc3474a8f54b8b4855f092931d33bbf8d09b31880192360231",
+    "automation/runs/20261026-115500-v3r02-case01/case01_stage_a.py": "c31a56bdf23ecc783beda5d9a72daab04aa960a3d31d701bebaaaa7617cebde8",
+    "automation/runs/20261026-115500-v3r02-case01/case01_stage_b.py": "7a3e389f8f66ed8d4b5c8a4d8cbe3e404a43a6610a8dd90733120843dfe47f3e",
+    "automation/runs/20261026-115500-v3r02-case01/case01_stage_c.py": "91aba258c9a2efa85317961ff2df3d081095f79e10977f33946ca9e02e5c4246",
+    "automation/runs/20261026-115500-v3r02-case01/case01_stage_d.py": "c035dd2f4c7ce4bee858085d8388408d0715c998fe648c278b083e18349b133a",
+    "automation/runs/20261026-115500-v3r02-case01/CASE-01-report.md": "3ff24c3deb285c597ad73420b7f8034d8697eb7b29893c918a3c5b6b16599221",
+    "automation/runs/20261026-115500-v3r02-case01/case01-facts.json": "8d5581dec67c5a9c52b1a47c092466feea8604abc25b8d2b339a09c2ea9cf5cf",
+    "automation/runs/20261026-115500-v3r02-case01/case01-consistency.json": "002aa570a94d81f585b0c7e42e14dcba24656e23946599775e4f9b5938ed73c1",
+    "automation/runs/20261026-115500-v3r02-case01/stage_a_index.json": "1da044fd9a8bcef8f7310d790030c336f17f9e8ef1ba081a819d0baafebb2752",
+    "automation/runs/20261026-115500-v3r02-case01/stage_d_render_posthash.json": "c0e912053bdf66d5eb189d9d0e035cd35be23416295ac5123c4cc3280966e49b",
+    "automation/runs/20261026-115500-v3r02-case01/unittest-discover.log": "f0b81852c0ef585b2527571df2e46d7b0e3fee16b36e54a0be63beaf3c8e78b0",
+    "automation/offline-verify/materials-v3r02-20261026-121653/build_result.json": "3b234ad0ab5f21fc18b7eec39923dbb2d036553037782a5368dfd06709dabddf",
+    "automation/offline-verify/materials-v3r02-20261026-121653/source_manifest.json": "fc56e7a07a23349f27418511755da6bab999d8d93808d0fa0495a1cb22df1ca4",
+    "team-progress.md": "279b756240b102c6903741836e5defcd68cef7a6a599bd06ea9a9805c85c9814"
+  },
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1,
+    "review|content|active_output_semantics|D22": 1
+  },
+  "evidence": [
+    "automation/runs/20261026-115500-v3r02-case01/CASE-01-report.md",
+    "automation/runs/20261026-115500-v3r02-case01/case01-facts.json",
+    "automation/runs/20261026-115500-v3r02-case01/case01-consistency.json",
+    "automation/runs/20261026-115500-v3r02-case01/stage_a_index.json",
+    "automation/runs/20261026-115500-v3r02-case01/stage_d_render_posthash.json",
+    "automation/runs/20261026-115500-v3r02-case01/unittest-discover.log",
+    "automation/offline-verify/materials-v3r02-20261026-121653/build_result.json",
+    "automation/offline-verify/materials-v3r02-20261026-121653/source_manifest.json",
+    "team-progress.md"
+  ],
+  "evidence_hashes": {
+    "automation\\runs\\20261026-115500-v3r02-case01\\CASE-01-report.md": "3ff24c3deb285c597ad73420b7f8034d8697eb7b29893c918a3c5b6b16599221",
+    "automation\\runs\\20261026-115500-v3r02-case01\\case01-facts.json": "8d5581dec67c5a9c52b1a47c092466feea8604abc25b8d2b339a09c2ea9cf5cf",
+    "automation\\runs\\20261026-115500-v3r02-case01\\case01-consistency.json": "002aa570a94d81f585b0c7e42e14dcba24656e23946599775e4f9b5938ed73c1",
+    "automation\\runs\\20261026-115500-v3r02-case01\\stage_a_index.json": "1da044fd9a8bcef8f7310d790030c336f17f9e8ef1ba081a819d0baafebb2752",
+    "automation\\runs\\20261026-115500-v3r02-case01\\stage_d_render_posthash.json": "c0e912053bdf66d5eb189d9d0e035cd35be23416295ac5123c4cc3280966e49b",
+    "automation\\runs\\20261026-115500-v3r02-case01\\unittest-discover.log": "f0b81852c0ef585b2527571df2e46d7b0e3fee16b36e54a0be63beaf3c8e78b0",
+    "automation\\offline-verify\\materials-v3r02-20261026-121653\\build_result.json": "3b234ad0ab5f21fc18b7eec39923dbb2d036553037782a5368dfd06709dabddf",
+    "automation\\offline-verify\\materials-v3r02-20261026-121653\\source_manifest.json": "fc56e7a07a23349f27418511755da6bab999d8d93808d0fa0495a1cb22df1ca4",
+    "team-progress.md": "279b756240b102c6903741836e5defcd68cef7a6a599bd06ea9a9805c85c9814"
+  }
+}

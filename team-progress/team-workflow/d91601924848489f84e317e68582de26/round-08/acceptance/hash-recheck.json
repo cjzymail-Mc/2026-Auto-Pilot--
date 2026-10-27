@@ -1,0 +1,83 @@
+{
+  "round": 8,
+  "a_session": "0cbc12a4-0aa0-4f70-acee-a054cbedf5a0",
+  "verified_at_context": "A_REVIEW round 8 (final), seq 40 handoff; fresh re-run this session",
+  "baseline_sha256": "d437988d7b2f29b7c8dd79cc1e8892f23e4ba2567a8932925cac36f5c977ef0d",
+  "baseline_match": true,
+  "criteria_sha256": "ad4b2f31a84ca6ef3ad4a3f7dd4cc38c50a709d7a24cfef8f0fd146c2a3f6456",
+  "criteria_match": true,
+  "handoff": {
+    "artifacts_total": 18,
+    "hash_match": 18,
+    "hash_mismatch": []
+  },
+  "final_manifest": {
+    "file_sha256": "a8ac7147a10775688f2e0167eb14e4e6e05985d2dcade8d186b2e60228e87db9",
+    "event_binding_match": true,
+    "entries_with_path_and_sha256": 24,
+    "verified_ok": 24,
+    "bad": 0,
+    "missing": 0,
+    "sections": [
+      "1_原件与解析",
+      "2_工作簿副本与重算",
+      "3_逐票公出单对照",
+      "4_模板与计划",
+      "5_受限测试关联与执行变体",
+      "6_真实执行与独立核验",
+      "7_独立复核与新session验收",
+      "8_终局与交付"
+    ]
+  },
+  "b6": {
+    "verdict": "CONSISTENT",
+    "faces": 7,
+    "zero_diff_faces": 7,
+    "independence": "fresh mc-expert instance, zero context inheritance, verbatim landing by B",
+    "key_recomputes": {
+      "originals_hash_recon": "73/73",
+      "toll_T": "486.93 (independent OCR row-cluster extraction, 27/27)",
+      "fuel_O": "2031.17 (5/5 price-tax closure)",
+      "K": "1438 (openpyxl independent sum F4:F23)",
+      "trip_rejudge": "MATCHED=12 Σ221.02 / NO_MATCH=15 Σ265.91 from attempt_011 raw api-detail bodies, 0 diff vs CASE-03",
+      "template_sources": "170 = template 14 (identity/budget/bank only) + material 156; forbidden-class hits 0",
+      "plan_closure": "Σdetails=Σcosts=Σbanks=totalCost=1924.93 four-way",
+      "v11_diff": "14 leaf paths all within 9 declared clusters; seed replay string-seed→6→12024070132",
+      "b5_readback": "0 value diffs; 1924.93 four-way from raw DOM; real-doc leak count 0"
+    }
+  },
+  "case08": {
+    "input_manifest_mtime": "2026-10-26 19:26:23 (before agent products: machine-parse 22:00, fill-plan 22:17)",
+    "whitelist_items": 5,
+    "independent_task_run": "automation/runs/20261026-193100-0527f5dc (exists, 79 files)",
+    "fact_recompute_match": "K/M/T/R/O/F/margin/52/0904=16104706/1210-two-tickets all match delivered chain",
+    "own_v1_0": "sha e600f67a… canonical ec2c811b… PLAN_VALIDATED (validate-output.txt re-checked)",
+    "comparison": "4 faces CONSISTENT; 27 ticket-number set equal; 3 non-amount diffs honestly recorded",
+    "p2_erratum_chain": "input-log additive correction verified line-by-line; registry forms contain task-identity metadata only (dual check B + mc-expert)",
+    "zero_business_writes": true
+  },
+  "b7_terminal_marker": "B7_TERMINAL_V3_CASE_COMPLETE present in progress.json V3-R08 with fill_only completion, unsaved evidence, zero save clicks, old orders untouched, FORM_INTENT only, not_claimed clause",
+  "code_changes_round8": {
+    "py_schema_test": "none (mtimes predate round-8 window; cross-checked vs round-7 handoff hashes)",
+    "doc_only": ["SKILL.md", "references/plan-contract.md", "references/travel.md"],
+    "offline_verify": "materials-v3r07-20261026-1900 OFFLINE_PASS carried (doc-only changes per task terms)"
+  },
+  "originals_zero_drift_round8": {
+    "count": 73,
+    "expected": 73
+  },
+  "credential_grep": {
+    "patterns": ["eyJ", "refresh_token"],
+    "scan_dir": "automation/runs/20261026-192400-v3r08-final",
+    "hits": ["MC-FINAL-report.md (policy mention only)"],
+    "jwt_shaped_tokens": 0
+  },
+  "events": {
+    "count": 11,
+    "save_like_events": 0,
+    "browser_actions": "login60 read-only probe 19:29:16 only (run dir exists)"
+  },
+  "mc_final": "VERDICT=GO 8/8 PASS; P1 none; P2 fixed with hash re-registered; P3 dispositions in MC-FINAL-report.md",
+  "decision": "pass",
+  "criteria_signed": "27/27 PASS_DYNAMIC"
+}

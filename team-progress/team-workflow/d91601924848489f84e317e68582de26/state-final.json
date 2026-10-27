@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "repo": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信",
+  "run": "d91601924848489f84e317e68582de26",
+  "seq": 41,
+  "phase": "DONE",
+  "round": 8,
+  "max_round": 16,
+  "sessions": {
+    "B": "c05e555a-0c54-4418-96a2-d92a751dfbc9",
+    "A": "0cbc12a4-0aa0-4f70-acee-a054cbedf5a0"
+  },
+  "runtime_evidence": {
+    "B": {
+      "runtime": "CLAUDE_GLM",
+      "model": "glm-5.3",
+      "transcript": "C:\\Users\\xy198\\.claude-glm\\projects\\D--Downloads-Mc-Claude-Code-Workshop-2026-Auto-Pilot-----\\c05e555a-0c54-4418-96a2-d92a751dfbc9.jsonl"
+    },
+    "A": {
+      "runtime": "CLAUDE_GLM",
+      "model": "glm-5.3",
+      "transcript": "C:\\Users\\xy198\\.claude-glm\\projects\\D--Downloads-Mc-Claude-Code-Workshop-2026-Auto-Pilot-----\\0cbc12a4-0aa0-4f70-acee-a054cbedf5a0.jsonl"
+    }
+  },
+  "failures": {
+    "review|content|source_manifest_coverage|D23": 1,
+    "review|content|active_output_semantics|D22": 1
+  },
+  "history": [
+    {
+      "round": 1,
+      "decision": "rework",
+      "review_sha256": "f1d2aba814ebe867c905b3cbc48cf318c4994a97c2a4c6780c120451a3718353"
+    },
+    {
+      "round": 2,
+      "decision": "rework",
+      "review_sha256": "f08bb07c76a3f582b4d2eaf5e420a121a1fb8db7e84febdc862bed5dcfbf7bcd"
+    },
+    {
+      "round": 3,
+      "decision": "rework",
+      "review_sha256": "a59c73cec4fcdacab4476348a5044c2ecd6a52028391d9f30865a131679e1070"
+    },
+    {
+      "round": 4,
+      "decision": "rework",
+      "review_sha256": "68447684e6aaeea97e935fbaf478e13f339f41c2da91dfc57e913542de05d049"
+    },
+    {
+      "round": 5,
+      "decision": "rework",
+      "review_sha256": "29966bb2b8be88de4d1ec897550de26b853daf4adaad890303136aa9d07147bf"
+    },
+    {
+      "round": 6,
+      "decision": "rework",
+      "review_sha256": "889de565f418d75319180e152e6dcff06b9915efe10fd4ddd9faba8a80e19c47"
+    },
+    {
+      "round": 7,
+      "decision": "rework",
+      "review_sha256": "f40d9c412f42389f6e5245e63cf2c78142c8ac0a33864d36d676f94b8f016f60"
+    },
+    {
+      "round": 8,
+      "decision": "pass",
+      "review_sha256": "cf9957d574ceeec11930d22095a92500bd2c96681caa0fb4750ed5c21128ae4f"
+    }
+  ],
+  "stop_requested": false,
+  "authorization": {
+    "B": "/team-workflow run",
+    "created": "2026-10-26T09:52:08+08:00",
+    "A": "/team-workflow review"
+  },
+  "source_id": "src-82e4775e",
+  "source_sha256": "82e4775ed8f1d61bf51e9a68a0d3cfea470e029a48ff7f6b57a488ce54f159db",
+  "team_run": "20261026-192005-82e4775e",
+  "pending_old": {
+    "team-task.md": "6300a59296b76f1d4ad32c1d621d889ba177507902da259be0956d290e11ce50",
+    "team-progress.md": "04b1ec464a4c674fa51cc41813201e817a480168fb58be48c0bc11158fcf157e"
+  },
+  "updated": "2026-10-26T22:59:16+08:00",
+  "entered": true,
+  "baseline": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\2026-10-26 真实公出案例独立解析与OA填写施工合同-冻结V3.md",
+  "baseline_sha256": "d437988d7b2f29b7c8dd79cc1e8892f23e4ba2567a8932925cac36f5c977ef0d",
+  "criteria_sha256": "ad4b2f31a84ca6ef3ad4a3f7dd4cc38c50a709d7a24cfef8f0fd146c2a3f6456",
+  "handoff_sha256": "7a305f51f54e2c989aa323adad483ba659d7b90d11cdf06c2bca7413878b9e51",
+  "last_live": {
+    "team-task.md": "ea4ab277ae2e7024178349beec098b2272a76169cc500246ec0d7ce421f854d0",
+    "team-progress.md": "566f9e270249cd79d138aab377802826226ac20016fa595e16850b38f5a77394"
+  }
+}

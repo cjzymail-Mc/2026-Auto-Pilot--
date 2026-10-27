@@ -1,0 +1,38 @@
+{
+  "purpose": "A round-2 independent verification machine record",
+  "workflow_run": "d91601924848489f84e317e68582de26",
+  "round": 2,
+  "reviewer_session": "0cbc12a4-0aa0-4f70-acee-a054cbedf5a0",
+  "checked_at": "2026-10-26T13:05:00+08:00",
+  "baseline_sha256_recheck": { "match": true },
+  "handoff_artifacts_recheck": { "artifacts_total": 21, "mismatches": 0 },
+  "originals_vs_round1_manifest": { "files": 73, "drift": 0 },
+  "identity_partition": { "pdf_files": 72, "each_exactly_one_identity": true, "identities": { "toll_invoice": 27, "fuel_invoice": 5, "summary_by_invoice": 20, "summary_by_trip": "in files layer" } },
+  "independent_recompute": {
+    "T_toll_total": "486.93",
+    "O_fuel_total": "2031.17",
+    "method": "Decimal sum over per-file facts of identity members",
+    "matches_declared": true
+  },
+  "independent_pdf_text_crosscheck": {
+    "library": "fitz (different from B's extraction path)",
+    "files": ["0825/0825厦门到晋江发票.pdf", "0906/0905晋江到厦门发票1.pdf", "0917/0917晋江到厦门发票1.pdf", "1210/1210晋江-厦门1 (2).pdf", "油票/油票1.pdf", "油票/油票3.pdf", "0825/0825通行费电子票据汇总单(票据).pdf", "0928/0928通行费电子票据汇总单(行程).pdf"],
+    "fact_values_missing_in_pdf_text": 0
+  },
+  "independent_summary_crosscheck": { "by_invoice_summaries": 20, "declared_equals_referenced_sum": 20, "mismatches": 0 },
+  "consistency_file": { "checks": 97, "cn_small": "72/72", "ex_tax_close": "25/25", "mismatches": [] },
+  "excel_independent_read": { "sheet": "汇总", "sum_km": "1438", "sum_subsidy": "1438", "toll_column_nonnull": 0 },
+  "d22_fix": {
+    "build": "materials-v3r02-20261026-121653",
+    "missing_real_inputs": ["exact_history_template_number"],
+    "layers": "real_input_layers missing/supplied/waived (verify_bpm_build.py:42-59)",
+    "new_tests": 5, "unittest_total": "287 OK (skipped=4)",
+    "manifest_entries": 61
+  },
+  "carryover": {
+    "o2o4_required_observations": "backfilled OBSERVED",
+    "errata_in_ledger": 1,
+    "template_gap": "PENDING_HUMAN_NONBLOCKING maintained"
+  },
+  "git": { "head": "9299545", "new_commits": 0, "staged_files": 0, "credential_values_in_artifacts": false }
+}

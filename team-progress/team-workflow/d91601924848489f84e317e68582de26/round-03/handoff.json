@@ -1,0 +1,56 @@
+{
+  "outcome": "complete",
+  "summary": "V3 round 3 完成：CASE-02 范围裁定+副本回填+可靠重算——20/20 行↔27/27 唯一通行费恰一次分配（主键=票面 travel_date+行方向；0917 返程同安站差异/0906 票面 09-05/电车 0.15 档冲突如实登记不阻断），COM 副本（run 目录 12月-自驾公出公里数统计表-已核对.xlsx）H4..H23 逐票回填+I4..I23 补 =G+H 公式+I24 SUM 沿用（列位纠偏：实物 H=过路费，任务文'G 列'系字母口径差；F/G/J/公里零触碰），新 Excel 进程重开实测 I24=1924.93=独立 Decimal 逐行+总额复算 mismatches=0，73 件原件事后零漂移（副本另计），cell 级变更清单；K=1438 M=1438.00 T=486.93 R=1924.93。CASE-04 覆盖模型五处分离——bpm_coverage.py（fuel_pool_strict_surplus：F>O+T 严格门槛、油票覆盖池不入行、富余不加报、CoverageError fail-closed）+FACT_KINDS coverage_evaluation 一行（reconcile 通用语义零改动，经终审字节级证明）+schema 可选 coverage 块（三类既有计划实测向后兼容）+validate_plan COVERAGE_GATE_BLOCKED+evaluate_coverage 独立核验+run 双报告；21 反例测试（F>R/F=R/F<R/±0.01 边界、富余不改 R、重复/未分配/油票入行/范围重叠拒绝、通用闭合零放宽回归）；全量 308 OK(skipped=4)+唯一构建 materials-v3r03-20261026-131656 OFFLINE_PASS（manifest 63 键）；真例 R=1924.93 F=2518.10 margin=593.17 门槛 PASS（K/单价/M/T/R/O/F 全带来源可复推）。fresh ENHANCED_FINAL VERDICT=GO/HASH_VALIDITY=VALID/UNVERIFIED_SCOPE=NONE（八面+§6 CHECKS 全过，含副本全 cell diff==变更清单、evaluate_coverage 独立重算==报告、六阳性对照）；四 FINDINGS 处置：P1 .gitignore 经三方证据澄清非本轮 B 写（启动前快照 M 态+round-2 终审 mtime 10-24+B 零写调用，errata 登记不作追认先例）、73/74 口径 live 件已改+errata、schema 字节基线与 capability 子集 299≠308 入下轮观察清单；条件②A 侧 finish 后机械 hash-recheck 终稿。台账 V3-R03（rounds 13/errata 3/observations 2）。零浏览器业务动作；失败字典 {D23:1, D22:1} 原样带入。尚存：CASE-03 公出单模块逐票查证（下轮）；模板身份缺口 PENDING_HUMAN_NONBLOCKING（CASE-05/06 前须闭合）。",
+  "artifacts": {
+    "bpm_coverage.py": "27863654a3459e21af73b39271fcde95e3c25aff2f8b5761cc76cf8342cbcff2",
+    "bpm_facts.py": "b395207fb4ec325ecc3918b0599f68417b44ee9309443783d97450d85379ef35",
+    "bpm_plan.py": "9a9249595acd2f4590440ef6799241bdef3bd206d7a961c0a8526bf036385798",
+    "automation/fill-plan.schema.json": "ba7b065f9b6696333d72adff31e6d5c87f218c3a938d474e1232343c6ca94fd9",
+    "tests/test_bpm_coverage.py": "3d03bc44c01f6877b33aa77b54a03869cec2514544c7ac1de99388d29968de1d",
+    "automation/runs/20261026-131000-v3r03-case02/case02_stage_a.py": "fe2512630cc96188bb90bdbcb2eeb85a21de18bd5147914a047c1abd1d78902a",
+    "automation/runs/20261026-131000-v3r03-case02/case02_stage_b.py": "556ccb528a39dfd8d0d96f8b07a756452cca766596ce28578378d511808b1e8d",
+    "automation/runs/20261026-131000-v3r03-case02/case02_stage_c.py": "c37aa621084f749e6fa14bbc2ca39d8a08de9dd361e3de8990c8c268405404c8",
+    "automation/runs/20261026-131000-v3r03-case02/case02_stage_d.py": "7b2a42147a563c31d5e6c64724a97e1218d1b0dc5612b68a1b2ae0e0e962a061",
+    "automation/runs/20261026-131000-v3r03-case02/case02-mapping.json": "a899944ea27c16fb4b9e3b62738ceb2062581fa8df3cd8f64c567015456e79a3",
+    "automation/runs/20261026-131000-v3r03-case02/case02-backfill.json": "ba9e674050bf9e578439efaf90179c982a99cbfcc6150ded7e29bc2bdcacc25b",
+    "automation/runs/20261026-131000-v3r03-case02/case02-reopen-verify.json": "cccd3d8124b1d9405c7c44e6af2b35fecf985efffeab964e0831e015da14c0d4",
+    "automation/runs/20261026-131000-v3r03-case02/case02-coverage.json": "09c26a5ee5989f66471812095b2bb7a1c66eae7982b315c1c09508a6a6c60e35",
+    "automation/runs/20261026-131000-v3r03-case02/12月-自驾公出公里数统计表-已核对.xlsx": "f4fa1d1c4e82beac75740256f590b13aff3eb57ae75c033f185a904ef46f1b15",
+    "automation/runs/20261026-131000-v3r03-case02/CASE-02-report.md": "60ec7bef282247322ee9e1351741992d199aaf5d999d77f08c7660dc2f7af5b2",
+    "automation/runs/20261026-131000-v3r03-case02/CASE-02-04-report.md": "7419ab8a01ddd7cc54514a1610b18c79f1ce088804e82214ed431cdca2bcece9",
+    "automation/runs/20261026-131000-v3r03-case02/unittest-discover.log": "4ed98bcc12fe643f8bbf92b169fdb52f8562e72645b7c3eb5e14b3a83752a4ae",
+    "automation/offline-verify/materials-v3r03-20261026-131656/build_result.json": "f65cd1e266ce47f75d8fdcc66e3cb455e525e72915ec25e7a88db8f508fd4914",
+    "automation/offline-verify/materials-v3r03-20261026-131656/source_manifest.json": "b04114b5a0b9f74cd18e2501723d4fdfc8665ac187d5b1a937ea0b11c6aaaba8",
+    "automation/template-materials-program/progress.json": "c2a19cd4697521b4b516d64e07af9d16e7528daaf3dd242409affda01c3dc3ae",
+    "automation/template-materials-program/notes.md": "225d69f3beebb5be4a3510af9f6c4d8c4efe43bb8c3cd48286ed72d531ef998c",
+    "team-progress.md": "30b3789d3788c88373e98cd7eadfb85c989c5c4d8aaaecc976b0324acf010d0d"
+  },
+  "evidence": [
+    "automation/runs/20261026-131000-v3r03-case02/case02-mapping.json",
+    "automation/runs/20261026-131000-v3r03-case02/case02-backfill.json",
+    "automation/runs/20261026-131000-v3r03-case02/case02-reopen-verify.json",
+    "automation/runs/20261026-131000-v3r03-case02/case02-coverage.json",
+    "automation/runs/20261026-131000-v3r03-case02/CASE-02-report.md",
+    "automation/runs/20261026-131000-v3r03-case02/CASE-02-04-report.md",
+    "automation/runs/20261026-131000-v3r03-case02/unittest-discover.log",
+    "automation/offline-verify/materials-v3r03-20261026-131656/build_result.json",
+    "automation/offline-verify/materials-v3r03-20261026-131656/source_manifest.json",
+    "team-progress.md"
+  ],
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1,
+    "review|content|active_output_semantics|D22": 1
+  },
+  "evidence_hashes": {
+    "automation\\runs\\20261026-131000-v3r03-case02\\case02-mapping.json": "a899944ea27c16fb4b9e3b62738ceb2062581fa8df3cd8f64c567015456e79a3",
+    "automation\\runs\\20261026-131000-v3r03-case02\\case02-backfill.json": "ba9e674050bf9e578439efaf90179c982a99cbfcc6150ded7e29bc2bdcacc25b",
+    "automation\\runs\\20261026-131000-v3r03-case02\\case02-reopen-verify.json": "cccd3d8124b1d9405c7c44e6af2b35fecf985efffeab964e0831e015da14c0d4",
+    "automation\\runs\\20261026-131000-v3r03-case02\\case02-coverage.json": "09c26a5ee5989f66471812095b2bb7a1c66eae7982b315c1c09508a6a6c60e35",
+    "automation\\runs\\20261026-131000-v3r03-case02\\CASE-02-report.md": "60ec7bef282247322ee9e1351741992d199aaf5d999d77f08c7660dc2f7af5b2",
+    "automation\\runs\\20261026-131000-v3r03-case02\\CASE-02-04-report.md": "7419ab8a01ddd7cc54514a1610b18c79f1ce088804e82214ed431cdca2bcece9",
+    "automation\\runs\\20261026-131000-v3r03-case02\\unittest-discover.log": "4ed98bcc12fe643f8bbf92b169fdb52f8562e72645b7c3eb5e14b3a83752a4ae",
+    "automation\\offline-verify\\materials-v3r03-20261026-131656\\build_result.json": "f65cd1e266ce47f75d8fdcc66e3cb455e525e72915ec25e7a88db8f508fd4914",
+    "automation\\offline-verify\\materials-v3r03-20261026-131656\\source_manifest.json": "b04114b5a0b9f74cd18e2501723d4fdfc8665ac187d5b1a937ea0b11c6aaaba8",
+    "team-progress.md": "30b3789d3788c88373e98cd7eadfb85c989c5c4d8aaaecc976b0324acf010d0d"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": {
+    "original_root_files_archived_byte_for_byte": true,
+    "protected_1625_files_unchanged": true,
+    "all_seven_old_active_files_absent": true,
+    "original_phase_not_falsified": true,
+    "failure_counts_preserved": true,
+    "original_helper_unchanged": true,
+    "original_prepared_task_gate_accepts_fresh_task": true,
+    "profile_lock_unchanged": true,
+    "current_handoff_in_agents": true,
+    "maintenance_script_syntax": true
+  },
+  "changed_protected_files": [],
+  "maintenance_script_sha256": "48ee04b13beae2d0818fbd086b5ae9992a9bec743bcd064a9479d3ff40cf8d5a",
+  "recovery_result_sha256": "f0290af12c3d608ce4558311722e77e81f6bd5f2ef6ea33f14517da6f2499c79",
+  "business_or_new_workflow_started": false
+}

@@ -1,0 +1,45 @@
+{
+  "outcome": "complete",
+  "summary": "V3 round 5 完成：证据卫生修复轮（零 OA 浏览器/零业务写入/零占位/不进 CASE-05..08）。O1 wide-query-manifest 5 页加 sha256_file（==attempt_007 证据文件字节，终审独立复算 5/5+logical 公式重导阳性对照 5/5）+顶层 hash_semantics（原 sha256 保留=logical 口径）；根因=run 内 case03_probe._drain_capture 紧凑串计哈希 vs 落盘 indent=1，共享探针无缺陷，防复发规范新增 .claude/skills/bpm-fill-run/references/evidence-hash-semantics.md（附双日期口径+DOM 噪声未来口径）。O2 candidates3e/actual_trip_matches 各加 date_field_semantics（matched=实际公出时间/排除块=自然区间，12 张 MATCHED 等价，12025095297 分歧示例）。O3 12 条 matched_doc 逐单回读 api-detail 原始 body 加 applicant=陈晶/applicant_user_id=116070053（终审 12/12 复核）；ui_text 统一 attempt_011/evidence/ 前缀；CASE-03-report 逐单表加申请人列（8 列）。final-artifact-hashes 同步（7 键==盘面+补登 2 件+revision）。观察项闭环：active_run_profile 刷新 round5 现值；schema 字节基线 materials-v3r05-20261026-162500/fill-plan.schema.json.v3r05-baseline.bak（前后 ba7b065f… 一致）；verify_bpm_build pattern test_bpm_*.py→test_*.py（299→308 全量等价，终审亲跑复现 308 OK skipped=4）；test_bpm_round10_sync docstring 按 errata[0] 订正；round-1 source.md 属性名与 detail3d 文本噪声=登记不改（冻结/不可变）。触及测试/skill references→全量 unittest 308 OK+唯一新构建 materials-v3r05-20261026-162500 OFFLINE_PASS（probe-selftest exit 0）。73 原件第 5 轮零漂移（73/73+终审抽验 3/3）；attempt_010 作废件 26 文件原样（终审抽查签名在）。before/after 对照表 revision-hashes.json（before=round-4 finish 归档 handoff 权威值，抗中断 TOCTOU；修复脚本首跑中断后幂等恢复）。台账 progress.json V3-R05（rounds 15，before/after 指针）+observations 闭环为 3 条保留项+模板缺口 PENDING_HUMAN_NONBLOCKING（等用户完整模板单号后进 CASE-05）。mc-expert ENHANCED_FINAL：首次 429 截断→恢复同代理（上下文保留）→VERDICT=GO（七项+八面全 PASS/HASH VALID/UNVERIFIED_SCOPE=NONE）；P2-1 终态哈希本 handoff 绑定（events.jsonl 19 条终态、team-progress.md 签署后终态），P2-2/P2-3 入下轮输入。失败字典 {D23:1, D22:1} 原样带入。",
+  "artifacts": {
+    "automation/runs/20261026-161500-v3r05-hygiene/case03_hygiene_fix.py": "8c6f38cdaedfd1708be27083d6d426cd63976d767d2acffe5a388c5aee249264",
+    "automation/runs/20261026-161500-v3r05-hygiene/revision-hashes.json": "69c8700cd3d70de94a4fb310982a8d6c32b99827f36992586c19e17c69918a2a",
+    "automation/runs/20261026-161500-v3r05-hygiene/events.jsonl": "2378eedf88f76c3bfa2c4bb3fba984e76caa055df4fd14a8c075a62f31992890",
+    "automation/runs/20261026-143340-v3r04-case03/wide-query-manifest.json": "dc7f5c324d97181380cd7c809793331937036e25d4d207db260d233b2464b16f",
+    "automation/runs/20261026-143340-v3r04-case03/candidates3e-manifest.json": "6893df02fb811cd8e2753cffcd41ba0736a0b99e1c071fe70e0f58a896e0b68b",
+    "automation/runs/20261026-143340-v3r04-case03/actual_trip_matches.json": "7da036aabed9b56c13a5801ad521f1d7c9e8db3583a5dc0e3c5aa8c538cec687",
+    "automation/runs/20261026-143340-v3r04-case03/final-artifact-hashes.json": "e8d46140294b543ac167813809b0054b1c78938dc9442e455123ee7fa790d28a",
+    "automation/runs/20261026-143340-v3r04-case03/CASE-03-report.md": "214dca93d64275a8a5a0c6d39904f2ac792f3b22bf65ba19afb8bf5f25f0db1c",
+    ".claude/skills/bpm-fill-run/references/evidence-hash-semantics.md": "9fdc31dde0d367c6dc89ebc734134c707f5ff49abae16c91be82c4118a77e2f1",
+    "tests/test_bpm_round10_sync.py": "349597aa7a1824e7641f2c8014289808f5cf254d235a45d4c42e8f34f0056272",
+    "verify_bpm_build.py": "96fa2e912026400cfee13097f5d836a97965b55b77e28bf123bc4f971c428458",
+    "automation/offline-verify/materials-v3r05-20261026-162500/build_result.json": "46dbe4e8ab5befcc1bc1257da4111a43cf6c8c1bc5a61149d39983435e5bf32b",
+    "automation/offline-verify/materials-v3r05-20261026-162500/schema-baseline.json": "0874f74ddff50345440adcaf2a94fb1582938254a4e6ca40bdc74bc0c706e5e2",
+    "automation/template-materials-program/progress.json": "3aec19ff8bd8e66645a343dbb374067a8ff65d15e101b677090f1fb259d0459c",
+    "team-progress.md": "2f1e9d42f3291140b96adc3d6149df14882f5dd1bfcb27f7849c66bf86abb403"
+  },
+  "evidence": [
+    "automation/runs/20261026-161500-v3r05-hygiene/revision-hashes.json",
+    "automation/runs/20261026-161500-v3r05-hygiene/events.jsonl",
+    "automation/runs/20261026-143340-v3r04-case03/final-artifact-hashes.json",
+    "automation/runs/20261026-143340-v3r04-case03/actual_trip_matches.json",
+    "automation/offline-verify/materials-v3r05-20261026-162500/build_result.json",
+    "automation/offline-verify/materials-v3r05-20261026-162500/schema-baseline.json",
+    "automation/template-materials-program/progress.json",
+    "team-progress.md"
+  ],
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1,
+    "review|content|active_output_semantics|D22": 1
+  },
+  "evidence_hashes": {
+    "automation\\runs\\20261026-161500-v3r05-hygiene\\revision-hashes.json": "69c8700cd3d70de94a4fb310982a8d6c32b99827f36992586c19e17c69918a2a",
+    "automation\\runs\\20261026-161500-v3r05-hygiene\\events.jsonl": "2378eedf88f76c3bfa2c4bb3fba984e76caa055df4fd14a8c075a62f31992890",
+    "automation\\runs\\20261026-143340-v3r04-case03\\final-artifact-hashes.json": "e8d46140294b543ac167813809b0054b1c78938dc9442e455123ee7fa790d28a",
+    "automation\\runs\\20261026-143340-v3r04-case03\\actual_trip_matches.json": "7da036aabed9b56c13a5801ad521f1d7c9e8db3583a5dc0e3c5aa8c538cec687",
+    "automation\\offline-verify\\materials-v3r05-20261026-162500\\build_result.json": "46dbe4e8ab5befcc1bc1257da4111a43cf6c8c1bc5a61149d39983435e5bf32b",
+    "automation\\offline-verify\\materials-v3r05-20261026-162500\\schema-baseline.json": "0874f74ddff50345440adcaf2a94fb1582938254a4e6ca40bdc74bc0c706e5e2",
+    "automation\\template-materials-program\\progress.json": "3aec19ff8bd8e66645a343dbb374067a8ff65d15e101b677090f1fb259d0459c",
+    "team-progress.md": "2f1e9d42f3291140b96adc3d6149df14882f5dd1bfcb27f7849c66bf86abb403"
+  }
+}

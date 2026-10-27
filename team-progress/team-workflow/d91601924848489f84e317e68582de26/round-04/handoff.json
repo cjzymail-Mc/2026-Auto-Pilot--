@@ -1,0 +1,44 @@
+{
+  "outcome": "complete",
+  "summary": "V3 round 4 完成：CASE-03 公出单模块逐票查证（fill_only 零写入/零占位）。真实模块 /oa/workouts 定向宽窗查询（申请+制单日期 2025-01-01..2026-12-31，制单人清空为全组织 CreatedPath=\"/\" 逐页核实，5 页 96 单+截图+DOM 行）；陈晶申请人 13 单详情双通道采集（观测只读 GET /WorkOut/<uuid32> 全 200 且 body.bizNumber 互证 + 观测查看路由页 /oa/workout?type=view&id= 截图/文本，21 行明细含行级公出人员）；缺日全组织同窗候选 8 单排除证据（appliedAt∈[D,D+6]，行级公出人员均不含陈晶）。27 张去重通行费逐票 actual_trip_matches（机器+人读双版本）：12 票同日陈晶单 MATCHED（Σ221.02；5 单=12025085485×2/12025092237×4/12025105858×2/12025115547×2/12025121473×2，含 uuid/行程/reimed/证据 sha256）+15 票 NO_MATCH 如实缺口（Σ265.91；5 日 09-04/09-17/09-28/11-24/12-10，附本人 13 单行级反证+同事单排除依据）；三向复算全过（票集 27 恒等/Σ=486.93 Decimal/逐单票数与 Excel 行 22-23,18-19,12-13,10-11,6-7 与 case02-mapping 全等）；0906 目录名 vs 0905 票面日按合同口径取票面。attempt_010 api-fallback-* 因 uuid 替换缺陷（36 位正则 vs 32 位无杠实形）整体作废并登记 invalid_prior_evidence，以 attempt_011/012 替代。纯查证轮仓库源码/schema 零改动→全量 unittest+offline-verify 沿用 V3-R03（308 OK/materials-v3r03-20261026-131656 OFFLINE_PASS，合同第 5 条明示）。fresh ENHANCED_FINAL VERDICT=GO（HASH VALID/UNVERIFIED_SCOPE=NONE/八面承重全过，含 NO_MATCH 行级反证、候选集未静默收窄、哈希链、红线抽查 events 215 条全只读+199 份 API 捕获零写入形态+.pw-profile 0 命中）；P2×3（active_run_profile 旧快照/ui_text 裸文件名/文本噪声）登记 observations_next_round 不阻塞。台账 progress.json V3-R04 + errata 第 4 行（.gitignore 归属订正：A 侧 13:15:01 按用户明确要求写入，非 B 写入；.local-session 行结论不变）。失败字典 {D23:1, D22:1} 原样带入。尚存：模板身份缺口 PENDING_HUMAN_NONBLOCKING（CASE-05/06 前须闭合）。",
+  "artifacts": {
+    "automation/runs/20261026-143340-v3r04-case03/case03_probe.py": "3727e4929e6c2e7d5c2e0333f8507ff9ed4b014624d540b5d8fd69cea57a94ac",
+    "automation/runs/20261026-143340-v3r04-case03/case03_stage2b_full.py": "1bed9769e60bd6a9272b46209cb25bc7923bb3af0ec7243fd5df35309b67ad25",
+    "automation/runs/20261026-143340-v3r04-case03/case03_stage3d_details.py": "c1a52ae5b75c76f167d2f48d67cc9e980adab9b32da1eabd63f3dce7747d0603",
+    "automation/runs/20261026-143340-v3r04-case03/case03_stage3e_candidates.py": "e6248ec6e768b47daea45b072ad056cd3facb0a8ece466b73ac489ffa09af0ff",
+    "automation/runs/20261026-143340-v3r04-case03/case03_stage4_match.py": "57e368dcc177a883d8b6897bf89ed3767cb1d4433820a2df0c471b71f13d23a7",
+    "automation/runs/20261026-143340-v3r04-case03/chen-docs.json": "43da29d997a50d01691df31f66986f226073b0828ae1eb240c0ffcda8fe3da11",
+    "automation/runs/20261026-143340-v3r04-case03/wide-query-manifest.json": "d6936fcc46ee98692d459d933e0b0e9ff679496ae95907c554e21c037898483a",
+    "automation/runs/20261026-143340-v3r04-case03/details3d-manifest.json": "710fa4c827a231cc1eb293d25612d67d6023a08c44c1cd3084c5aea9916f588d",
+    "automation/runs/20261026-143340-v3r04-case03/candidates3e-manifest.json": "d1c6dc6f776d84674fc636ebca6eeaf1baa68c53b249c8b87151553a8bfb1757",
+    "automation/runs/20261026-143340-v3r04-case03/actual_trip_matches.json": "3066f5fc82e4b286f39992e0eb5f96e8ebd401a3b3bfeb58a53a47a44dee45b2",
+    "automation/runs/20261026-143340-v3r04-case03/CASE-03-report.md": "d857ba1d986ee62d0726d1e7a4f3114919f51b8e9bf34d8be575d44ca3f1b98c",
+    "automation/runs/20261026-143340-v3r04-case03/final-artifact-hashes.json": "2dc25ce547d687908e0610710b92257e621e6e5451c5109fe9cf7a4856d314c6",
+    "automation/template-materials-program/progress.json": "9868e29923a7b38779836194da9cf98d634f203fc2bea2c5958af855b19d929a",
+    "team-progress.md": "10371a50461a86a9b084b74f842f1a4691167f46917b4045081bf235094b5018"
+  },
+  "evidence": [
+    "automation/runs/20261026-143340-v3r04-case03/actual_trip_matches.json",
+    "automation/runs/20261026-143340-v3r04-case03/CASE-03-report.md",
+    "automation/runs/20261026-143340-v3r04-case03/details3d-manifest.json",
+    "automation/runs/20261026-143340-v3r04-case03/candidates3e-manifest.json",
+    "automation/runs/20261026-143340-v3r04-case03/chen-docs.json",
+    "automation/runs/20261026-143340-v3r04-case03/final-artifact-hashes.json",
+    "automation/template-materials-program/progress.json",
+    "team-progress.md"
+  ],
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1,
+    "review|content|active_output_semantics|D22": 1
+  },
+  "evidence_hashes": {
+    "automation\\runs\\20261026-143340-v3r04-case03\\actual_trip_matches.json": "3066f5fc82e4b286f39992e0eb5f96e8ebd401a3b3bfeb58a53a47a44dee45b2",
+    "automation\\runs\\20261026-143340-v3r04-case03\\CASE-03-report.md": "d857ba1d986ee62d0726d1e7a4f3114919f51b8e9bf34d8be575d44ca3f1b98c",
+    "automation\\runs\\20261026-143340-v3r04-case03\\details3d-manifest.json": "710fa4c827a231cc1eb293d25612d67d6023a08c44c1cd3084c5aea9916f588d",
+    "automation\\runs\\20261026-143340-v3r04-case03\\candidates3e-manifest.json": "d1c6dc6f776d84674fc636ebca6eeaf1baa68c53b249c8b87151553a8bfb1757",
+    "automation\\runs\\20261026-143340-v3r04-case03\\chen-docs.json": "43da29d997a50d01691df31f66986f226073b0828ae1eb240c0ffcda8fe3da11",
+    "automation\\runs\\20261026-143340-v3r04-case03\\final-artifact-hashes.json": "2dc25ce547d687908e0610710b92257e621e6e5451c5109fe9cf7a4856d314c6",
+    "automation\\template-materials-program\\progress.json": "9868e29923a7b38779836194da9cf98d634f203fc2bea2c5958af855b19d929a",
+    "team-progress.md": "10371a50461a86a9b084b74f842f1a4691167f46917b4045081bf235094b5018"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "outcome": "complete",
+  "summary": "Round-7（ctr-381e0163，用户 2026-10-24 三点纠偏指令：补真实理解/证明 agent 自驱内部步骤/缺材料不停工）完成四大项：①travel 真实闭环（run 20261024-155625-travelloop，无预制 facts_payload/blueprint）：授权回放材料 rev02（sha a80c424a…，user_request 原话授权+demo_only+not_new_expenses+关联替换逐字授权随件）→agent 自驱库函数链 register_request→resolve_template（census 142146 定向）→agent 提取复核（facts 全 locator+input_hashes）→FactSet→reconcile→复用矩阵→blueprint（identity 三键双源：appliedBy 117070006=template+回放双证；creator 陈晶/运动表现研究部=本轮 blocked_readback 系统观察）→generate_fill_plan v2（87 sources，plan_hash e917a10d…）→test_context(fill_only)→validate_plan 零 issues→execution_ready（validate-only 子进程 exit 0）。真实 Chromium 填写 4 次尝试 2 次可审计 registry 迁移：v1 160024 缺 identity 阻断（blocked_readback 留证，四表全空）→v2 161207 registry FORM_INTENT 门（诚实留档）→bpm_ui.supersede_dead_form_intent 零写迁移→v3 162157 relations/1 EXACT_PICK_MISSING 瞬时失败+写后页失（save_status NOT_ATTEMPTED）→写后未存 rebuild 迁移→v4 163009 SUCCESS_FILL_ONLY（relations 3/costs 6/details 2/banks 1；details=banks=costs=total=633.84 四向闭合；independent_verification ok=true；save_status NOT_ATTEMPTED；终局截图+page_inventory_r7.json）。fill_only 纪律全程未破。②视觉复核（run 20261024-164100-visualreview）：合成两页发票 PDF（票面自明非真实票）→render_to_files 全页渲染 dpi150（页级 sha）→agent 视觉逐页读取 8/8 与 ground truth 全一致→review_pass(verify=agent-visual) 入 manifest→vision_crosscheck+summary；真实差旅发票原件经盘点确认不存在→REAL_TRAVEL_INVOICE_ORIGINALS_ABSENT 缺口如实登记。③五类只读研究（run 20261024-170000-fiveresearch）：CLI 3 次≤5 预算（首发 Decimal 转储缺陷→bpm_template._json_default 修复重试），--login-wait 0+captured_exact_list_identity 锚定；低值办公 15426101596 submitType=02+福利劳保 15426071883 submitType=04 raw 落盘；两份六节研究工件（结构/字段/差异/规则草案/能力清单/类型码证据，五码 08/11/15/02/04 全实测互异）+RESEARCH_SUMMARY；福利劳保 costs 全空→primary=details 佐证；零注册零启用零写页面。④R6-P2：P2-1 skill 轮末快照随 travelloop 落盘（6 文件+index）；P2-2 只读措辞建议记台账。验证：selftest T1-T10 ALL PASS+全量 253/253 OK+verify_bpm_build OFFLINE_PASS（20261024-165048-draft-build，capability 244）。ENHANCED_FINAL fresh mc-expert：PASS_WITH_NOTES/GO_WITH_CHANGES——八项审计全过+CHECKS 八面 7 PASS_DYNAMIC+1 PASS_STATIC+独立重跑 253 OK+哈希全比对 VALID；P1-b 已修（两研究工件 express(15) 证据指针 15426094566(实测=11)→15426082926+15426083536(实测=15)，勘误注+events 留痕，新哈希 a1d88975…/08cb1027…）；**P1-a 待 A/用户追认**：bpm_plan_generate.py（identity 绑定+system_observation→agent_reviewed 拒绝语义）与 bpm_ui.py（supersede_dead_form_intent 零写/写后未存两迁移）不在冻结合同允许写清单——触发真实（v1 identity 阻断+v2 registry 门死锁）、守卫文件零改动、判据未放宽、append-only 全留痕、测试覆盖，但 round 内未走合同增补，需下一轮合同或用户显式追认；后续同类先停-增补-再写。P2 注记下轮建议：execution_ready plan.sha256 字段名歧义/supersede 活页 docstring 收窄/未保存关页服务端无残留待观察补证/travelloop events 字段格式统一。缺口如实：真实发票原件不存在（REAL_TRAVEL_INVOICE_ORIGINALS_ABSENT）；五类编辑器联动+reimItem/budget 枚举未捕获；express/rd 真实闭环未做（下轮入口）。台账 notes.md R7 条目（W06 travel 闭环实况/W07 研究状态）。stage1_browser_probe.py/fill_once.py round-7 零改动（mtime 10:43/12:37 早于 15:21 接棒；git diff 相对 HEAD 为 round-3~6 已文档化未提交改动）。",
+  "artifacts": {
+    "bpm_plan_generate.py": "b74fce5c2e7c5b6e34802ee3ce670354fb786a1d1efa719e31746764605ae1c0",
+    "bpm_ui.py": "398b3d00251fdc459b0e49eede3834aa330e266de86b79d1f8a479466ab18968",
+    "bpm_template.py": "52b59efd1b6530619e74ca5c6f20e2fb93c9c70e4efb2f30b4a6fd7d68b5f14a",
+    "bpm_extraction.py": "55c9c280f4c84742ba19cd64e055738ac8e214b5b2eb323966dfd8442eac78c3",
+    "tests/test_bpm_plan_generate.py": "69b6395bdd0ca5fe377dfdbfcb6dd6fe8f9f9ffd05b1c7a9f0337798ae30d169",
+    "tests/test_bpm_ui.py": "1051e362148e4623ae80d89dac81fd254c30e8e3798a67463576e0769c2f77e6",
+    "tests/test_bpm_template.py": "61a1817e054fa705eb6f19f7d43536746aa44aa3ddd2c6ea5f3ce88bec3c84d6",
+    ".claude/skills/bpm-fill-run/SKILL.md": "4670f110977e6b89306d2b5e5338b95dde8a5b548c7aab842e3a87189fc2adc1",
+    "automation/runs/20261024-155625-travelloop/fill_plan_r7.json": "0cd152a5b517a2750dc82ce90369c3cc8b9da8a549fbad07a999d167e9a97f33",
+    "automation/runs/20261024-155625-travelloop/execution_ready.json": "07501c5bd1a0096d42707c454a95741ce7332824d022c27bacadfe09bc0fc0ba",
+    "automation/runs/20261024-155625-travelloop/page_inventory_r7.json": "0685f9f7df336f2bcf093bd65c1af91f2cbaae607bb4bf8935fc2173a14277f2",
+    "automation/runs/20261024-164100-visualreview/visual_review_summary.json": "e743c982c8fe249cf8c654e38982abfd87859023081f996c71beeb07cb7ad4b0",
+    "automation/runs/20261024-170000-fiveresearch/RESEARCH_SUMMARY.md": "f50d5046b7ff9e7a8c0745c3eb528ac2052d57d5adb14a83e43f1e80fc2f9790",
+    "automation/runs/20261024-170000-fiveresearch/research_dijiazhi_15426101596.md": "a1d889751968f1b6bccaf6c057be056cfd0f51b822a1aea876dbc1a7aba9156d",
+    "automation/runs/20261024-170000-fiveresearch/research_fulilabao_15426071883.md": "08cb10275db4d8e7bdb97ebcfa5ff109f60e2dec206bb5cb9be9da94b2c14d18",
+    "automation/offline-verify/20261024-165048-draft-build/build_result.json": "048e3e01750c0aceea8e26ea690c641a79f2fe38e493e7206fa4a666f7399cf3",
+    "automation/template-materials-program/notes.md": "85f5ada1e55c1802a58674300cf3e19062764b4552b7e98c8501017ca30359a7",
+    "team-progress.md": "726e07e9548e80141a9d606a8df902de5566414f912c1567af3a1570e465d55f",
+    "automation/runs/20261024-163009-3250e7d0/attempt_001/stage1_result.json": "1186e39b3eaa0f1b4ee6e4b9e23853d96301709c227f25d4038975b8ceb0a8bc",
+    "automation/runs/20261024-163009-3250e7d0/attempt_001/evidence/independent_verification.json": "c3eed5ae5ada6d532f2ee4d85fc14a2440dc160d624ba5110a59d8b5d7d40ab0"
+  },
+  "evidence": [
+    "automation/runs/20261024-155625-travelloop/events.jsonl",
+    "automation/runs/20261024-155625-travelloop/chain_driver.py",
+    "automation/runs/20261024-160024-8502f91d/attempt_001/stage1_result.json",
+    "automation/runs/20261024-161207-a630166f/attempt_001/stage1_result.json",
+    "automation/runs/20261024-162157-04150c78/attempt_001/stage1_result.json",
+    "automation/runs/20261024-163009-3250e7d0/attempt_001/evidence/independent_verification.json",
+    "automation/runs/20261024-164100-visualreview/materials/reviewed/vision_crosscheck.json",
+    "automation/runs/20261024-170000-fiveresearch/raw_15426101596_dijiazhi.json",
+    "automation/runs/20261024-170000-fiveresearch/raw_15426071883_fulilabao.json",
+    "automation/runs/20261024-170000-fiveresearch/events.jsonl",
+    "automation/offline-verify/20261024-165048-draft-build/build_result.json",
+    "automation/offline-verify/20261024-165048-draft-build/capability-tests.log",
+    "team-progress.md"
+  ],
+  "pending_ratification": {
+    "P1-a": "bpm_plan_generate.py+bpm_ui.py 写入面超出冻结合同允许清单（触发真实/守卫零改动/全留痕/测试覆盖），需下一轮合同或用户显式追认",
+    "P2_next_round": [
+      "execution_ready plan.sha256 字段名改 plan_hash 或双字段",
+      "supersede 活页检查 docstring 收窄为当前 context",
+      "未保存关页服务端无残留以服务端观察补证",
+      "travelloop events 字段格式与 fill run 统一",
+      "R6-P2-2 只读措辞建议采纳（skill 维护窗口）"
+    ]
+  },
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1
+  },
+  "evidence_hashes": {
+    "automation\\runs\\20261024-155625-travelloop\\events.jsonl": "90a58af360e4920d8712ee8c75126a136718fd5f81a88972a37fe5b5b541a9a4",
+    "automation\\runs\\20261024-155625-travelloop\\chain_driver.py": "8457b9ba9531efcc69a040c6b6938f7583fe2f5a7785f93a2db106c8a8f1713a",
+    "automation\\runs\\20261024-160024-8502f91d\\attempt_001\\stage1_result.json": "57d1668d3935185c06b661535c45e915bcc00e208cbffa1f284f7ee1e61a6ff7",
+    "automation\\runs\\20261024-161207-a630166f\\attempt_001\\stage1_result.json": "99654249f8d7388f7b3bf0143fa10802249d9f6e948bce6b0af839eb517bd32e",
+    "automation\\runs\\20261024-162157-04150c78\\attempt_001\\stage1_result.json": "6e64958923d859eb360c7e990557d1c471a1358fe1feb16689f5efa1c4a1e2d5",
+    "automation\\runs\\20261024-163009-3250e7d0\\attempt_001\\evidence\\independent_verification.json": "c3eed5ae5ada6d532f2ee4d85fc14a2440dc160d624ba5110a59d8b5d7d40ab0",
+    "automation\\runs\\20261024-164100-visualreview\\materials\\reviewed\\vision_crosscheck.json": "8cf55d7c3e47f47ebaab2a8de651d759d1ab3f497c4214ec04f11c5074bd7980",
+    "automation\\runs\\20261024-170000-fiveresearch\\raw_15426101596_dijiazhi.json": "86bf99dea2c0a820d72291d21b6277d4f3d1808dc87d2cf424dd854d9323572c",
+    "automation\\runs\\20261024-170000-fiveresearch\\raw_15426071883_fulilabao.json": "54456f5f808775c5c13b8a67896aaa77f0448a09f40f165418d1c563a61b2c7e",
+    "automation\\runs\\20261024-170000-fiveresearch\\events.jsonl": "46500c32aae5dd7e497dca0fe243fe2bc4bdc2d64e90106ec0030f81abbc45a5",
+    "automation\\offline-verify\\20261024-165048-draft-build\\build_result.json": "048e3e01750c0aceea8e26ea690c641a79f2fe38e493e7206fa4a666f7399cf3",
+    "automation\\offline-verify\\20261024-165048-draft-build\\capability-tests.log": "7b3c57366c75e012161594e1aa1c09b93f2d599c467710e75e9314f2ce4f1d40",
+    "team-progress.md": "726e07e9548e80141a9d606a8df902de5566414f912c1567af3a1570e465d55f"
+  }
+}

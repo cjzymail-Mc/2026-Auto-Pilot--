@@ -1,0 +1,215 @@
+{
+ "baseline": {
+  "sha256": "d437988d7b2f29b7c8dd79cc1e8892f23e4ba2567a8932925cac36f5c977ef0d",
+  "match_frozen": true
+ },
+ "handoff_artifacts": {
+  "total": 14,
+  "mismatches": []
+ },
+ "originals": {
+  "manifest": 73,
+  "live": 73,
+  "drift": [],
+  "extra": []
+ },
+ "atm": {
+  "n": 27,
+  "identities_unique": true,
+  "set_equals_facts_27": true,
+  "amounts_match_facts": true,
+  "file_sha_match_facts": true,
+  "excel_rows_match_mapping": true,
+  "results_binary": true,
+  "matched_sum": "221.02",
+  "no_match_sum": "265.91",
+  "total_sum": "486.93",
+  "sum_is_T_486_93": true,
+  "matched_221_02": true,
+  "no_match_265_91": true,
+  "per_doc_tickets": {
+   "12025085485": 2,
+   "12025092237": 4,
+   "12025105858": 2,
+   "12025115547": 2,
+   "12025121473": 2
+  },
+  "doc_rows": {
+   "12025085485": [
+    22,
+    23
+   ],
+   "12025092237": [
+    18,
+    18,
+    19,
+    19
+   ],
+   "12025105858": [
+    12,
+    13
+   ],
+   "12025115547": [
+    10,
+    11
+   ],
+   "12025121473": [
+    6,
+    7
+   ]
+  },
+  "per_day_recompute_matches_embedded": true,
+  "distinct_excel_rows_20": true,
+  "summary_block_agrees": true,
+  "per_doc_block_agrees": true
+ },
+ "matched_docs": {
+  "chen_doc_fields_agree": true,
+  "api_detail_sameday_chen_row": true
+ },
+ "wide": {
+  "pages_filter_path_ok": true,
+  "rows_total": 96,
+  "unique_biznumbers": true,
+  "applicant_chen_rows": 13,
+  "chen_list_equals_13_docs": true,
+  "manifest_hash_semantics": {
+   "logical_json_match": true,
+   "file_bytes_match": false
+  }
+ },
+ "gap_window": {
+  "candidates_complete_within_stated_window[D,D+6]": true,
+  "per_day_candidate_counts": {
+   "2025-09-04": 2,
+   "2025-09-17": 2,
+   "2025-09-28": 1,
+   "2025-11-24": 1,
+   "2025-12-10": 2
+  }
+ },
+ "no_match_evidence": {
+  "own13_chen_rows_covering_any_gap_day": [],
+  "candidate_raw_recompute_agrees": null,
+  "candidate_breakdown": {
+   "note": "covers_gap_day 语义 = factNature* 自然行程区间（B 单一口径）；12025095297 fact 实际公出仅 09-18，两口径分歧不影响排除结论",
+   "sha256_all_match": true,
+   "bizNumber_all_match": true,
+   "chen_absent_in_all_rows": true,
+   "manifest_agrees_fact_time_semantics": false,
+   "manifest_agrees_nature_span_semantics": true,
+   "per_candidate": [
+    {
+     "biz": "12025091498",
+     "gap": "2025-09-04",
+     "manifest": false,
+     "fact_time": false,
+     "nature_span": false
+    },
+    {
+     "biz": "12025092018",
+     "gap": "2025-09-04",
+     "manifest": true,
+     "fact_time": true,
+     "nature_span": true
+    },
+    {
+     "biz": "12025094906",
+     "gap": "2025-09-17",
+     "manifest": true,
+     "fact_time": true,
+     "nature_span": true
+    },
+    {
+     "biz": "12025095297",
+     "gap": "2025-09-17",
+     "manifest": true,
+     "fact_time": false,
+     "nature_span": true
+    },
+    {
+     "biz": "12025098708",
+     "gap": "2025-09-28",
+     "manifest": true,
+     "fact_time": true,
+     "nature_span": true
+    },
+    {
+     "biz": "12025115994",
+     "gap": "2025-11-24",
+     "manifest": true,
+     "fact_time": true,
+     "nature_span": true
+    },
+    {
+     "biz": "12025122974",
+     "gap": "2025-12-10",
+     "manifest": true,
+     "fact_time": true,
+     "nature_span": true
+    },
+    {
+     "biz": "12025123375",
+     "gap": "2025-12-10",
+     "manifest": true,
+     "fact_time": true,
+     "nature_span": true
+    }
+   ]
+  }
+ },
+ "events": {
+  "count": 215,
+  "http_write_verbs_in_events": [],
+  "fallback_wrong_uuid_events": 12
+ },
+ "api_files": {
+  "('POST', '/affiche/HomeQueryByOption')": 1,
+  "('POST', '/KindlyTips/query')": 34,
+  "('POST', '/WorkOut/query/20/1')": 113,
+  "('POST', '/WorkOut/query/20/2')": 1,
+  "('POST', '/WorkOut/query/20/3')": 1,
+  "('POST', '/WorkOut/query/20/4')": 1,
+  "('POST', '/WorkOut/query/20/5')": 1,
+  "('GET', '/WorkOut/3f260a65f3b748308e88e353ead9e9dc')": 15,
+  "('GET', '/WorkOut/af88230a5c1f4bb69e0e586844a88029')": 2,
+  "('GET', '/WorkOut/f051b11d8cb14b5c8f4bbe243bc77935')": 2,
+  "('GET', '/WorkOut/543f20fd3b2e4052ad1e462dab4e6b2f')": 2,
+  "('GET', '/WorkOut/f394a1f2624248878bbd16a1f824d0e5')": 2,
+  "('GET', '/WorkOut/5acc75eccb2d4f549014162f3d72a80e')": 2,
+  "('GET', '/WorkOut/8c706ecc41264bca9a3882495ac1722c')": 2,
+  "('GET', '/WorkOut/a27112a0a3b04532a4a091e22a92fd79')": 2,
+  "('GET', '/WorkOut/2d838495fe804231b7f7340f54dea597')": 2,
+  "('GET', '/WorkOut/8fea90753f92415b9ff14c0d260dba65')": 2,
+  "('GET', '/WorkOut/d91a5345107049bc9bd36580bb64af7f')": 2,
+  "('GET', '/WorkOut/5527f9e0517e4bcfa3aa3bb7fc01321a')": 2,
+  "('GET', '/WorkOut/ee5483774f3540b78a66ead6d30f22ae')": 2,
+  "('GET', '/WorkOut/673e1743f72b4e4b8a6def58ca3e5955')": 1,
+  "('GET', '/WorkOut/94f8f9da76dc4046940a6294864c6739')": 1,
+  "('GET', '/WorkOut/d9186d5d1f8147209db9902e262be113')": 1,
+  "('GET', '/WorkOut/6e46825db34d41768aa57284d1b3f190')": 1,
+  "('GET', '/WorkOut/fbf995fe72db4b14a46a00735852bd36')": 1,
+  "('GET', '/WorkOut/9de4366410e14b26be9790b2b5c8b88b')": 1,
+  "('GET', '/WorkOut/522cecce78ea4f2dbbee656c7cf99772')": 1,
+  "('GET', '/WorkOut/429045c57c744a16913a93304f658f41')": 1
+ },
+ "source_zero_change_vs_r03": {
+  "checked": 22,
+  "changed": []
+ },
+ "ledger": {
+  "has_V3R04_mentions": 5,
+  "errata_type": "list",
+  "errata_last": "V3-R04 订正 V3-R03 .gitignore 归属：13:15:01 mtime 变化系 A 侧 2026-10-26 13:15:01 按用户明确要求写入（非 B 写入，也非无来源变化）；其中 automation/.local-session/ 行确系工作流启动前遗留，V3-R03 原结论该部分不变",
+  "errata_gitignore_entries": [
+   "V3-R03 .gitignore 越面疑云澄清：两行防护性 ignore（automation/.local-session/ 与 .claude/settings.local.json）内容早于本工作流（工作流启动前 gitStatus 快照即 M 态；round-2 终审实测 mtime=10-24）；round-3 窗口 13:15:01 mtime 变化无内容差异（B 零写调用），终审 P1 按证据澄清为非本轮写入，不作追认先例",
+   "V3-R04 订正 V3-R03 .gitignore 归属：13:15:01 mtime 变化系 A 侧 2026-10-26 13:15:01 按用户明确要求写入（非 B 写入，也非无来源变化）；其中 automation/.local-session/ 行确系工作流启动前遗留，V3-R03 原结论该部分不变"
+  ]
+ },
+ "separation": {
+  "oa_test_relations_key": false,
+  "test_placeholder_key": false,
+  "placeholder_word_only_in_separation_clauses": true
+ },
+ "credential_grep_hits": []
+}

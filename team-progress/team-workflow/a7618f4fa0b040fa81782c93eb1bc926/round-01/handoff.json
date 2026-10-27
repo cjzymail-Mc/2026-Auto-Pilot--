@@ -1,0 +1,27 @@
+{
+  "outcome": "complete",
+  "summary": "Round-1（ctr-4199eb39，src-35ce11c1）完成：W00 基线复核+总台账建立（baseline-review-20261024.md：成立项 A1-A8/差距项 B1-B8，文件+sha256 绑定；progress.json 唯一权威台账）；W02 manifest v2.0 原件/派生双根契约落地（bpm_materials.py：validate_dual_manifest/register_derived/prepare_dual_materials/dual_hash_sets，role 封闭枚举、sources⊆原件、两根互不嵌套、漂移拒绝；bpm_plan.py 4 处版本分流最小接线；fill-plan.schema.json kind 枚举 +agent_reviewed；agent 推断不得伪装 kind=user）。验证全部离线：新契约 7/7、全套 unittest discover 127/127（作者 100.9s/复跑 105.2s，零回归）、verify_bpm_build OFFLINE_PASS（automation/offline-verify/template-materials-20261024-102400/）。ENHANCED_FINAL 两审闭环：GO_WITH_CHANGES（唯一阻断 P1-1=D5 逐文件 sha256 未落盘）→ 修复仅入过程活档 → fresh 单点重审 GO，冻结 8 件哈希零漂移、REQUIREMENTS 未变。D1-D5 全部成立。尚存（后续轮）：W01/W03-W10；缺八类「本次真实原始材料」这一外部输入（不虚构）；P2-1（register_derived 以 manifest_path.parent 解析 derived_root）、P2-2（合同模板统一 discover 命令写法）为下轮顺手项，P2-3（kind=user 正向担保边界）供 W03/W05 知晓。",
+  "artifacts": {
+    "bpm_materials.py": "ac94d926931866a2931a6ae445c5a562e7f95ec0ae7be7fb1c5a1c0e1dfa3920",
+    "bpm_plan.py": "ee3f1ee164486b8a4ee87ef0f0e5cb13c53490da99f66fb4159d4ae834372aa9",
+    "automation/fill-plan.schema.json": "97cdc5e692d1983933fcbd05ad48dfe98c64fc35865943da26371825afb3b4f9",
+    "tests/test_bpm_materials_dual.py": "d64b08d9b76e3e01581dda19982f334f02b76fc2b9cc68ef15547e4f02d25158",
+    "automation/template-materials-program/progress.json": "9616fa25cb617cc32177996f67a8dca6bd4caa352bf6c467e667c4acd47663d9",
+    "automation/template-materials-program/baseline-review-20261024.md": "6f810a45d1555d648a4e07f5d3eeafea7cab02bb87daec40e01e71b69a1fd437",
+    "automation/template-materials-program/notes.md": "2134f5a0fc6246709d19151d00de516b658e8392a383770178c7f5a8c933835e",
+    "automation/offline-verify/template-materials-20261024-102400/build_result.json": "c8d07b2c2b6bfc3a72fbd74a8a8fe1b719af5a61a3a64cc2d4eeaf38b5472946"
+  },
+  "evidence": [
+    "team-progress.md",
+    "automation/offline-verify/template-materials-20261024-102400/build_result.json",
+    "automation/offline-verify/template-materials-20261024-102400/source_manifest.json",
+    "automation/template-materials-program/baseline-review-20261024.md"
+  ],
+  "failure_counts": {},
+  "evidence_hashes": {
+    "team-progress.md": "2ffd4648b9a0b1cea58ff6d13a8895c06305e0fee27fdac4f3b00d97af3b0dff",
+    "automation\\offline-verify\\template-materials-20261024-102400\\build_result.json": "c8d07b2c2b6bfc3a72fbd74a8a8fe1b719af5a61a3a64cc2d4eeaf38b5472946",
+    "automation\\offline-verify\\template-materials-20261024-102400\\source_manifest.json": "adc644c094dc9682a8ca1f4e3227c546b378429f0c9c6378795a7d2a4ca19311",
+    "automation\\template-materials-program\\baseline-review-20261024.md": "6f810a45d1555d648a4e07f5d3eeafea7cab02bb87daec40e01e71b69a1fd437"
+  }
+}

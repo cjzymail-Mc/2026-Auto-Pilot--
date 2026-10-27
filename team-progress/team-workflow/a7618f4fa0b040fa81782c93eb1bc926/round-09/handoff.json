@@ -1,0 +1,90 @@
+{
+  "outcome": "complete",
+  "summary": "Round-9（ctr-15712bcb，任务：02/04 首件放量 config→封闭注册→离线链 + D18 矩阵补行 + D22 方案准备 + mc-expert 三观察处置）四条款全完成：①写授权增补边界执行（本轮零浏览器动作；02/04 仅注册为 offline_modeled_live_pending，未授权真实控件测试、未注册业务填写路径、未在真实 OA 建 02/04 新页）。②02 低值办公/04 福利劳保 首件：automation/document-types/office_supplies.json（02，primary=costs）与 welfare_labor.json（04，costs not_applicable、primary=details、detailrels 零金额 system_field_rules 逐字段实测依据）落盘+各自 notes.md 差异对照与缺口；bpm_types.py 封闭注册扩展两类型（invoice_policy {mode,required,evidence} 形状校验+来源证据）；离线链首件双双 EXECUTION_READY——officeloop（run 20261024-193500-officeloop：42 sources，plan sha 65ef8a98…/plan_hash d426d31c…，details1/costs1/banks3 1234.56 四向闭合，validate-only 子进程 exit 0，browser_launched=false）与 welfareloop（run 20261024-194500-welfareloop：26 sources，plan sha a4c4da99…/plan_hash 246027c4…，details1/costs0 not_applicable 双理由/banks1 2345.67 三方闭合，单层 details=detail 层走 summary_layer:absent 分支，validate-only exit 0）；合成材料明示 synthetic/test_only 只入本 run manifest 不入业务 task-registry；裁决①plan 级 relations 空+材料来源理由（bpm_plan.py 未触碰）；裁决②invoice_policy 本轮声明级通道；单元测试 tests/test_bpm_type_round9.py 14 项（每类 5 实跑≥3：注册身份与模板绑定/7 种负例 config 突变/离线计划零 issues/UNSUPPORTED_RELATION 边界/主表-免票行或空表双理由）。③D18 矩阵补行 4 新测试全绿（tests/test_bpm_extraction.py D18MatrixTests，逐条标注矩阵条目：多页 PDF 逐页锚点跨页 e2e 回锚 page:1/page:2；一页双票钉现行一票一件契约——首匹配单记录、二票值不混入事实/闭合、原文留原始层、显式拒绝/拆分列未授权缺口；Excel 多 sheet/公式取值可重算-gap/汇总明细跨表候选含不匹配 False 如实记/隐藏行筛选态隐藏行金额仍计入 SUM 与明细合计；数值保真三段——前导零+19 位长账号文本原值→FactSet Decimal 0.005 级差额阻断→计划 banks 原样+0.305 拒绝）。④D22 方案 automation/offline-verify/d22-acceptance-plan-20261024-195544/D22_plan.md（S1-S9 范围/入口参数/证据/判定 PASS-FAIL-BLOCKED/6 项入口缺口 G1 链产品化 bpm_chain.py 承 B3、G2 02/04 控件授权、G3 schema enum 同步、G4 一页多票拒绝、G5 用户供料、G6 登录窗口；未实施：bpm_chain.py 不存在）。⑤三观察处置：①chain_segment_start 分段标记落地（segment=既有行数+1 append-only；officeloop 段 1/2/11/19、welfareloop 段 1/4/9，失败段 plan_generation_failed 留痕）；②research events authorization 字样=只读观测 HTTP 头名清单约定写入 full-chain.md（本轮新 events 零 authorization；键名改 observed_request_header_names 待授权改探针）；③no-residue 原始观测/终判布尔分层命名约定（历史 verdict 原样）。验证：全量 273/273 OK（255 基线+14 类型+4 D18；test_bpm_request 注册表断言随授权扩为五类型、census 夹具类别仍 UNSUPPORTED 语义不变）+ verify_bpm_build 唯一 run template-materials-20261024-200500-r9final OFFLINE_PASS + skill 轮末快照 6 文件入 welfareloop（SKILL.md 哈希与 R8 一致 b41e9e4e… 证红线零触碰）。fresh mc-expert ENHANCED_FINAL：PASS + GO（17/17 哈希前后双算 MATCH；独立重跑 273/14/21/9/selftest+双链 validate-only 全部复现 exit 0；四条款/八审计面全 PASS、P0/P1 零、四红线干净）。P2-1 披露精度指正已处置：02/04 config sha 原值补记入 notes.md（audit 后追加段，notes 最终 sha f1eaa161…）+本 handoff artifacts 表，前置披露句超前于事实已由陪审指正并修正；P2-2（D22 真实链 kind=user 严格对应真实供料断言）/P2-3（suggested_command --expect-name 须以 S1 实测值替换，D22 §2 已载）/P2-4（test_context.authorization_path 键名易误读）转下轮。披露：verify_bpm_build.py source_manifest 硬编码旧三类 document-types（不在本轮授权面），02/04 config 未入该 manifest 冻结——绑定经 resolve_type digest（含 config sha）+链产物+notes+本表；manifest 清单同步列下轮授权候选。下轮入口：02/04 真实控件测试授权申请（只读观察 reimItem 02xxx/04xxx 枚举、申请书/福利申请单 picker、跨部门预算选择器，随后业务填写路径注册另行授权）或 D22 实施（G1-G4 入口改动授权）；附属候选 verify_bpm_build manifest 同步/fill-plan.schema.json enum 同步/bpm_extraction 一页多票拒绝；06 会议支出仍无候选单号；用户供料依赖延续（真实发票原件 D4、02/04/06 本次原始材料）。",
+  "artifacts": {
+    "bpm_types.py": "b4355511740b3615b0bf5b0573fd249af7f7f04d9d9b00ee6d148ee1debd0e36",
+    "automation/document-types/office_supplies.json": "e9cd75555a6e54ba9b6dcece18f21bb24797b8397202b2aec6e7e70f7a80e484",
+    "automation/document-types/welfare_labor.json": "347c6c51684c8f6301b34f7c0e929012a24565d20cb7e0183568f59a42e6265c",
+    "automation/document-types/office_supplies.notes.md": "e9f2b1f45536764e6b2e9a67b728f584091185d1e91b7bf9bffa629b0fa0dfae",
+    "automation/document-types/welfare_labor.notes.md": "70239846d8fcfcd7ab2a31babb158ebd67dfffe8773ea7fb6977afa64c4d3a9b",
+    "tests/test_bpm_type_round9.py": "8cbf1c179c36ecca6562e88d7c9d4fb896ee0b3935a7262a763be919ef9da6d6",
+    "tests/test_bpm_extraction.py": "a9f5ba618e032fc67cbd133746d40f3b7ec3fbe34317d56575c57585ab9b3a2b",
+    "tests/test_bpm_request.py": "8fe884f016817467b28de7850635a1a610f52a52d7020a503eb1e9662b92dc97",
+    "automation/runs/20261024-193500-officeloop/originals/synthetic_office_r9.json": "e0f1831f1567613e9c96e6d8b4ea9531b75f4a1849164b4de6b758b5540f4d87",
+    "automation/runs/20261024-193500-officeloop/template_snapshot.json": "49b0cdfa312305a5ca31958627cbfb161d4df4c9b6ffe056c9b1b2fe8a9421cc",
+    "automation/runs/20261024-193500-officeloop/fill_plan_r9.json": "65ef8a9847d73e9689ea507fb871bcc46db0e126af589bfa4ac2ebb5d83edb3a",
+    "automation/runs/20261024-193500-officeloop/execution_ready.json": "cf4ee1af14e30315a1f35e56271bc650708b0869f58ec8efe76956858120c0e4",
+    "automation/runs/20261024-194500-welfareloop/originals/synthetic_welfare_r9.json": "bb02d747bfb8e8b70fa118adad30f572b3260078ff94b3add61efb24d83dabb1",
+    "automation/runs/20261024-194500-welfareloop/template_snapshot.json": "8208a9ed89e504b23a942cb8f2f200cb2df0d00a9ef0ad5d1306d3d31272b177",
+    "automation/runs/20261024-194500-welfareloop/fill_plan_r9.json": "a4c4da997338afbdd855f7b8814b2454e584e320539a5b6f988d153f97ef1d3d",
+    "automation/runs/20261024-194500-welfareloop/execution_ready.json": "d7337d3f0f6ab8979184a02ba393f8dd97ff53655e53d98a67fef39b5a4b40ab",
+    "automation/runs/20261024-194500-welfareloop/skill_snapshot/snapshot_index.json": "bdd983f9a289b2f751cc463efb71de6766ec86dc5a8be547b037e414c866af9f",
+    "automation/offline-verify/d22-acceptance-plan-20261024-195544/D22_plan.md": "8faf823720c59e80b4c12c61a0562f69cc0b45737f7f8d8ef5fd3ec0d138f203",
+    "automation/offline-verify/template-materials-20261024-200500-r9final/build_result.json": "1096181420869ccb4fb31cded5c287651060ed873837501f32307ec37c20869d",
+    ".claude/skills/bpm-fill-run/references/full-chain.md": "072264d47c0a25cde4b8d5001d294d893db8289a9f9d842b8a722c0d5b3714e7",
+    "automation/template-materials-program/notes.md": "f1eaa161262b9eee3ad1db0a657eb96668007dd1b1786d93a41a2c4e3a2d3def"
+  },
+  "evidence": [
+    "automation/runs/20261024-193500-officeloop/events.jsonl",
+    "automation/runs/20261024-193500-officeloop/fill_plan_r9.json",
+    "automation/runs/20261024-193500-officeloop/execution_ready.json",
+    "automation/runs/20261024-194500-welfareloop/events.jsonl",
+    "automation/runs/20261024-194500-welfareloop/fill_plan_r9.json",
+    "automation/runs/20261024-194500-welfareloop/execution_ready.json",
+    "automation/offline-verify/d22-acceptance-plan-20261024-195544/D22_plan.md",
+    "automation/offline-verify/template-materials-20261024-200500-r9final/build_result.json",
+    "automation/runs/20261024-194500-welfareloop/skill_snapshot/snapshot_index.json",
+    "automation/template-materials-program/notes.md",
+    "team-progress.md"
+  ],
+  "evidence_notes": [
+    "officeloop events：02 离线链 EXECUTION_READY，plan_hash d426d31c… 三点一致，分段 1/2/11/19 含失败留痕",
+    "welfareloop events：04 离线链 EXECUTION_READY，plan_hash 246027c4…，分段 1/4/9，costs 空表双理由",
+    "r9final build_result：verify_bpm_build 唯一 run OFFLINE_PASS（selftest 0+capability 264）",
+    "D22_plan.md：新 session 验收方案（范围/入口/证据/判定/6 缺口，未实施）",
+    "skill_snapshot：6 文件，SKILL.md b41e9e4e… 与 R8 一致证红线零触碰",
+    "team-progress.md：关闭态（run_status COMPLETE + 漏斗全✓，sha adafea84…）"
+  ],
+  "audit": {
+    "enhanced_final": "fresh mc-expert ENHANCED_FINAL：PASS + GO（17/17 产物哈希前后双算 MATCH；独立重跑 273/14/21/9 全绿+selftest ALL PASS+双链 validate-only 复现 exit 0；四条款/八审计面全 PASS；P0/P1 零；四红线干净——零保存零浏览器、凭证不入工件、合成材料不入业务 manifest、events append-only）",
+    "findings_disposition": [
+      "P2-1 披露精度（notes/handoff 未含 02/04 config sha）→ 已处置：audit 后 notes.md 追加补记段（config sha 原值+P2-3 注记，最终 sha f1eaa161…）+本 handoff artifacts 表绑定",
+      "P2-2 D22 真实链实施时应加断言 kind=user 严格对应用户真实供料 → 转 D22 实施轮",
+      "P2-3 suggested_command 内嵌合成 --expect-name → D22 §2 已要求以 S1 实测值替换，notes 补记",
+      "P2-4 test_context.authorization_path 键名易误读（实指合成材料原件）→ 低影响，D22 实施轮一并考虑",
+      "KB 补洞建议（repo-map 登记本 repo）→ 属 Mc-Expert-repo 侧维护，不在本轮授权面，留记录"
+    ],
+    "disclosures": [
+      "verify_bpm_build.py source_manifest 硬编码旧三类 document-types（行 22-25，本轮未授权改）：02/04 config 未入该 manifest 冻结，绑定经 resolve_type digest+链产物+notes+handoff；manifest 清单同步列下轮授权候选",
+      "fill-plan.schema.json enum 未含 02/04（未授权面，notes/D22 G3 已登记）",
+      "一页多票显式拒绝/拆分未实现（bpm_extraction.py 未授权；现行一票一件契约已测试钉板，D22 G4）",
+      "06 会议支出研究无候选单号；真实发票原件（D4）与 02/04/06 本次原始材料为用户供料依赖"
+    ]
+  },
+  "pending_ratification": {
+    "P1-a": "已由 round-8 合同 §0 追认关闭；本轮无新增合同外写入（授权面内全部文件零越界，mtime 窗口陪审已核）",
+    "next_round_entry": [
+      "02/04 真实控件测试授权申请：只读观察新页类别联动与选择器（reimItem 02xxx/04xxx 枚举、申请书(34)/福利申请单(74) picker、跨部门预算选择器数据范围），随后业务填写路径注册另行授权——对应 config required_observations",
+      "或 D22 新 session 使用验收实施（G1 链产品化 bpm_chain.py 承 baseline B3、G2 02/04 控件、G3 schema enum 同步、G4 一页多票拒绝的授权面决定）",
+      "附属授权候选：verify_bpm_build.py source_manifest 同步 document-types 清单、fill-plan.schema.json enum 同步五类型、bpm_extraction 一页多票显式拒绝",
+      "06 各项会议支出研究：需新 list 窗口或用户供单号",
+      "用户供料依赖：真实发票原件（D4 视觉复核链路）、02/04/06 本次原始材料"
+    ]
+  },
+  "failure_counts": {
+    "review|content|source_manifest_coverage|D23": 1
+  },
+  "evidence_hashes": {
+    "automation\\runs\\20261024-193500-officeloop\\events.jsonl": "b2fdcad1f55d36d452abddf1931e9bdbaa4e39adc1cee527a23f1b336bce67c4",
+    "automation\\runs\\20261024-193500-officeloop\\fill_plan_r9.json": "65ef8a9847d73e9689ea507fb871bcc46db0e126af589bfa4ac2ebb5d83edb3a",
+    "automation\\runs\\20261024-193500-officeloop\\execution_ready.json": "cf4ee1af14e30315a1f35e56271bc650708b0869f58ec8efe76956858120c0e4",
+    "automation\\runs\\20261024-194500-welfareloop\\events.jsonl": "e72a6f8826b3bc43825ce1a315746b4f1f5e483a4de66bb0a6f690ada8ebf203",
+    "automation\\runs\\20261024-194500-welfareloop\\fill_plan_r9.json": "a4c4da997338afbdd855f7b8814b2454e584e320539a5b6f988d153f97ef1d3d",
+    "automation\\runs\\20261024-194500-welfareloop\\execution_ready.json": "d7337d3f0f6ab8979184a02ba393f8dd97ff53655e53d98a67fef39b5a4b40ab",
+    "automation\\offline-verify\\d22-acceptance-plan-20261024-195544\\D22_plan.md": "8faf823720c59e80b4c12c61a0562f69cc0b45737f7f8d8ef5fd3ec0d138f203",
+    "automation\\offline-verify\\template-materials-20261024-200500-r9final\\build_result.json": "1096181420869ccb4fb31cded5c287651060ed873837501f32307ec37c20869d",
+    "automation\\runs\\20261024-194500-welfareloop\\skill_snapshot\\snapshot_index.json": "bdd983f9a289b2f751cc463efb71de6766ec86dc5a8be547b037e414c866af9f",
+    "automation\\template-materials-program\\notes.md": "f1eaa161262b9eee3ad1db0a657eb96668007dd1b1786d93a41a2c4e3a2d3def",
+    "team-progress.md": "adafea845b5e74e95f01c78366569faabc60a7b0fca40335c81b23ea7ae81084"
+  }
+}

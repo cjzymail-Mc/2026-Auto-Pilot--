@@ -1,0 +1,435 @@
+test_default_still_reports_genuinely_missing_inputs (test_bpm_build_output_semantics.RealInputLayerTests.test_default_still_reports_genuinely_missing_inputs) ... ok
+test_explicit_save_requirement_restores_missing_semantics (test_bpm_build_output_semantics.RealInputLayerTests.test_explicit_save_requirement_restores_missing_semantics) ... ok
+test_fill_only_default_does_not_list_save_instruction_as_missing (test_bpm_build_output_semantics.RealInputLayerTests.test_fill_only_default_does_not_list_save_instruction_as_missing) ... ok
+test_layer_union_is_stable_and_order_preserved (test_bpm_build_output_semantics.RealInputLayerTests.test_layer_union_is_stable_and_order_preserved) ... ok
+test_supplied_materials_dir_moves_directory_out_of_missing (test_bpm_build_output_semantics.RealInputLayerTests.test_supplied_materials_dir_moves_directory_out_of_missing) ... ok
+test_events_segments_and_kind_user_guard (test_bpm_chain.ChainArtifactSchemaTests.test_events_segments_and_kind_user_guard) ... ok
+test_execution_ready_with_operator_note (test_bpm_chain.ChainArtifactSchemaTests.test_execution_ready_with_operator_note) ... ok
+test_plan_schema_and_p2_folds (test_bpm_chain.ChainArtifactSchemaTests.test_plan_schema_and_p2_folds) ... ok
+test_missing_required_argument_is_argparse_error (test_bpm_chain.ChainEntryTests.test_missing_required_argument_is_argparse_error) ... ok
+test_rd_materials_rejected_without_family_builder_and_no_files (test_bpm_chain.ChainEntryTests.test_rd_materials_rejected_without_family_builder_and_no_files) ... ok
+test_broken_closure_leaves_plan_generation_failed_segment (test_bpm_chain.ChainFailureSegmentTests.test_broken_closure_leaves_plan_generation_failed_segment) ... ok
+test_arithmetic_mismatch_rejected (test_bpm_coverage.CoverageBlockTests.test_arithmetic_mismatch_rejected) ... ok
+test_gate_blocked_variants (test_bpm_coverage.CoverageBlockTests.test_gate_blocked_variants) ... ok
+test_unknown_and_missing_keys_rejected (test_bpm_coverage.CoverageBlockTests.test_unknown_and_missing_keys_rejected) ... ok
+test_valid_block_passes (test_bpm_coverage.CoverageBlockTests.test_valid_block_passes) ... ok
+test_wrong_model_rejected (test_bpm_coverage.CoverageBlockTests.test_wrong_model_rejected) ... ok
+test_boundary_one_cent (test_bpm_coverage.EvaluateCoverageTests.test_boundary_one_cent) ... ok
+test_duplicate_allocation_rejected (test_bpm_coverage.EvaluateCoverageTests.test_duplicate_allocation_rejected) ... ok
+test_f_equals_r_blocked (test_bpm_coverage.EvaluateCoverageTests.test_f_equals_r_blocked) ... ok
+test_f_greater_than_r_passes (test_bpm_coverage.EvaluateCoverageTests.test_f_greater_than_r_passes) ... ok
+test_f_less_than_r_blocked (test_bpm_coverage.EvaluateCoverageTests.test_f_less_than_r_blocked) ... ok
+test_fuel_in_row_rejected (test_bpm_coverage.EvaluateCoverageTests.test_fuel_in_row_rejected) ... ok
+test_fuel_surplus_never_raises_r (test_bpm_coverage.EvaluateCoverageTests.test_fuel_surplus_never_raises_r) ... ok
+test_scope_pool_overlap_rejected (test_bpm_coverage.EvaluateCoverageTests.test_scope_pool_overlap_rejected) ... ok
+test_unallocated_toll_rejected (test_bpm_coverage.EvaluateCoverageTests.test_unallocated_toll_rejected) ... ok
+test_generic_allocation_closure_not_relaxed (test_bpm_coverage.FactLayerTests.test_generic_allocation_closure_not_relaxed) ... ok
+test_register_coverage_fact_and_reconcile_untouched (test_bpm_coverage.FactLayerTests.test_register_coverage_fact_and_reconcile_untouched) ... ok
+test_plan_without_coverage_unchanged (test_bpm_coverage.PlanAndSchemaTests.test_plan_without_coverage_unchanged) ... ok
+test_schema_optional_and_strict (test_bpm_coverage.PlanAndSchemaTests.test_schema_optional_and_strict) ... ok
+test_validate_plan_accepts_valid_coverage (test_bpm_coverage.PlanAndSchemaTests.test_validate_plan_accepts_valid_coverage) ... ok
+test_validate_plan_blocks_f_le_r (test_bpm_coverage.PlanAndSchemaTests.test_validate_plan_blocks_f_le_r) ... ok
+test_validate_plan_rejects_unknown_coverage_keys (test_bpm_coverage.PlanAndSchemaTests.test_validate_plan_rejects_unknown_coverage_keys) ... ok
+test_legacy_regression_business_failure_exits_nonzero (test_bpm_dispatch.DispatchTests.test_legacy_regression_business_failure_exits_nonzero) ... ok
+test_restored_form_is_not_the_entry_navigation_target (test_bpm_dispatch.DispatchTests.test_restored_form_is_not_the_entry_navigation_target) ... ok
+test_unsafe_run_and_budget_rejected (test_bpm_dispatch.DispatchTests.test_unsafe_run_and_budget_rejected) ... usage: python.exe -m unittest [-h] [--run RUN] [--doc-id DOC_ID]
+                              [--legacy-regression]
+                              [--resume-attempt RESUME_ATTEMPT] --expect-name
+                              EXPECT_NAME [--tech-budget TECH_BUDGET]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--interactive-pick] [--pick-wait PICK_WAIT]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--login-only | --fill-plan FILL_PLAN]
+python.exe -m unittest: error: run id 必须为仓库 runs 下的简单名称（1–100 个字母、数字、下划线或连字符）
+usage: python.exe -m unittest [-h] [--run RUN] [--doc-id DOC_ID]
+                              [--legacy-regression]
+                              [--resume-attempt RESUME_ATTEMPT] --expect-name
+                              EXPECT_NAME [--tech-budget TECH_BUDGET]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--interactive-pick] [--pick-wait PICK_WAIT]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--login-only | --fill-plan FILL_PLAN]
+python.exe -m unittest: error: wall_cap 必须是有限的非负数（执行预算/墙钟须大于零）
+usage: python.exe -m unittest [-h] [--run RUN] [--doc-id DOC_ID]
+                              [--legacy-regression]
+                              [--resume-attempt RESUME_ATTEMPT] --expect-name
+                              EXPECT_NAME [--tech-budget TECH_BUDGET]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--interactive-pick] [--pick-wait PICK_WAIT]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--login-only | --fill-plan FILL_PLAN]
+python.exe -m unittest: error: keep_open_minutes 必须是有限的非负数（执行预算/墙钟须大于零）
+ok
+test_v1_business_failure_exits_nonzero (test_bpm_dispatch.DispatchTests.test_v1_business_failure_exits_nonzero) ... ok
+test_accounts_and_business_identifiers_keep_exact_characters (test_bpm_display.DisplayNormalizationTests.test_accounts_and_business_identifiers_keep_exact_characters) ... ok
+test_grouped_money_and_count_compare_exactly (test_bpm_display.DisplayNormalizationTests.test_grouped_money_and_count_compare_exactly) ... ok
+test_malformed_grouping_and_nonfinite_values_rejected (test_bpm_display.DisplayNormalizationTests.test_malformed_grouping_and_nonfinite_values_rejected) ... ok
+test_categories_and_filename_is_not_evidence (test_bpm_extraction.ClassificationTests.test_categories_and_filename_is_not_evidence) ... ok
+test_duplicate_detection_is_content_based (test_bpm_extraction.ClassificationTests.test_duplicate_detection_is_content_based) ... ok
+test_csv_positioning_and_precision_loss (test_bpm_extraction.CsvTests.test_csv_positioning_and_precision_loss) ... ok
+test_d18_excel_multisheet_formula_hidden_filter_summary (test_bpm_extraction.D18MatrixTests.test_d18_excel_multisheet_formula_hidden_filter_summary) ... ok
+test_d18_numeric_fidelity_leading_zero_long_account_decimal (test_bpm_extraction.D18MatrixTests.test_d18_numeric_fidelity_leading_zero_long_account_decimal) ... ok
+test_d18_pdf_multipage_page_anchors (test_bpm_extraction.D18MatrixTests.test_d18_pdf_multipage_page_anchors) ... ok
+test_d18_pdf_one_page_two_invoices_pins_single_record_contract (test_bpm_extraction.D18MatrixTests.test_d18_pdf_one_page_two_invoices_pins_single_record_contract) ... ok
+test_agent_visual_review_records_honest_evidence (test_bpm_extraction.ImageChainTests.test_agent_visual_review_records_honest_evidence) ... ok
+test_image_two_layer_pipeline (test_bpm_extraction.ImageChainTests.test_image_two_layer_pipeline) ... ok
+test_review_rejects_value_disagreeing_with_raw_layer (test_bpm_extraction.ImageChainTests.test_review_rejects_value_disagreeing_with_raw_layer) ... ok
+test_ocr_pass_page_numbers_follow_render_pages (test_bpm_extraction.MultiPageRenderTests.test_ocr_pass_page_numbers_follow_render_pages) ... ok
+test_render_original_keeps_first_page_compat (test_bpm_extraction.MultiPageRenderTests.test_render_original_keeps_first_page_compat) ... ok
+test_render_pages_covers_all_pdf_pages (test_bpm_extraction.MultiPageRenderTests.test_render_pages_covers_all_pdf_pages) ... ok
+test_render_to_files_writes_each_page_with_hash (test_bpm_extraction.MultiPageRenderTests.test_render_to_files_writes_each_page_with_hash) ... ok
+test_pdf_amount_mismatch_registers_structured_gap (test_bpm_extraction.PdfChainTests.test_pdf_amount_mismatch_registers_structured_gap) ... ok
+test_pdf_extraction_end_to_end (test_bpm_extraction.PdfChainTests.test_pdf_extraction_end_to_end) ... ok
+test_pdf_lines_carry_page_region_bbox (test_bpm_extraction.PdfChainTests.test_pdf_lines_carry_page_region_bbox) ... ok
+test_register_derived_resolves_manifest_dir_from_any_cwd (test_bpm_extraction.RelativeRootRegressionTests.test_register_derived_resolves_manifest_dir_from_any_cwd) ... ok
+test_relative_root_extraction_pipeline_from_any_cwd (test_bpm_extraction.RelativeRootRegressionTests.test_relative_root_extraction_pipeline_from_any_cwd) ... ok
+test_numeric_id_column_registers_precision_gap (test_bpm_extraction.WorkbookTests.test_numeric_id_column_registers_precision_gap) ... ok
+test_workbook_semantics (test_bpm_extraction.WorkbookTests.test_workbook_semantics) ... ok
+test_loan_deduction_rejected (test_bpm_facts.BoundaryTests.test_loan_deduction_rejected) ... ok
+test_partial_face_blocks (test_bpm_facts.BoundaryTests.test_partial_face_blocks) ... ok
+test_qty_unit_price_rejected (test_bpm_facts.BoundaryTests.test_qty_unit_price_rejected) ... ok
+test_uncovered_expense_blocks_and_basis_requires_reason (test_bpm_facts.BoundaryTests.test_uncovered_expense_blocks_and_basis_requires_reason) ... ok
+test_unknown_material_blocks (test_bpm_facts.BoundaryTests.test_unknown_material_blocks) ... ok
+test_duplicate_copy_group_consumed_once (test_bpm_facts.ExtractionIntegrationTests.test_duplicate_copy_group_consumed_once)
+R2-P6 组语义：同内容副本按组去重，组内副本不逐文件误报/重复计票。 ... ok
+test_excel_vs_invoice_conflict_blocks_with_locators (test_bpm_facts.ExtractionIntegrationTests.test_excel_vs_invoice_conflict_blocks_with_locators)
+结算明细（xlsx 明细 4 行合计 112.00）vs 票面 128.70：阻断并双向定位。 ... ok
+test_invoice_from_real_extraction_closes (test_bpm_facts.ExtractionIntegrationTests.test_invoice_from_real_extraction_closes) ... ok
+test_same_invoice_two_scans_single_count (test_bpm_facts.ExtractionIntegrationTests.test_same_invoice_two_scans_single_count) ... ok
+test_same_number_conflicting_face_blocks (test_bpm_facts.ExtractionIntegrationTests.test_same_number_conflicting_face_blocks) ... ok
+test_blank_locator_rejected (test_bpm_facts.FromPayloadInvariantTests.test_blank_locator_rejected) ... ok
+test_derived_without_derivation_rejected (test_bpm_facts.FromPayloadInvariantTests.test_derived_without_derivation_rejected) ... ok
+test_forbidden_fields_rejected (test_bpm_facts.FromPayloadInvariantTests.test_forbidden_fields_rejected) ... ok
+test_unknown_kind_or_source_rejected (test_bpm_facts.FromPayloadInvariantTests.test_unknown_kind_or_source_rejected) ... ok
+test_user_instruction_with_hashes_rejected (test_bpm_facts.FromPayloadInvariantTests.test_user_instruction_with_hashes_rejected) ... ok
+test_valid_payload_roundtrip (test_bpm_facts.FromPayloadInvariantTests.test_valid_payload_roundtrip) ... ok
+test_absent_payees_not_treated_as_conflict (test_bpm_facts.PayeeAndLayerTests.test_absent_payees_not_treated_as_conflict) ... ok
+test_applicability_mismatch_blocks (test_bpm_facts.PayeeAndLayerTests.test_applicability_mismatch_blocks) ... ok
+test_conflicting_payee_identity_blocks (test_bpm_facts.PayeeAndLayerTests.test_conflicting_payee_identity_blocks) ... ok
+test_incomplete_payee_blocks (test_bpm_facts.PayeeAndLayerTests.test_incomplete_payee_blocks) ... ok
+test_scope_violation_blocks (test_bpm_facts.PayeeAndLayerTests.test_scope_violation_blocks) ... ok
+test_summary_detail_mismatch_blocks (test_bpm_facts.PayeeAndLayerTests.test_summary_detail_mismatch_blocks) ... ok
+test_total_double_count_across_layers_rejected (test_bpm_facts.PayeeAndLayerTests.test_total_double_count_across_layers_rejected)
+跨层相加重复计费：总额=明细+汇总 不被接受。 ... ok
+test_full_coherent_set_passes_with_same_amount_expenses (test_bpm_facts.ReconcileHappyPathTests.test_full_coherent_set_passes_with_same_amount_expenses)
+同金额≠禁报：两笔同额费用各自由不同票据完整分配，全部闭合。 ... ok
+test_no_invoice_basis_covers_expense (test_bpm_facts.ReconcileHappyPathTests.test_no_invoice_basis_covers_expense) ... ok
+test_hint_from_numbers_array (test_bpm_facts.RegistryHintTests.test_hint_from_numbers_array) ... ok
+test_missing_registry_degrades (test_bpm_facts.RegistryHintTests.test_missing_registry_degrades) ... ok
+test_deterministic_requires_derivation (test_bpm_facts.SourceRuleTests.test_deterministic_requires_derivation) ... ok
+test_unknown_source_and_kind_closed (test_bpm_facts.SourceRuleTests.test_unknown_source_and_kind_closed) ... ok
+test_user_instruction_rejects_derived_binding (test_bpm_facts.SourceRuleTests.test_user_instruction_rejects_derived_binding)
+agent 推断禁标 user：绑定派生工件的事实不得标 user_instruction。 ... ok
+test_allocation_referential_integrity (test_bpm_facts.StableReferenceTests.test_allocation_referential_integrity) ... ok
+test_ids_sequential_and_allocation_references_ids_not_copies (test_bpm_facts.StableReferenceTests.test_ids_sequential_and_allocation_references_ids_not_copies) ... ok
+test_drift_flags_affected_without_mutation (test_bpm_facts.VersionDriftTests.test_drift_flags_affected_without_mutation) ... ok
+test_no_drift_when_unchanged_and_artifact_gone_flags (test_bpm_facts.VersionDriftTests.test_no_drift_when_unchanged_and_artifact_gone_flags) ... ok
+test_each_person_identity_must_match_independent_observation (test_bpm_identity.IdentityTests.test_each_person_identity_must_match_independent_observation) ... ok
+test_explicit_null_extensions_are_rejected (test_bpm_identity.IdentityTests.test_explicit_null_extensions_are_rejected) ... ok
+test_identity_requires_exact_source_value (test_bpm_identity.IdentityTests.test_identity_requires_exact_source_value) ... ok
+test_test_context_never_authorizes_save (test_bpm_identity.IdentityTests.test_test_context_never_authorizes_save) ... ok
+test_csv_identifiers_preserved (test_bpm_materials.MaterialTests.test_csv_identifiers_preserved) ... ok
+test_dedup_by_content (test_bpm_materials.MaterialTests.test_dedup_by_content) ... ok
+test_manifest_duplicate_paths_cannot_escape_or_alias_primary (test_bpm_materials.MaterialTests.test_manifest_duplicate_paths_cannot_escape_or_alias_primary) ... ok
+test_manifest_primary_path_and_relative_must_match_root (test_bpm_materials.MaterialTests.test_manifest_primary_path_and_relative_must_match_root) ... ok
+test_manifest_root_must_be_existing_nonprotected_directory (test_bpm_materials.MaterialTests.test_manifest_root_must_be_existing_nonprotected_directory) ... ok
+test_manifest_symbolic_link_cannot_escape_material_root (test_bpm_materials.MaterialTests.test_manifest_symbolic_link_cannot_escape_material_root) ... ok
+test_pdf_requires_reviewed_extraction (test_bpm_materials.MaterialTests.test_pdf_requires_reviewed_extraction) ... ok
+test_protected_input_rejected (test_bpm_materials.MaterialTests.test_protected_input_rejected) ... ok
+test_separate_parsed_outputs (test_bpm_materials.MaterialTests.test_separate_parsed_outputs) ... ok
+test_xlsx_strings_zero_masks_formulas (test_bpm_materials.MaterialTests.test_xlsx_strings_zero_masks_formulas) ... ok
+test_dual_invoice_flow_closes (test_bpm_materials_dual.DualInvoiceFlowTests.test_dual_invoice_flow_closes) ... ok
+test_agent_inference_cannot_pass_as_user (test_bpm_materials_dual.DualRootContractTests.test_agent_inference_cannot_pass_as_user) ... ok
+test_original_and_derived_hash_drift_rejected (test_bpm_materials_dual.DualRootContractTests.test_original_and_derived_hash_drift_rejected) ... ok
+test_out_of_root_paths_rejected (test_bpm_materials_dual.DualRootContractTests.test_out_of_root_paths_rejected) ... ok
+test_register_derived_rejects_bad_role_sources_and_duplicates (test_bpm_materials_dual.DualRootContractTests.test_register_derived_rejects_bad_role_sources_and_duplicates) ... ok
+test_v1_contract_still_readable (test_bpm_materials_dual.DualRootContractTests.test_v1_contract_still_readable) ... ok
+test_valid_dual_root_passes (test_bpm_materials_dual.DualRootContractTests.test_valid_dual_root_passes) ... ok
+test_extra_budget_echo_requires_readonly_without_inventing_budget_policy (test_bpm_new_types.NewTypePlanTests.test_extra_budget_echo_requires_readonly_without_inventing_budget_policy) ... ok
+test_invoice_allocations_cover_product_prices_and_detect_conflicts (test_bpm_new_types.NewTypePlanTests.test_invoice_allocations_cover_product_prices_and_detect_conflicts) ... ok
+test_product_duplicate_archive_unmodeled_quantity_and_historical_facts_rejected (test_bpm_new_types.NewTypePlanTests.test_product_duplicate_archive_unmodeled_quantity_and_historical_facts_rejected) ... ok
+test_valid_multiline_express_and_empty_costs_have_exact_schema_branches (test_bpm_new_types.NewTypePlanTests.test_valid_multiline_express_and_empty_costs_have_exact_schema_branches) ... ok
+test_accepts_travel_fill_only_placeholder_block (test_bpm_oa_test_relations.OaTestRelationsTests.test_accepts_travel_fill_only_placeholder_block) ... ok
+test_rejects_chosen_index_outside_candidates (test_bpm_oa_test_relations.OaTestRelationsTests.test_rejects_chosen_index_outside_candidates) ... ok
+test_rejects_false_test_placeholder_and_open_keys (test_bpm_oa_test_relations.OaTestRelationsTests.test_rejects_false_test_placeholder_and_open_keys) ... ok
+test_rejects_non_travel_document_type (test_bpm_oa_test_relations.OaTestRelationsTests.test_rejects_non_travel_document_type) ... ok
+test_rejects_row_ids_without_materialized_relations (test_bpm_oa_test_relations.OaTestRelationsTests.test_rejects_row_ids_without_materialized_relations) ... ok
+test_rejects_save_draft_authorization (test_bpm_oa_test_relations.OaTestRelationsTests.test_rejects_save_draft_authorization) ... ok
+test_rejects_unknown_row_id_and_duplicate_references (test_bpm_oa_test_relations.OaTestRelationsTests.test_rejects_unknown_row_id_and_duplicate_references) ... ok
+test_schema_conformance (test_bpm_oa_test_relations.OaTestRelationsTests.test_schema_conformance) ... ok
+test_failed_incomplete_window_is_not_comparable (test_bpm_perf.PerfTests.test_failed_incomplete_window_is_not_comparable) ... ok
+test_nested_intervals_are_not_added_twice (test_bpm_perf.PerfTests.test_nested_intervals_are_not_added_twice) ... ok
+test_allowance_no_invoice_source_and_corroboration (test_bpm_plan.PlanTests.test_allowance_no_invoice_source_and_corroboration) ... ok
+test_current_digest_requires_primary_current_evidence (test_bpm_plan.PlanTests.test_current_digest_requires_primary_current_evidence) ... ok
+test_current_expenses_not_from_history (test_bpm_plan.PlanTests.test_current_expenses_not_from_history) ... ok
+test_different_scan_same_invoice_identity_rejected (test_bpm_plan.PlanTests.test_different_scan_same_invoice_identity_rejected) ... ok
+test_duplicate_row_business_value (test_bpm_plan.PlanTests.test_duplicate_row_business_value) ... ok
+test_empty_costs_requires_reason (test_bpm_plan.PlanTests.test_empty_costs_requires_reason) ... ok
+test_identifier_numeric_and_leading_zero (test_bpm_plan.PlanTests.test_identifier_numeric_and_leading_zero) ... ok
+test_identity (test_bpm_plan.PlanTests.test_identity) ... ok
+test_invalid_plan_cli_refuses_before_subprocess (test_bpm_plan.PlanTests.test_invalid_plan_cli_refuses_before_subprocess) ... ok
+test_invoice_targets_details_only_when_costs_not_applicable (test_bpm_plan.PlanTests.test_invoice_targets_details_only_when_costs_not_applicable) ... ok
+test_malformed_top_level_and_proofs_fail_closed (test_bpm_plan.PlanTests.test_malformed_top_level_and_proofs_fail_closed) ... ok
+test_missing_invoice_classification_or_reconciliation (test_bpm_plan.PlanTests.test_missing_invoice_classification_or_reconciliation) ... ok
+test_money_rejects_float_exponent_and_rounding (test_bpm_plan.PlanTests.test_money_rejects_float_exponent_and_rounding) ... ok
+test_multi_rows_more_than_two_costs (test_bpm_plan.PlanTests.test_multi_rows_more_than_two_costs) ... ok
+test_no_default_plan_cli_and_traversal (test_bpm_plan.PlanTests.test_no_default_plan_cli_and_traversal) ... usage: python.exe -m unittest [-h] (--task TASK | --fill-plan FILL_PLAN)
+                              [--expect-name EXPECT_NAME] [--run RUN]
+                              [--resume-run RESUME_RUN]
+                              [--keep-open-minutes KEEP_OPEN_MINUTES]
+                              [--validate-only] [--legacy-regression]
+                              [--login-wait LOGIN_WAIT] [--wall-cap WALL_CAP]
+                              [--tech-budget TECH_BUDGET]
+python.exe -m unittest: error: one of the arguments --task --fill-plan is required
+ok
+test_old_plan_and_unknown_type_rejected (test_bpm_plan.PlanTests.test_old_plan_and_unknown_type_rejected) ... ok
+test_resume_bound_to_hash (test_bpm_plan.PlanTests.test_resume_bound_to_hash) ... ok
+test_reviewed_original_drift_rejected_through_plan (test_bpm_plan.PlanTests.test_reviewed_original_drift_rejected_through_plan) ... ok
+test_save_task_binding_and_submit_forbidden (test_bpm_plan.PlanTests.test_save_task_binding_and_submit_forbidden) ... ok
+test_source_drift (test_bpm_plan.PlanTests.test_source_drift) ... ok
+test_source_locator_mismatch (test_bpm_plan.PlanTests.test_source_locator_mismatch) ... ok
+test_task_preparation_never_launches_browser (test_bpm_plan.PlanTests.test_task_preparation_never_launches_browser) ... ok
+test_total_and_bank_amount_mismatch (test_bpm_plan.PlanTests.test_total_and_bank_amount_mismatch) ... ok
+test_unit_price_times_count_and_explicit_derived_sum (test_bpm_plan.PlanTests.test_unit_price_times_count_and_explicit_derived_sum) ... ok
+test_valid_and_hash (test_bpm_plan.PlanTests.test_valid_and_hash) ... ok
+test_valid_invoice_and_excel_invoice_conflict (test_bpm_plan.PlanTests.test_valid_invoice_and_excel_invoice_conflict) ... ok
+test_zero_images_still_require_explicit_no_invoice_evidence (test_bpm_plan.PlanTests.test_zero_images_still_require_explicit_no_invoice_evidence) ... ok
+test_express_no_invoice_and_empty_tables (test_bpm_plan_generate.ExpressNoInvoiceTests.test_express_no_invoice_and_empty_tables) ... ok
+test_invoice_binding_hash_crosscheck (test_bpm_plan_generate.GeneratorE2ETests.test_invoice_binding_hash_crosscheck)
+票据事实必须绑定 reviewed 提取的原件哈希（同 xlsx 对账链）。 ... ok
+test_travel_end_to_end_validated_plan (test_bpm_plan_generate.GeneratorE2ETests.test_travel_end_to_end_validated_plan) ... ok
+test_artifact_drift_refuses (test_bpm_plan_generate.GeneratorGateTests.test_artifact_drift_refuses) ... ok
+test_binding_drift_refuses (test_bpm_plan_generate.GeneratorGateTests.test_binding_drift_refuses) ... ok
+test_money_fact_without_amount_key_refuses (test_bpm_plan_generate.GeneratorGateTests.test_money_fact_without_amount_key_refuses)
+R4-P2b：金额字段绑到无 amount 键的事实时显式失败，不得自比恒真。 ... ok
+test_reconcile_blocked_refuses (test_bpm_plan_generate.GeneratorGateTests.test_reconcile_blocked_refuses) ... ok
+test_unhashed_bound_fact_refuses (test_bpm_plan_generate.GeneratorGateTests.test_unhashed_bound_fact_refuses)
+R4-P2c：被绑定 material_extraction 事实清空 input_hashes → 生成器拒绝。 ... ok
+test_unhashed_template_fact_refuses (test_bpm_plan_generate.GeneratorGateTests.test_unhashed_template_fact_refuses)
+R4-P2c：模板事实无快照哈希绑定同样拒绝（不自动补绑定）。 ... ok
+test_unsourced_value_refuses (test_bpm_plan_generate.GeneratorGateTests.test_unsourced_value_refuses) ... ok
+test_validation_failure_is_generator_error (test_bpm_plan_generate.GeneratorGateTests.test_validation_failure_is_generator_error) ... ok
+test_value_fact_mismatch_refuses (test_bpm_plan_generate.GeneratorGateTests.test_value_fact_mismatch_refuses) ... ok
+test_dec_rejects_over_two_decimals (test_bpm_plan_generate.R3P2FixTests.test_dec_rejects_over_two_decimals) ... ok
+test_factset_payload_roundtrip (test_bpm_plan_generate.R3P2FixTests.test_factset_payload_roundtrip) ... ok
+test_same_account_different_names_blocked (test_bpm_plan_generate.R3P2FixTests.test_same_account_different_names_blocked) ... ok
+test_bound_identity_template_fact_needs_input_hashes (test_bpm_plan_generate.R7IdentityTests.test_bound_identity_template_fact_needs_input_hashes) ... ok
+test_identity_binds_template_employee_id_and_observed_creator (test_bpm_plan_generate.R7IdentityTests.test_identity_binds_template_employee_id_and_observed_creator) ... ok
+test_system_observation_requires_derived_artifact (test_bpm_plan_generate.R7IdentityTests.test_system_observation_requires_derived_artifact) ... ok
+test_blocked_reconciliation_reports_needs_input_with_structured_gaps (test_bpm_plan_generate.StageLinkageTests.test_blocked_reconciliation_reports_needs_input_with_structured_gaps) ... ok
+test_generator_failure_reports_needs_input (test_bpm_plan_generate.StageLinkageTests.test_generator_failure_reports_needs_input) ... ok
+test_no_payload_keeps_legacy_needs_input (test_bpm_plan_generate.StageLinkageTests.test_no_payload_keeps_legacy_needs_input) ... ok
+test_payload_ready_advances_to_plan_ready (test_bpm_plan_generate.StageLinkageTests.test_payload_ready_advances_to_plan_ready) ... ok
+test_invalid_plan_needs_input_with_issues (test_bpm_request.ExecutionReadinessTests.test_invalid_plan_needs_input_with_issues) ... ok
+test_missing_identity_needs_input_without_guessing (test_bpm_request.ExecutionReadinessTests.test_missing_identity_needs_input_without_guessing) ... ok
+test_missing_plan_file_needs_input (test_bpm_request.ExecutionReadinessTests.test_missing_plan_file_needs_input) ... ok
+test_operator_from_session_record (test_bpm_request.ExecutionReadinessTests.test_operator_from_session_record) ... ok
+test_ready_state_outputs_execution_ready (test_bpm_request.ExecutionReadinessTests.test_ready_state_outputs_execution_ready) ... ok
+test_template_history_source_refused (test_bpm_request.ExecutionReadinessTests.test_template_history_source_refused) ... ok
+test_matrix_blueprint_to_validated_plan (test_bpm_request.GeneratorIntegrationTests.test_matrix_blueprint_to_validated_plan) ... ok
+test_complete_request_registers_derived_artifact (test_bpm_request.RequestRegistrationTests.test_complete_request_registers_derived_artifact) ... ok
+test_missing_essentials_needs_input_without_writing (test_bpm_request.RequestRegistrationTests.test_missing_essentials_needs_input_without_writing) ... ok
+test_unknown_request_key_rejected (test_bpm_request.RequestRegistrationTests.test_unknown_request_key_rejected) ... ok
+test_duplicate_group_field_row_rejected (test_bpm_request.ReuseMatrixTests.test_duplicate_group_field_row_rejected) ... ok
+test_form_identity_cannot_adopt_and_adopt_needs_fact (test_bpm_request.ReuseMatrixTests.test_form_identity_cannot_adopt_and_adopt_needs_fact) ... ok
+test_full_matrix_builds_and_registers (test_bpm_request.ReuseMatrixTests.test_full_matrix_builds_and_registers) ... ok
+test_incomplete_groups_or_empty_reason_rejected (test_bpm_request.ReuseMatrixTests.test_incomplete_groups_or_empty_reason_rejected) ... ok
+test_old_budget_reuse_requires_confirmation (test_bpm_request.ReuseMatrixTests.test_old_budget_reuse_requires_confirmation) ... ok
+test_replace_from_template_rejected (test_bpm_request.ReuseMatrixTests.test_replace_from_template_rejected) ... ok
+test_template_applicant_override_requires_policy (test_bpm_request.ReuseMatrixTests.test_template_applicant_override_requires_policy) ... ok
+test_template_old_date_pretending_current_rejected (test_bpm_request.ReuseMatrixTests.test_template_old_date_pretending_current_rejected) ... ok
+test_template_old_payee_pretending_current_rejected (test_bpm_request.ReuseMatrixTests.test_template_old_payee_pretending_current_rejected) ... ok
+test_template_old_value_pretending_current_rejected (test_bpm_request.ReuseMatrixTests.test_template_old_value_pretending_current_rejected) ... ok
+test_declared_conflict_concentrated_report (test_bpm_request.TemplateResolutionTests.test_declared_conflict_concentrated_report) ... ok
+test_declared_unregistered_category_conflicts (test_bpm_request.TemplateResolutionTests.test_declared_unregistered_category_conflicts) ... ok
+test_duplicate_number_refuses (test_bpm_request.TemplateResolutionTests.test_duplicate_number_refuses) ... ok
+test_resolve_travel_from_cache (test_bpm_request.TemplateResolutionTests.test_resolve_travel_from_cache) ... ok
+test_identify_unknown_reports_without_write (test_bpm_request.UnknownCategoryTests.test_identify_unknown_reports_without_write) ... ok
+test_known_category_via_identify_reports_known (test_bpm_request.UnknownCategoryTests.test_known_category_via_identify_reports_known) ... ok
+test_resolve_delegates_unknown_to_identification (test_bpm_request.UnknownCategoryTests.test_resolve_delegates_unknown_to_identification) ... ok
+test_unknown_write_paths_refused (test_bpm_request.UnknownCategoryTests.test_unknown_write_paths_refused) ... ok
+test_source_manifest_freezes_five_type_configs_and_notes (test_bpm_round10_sync.ManifestSyncTests.test_source_manifest_freezes_five_type_configs_and_notes) ... ok
+test_schema_covers_five_document_types_and_new_plans_validate (test_bpm_round10_sync.SchemaEnumSyncTests.test_schema_covers_five_document_types_and_new_plans_validate) ... ok
+test_schema_rejects_unregistered_type_and_wrong_label_pairing (test_bpm_round10_sync.SchemaEnumSyncTests.test_schema_rejects_unregistered_type_and_wrong_label_pairing) ... ok
+test_complete_but_empty_relation_details_never_click_save (test_bpm_save.SaveTests.test_complete_but_empty_relation_details_never_click_save) ... ok
+test_config_drift_after_screenshot_blocks_click (test_bpm_save.SaveTests.test_config_drift_after_screenshot_blocks_click) ... ok
+test_config_drift_on_restart_never_reconciles_under_new_config (test_bpm_save.SaveTests.test_config_drift_on_restart_never_reconciles_under_new_config) ... ok
+test_hash_drift_after_screenshot_blocks_click (test_bpm_save.SaveTests.test_hash_drift_after_screenshot_blocks_click) ... ok
+test_incomplete_and_wrong_page_no_click (test_bpm_save.SaveTests.test_incomplete_and_wrong_page_no_click) ... ok
+test_no_authorization_boolean_string_or_submission (test_bpm_save.SaveTests.test_no_authorization_boolean_string_or_submission) ... ok
+test_page_change_after_screenshot_no_click (test_bpm_save.SaveTests.test_page_change_after_screenshot_no_click) ... ok
+test_preflight_rejects_compound_duplicate_and_dialog_buttons (test_bpm_save.SaveTests.test_preflight_rejects_compound_duplicate_and_dialog_buttons) ... ok
+test_reopened_mismatch_retains_identity_and_never_clicks_again (test_bpm_save.SaveTests.test_reopened_mismatch_retains_identity_and_never_clicks_again) ... ok
+test_save_events_append_at_run_authority (test_bpm_save.SaveTests.test_save_events_append_at_run_authority) ... ok
+test_stale_plan_cannot_overwrite_pending_journal (test_bpm_save.SaveTests.test_stale_plan_cannot_overwrite_pending_journal) ... ok
+test_success_requires_reopen_and_restart_does_not_click (test_bpm_save.SaveTests.test_success_requires_reopen_and_restart_does_not_click) ... ok
+test_timeout_persists_uncertainty_no_second_click (test_bpm_save.SaveTests.test_timeout_persists_uncertainty_no_second_click) ... ok
+test_unknown_dialog_never_confirmed (test_bpm_save.SaveTests.test_unknown_dialog_never_confirmed) ... ok
+test_unknown_persisted_state_never_clicks (test_bpm_save.SaveTests.test_unknown_persisted_state_never_clicks) ... ok
+test_case_offline_reference_totals (test_bpm_self_drive.CaseReferenceTests.test_case_offline_reference_totals) ... ok
+test_case_rows_match_section_6_1_recomputation (test_bpm_self_drive.CaseReferenceTests.test_case_rows_match_section_6_1_recomputation) ... ok
+test_date_label_counterexamples_identified (test_bpm_self_drive.ClassicCounterexampleTests.test_date_label_counterexamples_identified) ... ok
+test_date_labels_correct_pass_and_structure (test_bpm_self_drive.ClassicCounterexampleTests.test_date_labels_correct_pass_and_structure) ... ok
+test_per_form_diffs_located_and_cumulative (test_bpm_self_drive.ClassicCounterexampleTests.test_per_form_diffs_located_and_cumulative) ... ok
+test_positive_control_43718_not_misjudged (test_bpm_self_drive.ClassicCounterexampleTests.test_positive_control_43718_not_misjudged) ... ok
+test_transport_errors_cancel_not_passed (test_bpm_self_drive.ClassicCounterexampleTests.test_transport_errors_cancel_not_passed) ... ok
+test_load_default_config (test_bpm_self_drive.ConfigTests.test_load_default_config) ... ok
+test_reject_invalid_configs (test_bpm_self_drive.ConfigTests.test_reject_invalid_configs) ... ok
+test_reject_missing_or_broken_file (test_bpm_self_drive.ConfigTests.test_reject_missing_or_broken_file) ... ok
+test_sha256_stable_and_tamper_sensitive (test_bpm_self_drive.ConfigTests.test_sha256_stable_and_tamper_sensitive) ... ok
+test_f_equals_r_blocked (test_bpm_self_drive.EvaluateTests.test_f_equals_r_blocked) ... ok
+test_f_less_than_r_blocked (test_bpm_self_drive.EvaluateTests.test_f_less_than_r_blocked) ... ok
+test_float_money_rejected (test_bpm_self_drive.EvaluateTests.test_float_money_rejected) ... ok
+test_fuel_only_raises_coverage_not_reimburse (test_bpm_self_drive.EvaluateTests.test_fuel_only_raises_coverage_not_reimburse) ... ok
+test_meal_day_duplicate_rejected (test_bpm_self_drive.EvaluateTests.test_meal_day_duplicate_rejected) ... ok
+test_meal_day_iso_format_enforced (test_bpm_self_drive.EvaluateTests.test_meal_day_iso_format_enforced) ... ok
+test_one_cent_surplus_passes_no_float_tolerance (test_bpm_self_drive.EvaluateTests.test_one_cent_surplus_passes_no_float_tolerance) ... ok
+test_structural_violations_rejected (test_bpm_self_drive.EvaluateTests.test_structural_violations_rejected) ... ok
+test_synth_happy_path_amounts (test_bpm_self_drive.EvaluateTests.test_synth_happy_path_amounts) ... ok
+test_ten_days_meal_three_hundred (test_bpm_self_drive.EvaluateTests.test_ten_days_meal_three_hundred) ... ok
+test_bound_pass_through (test_bpm_self_drive.RulesBindingTests.test_bound_pass_through) ... ok
+test_historical_meal_values_rejected (test_bpm_self_drive.RulesBindingTests.test_historical_meal_values_rejected) ... ok
+test_rate_mismatch_rejected (test_bpm_self_drive.RulesBindingTests.test_rate_mismatch_rejected) ... ok
+test_version_mismatch_rejected (test_bpm_self_drive.RulesBindingTests.test_version_mismatch_rejected) ... ok
+test_historical_meal_not_interpreted_as_new_rule (test_bpm_self_drive.SeparationTests.test_historical_meal_not_interpreted_as_new_rule) ... ok
+test_models_distinct (test_bpm_self_drive.SeparationTests.test_models_distinct) ... ok
+test_old_model_inputs_have_no_meal_fields (test_bpm_self_drive.SeparationTests.test_old_model_inputs_have_no_meal_fields) ... ok
+test_old_model_still_r_equals_m_plus_t_without_meal (test_bpm_self_drive.SeparationTests.test_old_model_still_r_equals_m_plus_t_without_meal) ... ok
+test_changed_person_does_not_inherit_scan_window (test_bpm_session.SessionTests.test_changed_person_does_not_inherit_scan_window) ... ok
+test_legacy_keeps_one_day_and_unknown_scan_not_invented (test_bpm_session.SessionTests.test_legacy_keeps_one_day_and_unknown_scan_not_invented) ... ok
+test_record_contains_no_credentials_and_unknown_fields_remain_null (test_bpm_session.SessionTests.test_record_contains_no_credentials_and_unknown_fields_remain_null) ... ok
+test_refresh_expiry_limits_sixty_day_window (test_bpm_session.SessionTests.test_refresh_expiry_limits_sixty_day_window) ... ok
+test_scan_bound_is_not_extended_by_updates (test_bpm_session.SessionTests.test_scan_bound_is_not_extended_by_updates) ... ok
+test_subject_mismatch_rejected (test_bpm_session.SessionTests.test_subject_mismatch_rejected) ... ok
+test_fetch_template_raw_branch_skips_normalize (test_bpm_template.ResearchRawFlagTests.test_fetch_template_raw_branch_skips_normalize) ... ok
+test_research_raw_rejected_with_census_mode (test_bpm_template.ResearchRawFlagTests.test_research_raw_rejected_with_census_mode) ... usage: python.exe -m unittest [-h] (--census CENSUS | --live)
+                              --template-number TEMPLATE_NUMBER --output
+                              OUTPUT [--expect-name EXPECT_NAME]
+                              [--research-raw] [--lookup-list LOOKUP_LIST]
+                              [--observe-view] [--login-wait LOGIN_WAIT]
+python.exe -m unittest: error: output must be a new file beneath automation/runs
+ok
+test_research_raw_requires_live_identity_arguments (test_bpm_template.ResearchRawFlagTests.test_research_raw_requires_live_identity_arguments) ... usage: python.exe -m unittest [-h] (--census CENSUS | --live)
+                              --template-number TEMPLATE_NUMBER --output
+                              OUTPUT [--expect-name EXPECT_NAME]
+                              [--research-raw] [--lookup-list LOOKUP_LIST]
+                              [--observe-view] [--login-wait LOGIN_WAIT]
+python.exe -m unittest: error: output must be a new file beneath automation/runs
+ok
+test_cached_full_number_unique_and_incomplete_reads_rejected (test_bpm_template.TemplateTests.test_cached_full_number_unique_and_incomplete_reads_rejected) ... ok
+test_captured_identity_is_exact_and_fresh_main_mismatch_stops_child_reads (test_bpm_template.TemplateTests.test_captured_identity_is_exact_and_fresh_main_mismatch_stops_child_reads) ... ok
+test_exact_identity_all_children_and_whitelist (test_bpm_template.TemplateTests.test_exact_identity_all_children_and_whitelist) ... ok
+test_full_number_and_uuid_are_exact_and_unique (test_bpm_template.TemplateTests.test_full_number_and_uuid_are_exact_and_unique) ... ok
+test_observed_list_response_wrappers_and_ambiguity (test_bpm_template.TemplateTests.test_observed_list_response_wrappers_and_ambiguity) ... ok
+test_authorized_replay_retains_lineage_and_default_people_without_save (test_bpm_type_replay.ReplayTests.test_authorized_replay_retains_lineage_and_default_people_without_save) ... ok
+test_save_permission_or_missing_replay_authorization_rejected (test_bpm_type_replay.ReplayTests.test_save_permission_or_missing_replay_authorization_rejected) ... ok
+test_negative_config_mutations_are_rejected (test_bpm_type_round9.OfficeSuppliesRound9Tests.test_negative_config_mutations_are_rejected) ... ok
+test_offline_chain_plan_validates (test_bpm_type_round9.OfficeSuppliesRound9Tests.test_offline_chain_plan_validates) ... ok
+test_plan_level_boundaries (test_bpm_type_round9.OfficeSuppliesRound9Tests.test_plan_level_boundaries) ... ok
+test_primary_table_is_costs_when_amount_rules_sum (test_bpm_type_round9.OfficeSuppliesRound9Tests.test_primary_table_is_costs_when_amount_rules_sum) ... ok
+test_registration_identity_and_template_binding (test_bpm_type_round9.OfficeSuppliesRound9Tests.test_registration_identity_and_template_binding) ... ok
+test_negative_config_mutations_are_rejected (test_bpm_type_round9.Round9TypeCommon.test_negative_config_mutations_are_rejected) ... skipped 'common base'
+test_offline_chain_plan_validates (test_bpm_type_round9.Round9TypeCommon.test_offline_chain_plan_validates) ... skipped 'common base'
+test_plan_level_boundaries (test_bpm_type_round9.Round9TypeCommon.test_plan_level_boundaries) ... skipped 'common base'
+test_registration_identity_and_template_binding (test_bpm_type_round9.Round9TypeCommon.test_registration_identity_and_template_binding) ... skipped 'common base'
+test_empty_costs_requires_reason_and_applicability (test_bpm_type_round9.WelfareLaborRound9Tests.test_empty_costs_requires_reason_and_applicability) ... ok
+test_negative_config_mutations_are_rejected (test_bpm_type_round9.WelfareLaborRound9Tests.test_negative_config_mutations_are_rejected) ... ok
+test_offline_chain_plan_validates (test_bpm_type_round9.WelfareLaborRound9Tests.test_offline_chain_plan_validates) ... ok
+test_plan_level_boundaries (test_bpm_type_round9.WelfareLaborRound9Tests.test_plan_level_boundaries) ... ok
+test_registration_identity_and_template_binding (test_bpm_type_round9.WelfareLaborRound9Tests.test_registration_identity_and_template_binding) ... ok
+test_closed_registry_and_observed_category_mapping (test_bpm_types.TypeTests.test_closed_registry_and_observed_category_mapping) ... ok
+test_configuration_cannot_switch_type_or_enable_pending_execution (test_bpm_types.TypeTests.test_configuration_cannot_switch_type_or_enable_pending_execution) ... ok
+test_pending_research_projection_declares_unmodeled_business_fields (test_bpm_types.TypeTests.test_pending_research_projection_declares_unmodeled_business_fields) ... ok
+test_prepare_both_types_reports_specific_gaps_without_browser (test_bpm_types.TypeTests.test_prepare_both_types_reports_specific_gaps_without_browser) ... ok
+test_self_contained_type_binding_does_not_depend_on_travel_configuration (test_bpm_types.TypeTests.test_self_contained_type_binding_does_not_depend_on_travel_configuration) ... ok
+test_template_category_mismatch_and_missing_identity_are_rejected (test_bpm_types.TypeTests.test_template_category_mismatch_and_missing_identity_are_rejected) ... ok
+test_travel_hash_preserves_existing_run_and_journal_bindings (test_bpm_types.TypeTests.test_travel_hash_preserves_existing_run_and_journal_bindings) ... ok
+test_unmodeled_new_type_plans_cannot_launch_or_save (test_bpm_types.TypeTests.test_unmodeled_new_type_plans_cannot_launch_or_save) ... ok
+test_array_executor_writes_more_than_two_rows_and_multiple_banks (test_bpm_ui.DOMTests.test_array_executor_writes_more_than_two_rows_and_multiple_banks) ... {"status": "NEEDS_INPUT", "issues": [{"path": "/tables/details", "code": "AMOUNT_MISMATCH", "message": "amount sum differs from totalCost"}, {"path": "/tables/banks", "code": "AMOUNT_MISMATCH", "message": "amount sum differs from totalCost"}, {"path": "/tables/costs", "code": "AMOUNT_MISMATCH", "message": "amount sum differs from totalCost"}, {"path": "/header/totalCost", "code": "SOURCE_INVALID", "message": "located value differs from planned value"}], "browser_launched": false}
+{"status": "NEEDS_INPUT", "issues": [{"path": "/table_applicability", "code": "INVALID_PLAN", "message": "each empty table requires exactly one sourced not-applicable reason"}, {"path": "/tables/details/0/fields", "code": "INVALID_PLAN", "message": "exact configured columns required"}, {"path": "/template", "code": "SOURCE_INVALID", "message": "new-type template requires explicit category identity"}, {"path": "/header/submitType", "code": "SOURCE_INVALID", "message": "located value differs from planned value"}], "browser_launched": false}
+{"status": "NEEDS_INPUT", "issues": [{"path": "/tables", "code": "INVALID_PLAN", "message": "exact configured business table set required"}, {"path": "/tables/costs", "code": "INVALID_PLAN", "message": "archive material scope requires a separate empty costs table"}, {"path": "/table_applicability", "code": "INVALID_PLAN", "message": "each empty table requires exactly one sourced not-applicable reason"}, {"path": "/tables/details/0/fields", "code": "INVALID_PLAN", "message": "exact configured columns required"}, {"path": "/tables/products", "code": "INVALID_PLAN", "message": "row array required"}, {"path": "/amount_rules", "code": "INVALID_PLAN", "message": "archive prices require explicit line_total sum semantics"}, {"path": "/template", "code": "SOURCE_INVALID", "message": "new-type template requires explicit category identity"}, {"path": "/materials", "code": "INVOICE_RECONCILIATION_INVALID", "message": "no-invoice reason must target unique, unallocated primary expense row"}, {"path": "/header/submitType", "code": "SOURCE_INVALID", "message": "located value differs from planned value"}], "browser_launched": false}
+[12:08:59] PROGRESS relations: 1 rows complete
+[12:09:08] PROGRESS costs: 4 rows complete
+[12:09:13] PROGRESS details: 3 rows complete
+[12:09:18] PROGRESS banks: 3 rows complete
+ok
+test_cached_schema_detects_column_reorder_and_rebuilt_components (test_bpm_ui.DOMTests.test_cached_schema_detects_column_reorder_and_rebuilt_components) ... ok
+test_config_identity_drift_after_screenshot_prevents_ui_save_click (test_bpm_ui.DOMTests.test_config_identity_drift_after_screenshot_prevents_ui_save_click) ... ok
+test_current_dropdown_panel_and_delayed_editor_are_used_once (test_bpm_ui.DOMTests.test_current_dropdown_panel_and_delayed_editor_are_used_once) ... ok
+test_direct_or_changed_save_cannot_bypass_screenshot_and_revalidation (test_bpm_ui.DOMTests.test_direct_or_changed_save_cannot_bypass_screenshot_and_revalidation) ... ok
+test_exact_pick_missing_transient_failure_yields_no_partial_acceptance (test_bpm_ui.DOMTests.test_exact_pick_missing_transient_failure_yields_no_partial_acceptance) ... ok
+test_exact_picker_rejects_longer_document_number_and_ambiguity (test_bpm_ui.DOMTests.test_exact_picker_rejects_longer_document_number_and_ambiguity) ... ok
+test_expected_name_in_body_cannot_impersonate_topbar_operator (test_bpm_ui.DOMTests.test_expected_name_in_body_cannot_impersonate_topbar_operator) ... ok
+test_explicit_empty_costs_executes_and_never_masks_extra_or_missing_table (test_bpm_ui.DOMTests.test_explicit_empty_costs_executes_and_never_masks_extra_or_missing_table) ... [12:09:27] PROGRESS relations: 1 rows complete
+[12:09:28] PROGRESS costs: 0 rows complete
+[12:09:28] PROGRESS details: 1 rows complete
+[12:09:28] PROGRESS banks: 1 rows complete
+ok
+test_express_multiline_independent_readback_rejects_last_row_drift (test_bpm_ui.DOMTests.test_express_multiline_independent_readback_rejects_last_row_drift) ... [12:09:29] PROGRESS relations: 0 rows complete
+[12:09:30] PROGRESS costs: 3 rows complete
+[12:09:30] PROGRESS details: 1 rows complete
+[12:09:30] PROGRESS banks: 1 rows complete
+ok
+test_header_generated_default_bank_is_distinguished_from_existing_data (test_bpm_ui.DOMTests.test_header_generated_default_bank_is_distinguished_from_existing_data) ... D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py:1019: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\xy198\\AppData\\Local\\Temp\\tmplmh23pnz\\attempt_001\\evidence\\new_form_after_header.json' mode='w' encoding='utf-8'>
+  io.open(p, "w", encoding="utf-8", newline="\n").write(text)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_history_view_research_reads_labels_and_rows_without_editing (test_bpm_ui.DOMTests.test_history_view_research_reads_labels_and_rows_without_editing) ... D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py:1019: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\xy198\\AppData\\Local\\Temp\\tmpwhna4iqg\\attempt_001\\evidence\\template_view_observation.json' mode='w' encoding='utf-8'>
+  io.open(p, "w", encoding="utf-8", newline="\n").write(text)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_independent_collector_reads_split_tables (test_bpm_ui.DOMTests.test_independent_collector_reads_split_tables) ... ok
+test_missing_employee_id_identity_blocks_before_any_business_write (test_bpm_ui.DOMTests.test_missing_employee_id_identity_blocks_before_any_business_write) ... ok
+test_missing_table_cannot_pass_as_empty (test_bpm_ui.DOMTests.test_missing_table_cannot_pass_as_empty) ... ok
+test_multiple_relation_types_execute_and_independently_reject_corruption (test_bpm_ui.DOMTests.test_multiple_relation_types_execute_and_independently_reject_corruption) ... ok
+test_native_bank_account_is_not_forced_through_shortcut_picker (test_bpm_ui.DOMTests.test_native_bank_account_is_not_forced_through_shortcut_picker) ... ok
+test_ordinary_save_still_guarded_and_exact_capability_metadata (test_bpm_ui.DOMTests.test_ordinary_save_still_guarded_and_exact_capability_metadata) ... ok
+test_product_add_control_observation_captures_actual_row_editors (test_bpm_ui.DOMTests.test_product_add_control_observation_captures_actual_row_editors) ... D:\Downloads\Mc Claude Code Workshop\2026-Auto-Pilot 企业微信\stage1_browser_probe.py:1019: ResourceWarning: unclosed file <_io.TextIOWrapper name='C:\\Users\\xy198\\AppData\\Local\\Temp\\tmpwj8bmxz5\\attempt_001\\evidence\\product_add_controls.json' mode='w' encoding='utf-8'>
+  io.open(p, "w", encoding="utf-8", newline="\n").write(text)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_rd_archive_picker_fifth_table_save_reopen_and_readonly_recovery (test_bpm_ui.DOMTests.test_rd_archive_picker_fifth_table_save_reopen_and_readonly_recovery) ... [12:09:40] PROGRESS relations: 0 rows complete
+[12:09:40] PROGRESS costs: 0 rows complete
+[12:09:54] PROGRESS products: 3 rows complete
+[12:09:54] PROGRESS details: 1 rows complete
+[12:09:55] PROGRESS banks: 1 rows complete
+ok
+test_real_ui_save_controller_reopens_intercepted_persisted_form (test_bpm_ui.DOMTests.test_real_ui_save_controller_reopens_intercepted_persisted_form) ... ok
+test_same_prop_other_title_is_not_selected (test_bpm_ui.DOMTests.test_same_prop_other_title_is_not_selected) ... ok
+test_table_locators_survive_dialog_body_class_changes (test_bpm_ui.DOMTests.test_table_locators_survive_dialog_body_class_changes) ... ok
+test_targeted_live_list_discovery_is_local_intercepted_and_exact (test_bpm_ui.DOMTests.test_targeted_live_list_discovery_is_local_intercepted_and_exact) ... ok
+test_unknown_and_duplicate_extra_tables_cannot_hide_rows (test_bpm_ui.DOMTests.test_unknown_and_duplicate_extra_tables_cannot_hide_rows) ... ok
+test_wrong_category_blocks_before_any_business_row_write (test_bpm_ui.DOMTests.test_wrong_category_blocks_before_any_business_row_write) ... ok
+test_live_oa_form_page_refuses (test_bpm_ui.DeadIntentSupersedeTests.test_live_oa_form_page_refuses) ... ok
+test_missing_evidence_refuses (test_bpm_ui.DeadIntentSupersedeTests.test_missing_evidence_refuses) ... ok
+test_nonempty_tables_refuse_and_file_untouched (test_bpm_ui.DeadIntentSupersedeTests.test_nonempty_tables_refuse_and_file_untouched) ... ok
+test_save_states_never_supersede (test_bpm_ui.DeadIntentSupersedeTests.test_save_states_never_supersede) ... ok
+test_written_but_never_saved_intent_rebuilds_with_row_audit (test_bpm_ui.DeadIntentSupersedeTests.test_written_but_never_saved_intent_rebuilds_with_row_audit) ... ok
+test_written_intent_without_save_status_proof_refuses (test_bpm_ui.DeadIntentSupersedeTests.test_written_intent_without_save_status_proof_refuses) ... ok
+test_zero_write_intent_superseded_with_audit_history (test_bpm_ui.DeadIntentSupersedeTests.test_zero_write_intent_superseded_with_audit_history) ... ok
+test_after_save_requires_new_identity_and_known_draft_status (test_bpm_verify.VerificationTests.test_after_save_requires_new_identity_and_known_draft_status) ... ok
+test_complete_but_empty_or_malformed_projection_is_rejected (test_bpm_verify.VerificationTests.test_complete_but_empty_or_malformed_projection_is_rejected) ... ok
+test_full_fresh_snapshot_passes (test_bpm_verify.VerificationTests.test_full_fresh_snapshot_passes) ... ok
+test_generated_detail_projection_requires_exact_relation_and_zero_allocations (test_bpm_verify.VerificationTests.test_generated_detail_projection_requires_exact_relation_and_zero_allocations) ... ok
+test_incomplete_readback_empty_category_amount_and_loan_fail (test_bpm_verify.VerificationTests.test_incomplete_readback_empty_category_amount_and_loan_fail) ... ok
+test_missing_extra_duplicate_and_wrong_association_rejected (test_bpm_verify.VerificationTests.test_missing_extra_duplicate_and_wrong_association_rejected) ... ok
+test_missing_nonobject_observations_fail_closed (test_bpm_verify.VerificationTests.test_missing_nonobject_observations_fail_closed) ... ok
+test_numeric_display_equivalence_is_field_scoped (test_bpm_verify.VerificationTests.test_numeric_display_equivalence_is_field_scoped) ... ok
+test_related_detail_readback_cannot_be_omitted (test_bpm_verify.VerificationTests.test_related_detail_readback_cannot_be_omitted) ... ok
+test_source_hash_drift_rejected_independently (test_bpm_verify.VerificationTests.test_source_hash_drift_rejected_independently) ... ok
+test_system_empty_is_scoped_to_confirmed_readonly_zero_display (test_bpm_verify.VerificationTests.test_system_empty_is_scoped_to_confirmed_readonly_zero_display) ... ok
+test_visible_required_and_angular_validity_fail_closed (test_bpm_verify.VerificationTests.test_visible_required_and_angular_validity_fail_closed) ... ok
+test_authorization_redline_text_untouched (test_skill_docs.SkillDocsTests.test_authorization_redline_text_untouched) ... ok
+test_chain_functions_exist_in_code (test_skill_docs.SkillDocsTests.test_chain_functions_exist_in_code) ... ok
+test_command_examples_reference_real_scripts_and_flags (test_skill_docs.SkillDocsTests.test_command_examples_reference_real_scripts_and_flags) ... ok
+test_description_routes_new_chain (test_skill_docs.SkillDocsTests.test_description_routes_new_chain) ... ok
+test_full_chain_reference_document (test_skill_docs.SkillDocsTests.test_full_chain_reference_document) ... ok
+test_new_chain_section_and_stages (test_skill_docs.SkillDocsTests.test_new_chain_section_and_stages) ... ok
+test_profile_and_environment_redlines_untouched (test_skill_docs.SkillDocsTests.test_profile_and_environment_redlines_untouched) ... ok
+test_reference_links_resolve_inside_skill (test_skill_docs.SkillDocsTests.test_reference_links_resolve_inside_skill) ... ok
+test_skill_file_and_frontmatter (test_skill_docs.SkillDocsTests.test_skill_file_and_frontmatter) ... ok
+
+----------------------------------------------------------------------
+Ran 345 tests in 116.272s
+
+OK (skipped=4)

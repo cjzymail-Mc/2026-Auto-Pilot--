@@ -1,0 +1,150 @@
+{
+ "baseline_frozen": true,
+ "handoff": {
+  "total": 13,
+  "mismatches": []
+ },
+ "originals": {
+  "drift": [],
+  "extra": [],
+  "n": 73
+ },
+ "template": {
+  "biz_number": "15426095951",
+  "uuid": "92d41ffd042746e390f0a070118ca1d9",
+  "document_type": "travel",
+  "applicant": {
+   "appliedName": "陈晶",
+   "appliedDeptName": "运动表现研究部",
+   "corpCode": "1003",
+   "appliedBy": "116070053"
+  },
+  "source": {
+   "kind": "live",
+   "endpoint_family": "observed_reimburse_uuid_get"
+  },
+  "table_kinds": [
+   "banks",
+   "costs",
+   "detailrels",
+   "details",
+   "products",
+   "relations"
+  ],
+  "details_rows": 2,
+  "costs_rows": 2,
+  "relations_rows": 1,
+  "banks_rows": 1,
+  "products_rows": 0,
+  "detailrels_rows": 1,
+  "createdBy_chain": {
+   "createdName": "陈晶",
+   "createdBy": "116070053"
+  },
+  "old_doc_totalCost": "251.40",
+  "old_doc_desc": "公出晋江油补",
+  "old_relations": [
+   {
+    "row_id": "template-relations-1",
+    "fields": {
+     "bizTypeName": "公出单",
+     "bizNumber": "12026096668",
+     "nowCost": "251.40",
+     "isLast": "1"
+    }
+   }
+  ]
+ },
+ "snapshot_pair": {
+  "same_biz": true,
+  "same_uuid": true,
+  "root_keys": [
+   "applicant",
+   "biz_number",
+   "captured_at",
+   "document_type",
+   "header",
+   "model_observation",
+   "representation",
+   "schema_version",
+   "source",
+   "tables",
+   "uuid"
+  ],
+  "evidence_keys": [
+   "applicant",
+   "biz_number",
+   "captured_at",
+   "document_type",
+   "header",
+   "model_observation",
+   "representation",
+   "schema_version",
+   "source",
+   "tables",
+   "uuid"
+  ],
+  "evidence_sha_in_root_manifest": null,
+  "semantic_diff_keys": []
+ },
+ "plan": {
+  "tables_rows": {
+   "details": 2,
+   "costs": 20,
+   "banks": 1,
+   "relations": 0
+  },
+  "sums_three_way_all_1924_93": true,
+  "costs_per_row_equals_G_plus_H_20of20": true,
+  "reason_km_subsidy_toll_breakdown_equals_F_G_H": true,
+  "reason_invoice_sets_equal_mapping_rows": true,
+  "start_end_dates_equal_mapping_rows_20of20": true,
+  "coverage_full_block": {
+   "K_km": "1438",
+   "rate_per_km": "1.00",
+   "M_subsidy": "1438.00",
+   "T_toll": "486.93",
+   "R_reimburse": "1924.93",
+   "O_fuel_pool": "2031.17",
+   "F_coverage_total": "2518.10",
+   "coverage_margin": "593.17",
+   "strict_gate": "greater"
+  },
+  "header_totalCost": "1924.93",
+  "relations_empty_with_not_applicable_reasons": true,
+  "placeholder_keys_in_plan": [],
+  "sources": {
+   "total": 170,
+   "template": 14,
+   "material": 156,
+   "template_locators_limited_to_identity_budget_bank": true
+  },
+  "expect_name": "陈晶"
+ },
+ "sources": {
+  "total": 170,
+  "template_sourced": 0,
+  "material_sourced": 170
+ },
+ "events": {
+  "count": 19,
+  "write_verbs": [],
+  "exact_template_read": true
+ },
+ "ledger": {
+  "V3R06": true,
+  "gap_closed_with_quote": true,
+  "errata_len": 5
+ },
+ "credential_grep": [],
+ "A_independent_validate_only_rerun": {
+  "status": "PLAN_VALIDATED",
+  "plan_sha256": "1b3ba0b924bf819765c315c1be6406ca4250292bd46eea1ba1c0cd46602d3160",
+  "browser_launched": false,
+  "matches_B": true
+ },
+ "A_source_carry_check_vs_r05_manifest": {
+  "entries": 63,
+  "changed": []
+ }
+}
