@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "module": "tools.diagnostics.perf",
+      "help_exit_code": 0,
+      "production_access": false
+    },
+    {
+      "module": "tools.diagnostics.type_query",
+      "help_exit_code": 0,
+      "production_access": false
+    },
+    {
+      "module": "tools.diagnostics.travel_census",
+      "help_exit_code": 0,
+      "production_access": false
+    }
+  ]
+}

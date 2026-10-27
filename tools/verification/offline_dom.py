@@ -25,7 +25,7 @@
 不再是 ≈45000ms×N 死等）；inner_exc / cell_input_skip / pick_row_detached /
 pick_row_verify / 尝试序号(attempt/attempts) 在 events.jsonl 可查。
 工件落 automation/offline-verify/<ts>-offline/（fixtures/ + evidence/ + events.jsonl +
-offline_result.json）。运行：python -X utf8 stage1_offline_verify.py（仓库根）。
+offline_result.json）。运行：python -X utf8 -m tools.verification.offline_dom（仓库根）。
 """
 import io
 import json
@@ -35,9 +35,8 @@ import time
 import types
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parent
-sys.path.insert(0, str(BASE))
-import stage1_browser_probe as probe_mod  # noqa: E402  (__main__ 有守卫，import 安全)
+from bpm.paths import ROOT as BASE
+import bpm.browser_probe as probe_mod  # noqa: E402  (__main__ 有守卫，import 安全)
 
 from playwright.sync_api import sync_playwright  # noqa: E402
 
@@ -343,7 +342,7 @@ summary = {
     "generated": time.strftime("%Y-%m-%dT%H:%M:%S"),
     "contract": "ctr-a10bb3f6", "round": 2,
     "probe_sha256_head": __import__("hashlib").sha256(
-        io.open(BASE / "stage1_browser_probe.py", "rb").read()).hexdigest()[:16],
+        io.open(Path(probe_mod.__file__), "rb").read()).hexdigest()[:16],
     "total": len(RESULTS), "passed": ok_n, "failed": len(RESULTS) - ok_n,
     "scenarios": sorted({r["scenario"] for r in RESULTS}),
     "results": RESULTS,

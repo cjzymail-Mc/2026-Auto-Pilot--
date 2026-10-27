@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "scope": "repository-layout static engineering review; not business acceptance",
+  "tested_by_reviewer": false,
+  "production_access": false,
+  "hash_validity": "VALID",
+  "files": {
+    "bpm/paths.py": "21690d7badc30bd3b0454ffdd640c9fb14148a1273df7329b719b565c2ee3dbd",
+    "bpm/save.py": "3db55220dde7645dd485522446600dfd65026aad6f1427bba99e42ad99e899df",
+    "bpm/session.py": "dbb6cd1338d14b9abd9f8e343931daab273b7dbdee2bf413358249ed3f93df29",
+    "bpm/ui.py": "04c32b16f3d31b16955a17b0b9a2df52baa9261fff4fa7b9ef6e4ed84df5c783",
+    "bpm/browser_probe.py": "0e1cf9e484c8da7023c6c74ba64cfb15162f7986c7d875a611aeb96f6cd15165",
+    "bpm/template.py": "6cae4f3f67ef27b08f0de34ec3b821449a99ac5121f3abc220a30143f9fcf015",
+    "bpm/verify.py": "a7aff596098cdccb44ecb71943f3bbf386f91c057afdd32724840e88a34fb9b0",
+    "bpm/types.py": "c2740f18ffe2f0d3492cdec153bc03f4cac5e8b5d65bcb32938b894371ed1357",
+    "bpm/fill_cli.py": "86b8cd22a4fa76f5961bee92d270be1da17f3459e39fc77356da56c25199fce9",
+    "bpm/login.py": "c3027d41757bd9c3878b17ccf6485bcde694ccc2724f41ddd697cc270ad9df54",
+    "tools/verification/build.py": "f09d3f0402077d5727601620e18e2d79f1e6b8d3ee69bb5afd3f694f349c2784",
+    "tools/verification/probe_selftest.py": "23a2214253b754760ebdbd4951a1e0ef4e6b3eb2d843da5b64330fc1f64f6156",
+    "tools/diagnostics/travel_census.py": "94be0060644408f35776e7a85a8f2f41ed22586f84025da44e83e083f508443e",
+    "fill_once.py": "e2b13956e3938c30f3a4637281c6f80db8a8128adcbbf8bc0d41026fa19af070",
+    "bpm_login.py": "1ac5c5362b6fcbf5ea81da121c69e6361b584fa2402cf34382b81939b35b6380",
+    "bpm_template.py": "1ce97ea7d757779318bcd50af64286514bcf4b758764ed835445325102fadd97",
+    "bpm_chain.py": "40fb36f7996248ddd4896efcc4e2452051e129ac1f9bff127e8e2b1477ef3da5",
+    "stage1_browser_probe.py": "19d285df28df3d4300089ad11e6fd80b5bfaba76a101274975a80955a77620ab",
+    "stage1_probe_selftest.py": "73e390a0e60253c5273b8d39c727be946cea88c06fa9fd944439eca620ff3bbe",
+    "verify_bpm_build.py": "9ea6702c5622065259905d4a9b07322e3517477444d63d83cab9870e7f14f2b6"
+  },
+  "findings": [
+    {
+      "id": "LAYOUT-R1-01",
+      "severity": "P2",
+      "status": "CLOSED",
+      "path": "tools/diagnostics/travel_census.py:783",
+      "finding": "module rewrite changed travel_census.json output name",
+      "resolution": "original output name restored; diagnostic business ASTs match before-images except imports"
+    }
+  ],
+  "reviewed_boundaries": [
+    "canonical module identity",
+    "repository root and authentication/profile paths",
+    "registry paths and save-intent protection",
+    "SaveController and normal click guard",
+    "actual implementation inclusion in source manifests",
+    "old plan/source hash drift remains fail-closed"
+  ]
+}

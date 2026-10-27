@@ -1,0 +1,1 @@
+{"applicant": {"name": "测试申请人", "company": "测试公司", "department": "测试部门"}, "budgetYears": "2026", "description": "测试材料说明", "no_invoice_rule": "离线合成数据免票理由：测试费用明确无需发票（仅机制验证）", "relation_rule": "快递任务无关联单据", "costs_rule": "快递任务按明细行报销，无费用区间明细"}

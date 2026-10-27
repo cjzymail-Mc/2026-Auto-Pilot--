@@ -1,0 +1,2 @@
+# Schema contract regression tests. Existing browser tests also use Playwright.
+jsonschema>=4,<5

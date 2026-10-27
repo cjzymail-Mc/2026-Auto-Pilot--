@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "status": "REPO_LAYOUT_COMPLETE",
+  "scope": "repository organization only; paused self-drive construction remains paused",
+  "completed_at": "2026-10-27T05:57:13.707356+00:00",
+  "root_files_before": 43,
+  "root_files_after": 21,
+  "root_files": [
+    ".gitignore",
+    ".team-workflow-state.json",
+    ".team-workflow-state.relocated.bak",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "STATE.md",
+    "bpm_chain.py",
+    "bpm_login.py",
+    "bpm_template.py",
+    "criteria-input.json",
+    "fill_once.py",
+    "handoff-input.json",
+    "requirements-dev.txt",
+    "review-input.json",
+    "stage1_browser_probe.py",
+    "stage1_probe_selftest.py",
+    "task-draft.md",
+    "team-progress.md",
+    "team-task.md",
+    "verify_bpm_build.py"
+  ],
+  "moved_files": 29,
+  "compatibility_entry_points": {
+    "fill_once.py": "bpm.fill_cli",
+    "bpm_login.py": "bpm.login",
+    "bpm_template.py": "bpm.template",
+    "bpm_chain.py": "bpm.chain",
+    "stage1_browser_probe.py": "bpm.browser_probe",
+    "stage1_probe_selftest.py": "tools.verification.probe_selftest",
+    "verify_bpm_build.py": "tools.verification.build"
+  },
+  "before_images": {
+    "count": 75,
+    "hashes_verified": true,
+    "git_excluded": true,
+    "contents": "explicit source/test/document allowlist only"
+  },
+  "validation": {
+    "status": "OFFLINE_PASS",
+    "build_result": "automation/offline-verify/repo-layout-20261027-r2/build_result.json",
+    "probe_selftest_exit_code": 0,
+    "total_tests": 399,
+    "passed_tests": 395,
+    "skipped_tests": 4,
+    "skips_existing": true,
+    "final_build_manifest_matches_current_files": true,
+    "build_manifest_files": 91,
+    "static_checks": "static-checks.json",
+    "tool_smoke": "tool-smoke.json",
+    "independent_static_review": "independent-static-review.json",
+    "independent_review_hashes_valid": true
+  },
+  "failed_attempt_preserved": {
+    "path": "automation/offline-verify/repo-layout-20261027-r1",
+    "reason": "Windows sandbox denied local Playwright subprocess pipe creation (WinError 5); fresh complete offline build passed outside sandbox"
+  },
+  "legacy_bytes": {
+    "tools/legacy/_gen_manifest.py": "1cfa4c88565aca0481fbee16b3eb60924ede08ad6f13583c52ffa4d5c65d60db",
+    "tools/legacy/_schema_v02.py": "5b93afe48560219a266fac683d398a704c5748ccf31d197d854a397994bb010f",
+    "tools/legacy/_chk_orphan2.ps1": "5e91b2e80bdaf61285516300ac70167861a3f7456e1897a5a3dd6b761ef8f0d4"
+  },
+  "preserved_scope": [
+    "workflow state, root task/progress/input/backup files",
+    "original materials and frozen contracts",
+    "historical business runs and manifests",
+    "task-registry and protected authentication/session data",
+    "legacy-ia2 read-only archive"
+  ],
+  "production_access": false,
+  "production_writes": false,
+  "business_workflow_restarted": false,
+  "real_fill_verified": false,
+  "real_save_verified": false,
+  "current_business_scope": "self-drive implementation and real OA acceptance remain paused and incomplete",
+  "before_manifest": "before-manifest.json",
+  "after_manifest": "after-manifest.json",
+  "source_hash_compatibility": "moved source and non-travel resolver hashes changed; do not rewrite old plans, journals or manifests to bypass bindings"
+}

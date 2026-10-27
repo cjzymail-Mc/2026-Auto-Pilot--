@@ -34,7 +34,7 @@ v4 检查点优先（用户指令 2026-10-23）：先成功读取【一张】真
 采集策略：A. 7 个详情端点模式猜测（用已有 uuid）→ B. DOM 点行捕获真实详情 xhr →
 C. xhr 不可用时 DOM 点行采样兜底。
 红线不破：全程 GET/导航；不点任何 NO_SAVE_WORDS 按钮；原始值只落 evidence，控制台脱敏。
-用法：python -X utf8 travel_census.py [--limit 63] [--dom-sample 12] [--checkpoint-only]
+用法：python -X utf8 -m tools.diagnostics.travel_census [--limit 63] [--dom-sample 12] [--checkpoint-only]
 工件：automation/runs/<run>/travel_census.json + attempt_001/evidence/
 """
 import argparse
@@ -45,9 +45,9 @@ import sys
 import time
 from urllib.parse import urlsplit
 
-import stage1_browser_probe as pb
-from stage1_browser_probe import HOST, LIST_PATH, assert_internal, mask
-from list_type_query import TypeQuery
+import bpm.browser_probe as pb
+from bpm.browser_probe import HOST, LIST_PATH, assert_internal, mask
+from tools.diagnostics.type_query import TypeQuery
 
 CUTOFF = "2024-10-23"          # 与类型盘点同口径（近 2 年，制单日期）
 SUBMITTYPE_MAP = {"08": "差旅费", "11": "研发材料费", "15": "快递费",

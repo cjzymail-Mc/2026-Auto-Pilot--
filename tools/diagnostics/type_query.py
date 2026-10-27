@@ -8,7 +8,7 @@
 （10h TTL）/ 扫码登录门 / 事件流落盘。本脚本不 import 任何填写逻辑，不点击任何
 NO_SAVE_WORDS 按钮（查询/翻页除外，均过守卫）。
 
-用法（cwd=仓库根）：python -X utf8 list_type_query.py [--dept 运动表现研究部] [--login-wait 480]
+用法（cwd=仓库根）：python -X utf8 -m tools.diagnostics.type_query [--dept 运动表现研究部] [--login-wait 480]
 工件：automation/runs/<run>/（events.jsonl / attempt_001/evidence/ / types_result.json）
 """
 import argparse
@@ -19,8 +19,8 @@ import sys
 import time
 from types import SimpleNamespace
 
-import stage1_browser_probe as pb
-from stage1_browser_probe import (HOST, LIST_PATH, NO_SAVE_WORDS, Probe,
+import bpm.browser_probe as pb
+from bpm.browser_probe import (HOST, LIST_PATH, NO_SAVE_WORDS, Probe,
                                   assert_internal, mask)
 
 # 数据表行读取：按 thead th 的 prop-* 类映射列名（form-schema v0.2 结论：列头带 prop-*）。

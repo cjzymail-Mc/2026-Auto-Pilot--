@@ -5,7 +5,7 @@ import re
 import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from playwright.sync_api import sync_playwright
-import stage1_browser_probe as P
+import bpm.browser_probe as P
 
 HTML = pathlib.Path(r"automation/runs/20261021-131724-1c1aadbd/attempt_007/evidence/fill_form.html")
 

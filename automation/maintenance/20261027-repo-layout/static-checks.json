@@ -1,0 +1,51 @@
+{
+  "status": "STATIC_PASS",
+  "parsed_active_python_files": 71,
+  "old_flat_imports": [],
+  "safety_ast_checks": {
+    "bpm/save.py": {
+      "business_definitions_unchanged_except_imports": true,
+      "definition_count": 4
+    },
+    "bpm/session.py": {
+      "business_definitions_unchanged_except_imports": true,
+      "definition_count": 11
+    },
+    "bpm/browser_probe.py": {
+      "business_definitions_unchanged_except_imports": true,
+      "definition_count": 18
+    },
+    "bpm/self_drive.py": {
+      "business_definitions_unchanged_except_imports": true,
+      "definition_count": 11
+    },
+    "tools/diagnostics/perf.py": {
+      "business_definitions_unchanged_except_imports": true,
+      "definition_count": 3
+    },
+    "tools/diagnostics/type_query.py": {
+      "business_definitions_unchanged_except_imports": true,
+      "definition_count": 3
+    },
+    "tools/diagnostics/travel_census.py": {
+      "business_definitions_unchanged_except_imports": true,
+      "definition_count": 3
+    }
+  },
+  "legacy_moved_bytes_preserved": true,
+  "relative_links_checked": 48,
+  "root_files_after": 21,
+  "business_string_literal_check": {
+    "modules_checked": 20,
+    "result": "identical except three canonical generated_by labels",
+    "canonical_producer_labels": {
+      "bpm_materials.py": {
+        "bpm_materials.prepare_dual_materials": "bpm.materials.prepare_dual_materials"
+      },
+      "bpm_request.py": {
+        "bpm_request.register_request": "bpm.request.register_request",
+        "bpm_request.build_reuse_matrix": "bpm.request.build_reuse_matrix"
+      }
+    }
+  }
+}

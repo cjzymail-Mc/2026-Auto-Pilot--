@@ -1,0 +1,10 @@
+# 二进制原件不做换行转换（core.autocrlf=true 环境下防 checkout 损坏）
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.xlsx binary
+*.xls binary
+*.docx binary
+*.zip binary
