@@ -1,5 +1,7 @@
 # 活体登录 token + 浏览器缓存（50MB）——绝不入库
 automation/.pw-profile/
+# 本机登录人员及会话探查元数据（不含凭证原值，不入库）
+automation/.local-session/
 # 嵌套外部 repo（自有 .git）
 Windows-MCP/
 # Python
@@ -8,3 +10,19 @@ __pycache__/
 
 # team-workflow live 运行态（session/ transcript 路径，随轮次滚动，不入库）
 .team-workflow-state.json
+.team-workflow-state.relocated.bak
+# 本机个人 Claude Code 设置（含禁用后台 shell 内存回收的 env，不入库）
+.claude/settings.local.json
+
+# Source-only before-images used for reversible repository maintenance.
+automation/maintenance/*/before/
+
+# 真实原始票据/资料不入库（原件仅留本地，run 证据保留 manifest 与哈希引用）
+feature01-细化报销skill/12月公出-发票/
+automation/runs/*/collect/collected/
+*公里数统计表*.xlsx
+automation/vision-benchmark/*/inputs/
+
+# 一次性过程产物不入库（可由 verify_bpm_build.py 再生）
+automation/offline-verify/
+patches/
