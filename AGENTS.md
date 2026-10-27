@@ -21,7 +21,7 @@ Skill 框架、runbook 登记及新增手册规范见 [入口与未来扩展说�
 2. `automation/.pw-profile/` 含活体凭证，绝不复制进 Git、日志、报告、材料清单或测试工件。`automation/.local-session/` 的个人会话元数据也不进入 Git、通用案例、材料 manifest 或跨 agent 消息；禁止 `git add -f`。
 3. 结果以 `automation/runs/<run>/events.jsonl`（追加式）、`attempt_NNN/stage1_result.json` 及该 attempt 证据为准；准备结果在 run 根。报告保存成功必须证明唯一新单号/UUID、未提交状态及重开持久化回读；fill_only 验收不要求这些，也不测试保存按钮。
 4. `automation/task-registry/` 保留跨 run 意图。已有 `SAVE_INTENT`、`SAVE_UNCERTAIN` 或保存成功记录只读核实，禁止再保存/另建。未保存页恢复当前仅盘点并返回 `NEEDS_INPUT`；不得删 registry、换 task_id 或强关旧页规避。单 profile 单执行者，探查不得导航或关闭其他执行者的未保存页。
-5. `legacy-ia2/` 只读存档。缺原件、模板或登录条件时继续独立可做工作并如实留缺口，不虚构业务、不将历史验收冒充当次结果。
+5. `legacy-ia2/` 本地只读存档（2026-10-27 历史净化起不入库，新克隆缺件为预期状态；原件在维护备份与本地 ignore 清单）。缺原件、模板或登录条件时继续独立可做工作并如实留缺口，不虚构业务、不将历史验收冒充当次结果。
 
 ## 协作与异常处理
 

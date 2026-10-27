@@ -65,7 +65,7 @@ python -X utf8 stage1_browser_probe.py --expect-name "操作人" --login-only --
 | automation/runs/<run>/ | task_binding、材料工件、追加 events.jsonl、attempt_NNN 结果/证据 |
 | automation/task-registry/ | 跨 run 的任务意图与保存核实记录，不得随意清理 |
 | tests/ / stage1_probe_selftest.py | 合成场景测试与旧安全边界自测 |
-| legacy-ia2/ / patches/ | 只读旧探索档案 / Windows-MCP 改造补丁 |
+| legacy-ia2/ / patches/ | 只读旧探索档案（本地存档，含真实卡号部分不入库）/ Windows-MCP 改造补丁 |
 
 正式 `fill_once.py` 已完成已授权示范数据的真实新建未保存整单验证：3 关联、2 报销明细、6 费用说明、1 收款，完整独立回读无差异。C0 实测 UI_START → READBACK_END 为 191.48 秒；进一步优化的 C1 及适用范围见[提速验收记录](feature01-细化报销skill/2026-10-23%20提速施工验收记录.md)。这不代表新业务材料理解或自动保存已实单验收。
 
