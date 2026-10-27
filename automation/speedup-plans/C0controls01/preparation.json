@@ -1,0 +1,15 @@
+{
+  "t0_ms": 1792750491354.891,
+  "dur_ms": 305.75439453125,
+  "kind": "reuse_confirmed_demonstration_inputs_no_new_material_parsing",
+  "purpose": "正式控件集成后的首次真实路径验证，失败定位后再建立完整 C0 基线",
+  "plan_hash": "5457ea77d8ed9f514c0753377d1f5d0c3eef01a2b2306f5e40c9252c665aa70c",
+  "authorization_sha256": "f99d556e1860b0371d6a5763fdedd1ad8056e40aa93419f1a1bbe0fedc9a7de5",
+  "template_sha256": "a4da6b86de32ea7acfac8b3c5a72a9df85255697b9f5736fa32a553ff3757f30",
+  "materials_sha256": "0ecf7ad1289c55a0eeafab106bd867daa585e1a874937c9ccd00b37a7d1d0f28",
+  "protected_saved_sample": {
+    "biz_number": "15426104612",
+    "uuid": "8fb51b7920424c24b89cd2b058e0a226",
+    "read_only": true
+  }
+}

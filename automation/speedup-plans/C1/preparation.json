@@ -1,0 +1,15 @@
+{
+  "t0_ms": 1792750923158.3257,
+  "dur_ms": 222.62841796875,
+  "kind": "reuse_confirmed_demonstration_inputs_no_new_material_parsing",
+  "purpose": "相同 3 关联 2 明细 6 费用 1 收款规模的正式入口 C1 性能与严格回读对照",
+  "plan_hash": "00d529af225367384db475dadbb7949206d177d8a0bc065a8982c13e15191ab3",
+  "authorization_sha256": "f99d556e1860b0371d6a5763fdedd1ad8056e40aa93419f1a1bbe0fedc9a7de5",
+  "template_sha256": "a4da6b86de32ea7acfac8b3c5a72a9df85255697b9f5736fa32a553ff3757f30",
+  "materials_sha256": "0ecf7ad1289c55a0eeafab106bd867daa585e1a874937c9ccd00b37a7d1d0f28",
+  "protected_saved_sample": {
+    "biz_number": "15426104612",
+    "uuid": "8fb51b7920424c24b89cd2b058e0a226",
+    "read_only": true
+  }
+}
