@@ -33,6 +33,12 @@ Skill 框架、runbook 登记及新增手册规范见 [入口与未来扩展说�
 
 ## 正常入口与材料边界
 
+Runbook 导航：由统一入口按真实模板及本次材料路由，具体支持范围与验收状态见手册及 [STATE.md](STATE.md)。
+
+- [自驾公出类](.claude/skills/bpm-fill-run/references/self-drive.md)。
+- [快递费](.claude/skills/bpm-fill-run/references/express.md)：普通全额，无关联及物品档案。
+- [研发材料费](.claude/skills/bpm-fill-run/references/rd-materials.md)：现有档案行金额，关联及费用说明为空。
+
 业务开工先 `python -X utf8 bpm_login.py` 只读探查当前身份；需要全新扫码时用 `--force-scan`。登录入口不预设姓名；业务 `--expect-name` 必须来自本次真实探查或核对用户明确预期，不沿用历史姓名。
 
 ```powershell

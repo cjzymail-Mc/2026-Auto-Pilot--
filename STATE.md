@@ -1,10 +1,11 @@
 # STATE.md — 当前接手快照
 
-最后核对：2026-10-27（另行授权的仓库归类整理完成，根文件 43→21，离线验证通过：399 项中 395 通过、4 项既有跳过；原自驾施工 workflow 仍为 CANCELLED，业务最终终审未做）。  
+最后核对：2026-10-27（快递/研发限定范围 runbook 文档收尾完成：9 项文档测试通过、独立合成情景走读通过；其他状态沿用既有证据，未重新验证 OA）。
 维护标准见 [AGENTS.md](AGENTS.md#文档分工与-statemd-维护标准)：替换旧结论、近期结果最多 3 项、目标 40—60 行，详细过程留原工件。
 
 ## 当前工作与下一步
 
+- [快递＋研发 runbook 轻量收尾](feature02-扩展更多单据类型/快递研发runbook收尾结果.md)已按[计划](feature02-扩展更多单据类型/2026-10-27%20快递费与研发材料费runbook轻量收尾施工计划.md)完成两份手册、入口登记、离线检查和独立走读；新业务原件驱动的填写及真实保存另验，不启动自驾或其他类型施工。
 - [自驾公出技能固化施工合同 V1](feature01-细化报销skill/2026-10-27%20报销单-自驾公出类技能固化施工合同-V1.md)（BPM-SELFDRIVE-20261027-V1）workflow run `242ccba1c43343f687aa1db0ae014f5b` round 2（合同 ctr-2433e4a3）：**用户 2026-10-27 指令"先暂停施工，完成 skill 搭建即可"→ A 发 stop、B 检查点收束后 pause 确认，run 已按状态机转入 CANCELLED（终态）。R2 未 finish、不宣称 DONE；resume 不适用于 CANCELLED**。
 - Skill 搭建后，已按用户另行指令完成仓库归类整理：实现归入 `bpm/`，工具归入 `tools/`，保留七个根命令兼容入口。见 [目录与旧路径映射](docs/repository-layout.md)、[整理验收结果](automation/maintenance/20261027-repo-layout/result.json)。原自驾施工继续暂停，未重新启动 workflow，也未填写或保存 OA。
 - 续作方式（用户明确启动完整施工新任务后）：原窗口按合法流程 `archive` 并核对已归档任务字节，再准备新 run；不自动恢复 CANCELLED。R2 [暂停点 manifest](automation/runs/20261027-121733-cb8b9bd6/artifact-manifest-r2fix2.txt)保留历史；此后另有 Skill 文档和仓库目录修订，源码及部分类型解析器哈希已变。恢复时须按新路径比对并重冻当前哈希，再做 fresh ENHANCED_FINAL、P6 收尾和独立验收，不能改旧计划/registry/manifest 绕过漂移。
@@ -13,9 +14,9 @@
 
 ## 最近已证实的结果
 
-1. **10 月 27 日 R2 主体+窄审修复离线全绿（含修复后新鲜验证）。**D02 30 天迁移（REUSE_DAYS=30、旧记录收紧 min(原窗口,扫码+30d)）；D04 识票归集 `bpm_collect.py`（73 原件只读→32 身份 27 通行费 Σ486.93+5 油票、GAP=0、汇总单互证 10/10、幂等防覆盖、72 规范副本，与人工对照表逐日一致差异 0）；D3 下游多 record；P2-2/P2-3 机制化清污；§2(4) 纠正+[D5 记录](automation/runs/20261027-121733-cb8b9bd6/d5-capability-layers-correction.md)+`bpm_identity.py`+task.schema 身份关系字段。**Codex 两轮窄审反例（写回滚动 24h/坏 meta 拒绝不一致/删键降级链）全部隔离验证成立并修复**：persist_state 锚点保持+覆盖前拒绝、_meta_valid 三处统一；修复后 394 tests OK exit=0 + OFFLINE_PASS（offline-verify/20261027-121733-cb8b9bd6-r2fix2/）。零业务写入、73 原件零漂移。证据：`automation/runs/20261027-121733-cb8b9bd6/`（events 全链）。
-2. **10 月 27 日 Skill 文档搭建及后续仓库归类整理完成。**[早先 Skill-only 结果](automation/runs/20261027-skill-scaffold/result.json)保留文档校验与独立情景复核历史；现行目录见上方整理结果。29 个文件迁移、七入口兼容，399 项测试中 395 通过、4 项既有跳过；独立静态复核及守卫 AST 比对完成。手册固化与目录整理均不代表自驾整链、D12 或真实填写/保存验收完成。
-3. **10 月 27 日样本逐项核算完成（R1 落地）。**self_drive 规则/模型/§6.1 反例全过；09-05/09-28 差异与日期问题见 [逐项核算](automation/runs/20261027-sample15425123013-live/逐项金额核算.md)。30 元/日餐补 300、总额 2224.93 为离线对照值（只进测试不进生产路由）。
+1. **10 月 27 日快递/研发限定范围 runbook 收尾完成。**字段来源、快递两种费用说明路径、研发现有档案行金额及票据分配、正式入口与异常停点已补齐；原路由不变，登记新增两类。9 项文档检查、独立合成情景走读通过；历史真实回放仅证明只填不存，新业务和真实保存按具体任务另验。见[收尾结果与最终文档哈希](feature02-扩展更多单据类型/快递研发runbook收尾结果.md)。
+2. **10 月 27 日 R2 主体+窄审修复离线全绿（含修复后新鲜验证）。**D02 30 天迁移（REUSE_DAYS=30、旧记录收紧 min(原窗口,扫码+30d)）；D04 识票归集 `bpm_collect.py`（73 原件只读→32 身份 27 通行费 Σ486.93+5 油票、GAP=0、汇总单互证 10/10、幂等防覆盖、72 规范副本，与人工对照表逐日一致差异 0）；D3 下游多 record；P2-2/P2-3 机制化清污；§2(4) 纠正+[D5 记录](automation/runs/20261027-121733-cb8b9bd6/d5-capability-layers-correction.md)+`bpm_identity.py`+task.schema 身份关系字段。**Codex 两轮窄审反例（写回滚动 24h/坏 meta 拒绝不一致/删键降级链）全部隔离验证成立并修复**：persist_state 锚点保持+覆盖前拒绝、_meta_valid 三处统一；修复后 394 tests OK exit=0 + OFFLINE_PASS（offline-verify/20261027-121733-cb8b9bd6-r2fix2/）。零业务写入、73 原件零漂移。证据：`automation/runs/20261027-121733-cb8b9bd6/`（events 全链）。
+3. **10 月 27 日 Skill 文档搭建及后续仓库归类整理完成。**[早先 Skill-only 结果](automation/runs/20261027-skill-scaffold/result.json)保留文档校验与独立情景复核历史；现行目录见上方整理结果。29 个文件迁移、七入口兼容，399 项测试中 395 通过、4 项既有跳过；独立静态复核及守卫 AST 比对完成。手册固化与目录整理均不代表自驾整链、D12 或真实填写/保存验收完成。
 
 ## 业务范围与验收边界
 
@@ -33,6 +34,7 @@
 
 ## 按需深入
 
-- R2 工件：`automation/runs/20261027-121733-cb8b9bd6/`（collect/ 归集产物、p2-3 复扫、D5 记录、r2fix-isolated-verification、两份 manifest、events 全链）；离线构建三目录（385/392/394 历史快照，r2fix2 为现行）。R1 工件：`automation/runs/20261027-111853-f2789e00/`。
+- R2 工件：`automation/runs/20261027-121733-cb8b9bd6/`（collect/ 归集产物、p2-3 复扫、D5 记录、r2fix-isolated-verification、两份 manifest、events 全链）；离线构建三目录（385/392/394 历史快照，r2fix2 为现行）。
+- R1 工件：`automation/runs/20261027-111853-f2789e00/`；[逐项金额核算](automation/runs/20261027-sample15425123013-live/逐项金额核算.md)中的餐补/合计仍仅为离线对照值，不进生产路由。
 - V3 独立验收与证据清单：[A-verification.md](team-progress/team-workflow/d91601924848489f84e317e68582de26/round-08/acceptance/A-verification.md)、[final-manifest.json](automation/runs/20261026-192400-v3r08-final/final-manifest.json)。
 - 日常业务入口：[bpm-fill-run](.claude/skills/bpm-fill-run/SKILL.md)；操作规则与维护标准：[AGENTS.md](AGENTS.md)。下一阶段更新本快照时替换过期条目，不在末尾追加工作日志。
