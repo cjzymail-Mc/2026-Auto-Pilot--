@@ -1,0 +1,7 @@
+{
+  "windows_census_available": true,
+  "current_process_found": true,
+  "current_creation_time_readable": true,
+  "process_count": 270,
+  "scope": "read-only Windows census; no process command lines or session metadata exported"
+}

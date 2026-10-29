@@ -1,0 +1,26 @@
+{
+  "before": {
+    "yaml_parsed": true,
+    "frontmatter": {
+      "name": "team-workflow",
+      "description": "Claude-GLM 双窗口有限轮接力。A 按冻结文档规划和独立验收，B 执行现有 team-task（可按 run 参数代起草首轮）；任务交接即时唤醒，空闲静默等待一小时后续待机。用于用户要求 team-workflow 的场景。",
+      "disable-model-invocation": true,
+      "argument-hint": "run [<需求文档>] | review <冻结文档> [max-round=3] | status | resume | stop"
+    },
+    "quick_validate_exit": 1,
+    "quick_validate_output": "Unexpected key(s) in SKILL.md frontmatter: argument-hint, disable-model-invocation. Allowed properties are: allowed-tools, description, license, metadata, name\r\n"
+  },
+  "staged": {
+    "yaml_parsed": true,
+    "frontmatter": {
+      "name": "team-workflow",
+      "description": "Claude-GLM 双窗口有限轮接力。A 按冻结文档规划和独立验收，B 执行现有 team-task（可按 run 参数代起草首轮）；任务交接即时唤醒，空闲静默等待一小时后续待机。用于用户要求 team-workflow 的场景。",
+      "disable-model-invocation": true,
+      "argument-hint": "run [<需求文档>] | review <冻结文档> [max-round=3] | status | resume | stop"
+    },
+    "quick_validate_exit": 1,
+    "quick_validate_output": "Unexpected key(s) in SKILL.md frontmatter: argument-hint, disable-model-invocation. Allowed properties are: allowed-tools, description, license, metadata, name\r\n"
+  },
+  "frontmatter_unchanged": true,
+  "format_note": "Claude-specific frontmatter is retained; Codex validator rejects the same existing keys in both versions."
+}

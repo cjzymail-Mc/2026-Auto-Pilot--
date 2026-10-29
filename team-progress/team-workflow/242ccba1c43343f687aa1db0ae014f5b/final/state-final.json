@@ -1,0 +1,57 @@
+{
+  "version": 3,
+  "repo": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信",
+  "run": "242ccba1c43343f687aa1db0ae014f5b",
+  "seq": 11,
+  "phase": "CANCELLED",
+  "round": 2,
+  "max_round": 12,
+  "sessions": {
+    "B": "c05e555a-0c54-4418-96a2-d92a751dfbc9",
+    "A": "9acdfc57-4f2d-476f-bc24-b23bedb77a24"
+  },
+  "runtime_evidence": {
+    "B": {
+      "runtime": "CLAUDE_GLM",
+      "model": "glm-5.3",
+      "transcript": "C:\\Users\\xy198\\.claude-glm\\projects\\D--Downloads-Mc-Claude-Code-Workshop-2026-Auto-Pilot-----\\c05e555a-0c54-4418-96a2-d92a751dfbc9.jsonl"
+    },
+    "A": {
+      "runtime": "CLAUDE_GLM",
+      "model": "glm-5.3",
+      "transcript": "C:\\Users\\xy198\\.claude-glm\\projects\\D--Downloads-Mc-Claude-Code-Workshop-2026-Auto-Pilot-----\\9acdfc57-4f2d-476f-bc24-b23bedb77a24.jsonl"
+    }
+  },
+  "failures": {},
+  "history": [
+    {
+      "round": 1,
+      "decision": "rework",
+      "review_sha256": "174e932452af041590593d4c69ff0f677ff06eda018348ad1f34da61f5651dad"
+    }
+  ],
+  "stop_requested": true,
+  "authorization": {
+    "B": "/team-workflow run",
+    "created": "2026-10-27T11:18:53+08:00",
+    "A": "/team-workflow review"
+  },
+  "source_id": "src-cb8b9bd6",
+  "source_sha256": "cb8b9bd67bbb393265b6f59c39ca2da5f675887b699466f639caa050342fcef8",
+  "team_run": "20261027-121733-cb8b9bd6",
+  "pending_old": {
+    "team-task.md": "eaf909ca8f93c744c8dabf615389c159335524588885dc4c2988ac30933de2e6",
+    "team-progress.md": "db5ec5c5d76ba4984b87942d3efde9a87a7c58c282653ca6196eee7761118829"
+  },
+  "updated": "2026-10-27T13:11:25+08:00",
+  "entered": true,
+  "baseline": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature01-细化报销skill\\2026-10-27 报销单-自驾公出类技能固化施工合同-V1.md",
+  "baseline_sha256": "4ac8adbe15fc6a90f834ddfa355b5c9a929d4f5ca7904ee467931335ecbf2049",
+  "criteria_sha256": "a7c1f532208c1dc52ffc364a99cfc68f584489e4899e36930b6b1cb419aafab3",
+  "handoff_sha256": "96bbd3a18042be2664c3d4a238ffa8fc49430211eed0a082a16c32c49ea9f7a6",
+  "last_live": {
+    "team-task.md": "eaf909ca8f93c744c8dabf615389c159335524588885dc4c2988ac30933de2e6",
+    "team-progress.md": "db5ec5c5d76ba4984b87942d3efde9a87a7c58c282653ca6196eee7761118829"
+  },
+  "pause_reason": "用户暂停施工：先暂停施工，完成skill搭建即可。R2 检查点已收束（events/manifest/progress/STATE 原子写入完成），394+r2fix2 OFFLINE_PASS 为现行验证；R2 未 finish 不宣称 DONE；恢复入口与遗留见 STATE.md/team-progress.md"
+}

@@ -1,0 +1,26 @@
+{
+  "installed": [
+    {
+      "file": "scripts/prepare_new.py",
+      "sha256": "0b2dd1ae42eecf0cf38e3f79768a897c3fb09299b601a308798cf2c68889d1d3"
+    },
+    {
+      "file": "fixtures/test_prepare_new.py",
+      "sha256": "e59d423cf2829a380bad6605ee117bdeadad5d5e54e878b5a11e9cbbce6503bc"
+    },
+    {
+      "file": "scripts/workflow.py",
+      "sha256": "55c8ff1e86545c3c263a3cc727662c273d666dc81a7328cda0505496a7b04093"
+    },
+    {
+      "file": "references/relay.md",
+      "sha256": "a6e559f8d62dfa3aba07dcdd02d8a03f54fd29697edefd828224575579f1a7f8"
+    },
+    {
+      "file": "SKILL.md",
+      "sha256": "dec8520b228f587adddd1e56a61bb5547e80771be8b5969c6a7cd7830d614a52"
+    }
+  ],
+  "runtime_junction_verified": true,
+  "scope": "shared skill only; no workflow state/task/progress or OA business changed"
+}
