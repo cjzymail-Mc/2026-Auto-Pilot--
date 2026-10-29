@@ -1,0 +1,247 @@
+{
+  "decision": "pass",
+  "summary": "本轮新增/重验：A 一手完成基线 hash 复核（一致）、handoff 21 项产物哈希逐项实算（全匹配）、独立复跑 verify_bpm_build（OFFLINE_PASS，selftest 4.454s＋491 项 242.957s OK skipped=4，产物 automation/offline-verify/20261028-153836-draft-build/）、oneshot/browser_probe/ui/save 代码实物走读（两分支顺序、G2 三支四绑定、journal 门、副页生命周期、_deliver_and_park 时序、NO_SAVE_WORDS/600ms/30 天不变项）、红线 1 逐字比对、六文档＋三手册同步与缺口保留核实、git 范围核查（chain.py/session.py/workflow helper/tools 未动）；16 项 criteria 全部 PASS_DYNAMIC，证据见 round-01/acceptance/A-verification.md。有效旧证据：G4 基线 automation/runs/20261027-074251-9d71443f/events.jsonl（2026-10-27，B 本轮一手复核数值）仅作不可比同口径参考、提速标待测；既有中断/恢复/守卫用例随 491 全量由 A 复跑确认绿。未解项：真实首验/真实保存待用户当次输入（三项缺口集中列出，按基线 §5.5 条件分支如实待验，非缺陷，续作入口 2026-10-28 oneshot真实首验接续计划.md）；B 自报非阻断残留（--fill-plan/--resume-run 浏览器前 journal 预检、lifecycle 计数逐 run 实测）留待下次代码触碰，不构成基线缺口。",
+  "failure_counts": {},
+  "checks": [
+    {
+      "id": "C01",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/oneshot.py",
+        "tests/test_bpm_oneshot.py",
+        "automation/offline-verify/20261028-153836-draft-build/build_result.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\oneshot.py": "0e03f05b514dde68ed1bba8b9f3909017d144527647bc29523dffd5deb19f538",
+        "tests\\test_bpm_oneshot.py": "d8a21f6839a070d8aef7a5a88aa2a73ba707fae6825532a6da002a2b643d6de4",
+        "automation\\offline-verify\\20261028-153836-draft-build\\build_result.json": "bd2d83acde426a080ef6feccfa0bfc9563e3b577e543d88bca01548a47ecaf84"
+      }
+    },
+    {
+      "id": "C02",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/template.py",
+        "bpm/ui.py",
+        "tests/test_bpm_oneshot.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\template.py": "d944bcae710f8ce379aa668ea2523b732971e640a1180c1a4702b2e2135d2f3c",
+        "bpm\\ui.py": "e7a74c7b15f05e4accbe37894ecfb83eee5544d4dc70a6942885ad982a925231",
+        "tests\\test_bpm_oneshot.py": "d8a21f6839a070d8aef7a5a88aa2a73ba707fae6825532a6da002a2b643d6de4"
+      }
+    },
+    {
+      "id": "C03",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/browser_probe.py",
+        "tests/test_bpm_oneshot.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\browser_probe.py": "e88bb0ae0ed6a931ab2d25875d3d9d9fd878d49d5e0e849e78a76ba01fb87f6d",
+        "tests\\test_bpm_oneshot.py": "d8a21f6839a070d8aef7a5a88aa2a73ba707fae6825532a6da002a2b643d6de4"
+      }
+    },
+    {
+      "id": "C04",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/oneshot.py",
+        "tests/test_bpm_oneshot.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\oneshot.py": "0e03f05b514dde68ed1bba8b9f3909017d144527647bc29523dffd5deb19f538",
+        "tests\\test_bpm_oneshot.py": "d8a21f6839a070d8aef7a5a88aa2a73ba707fae6825532a6da002a2b643d6de4"
+      }
+    },
+    {
+      "id": "C05",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/save.py",
+        "bpm/oneshot.py",
+        "tests/test_bpm_oneshot.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\save.py": "1b5210b5bd0697dfa936f4dd3634aa3c827196890a717a1a7638e067eded9d6d",
+        "bpm\\oneshot.py": "0e03f05b514dde68ed1bba8b9f3909017d144527647bc29523dffd5deb19f538",
+        "tests\\test_bpm_oneshot.py": "d8a21f6839a070d8aef7a5a88aa2a73ba707fae6825532a6da002a2b643d6de4"
+      }
+    },
+    {
+      "id": "C06",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/ui.py",
+        "tests/test_bpm_oneshot.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\ui.py": "e7a74c7b15f05e4accbe37894ecfb83eee5544d4dc70a6942885ad982a925231",
+        "tests\\test_bpm_oneshot.py": "d8a21f6839a070d8aef7a5a88aa2a73ba707fae6825532a6da002a2b643d6de4"
+      }
+    },
+    {
+      "id": "C07",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/ui.py",
+        "bpm/oneshot.py",
+        "automation/offline-verify/20261028-153836-draft-build/capability-tests.log"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\ui.py": "e7a74c7b15f05e4accbe37894ecfb83eee5544d4dc70a6942885ad982a925231",
+        "bpm\\oneshot.py": "0e03f05b514dde68ed1bba8b9f3909017d144527647bc29523dffd5deb19f538",
+        "automation\\offline-verify\\20261028-153836-draft-build\\capability-tests.log": "aebd5704ac83c7ea3a77520debdf1b7efacce2239fd4180b6d279dd27ab01735"
+      }
+    },
+    {
+      "id": "C08",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/ui.py",
+        "bpm/save.py",
+        "tests/test_bpm_oneshot.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\ui.py": "e7a74c7b15f05e4accbe37894ecfb83eee5544d4dc70a6942885ad982a925231",
+        "bpm\\save.py": "1b5210b5bd0697dfa936f4dd3634aa3c827196890a717a1a7638e067eded9d6d",
+        "tests\\test_bpm_oneshot.py": "d8a21f6839a070d8aef7a5a88aa2a73ba707fae6825532a6da002a2b643d6de4"
+      }
+    },
+    {
+      "id": "C09",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/browser_probe.py",
+        "tests/test_bpm_oneshot.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\browser_probe.py": "e88bb0ae0ed6a931ab2d25875d3d9d9fd878d49d5e0e849e78a76ba01fb87f6d",
+        "tests\\test_bpm_oneshot.py": "d8a21f6839a070d8aef7a5a88aa2a73ba707fae6825532a6da002a2b643d6de4"
+      }
+    },
+    {
+      "id": "C10",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "AGENTS.md",
+        "bpm/browser_probe.py",
+        "automation/offline-verify/20261028-153836-draft-build/probe-selftest.log"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "AGENTS.md": "f49764febe8446a9d72fc332d328f7e6949cae9f334d3bc4aa7e2059563424cf",
+        "bpm\\browser_probe.py": "e88bb0ae0ed6a931ab2d25875d3d9d9fd878d49d5e0e849e78a76ba01fb87f6d",
+        "automation\\offline-verify\\20261028-153836-draft-build\\probe-selftest.log": "e2e53d7e8ff12312ccb4ce071665cd4bf370dab670e45c180ef0dc222443751a"
+      }
+    },
+    {
+      "id": "C11",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "automation/offline-verify/20261028-153836-draft-build/build_result.json",
+        "automation/offline-verify/20261028-153836-draft-build/capability-tests.log",
+        "automation/offline-verify/20261028-153836-draft-build/probe-selftest.log"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "automation\\offline-verify\\20261028-153836-draft-build\\build_result.json": "bd2d83acde426a080ef6feccfa0bfc9563e3b577e543d88bca01548a47ecaf84",
+        "automation\\offline-verify\\20261028-153836-draft-build\\capability-tests.log": "aebd5704ac83c7ea3a77520debdf1b7efacce2239fd4180b6d279dd27ab01735",
+        "automation\\offline-verify\\20261028-153836-draft-build\\probe-selftest.log": "e2e53d7e8ff12312ccb4ce071665cd4bf370dab670e45c180ef0dc222443751a"
+      }
+    },
+    {
+      "id": "C12",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "feature02-扩展更多单据类型/单会话贯通与自动保存接线施工结果.md",
+        "automation/offline-verify/20261028-153836-draft-build/build_result.json",
+        "automation/runs/20261027-074251-9d71443f/events.jsonl"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "feature02-扩展更多单据类型\\单会话贯通与自动保存接线施工结果.md": "7c48b2a9a3fb3795e78ea82a2ebc344ee030b2d18f70fb0a262f064d83c17616",
+        "automation\\offline-verify\\20261028-153836-draft-build\\build_result.json": "bd2d83acde426a080ef6feccfa0bfc9563e3b577e543d88bca01548a47ecaf84",
+        "automation\\runs\\20261027-074251-9d71443f\\events.jsonl": "ccb52664562b36c14407bc70780f618ffbcaae1643500ad91e73cfc7709f83a6"
+      }
+    },
+    {
+      "id": "C13",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "feature02-扩展更多单据类型/单会话贯通与自动保存接线施工结果.md",
+        ".claude/skills/bpm-fill-run/SKILL.md",
+        "STATE.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "feature02-扩展更多单据类型\\单会话贯通与自动保存接线施工结果.md": "7c48b2a9a3fb3795e78ea82a2ebc344ee030b2d18f70fb0a262f064d83c17616",
+        ".claude\\skills\\bpm-fill-run\\SKILL.md": "4f01eb7b554975a485fc0e5ba1dc898a0772beed324ae2bdfc5ebca4ba6611c2",
+        "STATE.md": "95b3dd01877f2c4c4d932484e0c83358be8425b831f541fd34b77a9cca31e755"
+      }
+    },
+    {
+      "id": "D14",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "feature02-扩展更多单据类型/单会话贯通与自动保存接线施工结果.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "feature02-扩展更多单据类型\\单会话贯通与自动保存接线施工结果.md": "7c48b2a9a3fb3795e78ea82a2ebc344ee030b2d18f70fb0a262f064d83c17616"
+      }
+    },
+    {
+      "id": "D15",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "bpm/browser_probe.py",
+        "automation/offline-verify/20261028-153836-draft-build/probe-selftest.log"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "bpm\\browser_probe.py": "e88bb0ae0ed6a931ab2d25875d3d9d9fd878d49d5e0e849e78a76ba01fb87f6d",
+        "automation\\offline-verify\\20261028-153836-draft-build\\probe-selftest.log": "e2e53d7e8ff12312ccb4ce071665cd4bf370dab670e45c180ef0dc222443751a"
+      }
+    },
+    {
+      "id": "D16",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/acceptance/A-verification.md",
+        "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/execution/team-progress.md",
+        "feature02-扩展更多单据类型/单会话贯通与自动保存接线施工结果.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\acceptance\\A-verification.md": "351f922020b28e78982331f4869e06f5f4816fd720c8a92f0ca8610037b6d92b",
+        "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\execution\\team-progress.md": "232f4d3bb109d7730162e450475f82ec57734537f3ff9deefe7db8eff8a2fc82",
+        "feature02-扩展更多单据类型\\单会话贯通与自动保存接线施工结果.md": "7c48b2a9a3fb3795e78ea82a2ebc344ee030b2d18f70fb0a262f064d83c17616"
+      }
+    }
+  ]
+}

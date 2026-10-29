@@ -1,0 +1,42 @@
+{
+  "outcome": "complete",
+  "summary": "BPM-FASTLANE-20261028-V2 round 1（合同 ctr-74b7c8ee，CP0-CP9）done_when C01-C13 全离线达成、C12 如实待验：本轮新增 bpm/oneshot.py 单会话贯通入口（--task 任务分支：身份→live 模板→complete_from_live_snapshot→A1/请求授权编译（G2 三分支＋四绑定）→计划生成/冻结/绑定→既有填写链；--fill-plan 分支原样执行不升级授权）、journal 浏览器前阻断（任务分支新开 run）、G2.5 冻结复用、同 context 只读副页持久化核验（主 tab 不被导航）、result_delivered 立即交付＋限时驻留＋锁占用边界（browser_probe._deliver_and_park）；测试新增 test_bpm_oneshot.py 33 项＋继承 28 项，全量 491 OK (skipped=4)＋selftest 全绿＋verify_bpm_build OFFLINE_PASS（automation/offline-verify/20261028-142902-draft-build/）；G4 基线一手复核（20261027-074251-9d71443f：307.8s/20 行费用，材料理解未计量）＋新钩子就位，提速标待测；G5 文档同步（SKILL/common-operations/full-chain/repository-layout/AGENTS 指针/STATE/三手册）＋单份收尾记录；ENHANCED_FINAL fresh 终审 GO＋P2 修复后聚焦 delta 重审 GO（四产物哈希绑定，报告 round-01/b-enhanced-final-review.md）。有效旧证据：G4 基线为 2026-10-27 既有 run events（本轮一手复核数值，非重跑）。未解项：真实首验待用户输入（完整模板单号＋本次材料＋执行意图，缺口集中列于施工结果记录），真实填写/真实保存待验；P2 残留（--fill-plan/--resume-run 补 journal 预检、lifecycle 计数逐 run 派生）留待下次代码触碰，已记入结果记录收口节。",
+  "artifacts": {
+    "feature02-扩展更多单据类型/单会话贯通与自动保存接线施工结果.md": "7c48b2a9a3fb3795e78ea82a2ebc344ee030b2d18f70fb0a262f064d83c17616",
+    "feature02-扩展更多单据类型/2026-10-28 oneshot真实首验接续计划.md": "a77fef48d6e09c8bb8d1b2b97f6e1accd2c6ed5ff3e1a2eda3ae25ddc3fa5156",
+    "bpm/oneshot.py": "0e03f05b514dde68ed1bba8b9f3909017d144527647bc29523dffd5deb19f538",
+    "bpm/browser_probe.py": "e88bb0ae0ed6a931ab2d25875d3d9d9fd878d49d5e0e849e78a76ba01fb87f6d",
+    "bpm/ui.py": "e7a74c7b15f05e4accbe37894ecfb83eee5544d4dc70a6942885ad982a925231",
+    "bpm/save.py": "1b5210b5bd0697dfa936f4dd3634aa3c827196890a717a1a7638e067eded9d6d",
+    "bpm/fill_cli.py": "ca624f5c5881adaed446bfc711e150a97caf137649baa1b98779a1d2595a33b7",
+    "bpm/template.py": "d944bcae710f8ce379aa668ea2523b732971e640a1180c1a4702b2e2135d2f3c",
+    "tests/test_bpm_oneshot.py": "d8a21f6839a070d8aef7a5a88aa2a73ba707fae6825532a6da002a2b643d6de4",
+    "tests/test_bpm_ui.py": "9649f7073ec7c230baa1343b67ca03beda6ca7f680286e23fa97f246cb62a9aa",
+    "automation/offline-verify/20261028-142902-draft-build/build_result.json": "290c66d8ce2719b0c50e6b79b7ced745147a8fdc0869be916c5f5d8569b3a011",
+    ".claude/skills/bpm-fill-run/SKILL.md": "4f01eb7b554975a485fc0e5ba1dc898a0772beed324ae2bdfc5ebca4ba6611c2",
+    ".claude/skills/bpm-fill-run/references/common-operations.md": "a94d1590fa3a447ca374ce8e7019d546910c6bf673a95f5a060f62ca48f579ac",
+    ".claude/skills/bpm-fill-run/references/full-chain.md": "9d573630308b149b2becd5e683d090062c576b3b539f4f1a68c106d3b8f3f1c5",
+    ".claude/skills/bpm-fill-run/references/travel.md": "d2ebf47c7761da7ef7894b632b128f0e7169a3136069e604fc00690f84ced65f",
+    ".claude/skills/bpm-fill-run/references/express.md": "dc0cf6f3d0794a10a672a0246de10ea61b58cae3bc75ca3e5f862916cf664b42",
+    ".claude/skills/bpm-fill-run/references/rd-materials.md": "45b673ab1c167d15d90f178ed1db39ef91c8a75d1f6ddb86b6a364e585f792fd",
+    "AGENTS.md": "f49764febe8446a9d72fc332d328f7e6949cae9f334d3bc4aa7e2059563424cf",
+    "STATE.md": "95b3dd01877f2c4c4d932484e0c83358be8425b831f541fd34b77a9cca31e755",
+    "docs/repository-layout.md": "cbee79bcb770fc70a8b7a495a5d4700b86f88b7905323fbfd817ddfb3ee1ba6e",
+    "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/b-enhanced-final-review.md": "0968b3fa45235e23f2e9ebf97af9eea0598f73669224eb2180b9ba7b094adbda"
+  },
+  "evidence": [
+    "automation/offline-verify/20261028-142902-draft-build/build_result.json",
+    "automation/offline-verify/20261028-142902-draft-build/capability-tests.log",
+    "automation/offline-verify/20261028-142902-draft-build/probe-selftest.log",
+    "team-progress/team-workflow/06410a6c201d4f19957c4a6056d4254d/round-01/b-enhanced-final-review.md",
+    "feature02-扩展更多单据类型/单会话贯通与自动保存接线施工结果.md"
+  ],
+  "failure_counts": {},
+  "evidence_hashes": {
+    "automation\\offline-verify\\20261028-142902-draft-build\\build_result.json": "290c66d8ce2719b0c50e6b79b7ced745147a8fdc0869be916c5f5d8569b3a011",
+    "automation\\offline-verify\\20261028-142902-draft-build\\capability-tests.log": "e0cb328e13c2456424360011031893fecd78914375c78e1290d57bb067d27e57",
+    "automation\\offline-verify\\20261028-142902-draft-build\\probe-selftest.log": "6022405f496746f5f7bd74c036bff3cd4891c789ea87d4f1134b633af2a23c72",
+    "team-progress\\team-workflow\\06410a6c201d4f19957c4a6056d4254d\\round-01\\b-enhanced-final-review.md": "0968b3fa45235e23f2e9ebf97af9eea0598f73669224eb2180b9ba7b094adbda",
+    "feature02-扩展更多单据类型\\单会话贯通与自动保存接线施工结果.md": "7c48b2a9a3fb3795e78ea82a2ebc344ee030b2d18f70fb0a262f064d83c17616"
+  }
+}

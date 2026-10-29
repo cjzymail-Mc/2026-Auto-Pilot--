@@ -1,67 +1,78 @@
-<!-- team-task-source id="src-cb8b9bd6" sha256="cb8b9bd67bbb393265b6f59c39ca2da5f675887b699466f639caa050342fcef8" status="open" -->
-workflow_run: 242ccba1c43343f687aa1db0ae014f5b
-workflow_round: 2
-failure_counts: {}
+<!-- team-task-source id="src-8a759dc1" sha256="8a759dc18dbdfdf3df25c7de5843c997449f4845d740e8ad517b30b026b17ecd" status="open" -->
+# 本次任务：单会话贯通执行与日常自动保存接线（BPM-FASTLANE-20261028-V2）
 
-# 本次任务
+按 `feature02-扩展更多单据类型/2026-10-28 单会话贯通执行与日常自动保存接线施工计划.md`（BPM-FASTLANE-20261028-V2，已修订未施工）完成 G1—G5 全部必做项，按其 §6 C01—C13 完成判据验收，交付一份统一结果记录。计划 §3 逐项条款、§5 验收方法与 §6 判据表是本任务的具体执行规格；与 repo 硬规则冲突时以 AGENTS.md 为准。本任务推进用户日常链路"填好→完整自检→授权自动保存草稿→留页→立即交付→人工终审"的最小真实贯通，采用"完整自检、简洁交付"，不做回读缓存、不改控件等待、不承诺固定耗时。
 
-BPM-SELFDRIVE-20261027-V1 round 2（承接 round-1 review `174e9324…` 派工）：**D02 30 天会话迁移 + D04 识票归集正式化 + R1 遗留约束机制化/清污**。本轮全部离线；预计零浏览器动作（如确需只读探查，按 AGENTS 入口单执行者错峰）。A1 增补（BPM-SELFDRIVE-20261027-A1：日常真实任务自动保存草稿）本轮**不实施保存改造**，属 round-3 入口接线；本轮只落 §2(4) 口径纠正记录与身份关系字段。
+## 交付物（G1—G5）
 
-## 范围
+1. **G1 单会话贯通执行入口**：新增 `bpm/oneshot.py`（`python -X utf8 -m bpm.oneshot`，不加根目录兼容壳），复用 `fill_cli`/`LoginProbe`/`bpm.query`/`template.fetch_template`/`StructuredProbe`/`DraftUIAdapter`/`verify_snapshot`/`SaveController` 等底层函数，不在内部依次执行各 CLI 伪装共享会话。两条输入分支严格区分：**任务分支**＝agent 先做离线原件理解与字段映射→单会话取得当前身份→按完整单号 live 读模板→用本次观察补齐模板决策及未冻结派生事实/蓝图→现有生成器产出最终计划并编译授权→冻结与验证→填写（不得先冻结计划再覆盖其中模板快照）；**已就绪 fill-plan 分支**＝保持输入计划、来源及授权原样，核实身份后复用现有连续执行链，不无条件重读模板，不把 `fill_only` 静默升级为保存，确需 live 核对时新观察单独留证、发现业务差异即停。任务分支至少接通一个现有支持场景（travel/express/rd_materials 子范围）的"同会话模板读取→最终计划生成→执行"；缺原件/未知规则/未实现装配返回具体缺口，独立可做离线工作继续。共享会话契约：单一业务编排执行者持有 context、锁及自己创建的页面，各步骤借用会话，借用方不重复 launch/加解锁/关闭 context；`StructuredProbe` 会话借用接口与 `DraftUIAdapter` 页面参数正式接入代码（不用运行时 monkeypatch）；只操作本任务页面，他人恢复页不碰。正常已认证路径浏览器实例/context 各一次，保留 `LoginProbe` 等价身份探查、预期不符拒绝及会话记录写回；真实新扫码用无旧凭证注入的全新临时 context。profile 锁由同一所有者取得并持有到会话结束（含驻留期），`finally` 释放；中断按计划 §3 状态表返回真实状态（`NEEDS_INPUT`/`WAIT_HUMAN_LOGIN`/`READBACK_MISMATCH`/`SAVE_UNCERTAIN` 等），不统一转 `NEEDS_INPUT`；`--resume-run` 保持原哈希绑定。旧 CLI（`bpm_login.py`、`bpm.query`、`bpm_template.py`、`fill_once.py`）入口与契约保持兼容。
+2. **G2 A1 日常自动保存授权编译**：输入为既有 A1 日常策略来源（SKILL.md「日常保存策略」节登记）＋本次用户请求/用途＋本次材料与身份，不从历史模板、旧任务或他人授权继承。三分支：真实日常任务且用户无"只填/暂不保存"覆盖→生成同任务 `save_draft`；用户明确只填→`fill_only`；测试/回放/占位/合成任务→强制 `fill_only`（真实历史材料用于测试仍属测试）。编译顺序固定：检查既有 run/registry 与请求意图→形成待冻结最终计划（含授权字段）→完整来源及金额校验→计算最终 plan_hash/config_sha256→落盘最终计划和授权绑定记录→执行绑定核对。授权记录是 run 内独立派生产物（策略/请求来源引用、编译时间、task_id、plan_hash、config_sha256、操作人绑定），不反向嵌入计划或已绑定 manifest（避免自引用哈希）；执行时验证记录与最终计划四绑定；冻结后不补字段、不改授权、不刷模板。同一请求重试复用已冻结产物与授权记录；已发现执行绑定/填写/保存意图后冲突则按原状态停止或只读核实，不自动改绑、不另建单。`SaveController` 与 adapter 的身份/来源/哈希/金额闭合/终局截图/点击前新鲜核验全部保留，至多一次唯一精确"保存"；保存成功须唯一新单号/UUID、未提交状态、重开持久化全量回读。
+3. **G3 完整新鲜核验、立即交付与限时保页**：工程顺序＝填写完成→终局完整自检→有授权时保存草稿→同 context 只读副页持久化全量核对→**完成事件先原子落盘并立即向用户交付**，主 tab 继续驻留供人工终审；`fill_only` 在终局核验后直接交付并驻留。终局独立 DOM 回读覆盖全部行数、身份、全部字段与 Decimal 金额闭合，不信任写入缓存，**无回读缓存**。副页：保存后仅在同 context 新建本任务只读副页，按真实观察路由/精确身份打开，调用 `verify_snapshot(..., phase="after_save")` 同等全量核验（除单号/UUID/未提交外全部计划字段、行数、金额，不降为关键值抽查）；观察、必要截图与核验工件齐备后 `finally` 关闭自己的副页、主 tab 保持；副页失败保留 `SAVE_UNCERTAIN`；副页查询不得导航主 tab。`DraftUIAdapter` 明确各操作 page 归属（保存按钮属主 tab，保存后读取/截图属副页），主/副页用本次非敏感标识区分。`--keep-open-minutes` 默认 45、既有范围可调；驻留期同进程持锁、零业务写入；期满只按合法生命周期关闭本任务页面。同 profile 下一任务在驻留所有者存活时报告占用；驻留期追加修改按新请求处理，不复用过期核验、不再次自动保存。可捕获业务/网络错误保留主 tab 按真实状态交付；进程被终止等只依据已落盘状态诊断。
+4. **G4 耗时与体验度量**：施工前用既有有效日志与当前代码记录基线范围、输入规模、版本与缺失计时（旧 C0 不当唯一基线，不编造预期节省比例）；真实回放须本次授权。分开记录：材料理解/事实准备、认证、模板/计划/授权、UI 填写、最终回读、保存与持久化核验、完成事件→用户交付、人工驻留（驻留不计入技术耗时）。正常认证复用路径目标：业务执行者＝1、浏览器实例＝1、业务 context＝1、锁所有者＝1；Chromium/驱动子进程不计作第二执行者但记录角色，扫码例外单列。`python -X utf8 -m tools.diagnostics.perf` 复算 UI 窗口，其他阶段用 events；不累加嵌套子事件。无可比真实基线时如实交付阶段计时与生命周期计数，速度差异标待测；不为判据造单。
+5. **G5 文档与登记同步＋结果记录**：SKILL.md 登记新入口、两输入分支、授权到最终计划的编译顺序、立即交付与驻留限制，按真实结果分别标实现/离线/真实保存状态；`common-operations.md` 补命令与分阶段诊断入口；`full-chain.md` 明确新入口就绪检查与模板→最终计划衔接、旧离线入口契约；`docs/repository-layout.md` 登记新模块；AGENTS.md 仅加必要入口指针不改红线；STATE.md 实质变化后按快照标准更新。travel/express/rd-materials 手册在实际可用范围补入口指针；self-drive、purchased-samples 保留自身缺口。收尾写单份 `feature02-扩展更多单据类型/单会话贯通与自动保存接线施工结果.md`：贯通能力、A1 授权、离线验证、真实首验、速度证据分别结论，C01—C13 逐项简短结果与证据入口，缺项标待验而非通过。
 
-1. **D02 本地复用 60→30 天迁移**（合同 §4.1/§6.2/D02）：
-   - `bpm_session.py`：`REUSE_DAYS` 60→30 新默认；旧合法记录生效窗口 = `min(原合法窗口, last_scan_at+30天)`——未满 30 天不拒、恰满/超过失效、更短旧窗口不延长；保留扫码起点/profile_id/session_generation；缺可信扫码时间旧状态仍保守 24h；不凭 mtime/补写续期；读取判定、非扫码探查写回、显示期限同一口径。
-   - `stage1_browser_probe.py` 仅在期限判定/提示一致性所必需时改（`SESSION_TTL`/`_session_state_usable`/`_inject_session_state`/`_save_session_state` 链同口径）；保留 600ms 轮询、Tab 失焦、重复回读；改探针先 `python -X utf8 stage1_probe_selftest.py` 全绿再收尾。
-   - 测试族（离线模拟即可，真实登录后续轮验证）：复用 `tests/test_bpm_session.py`、selftest `_t8_session`/`_t10_login_only`；补旧 60 天记录第 29/30/31 天三档、原 7 天不延长、更早 refresh token 到期、未知到期、缺扫码时间、mtime 改动、非整数/未来扫码/坏 schema 拒绝、探查写回不续期、写回与显示一致；既有两人/同名/账号切换/缓存身份不符用例保持通过。
-   - 长期说明同步：`.claude/skills/bpm-fill-run/SKILL.md` 与 `AGENTS.md` 中"60 天"改"30 天"（只改规则行与链接，不写案例答案或流水账）。
-2. **D04 识票归集正式化**（合同 §4.2/D04，全离线）：
-   - 新增归集模块（建议 `bpm_collect.py`，职责清晰即可）：对 `feature01-细化报销skill/12月公出-发票/` 73 原件**只读**识别——PDF 文本层优先（PyMuPDF 逐页/bbox），无文本层页按仓库视觉路由复核，不上传第三方 OCR；逐页分类（发票/汇总单(票据/行程双版式)/油票），多票容器按页/区域分件取证（唯一 record_id + 原件页/区域定位；保留 `bpm_extraction.extract_pdf_facts` 多身份拒绝保护，分件后逐票调用）；规范命名 `日期_票种_方向或路线_票号_短哈希.pdf` 平铺**整理副本**到新 run 目录（缺字段按明确规则，不猜值、不覆盖、防重名）；原件↔原哈希↔唯一票据身份↔副本名/哈希可逆映射；同票不同扫描去重、同金额不同票不合并；同一输入重跑幂等。
-   - **下游同步**：`bpm_facts.add_invoice_from_extraction` 与 `bpm_plan_generate` 现存 `records[0]` 路径改为完整处理多 record（上游分件成功后下游不得只读第一票）；`validate_reviewed_extraction`/`validate_image_documents` 既有对账承接。
-   - 汇总单仅交叉核对不计费；开票日期/行程日期/目录日期分开；票号/金额机读+汇总单互证。
-   - 测试：合成多票/重名/重复扫描/漏票负例 + 真实材料确定性产物（映射清单哈希入 run 证据）；若内容识别与既有 27 票核实清单有出入，如实列差异报告，不为凑数改判。
-3. **P2-2 机制化**（MC-R1 P2-2）：生产路径调用 `evaluate_self_drive` 必须显式绑定 `rules=load_self_drive_rules()`——新增测试固化（扫描生产模块源码中的调用点，未绑 `rules=` 即测试失败）；`bpm_self_drive.py` 本体语义不变（None=原始计算器口径仅限测试）。
-4. **P2-3 案例答案清污**（用户 2026-10-27 裁定，D12 前置）：`bpm_self_drive.py` docstring 三处（L143 真实公出单号 12025092018、L262 437.18、L282-283 日期反例值）改为不含案例值的通用表述；`.claude/skills/bpm-fill-run/references/express.md:5` "系统默认陈晶"改为不预设姓名表述；随后生产面（bpm_*.py、automation/business-scenarios/、skill 全文、verify_bpm_build.py）grep 复扫对照值/真实单号/人名/案例日期并落扫描记录（目标零命中；测试目录与 run 证据目录除外）。R1 已冻结产物（含旧版 `bpm_self_drive.py` 哈希）不改写历史，仅前进式修改当前文件。
-5. **§2(4)/A1 口径纠正记录 + 身份关系字段**（用户 2026-10-27 两条指示）：
-   - 新设计修订记录（不改 R1 冻结的 p1-entry-design.md）：能力检查层 capability_layers 只作**如实分层报告**，不作为对已获当次 `save_draft` 授权保存的入口拒绝条件；保存许可以"当次请求意图 + 同 task_id 授权 + 现有 SaveController 保护链"判定；本历史占位案例（已占用公出单+占位关联）强制 fill_only 不变，不为补真实保存证据造单。
-   - 请求/事实层新增字段与校验（离线）：区分 登录操作人/新页制单人/费用所属人，记录来源；餐补 C 仅在本次报销单真实制单人身份合法成立时按其参与日计——**不为套用案例对照值换人、不默认零餐补**；身份关系不成立时作为真实缺口按 NEEDS_INPUT/外部认证条件上报并留证（当前探查身份与本批费用所属人不同，属已知风险，只读核实，不阻塞本轮独立施工）。schema 联动（`automation/task.schema.json` 等）按需最小增改。
-6. **验证纪律**（用户 2026-10-27）：全量回归**单次运行即捕获日志与退出码**（如 `python -X utf8 -m unittest discover -s tests -v > <offline-verify>/<run>/capability-tests.log 2>&1; echo exit=$?`）；已通过且无新变化不重复全量。改探针先 selftest 全绿。`python -X utf8 verify_bpm_build.py` 纳入本轮全部新文件并 OFFLINE_PASS。
+## 范围与允许写清单
 
-## 保留项与红线（本轮不做/不变）
+- 新增：`bpm/oneshot.py`；`tests/` 相关新测试；上述 skill 手册/参考/入口文档；结果记录与 STATE.md；`automation/runs/<新run>/` 证据目录。
+- 窄改（按实际需要）：`bpm/ui.py`（共享会话、page 归属与副页核验）、`bpm/fill_cli.py`、`bpm/request.py`、`bpm/plan_generate.py`（准备/冻结衔接）、`bpm/template.py`、`bpm/login.py`（会话借用）、`bpm/save.py`（仅副页生命周期等必要配合，不做回读缓存）；`bpm/browser_probe.py` 如需正式生命周期扩展点可窄改，改后先 `python -X utf8 stage1_probe_selftest.py` 全绿再实单；schema 仅在现有契约确实不能表达内部接线时最小兼容调整，不新增用户材料格式；`bpm/session.py` 不改期限/身份规则。
+- 施工顺序（计划 §4）：核对工作区差异与现有计时→明确两分支、会话/页面归属与错误状态→G1 任务准备到最终计划接线＋G2 授权冻结→G3 副页全量核验与立即交付→离线回归→合法真实首验（有输入时）→G4 实测记录→G5 同步→单份收尾记录。
+- 前置复用核对：现有 `fill_cli` 连续执行链、`LoginProbe`、A1 策略登记、10-27 真实只读三分支与 20 行费用实例 events（`automation/runs/20261027-074251-9d71443f/`）、430 test 基线均可复用；自驾暂停、外购样品口径/原件缺口、办公/福利未接等阻断记录保持，不因新入口解除。
 
-- 零业务写入：不新建报销页、不填写、不保存、不上传/贴票/审批；A1 保存实施、真实串联、公出匹配、Excel 回填、runbook 修订、D12 冷启动均属后续轮。
-- `bpm_save.py`、`bpm_coverage.py`（旧模型）零改动；`_click_guard`/锁/registry/保存边界不放宽；`automation/task-registry/`、旧 runs、冻结 V3、`legacy-ia2/`、原材料目录只读（原件 73 件哈希收尾盘点零漂移）。
-- 案例对照值（1924.93/300.00/2224.93/437.18/真实单号/案例日期）只存在于合同 §5/§6.1 授权的离线测试；任何 STATE/合同/案例答案不得进入未来 D12 冷启动输入（本轮清污即其前置）。
-- 旧失败 key `review|content|source_manifest_coverage|D23`、`review|content|active_output_semantics|D22` 历史计数原样承接；不清理 registry、不换 task_id。
-- 全局 team-workflow/helper、settings/hooks、权限策略、部署发布不在范围。
+## 保留项与禁止
+
+- `click_guard` 硬禁令不变：保存并提交、发送、提交、流转、审批、暂存、贴票、上传全部禁止；不自动确认未知对话框；不直接写接口；贯通路径真实链路不点击禁用动作。
+- task-registry 防重复保存：`SAVE_INTENT`/`SAVE_UNCERTAIN`/`SUCCESS_DRAFT_SAVED` 优先只读核实，不重复保存、不另建单、不删 registry/换 task_id 绕过；已写 `SAVE_INTENT` 或点击后结果不明时严禁重新点击保存。
+- 金额 Decimal 三向闭合、选择器精确唯一命中、终局独立 DOM 回读不信任写入缓存；无 agent 写入事件但人工/异步变化时仍能拒绝失配。
+- 凭证与会话隔离：`.pw-profile/`、`.local-session/` 不入 Git/日志/报告/工件；30 天本地复用与写回纪律不动；新扫码全新临时 context；不接管/导航/关闭他人未保存页。
+- 稳定机制保留：600ms 轮询、Tab 失焦、行级重复回读、防御等待不优化。
+- 保存成功报告仍须唯一新单号/UUID、未提交状态、重开持久化全量回读；终局、截图前后与点击前新鲜检查保留。
+- **本计划文档与本草稿均不构成对任何具体单据的保存授权**；真实首验对象须用户当次提供，不得用历史占位/回放单充当。
+- 不做：恢复暂停的自驾工程（含餐补/公出匹配/Excel 回填另列）；改 workflow helper/状态机；常驻服务、通用恢复机制、多 agent 并发；扩建 `chain.py` 离线家族；接办公/福利真实页面；跨天会话复用新机制；无限期留页、多单共存、驻留接单（本轮仅立即交付＋现有期限保页）；回读缓存/多档配置中心；控件级提速。
+- 原件只读；派生结果写独立新目录；保留无关工作树改动不覆盖；单 profile 单执行者；锁被占用保留现场报告，不删锁、不强关浏览器；正常路径不要求用户编写内部 JSON 或现场逐项验收签字。
+
+## 验证方法
+
+1. **离线与回归**（计划 §5）：两分支（任务分支先取得本次模板/身份再冻结；已就绪分支不刷新绑定、不升级 `fill_only`；模板漂移/身份不符/材料缺口停止）；授权（三分支、真实历史材料测试仍不保存、无用途证据不授权、最终哈希一致无自引用、重试复用、已绑定漂移拒绝、来源可追溯无敏感值入 events）；会话/页面（只有主 launch/close/加解锁、借用方不关 context、副页读取/截图/异常清理与主页保存角色正确、副页失败不导航主页、扫码 context 与身份期限规则不受影响）；保存（新鲜回读与点击前检查保留、非金额字段差异也阻断）；故障注入（写前、已有填写意图、`SAVE_INTENT` 前后、点击后响应丢失、持久化核验失败、进程中断，只读核实不产生第二次保存、不全映射 `NEEDS_INPUT`）；交付/驻留（短驻留夹具验先发布终局、上层即得结果、进程继续保页持锁、下一任务占用拒绝、提前关闭/期满正常清理）；`click_guard` 含贯通路径回归。相关测试先运行，收尾执行 `python -X utf8 verify_bpm_build.py`（已含探针自检与全量 unittest）；改 `bpm/browser_probe.py` 先 selftest 全绿再实单。
+2. **真实验收**（本包为真实保存首次执行，对象须用户当次提供）：先核对会话中是否已有本次真实任务（完整模板单号＋当前材料＋执行意图）；没有时仅集中列这项业务输入缺口，离线施工与文档继续，已有输入不重复索要。有输入时优先任务分支全链：材料事实准备→本次身份/模板→最终计划及授权冻结→填写→终局回读→唯一保存→副页全量持久化核验→立即交付→主 tab 驻留；events 证明生命周期与阶段耗时，原件及绑定不漂移。确认唯一新单号/UUID、未提交与全量持久化结果；不在真实保存附近故意断网/杀进程/重复新建，异常按状态表处理。单一场景通过不外推为全部 runbook 已验收；无真实输入时结论为"实现及离线完成，真实保存待验"。
+3. **度量**：按 G4 记录基线、阶段计时与生命周期计数；可比部分才报速度差异，共用阶段无提速也如实报告。
+4. 缺登录/权限/样本时完成离线实现与文档、如实保留未完成真实验收项，不写成全部通过。
 
 ## done_when
 
-1. `bpm_session.py` 30 天迁移落地：新默认+旧记录收紧规则实现，边界测试族全绿（第 29/30/31 天、更短旧窗口、更早服务端、缺扫码时间、mtime、写回不续期、显示一致），探针（若改）selftest 全绿；SKILL.md/AGENTS.md 60→30 同步。
-2. 识票归集模块 + 73 原件只读归集产物落新 run：可逆映射、去重、幂等、防覆盖、多票分件与下游 `records[0]` 同步均有测试与真实产物证据；识别差异（若有）如实列报。
-3. P2-2 强制绑定测试固化并通过；P2-3 三处 docstring + express.md 身份表述清除，生产面复扫记录落档且零命中。
-4. §2(4)/A1 纠正记录与身份关系字段/校验/测试落地（不改 R1 冻结件、不实施保存）。
-5. 全量 unittest 单次运行日志+退出码捕获、verify_bpm_build OFFLINE_PASS 新文件入源清单、events 零业务写入、原件零漂移收尾盘点；STATE.md 按维护标准更新。
+- C01—C13 全部满足（计划 §6 判据表逐条），结果记录逐项给出证据路径与实测记录，缺项标待验而非通过。
+- `bpm.oneshot` 两输入分支落地且旧命令兼容（C01）；单会话/单锁所有者/借用契约与驻留清理通过（C02）；正常路径执行者/实例/context/锁各一次并有 events 证明（C03）。
+- 授权三分支、四绑定、重试幂等、至多一次唯一保存、registry 优先只读核实全部通过（C04/C05）；终局全量回读与中断状态边界通过、无回读缓存（C06/C07）。
+- 只读副页全量持久化核验正确、主 tab 未被核验导航或关闭（C08）；终局落盘后立即交付、限时驻留零业务写入、持锁与占用边界明确（C09）；硬禁令、凭证隔离、30 天规则、扫码与他人页面保护不变（C10）。
+- 针对性相关验证及 `verify_bpm_build.py` 统一离线验收全绿（C11）；合法真实首验与阶段计时完成——本次会话无真实业务输入时按计划如实交付"真实保存待验"并列出输入缺口，不宣称全包真实验收（C12）。
+- G5 受影响文档如实同步、保留自驾等未完成范围，单份收尾结果记录与必要 STATE 快照落盘（C13）；无未声明的越界改动（真实 OA 零计划外写入、原件字节零漂移、不改 workflow helper）。
 <!-- /team-task-source -->
+<!-- team-task-contract run_id="20261028-120257-8a759dc1" contract_id="ctr-74b7c8ee" source_block_id="src-8a759dc1" status="frozen" profile="full" -->
+### 冻结合同（2026-10-28，profile=full）
 
-<!-- team-task-contract run_id="20261027-121733-cb8b9bd6" contract_id="ctr-2433e4a3" source_block_id="src-cb8b9bd6" status="frozen" profile="minimal" -->
-# 任务：BPM-SELFDRIVE-20261027-V1 R2——D02 30 天迁移 + D04 识票归集正式化 + R1 遗留机制化/清污
+**① 任务终态**：BPM-FASTLANE-20261028-V2 计划 G1—G5 全部落地——`bpm/oneshot.py` 单会话贯通执行入口（任务/已就绪计划两输入分支）、A1 日常自动保存授权编译器（三分支＋最终计划四绑定＋重试幂等）、同 context 只读副页全量持久化核验＋完成后立即交付＋限时保页、G4 分阶段计时与 1/1/1/1 生命周期计数、G5 受影响文档同步；C01—C13 判据逐项满足并留证据，单份结果记录与 STATE 收尾；无用户当次真实业务输入时真实首验如实标"待验"并列缺口，不宣称全包真实验收。
 
-## 本次任务
+**② 权威源·主线·范围**：权威源＝repo `AGENTS.md`＋任务 source（src-8a759dc1）＋本合同；详细执行规格＝`feature02-扩展更多单据类型/2026-10-28 单会话贯通执行与日常自动保存接线施工计划.md` §3/§5/§6/§8。冲突优先级：用户最新明确指令＞repo 硬规则/已封决策＞本合同＞检查点计划＞历史说明。允许写：`bpm/oneshot.py`(新)；`bpm/ui.py`、`bpm/fill_cli.py`、`bpm/request.py`、`bpm/plan_generate.py`、`bpm/template.py`、`bpm/login.py`、`bpm/save.py` 按需窄改；`bpm/browser_probe.py` 窄改后先 selftest 全绿再实单；schema 仅最小兼容调整不新增用户材料格式；`tests/`；`.claude/skills/bpm-fill-run/` 手册与登记；`docs/repository-layout.md`；`AGENTS.md` 入口短指针；`feature02-扩展更多单据类型/单会话贯通与自动保存接线施工结果.md`；`STATE.md`；`automation/runs/<新run>/`。只读：原件目录、`automation/task-registry/`、`.pw-profile/`、`.local-session/`、历史 runs、`team-progress/team-workflow/` 归档、自驾合同与工程、`bpm/session.py`（不改期限/身份规则）、`bpm/chain.py`、workflow helper。禁止：计划外 OA 业务写入（G2 编译的同任务 `save_draft` 仅在用户当次提供真实输入时单次执行）、保存并提交/发送/流转/审批/暂存/贴票/上传、改 workflow helper/状态机、恢复自驾工程、回读缓存、常驻服务、`chain.py` 扩建、办公/福利页面、无限期留页、控件等待优化、删锁/换 task_id/清 registry。保留无关工作树改动。
 
-- 终态一句话：30 天会话新默认与旧记录收紧落地全绿；73 原件只读识票归集产物与可逆映射落新 run；P2-2 强制绑定与 P2-3 案例答案清污机制化；§2(4)/A1 口径纠正与身份关系字段离线落地；全量回归与离线构建绿，零业务写入零漂移。
-- 本轮做：`bpm_session.py` 60→30（旧记录 min(原窗口,扫码+30d) 收紧、探针 SESSION_TTL 同口径、SKILL/AGENTS 规则行同步、边界测试族）；新增 `bpm_collect.py` 对 73 原件只读归集（页分类/多票分件/唯一身份去重/规范命名副本/可逆映射/幂等防覆盖/汇总单互证）+ 下游 `records[0]` 多 record 化；P2-2 生产调用强制 `rules=` 绑定测试；P2-3 docstring/express.md 清污 + 生产面复扫落档；§2(4) 纠正记录（新文件）+ 身份关系字段与校验测试。
-- 明确不做：A1 保存实施（round-3 入口接线）、真实串联、公出匹配、Excel 回填、runbook 修订、D12 冷启动；`bpm_save.py`、`bpm_coverage.py` 零改动。
-- 允许写：`bpm_session.py`；`stage1_browser_probe.py`（仅 SESSION_TTL/口径消息/注释）；`tests/test_bpm_session.py`；`.claude/skills/bpm-fill-run/SKILL.md`（仅 60→30 规则行）；`AGENTS.md`（仅 60→30 规则行）；`bpm_collect.py`（新）；`tests/test_bpm_collect.py`（新）；`bpm_facts.py`；`bpm_plan_generate.py`；`tests/test_bpm_facts.py`；`tests/test_bpm_plan_generate.py`；`bpm_self_drive.py`（仅 docstring 清污，语义零改动）；`tests/test_bpm_self_drive.py`（仅追加绑定纪律用例）；`.claude/skills/bpm-fill-run/references/express.md`（仅身份表述行）；`automation/task.schema.json`（最小身份关系字段）；`automation/runs/20261027-121733-cb8b9bd6/`；`automation/offline-verify/<本轮run>/`；`verify_bpm_build.py`（如需源清单增补）；`team-progress.md`；`handoff-input.json`；`STATE.md`。
-- 只读：73 原件目录、旧 runs/归档、`automation/task-registry/`、冻结 V3、`legacy-ia2/`、R1 冻结产物（含旧哈希记录，前进式修改不改写历史）、`bpm_save.py`、`bpm_coverage.py`、`automation/.pw-profile/`、`automation/.local-session/`（不入工件/Git）。
-- 禁止：任何 OA 业务写入（本轮预计零浏览器动作）；放宽 `_click_guard`/锁/registry/保存边界；案例对照值/真实单号/人名进入生产面（合同 §5/§6.1 授权的测试与 run 证据目录除外）；为凑一致性改判识别结果（差异如实列报）。
-- 红线：四红线（销毁性/对外交付/Ldterm/推翻已封决策）+ 冻结产物禁改 + 凭证与会话元数据不入 Git/工件 + 同 key 失败 3 次熔断 + 全量回归单次运行即捕获日志与退出码。
+**③ 全局 done_when**（=计划 §6 C01—C13；验证＝结果记录逐项证据＋原始工件）：
+- D1(C01) `bpm.oneshot` 两输入分支落地；任务分支模板/身份→最终计划真实接线；旧命令兼容（验证：模块实现＋两分支离线测试＋旧 CLI 回归）。
+- D2(C02) 单会话与锁所有者契约、借用方不重复 launch/close/加解锁、驻留与异常清理（验证：离线测试＋events）。
+- D3(C03) 正常认证复用路径业务执行者/浏览器实例/业务 context/锁所有者各一次；驱动子进程与扫码例外按 G4 记录（验证：events 阶段事件计数）。
+- D4(C04) 授权三分支、真实用途依据、最终计划四绑定、重试幂等；无自引用、冻结后不改绑（验证：离线授权测试）。
+- D5(C05) SaveController/adapter 新鲜复核保留；至多一次唯一保存；registry 优先只读核实（验证：代码 diff 无放宽＋测试）。
+- D6(C06) 终局独立 DOM 全量回读覆盖行数、身份、全部字段、金额闭合（验证：verify_snapshot 集成测试）。
+- D7(C07) 无回读缓存；人工/异步变化反例、各中断状态、仅盘点未保存页边界（验证：故障注入测试）。
+- D8(C08) 同 context 自有只读副页重开、全量持久化核验与截图、唯一单号/UUID/未提交；主 tab 未被核验导航或关闭（验证：保存后核验测试）。
+- D9(C09) 终局落盘后立即交付；限时驻留零业务写入、持锁、下一任务占用边界（验证：短驻留夹具测试）。
+- D10(C10) 硬禁令、凭证隔离、30 天规则、全新扫码与他人页面保护不变（验证：click_guard 回归＋git 无敏感入档）。
+- D11(C11) 针对性相关验证＋`verify_bpm_build.py` 统一离线验收全绿（验证：offline-verify 产物）。
+- D12(C12) 合法真实首验及阶段计时；可比部分才报速度差异；无输入则明确"真实保存待验"并列缺口（验证：run 证据或缺口清单）。
+- D13(C13) G5 受影响文档如实同步、保留自驾等未完成范围；单份收尾结果及必要 STATE 快照（验证：文件实物）。
 
-## done_when（字面可判；至少 1 条可外部取证）
+**④ 检查点路线**（依赖序）：CP0 差异核对与计时基线→CP1 G1 两分支骨架＋共享会话/页面归属契约（ui/fill_cli/template/login 借用接口正式接入）→CP2 G2 授权编译器＋四绑定与重试→CP3 G3 副页全量核验＋立即交付＋限时保页→CP4 离线回归（新测试＋相关既有测试；改 browser_probe 先 selftest）→CP5 真实首验（仅当用户当次提供输入；否则列缺口）→CP6 G4 度量与生命周期计数→CP7 G5 文档同步→CP8 ENHANCED_FINAL fresh 终审→CP9 收尾（结果记录/STATE/mc-update→pin→session-new）。每 CP 证据入 `automation/runs/` 或 round 目录。
 
-- [ ] D1: `bpm_session.py` 30 天迁移：REUSE_DAYS=30、旧记录生效窗口 min(原窗口, last_scan_at+30天)（未满不拒/恰满失效/超过失效/更短旧窗口不延长）、写回不续期、读取判定与写回显示同一口径、缺扫码时间仍 24h；探针 SESSION_TTL/消息同口径（改探针则 selftest 全绿）；SKILL.md/AGENTS.md 60→30；边界测试族全绿（验证：tests.test_bpm_session 指定用例 + selftest 输出）。
-- [ ] D2: `bpm_collect.py` + 73 原件只读归集产物落 `automation/runs/20261027-121733-cb8b9bd6/collect/`：逐页分类（通行费发票/汇总单票据版/汇总单行程版/油票）、唯一票据身份去重（同票不同扫描合并、同金额不同票不合并）、规范命名 `日期_票种_方向或路线_票号_短哈希.pdf` 整理副本（缺字段按明确规则不猜值、不覆盖、防重名）、原件↔哈希↔身份↔副本可逆映射 manifest、同输入重跑幂等；与既有 27 票核实清单差异如实列报；汇总单票号+金额互证（验证：collect 产物 + manifest + 幂等复跑比对 + 测试）。
-- [ ] D3: 下游多 record：`bpm_facts.add_invoice_from_extraction` 与 `bpm_plan_generate` invoice_extractions 完整处理多 record（逐 record 匹配、未消费 record 漏票检测、record 重复消费检测），合成多票用例测试通过；既有单票用例不回归（验证：tests.test_bpm_facts / tests.test_bpm_plan_generate 指定用例）。
-- [ ] D4: P2-2 绑定纪律测试固化并通过（扫描生产模块源码中 evaluate_self_drive 调用点，未显式 `rules=` 即失败；bpm_self_drive.py 本体语义不变）；P2-3 三处 docstring + express.md 身份表述清除为通用表述；生产面（bpm_*.py、automation/business-scenarios/、skill 全文、verify_bpm_build.py）对照值/真实单号/人名/案例日期复扫记录落档且零命中（测试目录与 run 证据除外）（验证：新测试 + 复扫记录工件）。
-- [ ] D5: §2(4)/A1 口径纠正记录落新文件（capability_layers 只作如实分层报告不作保存入口拒绝；保存许可=当次意图+同 task_id 授权+SaveController 保护链；本历史案例强制 fill_only 不变；不改 R1 冻结设计文件）+ 请求/事实层身份关系字段（登录操作人/新页制单人/费用所属人+来源）schema 最小增改 + 校验与测试（不换人凑对照值、不默认零餐补，身份不成立按 NEEDS_INPUT 留缺口）（验证：纠正记录文件 + schema diff + 测试）。
-- [ ] D6: 全量 `python -X utf8 -m unittest discover -s tests` 单次运行日志+退出码捕获落 offline-verify；`python -X utf8 verify_bpm_build.py --run 20261027-121733-cb8b9bd6` OFFLINE_PASS 且新文件入源清单；events.jsonl 零业务写入声明；73 原件收尾零漂移盘点；STATE.md 按维护标准更新（验证：offline-verify 产物 + events + 盘点输出）。
+**⑤ 红线·禁止·人工门**：四红线（销毁性/不可逆；对外交付物与 Ldterm；同 failure_key 三次熔断；推翻已封决策）照 team-task 全文；本项目另禁：计划外 OA 业务写入、非授权保存/提交族点击、代扫登录、注入旧凭证、临时 context 接管他人未保存页、放宽 click_guard/registry/Decimal 闭合/新鲜回读/600ms 轮询/Tab 失焦、回读缓存、多档配置中心、控件等待优化。已前置授权（用户 run 启动）：允许写清单内仓库写入、真实 OA 只读探查/查询/模板读取、离线验证运行、`automation/runs/<新run>/` 写入。后置人工门（PENDING_HUMAN_NONBLOCKING 攒批）：git commit、任何 rm/伸敏感目录类权限命令、对外发布。缺真实业务输入不阻断离线施工，如实标待验。P0.5 风险 envelope：author_runtime=CLAUDE_GLM / risk_class=MEDIUM / risk_owner=USER / risk_source=USER_STANDING_POLICY_20260904 / runtime_policy=GLM_ALLOWED / risk_escalation=NONE。
+
+**⑥ 纠偏三问与陪审扳机**：按 team-task SKILL「spawn 短锚与里程碑五件套」节执行，不在本合同复制；首次非红线失败走 FIRST_FAILURE_MXP_REVIEW（一次性 mc-expert HISTORY）。
+
+**⑦ 交接口径**：里程碑五件套指针同上；本轮最终交接按 team-workflow relay §2（handoff-input.json＋artifacts 哈希＋非空 evidence＋failure_counts 全量）。
 <!-- /team-task-contract -->
