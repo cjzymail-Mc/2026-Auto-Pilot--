@@ -787,3 +787,23 @@ automation/runs/types-rd-complex-R2/attempt_001/evidence/v1_final.png
 
 # 根目录临时笔记（用户 2026-10-27 指定本地保留）
 /temp.md
+
+# 2026-10-27 公共查询验收：tpl2 模板快照/只读观测/表单画面含真实收款账户（ENHANCED_FINAL P2-3，仅本地保留）
+automation/runs/20261027-common-accept-tpl2/template_snapshot.json
+automation/runs/20261027-common-accept-tpl2/attempt_001/evidence/template_view_observation.json
+automation/runs/20261027-common-accept-tpl2/attempt_001/evidence/template_view.png
+automation/type-replay-plans/tpl-copy-review-20261027/fill_plan.json
+automation/type-replay-plans/tpl-copy-review-20261027/test-inputs/authorized_replay_facts.json
+automation/type-replay-plans/tpl-copy-review-20261027/fill_plan_b.json
+
+# 2026-10-29 真实业务运行证据/修订意图仅本地保留；脱敏索引在docs/oa-validation-20261029.*
+/automation/runs/20261029-*/
+/automation/task-registry/
+
+# 运行转储可能含个人费用/银行与认证响应，新增运行只留本机；既有tracked历史不删除
+/automation/runs/
+# 以下为本机登录/网络复现记录，通用验证索引单独脱敏
+/docs/wecom-oa-tun-direct-reproduction-20261029.md
+/docs/qiaodan-domain-suffix-direct-20261029.md
+/docs/oa-test-drafts-stage-20261029.md
+/docs/login-reuse-20261028.md

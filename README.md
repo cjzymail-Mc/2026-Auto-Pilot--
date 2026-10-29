@@ -22,7 +22,7 @@ python -X utf8 fill_once.py --fill-plan "原填报计划.json" --expect-name "�
 
 Task 提供完整模板单号、材料目录和本次说明；准备器只整理原件清单及解析输出，agent 核对后生成可执行 fill-plan。CSV/XLSX 支持字符串标识符和单元格来源；PDF/图片需本地提取及带原件哈希、页码/区域的复核 JSON，不能猜关键值。详见 [task/plan 契约](.claude/skills/bpm-fill-run/references/plan-contract.md) 和 [差旅规则](.claude/skills/bpm-fill-run/references/travel.md)。
 
-类型由 `bpm/types.py` 封闭注册，入口、执行 run、UI 阶段及保存控制器共用配置身份；已有 travel 的原配置文件 SHA256 保持兼容。`express`（[快递规则](.claude/skills/bpm-fill-run/references/express.md)）支持四表普通全额；`rd_materials`（[研发材料规则](.claude/skills/bpm-fill-run/references/rd-materials.md)）增加第五表 products（物品档案），按完整编号选择现有档案并核对价格行额。空表理由须当次来源证明；新类型非空关联、研发数量乘单价及无档案建新物品均未开放。未建模业务字段不会被忽略。两类复杂历史回放真实填写已通过（快递 8 条费用/4 条银行；研发 18 条档案/4 条明细/4 条银行），均只填不存；多票材料与保存重开验收仍待具体业务输入及保存授权。
+类型由 `bpm/types.py` 封闭注册，入口、执行 run、UI 阶段及保存控制器共用配置身份；已有 travel 的原配置文件 SHA256 保持兼容。`express`（[快递规则](.claude/skills/bpm-fill-run/references/express.md)）支持四表普通全额；`rd_materials`（[研发材料规则](.claude/skills/bpm-fill-run/references/rd-materials.md)）增加第五表 products（物品档案），按完整编号选择现有档案并核对价格行额。空表理由须当次来源证明；新类型非空关联、研发数量乘单价及无档案建新物品均未开放。未建模业务字段不会被忽略。两类复杂历史回放真实填写已通过（快递 8 条费用/4 条银行；研发 18 条档案/4 条明细/4 条银行），上述历史轮均只填不存；10月29日快递及自驾另有明确授权的历史测试保存与独立重开，自驾含五日模拟且关联跳过，研发当日档案不可选未保存。见[最新证据索引](docs/oa-validation-20261029.md)，不外推新原件或正式oneshot全链。
 
 PDF/图片原件须逐个分类；发票票号去重、复核金额与主要费用行分配闭合，补贴等免票行记录本次来源依据。Excel 与发票冲突会阻断；部分票面报销、数量乘单价的票据分配当前不支持。配置 capabilities 单独标注历史证据、离线验证及实单待验收状态。
 
@@ -78,3 +78,9 @@ python -X utf8 stage1_browser_probe.py --expect-name "操作人" --login-only --
 `python -X utf8 -m tools.diagnostics.perf automation/runs/本轮run` 从追加事件复算 UI 窗口、动作区间并集和未覆盖时间；嵌套时间不累加。源码清单为 execution_source_manifest.json，阶段边界复核计划、来源及配置，最终独立 DOM 回读保持新鲜。
 
 历史 attempt_026 的填写结果与旧探索材料保持原样，供回归追溯：[施工方案](feature01-细化报销skill/2026-10-23%20历史单据加本次材料新建填报并保存草稿实施方案.md)、[历史会话报告](docs/session报告/2026-10-22-session报告任务总结.md)。旧格式只在显式 `--fill-plan "旧计划路径" --expect-name "操作人" --legacy-regression` 时进入只填不存回归，不能用于自动保存。新计划不得沿用旧表中金额不闭合或来源不确定的数据。
+
+## 正式执行入口
+
+日常就绪任务/计划优先 `python -X utf8 -m bpm.oneshot --task|--fill-plan … --expect-name "本次操作人"`，不以临时脚本分段重启浏览器。`fill_once.py` 的v1执行进程内复用同一入口；无facts_payload的task仍只准备材料。
+
+同单修订显式传 `--fill-plan "修订计划.json" --prior-plan "原成功计划.json" --revision-authorization "明确修订授权.json"`，先加 `--validate-only`。必须绑定原task/UUID/journal，已有修订意图只读恢复，不再编辑或保存。完整约束与停点见[公共调用参考](.claude/skills/bpm-fill-run/references/common-operations.md)。本次收尾不访问OA；正式新材料全链和原生客户端首验仍未完成。

@@ -1,6 +1,6 @@
 ---
 name: bpm-fill-run
-description: 根据模板单号、原始材料和执行意图，处理企业微信 OA 报销链路、执行就绪检查、已支持类型的填写与授权草稿保存；结合真实模板识别自驾公出等场景并加载手册。用于材料整理、报销填报、复核和安全恢复；自驾整单接线尚未完成时停止相关写入，禁止提交、流转及上传。
+description: 根据模板单号、原始材料和执行意图，处理企业微信 OA 报销链路、执行就绪检查、已支持类型的填写与授权草稿保存；结合真实模板识别自驾公出等场景并加载手册。用于材料整理、报销填报、复核和安全恢复；自驾新规则来源/计划绑定已接入，真实首验和未适配原件分支仍按缺口停止，禁止提交、流转及上传。
 ---
 
 # BPM 报销填写与草稿保存
@@ -11,15 +11,23 @@ description: 根据模板单号、原始材料和执行意图，处理企业微�
 
 ## 模板与场景路由
 
+查单（关键词/精确单号）、读模板、离线材料准备、事实与计划校验的**公共调用路径**统一见 [common-operations.md](references/common-operations.md)：优先走正式入口，不临时写脚本重复开浏览器；查询入口内已完成同等真实认证时，无需先独立启动登录。
+
 先由本次真实模板核实表单种类、费用类别及唯一单号，再结合材料和意图选择手册：
 
 - `travel / 差旅费 / 08` 且具备公里表、通行费/油票及自驾证据：读 [self-drive.md](references/self-drive.md)。不能只凭备注、单号或“有交通费”认定自驾。
-- 其他已支持差旅：读 [travel.md](references/travel.md)；快递费 `express` 读 [express.md](references/express.md)；研发材料费 `rd_materials` 读 [rd-materials.md](references/rd-materials.md)。保留三类独立配置和 schema 分支。
+- 其他已支持差旅：读 [travel.md](references/travel.md)；快递费 `express` 读 [express.md](references/express.md)；研发材料费 `rd_materials` 读 [rd-materials.md](references/rd-materials.md)。保留三类独立配置和 schema 分支。研发材料费类别下的**外购样品**场景（外购样品业务证据＋按购买人归组）读 [purchased-samples.md](references/purchased-samples.md)，结构约束沿用研发手册。
 - 准备 task、计划或排查来源/金额校验时读 [plan-contract.md](references/plan-contract.md)；既有请求编排读 [full-chain.md](references/full-chain.md)。不必加载无关类型手册。
 
-输出采用证据、排除依据及当前执行能力。未知类别、歧义、多候选、未建模关联/数量分支或缺执行适配时报告具体缺口，不套用相近类型。当前自驾已具备规则、计算和材料归集组件，Excel/真实公出匹配/含餐补计划及完整执行串联仍未装配；**本次用户已暂停完整施工与真实验收，Skill 文档搭建不表示这些能力已完成**。
+输出采用证据、排除依据及当前执行能力。未知类别、歧义、多候选、未建模关联/数量分支或缺执行适配时报告具体缺口，不套用相近类型。自驾V3历史真实材料链（含Excel、公出匹配、填写和独立回读）已通过；10月27日暂停的是新增V1工程。10月28日新增来源包与含餐补计划独立重算已接入正式生成/校验链，详见 [self-drive-inputs.md](references/self-drive-inputs.md) 及 [成熟度索引](../../../docs/runbook-maturity.md)。未适配原件、最新oneshot真实填写/保存及新V1 D12仍待验，不用离线结果冒充。
 
-单独获授权的无答案使用验收按冻结输入白名单读取长期红线，不自动加载 `STATE.md`、合同案例章节、旧解析/计划/匹配答案或反例夹具；这不豁免身份、锁、registry 和来源校验。当前尚未执行该冷启动验收。
+单独获授权的无答案使用验收按冻结输入白名单读取长期红线，不自动加载 `STATE.md`、合同案例章节、旧解析/计划/匹配答案或反例夹具；这不豁免身份、锁、registry 和来源校验。V3 CASE-08已有案例范围内新会话使用验收；新增V1更严格D12尚未执行，不混同两者。
+
+## 最新实证与统一调用边界
+
+2026-10-29新增验证：自驾与快递的明确授权历史测试草稿已保存并独立重开，用户人工反馈效果不错；均编制中，未提交/流转。自驾含10天×30元餐补，其中5天仅为授权模拟，关联按授权跳过。研发首档案无匹配，未保存。此结果不等于正式oneshot任务分支、新V1全真实来源、D12冷启动或原生企微客户端已验收。
+
+[证据索引](../../../docs/oa-validation-20261029.md)区分正式oneshot首验与临时脚本借用组件。真实业务优先复用正式单会话入口，不因分段命令仍兼容就逐阶段重开浏览器；只读查询自身已完成同等认证时不额外先开登录。同单修订已按AGENTS显式例外接入oneshot/兼容CLI，必须同时给原成功计划及明确修订授权；不冒用新建入口。
 
 ## 日常入口
 
@@ -41,6 +49,17 @@ python -X utf8 fill_once.py --fill-plan "填报计划.json" --expect-name "操�
 
 `--task` 返回 `NEEDS_INPUT` 是准备结果，不等于已填写。无参数启动会拒绝；不存在固定旧单、固定人员或固定 run 的默认填写。
 
+**单会话贯通入口 `bpm.oneshot`（2026-10-28 起实现，离线验证通过；真实填写/保存待验）**把上述分段合并为一次执行。任务分支在同一会话内完成：本次身份核实 → live 模板读取（同一 probe，值仅取本次快照）→ 事实补全 → A1/本次请求授权编译 → 计划生成/冻结/四绑定 → 既有填写链；`--fill-plan` 分支原样执行既定 v1.0 计划，不重读模板、不把 `fill_only` 静默升级为保存：
+
+```powershell
+python -X utf8 -m bpm.oneshot --task "任务.json" --expect-name "操作人" [--keep-open-minutes 45]
+python -X utf8 -m bpm.oneshot --task "任务.json" --expect-name "操作人" --validate-only
+python -X utf8 -m bpm.oneshot --fill-plan "填报计划.json" --expect-name "操作人" [--keep-open-minutes 45]
+python -X utf8 -m bpm.oneshot --task "原任务.json" --expect-name "操作人" --resume-run "原run标识"
+```
+
+`--validate-only` 不启动浏览器，分别返回 `TASK_VALIDATED`（含编译出的授权模式）／`PLAN_VALIDATED`。任务分支新开 run 时，已有保存意图、结果不确定、已保存或不可读 journal 在启动浏览器前即被拒绝（`EXISTING_SAVE_INTENT`），只走只读核实；`--fill-plan` 与 `--resume-run` 沿用既有入口行为（SaveController 在途只读核实兜底，不二次保存）。`--resume-run` 复用原 run 的冻结计划与授权记录，绑定（任务/操作人/配置哈希）不同即拒绝。终局 stdout 摘要在驻留结束后输出；更早的交付锚点是 events 的 `result_delivered`。
+
 ## 完整链路：模板单号+原始资料 → 执行就绪
 
 已支持且输入可核实的类型按六阶段编排（详见 [full-chain.md](references/full-chain.md)）：请求登记（`bpm.request.register_request`）→ 模板决策（`resolve_template`；未登记类别转只读识别，不映射绕过）→ 原件理解（`--task` 双根清单+复核 JSON）→ 事实与对账（`bpm_facts` + `bpm_plan_generate`）→ 计划 → 执行就绪（`bpm.request.execution_ready`：真实 `--validate-only` 子进程通过）。随后由 agent 按本次意图执行受支持的正式填写/保存入口，不把建议命令交给用户手跑。
@@ -48,7 +67,7 @@ python -X utf8 fill_once.py --fill-plan "填报计划.json" --expect-name "操�
 - 操作人证据来源封闭：本次请求 `user_policy` 或本次真实系统观察（`operator_from_session_record` 仅引用探查后 Git 排除的本机记录）；缓存 JSON 本身不能证明当前登录有效。模板历史人员不可推导本次操作人，缺来源按 GAP_FIELDS 返回，不猜姓名。
 - 历史复用逐字段过六字段组矩阵（`build_reuse_matrix`/`entries_from_matrix`）：本次日期/费用/发票/金额与关联/收款禁 adopt 模板旧值；旧年度预算、历史申请人沿用须用户政策显式确认；值一律 FactSet 事实绑定。
 - 请求与矩阵产物落双根 manifest 派生根（role=user_request/decision_matrix，版本化哈希可追溯）；各阶段缺口统一 GAP_FIELDS 形状，`NEEDS_INPUT` 不落盘、不猜值。
-- 与旧入口关系：上文三命令保留兼容；当前代码的上层编排只到 `EXECUTION_READY`，不是所有场景均已自动贯通。`NEEDS_INPUT`、`PLAN_READY`、`EXECUTION_READY` 均为阶段状态，不能冒充填写交付。自驾目前缺装配时按其手册停在安全阶段并说明缺口，不绕过校验或要求用户补内部 JSON。
+- 与旧入口关系：上文三命令保留兼容；六阶段编排到 `EXECUTION_READY` 后，已支持类型可由 `bpm.oneshot --task` 单会话贯通到最终计划与填写（实现＋离线验证，真实填写/保存待验），未支持场景仍只到阶段状态、不冒充贯通。`NEEDS_INPUT`、`PLAN_READY`、`EXECUTION_READY` 均为阶段状态，不能冒充填写交付。自驾来源包或原件未适配时按其手册停在安全阶段并说明缺口，不绕过校验或要求用户补内部 JSON。
 
 ## 执行与恢复
 
@@ -66,13 +85,13 @@ python -X utf8 fill_once.py --fill-plan "填报计划.json" --expect-name "操�
 python -X utf8 fill_once.py --fill-plan "原填报计划.json" --expect-name "操作人" --resume-run "原run标识"
 ```
 
-先查 `automation/task-registry/` 和 run 工件。已有保存意图、结果不确定或已保存记录只走只读核实，不重点击、不再建单。未保存页恢复目前仅盘点页面并返回 `NEEDS_INPUT`，不声称自动恢复；保留原页和恢复工件。不要删除 registry 或换 task_id 来规避重试保护。同一 profile 仅一个执行者。
+先查 `automation/task-registry/` 和 run 工件。已有保存意图、结果不确定或已保存记录只走只读核实，不重点击、不再建单。另行明确授权的编制中同单修订仅按AGENTS与bpm.revision显式例外执行，原创建journal不改，不套用新建恢复。未保存页恢复目前仅盘点页面并返回 `NEEDS_INPUT`，不声称自动恢复；保留原页和恢复工件。不要删除 registry 或换 task_id 来规避重试保护。同一 profile 仅一个执行者。
 
 ## 日常保存策略
 
 用户已要求日常真实报销在填写并完整独立核验后自动保存草稿，严禁流转/提交；明确“只填”“暂不保存”时执行 `fill_only`，受限历史占位测试也必须不存。规则来源为仓库 `BPM-SELFDRIVE-20261027-A1` 增补。
 
-下节的默认 `fill_only` 是未取得同任务保存授权时的运行时门禁。日常策略须编译为本次请求、同 `task_id` 的 `save_draft` 授权及来源/哈希绑定，再调用现有 `SaveController`；不能把一段策略文字当作已经完成授权。该自动编译与自驾执行接线尚未完成，应明确报告能力缺口，不要求用户手写 JSON 或手动保存，也不放宽旧守卫。`real_save_verified=false` 只表示证据层次，不能单独成为已合法授权任务的永久保存禁令。
+下节的默认 `fill_only` 是未取得同任务保存授权时的运行时门禁。日常策略须编译为本次请求、同 `task_id` 的 `save_draft` 授权及来源/哈希绑定，再调用现有 `SaveController`；不能把一段策略文字当作已经完成授权。该自动编译已由 `bpm.oneshot` 任务分支实现（G2：普通测试/合成强制 `fill_only`；另有具体任务/类型/来源哈希和测试标记绑定的显式历史测试保存分支、显式只填、`save_draft` 需 `user_request` 或 `standing_policy=BPM-SELFDRIVE-20261027-A1` 的结构化 `save_basis`），离线验证通过、真实保存待验；自驾来源/计划校验已接入，完整原件适配及真实新场景验收仍待完成。不要求用户手写 JSON 或手动保存，也不放宽旧守卫。`real_save_verified=false` 只表示证据层次，不能单独成为已合法授权任务的永久保存禁令。
 
 ## 授权与保存
 
@@ -86,5 +105,8 @@ python -X utf8 fill_once.py --fill-plan "原填报计划.json" --expect-name "�
 - `automation/.pw-profile/` 含活体 token，不复制进 git、日志、材料清单或报告。Windows 判活用 ctypes OpenProcess，禁用 `os.kill(pid, 0)`。
 - 改过 `bpm/browser_probe.py` 或其兼容入口后先跑 `python -X utf8 stage1_probe_selftest.py` 全绿；统一离线验收为 `python -X utf8 verify_bpm_build.py`，结果及合成截图/哈希在 `automation/offline-verify/<run>/`。保留 600ms 轮询、Tab 失焦与重复回读等稳定机制，不承诺固定耗时。
 - 结果以 `events.jsonl`、attempt 下 `stage1_result.json` 和证据为准。返回阶段/状态、run/attempt、缺口或差异、截图；只有持久化复核成功才返回新草稿单号、金额和未提交状态。区分代码实现、离线验证、真实填写验证和真实保存验证。
+- 交付与驻留（`bpm.oneshot` 及既有执行链）：终局落盘后立即写 `result_delivered` 事件并交付结果，不等驻留结束；主 tab 按 `--keep-open-minutes`（默认 45 分钟）限时保留，期间持锁、不接下一任务（占用即拒），用户提前关闭或到期自动清理。驻留不占技术耗时；保存后的只读持久化核验在**同 context 只读副页**重开完成，主 tab 不被核验导航或关闭。
 
 旧方案仅供显式只填不存回归：同时传具体 `--fill-plan` 路径、`--expect-name` 与 `--legacy-regression`；不用于日常任务或草稿保存。
+
+同单修订及兼容入口的正式参数、单context生命周期和只读恢复停点见[公共调用参考](references/common-operations.md)末节。日常执行不得用临时脚本拼接登录/模板/填写/核实阶段；无facts_payload的task仍只是材料准备。

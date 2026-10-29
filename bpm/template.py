@@ -179,17 +179,19 @@ def exact_list_item(items, number):
     return next(iter(matches.values()))
 
 
-def _target_list(probe, number, *, identity_hint=None):
+def _target_list(probe, number, *, identity_hint=None, page=None):
     """Apply an exact full-number query and retain only its matching list item.
 
     The application may use POST for read-only query forms. This function only
     clicks the already observed 查询 UI; it never issues a write request itself.
     Response auth headers stay in this local function's memory.
+    page=None uses probe.page (主 tab)；只读副页核验必须显式传入自己的 page，
+    不得借默认参数意外导航主 tab（G3 副页纪律）。
     """
     if not isinstance(number, str) or not re.fullmatch(r"\d+", number):
         raise ValueError("full document number required")
     captured = []
-    page = probe.page
+    page = page or probe.page
     def on_response(response):
         parsed = urlsplit(response.url)
         if (parsed.scheme == "https" and parsed.netloc == "oa.api.qiaodan.com"
@@ -249,13 +251,14 @@ def captured_list_identity(path, number):
         "kind": "captured_exact_list_identity", "path": str(path), "sha256": file_hash(path)}
 
 
-def fetch_template(probe, number, *, lookup_list=None, raw=False):
+def fetch_template(probe, number, *, lookup_list=None, raw=False, page=None):
     hint, evidence = captured_list_identity(lookup_list, number) if lookup_list else (None, None)
-    item, headers = _target_list(probe, number, identity_hint=hint)
+    item, headers = _target_list(probe, number, identity_hint=hint, page=page)
     uid = _uuid(item["id"])
     def get(path):
         # Endpoints witnessed by children_probe; no guesses using business number.
-        response = probe.ctx.request.get(API_ORIGIN + path, headers=headers, timeout=20000)
+        from bpm.network_guard import guarded_get
+        response = guarded_get(probe, API_ORIGIN + path, headers=headers, timeout=20000)
         if response.status != 200:
             raise ValueError("read-only template fetch incomplete")
         return _read_json(response.text())
@@ -278,8 +281,8 @@ def fetch_template(probe, number, *, lookup_list=None, raw=False):
     return normalize_template(number, main, children, source)
 
 
-def open_exact_document(probe, number, expected_uuid=None):
-    item, _ = _target_list(probe, number)
+def open_exact_document(probe, number, expected_uuid=None, *, page=None):
+    item, _ = _target_list(probe, number, page=page)
     uid = _uuid(item["id"])
     if expected_uuid is not None and uid != _uuid(expected_uuid):
         raise ValueError("saved number and UUID do not identify the same record")
@@ -387,10 +390,7 @@ def live_template(number, expected_operator, run, login_wait=480, *, lookup_list
             return state, marks, evidence
 
         def _launch(self):
-            from playwright.sync_api import sync_playwright
-            self._pw = sync_playwright().start()
-            browser = self._pw.chromium.launch(headless=False, args=["--no-proxy-server"])
-            self.ctx = browser.new_context(ignore_https_errors=True, viewport={"width": 1440, "height": 900})
+            self._launch_isolated_guarded_context()
             self._inject_session_state()
             self.page = self.ctx.new_page()
             self.page.set_default_timeout(45000)

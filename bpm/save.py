@@ -132,6 +132,9 @@ class SaveController:
             raise SaveError("screenshot must exist beneath attempt directory")
         return relative
 
+    def _verify(self, snapshot, phase="before_save"):
+        return verify_snapshot(self.plan, snapshot, phase=phase, base_dir=self.base_dir)
+
     def _reconcile(self, observation=None):
         """This branch is read-only; uncertainty can never lead back to click."""
         if observation is None:
@@ -156,7 +159,7 @@ class SaveController:
         self._transition("SAVE_UNCERTAIN", pending_identity=identity, reason="Awaiting persisted readback")
         reopened = self.adapter.reopen(identity)
         self._artifact("save_reopened_snapshot.json", reopened)
-        verification = verify_snapshot(self.plan, reopened, phase="after_save", base_dir=self.base_dir)
+        verification = self._verify(reopened, phase="after_save")
         self._artifact("save_reopened_verification.json", verification)
         page = reopened.get("page", {})
         if page.get("uuid") != identity.get("uuid") or page.get("biz_number") != identity.get("biz_number"):
@@ -215,14 +218,14 @@ class SaveController:
             try:
                 first = self.adapter.capture_snapshot()
                 self._artifact("save_before_snapshot.json", first)
-                verification = verify_snapshot(self.plan, first, base_dir=self.base_dir)
+                verification = self._verify(first)
                 self._artifact("save_before_verification.json", verification)
                 if not verification["ok"]:
                     return self._transition("READBACK_MISMATCH", verification=verification)
                 screenshot = self._screenshot("before_save")
                 second = self.adapter.capture_snapshot()
                 self._artifact("save_click_snapshot.json", second)
-                fresh = verify_snapshot(self.plan, second, base_dir=self.base_dir)
+                fresh = self._verify(second)
                 if not fresh["ok"] or self._content(first) != self._content(second):
                     return self._transition("READBACK_MISMATCH", reason="Page changed after screenshot",
                                             verification=fresh)
@@ -245,4 +248,12 @@ class SaveController:
             except Exception as exc:
                 return self._transition("SAVE_UNCERTAIN", reason="Save outcome unknown: " + type(exc).__name__)
         finally:
+            # G3.2：核验工件落盘后关闭本任务只读副页，主 tab 保持。副页生命周期
+            # 恰好覆盖保存后核验段；关闭属 adapter 自有页面清理，不影响终局状态。
+            close_side = getattr(self.adapter, "close_verification_page", None)
+            if callable(close_side):
+                try:
+                    close_side()
+                except Exception:
+                    pass
             lock_stream.close()

@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "scope": "sanitized historical test draft evidence; no originals, account, principal, session or subscription data",
+  "validation_utc_date": "2026-10-29",
+  "cases": [
+    {
+      "case": "travel-test-20261029",
+      "status": "SUCCESS_DRAFT_SAVED",
+      "business_state": "编制中",
+      "total": "2224.93",
+      "transport": "1924.93",
+      "meal": "300.00",
+      "unique_meal_days": 10,
+      "assumed_participation_days": 5,
+      "association": "skipped_by_explicit_authorization",
+      "rows": {
+        "costs": 30,
+        "details": 3,
+        "banks": 1
+      },
+      "same_task_uuid_revision": true,
+      "original_journal_unchanged": true,
+      "independent_reopen": true
+    },
+    {
+      "case": "express-test-20261029",
+      "status": "SUCCESS_DRAFT_SAVED",
+      "business_state": "编制中",
+      "total": "347.50",
+      "rows": {
+        "costs": 8,
+        "details": 1,
+        "banks": 4
+      },
+      "independent_reopen": true
+    },
+    {
+      "case": "rd-test-20261029",
+      "status": "NOT_ATTEMPTED",
+      "reason": "EXACT_PICK_MISSING:products/0/archive",
+      "saved": false
+    }
+  ],
+  "human_review": {
+    "source": "user feedback relayed in parent conversation",
+    "travel_express": "positive",
+    "does_not_expand_technical_acceptance": true
+  },
+  "offline": {
+    "tests": 571,
+    "passed": 567,
+    "skipped": 4,
+    "failed": 0,
+    "errors": 0,
+    "installed_selftest": "ALL PASS"
+  },
+  "not_validated": [
+    "official oneshot --task production end-to-end",
+    "all-real V1 self_drive_coverage source binding",
+    "new V1 D12 cold start",
+    "native WeCom client execution",
+    "portable clean-machine network/profile setup"
+  ],
+  "local_source_artifacts": [
+    {
+      "artifact_id": "travel-revision-result",
+      "sha256": "4827814055b970971ec5de4a13bea8ec0e2cc1e4aba1dd7fc5f3f2d765ff453c",
+      "availability": "private local original; path and content excluded"
+    },
+    {
+      "artifact_id": "express-persisted-readback",
+      "sha256": "176a2bea1cd54a2b299062134c2005d4b81443f806e8cf55110c27cebb17040e",
+      "availability": "private local original; path and content excluded"
+    },
+    {
+      "artifact_id": "rd-archive-selection-block",
+      "sha256": "2429c499cc5e47094ecf2b5b765be73eef997358e558a2db9255044ad69cabfa",
+      "availability": "private local original; path and content excluded"
+    },
+    {
+      "artifact_id": "historical-revision-source-installation",
+      "sha256": "0482a26e6eb3df8297b9203e26672aaee00bdb217c0c4fd98b37fabb9dc4446e",
+      "availability": "private local original; path and content excluded"
+    }
+  ],
+  "validated_revision_source_hashes": {
+    "bpm/save.py": "bf66c5c7dae923cadbe27811eb5320cbecbc243fdb64c4dd75ed07ece5c1c330",
+    "bpm/ui.py": "12374d52067bbedc903744d129e23c838ff731566844fa02f63a8aa6104e6f95",
+    "bpm/verify.py": "ffc7a2aff2729eb04c7dfe65d4b4fd5df8be5a58ac6a1c6b05acba8c904f67d5",
+    "bpm/revision.py": "d5e7fa72418b68a3c3e8e01244548fe6d65fcaf5f6a61d08eced9af0b8b20a88",
+    "tests/test_bpm_revision.py": "e820c6938c34b9c285c630594f22976fc24bd76b0a93892394e42d93f96c3b18"
+  }
+}

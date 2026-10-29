@@ -83,12 +83,17 @@ class DOMTests(unittest.TestCase):
         self.addCleanup(self.tmp.cleanup)
         self.root = Path(self.tmp.name)
         self.plan, _ = build_fixture(self.root)
-        self.page = self.browser.new_page()
+        # G3 副页核验需要真实 context：路由挂在 context 级，主/副页共享拦截，
+        # 与生产（同一 context 的主 tab＋只读副页）同构。
+        self.context = self.browser.new_context()
+        self.addCleanup(self.context.close)
+        self.page = self.context.new_page()
         self.addCleanup(self.page.close)
-        self.page.route("**/*", lambda route: route.fulfill(status=200, content_type="text/html", body=form_html(self.plan)))
+        self.context.route("**/*", lambda route: route.fulfill(status=200, content_type="text/html", body=form_html(self.plan)))
         self.page.goto("https://bpm.qiaodan.com/oa/reimburse?type=new")
         self.p = object.__new__(StructuredProbe)
         self.p.page = self.page
+        self.p.ctx = self.context
         self.p.args = types.SimpleNamespace(expect_name=self.plan["operator"])
         self.p.run_dir = self.root
         self.p.attempt = self.root / "attempt_001"
@@ -117,7 +122,12 @@ class DOMTests(unittest.TestCase):
         (self.p.ev / "fixture_snapshot.json").write_text(
             json.dumps(self.p.adapter.capture_snapshot(), ensure_ascii=False, indent=2), encoding="utf-8")
         output.mkdir(parents=True, exist_ok=True)
-        shutil.copytree(self.root, output / self._testMethodName)
+        # 键控含类名：子类（如 oneshot 副页用例）继承同名方法时避免证据目录互撞；
+        # 目标已存在时先清空，保证同一验证 run 内证据拷贝幂等。
+        target = output / (type(self).__name__ + "." + self._testMethodName)
+        if target.exists():
+            shutil.rmtree(target)
+        shutil.copytree(self.root, target)
 
     def test_independent_collector_reads_split_tables(self):
         snap = self.p.adapter.capture_snapshot()
@@ -174,6 +184,35 @@ class DOMTests(unittest.TestCase):
         self.assertTrue(self.p._overlay_search_pick(self.page, self.page.main_frame, "12026000001", "test", prescan=True))
         popup(["12026000001", "12026000001"])
         self.assertFalse(self.p._overlay_search_pick(self.page, self.page.main_frame, "12026000001", "test", prescan=True))
+
+    def test_archive_picker_falls_back_to_name_keyword_when_code_search_empty(self):
+        # 实测名称档案对话框按名称过滤（编号搜索返回共 0 条）：编号 0 候选时
+        # 回退名称精确唯一命中；两关键字皆 0 候选仍 fail-closed。
+        def popup(name_filter_hit):
+            self.page.evaluate(r'''hit=>{
+                let d=document.createElement('div');d.className='ui-dialog';d.id='picker-name';
+                d.innerHTML='<input placeholder="名称"><table><thead><tr><th>编号</th><th>名称</th></tr></thead><tbody></tbody></table>'+
+                    '<div class="ui-dialog-footer"><button onclick="this.closest(\'.ui-dialog\').remove()">确定</button></div>';
+                d.querySelector('input').addEventListener('keydown', ev=>{
+                    if(ev.key!=='Enter') return;
+                    let tb=d.querySelector('tbody'); tb.innerHTML='';
+                    if(hit && ev.target.value==='SCARPA instinct VS'){
+                        let tr=document.createElement('tr');
+                        tr.onclick=()=>tr.classList.add('ui-state-highlight');
+                        tr.innerHTML='<td>26103125</td><td>SCARPA instinct VS</td>';
+                        tb.appendChild(tr);
+                    }
+                });
+                document.body.appendChild(d);
+            }''', name_filter_hit)
+        popup(True)
+        self.assertTrue(self.p._overlay_search_pick(
+            self.page, self.page.main_frame, "26103125", "products/0/archive",
+            prescan=True, fallback_keywords=["SCARPA instinct VS"]))
+        popup(False)
+        self.assertFalse(self.p._overlay_search_pick(
+            self.page, self.page.main_frame, "26103125", "products/1/archive",
+            prescan=True, fallback_keywords=["SCARPA instinct VS"]))
 
     def test_array_executor_writes_more_than_two_rows_and_multiple_banks(self):
         # Real cell activation/row creation is exercised; picker behavior has its
@@ -333,11 +372,11 @@ class DOMTests(unittest.TestCase):
         saved_html = form_html(self.plan).replace('id="bizNumber0" name="bizNumber0" value=""',
                                                  'id="bizNumber0" name="bizNumber0" value="15426000002"')
         calls = []
-        self.page.unroute("**/*")
+        self.context.unroute("**/*")
         def serve(route):
             calls.append(route.request.url)
             route.fulfill(status=200, content_type="text/html", body=saved_html)
-        self.page.route("**/*", serve)
+        self.context.route("**/*", serve)
         self.page.locator("#save").evaluate("(e,url)=>e.onclick=()=>location.href=url", saved_url)
         result = SaveController(self.plan, self.p.adapter, self.p.attempt,
                                 expected_operator=self.plan["operator"], journal_dir=self.root / "registry").run()
@@ -496,10 +535,10 @@ class DOMTests(unittest.TestCase):
                 self.p._cell(key, index, "bizTypeName").evaluate("(e,v)=>e.textContent=v", row["bizTypeName"])
         self.p._ensure_row = ensure
         real_pick = self.p._overlay_search_pick
-        def transient_zero_candidates(page, frame, keyword, tag, prescan=False, first_data_row=False):
+        def transient_zero_candidates(page, frame, keyword, tag, prescan=False, first_data_row=False, fallback_keywords=None):
             if "relations/1" in str(tag):
                 return None  # 瞬时 0 候选（R7 v3 实测形态：prescan 无命中）
-            return real_pick(page, frame, keyword, tag, prescan, first_data_row)
+            return real_pick(page, frame, keyword, tag, prescan, first_data_row, fallback_keywords)
         with mock.patch.object(self.p, "_overlay_search_pick", side_effect=transient_zero_candidates):
             with self.assertRaisesRegex(UIBlocked, "EXACT_PICK_MISSING:relations/1/bizNumber"):
                 self.p._fill_arrays()
@@ -582,8 +621,8 @@ class DOMTests(unittest.TestCase):
         saved_url = "https://bpm.qiaodan.com/oa/reimburse?type=view&id=" + "b" * 32
         saved_html = form_html(self.plan).replace('id="bizNumber0" name="bizNumber0" value=""',
                                                 'id="bizNumber0" name="bizNumber0" value="15426000002"')
-        self.page.unroute("**/*")
-        self.page.route("**/*", lambda route: route.fulfill(status=200, content_type="text/html", body=saved_html))
+        self.context.unroute("**/*")
+        self.context.route("**/*", lambda route: route.fulfill(status=200, content_type="text/html", body=saved_html))
         self.page.locator("#save").evaluate("(e,url)=>e.onclick=()=>location.href=url", saved_url)
         def controller():
             return SaveController(self.plan, self.p.adapter, self.p.attempt, expected_operator=self.plan["operator"],

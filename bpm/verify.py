@@ -77,7 +77,7 @@ def _equal(prop, wanted, actual):
 values_equal = _equal
 
 
-def verify_snapshot(plan, snapshot, phase="before_save", base_dir=None):
+def verify_snapshot(plan, snapshot, phase="before_save", base_dir=None, existing_identity=None):
     """Return evidence of all fields, row associations/counts and amount closure.
 
     Plan rows and freshly observed rows are compared in their visible order. A
@@ -107,7 +107,7 @@ def verify_snapshot(plan, snapshot, phase="before_save", base_dir=None):
     business_tables = tuple(config["tables"])
     def issue(code, path):
         issues.append({"code": code, "path": path})
-    if phase not in ("before_save", "after_save"):
+    if phase not in ("before_save", "after_save", "before_revision"):
         issue("INVALID_PHASE", "/phase")
     if not isinstance(snapshot, dict):
         snapshot = {}
@@ -119,11 +119,17 @@ def verify_snapshot(plan, snapshot, phase="before_save", base_dir=None):
     query = parse_qs(parsed.query)
     if (parsed.scheme != "https" or parsed.hostname != "bpm.qiaodan.com"
             or parsed.path != "/oa/reimburse"
-            or query.get("type") != ["new" if phase == "before_save" else "view"]):
+            or query.get("type") != [{"before_save": "new", "before_revision": "edit"}.get(phase, "view")]):
         issue("WRONG_PAGE", "/page/url")
     if page.get("operator") != plan.get("operator"):
         issue("OPERATOR_MISMATCH", "/page/operator")
     template = plan.get("template", {})
+    if phase == "before_revision":
+        expected = existing_identity if isinstance(existing_identity, dict) else {}
+        if (set(expected) != {"uuid", "biz_number", "status"}
+                or expected.get("status") != "编制中"
+                or any(page.get(key) != expected.get(key) for key in ("uuid", "biz_number", "status"))):
+            issue("EXISTING_DRAFT_IDENTITY_MISMATCH", "/page")
     if phase == "before_save":
         if (page.get("is_new") is not True or page.get("biz_number") not in ("", None)
                 or query.get("id")):

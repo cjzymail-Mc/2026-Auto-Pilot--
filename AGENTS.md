@@ -21,6 +21,8 @@ Skill 框架、runbook 登记及新增手册规范见 [入口与未来扩展说�
 2. `automation/.pw-profile/` 含活体凭证，绝不复制进 Git、日志、报告、材料清单或测试工件。`automation/.local-session/` 的个人会话元数据也不进入 Git、通用案例、材料 manifest 或跨 agent 消息；禁止 `git add -f`。
 3. 结果以 `automation/runs/<run>/events.jsonl`（追加式）、`attempt_NNN/stage1_result.json` 及该 attempt 证据为准；准备结果在 run 根。run 截图自 2026-10-27 分级入库（过程截图及票据渲染页不入库，可能目视含银行资料的真实表单画面仅本地保留，判定记录见 `automation/maintenance/history-purge-20261027/`）。报告保存成功必须证明唯一新单号/UUID、未提交状态及重开持久化回读；fill_only 验收不要求这些，也不测试保存按钮。
 4. `automation/task-registry/` 保留跨 run 意图。已有 `SAVE_INTENT`、`SAVE_UNCERTAIN` 或保存成功记录只读核实，禁止再保存/另建。未保存页恢复当前仅盘点并返回 `NEEDS_INPUT`；不得删 registry、换 task_id 或强关旧页规避。单 profile 单执行者，探查不得导航或关闭其他执行者的未保存页。
+明确同单修订例外：只有用户另行授权修改指定的编制中已存草稿，才可使用 `bpm.revision` 的 `bind_and_fill_revision` / `DraftRevisionController`。先从正常列表“修改所选项”确认实际edit路线；绑定原task、UUID/完整单号、原成功journal字节哈希和新计划及授权哈希。原journal不改，修订单独留痕且共用原task锁；既有行/人员/银行身份不变，仅支持新增费用/明细及明确备注/总额/银行金额纠正。修订意图或未知结果仍只读reconcile，不再填写/点击；新建入口的原拒绝规则不变，严禁换task或新建单规避。
+
 5. `legacy-ia2/` 本地只读存档（2026-10-27 历史净化起不入库，新克隆缺件为预期状态；原件在维护备份与本地 ignore 清单）。缺原件、模板或登录条件时继续独立可做工作并如实留缺口，不虚构业务、不将历史验收冒充当次结果。
 
 ## 协作与异常处理
@@ -28,18 +30,18 @@ Skill 框架、runbook 登记及新增手册规范见 [入口与未来扩展说�
 - 使用 Claude-GLM team-workflow 时保持 A/B 两个独立 session 常驻。等待方挂唯一 Bash `run_in_background:true` helper wait（3600 秒），通过原生通知唤醒，先 status 再接棒；不以人工轮询替代，不另增常驻调度角色。重型测试/构建/OCR/整单错峰；宿主要求停止时遵守，不无限重挂。
 - A 按冻结基线验收和派工，B 仅按自足 team-task 与当轮合同执行；多 agent 按文件所有权分工并交接原始证据，不覆盖他人修改。施工和内容验收由 agent 完成，不要求用户现场对照、手工保存或验收签字。
 - 中断先核实工件、执行者、锁、registry 和页面。不得手改状态、清失败计数、换绑 session 或基线；status 仅反映 workflow 状态，不证明 waiter/进程仍存活。
-- **孤儿恢复由外部 agent 处理，team-workflow 不内建通用恢复机制。**按需读 [升级建议 U6 的精简维护指南](feature01-细化报销skill/team-workflow升级建议.md#u6外部-agent-维护保留精简指南框架)及其事故记录；先只读诊断，在当次明确授权内维护，保留旧状态字节、失败历史和可回退证据，再按正常入口交接。历史事故授权不是未来清理许可。
+- **明确新任务前，team-workflow 按 `prepare-new` 自动收尾旧 run**：终态归档；中断任务须确认执行者/waiter 已退出、根文件属于旧任务，再保留原字节和失败历史，记未完成取消后归档。使用当前真实调用者，不冒用原 session；不覆盖新草稿、不解除同一任务人工门、不恢复旧业务。进程/归属不明、旧版或损坏状态仍交外部 agent，按 [U6 维护指南](feature01-细化报销skill/team-workflow升级建议.md#u6外部-agent-维护保留精简指南框架) 在当次授权内诊断。只查状态不触发清理，历史事故授权不自动扩大。
 - 待评估的升级项以专题文档为准；未获选择不自动实施。阶段合格后继续推进合同终点，不因局部完成或离线通过就宣布整体完成。
 
 ## 正常入口与材料边界
 
-Runbook 导航：由统一入口按真实模板及本次材料路由，具体支持范围与验收状态见手册及 [STATE.md](STATE.md)。
+Runbook 导航：由统一入口按真实模板及本次材料路由，具体支持范围与验收状态见手册及 [STATE.md](STATE.md)。查单（关键词/精确单号）、读模板、离线材料准备及结果定位的公共调用路径见 [公共能力调用参考](.claude/skills/bpm-fill-run/references/common-operations.md)；`python -X utf8 -m bpm.query` 查询入口内完成的同等真实认证可替代先独立启动登录。
 
 - [自驾公出类](.claude/skills/bpm-fill-run/references/self-drive.md)。
 - [快递费](.claude/skills/bpm-fill-run/references/express.md)：普通全额，无关联及物品档案。
 - [研发材料费](.claude/skills/bpm-fill-run/references/rd-materials.md)：现有档案行金额，关联及费用说明为空。
 
-业务开工先 `python -X utf8 bpm_login.py` 只读探查当前身份；需要全新扫码时用 `--force-scan`。登录入口不预设姓名；业务 `--expect-name` 必须来自本次真实探查或核对用户明确预期，不沿用历史姓名。
+正式业务优先由单会话oneshot入口完成本次真实身份探查；查询入口已完成同等认证时不重复开登录。只有单独诊断登录才用 `python -X utf8 bpm_login.py`；需要全新扫码时用 `--force-scan`。登录入口不预设姓名；业务 `--expect-name` 必须来自本次真实探查或核对用户明确预期，不沿用历史姓名。
 
 ```powershell
 python -X utf8 fill_once.py --task "任务.json" --expect-name "操作人"
@@ -49,6 +51,7 @@ python -X utf8 fill_once.py --fill-plan "原填报计划.json" --expect-name "�
 ```
 
 - 无参数不填写，不默认用旧人、旧 run 或旧计划。`--task` 只准备材料并返回 `NEEDS_INPUT`；agent 核对本次材料后生成 v1.0 可执行计划，不要求用户编写内部 JSON。新任务新 run；同任务重试须计划/操作人/配置哈希完全相同。旧格式仅显式给具体计划及 `--legacy-regression` 做只填不存回归。
+- 单会话贯通入口 `python -X utf8 -m bpm.oneshot --task|--fill-plan … --expect-name …`（两分支语义、授权编译、交付/驻留限制与验证状态见 [公共能力调用参考](.claude/skills/bpm-fill-run/references/common-operations.md) §5）：任务分支在同一会话完成身份→live 模板→计划冻结→填写；其新开 run 在启动浏览器前阻断已有保存意图/已保存/不可读 journal（`EXISTING_SAVE_INTENT`），只读核实；`--fill-plan` 与 `--resume-run` 沿用既有入口行为（SaveController 在途只读核实兜底）。上方 `fill_once.py` 命令原样兼容；v1计划及含facts_payload的就绪task进程内转到oneshot，不再分阶段临时拼接脚本或另开stage1。
 - 模板按完整单号定向读取，不为找单号普查全部历史。`bpm_template.py` 支持 `--census` 缓存，或 `--live --expect-name "操作人" --template-number "完整单号" --output "automation/runs/独立准备run/template_snapshot.json"`；live 用同 profile 锁及临时 context，不操作恢复的原页。
 - 历史仅复用有依据的稳定身份、预算和收款资料；本次日期/费用/发票/金额/关联编号不得从旧单推导。CSV/XLSX 保留前导零；执行值具备 path/locator/sha256 来源，模板、材料、计划和配置哈希参与绑定。关键原件值不清晰时集中报告缺口。
 - PDF/图片须 image_documents 分类，复核 JSON 原件与提取哈希入同一 manifest。票据身份去重，票面与主要费用行分配闭合；免票行有 no_invoice_rows 理由及来源，corroborates 校验不同来源一致。Excel/票面冲突阻断，部分票面报销与数量乘单价分配不支持。具体案例的覆盖模型/测试占位例外仅按该合同执行，不推广为全局放宽。
@@ -89,3 +92,6 @@ python -X utf8 fill_once.py --fill-plan "原填报计划.json" --expect-name "�
 - 任务/计划/材料：`fill_once.py`、`bpm/plan.py`、`bpm/materials.py`、`bpm_template.py` 及 `automation/*schema.json`。
 - UI/回读/保存：`bpm/ui.py`、`bpm/verify.py`、`bpm/save.py`、`stage1_browser_probe.py`；登录：`bpm_login.py`、`bpm/session.py`。
 - 逐轮证据：`automation/runs/`、`team-progress/team-workflow/`；能力与历史结果按 [STATE.md](STATE.md) 的直接证据入口查阅，不沿用历史 attempt 匹配计数。
+- Windows-MCP：可选桌面探索路线，不是当前 Playwright 生产自动化的必需依赖。涉及它时，先读 [目录与定位](docs/repository-layout.md) 和 [固定版本重建说明](docs/windows-mcp-rebuild.md)；干净环境重建尚未验证，不得将文档步骤视作已通过的 runbook。
+
+统一CLI同单修订：`python -X utf8 -m bpm.oneshot --fill-plan "修订计划.json" --prior-plan "原成功计划.json" --revision-authorization "明确修订授权.json" --expect-name "本次操作人"`；先validate-only，业务执行需另有本次授权。参数缺失/旧计划或原journal漂移在浏览器前拒绝；已有修订意图只读核实。正式入口全部借用既有guarded context及当前profile认证，源域/TLS/重定向/WS限制不放宽。详见公共调用参考的“统一新建与同单修订入口”。

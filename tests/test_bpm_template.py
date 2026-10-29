@@ -110,7 +110,10 @@ class ResearchRawFlagTests(unittest.TestCase):
             def __init__(self):
                 self.calls = []
 
-            def get(self, path, headers=None, timeout=None):
+            def get(self, path, headers=None, timeout=None, max_redirects=0,
+                    max_retries=0, ignore_https_errors=False):
+                if max_redirects != 0 or max_retries != 0 or ignore_https_errors is not False:
+                    raise AssertionError("read-only API transport boundary changed")
                 self.calls.append(path)
                 if "/reimburse/list" in path or path.endswith("/list"):
                     return FakeResponse({"data": {"rows": [{"bizNumber": "00123456789", "id": "a" * 32}]}})
@@ -123,7 +126,7 @@ class ResearchRawFlagTests(unittest.TestCase):
                                       log_event=lambda **kwargs: events.append(kwargs))
         events = []
 
-        def fake_target_list(p, number, identity_hint=None):
+        def fake_target_list(p, number, identity_hint=None, page=None):
             return {"bizNumber": number, "id": "a" * 32}, {"x": "witnessed"}
 
         original_target = bpm_template._target_list

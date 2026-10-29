@@ -33,7 +33,9 @@ def is_reviewed_extraction(data):
 def _safe_material(path):
     lexical = Path(path)
     resolved = lexical.resolve()
-    if any(part.lower() in {".pw-profile", ".git", "legacy-ia2"} for part in lexical.parts + resolved.parts):
+    # 窄修（BPM-COMMON-20261027-V1 G3）：.local-session 含个人会话元数据，
+    # 与 .pw-profile/.git/legacy-ia2 同为枚举前即拒的受保护目录。
+    if any(part.lower() in {".pw-profile", ".local-session", ".git", "legacy-ia2"} for part in lexical.parts + resolved.parts):
         raise ValueError("protected path cannot be material")
     return resolved
 
@@ -306,21 +308,28 @@ def extract_structured(path):
             import openpyxl
         except ImportError as exc:
             raise ValueError("openpyxl is required to read XLSX materials") from exc
-        book = openpyxl.load_workbook(path, read_only=True, data_only=False)
         try:
-            for sheet in book:
-                for row in sheet.iter_rows():
-                    for cell in row:
-                        if cell.value is None:
-                            continue
-                        value, issue = _excel_value(cell)
-                        locator = f"{sheet.title}!{cell.coordinate}"
-                        result["cells"].append({"locator": locator, "value": value,
-                                                "original_type": cell.data_type})
-                        if issue:
-                            result["issues"].append({"locator": locator, "message": issue})
-        finally:
-            book.close()
+            book = openpyxl.load_workbook(path, read_only=True, data_only=False)
+        except Exception as exc:
+            # 损坏/非 zip 的 xlsx：登记缺口（NEEDS_INPUT），不吞掉其余文件的处理
+            result["issues"].append({"message": f"xlsx 无法打开（{type(exc).__name__}）：按损坏件登记，其余文件继续"})
+        else:
+            try:
+                for sheet in book:
+                    for row in sheet.iter_rows():
+                        for cell in row:
+                            if cell.value is None:
+                                continue
+                            value, issue = _excel_value(cell)
+                            locator = f"{sheet.title}!{cell.coordinate}"
+                            result["cells"].append({"locator": locator, "value": value,
+                                                    "original_type": cell.data_type})
+                            if issue:
+                                result["issues"].append({"locator": locator, "message": issue})
+            except Exception as exc:
+                result["issues"].append({"message": f"xlsx 读取中断（{type(exc).__name__}）：已得单元格保留，缺口登记"})
+            finally:
+                book.close()
     elif suffix == ".json":
         # Reviewed extraction JSON is accepted as a separate auditable input.
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -657,3 +666,134 @@ def prepare_dual_materials(directory, output_dir):
     manifest_path = output / "manifest.json"
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     return manifest_path
+
+
+def plan_pdf_text_pass(files):
+    """把 dual manifest 文件清单规划为 PDF 文本层任务表（纯函数，可离线反例测试）。
+
+    非 PDF 不进入本通道（保持 extract_structured 原语义）；PDF 一律尝试嵌入
+    文本层提取，空文本/失败在执行期登记缺口，不在此预判。
+    """
+    return [{"relative_path": f["relative_path"], "sha256": f["sha256"], "path": f["path"]}
+            for f in files if f["relative_path"].lower().endswith(".pdf")]
+
+
+def summarize_prepared(manifest):
+    """从 dual manifest + parsed 结果汇总待复核清单；不宣称事实齐备。"""
+    pending, counts = [], {"structured": 0, "structured_needs_review": 0, "structured_needs_input": 0}
+    by_role = {}
+    for derived in manifest.get("derived_files", []):
+        by_role.setdefault(derived.get("role"), []).append(derived)
+    for derived in by_role.get("parsed_extraction", []):
+        if not derived["relative_path"].startswith("parsed/"):
+            continue
+        data = json.loads(Path(derived["path"]).read_text(encoding="utf-8"))
+        status = data.get("status")
+        if status == "PARSED" or status == "STRUCTURED_JSON":
+            counts["structured"] += 1
+        elif status == "NEEDS_REVIEW":
+            counts["structured_needs_review"] += 1
+            pending.append({"relative_path": _original_relative(manifest, derived), "reason": "结构化提取存在待复核 issue"})
+        else:
+            counts["structured_needs_input"] += 1
+            pending.append({"relative_path": _original_relative(manifest, derived), "reason": "不支持或无结构化文本（图片/扫描件走渲染+独立视觉复核）"})
+    return pending, counts
+
+
+def _original_relative(manifest, derived):
+    for source_hash in derived.get("sources", []):
+        for f in manifest.get("files", []):
+            if f.get("sha256") == source_hash:
+                return f.get("relative_path")
+    return derived.get("relative_path")
+
+
+def prepare_command(source, out):
+    """G3 离线材料准备入口的核心（供 bpm.materials CLI 与测试调用）。
+
+    只读原件、派生写独立目录；PDF 嵌入文本层经 register_derived 绑定原件哈希
+    （原始提取角色，不写 reviewed=true）。空文本页/损坏/缺引擎登记具体缺口，
+    清晰件继续。返回 summary；status 仅代表材料准备完成。
+    """
+    source_path = Path(source)
+    out_path = Path(out)
+    if out_path.exists():
+        raise ValueError("derived output directory must be new (refusing to overwrite existing output)")
+    manifest_path = prepare_dual_materials(source_path, out_path)
+    manifest = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
+    gaps, extracted = [], 0
+    try:
+        from bpm.extraction import extract_pdf_text
+        engine = "bpm.extraction.extract_pdf_text"
+    except ImportError:
+        extract_pdf_text, engine = None, None
+        gaps.append({"kind": "engine_unavailable", "reason": "fitz 未安装，PDF 文本层通道不可用"})
+    if extract_pdf_text is not None:
+        for task in plan_pdf_text_pass(manifest["files"]):
+            try:
+                payload = extract_pdf_text(task["path"])
+            except ImportError as exc:
+                gaps.append({"kind": "engine_unavailable", "relative_path": task["relative_path"],
+                             "reason": f"{type(exc).__name__}: {exc}"[:200]})
+                continue
+            except Exception as exc:
+                gaps.append({"kind": "pdf_read_failed", "relative_path": task["relative_path"],
+                             "reason": f"{type(exc).__name__}: {exc}"[:200]})
+                continue
+            if not payload.get("items"):
+                gaps.append({"kind": "no_embedded_text", "relative_path": task["relative_path"],
+                             "reason": "PDF 无嵌入文本层（扫描件）：需渲染页 + 独立视觉复核，不用 barstub 冒充"})
+                continue
+            payload["source_sha256"] = task["sha256"]
+            payload["source_relative_path"] = task["relative_path"]
+            payload["extraction_role"] = "raw_embedded_text"
+            register_derived(manifest_path, f"pdf-text/{task['sha256']}.json", payload,
+                             role="parsed_extraction", sources=[task["sha256"]],
+                             generated_by="bpm.materials.prepare_command")
+            extracted += 1
+    manifest = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
+    pending, counts = summarize_prepared(manifest)
+    duplicates = sum(len(f.get("duplicate_paths", [])) for f in manifest["files"])
+    summary = {
+        "status": "PREPARE_COMPLETE",
+        "note": "材料准备完成不等于事实齐备、可填写或 OA 已执行",
+        "manifest_path": str(manifest_path),
+        "originals_root": manifest["originals_root"], "derived_root": manifest["derived_root"],
+        "files": {"total": len(manifest["files"]), "duplicates": duplicates,
+                  "pdf_text_extracted": extracted,
+                  **counts},
+        "pending_review": pending,
+        "gaps": gaps,
+        "next_entries": [
+            "复核 PDF/图片材料：python -X utf8 -m bpm.extraction 渲染与 review_pass（见公共参考 common-operations.md）",
+            "生成任务：python -X utf8 fill_once.py --task <任务.json> --expect-name <操作人>（需本次模板单号与登录）",
+        ],
+    }
+    (Path(out_path) / "prepare_summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+    return summary
+
+
+def main(argv=None):
+    import argparse
+    import sys
+    parser = argparse.ArgumentParser(
+        description="BPM 离线材料准备（不连 OA；盘点+结构化提取+PDF 嵌入文本层）")
+    sub = parser.add_subparsers(dest="command", required=True)
+    prep = sub.add_parser("prepare", help="准备双根 manifest 与派生提取")
+    prep.add_argument("--source", required=True, help="本次原件目录（只读）")
+    prep.add_argument("--out", required=True, help="独立的新派生输出目录")
+    args = parser.parse_args(argv)
+    if sys.platform == "win32":
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    try:
+        summary = prepare_command(args.source, args.out)
+    except (OSError, ValueError) as exc:
+        print(json.dumps({"status": "PREPARE_REJECTED", "reason": str(exc)}, ensure_ascii=False))
+        return 2
+    print(json.dumps(summary, ensure_ascii=False))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

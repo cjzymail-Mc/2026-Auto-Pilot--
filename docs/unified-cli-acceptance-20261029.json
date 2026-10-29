@@ -1,0 +1,36 @@
+{
+  "status": "OFFLINE_PASS",
+  "scope": "unified guarded create/revision CLI; synthetic offline acceptance only",
+  "tests": 581,
+  "passed": 577,
+  "skipped": 4,
+  "failures": 0,
+  "errors": 0,
+  "probe_selftest": "ALL PASS",
+  "source_manifest": "unified-cli-source-manifest-20261029.json",
+  "source_manifest_sha256": "2c1f9a3ed58287c2d3a32b5edfb7490121035ef630cbac68d3c8a3b1f313c78b",
+  "skipped_tests": [
+    "test_negative_config_mutations_are_rejected (test_bpm_type_round9.Round9TypeCommon.test_negative_config_mutations_are_rejected) ... skipped 'common base'",
+    "test_offline_chain_plan_validates (test_bpm_type_round9.Round9TypeCommon.test_offline_chain_plan_validates) ... skipped 'common base'",
+    "test_plan_level_boundaries (test_bpm_type_round9.Round9TypeCommon.test_plan_level_boundaries) ... skipped 'common base'",
+    "test_registration_identity_and_template_binding (test_bpm_type_round9.Round9TypeCommon.test_registration_identity_and_template_binding) ... skipped 'common base'"
+  ],
+  "production_access": false,
+  "production_writes": false,
+  "formal_oneshot_new_material_live_verified": false,
+  "native_wecom_client_verified": false,
+  "checks": [
+    {
+      "name": "probe-selftest",
+      "exit_code": 0,
+      "seconds": 4.457
+    },
+    {
+      "name": "capability-tests",
+      "exit_code": 0,
+      "seconds": 294.914
+    }
+  ],
+  "historical_live_test_cases": "oa-validation-20261029.json; distinct historical scope including five simulated days",
+  "next_live_acceptance": "A material-complete authorized task through formal oneshot; original exact template, verified operator, sources, budget/payment basis, current direct network and task-bound execution intent."
+}

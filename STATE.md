@@ -1,40 +1,44 @@
 # STATE.md — 当前接手快照
 
-最后核对：2026-10-27（快递/研发限定范围 runbook 文档收尾完成：9 项文档测试通过、独立合成情景走读通过；其他状态沿用既有证据，未重新验证 OA）。
-维护标准见 [AGENTS.md](AGENTS.md#文档分工与-statemd-维护标准)：替换旧结论、近期结果最多 3 项、目标 40—60 行，详细过程留原工件。
+最后核对：2026-10-29。长期规则见[AGENTS.md](AGENTS.md)，当前验收以直接证据为准。
 
-## 当前工作与下一步
+## 当前目标与阶段
 
-- [快递＋研发 runbook 轻量收尾](feature02-扩展更多单据类型/快递研发runbook收尾结果.md)已按[计划](feature02-扩展更多单据类型/2026-10-27%20快递费与研发材料费runbook轻量收尾施工计划.md)完成两份手册、入口登记、离线检查和独立走读；新业务原件驱动的填写及真实保存另验，不启动自驾或其他类型施工。
-- [自驾公出技能固化施工合同 V1](feature01-细化报销skill/2026-10-27%20报销单-自驾公出类技能固化施工合同-V1.md)（BPM-SELFDRIVE-20261027-V1）workflow run `242ccba1c43343f687aa1db0ae014f5b` round 2（合同 ctr-2433e4a3）：**用户 2026-10-27 指令"先暂停施工，完成 skill 搭建即可"→ A 发 stop、B 检查点收束后 pause 确认，run 已按状态机转入 CANCELLED（终态）。R2 未 finish、不宣称 DONE；resume 不适用于 CANCELLED**。
-- Skill 搭建后，已按用户另行指令完成仓库归类整理：实现归入 `bpm/`，工具归入 `tools/`，保留七个根命令兼容入口。见 [目录与旧路径映射](docs/repository-layout.md)、[整理验收结果](automation/maintenance/20261027-repo-layout/result.json)。原自驾施工继续暂停，未重新启动 workflow，也未填写或保存 OA。
-- 续作方式（用户明确启动完整施工新任务后）：原窗口按合法流程 `archive` 并核对已归档任务字节，再准备新 run；不自动恢复 CANCELLED。R2 [暂停点 manifest](automation/runs/20261027-121733-cb8b9bd6/artifact-manifest-r2fix2.txt)保留历史；此后另有 Skill 文档和仓库目录修订，源码及部分类型解析器哈希已变。恢复时须按新路径比对并重冻当前哈希，再做 fresh ENHANCED_FINAL、P6 收尾和独立验收，不能改旧计划/registry/manifest 绕过漂移。
-- 未完成工程：含餐补计划与来源绑定、A1 同任务自动保存授权接线、真实公出匹配/统计 MD、Excel 回填与重算、正式整链和 D12 冷启动；完成后再更新手册能力状态。首次审计 P2-1/P2-2/P2-3 及旧失败历史继续保留。
-- U1—U5 说明升级已安装，helper/状态机未改；孤儿恢复仍交外部 agent，见 [U6 指南](feature01-细化报销skill/team-workflow升级建议.md#u6外部-agent-维护保留精简指南框架)。
+- 用户已批准先同步状态/证据，再将既有保存、同单修订及会话复用接入统一正式CLI，验证后选择性本地提交。
+- 当前文档/证据同步、选择性提交范围审查及统一CLI已完成；最终离线验收通过，版本边界以当前Git提交及构建摘要为准，未做新增业务首验。
+- 本轮不打开OA、不改现有草稿、不改网络、不扩类型；无remote/upstream，不创建remote、不push。
 
 ## 最近已证实的结果
 
-1. **10 月 27 日快递/研发限定范围 runbook 收尾完成。**字段来源、快递两种费用说明路径、研发现有档案行金额及票据分配、正式入口与异常停点已补齐；原路由不变，登记新增两类。9 项文档检查、独立合成情景走读通过；历史真实回放仅证明只填不存，新业务和真实保存按具体任务另验。见[收尾结果与最终文档哈希](feature02-扩展更多单据类型/快递研发runbook收尾结果.md)。
-2. **10 月 27 日 R2 主体+窄审修复离线全绿（含修复后新鲜验证）。**D02 30 天迁移（REUSE_DAYS=30、旧记录收紧 min(原窗口,扫码+30d)）；D04 识票归集 `bpm_collect.py`（73 原件只读→32 身份 27 通行费 Σ486.93+5 油票、GAP=0、汇总单互证 10/10、幂等防覆盖、72 规范副本，与人工对照表逐日一致差异 0）；D3 下游多 record；P2-2/P2-3 机制化清污；§2(4) 纠正+[D5 记录](automation/runs/20261027-121733-cb8b9bd6/d5-capability-layers-correction.md)+`bpm_identity.py`+task.schema 身份关系字段。**Codex 两轮窄审反例（写回滚动 24h/坏 meta 拒绝不一致/删键降级链）全部隔离验证成立并修复**：persist_state 锚点保持+覆盖前拒绝、_meta_valid 三处统一；修复后 394 tests OK exit=0 + OFFLINE_PASS（offline-verify/20261027-121733-cb8b9bd6-r2fix2/）。零业务写入、73 原件零漂移。证据：`automation/runs/20261027-121733-cb8b9bd6/`（events 全链）。
-3. **10 月 27 日 Skill 文档搭建及后续仓库归类整理完成。**[早先 Skill-only 结果](automation/runs/20261027-skill-scaffold/result.json)保留文档校验与独立情景复核历史；现行目录见上方整理结果。29 个文件迁移、七入口兼容，399 项测试中 395 通过、4 项既有跳过；独立静态复核及守卫 AST 比对完成。手册固化与目录整理均不代表自驾整链、D12 或真实填写/保存验收完成。
+1. [10月29日脱敏证据索引](docs/oa-validation-20261029.md)：自驾/快递历史测试草稿保存和独立回读通过，均编制中，用户人工反馈效果不错。
+   自驾交通1924.93＋10天餐补300＝2224.93，30费用/3明细/1银行；5天仅按明确模拟授权，关联跳过；同task/UUID修订、原创建journal及原Excel不变。
+   快递347.50，8费用/1明细/4银行；研发当前首档案无可选匹配，未保存。未提交/流转，无未知保存，原始工件本地保留。
+2. 修订组件10项守卫测试及最终全量571项（567通过/4跳过）、安装后selftest通过；源码哈希见[机器索引](docs/oa-validation-20261029.json)。
+   真实调用为兼容入口/临时借用会话组件；最后修订一次会话贯通不等于正式oneshot --task全链验收。原生企微客户端也未验。
+3. 本机公司域后缀直连（[验证边界](docs/oa-validation-20261029.md)）已激活并核物理出口/TLS；原认证复用成功，fresh_scan=false，扫码锚点仍10月24日。
+   当前刷新值仅按正常helper持久化；不据此重算扫码有效期。公司网关/Clash活动脚本/profile是本机条件，不等于干净机器可移植验收。
 
-## 业务范围与验收边界
+本轮统一CLI最终构建：581项，577通过、4跳过，selftest通过；[脱敏构建摘要](docs/unified-cli-acceptance-20261029.json)与源码哈希已冻结，不能替代下一笔真实首验。
 
-- [BPM-SELFDRIVE-20261027-V1](feature01-细化报销skill/2026-10-27%20报销单-自驾公出类技能固化施工合同-V1.md)仍是未完成工程基线，当前仅完成用户要求的 Skill 文档收尾；旧 [V3 合同](feature01-细化报销skill/2026-10-26%20真实公出案例独立解析与OA填写施工合同-冻结V3.md)及原件、历史证据只读。
-- 金额双模型并存：旧 `fuel_pool_strict_surplus` 零改动；新 `self_drive_strict_surplus_v1` 须绑定 self_drive.json 版本与哈希、生产调用显式 `rules=`，历史餐补值传入即拒。油票只作覆盖不加报，汇总单不重复计费。
-- 身份关系：登录操作人/新页制单人/费用所属人分开记录；角色未知、预期不符、制单人未成立均按 NEEDS_INPUT 缺口，不换人凑对照值、不默认零餐补。
-- 会话写回纪律（本轮窄审固化）：真旧无 meta 文件写回保留原 mtime（24h 锚不滚动）；坏 meta（坏 schema/缺标识/显式 null）读取/复制/写回三处统一拒绝，非扫码覆盖前拒绝并保持原字节；真实新扫码合规重建不受影响。
+## 能力边界与下一步
 
-## 恢复入口与当次必查
+- [六类成熟度](docs/runbook-maturity.md)：自驾历史基础最深，快递已有测试保存实证，研发保留历史填写成功；外购样品初版，办公/福利仍建设中。
+- oneshot已有任务/既定计划分支、授权编译、同context只读副页与锁/驻留回归；尚缺正式任务分支真实材料全链首验，不重建这些组件。
+- 同单修订bpm.revision已有原task/UUID/journal/新计划授权绑定与一次真实测试修订；统一CLI路由已按本轮最小接入，禁止换task重建。
+- [自驾来源绑定](.claude/skills/bpm-fill-run/references/self-drive-inputs.md)已接plan_generate/validate_plan/load_plan；今天模拟计划无self_drive_coverage，不作为V1全真实来源验收。
+- [已知V3 Excel副本回填与重算](feature02-扩展更多单据类型/2026-10-28%20自驾Excel副本回填与重算收尾结果.md)已实现并有真实Excel合成/历史回放证据；不改原件、不加餐补栏。
+- 任意原件适配、其他Excel版式、真实同源参与日/逐单金额、全真实餐补、新V1 D12冷启动仍待验证；历史20混合交通行不能直接冒充新V1纯组件来源绑定。
+- 下一笔材料齐全的成熟类型业务走正式oneshot：当前完整模板号、本次原件/事实与收款预算依据、明确执行意图、现场真实身份及可用网络。
+- 自驾先补完整真实来源和餐补参与日；研发先确认当前可选既有档案。不擅自替代档案，不牵引办公/福利新类型。
+- 提交前逐文件审归属与敏感内容；候选不等于可直接stage，私人原件/真实运行转储/认证/profile/订阅均排除，不git add .。
 
-- workflow 状态：run `242ccba1…` 已 CANCELLED（用户暂停，13:11 B 检查点确认），不代表工程 DONE。不能由终态推断交互 session 进程已退出或历史业务页已关闭；后续仍现场核实执行者、waiter、锁、registry 和页面，勿杀进程或强关旧页。续作按上方合法新任务入口；旧 V3 run 已 archive。
-- `20261027-074251-9d71443f` 为 SUCCESS_FILL_ONLY，用户自述已手动保存、agent 未核实，registry 仍按只填不存记录。
-- 新业务执行前重新核实 profile 锁、业务 registry、未保存页和当前身份（11:20:45 探查为陈晶 authenticated，effective_reuse_until 2026-11-23，以当次探查为准）。本地复用上限现行为 30 天（D02 已实施；旧 60 天记录自动收紧）。
-- 历史登录复用证据见 [10 月 24 日验证 run](automation/runs/20261024-104301-login60/)；它不证明现在仍有效。
+## 历史工程与恢复线索
 
-## 按需深入
-
-- R2 工件：`automation/runs/20261027-121733-cb8b9bd6/`（collect/ 归集产物、p2-3 复扫、D5 记录、r2fix-isolated-verification、两份 manifest、events 全链）；离线构建三目录（385/392/394 历史快照，r2fix2 为现行）。
-- R1 工件：`automation/runs/20261027-111853-f2789e00/`；[逐项金额核算](automation/runs/20261027-sample15425123013-live/逐项金额核算.md)中的餐补/合计仍仅为离线对照值，不进生产路由。
-- V3 独立验收与证据清单：[A-verification.md](team-progress/team-workflow/d91601924848489f84e317e68582de26/round-08/acceptance/A-verification.md)、[final-manifest.json](automation/runs/20261026-192400-v3r08-final/final-manifest.json)。
-- 日常业务入口：[bpm-fill-run](.claude/skills/bpm-fill-run/SKILL.md)；操作规则与维护标准：[AGENTS.md](AGENTS.md)。下一阶段更新本快照时替换过期条目，不在末尾追加工作日志。
+- V3历史真实解析、Excel、公出裁定、填写和回读成功保留；[终局验收](team-progress/team-workflow/d91601924848489f84e317e68582de26/round-08/acceptance/A-verification.md)不因新增工程暂停而撤销。
+- 新V1合同仍有缺口；10月27日workflow 242ccba1…已CANCELLED，不resume、不冒充DONE。旧V3 run已archive，R2未finish。
+- 旧R2工件 automation/runs/20261027-121733-cb8b9bd6/ 及首次P2-1/P2-3、D5、manifest历史保留；若另行启动完整施工，按AGENTS合法新任务流程重冻当前哈希，不能改旧registry/合同。
+- 历史run 20261027-074251-9d71443f仍是SUCCESS_FILL_ONLY；用户当时手动保存自述与agent当次证据分开，不改写成今日保存。
+- [单会话入口施工结果](feature02-扩展更多单据类型/单会话贯通与自动保存接线施工结果.md)、[公共能力调用参考](.claude/skills/bpm-fill-run/references/common-operations.md)保留原验收层次。
+- workflow prepare-new退役/归档能力已有隔离测试；当前不重启旧Claude-GLM施工，不动并发handoff/review/team工作文件或GLM配置。
+- 原交通单保存曾晚于餐补提醒143.514107秒，错误时间记录原样保留；后续明确模拟授权下已同单纠正，不能倒写历史。
+- 恢复任何业务前现场核profile锁、执行者、registry、未保存页、身份和网络；历史状态不证明当前登录仍有效，不强制扫码或恢复旧认证覆盖新状态。

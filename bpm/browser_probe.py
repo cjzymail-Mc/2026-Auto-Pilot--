@@ -3019,6 +3019,22 @@ class Probe:
         return PASS
 
     # ---- 浏览器生命周期 ----
+    def _launch_isolated_guarded_context(self):
+        """Existing historical-test isolation, with guards before its first page.
+
+        Credentials are still read from the original protected SESSION_STATE by
+        the caller. No persistent/restored profile pages are opened here.
+        """
+        from playwright.sync_api import sync_playwright
+        from bpm.network_guard import ContextGuard
+        self._pw = sync_playwright().start()
+        self._guarded_browser = self._pw.chromium.launch(
+            headless=False, args=["--no-proxy-server"])
+        self.ctx = self._guarded_browser.new_context(
+            ignore_https_errors=False, service_workers="block",
+            viewport={"width": 1440, "height": 900})
+        self._request_guard = ContextGuard(self.log_event).install(self.ctx)
+
     def _launch(self, headless_exit_ok=False):
         from playwright.sync_api import sync_playwright
         self._pw = sync_playwright().start()
@@ -3035,9 +3051,10 @@ class Probe:
         self.page.on("requestfailed", lambda r: self.failed_reqs.append(f"{r.failure} {r.url[:120]}"))
 
     def _inject_session_state(self):
-        """TTL 内重启注入上次登录态（cookie + localStorage + sessionStorage），免重复扫码。
+        """TTL 内从原受保护状态补齐缺失的 cookie/localStorage/sessionStorage。
         2026-10-21 attempt_007 实证：BPM 本域 0 cookie、localStorage 无 token——登录态在
-        sessionStorage（storage_state 不采集），故额外采集 _page_storage 并于每次导航前回种。
+        sessionStorage（storage_state 不采集），故额外采集 _page_storage；导航只补缺失键，
+        不覆盖站点已刷新值（空字符串也视为已有值）。仍须实时核验，不能保证免扫码。
         失败不致命：注入后仍被要求登录则回落扫码门（wait_login），绝不伪造登录态。
         cookie/storage 值只进浏览器内存，日志只记条数与键名。"""
         if not _session_state_usable(SESSION_STATE):
@@ -3048,7 +3065,12 @@ class Probe:
             state = json.loads(SESSION_STATE.read_text(encoding="utf-8"))
             cookies = state.get("cookies", [])
             if cookies:
-                self.ctx.add_cookies(cookies)
+                existing = {(c.get("name"), c.get("domain"), c.get("path"))
+                            for c in self.ctx.cookies()}
+                missing = [c for c in cookies
+                           if (c.get("name"), c.get("domain"), c.get("path")) not in existing]
+                if missing:
+                    self.ctx.add_cookies(missing)
             origins = state.get("origins") or []
             page_storage = state.get("_page_storage") or {}
             if origins or page_storage:
@@ -3058,15 +3080,17 @@ class Probe:
                     "try{var _st=" + payload + ";"
                     "for(var i=0;i<(_st.origins||[]).length;i++){var o=_st.origins[i];"
                     "if(location.origin===o.origin){var ls=o.localStorage||[];"
-                    "for(var j=0;j<ls.length;j++){try{localStorage.setItem(ls[j].name,ls[j].value)}catch(e){}}}}"
+                    "for(var j=0;j<ls.length;j++){try{if(localStorage.getItem(ls[j].name)===null)"
+                    "{localStorage.setItem(ls[j].name,ls[j].value)}}catch(e){}}}}"
                     "var ps=(_st.page_storage||{})[location.origin];"
-                    "if(ps){for(var k in ps){try{sessionStorage.setItem(k,ps[k])}catch(e){}}}}catch(e){}"
+                    "if(ps){for(var k in ps){try{if(sessionStorage.getItem(k)===null)"
+                    "{sessionStorage.setItem(k,ps[k])}}catch(e){}}}}catch(e){}"
                 )
             self.log_event(event="session_state_injected", cookies=len(cookies),
                            origins=len(origins), page_storage_origins=len(page_storage),
                            mtime_age_s=round(time.time() - SESSION_STATE.stat().st_mtime))
         except Exception as e:
-            self.log_event(event="session_state_inject_error", error=str(e)[:160])
+            self.log_event(event="session_state_inject_error", error_type=type(e).__name__)
 
     def _save_session_state(self):
         """登录确认后导出到受保护 profile，保留真实扫码起点及期限。
@@ -3135,6 +3159,35 @@ class Probe:
             time.sleep(60)
         self.log_event(event="keep_open_end")
 
+    def _deliver_and_park(self, reason):
+        """G3.4/G3.5 交付与驻留决策（自 main() finally 原样抽出，行为不变）。
+
+        终局结果已由调用方原子落盘并记 probe_end；此处先发布完成事件——
+        agent 用宿主后台通知/事件监听在完成事件后读取权威结果并立即回复，
+        不等驻留进程退出；G4 生命周期计数按本进程实际角色如实记录。
+        驻留边界：填写链已绑定计划→按填写语义驻留；登录未确认→按
+        WAIT_HUMAN_LOGIN 保留页面；仅准备阶段缺口（无表单可审）不驻留，
+        尽快释放锁，避免占用下一任务。"""
+        self.log_event(event="result_delivered", finish_reason=reason,
+                       task_status=self.result.get("task_status"),
+                       save_status=self.result.get("save_status"),
+                       plan_hash=self.result.get("plan_hash"),
+                       fresh_scan=bool(getattr(self, "_fresh_scan_confirmed", False)),
+                       business_executors=1, browser_instances=1, business_contexts=1,
+                       lock_owners=1, driver_subprocesses=0)
+        task_branch_retain = (getattr(self, "pending_task_prepare", None) is not None
+                              and getattr(self, "ctx", None) is not None
+                              and (self.fill_plan is not None
+                                   or self.checks["c1_entry_login"]["status"] != PASS))
+        if self.args.keep_open_minutes > 0 and (self.fill_plan is not None or (
+                getattr(self.args, "login_only", False)
+                and self.checks["c1_entry_login"]["status"] == PASS) or task_branch_retain):
+            # 驻留审单期不占墙钟：wall_cap 熔断线程不区分「执行中/驻留中」，会在驻留中途
+            # os._exit(83) 硬杀（attempt_024 实证：驻留 45min 第 36 分钟被腰斩，keep_open_end
+            # 缺失、锁残留）。驻留属填写后人工审单，不计入执行墙钟，进入前扩容熔断上限。
+            self.budget.wall_cap += self.args.keep_open_minutes * 60
+            self._park_browser(self.args.keep_open_minutes)
+
     # ---- 主流程 ----
     def main(self):
         self.acquire_lock()
@@ -3159,11 +3212,25 @@ class Probe:
             if getattr(self.args, "login_only", False):
                 self.log_event(event="login_only_complete", authenticated=entry_ok,
                                ttl_hours=SESSION_TTL / 3600.0, proxy_mode="direct")
-            elif self.fill_plan is not None:
-                # 填写任务（--fill-plan 授权）：新建报销单只填不存；不做历史单据只读链
-                self.result["phases"]["fill"] = runner.run("fill", self.phase_fill) \
-                    if entry_ok else "SKIPPED"
-                if not entry_ok:
+            elif getattr(self, "pending_task_prepare", None) is not None or self.fill_plan is not None:
+                # 填写任务（--fill-plan 授权或 oneshot 任务分支）：新建报销单只填不存；
+                # 不做历史单据只读链。任务分支（G1）在身份确认后先经 prepare 挂钩
+                # 完成同会话模板读取→最终计划与授权冻结，再进入既有填写链。
+                prepare = getattr(self, "pending_task_prepare", None)
+                prepared = True
+                if prepare is not None:
+                    if entry_ok:
+                        self.result["phases"]["prepare"] = runner.run("prepare", prepare)
+                        prepared = self.result["phases"]["prepare"] == PASS
+                        if not prepared:
+                            self.checks["c7_fill_new"].update(status=BLOCKED,
+                                                              reason="任务准备阶段未通过（模板/计划/授权），未进入填写")
+                    else:
+                        prepared = False
+                        self.checks["c7_fill_new"].update(status=NOT_RUN, reason="入口登录未通过，任务准备未执行")
+                if prepared and entry_ok:
+                    self.result["phases"]["fill"] = runner.run("fill", self.phase_fill)
+                elif prepare is None and not entry_ok:
                     self.checks["c7_fill_new"].update(status=NOT_RUN, reason="入口登录未通过，填写未执行")
             else:
                 self.result["phases"]["locate"] = runner.run("locate", self.phase_locate) \
@@ -3195,14 +3262,8 @@ class Probe:
                            budget_respected=self.result.get("budget_respected"))
             self.say(f"FINISH {reason} tech={self.result.get('tech_used_s')}s "
                      f"login_wait={self.result.get('login_wait_s')}s attempt={self.attempt.name}")
-            if self.args.keep_open_minutes > 0 and (self.fill_plan is not None or (
-                    getattr(self.args, "login_only", False)
-                    and self.checks["c1_entry_login"]["status"] == PASS)):
-                # 驻留审单期不占墙钟：wall_cap 熔断线程不区分「执行中/驻留中」，会在驻留中途
-                # os._exit(83) 硬杀（attempt_024 实证：驻留 45min 第 36 分钟被腰斩，keep_open_end
-                # 缺失、锁残留）。驻留属填写后人工审单，不计入执行墙钟，进入前扩容熔断上限。
-                self.budget.wall_cap += self.args.keep_open_minutes * 60
-                self._park_browser(self.args.keep_open_minutes)
+            # G3.4/G3.5 立即交付锚点与驻留边界（完成事件→驻留决策，详见方法契约）。
+            self._deliver_and_park(reason)
             self._close_browser()
             self.release_lock()
             self.budget.close()

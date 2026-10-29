@@ -35,7 +35,7 @@
 
 ## 已知缺口（下轮输入）
 
-1. `automation/fill-plan.schema.json` enum 未含 02/04（同 office_supplies 缺口①，待授权同步）。
+1. 原首件记录的schema enum缺口已由后续轮次修复：当前 `automation/fill-plan.schema.json` 已包含02/04及对应submitType。注册/schema可用不等于真实整单已验收；其余控件/关联/业务缺口按下文保留。
 2. ~~真实新页控件观察未做~~ → **2026-10-26 部分回填**（round-10/V3-R02，见文末「观察状态回填」节）：reimItem 04 枚举/类别联动 8 表/关联类型枚举已实测（attempt_007）；budgetNo/subjectName `NO_TABLE_DIALOG` 未解、福利申请单 picker 零金额复现/跨部门预算范围/真实填写仍待类型接入轮。
 3. plan 级 invoice_policy 强制待 bpm_plan 授权轮。
 

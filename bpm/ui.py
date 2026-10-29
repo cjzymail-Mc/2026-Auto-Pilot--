@@ -186,16 +186,45 @@ class StructuredProbe(Probe):
     def __init__(self, args):
         from bpm.plan import load_plan, plan_hash, load_type
         from bpm.types import resolve_type
-        self.plan_base = Path(args.fill_plan).resolve().parent
-        plan = load_plan(args.fill_plan, expected_operator=args.expect_name)
+        if getattr(args, "fill_plan", None):
+            self.plan_base = Path(args.fill_plan).resolve().parent
+            plan = load_plan(args.fill_plan, expected_operator=args.expect_name)
+            self.type_config = load_type(plan["document_type"])
+            self.bound_plan_hash = plan_hash(plan)
+            self.config_hash = resolve_type(plan["document_type"]).sha256
+        else:
+            # oneshot 任务分支（G1）：计划尚未冻结——先以无计划形态启动共享会话，
+            # 待 prepare 挂钩完成模板读取→生成→授权冻结后经 bind_final_plan 绑定。
+            # 延迟期间本探针不得进入任何填写路径（Probe.main 的 prepare 挂点先于 fill）。
+            plan = None
+            self.plan_base = None
+            self.type_config = None
+            self.bound_plan_hash = None
+            self.config_hash = None
+        super().__init__(args)
+        self.fill_plan = plan
+        if plan is not None:
+            self.result.update(plan_hash=self.bound_plan_hash, task_id=plan["task_id"],
+                               validation_scope="v1_independent", save_status="NOT_ATTEMPTED")
+        self.adapter = DraftUIAdapter(self)
+
+    def bind_final_plan(self, plan, plan_path):
+        """任务分支：冻结后的最终计划绑定（G1 共享会话借用接口）。
+
+        只接受已经过完整校验并落盘的计划；绑定后本探针与 --fill-plan 直载路径
+        完全同构（phase_fill 的计划核验/哈希闭合检查照常执行）。
+        """
+        if self.fill_plan is not None:
+            raise UIBlocked("PLAN_ALREADY_BOUND")
+        from bpm.plan import plan_hash, load_type
+        from bpm.types import resolve_type
+        self.plan_base = Path(plan_path).resolve().parent
+        self.fill_plan = plan
         self.type_config = load_type(plan["document_type"])
         self.bound_plan_hash = plan_hash(plan)
         self.config_hash = resolve_type(plan["document_type"]).sha256
-        super().__init__(args)
-        self.fill_plan = plan
         self.result.update(plan_hash=self.bound_plan_hash, task_id=plan["task_id"],
                            validation_scope="v1_independent", save_status="NOT_ATTEMPTED")
-        self.adapter = DraftUIAdapter(self)
 
     def login_state(self, page):
         state, marks, evidence = super().login_state(page)
@@ -206,14 +235,14 @@ class StructuredProbe(Probe):
 
     def _launch(self, *args, **kwargs):
         with self._timing("browser_session_start"):
-            if "test_context" in (getattr(self,"fill_plan",None) or {}):
+            pending_blueprint = (getattr(self, "_preparation", {}) or {}).get("payload", {}).get("blueprint", {})
+            if (getattr(getattr(self,"args",None),"owned_guarded_context",False)
+                    or "test_context" in (getattr(self,"fill_plan",None) or {})
+                    or "test_context" in pending_blueprint):
                 # A fresh context reuses only the existing protected session
                 # helper. It cannot restore or close another user's form tabs.
-                from playwright.sync_api import sync_playwright
-                self._pw = sync_playwright().start()
-                self.test_browser = self._pw.chromium.launch(headless=False, args=["--no-proxy-server"])
-                self.ctx = self.test_browser.new_context(ignore_https_errors=True,
-                    viewport={"width":1440,"height":900})
+                self._launch_isolated_guarded_context()
+                self.test_browser = self._guarded_browser
                 self._inject_session_state()
             else:
                 super()._launch(*args, **kwargs)
@@ -238,6 +267,12 @@ class StructuredProbe(Probe):
         self.page.on("requestfailed",lambda _:self.network_counts.__setitem__("failed",self.network_counts["failed"]+1))
 
     def _close_browser(self):
+        # G3.2：先清理本任务自己的只读副页（正常已在 SaveController 收尾关闭），
+        # 再处理受保护恢复页——只关自己的页面，不动他人页面。
+        try:
+            self.adapter.close_verification_page()
+        except Exception:
+            pass
         if "test_context" in (getattr(self,"fill_plan",None) or {}) and getattr(self,"ctx",None):
             try:
                 snapshot=self.adapter.capture_snapshot()
@@ -355,9 +390,13 @@ class StructuredProbe(Probe):
             page.wait_for_timeout(300)
         return str(value)
 
-    def _overlay_search_pick(self, page, frame, keyword, tag, prescan=False, first_data_row=False):
+    def _overlay_search_pick(self, page, frame, keyword, tag, prescan=False, first_data_row=False, fallback_keywords=None):
         if first_data_row:
             raise UIBlocked("FIRST_CANDIDATE_SUBSTITUTION_FORBIDDEN")
+        # The 名称 archive dialog's observed search box filters by name, not by
+        # archive code; callers may pass the row name as an additional exact
+        # keyword. Identity stays enforced by the caller's post-pick echo read.
+        keywords = [str(keyword)] + [str(k) for k in (fallback_keywords or [])]
         # Only the current visible table dialog participates. Dropdown panels
         # from other components are deliberately outside this scope.
         dialogs = page.locator(".ui-dialog:visible")
@@ -366,10 +405,14 @@ class StructuredProbe(Probe):
             return False
         dialog = dialogs
         rows = dialog.locator("tbody tr:visible")
-        def hits():
-            return [i for i in range(rows.count()) if str(keyword) in
+        def hits(kw):
+            return [i for i in range(rows.count()) if kw in
                     [x.strip() for x in rows.nth(i).locator(":scope > td").all_text_contents()]]
-        matches = hits()
+        matches = []
+        for kw in keywords:
+            matches = hits(kw)
+            if matches:
+                break
         if not matches:
             # Search only the one current dialog, using its observed writable
             # search box. No first-row or partial-number substitution.
@@ -377,16 +420,20 @@ class StructuredProbe(Probe):
             if inputs.count() != 1:
                 self.log_event(event="exact_picker_blocked", where=tag, reason="search_not_unique", count=inputs.count())
                 return False
-            with self._timing("picker_query", where=tag):
-                inputs.fill(str(keyword), timeout=8000)
-                inputs.press("Enter")
-                page.wait_for_timeout(1500)
-                query = dialog.get_by_role("button", name="查询", exact=True)
-                if query.count()==1 and query.is_enabled():
-                    self._click_guard("查询")
-                    query.click(timeout=8000)
+            for kw in keywords:
+                with self._timing("picker_query", where=tag):
+                    inputs.fill(kw, timeout=8000)
+                    inputs.press("Enter")
                     page.wait_for_timeout(1500)
-            matches=hits()
+                    query = dialog.get_by_role("button", name="查询", exact=True)
+                    if query.count()==1 and query.is_enabled():
+                        self._click_guard("查询")
+                        query.click(timeout=8000)
+                        page.wait_for_timeout(1500)
+                matches = hits(kw)
+                self.log_event(event="picker_keyword_attempt", where=tag, keyword=kw, candidate_count=len(matches))
+                if len(matches) == 1:
+                    break
         if len(matches)!=1:
             self.log_event(event="exact_picker_blocked", where=tag, candidate_count=len(matches))
             return False
@@ -466,7 +513,7 @@ class StructuredProbe(Probe):
         if not mounted.count():
             raise UIBlocked("EDITOR_NOT_MOUNTED:"+where)
 
-    def _write_cell(self, cell, field, value, where, native_priority=False):
+    def _write_cell(self, cell, field, value, where, native_priority=False, fallback_keywords=None):
         self._activate(cell,where)
         dropdown=cell.locator(".ui-dropdown,.ui-multiselect")
         if dropdown.count()==1:
@@ -495,7 +542,7 @@ class StructuredProbe(Probe):
                 with self._timing("picker_open",where=where):
                     button.click(timeout=8000)
                     self.page.wait_for_timeout(1200)
-                if not self._overlay_search_pick(self.page,self.page.main_frame,str(value),where,prescan=True):
+                if not self._overlay_search_pick(self.page,self.page.main_frame,str(value),where,prescan=True,fallback_keywords=fallback_keywords):
                     raise UIBlocked("EXACT_PICK_MISSING:"+where)
             else:
                 raise UIBlocked("UNSUPPORTED_EDITOR:"+where)
@@ -595,7 +642,8 @@ class StructuredProbe(Probe):
             # Real OA: 新增 creates a blank row. The readonly name editor's
             # table selector chooses an archive; toolbar 插入 is row insertion.
             self._write_cell(self._cell("products", index, "name"), "name",
-                             fields["code"], f"products/{index}/archive")
+                             fields["code"], f"products/{index}/archive",
+                             fallback_keywords=[fields["name"]])
             self._invalidate_tables()
         for prop in ("code", "name", "purchaser", "price"):
             self._expect_cell("products", index, prop, fields[prop])
@@ -780,9 +828,10 @@ class StructuredProbe(Probe):
                 self.checks["c7_fill_new"].update(status=FAIL, reason="完整独立回读不一致")
                 return FAIL
             if self.fill_plan["authorization"]["mode"] == "save_draft":
-                result = SaveController(self.fill_plan, self.adapter, self.attempt,
-                                        expected_operator=self.args.expect_name, base_dir=self.plan_base,
-                                        journal_dir=registry).run()
+                with self._timing("save_and_persisted_verify"):
+                    result = SaveController(self.fill_plan, self.adapter, self.attempt,
+                                            expected_operator=self.args.expect_name, base_dir=self.plan_base,
+                                            journal_dir=registry).run()
                 self.result["draft_save"] = result
                 self.result["task_status"] = result.get("status", "SAVE_UNCERTAIN")
                 self.result["save_status"] = self.result["task_status"]
@@ -963,14 +1012,57 @@ class StructuredProbe(Probe):
 
 
 class DraftUIAdapter:
-    """Concrete UI adapter. It has no method for a write HTTP request."""
+    """Concrete UI adapter. It has no method for a write HTTP request.
+
+    页面归属契约（G3.3）：保存按钮只属于主 tab；保存后持久化读取/截图属于本任务
+    只读副页。副页开启的存续窗口恰好等于保存后核验段（reopen 开、SaveController
+    收尾 finally 关），因此副页在世时 capture_snapshot/screenshot 的默认路由指向
+    副页，其余一切读取（保存前新鲜核验、点击前复核、observe_saved）都发生在副页
+    开启之前，天然落在主 tab。显式 page= 参数永远优先。
+    """
 
     def __init__(self, probe):
         self.p = probe
         self._identity_routes = {}
+        self._verification_page = None
+        self._verification_seq = 0
 
-    def capture_snapshot(self):
-        page = self.p.page
+    # ---- 只读副页生命周期（G3.2）----
+    def open_verification_page(self):
+        """同 context 新建本任务只读副页；不另加锁、不动主 tab、不关他人页面。"""
+        if self._verification_page is not None and not self._verification_page.is_closed():
+            raise UIBlocked("VERIFICATION_PAGE_ALREADY_OPEN")
+        self._verification_page = self.p.ctx.new_page()
+        self._verification_page.set_default_timeout(45000)
+        self._verification_seq += 1
+        self.p.log_event(event="verification_page_opened", page_role="verification",
+                         seq=self._verification_seq)
+        return self._verification_page
+
+    def close_verification_page(self):
+        """finally 关闭自己的副页；主 tab 保持。关闭失败只留事件，不拦截终局状态。"""
+        page, self._verification_page = self._verification_page, None
+        if page is not None:
+            seq = self._verification_seq
+            try:
+                if not page.is_closed():
+                    page.close()
+                self.p.log_event(event="verification_page_closed", page_role="verification",
+                                 seq=seq)
+            except Exception as exc:
+                self.p.log_event(event="verification_page_close_failed",
+                                 page_role="verification", seq=seq, exc=type(exc).__name__)
+
+    def _readback_page(self, page=None):
+        if page is not None:
+            return page
+        candidate = self._verification_page
+        if candidate is not None and not candidate.is_closed():
+            return candidate
+        return self.p.page
+
+    def capture_snapshot(self, page=None):
+        page = self._readback_page(page)
         fields = page.evaluate(FORM_MAP_JS)
         header, duplicates = {}, []
         for field in fields:
@@ -1055,15 +1147,16 @@ class DraftUIAdapter:
             return value
         return ""
 
-    def screenshot(self, name):
-        result = self.p.shot(self.p.page, name if str(name).endswith(".png") else str(name) + ".png")
+    def screenshot(self, name, page=None):
+        shot_page = self._readback_page(page)
+        result = self.p.shot(shot_page, name if str(name).endswith(".png") else str(name) + ".png")
         if result.startswith("screenshot_failed"):
             raise UIBlocked("SCREENSHOT_FAILED")
         if name == "before_save":
             from bpm.save import SaveController
             # Content binding, not a caller-supplied verified boolean. The
             # adapter will independently collect and validate it again at click.
-            self._pre_save_content_hash = SaveController._content(self.capture_snapshot())
+            self._pre_save_content_hash = SaveController._content(self.capture_snapshot(page=shot_page))
         return "evidence/" + (str(name) if str(name).endswith(".png") else str(name) + ".png")
 
     def _save_buttons(self):
@@ -1092,7 +1185,7 @@ class DraftUIAdapter:
                 or plan_hash(plan) != getattr(self.p, "bound_plan_hash", None)
                 or current_config != getattr(self.p, "config_hash", None)
                 or bound is None or SaveController._content(snapshot) != bound
-                or not verify_snapshot(plan, snapshot, base_dir=self.p.plan_base)["ok"]):
+                or not self.verify_before_save(snapshot)["ok"]):
             raise UIBlocked("SAVE_STATE_CHANGED_OR_UNAUTHORIZED")
         meta = self.exact_save_button()
         if meta != {"text": "保存", "count": 1, "enabled": True, "visible": True, "kind": "button", "dialogs": []}:
@@ -1101,6 +1194,10 @@ class DraftUIAdapter:
         # single exact UI save capability; SaveController owns its invocation.
         self._save_buttons().click(timeout=8000)
         self._pre_save_content_hash = None  # This adapter can never reuse its screenshot to click twice.
+
+    def verify_before_save(self, snapshot):
+        from bpm.verify import verify_snapshot
+        return verify_snapshot(self.p.fill_plan, snapshot, base_dir=self.p.plan_base)
 
     def _dialogs(self):
         return list(getattr(self.p, "native_dialogs", [])) + [d.get("title", "") for d in self.p.page.evaluate(
@@ -1139,14 +1236,23 @@ class DraftUIAdapter:
             route = self._discover_saved_route(identity)
         if not route:
             raise UIBlocked("SAVED_READ_ROUTE_UNOBSERVED")
-        self.p.page.goto(assert_internal(route), wait_until="domcontentloaded", timeout=45000)
-        self.p.page.wait_for_timeout(2500)
-        return self.capture_snapshot()
+        # G3.2：保存后持久化核验在本任务只读副页打开，主 tab 不被核验导航。
+        page = self.open_verification_page()
+        page.goto(assert_internal(route), wait_until="domcontentloaded", timeout=45000)
+        page.wait_for_timeout(2500)
+        return self.capture_snapshot(page)
 
     def _discover_saved_route(self, identity):
         from bpm.template import open_exact_document
-        # Exact list lookup observes the real view URL through normal UI.
-        return open_exact_document(self.p, identity["biz_number"], expected_uuid=identity["uuid"])
+        # Exact list lookup observes the real view URL through normal UI. The
+        # query runs on the verification side page (never the main tab), so the
+        # post-save readback cannot navigate the form the user is reviewing.
+        probe_page = self._verification_page if (self._verification_page is not None
+                                                 and not self._verification_page.is_closed()) else None
+        if probe_page is None:
+            probe_page = self.open_verification_page()
+        return open_exact_document(self.p, identity["biz_number"],
+                                   expected_uuid=identity["uuid"], page=probe_page)
 
     def inspect_uncertain(self):
         # No identity guesses by amount/date. If no exact identity survived, a

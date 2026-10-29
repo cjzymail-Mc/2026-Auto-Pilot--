@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+from copy import deepcopy
 from decimal import Decimal
 from pathlib import Path
 
@@ -402,6 +403,26 @@ def generate_fill_plan(factset, blueprint, *, base_dir, registry_dir=None):
                                           "locator": source["locator"], "sha256": source["sha256"]}})
     if no_invoice_rows:
         plan["materials"]["no_invoice_rows"] = no_invoice_rows
+
+    # Scenario-specific source and calculation binding is checked by the same
+    # validator used by fill_once, oneshot and the save path. Never silently
+    # discard a declared scenario or replace it with legacy R=M+T coverage.
+    if "self_drive_coverage" in blueprint:
+        plan["self_drive_coverage"] = deepcopy(blueprint["self_drive_coverage"])
+        # Fuel is a coverage credential, not an invoice allocated to an expense
+        # fact. Carry its explicit exclusion through the ordinary material gate;
+        # the scenario validator independently binds every such fuel record.
+        for document in deepcopy(blueprint.get("self_drive_image_documents", [])):
+            if (not isinstance(document, dict) or not document.get("records")
+                    or any(set(r) != {"record_id", "not_applicable"} for r in document["records"])):
+                raise PlanGenerationError("self-drive coverage documents require explicit exclusions only")
+            plan["materials"].setdefault("image_documents", []).append(document)
+    elif "self_drive_image_documents" in blueprint:
+        raise PlanGenerationError("coverage-only invoice evidence requires self_drive_coverage")
+
+    for key in ("test_context", "test_draft_authorization", "oa_test_relations"):
+        if key in blueprint:
+            plan[key] = deepcopy(blueprint[key])
 
     # ---- 正式校验（不通过即生成器缺陷）
     issues = validate_plan(plan, verify_sources=True, base_dir=base)

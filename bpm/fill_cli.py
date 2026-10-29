@@ -62,8 +62,10 @@ def validate_task(task, base_dir):
         return [{"path": "/", "code": "TASK_INVALID", "message": "task object required"}]
     for key in required - set(task):
         bad("/" + key, "required property missing")
-    for key in set(task) - required - {"template_snapshot_path", "facts_payload"}:
+    for key in set(task) - required - {"template_snapshot_path", "facts_payload", "synthetic"}:
         bad("/" + key, "unknown task property")
+    if "synthetic" in task and not isinstance(task.get("synthetic"), bool):
+        bad("/synthetic", "boolean marker required（测试/合成任务须如实标记，G2 编译强制 fill_only）")
     for key in required - {"authorization"}:
         if not isinstance(task.get(key), str) or not task.get(key, "").strip():
             bad("/" + key, "nonempty string required")
@@ -76,8 +78,20 @@ def validate_task(task, base_dir):
     if not isinstance(task.get("template_biz_number"), str) or not re.fullmatch(r"\d+", task.get("template_biz_number", "")):
         bad("/template_biz_number", "template number must remain digit string")
     auth = task.get("authorization")
-    if not isinstance(auth, dict) or set(auth) != {"mode", "task_id", "statement", "allow_submit"} or auth.get("mode") not in ("fill_only", "save_draft") or auth.get("task_id") != task.get("task_id") or auth.get("allow_submit") is not False or not isinstance(auth.get("statement"), str) or not auth.get("statement", "").strip():
+    # oneshot G2（2026-10-28）：save_basis 为 save_draft 的必填用途依据
+    # （kind=user_request 引用用户当次请求定位，或 kind=standing_policy 引用
+    # BPM-SELFDRIVE-20261027-A1 日常策略）；fill_only 不携带。这是 agent 内部
+    # 任务工件的最小兼容调整，用户材料格式不变。
+    if not isinstance(auth, dict) or set(auth) - {"mode", "task_id", "statement", "allow_submit", "save_basis"} or auth.get("mode") not in ("fill_only", "save_draft") or auth.get("task_id") != task.get("task_id") or auth.get("allow_submit") is not False or not isinstance(auth.get("statement"), str) or not auth.get("statement", "").strip():
         bad("/authorization", "task-bound fill_only/save_draft authorization required; submission forbidden")
+    elif auth.get("mode") == "save_draft":
+        basis = auth.get("save_basis")
+        if not isinstance(basis, dict) or basis.get("kind") not in ("user_request", "standing_policy") \
+                or not isinstance(basis.get("reference"), str) or not basis.get("reference", "").strip():
+            bad("/authorization/save_basis",
+                "save_draft requires a real-purpose basis {kind: user_request|standing_policy, reference}（缺真实用途依据不编译保存）")
+    elif "save_basis" in auth:
+        bad("/authorization/save_basis", "fill_only authorization carries no save basis")
     if isinstance(task.get("materials_dir"), str):
         materials = (Path(base_dir) / task["materials_dir"]).resolve()
         if not materials.is_dir() or any(p.lower() in {".pw-profile", ".git", "legacy-ia2"} for p in materials.parts):
@@ -197,6 +211,8 @@ def build_parser():
     parser.add_argument("--expect-name", help="expected operator; required for plan")
     parser.add_argument("--run", help="new independent run identifier")
     parser.add_argument("--resume-run", help="retry run with identical task/plan/operator")
+    parser.add_argument("--prior-plan", help="original successful plan for explicit existing-draft revision")
+    parser.add_argument("--revision-authorization", help="task/UUID/journal-bound existing-draft revision authorization")
     parser.add_argument("--keep-open-minutes", type=float, default=45)
     parser.add_argument("--validate-only", action="store_true")
     parser.add_argument("--legacy-regression", action="store_true", help="explicit old-plan fill-only regression")
@@ -206,6 +222,7 @@ def build_parser():
 
 
 def main(argv=None):
+    raw_argv = list(sys.argv[1:] if argv is None else argv)
     prepare_t0 = time.time()*1000
     args = build_parser().parse_args(argv)
     os.chdir(ROOT)
@@ -218,9 +235,20 @@ def main(argv=None):
             value = getattr(args, option)
             if value is not None and not 0 < value < float("inf"):
                 raise ValueError(option + " must be finite and positive")
+        if args.prior_plan or args.revision_authorization:
+            if args.legacy_regression or not args.fill_plan:
+                raise ValueError("revision is only available for an explicit v1 fill-plan")
+            from bpm.oneshot import main as unified_main
+            return unified_main(raw_argv)
         if args.task:
             if args.legacy_regression or args.resume_run:
                 raise ValueError("task preparation does not accept legacy/retry mode")
+            ready_task = json.loads(Path(args.task).read_text(encoding="utf-8"))
+            if isinstance(ready_task, dict) and ready_task.get("facts_payload"):
+                if not args.expect_name:
+                    raise ValueError("ready task requires current expected operator")
+                from bpm.oneshot import main as unified_main
+                return unified_main(raw_argv)
             if args.validate_only:
                 path = Path(args.task).resolve()
                 task = json.loads(path.read_text(encoding="utf-8"))
@@ -244,17 +272,12 @@ def main(argv=None):
                 raise ValueError("legacy regression requires old-format object")
             binding = {"kind": "legacy_regression", "plan_sha256": plan_hash(plan), "operator": args.expect_name}
         else:
-            validation_t0=time.time()*1000
-            plan = load_plan(plan_path, expected_operator=args.expect_name)
-            validation_t1=time.time()*1000
-            binding = {"kind": "fill_plan", "task_id": plan["task_id"], "plan_sha256": plan_hash(plan), "operator": args.expect_name,
-                       "config_sha256": resolve_type(plan["document_type"]).sha256}
+            from bpm.oneshot import main as unified_main
+            return unified_main(raw_argv)
         if args.validate_only:
             print(json.dumps({"status": "PLAN_VALIDATED" if not args.legacy_regression else "LEGACY_REGRESSION_ONLY", "plan_sha256": binding["plan_sha256"], "browser_launched": False}))
             return 0
         run = allocate_run(binding, args.resume_run or args.run, resume=bool(args.resume_run))
-        if not args.legacy_regression:
-            _prepare_timing(run,"plan_source_validation",validation_t0,validation_t1)
         from tools.verification.build import CODE
         hashes={name:file_hash(ROOT/name) for name in CODE}
         manifest_path=run/("execution_source_manifest.json" if not args.resume_run else "resume_source_manifest_"+str(time.time_ns())+".json")

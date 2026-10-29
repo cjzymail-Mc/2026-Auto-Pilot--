@@ -13,19 +13,25 @@ class LoginProbe(Probe):
         super().__init__(args)
         self._required_name = args.expect_name
         self._saw_login_gate = False
+        self._last_login_state = "UNKNOWN"
 
     def _launch(self):
+        if not self.args.force_scan:
+            # Normal reuse must use the same protected profile as business runs.
+            # A fresh context is reserved for an explicitly requested new scan.
+            super()._launch()
+            self.log_event(event="login_context_mode", mode="persistent_profile_reuse")
+            return
         from playwright.sync_api import sync_playwright
         self._pw = sync_playwright().start()
         self._login_browser = self._pw.chromium.launch(
             headless=False, args=["--start-maximized", "--no-proxy-server"])
         self.ctx = self._login_browser.new_context(ignore_https_errors=True,
                                                   viewport={"width": 1440, "height": 900})
-        if not self.args.force_scan:
-            self._inject_session_state()
         self.page = self.ctx.new_page()
         self.page.set_default_timeout(45000)
         self.page.on("dialog", lambda dialog: dialog.dismiss())
+        self.log_event(event="login_context_mode", mode="fresh_scan_context")
 
     def login_state(self, page):
         # Discovery is confined to this login-only bootstrap; business execution
@@ -45,12 +51,19 @@ class LoginProbe(Probe):
         self.page.goto(HOST, wait_until="domcontentloaded", timeout=45000)
         self.page.wait_for_timeout(1500)
         state, _, _ = self.login_state(self.page)
+        self._last_login_state = state
+        self.log_event(event="login_state_observed", phase="entry", state=state)
         if state == "LOGGED_IN":
             self.checks["c1_entry_login"].update(status=PASS, reason="Live account verified")
             return PASS
-        self.say("QR_WINDOW_READY — 请在弹出的企业微信窗口扫码；本次仅登录，不操作单据。")
-        self.log_event(event="login_window_ready", force_scan=self.args.force_scan)
-        return "LOGIN_REQUIRED"
+        if state == "LOGIN_REQUIRED":
+            self.checks["c1_entry_login"].update(status=BLOCKED, reason="WAIT_HUMAN_LOGIN")
+            if self.args.login_wait > 0:
+                self.say("QR_WINDOW_READY — 请在弹出的企业微信窗口扫码；本次仅登录，不操作单据。")
+                self.log_event(event="login_window_ready", force_scan=self.args.force_scan)
+            return "LOGIN_REQUIRED"
+        self.checks["c1_entry_login"].update(status=BLOCKED, reason="LOGIN_STATE_UNKNOWN")
+        return "UNKNOWN"
 
     def wait_login(self):
         deadline = time.monotonic() + self.args.login_wait
@@ -58,17 +71,21 @@ class LoginProbe(Probe):
         while time.monotonic() < deadline:
             self.page.wait_for_timeout(1000)
             state, _, _ = self.login_state(self.page)
+            self._last_login_state = state
             if state == "LOGGED_IN":
                 self._fresh_scan_confirmed = bool(self.args.force_scan and self._saw_login_gate)
                 self.checks["c1_entry_login"].update(status=PASS, reason="Live account verified after login gate")
                 self.log_event(event="login_identity_verified", fresh_scan=self._fresh_scan_confirmed)
                 return PASS
-            if refreshed < 5 and self.page.evaluate(QR_EXPIRED_JS):
+            if state == "LOGIN_REQUIRED" and refreshed < 5 and self.page.evaluate(QR_EXPIRED_JS):
                 self.page.reload(wait_until="domcontentloaded", timeout=30000)
                 refreshed += 1
                 self.log_event(event="login_qr_refreshed", n=refreshed)
-        self.checks["c1_entry_login"].update(status=BLOCKED, reason="WAIT_HUMAN_LOGIN")
-        return BLOCKED
+        state = self._last_login_state
+        reason = "WAIT_HUMAN_LOGIN" if state == "LOGIN_REQUIRED" else "LOGIN_STATE_UNKNOWN"
+        self.checks["c1_entry_login"].update(status=BLOCKED, reason=reason)
+        self.log_event(event="login_wait_end", state=state, reason=reason)
+        return BLOCKED if state == "LOGIN_REQUIRED" else "UNKNOWN"
 
 
 def main(argv=None):

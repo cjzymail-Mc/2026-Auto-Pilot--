@@ -115,3 +115,8 @@ PDF/图片的 Python 准备器返回缺口；由当前环境可用的本地文�
 | WAIT_HUMAN_LOGIN | 等待企微人工扫码，保留现有工件 |
 
 交付引用 `automation/runs/<run>/events.jsonl`、`attempt_NNN/stage1_result.json` 与 evidence，保存控制器证据也位于该 attempt。材料准备结果在 run 根。区分“已实现/离线通过”与“已真实填写/真实保存”；实单输入缺失时明确列缺口，不把合成测试当成实单验收。
+
+
+## 自驾新规则的来源与计划绑定
+
+V3历史R=M+T模型不改。新模型使用可选 `self_drive_coverage`，由现有plan_generate生成并在validate_plan/load_plan独立重读来源、规则哈希、餐补参与日和逐组件/逐单金额；不能同时声明旧coverage。正式离线命令、来源包及限定支持结构见 [self-drive-inputs.md](self-drive-inputs.md)。通行票完整分配、油票覆盖不入费用、公里/餐补的有源政策免票保持分离；无真实输入时只到离线阶段，不填不存。

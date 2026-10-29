@@ -2,6 +2,8 @@
 
 执行配置为 `automation/document-types/travel.json`。历史 `automation/form-schema.json` 只作结构参考；配置的 API 属性名、中文标签及编辑类型才是 v1 执行入口。API 枚举代码不等于页面显示名称，不把历史代码自动映射成猜测标签。
 
+正式执行入口（分段 `fill_once.py` 与单会话 `bpm.oneshot` 两分支）见 [公共能力调用参考](common-operations.md) §5：单会话任务分支在同一会话完成身份→live 模板→计划冻结→填写（实现＋离线验证，真实填写/保存待验）；本手册的模板/四表/金额/验收规则对两入口同等适用。
+
 ## 模板读取
 
 有既有历史采集工件时，只从中挑唯一完整单号，校验主单 UUID 与每张子表的所属 UUID：

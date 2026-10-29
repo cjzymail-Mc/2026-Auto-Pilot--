@@ -1,2194 +1,2300 @@
 {
- "$schema": "https://json-schema.org/draft/2020-12/schema",
- "title": "Executable BPM plan v1.0; bpm_plan business validation is also mandatory",
- "$comment": "Explicit travel/express/rd_materials branches. Python provenance, applicability and monetary validation remains mandatory; production acceptance is separate.",
- "type": "object",
- "additionalProperties": false,
- "required": [
-  "schema_version",
-  "task_id",
-  "document_type",
-  "config_version",
-  "operator",
-  "applicant",
-  "template",
-  "materials",
-  "header",
-  "tables",
-  "sources",
-  "authorization",
-  "unresolved",
-  "not_applicable",
-  "amount_rules"
- ],
- "properties": {
-  "schema_version": {
-   "const": "1.0"
-  },
-  "config_version": {
-   "const": "1.0"
-  },
-  "document_type": {
-   "enum": [
-    "travel",
-    "express",
-    "rd_materials",
-    "office_supplies",
-    "welfare_labor"
-   ]
-  },
-  "task_id": {
-   "$ref": "#/$defs/text"
-  },
-  "operator": {
-   "$ref": "#/$defs/text"
-  },
-  "applicant": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "name",
-    "company",
-    "department"
-   ],
-   "properties": {
-    "name": {
-     "$ref": "#/$defs/text"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Executable BPM plan v1.0; bpm_plan business validation is also mandatory",
+  "$comment": "Explicit travel/express/rd_materials branches. Python provenance, applicability and monetary validation remains mandatory; production acceptance is separate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "document_type",
+    "config_version",
+    "operator",
+    "applicant",
+    "template",
+    "materials",
+    "header",
+    "tables",
+    "sources",
+    "authorization",
+    "unresolved",
+    "not_applicable",
+    "amount_rules"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
     },
-    "company": {
-     "$ref": "#/$defs/text"
+    "config_version": {
+      "const": "1.0"
     },
-    "department": {
-     "$ref": "#/$defs/text"
-    }
-   }
-  },
-  "template": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "biz_number",
-    "captured_at",
-    "sha256",
-    "snapshot_path"
-   ],
-   "properties": {
-    "biz_number": {
-     "$ref": "#/$defs/identifier"
+    "document_type": {
+      "enum": [
+        "travel",
+        "express",
+        "rd_materials",
+        "office_supplies",
+        "welfare_labor"
+      ]
     },
-    "captured_at": {
-     "type": "string",
-     "format": "date-time"
+    "task_id": {
+      "$ref": "#/$defs/text"
     },
-    "sha256": {
-     "$ref": "#/$defs/hash"
+    "operator": {
+      "$ref": "#/$defs/text"
     },
-    "snapshot_path": {
-     "$ref": "#/$defs/text"
-    }
-   }
-  },
-  "materials": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "manifest_path",
-    "manifest_sha256"
-   ],
-   "properties": {
-    "manifest_path": {
-     "$ref": "#/$defs/text"
-    },
-    "manifest_sha256": {
-     "$ref": "#/$defs/hash"
-    },
-    "image_documents": {
-     "type": "array",
-     "items": {
-      "oneOf": [
-       {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-         "original_sha256",
-         "kind",
-         "reason",
-         "proof"
-        ],
-        "properties": {
-         "original_sha256": {
-          "$ref": "#/$defs/hash"
-         },
-         "kind": {
-          "const": "not_invoice"
-         },
-         "reason": {
+    "applicant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "company",
+        "department"
+      ],
+      "properties": {
+        "name": {
           "$ref": "#/$defs/text"
-         },
-         "proof": {
-          "$ref": "#/$defs/valueProof"
-         }
+        },
+        "company": {
+          "$ref": "#/$defs/text"
+        },
+        "department": {
+          "$ref": "#/$defs/text"
         }
-       },
-       {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-         "original_sha256",
-         "kind",
-         "extraction_path",
-         "extraction_sha256",
-         "records"
-        ],
-        "properties": {
-         "original_sha256": {
+      }
+    },
+    "template": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "biz_number",
+        "captured_at",
+        "sha256",
+        "snapshot_path"
+      ],
+      "properties": {
+        "biz_number": {
+          "$ref": "#/$defs/identifier"
+        },
+        "captured_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sha256": {
           "$ref": "#/$defs/hash"
-         },
-         "kind": {
-          "const": "invoice"
-         },
-         "extraction_path": {
+        },
+        "snapshot_path": {
           "$ref": "#/$defs/text"
-         },
-         "extraction_sha256": {
+        }
+      }
+    },
+    "materials": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manifest_path",
+        "manifest_sha256"
+      ],
+      "properties": {
+        "manifest_path": {
+          "$ref": "#/$defs/text"
+        },
+        "manifest_sha256": {
           "$ref": "#/$defs/hash"
-         },
-         "records": {
+        },
+        "image_documents": {
           "type": "array",
-          "minItems": 1,
           "items": {
-           "oneOf": [
-            {
-             "type": "object",
-             "additionalProperties": false,
-             "required": [
-              "record_id",
-              "allocations"
-             ],
-             "properties": {
-              "record_id": {
-               "$ref": "#/$defs/text"
-              },
-              "allocations": {
-               "type": "array",
-               "minItems": 1,
-               "items": {
+            "oneOf": [
+              {
                 "type": "object",
                 "additionalProperties": false,
                 "required": [
-                 "plan_pointer",
-                 "amount"
+                  "original_sha256",
+                  "kind",
+                  "reason",
+                  "proof"
                 ],
                 "properties": {
-                 "plan_pointer": {
-                  "type": "string",
-                  "pattern": "^/tables/(?:(?:costs|details)/[0-9]+/fields/cost|products/[0-9]+/fields/price)$"
-                 },
-                 "amount": {
-                  "$ref": "#/$defs/money"
-                 }
+                  "original_sha256": {
+                    "$ref": "#/$defs/hash"
+                  },
+                  "kind": {
+                    "const": "not_invoice"
+                  },
+                  "reason": {
+                    "$ref": "#/$defs/text"
+                  },
+                  "proof": {
+                    "$ref": "#/$defs/valueProof"
+                  }
                 }
-               }
-              }
-             }
-            },
-            {
-             "type": "object",
-             "additionalProperties": false,
-             "required": [
-              "record_id",
-              "not_applicable"
-             ],
-             "properties": {
-              "record_id": {
-               "$ref": "#/$defs/text"
               },
-              "not_applicable": {
-               "$ref": "#/$defs/reasonProof"
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "original_sha256",
+                  "kind",
+                  "extraction_path",
+                  "extraction_sha256",
+                  "records"
+                ],
+                "properties": {
+                  "original_sha256": {
+                    "$ref": "#/$defs/hash"
+                  },
+                  "kind": {
+                    "const": "invoice"
+                  },
+                  "extraction_path": {
+                    "$ref": "#/$defs/text"
+                  },
+                  "extraction_sha256": {
+                    "$ref": "#/$defs/hash"
+                  },
+                  "records": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "oneOf": [
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "record_id",
+                            "allocations"
+                          ],
+                          "properties": {
+                            "record_id": {
+                              "$ref": "#/$defs/text"
+                            },
+                            "allocations": {
+                              "type": "array",
+                              "minItems": 1,
+                              "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "plan_pointer",
+                                  "amount"
+                                ],
+                                "properties": {
+                                  "plan_pointer": {
+                                    "type": "string",
+                                    "pattern": "^/tables/(?:(?:costs|details)/[0-9]+/fields/cost|products/[0-9]+/fields/price)$"
+                                  },
+                                  "amount": {
+                                    "$ref": "#/$defs/money"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "required": [
+                            "record_id",
+                            "not_applicable"
+                          ],
+                          "properties": {
+                            "record_id": {
+                              "$ref": "#/$defs/text"
+                            },
+                            "not_applicable": {
+                              "$ref": "#/$defs/reasonProof"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
               }
-             }
-            }
-           ]
+            ]
           }
-         }
+        },
+        "no_invoice_rows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "plan_pointer",
+              "reason",
+              "proof"
+            ],
+            "properties": {
+              "plan_pointer": {
+                "type": "string",
+                "pattern": "^/tables/(?:(?:costs|details)/[0-9]+/fields/cost|products/[0-9]+/fields/price)$"
+              },
+              "reason": {
+                "$ref": "#/$defs/text"
+              },
+              "proof": {
+                "$ref": "#/$defs/valueProof"
+              }
+            }
+          }
         }
-       }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "image_documents"
+          ],
+          "properties": {
+            "image_documents": {
+              "minItems": 1
+            }
+          }
+        },
+        {
+          "required": [
+            "no_invoice_rows"
+          ],
+          "properties": {
+            "no_invoice_rows": {
+              "minItems": 1
+            }
+          }
+        }
       ]
-     }
     },
-    "no_invoice_rows": {
-     "type": "array",
-     "items": {
+    "header": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-       "plan_pointer",
-       "reason",
-       "proof"
+        "corpCode",
+        "bizOrign",
+        "budgetYears",
+        "payType",
+        "currencyType",
+        "submitType",
+        "description",
+        "totalCost"
       ],
       "properties": {
-       "plan_pointer": {
-        "type": "string",
-        "pattern": "^/tables/(?:(?:costs|details)/[0-9]+/fields/cost|products/[0-9]+/fields/price)$"
-       },
-       "reason": {
-        "$ref": "#/$defs/text"
-       },
-       "proof": {
-        "$ref": "#/$defs/valueProof"
-       }
-      }
-     }
-    }
-   },
-   "anyOf": [
-    {
-     "required": [
-      "image_documents"
-     ],
-     "properties": {
-      "image_documents": {
-       "minItems": 1
-      }
-     }
-    },
-    {
-     "required": [
-      "no_invoice_rows"
-     ],
-     "properties": {
-      "no_invoice_rows": {
-       "minItems": 1
-      }
-     }
-    }
-   ]
-  },
-  "header": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "corpCode",
-    "bizOrign",
-    "budgetYears",
-    "payType",
-    "currencyType",
-    "submitType",
-    "description",
-    "totalCost"
-   ],
-   "properties": {
-    "corpCode": {
-     "$ref": "#/$defs/text"
-    },
-    "bizOrign": {
-     "$ref": "#/$defs/text"
-    },
-    "budgetYears": {
-     "$ref": "#/$defs/identifier"
-    },
-    "payType": {
-     "$ref": "#/$defs/text"
-    },
-    "currencyType": {
-     "$ref": "#/$defs/text"
-    },
-    "submitType": {
-     "type": "string",
-     "enum": [
-      "差旅费",
-      "快递费",
-      "研发材料费",
-      "低值易耗品、办公用品采购",
-      "福利费、劳保用品"
-     ]
-    },
-    "description": {
-     "$ref": "#/$defs/text"
-    },
-    "totalCost": {
-     "$ref": "#/$defs/money"
-    }
-   }
-  },
-  "tables": {
-   "type": "object"
-  },
-  "sources": {
-   "type": "object",
-   "additionalProperties": {
-    "type": "object",
-    "required": [
-     "kind"
-    ],
-    "properties": {
-     "kind": {
-      "enum": [
-       "material",
-       "template",
-       "user",
-       "derived",
-       "agent_reviewed"
-      ]
-     },
-     "path": {
-      "$ref": "#/$defs/text"
-     },
-     "locator": {
-      "$ref": "#/$defs/text"
-     },
-     "sha256": {
-      "$ref": "#/$defs/hash"
-     },
-     "operation": {
-      "const": "sum"
-     },
-     "inputs": {
-      "type": "array",
-      "minItems": 1,
-      "uniqueItems": true,
-      "items": {
-       "type": "string",
-       "pattern": "^/"
-      }
-     },
-     "corroborates": {
-      "type": "array",
-      "items": {
-       "$ref": "#/$defs/valueProof"
-      }
-     }
-    },
-    "additionalProperties": false,
-    "allOf": [
-     {
-      "if": {
-       "properties": {
-        "kind": {
-         "const": "derived"
+        "corpCode": {
+          "$ref": "#/$defs/text"
+        },
+        "bizOrign": {
+          "$ref": "#/$defs/text"
+        },
+        "budgetYears": {
+          "$ref": "#/$defs/identifier"
+        },
+        "payType": {
+          "$ref": "#/$defs/text"
+        },
+        "currencyType": {
+          "$ref": "#/$defs/text"
+        },
+        "submitType": {
+          "type": "string",
+          "enum": [
+            "差旅费",
+            "快递费",
+            "研发材料费",
+            "低值易耗品、办公用品采购",
+            "福利费、劳保用品"
+          ]
+        },
+        "description": {
+          "$ref": "#/$defs/text"
+        },
+        "totalCost": {
+          "$ref": "#/$defs/money"
         }
-       }
+      }
+    },
+    "tables": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "kind"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "material",
+              "template",
+              "user",
+              "derived",
+              "agent_reviewed"
+            ]
+          },
+          "path": {
+            "$ref": "#/$defs/text"
+          },
+          "locator": {
+            "$ref": "#/$defs/text"
+          },
+          "sha256": {
+            "$ref": "#/$defs/hash"
+          },
+          "operation": {
+            "const": "sum"
+          },
+          "inputs": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^/"
+            }
+          },
+          "corroborates": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/valueProof"
+            }
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "kind": {
+                  "const": "derived"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "operation",
+                "inputs"
+              ]
+            },
+            "else": {
+              "required": [
+                "path",
+                "locator",
+                "sha256"
+              ]
+            }
+          }
+        ]
       },
-      "then": {
-       "required": [
-        "operation",
-        "inputs"
-       ]
+      "patternProperties": {
+        "^/tables/details/[0-9]+/fields/digest$": {
+          "type": "object",
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "material",
+                "user"
+              ]
+            },
+            "path": {
+              "$ref": "#/$defs/text"
+            },
+            "locator": {
+              "$ref": "#/$defs/text"
+            },
+            "sha256": {
+              "$ref": "#/$defs/hash"
+            },
+            "operation": {
+              "const": "sum"
+            },
+            "inputs": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^/"
+              }
+            },
+            "corroborates": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/valueProof"
+              }
+            }
+          },
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "derived"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "operation",
+                  "inputs"
+                ]
+              },
+              "else": {
+                "required": [
+                  "path",
+                  "locator",
+                  "sha256"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "task_id",
+        "statement",
+        "allow_submit"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "fill_only",
+            "save_draft"
+          ]
+        },
+        "task_id": {
+          "$ref": "#/$defs/text"
+        },
+        "statement": {
+          "$ref": "#/$defs/text"
+        },
+        "allow_submit": {
+          "const": false
+        }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "maxItems": 0
+    },
+    "not_applicable": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "amount_rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "costs",
+        "cost_amount_semantics"
+      ],
+      "properties": {
+        "costs": {
+          "enum": [
+            "sum",
+            "not_applicable"
+          ]
+        },
+        "costs_reason": {
+          "$ref": "#/$defs/text"
+        },
+        "cost_amount_semantics": {
+          "enum": [
+            "line_total",
+            "unit_price_times_count"
+          ]
+        },
+        "products": {
+          "const": "sum"
+        },
+        "product_amount_semantics": {
+          "const": "line_total"
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "applicant_employee_id",
+        "creator_name",
+        "creator_department"
+      ],
+      "properties": {
+        "applicant_employee_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "creator_name": {
+          "$ref": "#/$defs/text"
+        },
+        "creator_department": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "test_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "purpose",
+        "round",
+        "authorization_path",
+        "authorization_sha256"
+      ],
+      "properties": {
+        "purpose": {
+          "$ref": "#/$defs/text"
+        },
+        "round": {
+          "$ref": "#/$defs/text"
+        },
+        "authorization_path": {
+          "$ref": "#/$defs/text"
+        },
+        "authorization_sha256": {
+          "$ref": "#/$defs/hash"
+        }
+      }
+    },
+    "table_applicability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "relations": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "reason"
+          ],
+          "properties": {
+            "reason": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        },
+        "costs": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "reason"
+          ],
+          "properties": {
+            "reason": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model",
+        "strict_gate",
+        "rule_source",
+        "rate_per_km",
+        "K_km",
+        "M_subsidy",
+        "T_toll",
+        "R_reimburse",
+        "O_fuel_pool",
+        "F_coverage_total",
+        "coverage_margin"
+      ],
+      "properties": {
+        "model": {
+          "const": "fuel_pool_strict_surplus"
+        },
+        "strict_gate": {
+          "const": "greater"
+        },
+        "rule_source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rate_per_km": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]{2}$"
+        },
+        "K_km": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "M_subsidy": {
+          "$ref": "#/$defs/money"
+        },
+        "T_toll": {
+          "$ref": "#/$defs/money"
+        },
+        "R_reimburse": {
+          "$ref": "#/$defs/money"
+        },
+        "O_fuel_pool": {
+          "$ref": "#/$defs/money"
+        },
+        "F_coverage_total": {
+          "$ref": "#/$defs/money"
+        },
+        "coverage_margin": {
+          "$ref": "#/$defs/money"
+        }
       },
-      "else": {
-       "required": [
+      "description": "V3-R03 覆盖模型声明块（可选）：fuel_pool_strict_surplus；F>R 严格门槛，validate_plan 同步校验"
+    },
+    "oa_test_relations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "test_placeholder",
+        "purpose",
+        "selection",
+        "separation",
+        "row_ids"
+      ],
+      "properties": {
+        "test_placeholder": {
+          "const": true
+        },
+        "purpose": {
+          "$ref": "#/$defs/text"
+        },
+        "separation": {
+          "$ref": "#/$defs/text"
+        },
+        "row_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "selection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "method",
+            "seed",
+            "enumeration_path",
+            "enumeration_sha256",
+            "candidates_count",
+            "chosen_index"
+          ],
+          "properties": {
+            "method": {
+              "$ref": "#/$defs/text"
+            },
+            "seed": {
+              "$ref": "#/$defs/text"
+            },
+            "enumeration_path": {
+              "$ref": "#/$defs/text"
+            },
+            "enumeration_sha256": {
+              "$ref": "#/$defs/hash"
+            },
+            "candidates_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "chosen_index": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    },
+    "self_drive_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "rules_version",
+        "rules_sha256",
+        "inputs",
+        "cost_bindings"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "1.0"
+        },
+        "rules_version": {
+          "$ref": "#/$defs/text"
+        },
+        "rules_sha256": {
+          "$ref": "#/$defs/hash"
+        },
+        "inputs": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "$ref": "#/$defs/text"
+            },
+            "sha256": {
+              "$ref": "#/$defs/hash"
+            }
+          }
+        },
+        "cost_bindings": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^/tables/costs/[0-9]+/fields/cost$"
+          }
+        }
+      }
+    },
+    "test_draft_authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "document_type",
+        "mode",
+        "allow_submit",
+        "marker",
+        "scope",
+        "authorization_path",
+        "authorization_sha256"
+      ],
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "document_type": {
+          "enum": [
+            "travel",
+            "express",
+            "rd_materials"
+          ]
+        },
+        "mode": {
+          "const": "save_draft"
+        },
+        "allow_submit": {
+          "const": false
+        },
+        "marker": {
+          "const": "测试、勿流转"
+        },
+        "scope": {
+          "const": "historical_sample"
+        },
+        "authorization_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authorization_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "money": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9]+(\\.[0-9]{1,2})?$"
+        },
+        {
+          "type": "integer",
+          "minimum": 0
+        }
+      ]
+    },
+    "row": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "row_id",
+        "fields"
+      ],
+      "properties": {
+        "row_id": {
+          "$ref": "#/$defs/text"
+        },
+        "fields": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": [
+              "string",
+              "integer"
+            ]
+          }
+        }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/row"
+      }
+    },
+    "requiredRows": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/rows"
+        }
+      ],
+      "minItems": 1
+    },
+    "valueProof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
         "path",
         "locator",
         "sha256"
-       ]
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "material",
+            "user",
+            "agent_reviewed"
+          ]
+        },
+        "path": {
+          "$ref": "#/$defs/text"
+        },
+        "locator": {
+          "$ref": "#/$defs/text"
+        },
+        "sha256": {
+          "$ref": "#/$defs/hash"
+        }
       }
-     }
-    ]
-   },
-   "patternProperties": {
-    "^/tables/details/[0-9]+/fields/digest$": {
-     "type": "object",
-     "required": [
-      "kind"
-     ],
-     "properties": {
-      "kind": {
-       "enum": [
-        "material",
-        "user"
-       ]
-      },
-      "path": {
-       "$ref": "#/$defs/text"
-      },
-      "locator": {
-       "$ref": "#/$defs/text"
-      },
-      "sha256": {
-       "$ref": "#/$defs/hash"
-      },
-      "operation": {
-       "const": "sum"
-      },
-      "inputs": {
-       "type": "array",
-       "minItems": 1,
-       "uniqueItems": true,
-       "items": {
-        "type": "string",
-        "pattern": "^/"
-       }
-      },
-      "corroborates": {
-       "type": "array",
-       "items": {
-        "$ref": "#/$defs/valueProof"
-       }
+    },
+    "reasonProof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reason",
+        "proof"
+      ],
+      "properties": {
+        "reason": {
+          "$ref": "#/$defs/text"
+        },
+        "proof": {
+          "$ref": "#/$defs/valueProof"
+        }
       }
-     },
-     "additionalProperties": false,
-     "allOf": [
-      {
-       "if": {
+    }
+  },
+  "allOf": [
+    {
+      "if": {
         "properties": {
-         "kind": {
-          "const": "derived"
-         }
+          "document_type": {
+            "const": "travel"
+          }
         }
-       },
-       "then": {
+      },
+      "then": {
+        "properties": {
+          "header": {
+            "properties": {
+              "submitType": {
+                "const": "差旅费"
+              }
+            }
+          },
+          "tables": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "relations",
+              "details",
+              "costs",
+              "banks"
+            ],
+            "properties": {
+              "relations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bizTypeName",
+                        "bizNumber",
+                        "nowCost",
+                        "isLast"
+                      ],
+                      "properties": {
+                        "bizTypeName": {
+                          "type": "string",
+                          "enum": [
+                            "公出单",
+                            "出差单"
+                          ]
+                        },
+                        "bizNumber": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "nowCost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "isLast": {
+                          "type": "string",
+                          "enum": [
+                            "是",
+                            "否"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "details": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "reimItem",
+                        "digest",
+                        "budgetDeptName",
+                        "budgetNo",
+                        "subjectName",
+                        "budgetItemName",
+                        "cost"
+                      ],
+                      "properties": {
+                        "reimItem": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "digest": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetDeptName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetNo": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "subjectName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetItemName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              },
+              "costs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "project",
+                        "startDate",
+                        "endDate",
+                        "projectPlace",
+                        "count",
+                        "cost",
+                        "reason"
+                      ],
+                      "properties": {
+                        "project": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "startDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "endDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "projectPlace": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "count": {
+                          "type": "string",
+                          "pattern": "^\\d+(\\.\\d+)?$"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "reason": {
+                          "$ref": "#/$defs/text"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "banks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "payee",
+                        "account",
+                        "bank",
+                        "bankCode",
+                        "cost"
+                      ],
+                      "properties": {
+                        "payee": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "account": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "bank": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "bankCode": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              }
+            }
+          },
+          "table_applicability": false,
+          "amount_rules": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "products"
+                  ]
+                },
+                {
+                  "required": [
+                    "product_amount_semantics"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "document_type": {
+            "const": "express"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "header": {
+            "properties": {
+              "submitType": {
+                "const": "快递费"
+              }
+            }
+          },
+          "tables": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "relations",
+              "details",
+              "costs",
+              "banks"
+            ],
+            "properties": {
+              "relations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bizTypeName",
+                        "bizNumber",
+                        "nowCost",
+                        "isLast"
+                      ],
+                      "properties": {
+                        "bizTypeName": {
+                          "type": "string",
+                          "enum": [
+                            "公出单",
+                            "出差单"
+                          ]
+                        },
+                        "bizNumber": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "nowCost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "isLast": {
+                          "type": "string",
+                          "enum": [
+                            "是",
+                            "否"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "maxItems": 0
+              },
+              "details": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "reimItem",
+                        "digest",
+                        "budgetDeptName",
+                        "budgetNo",
+                        "subjectName",
+                        "budgetItemName",
+                        "cost",
+                        "budgetOwner"
+                      ],
+                      "properties": {
+                        "reimItem": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "digest": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetDeptName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetNo": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "subjectName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetItemName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "budgetOwner": {
+                          "$ref": "#/$defs/text"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              },
+              "costs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "project",
+                        "startDate",
+                        "endDate",
+                        "projectPlace",
+                        "count",
+                        "cost",
+                        "reason"
+                      ],
+                      "properties": {
+                        "project": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "startDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "endDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "projectPlace": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "count": {
+                          "type": "string",
+                          "pattern": "^\\d+(\\.\\d+)?$"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "reason": {
+                          "$ref": "#/$defs/text"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "banks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "payee",
+                        "account",
+                        "bank",
+                        "bankCode",
+                        "cost"
+                      ],
+                      "properties": {
+                        "payee": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "account": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "bank": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "bankCode": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              }
+            }
+          },
+          "table_applicability": {
+            "required": [
+              "relations"
+            ]
+          },
+          "amount_rules": {
+            "properties": {
+              "cost_amount_semantics": {
+                "const": "line_total"
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "products"
+                  ]
+                },
+                {
+                  "required": [
+                    "product_amount_semantics"
+                  ]
+                }
+              ]
+            }
+          }
+        },
         "required": [
-         "operation",
-         "inputs"
+          "table_applicability"
         ]
-       },
-       "else": {
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "document_type": {
+            "const": "office_supplies"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "header": {
+            "properties": {
+              "submitType": {
+                "const": "低值易耗品、办公用品采购"
+              }
+            }
+          },
+          "tables": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "relations",
+              "details",
+              "costs",
+              "banks"
+            ],
+            "properties": {
+              "relations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bizTypeName",
+                        "bizNumber",
+                        "nowCost",
+                        "isLast"
+                      ],
+                      "properties": {
+                        "bizTypeName": {
+                          "type": "string",
+                          "enum": [
+                            "公出单",
+                            "出差单"
+                          ]
+                        },
+                        "bizNumber": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "nowCost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "isLast": {
+                          "type": "string",
+                          "enum": [
+                            "是",
+                            "否"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "maxItems": 0
+              },
+              "details": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "reimItem",
+                        "digest",
+                        "budgetDeptName",
+                        "budgetNo",
+                        "subjectName",
+                        "budgetItemName",
+                        "cost",
+                        "budgetOwner"
+                      ],
+                      "properties": {
+                        "reimItem": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "digest": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetDeptName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetNo": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "subjectName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetItemName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "budgetOwner": {
+                          "$ref": "#/$defs/text"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              },
+              "costs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "project",
+                        "startDate",
+                        "endDate",
+                        "projectPlace",
+                        "count",
+                        "cost",
+                        "reason"
+                      ],
+                      "properties": {
+                        "project": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "startDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "endDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "projectPlace": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "count": {
+                          "type": "string",
+                          "pattern": "^\\d+(\\.\\d+)?$"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "reason": {
+                          "$ref": "#/$defs/text"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "banks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "payee",
+                        "account",
+                        "bank",
+                        "bankCode",
+                        "cost"
+                      ],
+                      "properties": {
+                        "payee": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "account": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "bank": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "bankCode": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              }
+            }
+          },
+          "table_applicability": {
+            "required": [
+              "relations"
+            ]
+          },
+          "amount_rules": {
+            "properties": {
+              "cost_amount_semantics": {
+                "const": "line_total"
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "products"
+                  ]
+                },
+                {
+                  "required": [
+                    "product_amount_semantics"
+                  ]
+                }
+              ]
+            }
+          }
+        },
         "required": [
-         "path",
-         "locator",
-         "sha256"
+          "table_applicability"
         ]
-       }
       }
-     ]
-    }
-   }
-  },
-  "authorization": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "mode",
-    "task_id",
-    "statement",
-    "allow_submit"
-   ],
-   "properties": {
-    "mode": {
-     "enum": [
-      "fill_only",
-      "save_draft"
-     ]
-    },
-    "task_id": {
-     "$ref": "#/$defs/text"
-    },
-    "statement": {
-     "$ref": "#/$defs/text"
-    },
-    "allow_submit": {
-     "const": false
-    }
-   }
-  },
-  "unresolved": {
-   "type": "array",
-   "maxItems": 0
-  },
-  "not_applicable": {
-   "type": "array",
-   "items": {
-    "type": "string"
-   }
-  },
-  "amount_rules": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "costs",
-    "cost_amount_semantics"
-   ],
-   "properties": {
-    "costs": {
-     "enum": [
-      "sum",
-      "not_applicable"
-     ]
-    },
-    "costs_reason": {
-     "$ref": "#/$defs/text"
-    },
-    "cost_amount_semantics": {
-     "enum": [
-      "line_total",
-      "unit_price_times_count"
-     ]
-    },
-    "products": {
-     "const": "sum"
-    },
-    "product_amount_semantics": {
-     "const": "line_total"
-    }
-   }
-  },
-  "identity": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "applicant_employee_id",
-    "creator_name",
-    "creator_department"
-   ],
-   "properties": {
-    "applicant_employee_id": {
-     "$ref": "#/$defs/identifier"
-    },
-    "creator_name": {
-     "$ref": "#/$defs/text"
-    },
-    "creator_department": {
-     "$ref": "#/$defs/text"
-    }
-   }
-  },
-  "test_context": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "purpose",
-    "round",
-    "authorization_path",
-    "authorization_sha256"
-   ],
-   "properties": {
-    "purpose": {
-     "$ref": "#/$defs/text"
-    },
-    "round": {
-     "$ref": "#/$defs/text"
-    },
-    "authorization_path": {
-     "$ref": "#/$defs/text"
-    },
-    "authorization_sha256": {
-     "$ref": "#/$defs/hash"
-    }
-   }
-  },
-  "table_applicability": {
-   "type": "object",
-   "additionalProperties": false,
-   "properties": {
-    "relations": {
-     "type": "object",
-     "additionalProperties": false,
-     "required": [
-      "reason"
-     ],
-     "properties": {
-      "reason": {
-       "$ref": "#/$defs/text"
-      }
-     }
-    },
-    "costs": {
-     "type": "object",
-     "additionalProperties": false,
-     "required": [
-      "reason"
-     ],
-     "properties": {
-      "reason": {
-       "$ref": "#/$defs/text"
-      }
-     }
-    }
-   }
-  },
-  "coverage": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "model",
-    "strict_gate",
-    "rule_source",
-    "rate_per_km",
-    "K_km",
-    "M_subsidy",
-    "T_toll",
-    "R_reimburse",
-    "O_fuel_pool",
-    "F_coverage_total",
-    "coverage_margin"
-   ],
-   "properties": {
-    "model": {
-     "const": "fuel_pool_strict_surplus"
-    },
-    "strict_gate": {
-     "const": "greater"
-    },
-    "rule_source": {
-     "type": "string",
-     "minLength": 1
-    },
-    "rate_per_km": {
-     "type": "string",
-     "pattern": "^[0-9]+\\.[0-9]{2}$"
-    },
-    "K_km": {
-     "type": "string",
-     "pattern": "^[0-9]+$"
-    },
-    "M_subsidy": {
-     "$ref": "#/$defs/money"
-    },
-    "T_toll": {
-     "$ref": "#/$defs/money"
-    },
-    "R_reimburse": {
-     "$ref": "#/$defs/money"
-    },
-    "O_fuel_pool": {
-     "$ref": "#/$defs/money"
-    },
-    "F_coverage_total": {
-     "$ref": "#/$defs/money"
-    },
-    "coverage_margin": {
-     "$ref": "#/$defs/money"
-    }
-   },
-   "description": "V3-R03 覆盖模型声明块（可选）：fuel_pool_strict_surplus；F>R 严格门槛，validate_plan 同步校验"
-  },
-  "oa_test_relations": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "test_placeholder",
-    "purpose",
-    "selection",
-    "separation",
-    "row_ids"
-   ],
-   "properties": {
-    "test_placeholder": {
-     "const": true
-    },
-    "purpose": {
-     "$ref": "#/$defs/text"
-    },
-    "separation": {
-     "$ref": "#/$defs/text"
-    },
-    "row_ids": {
-     "type": "array",
-     "minItems": 1,
-     "uniqueItems": true,
-     "items": {
-      "$ref": "#/$defs/text"
-     }
-    },
-    "selection": {
-     "type": "object",
-     "additionalProperties": false,
-     "required": [
-      "method",
-      "seed",
-      "enumeration_path",
-      "enumeration_sha256",
-      "candidates_count",
-      "chosen_index"
-     ],
-     "properties": {
-      "method": {
-       "$ref": "#/$defs/text"
-      },
-      "seed": {
-       "$ref": "#/$defs/text"
-      },
-      "enumeration_path": {
-       "$ref": "#/$defs/text"
-      },
-      "enumeration_sha256": {
-       "$ref": "#/$defs/hash"
-      },
-      "candidates_count": {
-       "type": "integer",
-       "minimum": 0
-      },
-      "chosen_index": {
-       "type": "integer",
-       "minimum": 0
-      }
-     }
-    }
-   }
-  }
- },
- "$defs": {
-  "text": {
-   "type": "string",
-   "minLength": 1,
-   "pattern": "\\S"
-  },
-  "identifier": {
-   "type": "string",
-   "pattern": "^[0-9]+$"
-  },
-  "hash": {
-   "type": "string",
-   "pattern": "^[0-9a-f]{64}$"
-  },
-  "money": {
-   "oneOf": [
-    {
-     "type": "string",
-     "pattern": "^[0-9]+(\\.[0-9]{1,2})?$"
     },
     {
-     "type": "integer",
-     "minimum": 0
-    }
-   ]
-  },
-  "row": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "row_id",
-    "fields"
-   ],
-   "properties": {
-    "row_id": {
-     "$ref": "#/$defs/text"
+      "if": {
+        "properties": {
+          "document_type": {
+            "const": "welfare_labor"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "header": {
+            "properties": {
+              "submitType": {
+                "const": "福利费、劳保用品"
+              }
+            }
+          },
+          "tables": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "relations",
+              "details",
+              "costs",
+              "banks"
+            ],
+            "properties": {
+              "relations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bizTypeName",
+                        "bizNumber",
+                        "nowCost",
+                        "isLast"
+                      ],
+                      "properties": {
+                        "bizTypeName": {
+                          "type": "string",
+                          "enum": [
+                            "公出单",
+                            "出差单"
+                          ]
+                        },
+                        "bizNumber": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "nowCost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "isLast": {
+                          "type": "string",
+                          "enum": [
+                            "是",
+                            "否"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "maxItems": 0
+              },
+              "details": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "reimItem",
+                        "digest",
+                        "budgetDeptName",
+                        "budgetNo",
+                        "subjectName",
+                        "budgetItemName",
+                        "cost",
+                        "budgetOwner"
+                      ],
+                      "properties": {
+                        "reimItem": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "digest": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetDeptName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetNo": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "subjectName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetItemName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "budgetOwner": {
+                          "$ref": "#/$defs/text"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              },
+              "costs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "project",
+                        "startDate",
+                        "endDate",
+                        "projectPlace",
+                        "count",
+                        "cost",
+                        "reason"
+                      ],
+                      "properties": {
+                        "project": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "startDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "endDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "projectPlace": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "count": {
+                          "type": "string",
+                          "pattern": "^\\d+(\\.\\d+)?$"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "reason": {
+                          "$ref": "#/$defs/text"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "banks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "payee",
+                        "account",
+                        "bank",
+                        "bankCode",
+                        "cost"
+                      ],
+                      "properties": {
+                        "payee": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "account": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "bank": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "bankCode": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              }
+            }
+          },
+          "table_applicability": {
+            "required": [
+              "relations"
+            ]
+          },
+          "amount_rules": {
+            "properties": {
+              "cost_amount_semantics": {
+                "const": "line_total"
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "products"
+                  ]
+                },
+                {
+                  "required": [
+                    "product_amount_semantics"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "table_applicability"
+        ]
+      }
     },
-    "fields": {
-     "type": "object",
-     "minProperties": 1,
-     "additionalProperties": {
-      "type": [
-       "string",
-       "integer"
-      ]
-     }
-    }
-   }
-  },
-  "rows": {
-   "type": "array",
-   "items": {
-    "$ref": "#/$defs/row"
-   }
-  },
-  "requiredRows": {
-   "allOf": [
     {
-     "$ref": "#/$defs/rows"
+      "if": {
+        "properties": {
+          "document_type": {
+            "const": "rd_materials"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "header": {
+            "properties": {
+              "submitType": {
+                "const": "研发材料费"
+              }
+            }
+          },
+          "tables": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "relations",
+              "details",
+              "costs",
+              "banks",
+              "products"
+            ],
+            "properties": {
+              "relations": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "bizTypeName",
+                        "bizNumber",
+                        "nowCost",
+                        "isLast"
+                      ],
+                      "properties": {
+                        "bizTypeName": {
+                          "type": "string",
+                          "enum": [
+                            "公出单",
+                            "出差单"
+                          ]
+                        },
+                        "bizNumber": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "nowCost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "isLast": {
+                          "type": "string",
+                          "enum": [
+                            "是",
+                            "否"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "maxItems": 0
+              },
+              "details": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "reimItem",
+                        "digest",
+                        "budgetDeptName",
+                        "budgetNo",
+                        "subjectName",
+                        "budgetItemName",
+                        "cost",
+                        "budgetOwner"
+                      ],
+                      "properties": {
+                        "reimItem": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "digest": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetDeptName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetNo": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "subjectName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "budgetItemName": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "budgetOwner": {
+                          "$ref": "#/$defs/text"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              },
+              "costs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "project",
+                        "startDate",
+                        "endDate",
+                        "projectPlace",
+                        "count",
+                        "cost",
+                        "reason"
+                      ],
+                      "properties": {
+                        "project": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "startDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "endDate": {
+                          "type": "string",
+                          "format": "date",
+                          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                        },
+                        "projectPlace": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "count": {
+                          "type": "string",
+                          "pattern": "^\\d+(\\.\\d+)?$"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "reason": {
+                          "$ref": "#/$defs/text"
+                        }
+                      }
+                    }
+                  }
+                },
+                "maxItems": 0
+              },
+              "banks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "payee",
+                        "account",
+                        "bank",
+                        "bankCode",
+                        "cost"
+                      ],
+                      "properties": {
+                        "payee": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "account": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "bank": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "bankCode": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "cost": {
+                          "$ref": "#/$defs/money"
+                        }
+                      }
+                    }
+                  }
+                },
+                "minItems": 1
+              },
+              "products": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "fields"
+                  ],
+                  "properties": {
+                    "row_id": {
+                      "$ref": "#/$defs/text"
+                    },
+                    "fields": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "code",
+                        "name",
+                        "purchaser",
+                        "price",
+                        "description"
+                      ],
+                      "properties": {
+                        "code": {
+                          "$ref": "#/$defs/identifier"
+                        },
+                        "name": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "purchaser": {
+                          "$ref": "#/$defs/text"
+                        },
+                        "price": {
+                          "$ref": "#/$defs/money"
+                        },
+                        "description": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "table_applicability": {
+            "required": [
+              "relations"
+            ]
+          },
+          "amount_rules": {
+            "properties": {
+              "cost_amount_semantics": {
+                "const": "line_total"
+              }
+            },
+            "required": [
+              "products",
+              "product_amount_semantics"
+            ]
+          }
+        },
+        "required": [
+          "table_applicability"
+        ]
+      }
     }
-   ],
-   "minItems": 1
-  },
-  "valueProof": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "path",
-    "locator",
-    "sha256"
-   ],
-   "properties": {
-    "kind": {
-     "enum": [
-      "material",
-      "user",
-      "agent_reviewed"
-     ]
-    },
-    "path": {
-     "$ref": "#/$defs/text"
-    },
-    "locator": {
-     "$ref": "#/$defs/text"
-    },
-    "sha256": {
-     "$ref": "#/$defs/hash"
+  ],
+  "dependentSchemas": {
+    "self_drive_coverage": {
+      "required": [
+        "identity"
+      ],
+      "properties": {
+        "document_type": {
+          "const": "travel"
+        },
+        "coverage": false
+      }
     }
-   }
-  },
-  "reasonProof": {
-   "type": "object",
-   "additionalProperties": false,
-   "required": [
-    "reason",
-    "proof"
-   ],
-   "properties": {
-    "reason": {
-     "$ref": "#/$defs/text"
-    },
-    "proof": {
-     "$ref": "#/$defs/valueProof"
-    }
-   }
   }
- },
- "allOf": [
-  {
-   "if": {
-    "properties": {
-     "document_type": {
-      "const": "travel"
-     }
-    }
-   },
-   "then": {
-    "properties": {
-     "header": {
-      "properties": {
-       "submitType": {
-        "const": "差旅费"
-       }
-      }
-     },
-     "tables": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-       "relations",
-       "details",
-       "costs",
-       "banks"
-      ],
-      "properties": {
-       "relations": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "bizTypeName",
-            "bizNumber",
-            "nowCost",
-            "isLast"
-           ],
-           "properties": {
-            "bizTypeName": {
-             "type": "string",
-             "enum": [
-              "公出单",
-              "出差单"
-             ]
-            },
-            "bizNumber": {
-             "$ref": "#/$defs/identifier"
-            },
-            "nowCost": {
-             "$ref": "#/$defs/money"
-            },
-            "isLast": {
-             "type": "string",
-             "enum": [
-              "是",
-              "否"
-             ]
-            }
-           }
-          }
-         }
-        }
-       },
-       "details": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "reimItem",
-            "digest",
-            "budgetDeptName",
-            "budgetNo",
-            "subjectName",
-            "budgetItemName",
-            "cost"
-           ],
-           "properties": {
-            "reimItem": {
-             "$ref": "#/$defs/text"
-            },
-            "digest": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetDeptName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetNo": {
-             "$ref": "#/$defs/identifier"
-            },
-            "subjectName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetItemName": {
-             "$ref": "#/$defs/text"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       },
-       "costs": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "project",
-            "startDate",
-            "endDate",
-            "projectPlace",
-            "count",
-            "cost",
-            "reason"
-           ],
-           "properties": {
-            "project": {
-             "$ref": "#/$defs/text"
-            },
-            "startDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "endDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "projectPlace": {
-             "$ref": "#/$defs/text"
-            },
-            "count": {
-             "type": "string",
-             "pattern": "^\\d+(\\.\\d+)?$"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            },
-            "reason": {
-             "$ref": "#/$defs/text"
-            }
-           }
-          }
-         }
-        }
-       },
-       "banks": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "payee",
-            "account",
-            "bank",
-            "bankCode",
-            "cost"
-           ],
-           "properties": {
-            "payee": {
-             "$ref": "#/$defs/text"
-            },
-            "account": {
-             "$ref": "#/$defs/identifier"
-            },
-            "bank": {
-             "$ref": "#/$defs/text"
-            },
-            "bankCode": {
-             "$ref": "#/$defs/identifier"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       }
-      }
-     },
-     "table_applicability": false,
-     "amount_rules": {
-      "not": {
-       "anyOf": [
-        {
-         "required": [
-          "products"
-         ]
-        },
-        {
-         "required": [
-          "product_amount_semantics"
-         ]
-        }
-       ]
-      }
-     }
-    }
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "document_type": {
-      "const": "express"
-     }
-    }
-   },
-   "then": {
-    "properties": {
-     "header": {
-      "properties": {
-       "submitType": {
-        "const": "快递费"
-       }
-      }
-     },
-     "tables": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-       "relations",
-       "details",
-       "costs",
-       "banks"
-      ],
-      "properties": {
-       "relations": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "bizTypeName",
-            "bizNumber",
-            "nowCost",
-            "isLast"
-           ],
-           "properties": {
-            "bizTypeName": {
-             "type": "string",
-             "enum": [
-              "公出单",
-              "出差单"
-             ]
-            },
-            "bizNumber": {
-             "$ref": "#/$defs/identifier"
-            },
-            "nowCost": {
-             "$ref": "#/$defs/money"
-            },
-            "isLast": {
-             "type": "string",
-             "enum": [
-              "是",
-              "否"
-             ]
-            }
-           }
-          }
-         }
-        },
-        "maxItems": 0
-       },
-       "details": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "reimItem",
-            "digest",
-            "budgetDeptName",
-            "budgetNo",
-            "subjectName",
-            "budgetItemName",
-            "cost",
-            "budgetOwner"
-           ],
-           "properties": {
-            "reimItem": {
-             "$ref": "#/$defs/text"
-            },
-            "digest": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetDeptName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetNo": {
-             "$ref": "#/$defs/identifier"
-            },
-            "subjectName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetItemName": {
-             "$ref": "#/$defs/text"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            },
-            "budgetOwner": {
-             "$ref": "#/$defs/text"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       },
-       "costs": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "project",
-            "startDate",
-            "endDate",
-            "projectPlace",
-            "count",
-            "cost",
-            "reason"
-           ],
-           "properties": {
-            "project": {
-             "$ref": "#/$defs/text"
-            },
-            "startDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "endDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "projectPlace": {
-             "$ref": "#/$defs/text"
-            },
-            "count": {
-             "type": "string",
-             "pattern": "^\\d+(\\.\\d+)?$"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            },
-            "reason": {
-             "$ref": "#/$defs/text"
-            }
-           }
-          }
-         }
-        }
-       },
-       "banks": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "payee",
-            "account",
-            "bank",
-            "bankCode",
-            "cost"
-           ],
-           "properties": {
-            "payee": {
-             "$ref": "#/$defs/text"
-            },
-            "account": {
-             "$ref": "#/$defs/identifier"
-            },
-            "bank": {
-             "$ref": "#/$defs/text"
-            },
-            "bankCode": {
-             "$ref": "#/$defs/identifier"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       }
-      }
-     },
-     "table_applicability": {
-      "required": [
-       "relations"
-      ]
-     },
-     "amount_rules": {
-      "properties": {
-       "cost_amount_semantics": {
-        "const": "line_total"
-       }
-      },
-      "not": {
-       "anyOf": [
-        {
-         "required": [
-          "products"
-         ]
-        },
-        {
-         "required": [
-          "product_amount_semantics"
-         ]
-        }
-       ]
-      }
-     }
-    },
-    "required": [
-     "table_applicability"
-    ]
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "document_type": {
-      "const": "office_supplies"
-     }
-    }
-   },
-   "then": {
-    "properties": {
-     "header": {
-      "properties": {
-       "submitType": {
-        "const": "低值易耗品、办公用品采购"
-       }
-      }
-     },
-     "tables": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-       "relations",
-       "details",
-       "costs",
-       "banks"
-      ],
-      "properties": {
-       "relations": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "bizTypeName",
-            "bizNumber",
-            "nowCost",
-            "isLast"
-           ],
-           "properties": {
-            "bizTypeName": {
-             "type": "string",
-             "enum": [
-              "公出单",
-              "出差单"
-             ]
-            },
-            "bizNumber": {
-             "$ref": "#/$defs/identifier"
-            },
-            "nowCost": {
-             "$ref": "#/$defs/money"
-            },
-            "isLast": {
-             "type": "string",
-             "enum": [
-              "是",
-              "否"
-             ]
-            }
-           }
-          }
-         }
-        },
-        "maxItems": 0
-       },
-       "details": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "reimItem",
-            "digest",
-            "budgetDeptName",
-            "budgetNo",
-            "subjectName",
-            "budgetItemName",
-            "cost",
-            "budgetOwner"
-           ],
-           "properties": {
-            "reimItem": {
-             "$ref": "#/$defs/text"
-            },
-            "digest": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetDeptName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetNo": {
-             "$ref": "#/$defs/identifier"
-            },
-            "subjectName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetItemName": {
-             "$ref": "#/$defs/text"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            },
-            "budgetOwner": {
-             "$ref": "#/$defs/text"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       },
-       "costs": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "project",
-            "startDate",
-            "endDate",
-            "projectPlace",
-            "count",
-            "cost",
-            "reason"
-           ],
-           "properties": {
-            "project": {
-             "$ref": "#/$defs/text"
-            },
-            "startDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "endDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "projectPlace": {
-             "$ref": "#/$defs/text"
-            },
-            "count": {
-             "type": "string",
-             "pattern": "^\\d+(\\.\\d+)?$"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            },
-            "reason": {
-             "$ref": "#/$defs/text"
-            }
-           }
-          }
-         }
-        }
-       },
-       "banks": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "payee",
-            "account",
-            "bank",
-            "bankCode",
-            "cost"
-           ],
-           "properties": {
-            "payee": {
-             "$ref": "#/$defs/text"
-            },
-            "account": {
-             "$ref": "#/$defs/identifier"
-            },
-            "bank": {
-             "$ref": "#/$defs/text"
-            },
-            "bankCode": {
-             "$ref": "#/$defs/identifier"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       }
-      }
-     },
-     "table_applicability": {
-      "required": [
-       "relations"
-      ]
-     },
-     "amount_rules": {
-      "properties": {
-       "cost_amount_semantics": {
-        "const": "line_total"
-       }
-      },
-      "not": {
-       "anyOf": [
-        {
-         "required": [
-          "products"
-         ]
-        },
-        {
-         "required": [
-          "product_amount_semantics"
-         ]
-        }
-       ]
-      }
-     }
-    },
-    "required": [
-     "table_applicability"
-    ]
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "document_type": {
-      "const": "welfare_labor"
-     }
-    }
-   },
-   "then": {
-    "properties": {
-     "header": {
-      "properties": {
-       "submitType": {
-        "const": "福利费、劳保用品"
-       }
-      }
-     },
-     "tables": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-       "relations",
-       "details",
-       "costs",
-       "banks"
-      ],
-      "properties": {
-       "relations": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "bizTypeName",
-            "bizNumber",
-            "nowCost",
-            "isLast"
-           ],
-           "properties": {
-            "bizTypeName": {
-             "type": "string",
-             "enum": [
-              "公出单",
-              "出差单"
-             ]
-            },
-            "bizNumber": {
-             "$ref": "#/$defs/identifier"
-            },
-            "nowCost": {
-             "$ref": "#/$defs/money"
-            },
-            "isLast": {
-             "type": "string",
-             "enum": [
-              "是",
-              "否"
-             ]
-            }
-           }
-          }
-         }
-        },
-        "maxItems": 0
-       },
-       "details": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "reimItem",
-            "digest",
-            "budgetDeptName",
-            "budgetNo",
-            "subjectName",
-            "budgetItemName",
-            "cost",
-            "budgetOwner"
-           ],
-           "properties": {
-            "reimItem": {
-             "$ref": "#/$defs/text"
-            },
-            "digest": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetDeptName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetNo": {
-             "$ref": "#/$defs/identifier"
-            },
-            "subjectName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetItemName": {
-             "$ref": "#/$defs/text"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            },
-            "budgetOwner": {
-             "$ref": "#/$defs/text"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       },
-       "costs": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "project",
-            "startDate",
-            "endDate",
-            "projectPlace",
-            "count",
-            "cost",
-            "reason"
-           ],
-           "properties": {
-            "project": {
-             "$ref": "#/$defs/text"
-            },
-            "startDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "endDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "projectPlace": {
-             "$ref": "#/$defs/text"
-            },
-            "count": {
-             "type": "string",
-             "pattern": "^\\d+(\\.\\d+)?$"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            },
-            "reason": {
-             "$ref": "#/$defs/text"
-            }
-           }
-          }
-         }
-        }
-       },
-       "banks": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "payee",
-            "account",
-            "bank",
-            "bankCode",
-            "cost"
-           ],
-           "properties": {
-            "payee": {
-             "$ref": "#/$defs/text"
-            },
-            "account": {
-             "$ref": "#/$defs/identifier"
-            },
-            "bank": {
-             "$ref": "#/$defs/text"
-            },
-            "bankCode": {
-             "$ref": "#/$defs/identifier"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       }
-      }
-     },
-     "table_applicability": {
-      "required": [
-       "relations"
-      ]
-     },
-     "amount_rules": {
-      "properties": {
-       "cost_amount_semantics": {
-        "const": "line_total"
-       }
-      },
-      "not": {
-       "anyOf": [
-        {
-         "required": [
-          "products"
-         ]
-        },
-        {
-         "required": [
-          "product_amount_semantics"
-         ]
-        }
-       ]
-      }
-     }
-    },
-    "required": [
-     "table_applicability"
-    ]
-   }
-  },
-  {
-   "if": {
-    "properties": {
-     "document_type": {
-      "const": "rd_materials"
-     }
-    }
-   },
-   "then": {
-    "properties": {
-     "header": {
-      "properties": {
-       "submitType": {
-        "const": "研发材料费"
-       }
-      }
-     },
-     "tables": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-       "relations",
-       "details",
-       "costs",
-       "banks",
-       "products"
-      ],
-      "properties": {
-       "relations": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "bizTypeName",
-            "bizNumber",
-            "nowCost",
-            "isLast"
-           ],
-           "properties": {
-            "bizTypeName": {
-             "type": "string",
-             "enum": [
-              "公出单",
-              "出差单"
-             ]
-            },
-            "bizNumber": {
-             "$ref": "#/$defs/identifier"
-            },
-            "nowCost": {
-             "$ref": "#/$defs/money"
-            },
-            "isLast": {
-             "type": "string",
-             "enum": [
-              "是",
-              "否"
-             ]
-            }
-           }
-          }
-         }
-        },
-        "maxItems": 0
-       },
-       "details": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "reimItem",
-            "digest",
-            "budgetDeptName",
-            "budgetNo",
-            "subjectName",
-            "budgetItemName",
-            "cost",
-            "budgetOwner"
-           ],
-           "properties": {
-            "reimItem": {
-             "$ref": "#/$defs/text"
-            },
-            "digest": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetDeptName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetNo": {
-             "$ref": "#/$defs/identifier"
-            },
-            "subjectName": {
-             "$ref": "#/$defs/text"
-            },
-            "budgetItemName": {
-             "$ref": "#/$defs/text"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            },
-            "budgetOwner": {
-             "$ref": "#/$defs/text"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       },
-       "costs": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "project",
-            "startDate",
-            "endDate",
-            "projectPlace",
-            "count",
-            "cost",
-            "reason"
-           ],
-           "properties": {
-            "project": {
-             "$ref": "#/$defs/text"
-            },
-            "startDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "endDate": {
-             "type": "string",
-             "format": "date",
-             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-            },
-            "projectPlace": {
-             "$ref": "#/$defs/text"
-            },
-            "count": {
-             "type": "string",
-             "pattern": "^\\d+(\\.\\d+)?$"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            },
-            "reason": {
-             "$ref": "#/$defs/text"
-            }
-           }
-          }
-         }
-        },
-        "maxItems": 0
-       },
-       "banks": {
-        "type": "array",
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "payee",
-            "account",
-            "bank",
-            "bankCode",
-            "cost"
-           ],
-           "properties": {
-            "payee": {
-             "$ref": "#/$defs/text"
-            },
-            "account": {
-             "$ref": "#/$defs/identifier"
-            },
-            "bank": {
-             "$ref": "#/$defs/text"
-            },
-            "bankCode": {
-             "$ref": "#/$defs/identifier"
-            },
-            "cost": {
-             "$ref": "#/$defs/money"
-            }
-           }
-          }
-         }
-        },
-        "minItems": 1
-       },
-       "products": {
-        "type": "array",
-        "minItems": 1,
-        "items": {
-         "type": "object",
-         "additionalProperties": false,
-         "required": [
-          "row_id",
-          "fields"
-         ],
-         "properties": {
-          "row_id": {
-           "$ref": "#/$defs/text"
-          },
-          "fields": {
-           "type": "object",
-           "additionalProperties": false,
-           "required": [
-            "code",
-            "name",
-            "purchaser",
-            "price",
-            "description"
-           ],
-           "properties": {
-            "code": {
-             "$ref": "#/$defs/identifier"
-            },
-            "name": {
-             "$ref": "#/$defs/text"
-            },
-            "purchaser": {
-             "$ref": "#/$defs/text"
-            },
-            "price": {
-             "$ref": "#/$defs/money"
-            },
-            "description": {
-             "type": "string"
-            }
-           }
-          }
-         }
-        }
-       }
-      }
-     },
-     "table_applicability": {
-      "required": [
-       "relations"
-      ]
-     },
-     "amount_rules": {
-      "properties": {
-       "cost_amount_semantics": {
-        "const": "line_total"
-       }
-      },
-      "required": [
-       "products",
-       "product_amount_semantics"
-      ]
-     }
-    },
-    "required": [
-     "table_applicability"
-    ]
-   }
-  }
- ]
 }

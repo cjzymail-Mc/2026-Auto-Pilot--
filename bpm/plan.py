@@ -89,7 +89,7 @@ def validate_plan(plan, expected_operator=None, verify_sources=True, *, base_dir
         bad("/", "plan must be an object")
         return issues
     allowed = {"schema_version", "task_id", "document_type", "config_version", "operator", "applicant", "template", "materials", "header", "tables", "sources", "authorization", "unresolved", "not_applicable", "amount_rules"}
-    optional = {"identity", "test_context", "table_applicability", "coverage", "oa_test_relations"}
+    optional = {"identity", "test_context", "test_draft_authorization", "table_applicability", "coverage", "oa_test_relations", "self_drive_coverage"}
     for key in sorted(set(plan) - allowed - optional):
         bad("/" + key, "unknown top-level property")
     for key in sorted(allowed - set(plan)):
@@ -144,6 +144,10 @@ def validate_plan(plan, expected_operator=None, verify_sources=True, *, base_dir
     if authorization.get("allow_submit") is not False:
         bad("/authorization/allow_submit", "submission is forbidden")
     text(authorization.get("statement"), "/authorization/statement")
+    from bpm.test_draft_authorization import validate_test_draft_authorization
+    test_draft_allowed = validate_test_draft_authorization(plan, base_dir, verify_sources)
+    if "test_draft_authorization" in plan and not test_draft_allowed:
+        bad("/test_draft_authorization", "explicit task-bound historical test draft authorization required")
     context = plan.get("test_context")
     if "test_context" in plan:
         if not isinstance(context, dict) or set(context) != {"purpose", "round", "authorization_path", "authorization_sha256"}:
@@ -160,7 +164,7 @@ def validate_plan(plan, expected_operator=None, verify_sources=True, *, base_dir
                         raise ValueError("test authorization hash mismatch")
                 except (OSError, ValueError, TypeError) as exc:
                     bad("/test_context", str(exc))
-        if authorization.get("mode") != "fill_only":
+        if authorization.get("mode") != "fill_only" and not test_draft_allowed:
             bad("/authorization/mode", "test context permits unsaved fill_only only")
     header = plan.get("header", {})
     if not isinstance(header, dict):
@@ -188,7 +192,7 @@ def validate_plan(plan, expected_operator=None, verify_sources=True, *, base_dir
         block = plan.get("oa_test_relations")
         if plan["document_type"] != "travel":
             bad("/oa_test_relations", "placeholder test relations are modeled for travel only")
-        if authorization.get("mode") != "fill_only":
+        if authorization.get("mode") != "fill_only" and not test_draft_allowed:
             bad("/oa_test_relations", "placeholder test relations require fill_only authorization")
         if not isinstance(block, dict) or set(block) != {"test_placeholder", "purpose", "selection", "separation", "row_ids"}:
             bad("/oa_test_relations", "exact placeholder intent keys required")
@@ -499,6 +503,9 @@ def validate_plan(plan, expected_operator=None, verify_sources=True, *, base_dir
                     raise ValueError("located value differs from planned value")
         except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
             bad(pointer, str(exc), "SOURCE_INVALID")
+    if "self_drive_coverage" in plan:
+        from bpm.self_drive_plan import validate_self_drive_binding
+        issues.extend(validate_self_drive_binding(plan, base_dir=base_dir, manifest=manifest))
     return issues
 
 
