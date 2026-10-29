@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "root": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\tpl-copy-review-20261027\\test-inputs",
+  "files": [
+    {
+      "material_id": "sha256:7154bae47232a32d4b29b582b4ca10416e44a08ac5a10cba63fa30b92f98d8b3",
+      "path": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\automation\\type-replay-plans\\tpl-copy-review-20261027\\test-inputs\\authorized_replay_facts.json",
+      "relative_path": "authorized_replay_facts.json",
+      "sha256": "7154bae47232a32d4b29b582b4ca10416e44a08ac5a10cba63fa30b92f98d8b3",
+      "size_bytes": 9861,
+      "duplicate_paths": []
+    }
+  ]
+}
