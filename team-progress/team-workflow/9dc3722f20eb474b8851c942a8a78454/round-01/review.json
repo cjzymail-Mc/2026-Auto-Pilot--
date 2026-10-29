@@ -1,0 +1,367 @@
+{
+  "decision": "pass",
+  "summary": "本轮新增/重验：A 对基线 BPM-COMMON-20261027-V1 全 28 项判据独立验收——15 产物+11 证据哈希零漂移；430 tests 本机两度复跑 OK(skipped=4)；offline-verify/192354 覆盖最终 query.py 哈希 d7d6482d；9 验收 run 逐字段核对（三分支/显式筛选三态/fail-closed/耗时）且 kw2 首候选 UUID=tpl2 快照 uuid；从 tpl2 快照独立重算 purchaser 四组 Decimal 闭合 9935.16；20 run 单锁单关闭、events 无认证原值；材料入口以自备匿名夹具实跑（前导零保留/PDF 文本哈希绑定/坏件不吞批/源缺失 fail-closed）；query.py 全文与五方接线 diff 逐行审读；银行资料三文件 git check-ignore 命中。有效旧证据：tpl2 对照旧快照 type-template-15426104120-20261023-194712 仅作差异核对（本轮实时快照独立重算，未沿用旧值）。未解项：非阻断遗留四类（P2-4①③代码卫生与守卫纵深、P2-4② --snapshot 未登记类别 CLI 层缺 --research-raw 指引但文档层已有且 fail-closed、同名多工号未真实触发守卫已实证、外购样品 5 项业务口径与新业务填写/保存待原件）均已在施工结果 §六与 STATE 如实分列，不构成判据未达标。全部 28 项 PASS_DYNAMIC，B 合法完成（COMPLETE+P6✓，合同链 ctr-a820e88c），建议 DONE。",
+  "failure_counts": {},
+  "checks": [
+    {
+      "id": "C01",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "automation/runs/20261027-common-accept-kw2/query_result.json",
+        "automation/runs/20261027-common-accept-creator5/query_result.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "automation\\runs\\20261027-common-accept-kw2\\query_result.json": "84ea4b9f68863fc905d1ddef5523841a9bc5d80a74cab4395c18551633cac037",
+        "automation\\runs\\20261027-common-accept-creator5\\query_result.json": "eb8d41d3d00ed19476538b95dd2550825a9462c8479cf0fd4dbe7ab941bd7505"
+      }
+    },
+    {
+      "id": "C02",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "automation/runs/20261027-common-accept-tpl2/query_result.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "automation\\runs\\20261027-common-accept-tpl2\\query_result.json": "1bfaf9fb1cedb949714e542f7b6b6d941b6a0fcfe2fdde45b6194845abaa687b"
+      }
+    },
+    {
+      "id": "C03",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "automation/runs/20261027-common-accept-kw2/query_result.json",
+        "automation/runs/20261027-common-accept-zero2/query_result.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "automation\\runs\\20261027-common-accept-kw2\\query_result.json": "84ea4b9f68863fc905d1ddef5523841a9bc5d80a74cab4395c18551633cac037",
+        "automation\\runs\\20261027-common-accept-zero2\\query_result.json": "dfc23e4c27a5f97ed0ced4773c689ce97808f3b5d9ad4a40b65ee645c42e5362"
+      }
+    },
+    {
+      "id": "C04",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        ".claude/skills/bpm-fill-run/references/common-operations.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        ".claude\\skills\\bpm-fill-run\\references\\common-operations.md": "975bc335d164797ad5330a70c9514d04d91dc79d50284aa9738890d31ef1bb7d"
+      }
+    },
+    {
+      "id": "C05",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-independent-rerun.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-independent-rerun.txt": "0b16552a9d891ccdbaa9d49a922f5b0d299fa7e75f6519441600cb4cd45aaee4"
+      }
+    },
+    {
+      "id": "C06",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-independent-rerun.txt",
+        ".gitignore"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-independent-rerun.txt": "0b16552a9d891ccdbaa9d49a922f5b0d299fa7e75f6519441600cb4cd45aaee4",
+        ".gitignore": "a7d1dffe5647aaa092433267810b7fd701474e0d0dba6636537e6e14d3852a85"
+      }
+    },
+    {
+      "id": "C07",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        ".claude/skills/bpm-fill-run/references/common-operations.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        ".claude\\skills\\bpm-fill-run\\references\\common-operations.md": "975bc335d164797ad5330a70c9514d04d91dc79d50284aa9738890d31ef1bb7d"
+      }
+    },
+    {
+      "id": "C08",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-independent-rerun.txt",
+        "automation/offline-verify/20261027-192354-draft-build/build_result.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-independent-rerun.txt": "0b16552a9d891ccdbaa9d49a922f5b0d299fa7e75f6519441600cb4cd45aaee4",
+        "automation\\offline-verify\\20261027-192354-draft-build\\build_result.json": "a6bf46e2c982743a30f5dfbe594993325f62169ca4420ebfc4e15e128d40ca0f"
+      }
+    },
+    {
+      "id": "C09",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "automation/runs/20261027-common-accept-tpl2/query_result.json",
+        ".claude/skills/bpm-fill-run/references/purchased-samples.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "automation\\runs\\20261027-common-accept-tpl2\\query_result.json": "1bfaf9fb1cedb949714e542f7b6b6d941b6a0fcfe2fdde45b6194845abaa687b",
+        ".claude\\skills\\bpm-fill-run\\references\\purchased-samples.md": "d1eb5bc49e48cdbfd3074752f9ad01ecff5d57d1f01256d94f0f5beb53308504"
+      }
+    },
+    {
+      "id": "C10",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        ".claude/skills/bpm-fill-run/references/purchased-samples.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        ".claude\\skills\\bpm-fill-run\\references\\purchased-samples.md": "d1eb5bc49e48cdbfd3074752f9ad01ecff5d57d1f01256d94f0f5beb53308504"
+      }
+    },
+    {
+      "id": "C11",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        ".claude/skills/bpm-fill-run/SKILL.md",
+        ".claude/skills/bpm-fill-run/入口与未来扩展说明.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        ".claude\\skills\\bpm-fill-run\\SKILL.md": "bc975e4e5c7989434b011162504df4e2181ae026ae504a50c4995694cc996253",
+        ".claude\\skills\\bpm-fill-run\\入口与未来扩展说明.md": "a09a9b5f52996a89f20ff2ecd8288531124379f387a1e8e7bd3c580026c1121c"
+      }
+    },
+    {
+      "id": "C12",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/walkthrough-report.md",
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/final-hashes.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\walkthrough-report.md": "144a458dd873cd10e8f630adda8b33926bb848fbd79c818b0803ebeac7d9ae23",
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\final-hashes.txt": "22919b2f8927a4b26ce8eb8b907ca67e14cbc94dae8c4a33f7b38ce0c183235f"
+      }
+    },
+    {
+      "id": "C13",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "feature02-扩展更多单据类型/公共能力与外购样品runbook施工结果.md",
+        "STATE.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "feature02-扩展更多单据类型\\公共能力与外购样品runbook施工结果.md": "e6655b506a0925732e64d9d6dedd6e5e7998c858b87821fe54f3db4a0b260b4b",
+        "STATE.md": "cda04f1d598202b332dcc7e5eec4a4e8aa5c7bee97162da437d618a0360ca977"
+      }
+    },
+    {
+      "id": "BND-01",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "bpm/query.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "bpm\\query.py": "d7d6482dfc20b1f7413a1feda7ce48ce2f86d3afa40df2c7fb72b0caa3581c1f"
+      }
+    },
+    {
+      "id": "BND-02",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        ".gitignore"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        ".gitignore": "a7d1dffe5647aaa092433267810b7fd701474e0d0dba6636537e6e14d3852a85"
+      }
+    },
+    {
+      "id": "BND-03",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "automation/runs/20261027-common-accept-kw2/query_result.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "automation\\runs\\20261027-common-accept-kw2\\query_result.json": "84ea4b9f68863fc905d1ddef5523841a9bc5d80a74cab4395c18551633cac037"
+      }
+    },
+    {
+      "id": "BND-04",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "team-progress/team-workflow/242ccba1c43343f687aa1db0ae014f5b/external-archive-20261027.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "team-progress\\team-workflow\\242ccba1c43343f687aa1db0ae014f5b\\external-archive-20261027.md": "9f866e27a12e6968e289a406a7403cd42ffb13e632f64cb9571315f2ee116de6"
+      }
+    },
+    {
+      "id": "BND-05",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "bpm/types.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "bpm\\types.py": "c2740f18ffe2f0d3492cdec153bc03f4cac5e8b5d65bcb32938b894371ed1357"
+      }
+    },
+    {
+      "id": "BND-06",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        ".claude/skills/bpm-fill-run/references/common-operations.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        ".claude\\skills\\bpm-fill-run\\references\\common-operations.md": "975bc335d164797ad5330a70c9514d04d91dc79d50284aa9738890d31ef1bb7d"
+      }
+    },
+    {
+      "id": "OUT-01",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "bpm/query.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "bpm\\query.py": "d7d6482dfc20b1f7413a1feda7ce48ce2f86d3afa40df2c7fb72b0caa3581c1f"
+      }
+    },
+    {
+      "id": "OUT-02",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        ".claude/skills/bpm-fill-run/references/common-operations.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        ".claude\\skills\\bpm-fill-run\\references\\common-operations.md": "975bc335d164797ad5330a70c9514d04d91dc79d50284aa9738890d31ef1bb7d"
+      }
+    },
+    {
+      "id": "OUT-03",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        ".claude/skills/bpm-fill-run/references/purchased-samples.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        ".claude\\skills\\bpm-fill-run\\references\\purchased-samples.md": "d1eb5bc49e48cdbfd3074752f9ad01ecff5d57d1f01256d94f0f5beb53308504"
+      }
+    },
+    {
+      "id": "OUT-04",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "feature02-扩展更多单据类型/公共能力与外购样品runbook施工结果.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "feature02-扩展更多单据类型\\公共能力与外购样品runbook施工结果.md": "e6655b506a0925732e64d9d6dedd6e5e7998c858b87821fe54f3db4a0b260b4b"
+      }
+    },
+    {
+      "id": "ACC-01",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-independent-rerun.txt",
+        "tests/test_bpm_query.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-independent-rerun.txt": "0b16552a9d891ccdbaa9d49a922f5b0d299fa7e75f6519441600cb4cd45aaee4",
+        "tests\\test_bpm_query.py": "1e8abc46add43bb1938a3bdcf2de62aad796d0dbef932e880c64a3480a1bf08b"
+      }
+    },
+    {
+      "id": "ACC-02",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-independent-rerun.txt",
+        "tests/test_bpm_materials_cli.py"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-independent-rerun.txt": "0b16552a9d891ccdbaa9d49a922f5b0d299fa7e75f6519441600cb4cd45aaee4",
+        "tests\\test_bpm_materials_cli.py": "0d7205dfe2ed9f065dee430006929ad223d340f7eb212fddceccf32b06b63c8b"
+      }
+    },
+    {
+      "id": "ACC-03",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-independent-rerun.txt"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-independent-rerun.txt": "0b16552a9d891ccdbaa9d49a922f5b0d299fa7e75f6519441600cb4cd45aaee4"
+      }
+    },
+    {
+      "id": "ACC-04",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "feature02-扩展更多单据类型/公共能力与外购样品runbook施工结果.md",
+        "STATE.md"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "feature02-扩展更多单据类型\\公共能力与外购样品runbook施工结果.md": "e6655b506a0925732e64d9d6dedd6e5e7998c858b87821fe54f3db4a0b260b4b",
+        "STATE.md": "cda04f1d598202b332dcc7e5eec4a4e8aa5c7bee97162da437d618a0360ca977"
+      }
+    },
+    {
+      "id": "IMPL-01",
+      "status": "PASS_DYNAMIC",
+      "evidence": [
+        "team-progress/team-workflow/9dc3722f20eb474b8851c942a8a78454/round-01/acceptance/A-review-verification.md",
+        "automation/runs/20261027-common-accept-creator6/query_result.json",
+        "automation/runs/20261027-common-accept-dept7/query_result.json"
+      ],
+      "evidence_hashes": {
+        "team-progress\\team-workflow\\9dc3722f20eb474b8851c942a8a78454\\round-01\\acceptance\\A-review-verification.md": "e2c9127b9963d232eedcc732334c06ae9959b83c93f168adde024538aa755d81",
+        "automation\\runs\\20261027-common-accept-creator6\\query_result.json": "247b820c24deeb32b86175eb0bdfc915ec9c9809a6e6dc9d7c5a2d4dbe587d9a",
+        "automation\\runs\\20261027-common-accept-dept7\\query_result.json": "928fcb317223189792de32ecafbf06d2dd50dc60e042b641cf5a4a1f757b5d65"
+      }
+    }
+  ]
+}

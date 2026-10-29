@@ -1,0 +1,44 @@
+# A 独立复跑原始输出（2026-10-27）
+
+## 1. unittest discover（A 本机）
+----------------------------------------------------------------------
+Ran 430 tests in 116.048s
+
+OK (skipped=4)
+exit=0
+
+## 2. 材料入口独立实跑（匿名夹具：CSV前导零+坏xlsx+文本PDF）
+PREPARE summary status=PREPARE_COMPLETE files={"total": 3, "duplicates": 0, "pdf_text_extracted": 1, "structured": 1, "structured_needs_review": 0, "structured_needs_input": 2}
+pending=[{"relative_path": "broken.xlsx", "reason": "不支持或无结构化文本（图片/扫描件走渲染+独立视觉复核）"}, {"relative_path": "ticket.pdf", "reason": "不支持或无结构化文本（图片/扫描件走渲染+独立视觉复核）"}]
+
+## 3. 哈希复算（handoff 15 产物 + 11 证据）
+OK  bpm/query.py
+OK  bpm/materials.py
+OK  tests/test_bpm_query.py
+OK  tests/test_bpm_materials_cli.py
+OK  .claude/skills/bpm-fill-run/references/common-operations.md
+OK  .claude/skills/bpm-fill-run/references/purchased-samples.md
+OK  .claude/skills/bpm-fill-run/SKILL.md
+OK  .claude/skills/bpm-fill-run/入口与未来扩展说明.md
+OK  .claude/skills/bpm-fill-run/references/rd-materials.md
+OK  AGENTS.md
+OK  docs/repository-layout.md
+OK  feature02-扩展更多单据类型/公共能力与外购样品runbook施工结果.md
+OK  STATE.md
+OK  team-task.md
+OK  feature02-扩展更多单据类型/2026-10-27 各类runbook公共能力调用路径轻量固化施工计划.md
+OK  [evidence] team-progress\team-workflow\9dc3722f20eb474b8851c942a8a78454\round-01\enhanced-final-verdict.md
+OK  [evidence] team-progress\team-workflow\9dc3722f20eb474b8851c942a8a78454\round-01\enhanced-final-manifest.txt
+OK  [evidence] team-progress\team-workflow\9dc3722f20eb474b8851c942a8a78454\round-01\walkthrough-report.md
+OK  [evidence] automation\runs\20261027-common-accept-kw2\query_result.json
+OK  [evidence] automation\runs\20261027-common-accept-tpl2\query_result.json
+OK  [evidence] automation\runs\20261027-common-accept-zero2\query_result.json
+OK  [evidence] automation\runs\20261027-common-accept-creator5\query_result.json
+OK  [evidence] automation\runs\20261027-common-accept-creator4\query_result.json
+OK  [evidence] automation\runs\20261027-common-accept-creator6\query_result.json
+OK  [evidence] automation\runs\20261027-common-accept-dept6\query_result.json
+OK  [evidence] automation\runs\20261027-common-accept-dept7\query_result.json
+OK  [evidence] automation\offline-verify\20261027-192354-draft-build\build_result.json
+OK  [evidence] feature02-扩展更多单据类型\公共能力与外购样品runbook施工结果.md
+
+artifacts 15/15 match

@@ -1,0 +1,56 @@
+{
+  "version": 3,
+  "repo": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信",
+  "run": "9dc3722f20eb474b8851c942a8a78454",
+  "seq": 6,
+  "phase": "DONE",
+  "round": 1,
+  "max_round": 16,
+  "sessions": {
+    "B": "706c8bdb-305d-42e6-8d16-94b8465b838f",
+    "A": "210983fd-b14c-489f-9a35-5b52f9a2df12"
+  },
+  "runtime_evidence": {
+    "B": {
+      "runtime": "CLAUDE_GLM",
+      "model": "glm-5.3",
+      "transcript": "C:\\Users\\xy198\\.claude-glm\\projects\\D--Downloads-Mc-Claude-Code-Workshop-2026-Auto-Pilot-----\\706c8bdb-305d-42e6-8d16-94b8465b838f.jsonl"
+    },
+    "A": {
+      "runtime": "CLAUDE_GLM",
+      "model": "glm-5.3",
+      "transcript": "C:\\Users\\xy198\\.claude-glm\\projects\\D--Downloads-Mc-Claude-Code-Workshop-2026-Auto-Pilot-----\\210983fd-b14c-489f-9a35-5b52f9a2df12.jsonl"
+    }
+  },
+  "failures": {},
+  "history": [
+    {
+      "round": 1,
+      "decision": "pass",
+      "review_sha256": "38e1420bc3becba6b80e64b9bf822aa3e10565bf49a46b4be2ce01446e5c7806"
+    }
+  ],
+  "stop_requested": false,
+  "authorization": {
+    "B": "/team-workflow run",
+    "created": "2026-10-27T18:19:44+08:00",
+    "A": "/team-workflow review"
+  },
+  "source_id": "src-b25a30da",
+  "source_sha256": "b25a30dae4579ca0c64062ba51479601564701449e7dcfbd87416f7d19594271",
+  "team_run": "20261027-181944-b25a30da",
+  "pending_old": {
+    "team-task.md": "e66397af2613ae41cf11ca1e66a510912aa741b7f179804fdfe2714053ee3ed7",
+    "team-progress.md": null
+  },
+  "updated": "2026-10-27T19:59:20+08:00",
+  "entered": true,
+  "baseline": "D:\\Downloads\\Mc Claude Code Workshop\\2026-Auto-Pilot 企业微信\\feature02-扩展更多单据类型\\2026-10-27 各类runbook公共能力调用路径轻量固化施工计划.md",
+  "baseline_sha256": "31f03d44564a0e9fdada72ed43b7faf26aff40a9124ad0fb34b6b890e06030f8",
+  "criteria_sha256": "e4858be7ee4c9d36580f99908c79501dfac71a7d8dc3bf325f17259cbcba8af8",
+  "handoff_sha256": "727c00c2f27dbca4e8d2623c6bb806af6815fe3a5ed0401e5b2b185509f9ddef",
+  "last_live": {
+    "team-task.md": "4a5f388ee914fb0b4dfe5f30aeb9989e1e65fccb226017ac2af70a5f350c6f83",
+    "team-progress.md": "bd94c6c9781123be45ffe7c75197e699e6898aeab71c50263dc801420f5036ff"
+  }
+}
