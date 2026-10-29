@@ -1,0 +1,37 @@
+# codex-glm 独立配置（对标 claude-glm 的 CLAUDE_CONFIG_DIR 整目录隔离）
+# 默认走 Zhipu 路径（z.ai 国内直连 via LiteLLM，responses->chat 翻译 + tool_filter，无中转费）。
+# 运行时 codex-glm 函数会用 -c model_provider=... 覆盖，所以这里默认值仅为安全兜底。
+#
+# codex 0.144+ 强制 responses 协议；z.ai / DeepSeek 无 responses 路由（实测 404），
+# 故 Zhipu 路径必须经本地 LiteLLM 翻译；OpenRouter 网关原生支持 responses（需 OPENROUTER_API_KEY）。
+model = "glm-5.2"
+model_provider = "zai-litellm"
+model_context_window = 1000000
+model_auto_compact_token_limit = 240000
+personality = "pragmatic"
+model_reasoning_effort = "high"
+
+# 无人值守权限三件套（double-workflow / 长链任务无人值守必需，2026-08-05 实测定稿）：
+#   sandbox_mode=workspace-write  —— 允许写当前工作区，范围受限
+#   approval_policy=on-request    —— 只在必要时请求审批（非每步都问）
+#   approvals_reviewer=auto_review—— 由 auto_review（glm-4.5-air）自动审危险命令
+# 三者缺一，无人值守会被弹窗卡住。普通单人使用也可保留，想更严可在 session 内 /permissions 收窄。
+sandbox_mode = "workspace-write"
+approval_policy = "on-request"
+approvals_reviewer = "auto_review"
+
+[model_providers.zai-litellm]
+name = "Z.ai via LiteLLM (responses->chat 翻译)"
+base_url = "http://localhost:4000/v1"
+env_key = "LITELLM_KEY"             # 本地代理握手 key（由 codex-glm 函数设为 sk-codex-local）
+wire_api = "responses"
+
+[model_providers.openrouter]
+name = "OpenRouter"
+base_url = "https://openrouter.ai/api/v1"
+env_key = "OPENROUTER_API_KEY"      # 走 OpenRouter 时需要，没有就只用 Zhipu 路径
+wire_api = "responses"
+
+# Windows 沙箱执行模式（命令以非提升权限运行，更安全；codex 在 Windows 的通用行为，非机器特有）
+[windows]
+sandbox = "unelevated"

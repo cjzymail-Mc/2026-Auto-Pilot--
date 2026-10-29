@@ -1,0 +1,24 @@
+# LiteLLM proxy config: codex Responses -> z.ai Chat Completions
+# codex sends a 'responses' API call; LiteLLM translates it to z.ai 'chat/completions'.
+# The 'openai/chat_completions/<model>' prefix triggers the responses->chat bridge in LiteLLM.
+#
+# codex-auto-review (used by approve-for-me / auto_review) is mapped to glm-4.5-air:
+#   glm-4.7-flash hits rate limit 429; glm-4.5-air is stable (200). air is lighter for high-freq review.
+# THIS FILE MUST STAY PURE ASCII (no non-ASCII chars) - Windows Python reads yaml with gbk locale.
+model_list:
+  - model_name: glm-5.2
+    litellm_params:
+      model: openai/chat_completions/glm-5.2
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/ZHIPU_API_KEY
+  - model_name: codex-auto-review
+    litellm_params:
+      model: openai/chat_completions/glm-4.5-air
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/ZHIPU_API_KEY
+litellm_settings:
+  drop_params: true
+  callbacks:
+    - tool_filter.proxy_handler_instance
+general_settings:
+  master_key: sk-codex-local

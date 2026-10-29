@@ -1,0 +1,41 @@
+# LiteLLM proxy config: codex Responses -> z.ai Chat Completions
+# codex sends a 'responses' API call; LiteLLM translates it to z.ai 'chat/completions'.
+# The 'openai/chat_completions/<model>' prefix triggers the responses->chat bridge in LiteLLM.
+#
+# codex-auto-review (used by approve-for-me / auto_review) is mapped to glm-4.5-air:
+#   glm-4.7-flash hits rate limit 429; glm-4.5-air is stable (200). air is lighter for high-freq review.
+# glm-5.3-flash is the fixed vision model for image tasks (vision-read.ps1, mirroring
+#   claude-glm's flash vision-reader). Vision calls arrive as plain HTTP on localhost:
+#   the codex Windows sandbox breaks outbound TLS (Schannel SEC_E_NO_CREDENTIALS),
+#   so LiteLLM (outside the sandbox) performs the HTTPS leg to z.ai.
+# THIS FILE MUST STAY PURE ASCII (no non-ASCII chars) - Windows Python reads yaml with gbk locale.
+model_list:
+  - model_name: glm-5.3
+    litellm_params:
+      model: openai/chat_completions/glm-5.3
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/ZHIPU_API_KEY
+      temperature: 1.0
+      extra_body:
+        thinking:
+          type: enabled
+        reasoning_effort: max
+  - model_name: glm-5.3-flash
+    litellm_params:
+      # standard openai-compatible syntax (NOT the openai/chat_completions/ bridge prefix):
+      # vision-read.ps1 calls this group via direct chat/completions; the bridge prefix
+      # only works for responses-API client calls and sends a wrong model name here (400).
+      model: openai/glm-5.3-flash
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/ZHIPU_API_KEY
+  - model_name: codex-auto-review
+    litellm_params:
+      model: openai/chat_completions/glm-4.5-air
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/ZHIPU_API_KEY
+litellm_settings:
+  drop_params: true
+  callbacks:
+    - tool_filter.proxy_handler_instance
+general_settings:
+  master_key: sk-codex-local
