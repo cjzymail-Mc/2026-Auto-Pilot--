@@ -3019,21 +3019,25 @@ class Probe:
         return PASS
 
     # ---- 浏览器生命周期 ----
-    def _launch_isolated_guarded_context(self):
+    def _launch_isolated_guarded_context(self, *, headless=False):
         """Existing historical-test isolation, with guards before its first page.
 
         Credentials are still read from the original protected SESSION_STATE by
         the caller. No persistent/restored profile pages are opened here.
         """
         from playwright.sync_api import sync_playwright
-        from bpm.network_guard import ContextGuard
         self._pw = sync_playwright().start()
         self._guarded_browser = self._pw.chromium.launch(
-            headless=False, args=["--no-proxy-server"])
-        self.ctx = self._guarded_browser.new_context(
+            headless=headless, args=["--no-proxy-server"])
+        self.ctx = self._new_guarded_context(self._guarded_browser)
+
+    def _new_guarded_context(self, browser, *, storage_state=None):
+        from bpm.network_guard import ContextGuard
+        context = browser.new_context(
             ignore_https_errors=False, service_workers="block",
-            viewport={"width": 1440, "height": 900})
-        self._request_guard = ContextGuard(self.log_event).install(self.ctx)
+            viewport={"width": 1440, "height": 900}, storage_state=storage_state)
+        self._request_guard = ContextGuard(self.log_event).install(context)
+        return context
 
     def _launch(self, headless_exit_ok=False):
         from playwright.sync_api import sync_playwright
