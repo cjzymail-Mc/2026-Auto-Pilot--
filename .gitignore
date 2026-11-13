@@ -2,6 +2,9 @@
 automation/.pw-profile/
 # 本机登录人员及会话探查元数据（不含凭证原值，不入库）
 automation/.local-session/
+# 由审批监控脚本生成的本机设置（与脚本同目录）
+approval_watch.local.json
+approval_watch.local.json.*.tmp
 # 嵌套外部 repo（自有 .git）
 Windows-MCP/
 # Python
