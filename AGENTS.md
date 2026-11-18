@@ -17,7 +17,9 @@ Skill 框架、runbook 登记及新增手册规范见 [入口与未来扩展说�
 
 ## 红线
 
-1. 默认 `fill_only`。普通 `_click_guard` 继续禁止保存/发送/流转/提交/上传/暂存/贴票/审批。仅用户对本具体任务明确要求保存、计划有同 task_id 的 `save_draft` 授权，专用 `SaveController` 才可在完整独立回读、身份/来源/配置/计划绑定、金额闭合、终局截图和点击前复核通过后，执行一次唯一精确“保存”。禁止保存并提交、未知弹框自动确认、直接写接口及放宽通用守卫；施工授权不等于虚构实单保存授权。
+1. 执行器默认 `fill_only`。普通 `_click_guard` 继续禁止保存/发送/流转/提交/上传/暂存/贴票/审批。保存须有用户对本任务的明确要求，或属于用户明确授权的专项日常场景，并生成同 task_id 的 `save_draft` 授权。专用 `SaveController` 在完整独立回读、身份/来源/配置/计划绑定、金额闭合、终局截图和点击前复核通过后，才可执行一次唯一精确“保存”。禁止保存并提交、未知弹框自动确认、直接写接口及放宽通用守卫；施工授权不等于虚构实单保存授权。
+   真实出差单日常授权（2026-11-18）：用户提供行程明细截图并请求填报真实新出差单时，agent 自动查同账号历史出差单作参考，无适用参考则用当前 OA 默认值及本次事实，核验后保存草稿并在任务回复中提醒用户审核。只适用于[出差单 runbook](.claude/skills/bpm-fill-run/references/evection.md)已支持范围；当次明确只填或暂不保存优先，缺必填事实先核实。此授权不含提交或流转，不扩展到其他单据。
+   待审监控的专用授权例外：用户已授权当前账号收到的“快递单”寄件业务单自动流转，限 `approval_watch.py` → `bpm.approval` 的专用控制器。必须核实 `/oa/express`、真实页面组件/单号/待办归属，正常弹出加载后展示满 6 秒，再通过标准流转窗口沿用系统默认下一节点；不自行改选人员、填写业务内容或确认额外弹框。首次点击前持久化流转意图，已有意图或结果不明不自动重试；匹配响应及原待办消失后才能报告成功。其他单据（含快递费报销）仅提醒，新增自动审批类型须用户另行明确授权。普通填写守卫及保存边界不变；记录、扩展和验证见[自动审批说明](feature03-自动审批快递单/自动审批快递单-使用与验证.md)。
 2. `automation/.pw-profile/` 含活体凭证，绝不复制进 Git、日志、报告、材料清单或测试工件。`automation/.local-session/` 的个人会话元数据也不进入 Git、通用案例、材料 manifest 或跨 agent 消息；禁止 `git add -f`。
 3. 结果以 `automation/runs/<run>/events.jsonl`（追加式）、`attempt_NNN/stage1_result.json` 及该 attempt 证据为准；准备结果在 run 根。run 截图自 2026-10-27 分级入库（过程截图及票据渲染页不入库，可能目视含银行资料的真实表单画面仅本地保留，判定记录见 `automation/maintenance/history-purge-20261027/`）。报告保存成功必须证明唯一新单号/UUID、未提交状态及重开持久化回读；fill_only 验收不要求这些，也不测试保存按钮。
 4. `automation/task-registry/` 保留跨 run 意图。已有 `SAVE_INTENT`、`SAVE_UNCERTAIN` 或保存成功记录只读核实，禁止再保存/另建。未保存页恢复当前仅盘点并返回 `NEEDS_INPUT`；不得删 registry、换 task_id 或强关旧页规避。单 profile 单执行者，探查不得导航或关闭其他执行者的未保存页。
@@ -37,6 +39,7 @@ Skill 框架、runbook 登记及新增手册规范见 [入口与未来扩展说�
 
 Runbook 导航：由统一入口按真实模板及本次材料路由，具体支持范围与验收状态见手册及 [STATE.md](STATE.md)。查单（关键词/精确单号）、读模板、离线材料准备及结果定位的公共调用路径见 [公共能力调用参考](.claude/skills/bpm-fill-run/references/common-operations.md)；`python -X utf8 -m bpm.query` 查询入口内完成的同等真实认证可替代先独立启动登录。
 
+- [出差单](.claude/skills/bpm-fill-run/references/evection.md)：行程明细截图，自动查参考，保存草稿后提醒审核；走独立 `bpm.evection` 入口。
 - [自驾公出类](.claude/skills/bpm-fill-run/references/self-drive.md)。
 - [快递费](.claude/skills/bpm-fill-run/references/express.md)：普通全额，无关联及物品档案。
 - [研发材料费](.claude/skills/bpm-fill-run/references/rd-materials.md)：现有档案行金额，关联及费用说明为空。
