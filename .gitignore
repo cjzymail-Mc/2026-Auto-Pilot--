@@ -5,6 +5,8 @@ automation/.local-session/
 # 由审批监控脚本生成的本机设置（与脚本同目录）
 approval_watch.local.json
 approval_watch.local.json.*.tmp
+# 自动流转意图及审批记录：本机幂等账本，禁止入库或删除以重试
+/automation/approval-registry/
 # 嵌套外部 repo（自有 .git）
 Windows-MCP/
 # Python
@@ -810,3 +812,16 @@ automation/type-replay-plans/tpl-copy-review-20261027/fill_plan_b.json
 /docs/qiaodan-domain-suffix-direct-20261029.md
 /docs/oa-test-drafts-stage-20261029.md
 /docs/login-reuse-20261028.md
+
+# ---- 2026-11-18 一次性测试/验证与跨session交接产物仅本地保留（结论已固化于 feature03 各 .md 记录） ----
+/debug.log
+/automation/verify-clash-modes-20261116.ps1
+feature03-自动审批快递单/independent_review_20261116.py
+feature03-自动审批快递单/network_mode_worker_20261116.py
+feature03-自动审批快递单/verify_network_modes_20261116.py
+feature03-自动审批快递单/20261116 bug报错信息.md
+feature03-自动审批快递单/交接状态-20261116.md
+feature03-自动审批快递单/交给原session执行-20261116.txt
+feature03-自动审批快递单/交给无Clash依赖agent-断网模式验收-20261116.md
+# 真实出差单模板截图（真实表单画面、无文档引用，仅本地保留）
+feature02-扩展更多单据类型/出差单模板.jpg
