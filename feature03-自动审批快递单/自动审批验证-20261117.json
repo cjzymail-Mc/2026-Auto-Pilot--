@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-11-17T16:55:56.868533+08:00",
+  "authorization": "USER-20261117-SHIPPING-ONLY-DISPLAY-6S",
+  "scope": "寄件快递单 /oa/express；展示满 6 秒；其他类型人工处理",
+  "implemented": true,
+  "live_auto_flow_verified": false,
+  "existing_monitor_restarted": false,
+  "activation": "下次正常启动 approval_watch.py 加载；单 profile 单执行者",
+  "final_targeted": {
+    "tests": 72,
+    "passed": 72,
+    "log": "automation/offline-verify/20261117-shipping-auto/targeted-final.txt",
+    "details": {
+      "exit_code": 0,
+      "seconds": 29.02,
+      "results": [
+        "Ran 72 tests in 27.992s",
+        "OK"
+      ]
+    }
+  },
+  "selftest": {
+    "passed": true,
+    "log": "automation/offline-verify/20261117-shipping-auto/selftest.txt"
+  },
+  "full": {
+    "tests": 633,
+    "passed": 578,
+    "failures": 18,
+    "errors": 33,
+    "skipped": 4,
+    "new_failure_names": [],
+    "categories_by_prior_classification": {
+      "missing_historical_plan": 8,
+      "missing_jsonschema": 8,
+      "pdf_extraction_and_plan_chain": 35
+    },
+    "log": "automation/offline-verify/20261117-shipping-auto/full.txt",
+    "scope": "最后表格可见性兼容调整之前；调整后复跑最终 72 项相关回归",
+    "source_snapshot": "automation/offline-verify/20261117-shipping-auto/full-source-before-dom-fix.json"
+  },
+  "intermediate_fixture_failures": {
+    "attempts": 2,
+    "reason": "零尺寸合成用例的布局/可见性假设；最终用显式零尺寸及可见子行核验修正",
+    "logs": [
+      "automation/offline-verify/20261117-shipping-auto/targeted-final-attempt1.txt",
+      "automation/offline-verify/20261117-shipping-auto/targeted-final-attempt2.txt"
+    ]
+  },
+  "final_source_sha256": {
+    "bpm/approval.py": "e564931034cf9b196a6b04789fd6fa0162536da4f0eaf7815c7077e1a8b25b1c",
+    "feature03-自动审批快递单/approval_watch.py": "04d6b22db735a06ce4516b5656ac091c3e4a8f220de242ac71f53b9a88946ea2",
+    "tests/test_approval_auto.py": "a85b8c22b777e798f6cbe94f1a264cf9a7e93218906115c553c251a367f739fa",
+    "tests/test_approval_auto_dom.py": "98ade5e3eaee2f96f30716a3ba8db2430691be88bf5ff8457e4d4c2326611e60",
+    "tests/test_approval_watch_login.py": "7b5091b1cc77f7ed3ee5a1b86e73bbc6213c9dce53c3549066dab6055953bc19",
+    "tests/test_approval_console.py": "f33b0491d299b3491917b1eac67e18a31ec0f97e68da096215c7f8619589f120",
+    ".gitignore": "11f5a1cf60ed50d58804f43501894e07eb1268567a45896590bd9bc44aef08ff",
+    "AGENTS.md": "2248c8163dd7c07cfd30f3e79681dea30d8859ceab58ab34f978a7baecc37453"
+  },
+  "public_frontend_evidence_sha256": {
+    "main-es2015.bc38a6939faa27bf48a6.js": "4e101d3073c20eec21b1277291864beb5a61997665dde46ec93a485c71b1a77b",
+    "8-es2015.3be325ccb8ee21780631.js": "29ea95acc1bca91575200ece6a0a88a093225f5478e23fd68e140100cd22cc2a"
+  },
+  "live_limits": [
+    "真实快递单流转首验尚未执行",
+    "未重启现有旧进程或并行占用 profile",
+    "离线合成浏览器不能替代真实 OA 验收"
+  ]
+}

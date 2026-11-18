@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-16",
+  "scope": "offline synthetic observations only",
+  "source_sha256": {
+    "feature03-自动审批快递单/approval_watch.py": "6df27c80effec8fd77c4d5846bd821011fedd3ae09f10283c240d3f58fcf954f",
+    "bpm/direct_network.py": "7d0619fd5c0b0bda1a2873b1a9a471fd75defcf40376368f34c5079786492537",
+    "bpm/network_guard.py": "d9ba76bcb6e21338f73cb2fc854c50fe7987232d5c25bfcb659a188223856383",
+    "bpm/browser_probe.py": "817df44929484ce31148552a5f5f25a6f8771395f3cc6323d823df45ad8891c6",
+    "tests/test_approval_watch_login.py": "be5317ab83d32d0a265d1e20386754e12dd3a601fa0eb544cdb316b6b1bcd522"
+  },
+  "files_changed_during_probe": [],
+  "observations": [
+    {
+      "id": "R1",
+      "case": "optional_host_failure_then_login_gate",
+      "observed": "NetworkUnavailable",
+      "expected": "optional failure alone must not veto a valid scan gate"
+    },
+    {
+      "id": "R2",
+      "case": "force_scan_completed_then_handoff_network_failure",
+      "observed_scan_wait_calls": 2,
+      "expected_scan_wait_calls": 1
+    },
+    {
+      "id": "R3",
+      "case": "first_inbox_open_network_failure",
+      "observed": "timeout_escapes_monitor",
+      "open_calls": 1,
+      "expected": "bounded network retry before monitor ready"
+    },
+    {
+      "id": "R4",
+      "case": "visible_context_cleanup_raises",
+      "observed_browser_close_calls": 0,
+      "expected_browser_close_calls": 1
+    },
+    {
+      "id": "R5",
+      "case": "connect_target_after_validating_resolved_addresses",
+      "observed_connect_target": [
+        "bpm.qiaodan.com",
+        443
+      ],
+      "reported_status": "PASS",
+      "expected": "connect a validated address, retain hostname for SNI and certificate verification"
+    }
+  ],
+  "existing_selected_suite": {
+    "run": 13,
+    "failures": 0,
+    "errors": 2,
+    "log": "..EE..........\n======================================================================\nERROR: test_persistent_gate_and_unknown_stop_at_deadline (review_existing_tests.BackgroundEntryTests.test_persistent_gate_and_unknown_stop_at_deadline) (state='LOGIN_REQUIRED')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<repo>\\tests\\test_approval_watch_login.py\", line 47, in test_persistent_gate_and_unknown_stop_at_deadline\n    self.assertEqual(watch.background_entry(p), state)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<repo>\\feature03-自动审批快递单\\approval_watch.py\", line 372, in background_entry\n    raise NetworkUnavailable(\"OA 网络请求未完成，正在等待直连恢复。\")\napproval_watch.NetworkUnavailable: OA 网络请求未完成，正在等待直连恢复。\n\n======================================================================\nERROR: test_persistent_gate_and_unknown_stop_at_deadline (review_existing_tests.BackgroundEntryTests.test_persistent_gate_and_unknown_stop_at_deadline) (state='UNKNOWN')\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<repo>\\tests\\test_approval_watch_login.py\", line 47, in test_persistent_gate_and_unknown_stop_at_deadline\n    self.assertEqual(watch.background_entry(p), state)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<repo>\\feature03-自动审批快递单\\approval_watch.py\", line 372, in background_entry\n    raise NetworkUnavailable(\"OA 网络请求未完成，正在等待直连恢复。\")\napproval_watch.NetworkUnavailable: OA 网络请求未完成，正在等待直连恢复。\n\n----------------------------------------------------------------------\nRan 13 tests in 0.071s\n\nFAILED (errors=2)\n"
+  }
+}
