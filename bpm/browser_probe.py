@@ -3143,9 +3143,17 @@ class Probe:
     def _close_browser(self):
         """结束前确认浏览器进程退出。"""
         try:
-            self.ctx.close()
+            from bpm.network_guard import ContextGuard
+            ContextGuard.close(self.ctx)
         except Exception:
             pass
+        for attr in ("_guarded_browser", "_login_browser"):
+            browser = getattr(self, attr, None)
+            if browser is not None:
+                try:
+                    browser.close()
+                except Exception:
+                    pass
         try:
             self._pw.stop()
         except Exception:

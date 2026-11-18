@@ -66,6 +66,42 @@ def guarded_get(probe, url, **kwargs):
 class ContextGuard:
     def __init__(self, log_event=None):
         self.log = log_event
+        self.failures = {}
+        self.closing = False
+
+    def begin_attempt(self):
+        self.failures.clear()
+
+    def critical_failures(self):
+        return list(self.failures.values())
+
+    @staticmethod
+    def close(context):
+        """Block new network traffic, drain handlers, then close our context.
+
+        Taking the context offline first preserves the deny boundary while
+        unroute_all(wait) finishes in-flight fetches (bounded by _fetch timeout).
+        """
+        guard = guard_for(context)
+        if guard is None:
+            context.close()  # Preserve unguarded/public lifecycle behavior.
+            return
+        guard.closing = True
+        primary = None
+        try:
+            context.set_offline(True)
+            context.unroute_all(behavior="wait")
+        except Exception as exc:
+            if transport_error_reason(exc) != "CLOSED":
+                primary = exc
+        finally:
+            try:
+                context.close()
+            except Exception as exc:
+                if primary is None and transport_error_reason(exc) != "CLOSED":
+                    primary = exc
+        if primary is not None:
+            raise primary
 
     @staticmethod
     def _fetch(route):
@@ -76,33 +112,58 @@ class ContextGuard:
             raise NetworkBlocked("GUARD_REQUIRES_CONTEXT_WITHOUT_EXISTING_PAGES")
         if not callable(getattr(context, "route_web_socket", None)):
             raise NetworkBlocked("WEBSOCKET_BLOCKING_UNAVAILABLE")
+        context._bpm_guard = self
 
         def http(route):
             url = route.request.url
+            if self.closing:
+                try:
+                    route.abort("blockedbyclient")
+                except Exception as exc:
+                    if transport_error_reason(exc) != "CLOSED":
+                        raise
+                return
             if not authority(url)[2]:
+                if critical_request(route.request):
+                    self.failures[url] = "POLICY"
                 _emit(self.log, "UNAPPROVED_TARGET", url, "page_http")
                 route.abort("blockedbyclient")
                 return
             response = None
             try:
                 response = self._fetch(route)
+                if response.status >= 500 and critical_request(route.request):
+                    self.failures[url] = "HTTP_5XX"
+                elif response.status in (401, 403) and critical_request(route.request):
+                    self.failures[url] = "AUTH"
+                else:
+                    self.failures.pop(url, None)
                 if response.status in REDIRECT_STATUSES:
+                    if critical_request(route.request):
+                        self.failures[url] = "POLICY"
                     location = response.headers.get("location", response.headers.get("Location", ""))
                     _emit(self.log, "HTTP_REDIRECT_NOT_FOLLOWED", urljoin(url, location), "page_http")
                     route.abort("blockedbyclient")
                 else:
                     route.fulfill(response=response)
             except Exception as exc:
+                reason = transport_error_reason(exc)
+                if not self.closing and reason != "CLOSED" and critical_request(route.request):
+                    self.failures[url] = reason
                 if callable(self.log):
                     self.log(event="request_guard_fetch_failed", error_type=type(exc).__name__,
-                             host=authority(url)[0])
+                             host=authority(url)[0], reason=reason)
                 try:
                     route.abort("failed")
                 except Exception:
                     pass
             finally:
                 if response is not None:
-                    response.dispose()
+                    try:
+                        response.dispose()
+                    except Exception as exc:
+                        if callable(self.log):
+                            self.log(event="request_guard_dispose_failed", error_type=type(exc).__name__)
 
         def websocket(route):
             # No WebSocket is required by the mature XHR-based test runbooks.
@@ -123,3 +184,35 @@ class ContextGuard:
                      redirects="not_followed", service_workers="block", websocket="blocked",
                      transport="existing_no_proxy_server", tls_validation=True)
         return self
+
+
+def guard_for(context):
+    guard = getattr(context, "_bpm_guard", None)
+    return guard if isinstance(guard, ContextGuard) else None
+
+
+def critical_request(request):
+    # Navigation/code required to render login, plus observed account endpoints.
+    # Company telemetry and unrelated API calls cannot veto a genuine QR gate.
+    parsed = urlsplit(request.url)
+    if parsed.hostname == "rybbit.dev.qiaodan.com" and request.resource_type != "document":
+        return False
+    return (request.resource_type in {"document", "script", "stylesheet"}
+            or (parsed.hostname == "admin.api.qiaodan.com"
+                and parsed.path.lower().startswith(("/account/", "/auth/"))))
+
+
+def transport_error_reason(exc):
+    """Classify diagnostics without exporting URLs, headers or response bodies."""
+    message = str(exc).upper()
+    for reason, markers in (
+        ("DNS", ("ENOTFOUND", "EAI_AGAIN", "NAME_NOT_RESOLVED")),
+        ("TIMEOUT", ("TIMED OUT", "TIMEOUT", "ETIMEDOUT")),
+        ("PROXY", ("PROXY", "TUNNEL_CONNECTION_FAILED")),
+        ("TLS", ("CERT", "SSL", "TLS")),
+        ("CLOSED", ("CLOSED", "DISPOSED")),
+        ("CONNECTION", ("ECONN", "ENETUNREACH", "EHOSTUNREACH")),
+    ):
+        if any(marker in message for marker in markers):
+            return reason
+    return "NETWORK"
