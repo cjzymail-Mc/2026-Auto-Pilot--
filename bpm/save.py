@@ -43,7 +43,7 @@ class SaveController:
         self.expected_operator = expected_operator
         from bpm.plan import plan_hash
         self.plan_hash = plan_hash(self.plan)
-        self.config_sha256 = config_hash(self.plan.get("document_type"))
+        self.config_sha256 = self._config_hash()
         self.task_id = self.plan.get("task_id")
         if not isinstance(self.task_id, str) or not self.task_id.strip():
             raise SaveError("task_id required")
@@ -55,6 +55,9 @@ class SaveController:
         self.journal = self.registry / (name + ".json")
         self.lock = self.registry / (name + ".lock")
         self.state = None
+
+    def _config_hash(self):
+        return config_hash(self.plan.get("document_type"))
 
     def _write_json(self, path, data):
         temporary = path.with_suffix(path.suffix + ".tmp")
@@ -103,7 +106,7 @@ class SaveController:
             issues.append({"code": "NO_TASK_DRAFT_AUTHORIZATION"})
         if plan_hash(self.plan) != self.plan_hash:
             issues.append({"code": "PLAN_CHANGED"})
-        if config_hash(self.plan.get("document_type")) != self.config_sha256:
+        if self._config_hash() != self.config_sha256:
             issues.append({"code": "CONFIG_CHANGED"})
         return issues
 
@@ -170,7 +173,7 @@ class SaveController:
             return self._transition("SAVE_UNCERTAIN", reason="Persisted readback mismatch",
                                     verification=verification)
         screenshot = self._screenshot("draft_saved")
-        if config_hash(self.plan.get("document_type")) != self.config_sha256:
+        if self._config_hash() != self.config_sha256:
             return self._transition("SAVE_UNCERTAIN", reason="Configuration changed during persisted readback")
         return self._transition("SUCCESS_DRAFT_SAVED", identity=identity,
                                 pending_identity=identity, screenshot=screenshot,
@@ -199,7 +202,7 @@ class SaveController:
                 self.state = json.loads(self.journal.read_text(encoding="utf-8"))
                 if self.state.get("task_id") != self.task_id or self.state.get("plan_hash") != self.plan_hash:
                     raise SaveError("Existing task journal binds a different plan; cannot overwrite or save")
-                if self.state.get("config_sha256") != self.config_sha256 or config_hash(self.plan.get("document_type")) != self.config_sha256:
+                if self.state.get("config_sha256") != self.config_sha256 or self._config_hash() != self.config_sha256:
                     raise SaveError("Existing task journal binds a different configuration; read-only investigation required")
                 status = self.state.get("status")
                 if status not in {"NEEDS_INPUT", "READBACK_MISMATCH", "SAVE_INTENT", "SAVE_UNCERTAIN", "SUCCESS_DRAFT_SAVED"}:
@@ -240,7 +243,7 @@ class SaveController:
             self._transition("SAVE_INTENT", screenshot=screenshot,
                              pre_save_snapshot_hash=fresh["snapshot_hash"], button=button)
             try:
-                if config_hash(self.plan.get("document_type")) != self.config_sha256:
+                if self._config_hash() != self.config_sha256:
                     return self._transition("SAVE_UNCERTAIN", reason="Configuration changed immediately before click")
                 self.adapter.click_exact_save()
                 observation = self.adapter.observe_saved()
