@@ -19,6 +19,7 @@ Skill 框架、runbook 登记及新增手册规范见 [入口与未来扩展说�
 
 1. 执行器默认 `fill_only`。普通 `_click_guard` 继续禁止保存/发送/流转/提交/上传/暂存/贴票/审批。保存须有用户对本任务的明确要求，或属于用户明确授权的专项日常场景，并生成同 task_id 的 `save_draft` 授权。专用 `SaveController` 在完整独立回读、身份/来源/配置/计划绑定、金额闭合、终局截图和点击前复核通过后，才可执行一次唯一精确“保存”。禁止保存并提交、未知弹框自动确认、直接写接口及放宽通用守卫；施工授权不等于虚构实单保存授权。
    真实出差单日常授权（2026-11-18）：用户提供行程明细截图并请求填报真实新出差单时，agent 自动查同账号历史出差单作参考，无适用参考则用当前 OA 默认值及本次事实，核验后保存草稿并在任务回复中提醒用户审核。只适用于[出差单 runbook](.claude/skills/bpm-fill-run/references/evection.md)已支持范围；当次明确只填或暂不保存优先，缺必填事实先核实。此授权不含提交或流转，不扩展到其他单据。
+   真实请假单日常授权（2026-11-20）：用户提供明确请假事实（类型、起止时分、事由）并请求填报真实新请假单时，agent 核验后自动保存草稿，保存成功后在任务回复中提醒用户审核。只适用于[请假单 runbook](.claude/skills/bpm-fill-run/references/leave.md)已支持范围；当次明确只填或暂不保存优先，缺必填事实先核实。此授权不含提交、流转或推送，不扩展到其他单据。
    待审监控的专用授权例外：用户已授权当前账号收到的“快递单”寄件业务单自动流转，限 `approval_watch.py` → `bpm.approval` 的专用控制器。必须核实 `/oa/express`、真实页面组件/单号/待办归属，正常弹出加载后展示满 6 秒，再通过标准流转窗口沿用系统默认下一节点；不自行改选人员、填写业务内容或确认额外弹框。首次点击前持久化流转意图，已有意图或结果不明不自动重试；匹配响应及原待办消失后才能报告成功。其他单据（含快递费报销）仅提醒，新增自动审批类型须用户另行明确授权。普通填写守卫及保存边界不变；记录、扩展和验证见[自动审批说明](feature03-自动审批快递单/自动审批快递单-使用与验证.md)。
 2. `automation/.pw-profile/` 含活体凭证，绝不复制进 Git、日志、报告、材料清单或测试工件。`automation/.local-session/` 的个人会话元数据也不进入 Git、通用案例、材料 manifest 或跨 agent 消息；禁止 `git add -f`。
 3. 结果以 `automation/runs/<run>/events.jsonl`（追加式）、`attempt_NNN/stage1_result.json` 及该 attempt 证据为准；准备结果在 run 根。run 截图自 2026-10-27 分级入库（过程截图及票据渲染页不入库，可能目视含银行资料的真实表单画面仅本地保留，判定记录见 `automation/maintenance/history-purge-20261027/`）。报告保存成功必须证明唯一新单号/UUID、未提交状态及重开持久化回读；fill_only 验收不要求这些，也不测试保存按钮。
@@ -32,6 +33,7 @@ Skill 框架、runbook 登记及新增手册规范见 [入口与未来扩展说�
 - 使用 Claude-GLM team-workflow 时保持 A/B 两个独立 session 常驻。等待方挂唯一 Bash `run_in_background:true` helper wait（3600 秒），通过原生通知唤醒，先 status 再接棒；不以人工轮询替代，不另增常驻调度角色。重型测试/构建/OCR/整单错峰；宿主要求停止时遵守，不无限重挂。
 - A 按冻结基线验收和派工，B 仅按自足 team-task 与当轮合同执行；多 agent 按文件所有权分工并交接原始证据，不覆盖他人修改。施工和内容验收由 agent 完成，不要求用户现场对照、手工保存或验收签字。
 - 中断先核实工件、执行者、锁、registry 和页面。不得手改状态、清失败计数、换绑 session 或基线；status 仅反映 workflow 状态，不证明 waiter/进程仍存活。
+- 待审监控 `approval_watch.py` 常驻持有 OA profile 锁。开发新 skill、探查新业务类型等需要独占 profile 的工作与其冲突时，提醒用户手工关闭监控并确认其退出，不代为结束进程；任务结束并释放锁后再提醒用户恢复监控，重启即加载当前版本（含已授权的寄件快递单自动审批）。
 - **明确新任务前，team-workflow 按 `prepare-new` 自动收尾旧 run**：终态归档；中断任务须确认执行者/waiter 已退出、根文件属于旧任务，再保留原字节和失败历史，记未完成取消后归档。使用当前真实调用者，不冒用原 session；不覆盖新草稿、不解除同一任务人工门、不恢复旧业务。进程/归属不明、旧版或损坏状态仍交外部 agent，按 [U6 维护指南](feature01-细化报销skill/team-workflow升级建议.md#u6外部-agent-维护保留精简指南框架) 在当次授权内诊断。只查状态不触发清理，历史事故授权不自动扩大。
 - 待评估的升级项以专题文档为准；未获选择不自动实施。阶段合格后继续推进合同终点，不因局部完成或离线通过就宣布整体完成。
 
@@ -40,6 +42,7 @@ Skill 框架、runbook 登记及新增手册规范见 [入口与未来扩展说�
 Runbook 导航：由统一入口按真实模板及本次材料路由，具体支持范围与验收状态见手册及 [STATE.md](STATE.md)。查单（关键词/精确单号）、读模板、离线材料准备及结果定位的公共调用路径见 [公共能力调用参考](.claude/skills/bpm-fill-run/references/common-operations.md)；`python -X utf8 -m bpm.query` 查询入口内完成的同等真实认证可替代先独立启动登录。
 
 - [出差单](.claude/skills/bpm-fill-run/references/evection.md)：行程明细截图，自动查参考，保存草稿后提醒审核；走独立 `bpm.evection` 入口。
+- [请假单](.claude/skills/bpm-fill-run/references/leave.md)：明确事实（类型/起止时分/事由），核验后自动保存草稿并提醒审核（2026-11-20 日常授权），严禁流转/推送；走独立 `bpm.leave` 入口。
 - [自驾公出类](.claude/skills/bpm-fill-run/references/self-drive.md)。
 - [快递费](.claude/skills/bpm-fill-run/references/express.md)：普通全额，无关联及物品档案。
 - [研发材料费](.claude/skills/bpm-fill-run/references/rd-materials.md)：现有档案行金额，关联及费用说明为空。
