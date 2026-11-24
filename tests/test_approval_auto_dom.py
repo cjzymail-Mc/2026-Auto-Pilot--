@@ -145,6 +145,30 @@ class ApprovalDOMTests(unittest.TestCase):
         self.assertEqual(summary["detail_count"], 1)
         self.assertEqual(summary["items"], ["测试样品 × 2"])
 
+    def test_zero_sized_header_host_with_number_in_form_label_is_verified(self):
+        # 2026-11-24 真实页面（approval-diag 探查 13926110314）：header host 为
+        # 零尺寸 inline box、文本只有「快递单」，单号渲染为 qd-dynamic-form 内
+        # 的 label.print-label。编号核对看渲染内容，不依赖 host 可见性。
+        self.ready()
+        html = (FORM
+                .replace('<qd-dynamic-form-header>单号 SHIP-SYNTHETIC-001</qd-dynamic-form-header>',
+                         '<qd-dynamic-form-header style="display:block;width:0;height:0;overflow:hidden">快递单</qd-dynamic-form-header>')
+                .replace('<qd-dynamic-form>寄件测试',
+                         '<qd-dynamic-form><label class="print-label">SHIP-SYNTHETIC-001</label>寄件测试'))
+        self.page.set_content(html)
+        self.assertFalse(self.page.locator("qd-dynamic-form-header").is_visible())
+        summary = ShippingHandler().snapshot(self.page, TASK, URL)
+        self.assertEqual(summary["number"], TASK["bizNumber"])
+        self.assertEqual(summary["detail_count"], 1)
+        self.assertEqual(summary["items"], ["测试样品 × 2"])
+
+    def test_missing_header_component_is_rejected(self):
+        self.ready()
+        self.page.set_content(FORM.replace(
+            '<qd-dynamic-form-header>单号 SHIP-SYNTHETIC-001</qd-dynamic-form-header>', ''))
+        with self.assertRaises(ApprovalStopped):
+            ShippingHandler().snapshot(self.page, TASK, URL)
+
     def test_only_unique_default_node_and_standard_dialog_accepted(self):
         self.ready()
         for dialog in (DIALOG.replace("ui-state-highlight", ""), DIALOG):

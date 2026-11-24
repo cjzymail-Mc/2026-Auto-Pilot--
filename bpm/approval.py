@@ -82,12 +82,19 @@ class ShippingHandler:
         root = page.locator(self.component + ":visible")
         if root.count() != 1:
             raise ApprovalStopped("无法唯一确认寄件快递单页面")
-        header = root.locator("qd-dynamic-form-header:visible")
-        if header.count() != 1:
+        # 2026-11-24 live probe (approval-diag): the header host renders as a
+        # zero-sized inline box holding only the caption "快递单"; the document
+        # number is a label.print-label inside qd-dynamic-form. Custom element
+        # hosts have no reliable visibility box — check rendered content instead.
+        headers = root.locator("qd-dynamic-form-header")
+        if headers.count() != 1:
             raise ApprovalStopped("无法核对单据编号")
-        header_values = header.evaluate("e => [e.innerText, ...Array.from(e.querySelectorAll('input'), x => x.value)]")
+        values = root.locator("qd-dynamic-form").evaluate_all(
+            "es => es.flatMap(e => [e.innerText, ...Array.from(e.querySelectorAll('input,textarea,select'), x => x.value)])")
+        header_values = headers.evaluate_all(
+            "es => es.flatMap(e => [e.innerText, e.textContent, ...Array.from(e.querySelectorAll('input'), x => x.value)])")
         number = re.escape(task["bizNumber"])
-        if not any(re.search(r"(?<![A-Za-z0-9])" + number + r"(?![A-Za-z0-9])", v or "") for v in header_values):
+        if not any(re.search(r"(?<![A-Za-z0-9])" + number + r"(?![A-Za-z0-9])", v or "") for v in header_values + values):
             raise ApprovalStopped("单据页面编号与待办不一致")
         # A custom element can have a zero-sized inline box even when its table
         # rows are visible. Check the rendered rows rather than the host box.
@@ -99,8 +106,6 @@ class ShippingHandler:
         if rows.count() == 0:
             raise ApprovalStopped("快递明细为空或结构变化")
         # Read rendered values only. Never access Angular objects or write DOM.
-        values = root.locator("qd-dynamic-form:visible").evaluate_all(
-            "es => es.map(e => [e.innerText, ...Array.from(e.querySelectorAll('input,textarea,select'), x => x.value)])")
         details = rows.evaluate_all(
             "es => es.map(e => [e.innerText, ...Array.from(e.querySelectorAll('input,textarea,select'), x => x.value)])")
         items = []
