@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 """Save a leave draft after source-bound UI verification; routing/push stays prohibited.
 
-The leave save endpoint is not a static literal in the SPA bundles (verified
-2026-11-20 --api-scan), so the adapter gates by namespace instead: exactly one
-POST to oa.api.qiaodan.com /Leave* whose body carries this form's unique reason
-and operator. The concrete path is recorded from the first real save response
-and journaled via the standard SaveController registry.
+The save click can admit one POST to the observed /Leave endpoint. OA may
+then attempt to generate a workflow. That request remains blocked, and a
+matching warning is resolved by independently reopening the saved draft.
 """
 from __future__ import annotations
 
@@ -22,8 +20,10 @@ from bpm.save import SaveController, SaveError
 
 API_HOST = "oa.api.qiaodan.com"
 FORM_PATH = "/oa/leave"
-LEAVE_API_PATH = re.compile(r"/[Ll]eave(?:/[A-Za-z0-9_/.-]+)?")
-QUERY_PATH = "/leave/query/20/1"
+SAVE_URL = f"https://{API_HOST}/Leave"
+FLOW_GENERATE_URL = "https://admin.api.qiaodan.com/flow/generate"
+SAVE_DIALOG_SELECTOR = ".ui-dialog:visible,[role=alertdialog]:visible"
+CONNECTION_WARNING = "服务器连接失败"
 UUID_SHAPE = re.compile(r"[0-9a-fA-F-]{32,36}")
 NUMBER_SHAPE = re.compile(r"[A-Za-z0-9-]{6,50}")
 
@@ -137,25 +137,23 @@ class LeaveSaveAdapter:
         self.principal = principal
         self.operator = plan["operator"]
         self.allowed = False
-        self.used = False
+        self.save_request = None
+        self.flow_generate_blocked = False
         self.reply = None
         self.side = None
         self.saved_path = None
 
-    def _is_module_post(self, url):
-        return (url.scheme == "https" and url.netloc == API_HOST and not url.query
-                and not url.fragment and LEAVE_API_PATH.fullmatch(url.path)
-                and url.path.lower() != QUERY_PATH)
-
     def allow_request(self, request):
-        url = urlsplit(request.url)
-        if (not self.allowed or self.used or request.method != "POST"
-                or request.frame != self.page.main_frame
-                or not self._is_module_post(url)
+        if request.method != "POST" or request.frame != self.page.main_frame:
+            return False
+        if self.save_request is not None and request.url == FLOW_GENERATE_URL:
+            self.flow_generate_blocked = True
+            return False
+        if (not self.allowed or self.save_request is not None or request.url != SAVE_URL
                 or not save_payload_matches(request.post_data, self.plan["facts"],
                                             self.operator)):
             return False
-        self.used = True
+        self.save_request = request
         return True
 
     def capture_snapshot(self):
@@ -168,15 +166,14 @@ class LeaveSaveAdapter:
         return "evidence/" + name + ".png"
 
     def is_save_response(self, response):
-        return (response.request.method == "POST"
-                and self._is_module_post(urlsplit(response.url)))
+        return response.url == SAVE_URL and response.request == self.save_request
 
     def exact_save_button(self):
         button = self.form.get_by_role("button", name="保存", exact=True)
         count = button.count()
         return {"text": "保存", "count": count, "enabled": count == 1 and button.is_enabled(),
                 "visible": count == 1 and button.is_visible(),
-                "dialogs": self.page.locator(".ui-dialog:visible,[role=alertdialog]:visible").count()}
+                "dialogs": self.page.locator(SAVE_DIALOG_SELECTOR).count()}
 
     def click_exact_save(self):
         if not SaveController._button_valid(self.exact_save_button()):
@@ -193,7 +190,7 @@ class LeaveSaveAdapter:
             self.allowed = False
 
     def observe_saved(self):
-        if not self.used or not self.reply.ok:
+        if self.save_request is None or not self.reply or not self.reply.ok:
             return None
         try:
             body = self.reply.json()
@@ -210,10 +207,22 @@ class LeaveSaveAdapter:
         if self.probe.header_value(self.form, "单据编号") != number:
             return None
         identity["status"] = "编制中"
-        # The leave list's filter schema is not modelled; uniqueness rests on
-        # the fresh response UUID paired with the form header number.
-        return {"identity": identity, "unique": True,
-                "dialogs": self.exact_save_button()["dialogs"]}
+        # Pair the fresh response UUID with the form header before the
+        # controller independently reopens that UUID and verifies the status.
+        dialogs = self.page.locator(SAVE_DIALOG_SELECTOR)
+        count = dialogs.count()
+        followup_warning = (
+            self.flow_generate_blocked and self.reply.status == 200
+            and type(body) is dict and type(body.get("bizStatus")) is int
+            and body["bizStatus"] == 0 and body.get("id") == identity["uuid"]
+            and body.get("bizNumber") == number and count == 1
+            and dialogs.get_by_text(CONNECTION_WARNING, exact=True).count() == 1
+        )
+        observation = {"identity": identity, "unique": True, "dialogs": count}
+        if followup_warning:
+            observation.update(dialogs=0, visible_dialogs=count,
+                               blocked_workflow_warning=CONNECTION_WARNING)
+        return observation
 
     def inspect_uncertain(self):
         return None

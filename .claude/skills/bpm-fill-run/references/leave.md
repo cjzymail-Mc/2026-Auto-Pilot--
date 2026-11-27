@@ -22,12 +22,16 @@ python -X utf8 -m bpm.leave --run "<本次run>" --facts "<事实.json>" --draft-
 ```
 
 - 保存控制器复用通用 `SaveController`（`bpm/leave_save.py`）：journal 防重复、保存意图先落盘、一次精确「保存」点击、响应身份、只读重开核对；`SAVE_UNCERTAIN` 立即转只读核实，不重试点击。
-- 保存 POST 闸门：OA 前端包中无保存路径字面量（2026-11-20 `--api-scan` 实证），适配器按命名空间放行——仅一次、主 frame、`https://oa.api.qiaodan.com/Leave*`（排除列表查询）、请求体含本次事由与操作人的 POST；实际路径从保存响应记录（`leave_save_post` 事件），首次真实保存后可收紧为精确路径。
+- 保存 POST 闸门仅放行主 frame 单次发出的 `https://oa.api.qiaodan.com/Leave`，请求体须含本次事由和操作人，响应须对应同一请求。若保存返回编制中的单号和 UUID，表单单号一致，且后续 `/flow/generate` 被拦并出现唯一「服务器连接失败」弹窗，保留弹窗并转入只读重开。重开回读通过后才报告保存成功。
 - 网络守卫两段式：填写阶段端点级白名单（GET/HEAD/OPTIONS，另放行 `oa.api.qiaodan.com/Leave/query/20/1`、`kindlytips/query`、`affiche/homequerybyoption`；填写时点另放行 `ams.api.qiaodan.com/shiftapi/getleavereckon` 计算读）。只填审阅模式交付后调用 `enable_manual_review` 卸载端点路由再驻留，用户手工保存才能到达接口（2026-11-20 实证：不卸载会显示「服务器连接失败」）；保存分支全程保留端点路由。
 - 页内 PrimeNG 对话框一律 dismiss（先 Escape，仅允许点取消/关闭类按钮），绝不点确定/是；统计分析类请求（rybbit）持续拒绝。
 - 当前支持：单行明细、年假（已实测填写）；类型下拉其余选项（事假/病假/产假等）结构同源、未逐一实测。不支持：多行明细、关联单据填写、附件上传、工作交接/备注自动填写（保留默认空）、实际起止改写（系统自动带出）。
-- 失败恢复：`NEEDS_INPUT` 时驻留现场供排查；已有保存意图/结果不明/已保存时只读核实，不换 task_id 重建。自动保存分支已实现并通过离线验证（授权装载、身份识别、载荷门、CLI validate-only、探针 selftest），**真实自动保存待下一次真实任务验证**。
+- 失败恢复时，`NEEDS_INPUT` 驻留现场供排查。已有保存意图、结果不明或已保存时，以原任务的响应和回读证据只读核实，禁止再次保存或重建。
 
 ## 真实验收与证据
 
-2026-11-20 首次真实任务：结构探查（attempt_007）与「年假/去医院/2026-11-20 08:30–13:00」填写及独立 DOM 回读（attempt_011）通过，时长自动计 3小时30分钟；该单由用户手工保存并自述已流转，agent 未执行保存/流转、未取得该单号证据——自动保存分支在该单之后才实现，其真实首验待下一次任务。执行结果以 `automation/runs/<run>/events.jsonl` 的 `result_delivered`、attempt 的 `leave_readback.json`、`review.png` 及保存分支的 `save_result.json` 为准；真实运行原始工件仅留本机。
+2026-11-20 首次真实任务完成结构探查（attempt_007）及年假填写和独立 DOM 回读（attempt_011）。该单由用户手工保存并自述已流转。
+
+2026-11-27 首次真实自动保存返回 HTTP 200，后续流程请求被拦后，旧代码将弹窗判为 `SAVE_UNCERTAIN`。同任务只读重开确认草稿为「编制中」，全部明细与点击前一致。证据见 `automation/runs/20261127-leave/` 的 attempt_002 保存观察和 attempt_003 重开验证。修复后已离线测试弹窗判定，待下一笔真实授权业务验证新版端到端保存。
+
+执行结果以 `automation/runs/<run>/events.jsonl` 的 `result_delivered`、attempt 的 `leave_readback.json`、`review.png` 及保存分支的 `save_result.json` 为准。真实运行原始工件仅留本机。
